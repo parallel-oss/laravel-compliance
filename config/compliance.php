@@ -13,4 +13,9 @@ return [
         'output' => base_path('security-evidence-report.md'),
         'include_code' => true,
     ],
+
+    'gaps' => [
+        'output' => base_path('compliance-gap-report.md'),
+        'include_code' => true,
+    ],
 ];

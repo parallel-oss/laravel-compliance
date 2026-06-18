@@ -29,6 +29,15 @@ Avoid:
 #[Evidence(summary: 'This satisfies GDPR Article 17.')]
 ```
 
+Use a gap marker when the behavior is missing:
+
+```php
+#[ComplianceGap(
+    summary: 'Account closure does not delete generated export files.',
+    controls: ComplianceControl::CustomerDataDeletedUponLeaving,
+)]
+```
+
 ## Control Guidance
 
 - Use `ComplianceControl::CustomerDataDeletedUponLeaving` for code that deletes customer data when customers leave the service.
@@ -58,3 +67,5 @@ When changing Vanta data or generated controls:
 3. Keep the relationship conservative: use “supports” evidence, not “satisfies compliance.”
 4. Update tests if generated data, curation rules, or report output changes.
 5. Run `composer format`, `composer test`, `composer analyse`, and `composer audit`.
+
+When code lacks required behavior, add or suggest `ComplianceGap` instead of weakening an `Evidence` annotation.

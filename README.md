@@ -70,6 +70,26 @@ This package publishes portable Agent Skills under `skills/` and advertises them
 
 Agents that support Composer-discovered skills can sync them from the package. Agents that read repository instruction files can use `AGENTS.md`.
 
+For Cursor projects, publish the packaged skills into the current project:
+
+```bash
+php artisan laravel-compliance:publish-skills
+```
+
+This writes Cursor project skills to `.cursor/skills` using Cursor's expected directory format:
+
+```text
+.cursor/skills/
+├── map-compliance-evidence/
+│   ├── SKILL.md
+│   └── references/
+│       └── mapping-sources.md
+└── use-laravel-compliance/
+    └── SKILL.md
+```
+
+Existing project skills are not overwritten unless you pass `--force`.
+
 ## Usage
 
 Prefer control evidence when the code demonstrates behavior that may support multiple frameworks:
@@ -87,6 +107,27 @@ class AccountClosureService
         status: EvidenceStatus::Implemented,
     )]
     public function deleteUserData(User $user): void
+    {
+        // ...
+    }
+}
+```
+
+Use gap markers when the code path should have compliance-related behavior but does not yet. These markers do not appear in the evidence report and should not be treated as implemented controls:
+
+```php
+use Parallel\Compliance\ComplianceGap;
+use Parallel\Compliance\Controls\ComplianceControl;
+
+class AccountClosureService
+{
+    #[ComplianceGap(
+        summary: 'Account closure does not delete billing export files.',
+        controls: ComplianceControl::CustomerDataDeletedUponLeaving,
+        remediation: 'Delete object storage exports during account closure.',
+        owner: 'platform',
+    )]
+    public function closeAccount(User $user): void
     {
         // ...
     }
@@ -129,12 +170,22 @@ Generate a Markdown evidence report:
 php artisan security:generate-report
 ```
 
+Generate a Markdown gap report for missing compliance work:
+
+```bash
+php artisan security:find-gaps
+```
+
 Useful options:
 
 ```bash
 php artisan security:generate-report \
     --path=app \
     --output=security-evidence-report.md
+
+php artisan security:find-gaps \
+    --path=app \
+    --output=compliance-gap-report.md
 ```
 
 ## Testing

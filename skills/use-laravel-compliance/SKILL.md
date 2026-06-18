@@ -14,6 +14,7 @@ Use this skill when a user wants to add, review, or generate compliance evidence
 This package collects evidence. It does not prove compliance by itself.
 
 - **Controls** describe what application code does, such as deleting customer data or enforcing access control. `ComplianceControl` is generated from curated local seed data.
+- **Gaps** describe code paths that should have compliance-related behavior but do not yet. Use `ComplianceGap`, not `Evidence`, for missing work.
 - **Framework requirements** describe external references such as GDPR articles or SOC 2 Trust Services Criteria sections. Reports derive these from generated local seed pivots, not hand-written mapping classes.
 - **Direct requirements** are optional application-owned enums for exact technical requirements.
 - **Reports** connect code evidence to controls, framework mappings, and related monitoring tests.
@@ -54,6 +55,24 @@ public function resetPassword(): void
 
 You may combine both when a code path is both a control objective and a technical requirement.
 
+Use gaps for missing compliance work:
+
+```php
+use Parallel\Compliance\ComplianceGap;
+use Parallel\Compliance\Controls\ComplianceControl;
+
+#[ComplianceGap(
+    summary: 'Account closure does not delete generated export files.',
+    controls: ComplianceControl::CustomerDataDeletedUponLeaving,
+    remediation: 'Delete object storage exports during account closure.',
+    owner: 'platform',
+)]
+public function closeAccount(User $user): void
+{
+    // ...
+}
+```
+
 ## Commands
 
 Generate a Markdown evidence report:
@@ -61,6 +80,20 @@ Generate a Markdown evidence report:
 ```bash
 php artisan security:generate-report
 ```
+
+Generate a Markdown report of known compliance gaps:
+
+```bash
+php artisan security:find-gaps
+```
+
+Publish packaged Cursor project skills into the current project:
+
+```bash
+php artisan laravel-compliance:publish-skills
+```
+
+This writes skills to `.cursor/skills/<skill-name>/SKILL.md` and preserves existing project skills unless `--force` is passed.
 
 Useful report options:
 
@@ -74,6 +107,7 @@ php artisan security:generate-report \
 
 - Always use enums for controls and direct technical requirements.
 - Prefer `ComplianceControl` for code evidence when the code maps to a curated engineering/security/privacy behavior.
+- Use `ComplianceGap` to mark missing compliance work so it is visible without being counted as implemented evidence.
 - Do not use code-facing controls for policy-only, HR-only, physical-office, board, insurance, meeting-minute, or pure audit-placeholder evidence.
 - Let the generated local seed pivots map compliance controls to framework requirements.
 - Use application-owned direct requirement enums only for exact technical requirements.
