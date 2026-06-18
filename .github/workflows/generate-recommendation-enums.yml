@@ -1,4 +1,4 @@
-name: Generate Enums
+name: Generate Compliance Data
 
 on:
   # workflow_dispatch:
@@ -31,8 +31,12 @@ jobs:
         run: |
           php vendor/bin/testbench security:generate-enums "resources/standards/*.json" --namespace="Parallel\\Compliance\\Enums" --output=src/Enums
 
+      - name: Generate Vanta Data
+        run: |
+          php vendor/bin/testbench security:generate-vanta-data --control-enum-output=src/Controls/VantaControl.php
+
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update generated compliance standards"
-          file_pattern: "resources/standards/*.json src/Enums/*.php"
+          commit_message: "Update generated compliance data"
+          file_pattern: "resources/standards/*.json src/Enums/*.php resources/frameworks/vanta/data/*.php src/Controls/VantaControl.php"

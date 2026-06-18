@@ -6,10 +6,10 @@ use BackedEnum;
 use Illuminate\Console\Command;
 use Parallel\Compliance\Controls\Control;
 use Parallel\Compliance\Controls\VantaControl;
+use Parallel\Compliance\Data\FrameworkControlRecord;
+use Parallel\Compliance\Data\TestRecord;
+use Parallel\Compliance\Data\VantaComplianceData;
 use Parallel\Compliance\Frameworks\FrameworkRequirement;
-use Parallel\Compliance\Frameworks\Soc2Criteria;
-use Parallel\Compliance\Mappings\VantaControlFrameworkMappings;
-use Parallel\Compliance\Mappings\VantaControlSoc2Mappings;
 use Parallel\Compliance\Recommendations\RecommendationCollection;
 use Parallel\Compliance\Scanning\EvidenceFinding;
 use Parallel\Compliance\Scanning\EvidenceScanner;
@@ -26,12 +26,15 @@ class GenerateSecurityReport extends Command
 
     private RecommendationCollection $recommendationCollection;
 
+    private VantaComplianceData $vantaData;
+
     public function handle(): int
     {
         $this->info('Scanning for security evidence...');
 
         $this->recommendationCollection = new RecommendationCollection;
         $this->recommendationCollection->loadFromFiles($this->standardPaths());
+        $this->vantaData = VantaComplianceData::fromPackageResources();
 
         $findings = (new EvidenceScanner)->scan($this->scanPaths());
         $output = $this->option('output') ?: config('compliance.report.output');
@@ -120,6 +123,16 @@ class GenerateSecurityReport extends Command
                     }
                 }
 
+                $tests = $this->mappedTests($control);
+
+                if ($tests !== []) {
+                    $markdown .= "\n### Related Tests\n\n";
+
+                    foreach ($tests as $test) {
+                        $markdown .= $this->testMarkdown($test);
+                    }
+                }
+
                 $markdown .= $this->evidenceMarkdown($finding);
             }
 
@@ -149,10 +162,19 @@ class GenerateSecurityReport extends Command
             return [];
         }
 
-        return [
-            ...VantaControlSoc2Mappings::sectionsFor($control),
-            ...VantaControlFrameworkMappings::requirementsFor($control),
-        ];
+        return $this->vantaData->frameworkControlsForInternalControl($control);
+    }
+
+    /**
+     * @return array<int, TestRecord>
+     */
+    private function mappedTests(Control $control): array
+    {
+        if (! $control instanceof VantaControl) {
+            return [];
+        }
+
+        return $this->vantaData->testsForInternalControl($control);
     }
 
     private function frameworkRequirementMarkdown(FrameworkRequirement $requirement): string
@@ -171,8 +193,8 @@ class GenerateSecurityReport extends Command
             $details[] = 'Domain: '.$requirement->domain();
         }
 
-        if ($requirement instanceof Soc2Criteria && $requirement->variants() !== []) {
-            $details[] = 'Variants: '.implode(', ', $requirement->variants());
+        if ($requirement instanceof FrameworkControlRecord && $requirement->variants !== []) {
+            $details[] = 'Variants: '.implode(', ', $requirement->variants);
         }
 
         if ($details !== []) {
@@ -181,6 +203,34 @@ class GenerateSecurityReport extends Command
 
         if ($requirement->description()) {
             $markdown .= '  - '.$requirement->description()."\n";
+        }
+
+        return $markdown;
+    }
+
+    private function testMarkdown(TestRecord $test): string
+    {
+        $markdown = "- `{$test->key}` - {$test->title}\n";
+        $details = [];
+
+        if ($test->category) {
+            $details[] = 'Category: '.$test->category;
+        }
+
+        if ($test->status) {
+            $details[] = 'Status: '.$test->status;
+        }
+
+        if ($test->integrations !== []) {
+            $details[] = 'Integrations: '.implode(', ', $test->integrations);
+        }
+
+        if ($details !== []) {
+            $markdown .= '  - '.implode('; ', $details)."\n";
+        }
+
+        if ($test->description) {
+            $markdown .= '  - '.$test->description."\n";
         }
 
         return $markdown;

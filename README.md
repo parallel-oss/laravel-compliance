@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/parallel-oss/laravel-compliance/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/parallel-oss/laravel-compliance/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/parallel-oss/laravel-compliance.svg?style=flat-square)](https://packagist.org/packages/parallel-oss/laravel-compliance)
 
-Laravel Compliance lets you map code-level evidence to enum-backed controls and framework references for GDPR, SOC 2, OWASP ASVS, and OWASP WSTG. It does not claim that an annotation proves compliance; it gives teams a typed, reviewable way to connect implementation evidence to standards and generate audit-friendly reports.
+Laravel Compliance lets you map code-level evidence to curated, enum-backed controls and generated technical requirements. It does not claim that an annotation proves compliance; it gives teams a typed, reviewable way to connect implementation evidence to framework requirements, monitoring tests, and audit-friendly reports.
 
 ## Installation
 
@@ -39,15 +39,44 @@ php artisan security:import-asvs \
     --output="storage/app/compliance/standards/asvs.json"
 ```
 
-## Generate Enums
+## Generate OWASP Enums
 
-Generate backed enums for IDE autocomplete and type safety:
+Generate app-local backed enums for imported OWASP ASVS/WSTG requirements:
 
 ```bash
 php artisan security:generate-enums
 ```
 
 By default, enums are written to `App\Enums\Compliance`. Each generated enum implements `Parallel\Compliance\Recommendations\Recommendation`.
+
+## Generate Vanta Data
+
+This package ships raw Vanta framework resources and curated monitoring artifacts under `resources/frameworks/vanta`. Package maintainers can regenerate deterministic seed arrays and the curated package `VantaControl` enum from those resources:
+
+```bash
+php vendor/bin/testbench security:generate-vanta-data \
+    --control-enum-output=src/Controls/VantaControl.php
+```
+
+Generated seed arrays are written to `resources/frameworks/vanta/data`:
+
+- `frameworks.php`
+- `framework-controls.php`
+- `internal-controls.php`
+- `tests.php`
+- `integrations.php`
+- `framework-control-internal-control.php`
+- `internal-control-test.php`
+- `integration-test.php`
+- `test-entities.php`
+
+These files are plain PHP arrays so downstream applications can seed their own database:
+
+```php
+$frameworks = require base_path('vendor/parallel-oss/laravel-compliance/resources/frameworks/vanta/data/frameworks.php');
+```
+
+The generated `VantaControl` enum is intentionally curated. It includes engineering-relevant controls for access, encryption, logging, monitoring, SDLC, vulnerability management, privacy engineering, vendors, and related security operations. It excludes policy-only, HR-only, physical-office, board, insurance, meeting-minute, and pure audit-placeholder controls from code-facing evidence.
 
 ## LLM Agent Skills
 
@@ -81,23 +110,17 @@ class AccountClosureService
 }
 ```
 
-Control mappings are enum-backed and centralized in `src/Mappings`. Vanta controls map to SOC 2 sections in `VantaControlSoc2Mappings`; additional GDPR and broad OWASP mappings live in `VantaControlFrameworkMappings`:
+Control metadata and framework mappings are generated from the Vanta seed arrays and loaded through `Parallel\Compliance\Data\VantaComplianceData`. The enum stays small and ergonomic; titles, descriptions, domains, framework controls, and related monitoring tests come from the generated data layer:
 
 ```php
 use Parallel\Compliance\Controls\VantaControl;
-use Parallel\Compliance\Frameworks\GdprArticle;
-use Parallel\Compliance\Frameworks\OwaspRequirement;
-use Parallel\Compliance\Frameworks\Soc2Criteria;
+use Parallel\Compliance\Data\VantaComplianceData;
 
-VantaControl::DCH_1; // Customer data deleted upon leaving
+$data = VantaComplianceData::fromPackageResources();
 
-// Mapped references include:
-[
-    Soc2Criteria::C1_2,
-    Soc2Criteria::CC6_5,
-    GdprArticle::Article17,
-    OwaspRequirement::AsvsDataProtection,
-];
+$control = $data->control(VantaControl::DCH_1);
+$frameworkControls = $data->frameworkControlsForInternalControl(VantaControl::DCH_1);
+$tests = $data->testsForInternalControl(VantaControl::DCH_1);
 ```
 
 Use direct requirements when the code maps to a technical requirement such as ASVS or WSTG:

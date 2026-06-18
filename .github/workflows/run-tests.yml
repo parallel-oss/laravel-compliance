@@ -5,6 +5,8 @@ on:
     paths:
       - '**.php'
       - '.github/workflows/run-tests.yml'
+      - 'resources/frameworks/vanta/**'
+      - 'skills/**'
       - 'phpunit.xml.dist'
       - 'composer.json'
       - 'composer.lock'

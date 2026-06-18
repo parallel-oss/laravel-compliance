@@ -1,6 +1,6 @@
 ---
 name: map-compliance-evidence
-description: Map application behavior to enum-backed Laravel Compliance controls and framework references for GDPR, SOC 2, and OWASP without overclaiming compliance.
+description: Map application behavior to curated enum-backed Laravel Compliance controls and generated technical requirements without overclaiming compliance.
 license: MIT
 compatibility: PHP 8.4+, Laravel 12+, Composer package parallel-oss/laravel-compliance
 ---
@@ -11,7 +11,7 @@ Use this skill when deciding which `VantaControl` enum cases or generated requir
 
 ## Mapping Principle
 
-Map code to what it demonstrably does. Then let `src/Mappings` map that control to GDPR, SOC 2, and OWASP references.
+Map code to what it demonstrably does. Then let `VantaComplianceData` and the generated seed pivots map that control to framework requirements and related tests.
 
 Good:
 
@@ -31,26 +31,29 @@ Avoid:
 
 ## Control Guidance
 
-- Use `VantaControl::DCH_1`, `DCH_6`, or `DCH_10` for code that deletes or disposes of customer/personal data.
-- Use `VantaControl::DCH_8`, `DCH_9`, or `IRO_4` for data subject access/export/disclosure accounting flows.
-- Use `VantaControl::PRI_9`, `PRI_10`, `PRI_11`, or `PRI_12` for consent and opt-out behavior.
+- Use `VantaControl::DCH_1` for code that deletes customer data when customers leave the service.
+- Use `VantaControl::DCH_5` for data classification behavior and metadata that helps protect confidential data.
 - Use `VantaControl::IAC_*` and `CRY_5` for access, authentication, authorization, password, and MFA behavior.
-- Use `VantaControl::MON_*`, `OPS_1`, and `IRO_*` for logging, monitoring, alerting, incident handling, and breach notification behavior.
+- Use `VantaControl::MON_*`, `OPS_1`, and `IRO_*` for logging, monitoring, alerting, incident handling, and security incident workflows.
 - Use `VantaControl::CHG_*`, `CFG_1`, `NET_5`, `VPM_1`, and `VPM_2` for change management, configuration, hardening, dependency, and vulnerability remediation behavior.
 - Use `VantaControl::CRY_3`, `CRY_4`, and `NET_1` for encryption at rest and in transit.
+- Use `VantaControl::TPM_1` or `TPM_2` when code or workflows directly support vendor/security review evidence.
+
+Do not use `VantaControl` for policy-only, HR-only, physical-office, board, insurance, meeting-minute, or pure audit-placeholder evidence. Those may exist in raw Vanta resources but are intentionally excluded from code-facing controls.
 
 ## Framework Boundaries
 
-- GDPR mappings are references to relevant articles. They are not legal advice and do not prove legal compliance.
-- SOC 2 mappings are references to Trust Services Criteria sections. SOC 2 audit evidence normally also needs policies, risk assessments, approvals, logs, tickets, and operating evidence.
-- OWASP mappings may be broad built-in references or exact generated ASVS/WSTG requirement enums. Prefer generated controls when a specific technical requirement is known.
+- GDPR and SOC 2 mappings come from generated Vanta framework-control/internal-control pivots. They are references, not legal advice or proof of compliance.
+- SOC 2 audit evidence normally also needs policies, risk assessments, approvals, logs, tickets, and operating evidence.
+- OWASP direct requirements should come from generated ASVS/WSTG requirement enums. The old broad `OwaspRequirement` overlay was removed.
 
-## Required Review Before Adding New Mappings
+## Required Review Before Changing Generated Data
 
-When adding or changing mappings:
+When changing Vanta data or generated controls:
 
-1. Add or reuse an enum case. Do not use raw strings.
-2. Map new controls in `src/Mappings/VantaControlSoc2Mappings.php` and/or `src/Mappings/VantaControlFrameworkMappings.php`.
+1. Update raw or curated source artifacts only when the source data actually changes.
+2. Update curation rules in `GenerateVantaData` when controls/tests are wrongly included or excluded.
+3. Regenerate data with `php vendor/bin/testbench security:generate-vanta-data --control-enum-output=src/Controls/VantaControl.php`.
 3. Keep the relationship conservative: use “supports” evidence, not “satisfies compliance.”
-4. Update tests if a mapping table or enum changes.
+4. Update tests if generated data, curation rules, or report output changes.
 5. Run `composer format`, `composer test`, `composer analyse`, and `composer audit`.

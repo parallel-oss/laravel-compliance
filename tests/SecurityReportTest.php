@@ -23,10 +23,10 @@ use Parallel\Compliance\Evidence;
 class ReportedEvidence
 {
     #[Evidence(
-        controls: VantaControl::DCH_1,
-        summary: 'Deletes user profile data and related records.'
+        controls: VantaControl::CRY_4,
+        summary: 'Encrypts customer data at rest.'
     )]
-    public function deleteUserData(): void
+    public function encryptCustomerData(): void
     {
         //
     }
@@ -40,11 +40,13 @@ PHP);
     $this->artisan('security:generate-report')->assertSuccessful();
 
     expect($output)->toBeFile()
-        ->and(file_get_contents($output))->toContain('Control: Customer data deleted upon leaving')
-        ->and(file_get_contents($output))->toContain('`VANTA:DCH-1`')
-        ->and(file_get_contents($output))->toContain('`GDPR:Article 17`')
-        ->and(file_get_contents($output))->toContain('`SOC2:C1.2`')
-        ->and(file_get_contents($output))->toContain('`SOC2:CC6.5`')
-        ->and(file_get_contents($output))->toContain('**Vanta slug:** `customer-data-deleted-upon-leave`')
-        ->and(file_get_contents($output))->toContain('Deletes user profile data and related records.');
+        ->and(file_get_contents($output))->toContain('Control: Data encryption utilized')
+        ->and(file_get_contents($output))->toContain('`VANTA:CRY-4`')
+        ->and(file_get_contents($output))->toContain('`SOC2:CC6.1`')
+        ->and(file_get_contents($output))->toContain('`SOC2:PI1.4`')
+        ->and(file_get_contents($output))->toContain('**Vanta slug:** `data-encrypted`')
+        ->and(file_get_contents($output))->toContain('### Related Tests')
+        ->and(file_get_contents($output))->toContain('`aws-dynamodb-encryption`')
+        ->and(file_get_contents($output))->not->toContain('approved-cryptography-policy-bsi-exists')
+        ->and(file_get_contents($output))->toContain('Encrypts customer data at rest.');
 });
