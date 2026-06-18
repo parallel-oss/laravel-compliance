@@ -1,17 +1,19 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "parallel-oss/laravel-compliance",
+    "description": "Map Laravel code evidence to security requirements and generate compliance reports.",
     "keywords": [
-        ":vendor_name",
+        "compliance",
+        "evidence",
         "laravel",
-        ":package_slug"
+        "laravel-compliance",
+        "security"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/parallel-oss/laravel-compliance",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Emaad Ali",
+            "email": "emaadali@users.noreply.github.com",
             "role": "Developer"
         }
     ],
