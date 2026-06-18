@@ -20,7 +20,7 @@ Application code should usually reference a code-facing control enum:
 
 ```php
 #[Evidence(
-    controls: VantaControl::DCH_1,
+    controls: ComplianceControl::CustomerDataDeletedUponLeaving,
     summary: 'Deletes customer data after account closure.'
 )]
 ```
@@ -95,6 +95,6 @@ When reviewing a framework or control, ask:
 
 ## Current Direction
 
-For now, Vanta controls are the best candidate for the primary code-facing control catalog because they are practical, explanatory, and already mapped across frameworks. The package should use them as inspiration and as source-linked controls, while keeping the implementation flexible enough to add non-Vanta catalogs later.
+For now, the raw source controls are the best input for the public code-facing control catalog because they are practical, explanatory, and already mapped across frameworks. The package should expose friendly behavior names while keeping source IDs available internally for reconciliation.
 
 Framework-specific IDs should remain framework requirements, not code-facing controls. Code should say what it does. Mappings should explain which frameworks that evidence supports.

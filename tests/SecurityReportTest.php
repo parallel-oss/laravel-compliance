@@ -17,13 +17,13 @@ it('reports control mappings from enum-backed evidence', function () {
 
 namespace Workbench\App;
 
-use Parallel\Compliance\Controls\VantaControl;
+use Parallel\Compliance\Controls\ComplianceControl;
 use Parallel\Compliance\Evidence;
 
 class ReportedEvidence
 {
     #[Evidence(
-        controls: VantaControl::CRY_4,
+        controls: ComplianceControl::DataEncryptionUtilized,
         summary: 'Encrypts customer data at rest.'
     )]
     public function encryptCustomerData(): void
@@ -41,10 +41,9 @@ PHP);
 
     expect($output)->toBeFile()
         ->and(file_get_contents($output))->toContain('Control: Data encryption utilized')
-        ->and(file_get_contents($output))->toContain('`VANTA:CRY-4`')
+        ->and(file_get_contents($output))->toContain('`data-encrypted`')
         ->and(file_get_contents($output))->toContain('`SOC2:CC6.1`')
         ->and(file_get_contents($output))->toContain('`SOC2:PI1.4`')
-        ->and(file_get_contents($output))->toContain('**Vanta slug:** `data-encrypted`')
         ->and(file_get_contents($output))->toContain('### Related Tests')
         ->and(file_get_contents($output))->toContain('`aws-dynamodb-encryption`')
         ->and(file_get_contents($output))->not->toContain('approved-cryptography-policy-bsi-exists')

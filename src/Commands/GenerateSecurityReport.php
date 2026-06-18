@@ -4,13 +4,12 @@ namespace Parallel\Compliance\Commands;
 
 use BackedEnum;
 use Illuminate\Console\Command;
+use Parallel\Compliance\Controls\ComplianceControl;
 use Parallel\Compliance\Controls\Control;
-use Parallel\Compliance\Controls\VantaControl;
 use Parallel\Compliance\Data\FrameworkControlRecord;
 use Parallel\Compliance\Data\TestRecord;
 use Parallel\Compliance\Data\VantaComplianceData;
 use Parallel\Compliance\Frameworks\FrameworkRequirement;
-use Parallel\Compliance\Recommendations\RecommendationCollection;
 use Parallel\Compliance\Scanning\EvidenceFinding;
 use Parallel\Compliance\Scanning\EvidenceScanner;
 
@@ -19,12 +18,9 @@ class GenerateSecurityReport extends Command
     protected $signature = 'security:generate-report
         {--output= : Markdown file to write}
         {--path=* : File or directory paths to scan}
-        {--standard=* : Standardized recommendation JSON files to load}
         {--no-code : Omit source code snippets from the report}';
 
     protected $description = 'Generates a Markdown report of security evidence attributes found in the project';
-
-    private RecommendationCollection $recommendationCollection;
 
     private VantaComplianceData $vantaData;
 
@@ -32,8 +28,6 @@ class GenerateSecurityReport extends Command
     {
         $this->info('Scanning for security evidence...');
 
-        $this->recommendationCollection = new RecommendationCollection;
-        $this->recommendationCollection->loadFromFiles($this->standardPaths());
         $this->vantaData = VantaComplianceData::fromPackageResources();
 
         $findings = (new EvidenceScanner)->scan($this->scanPaths());
@@ -58,22 +52,6 @@ class GenerateSecurityReport extends Command
         }
 
         return config('compliance.scan_paths', []);
-    }
-
-    /**
-     * @return array<int, string>
-     */
-    private function standardPaths(): array
-    {
-        $paths = $this->option('standard') ?: config('compliance.standards', []);
-        $resolvedPaths = [];
-
-        foreach ($paths as $path) {
-            $matches = glob($path) ?: [];
-            $resolvedPaths = [...$resolvedPaths, ...$matches];
-        }
-
-        return $resolvedPaths;
     }
 
     /**
@@ -103,10 +81,6 @@ class GenerateSecurityReport extends Command
 
                 if ($control->domains() !== []) {
                     $markdown .= '- **Domains:** '.implode(', ', $control->domains())."\n";
-                }
-
-                if ($control instanceof VantaControl) {
-                    $markdown .= "- **Vanta slug:** `{$control->slug()}`\n";
                 }
 
                 if ($control->description()) {
@@ -158,7 +132,7 @@ class GenerateSecurityReport extends Command
      */
     private function mappedRequirements(Control $control): array
     {
-        if (! $control instanceof VantaControl) {
+        if (! $control instanceof ComplianceControl) {
             return [];
         }
 
@@ -170,7 +144,7 @@ class GenerateSecurityReport extends Command
      */
     private function mappedTests(Control $control): array
     {
-        if (! $control instanceof VantaControl) {
+        if (! $control instanceof ComplianceControl) {
             return [];
         }
 
@@ -259,34 +233,12 @@ class GenerateSecurityReport extends Command
         }
 
         $requirementId = $this->enumId($requirement);
-        $recommendation = $this->recommendationCollection->getById($requirementId);
-        $markdown = '## '.($recommendation->title ?? $requirementId)."\n\n";
+        $markdown = "## {$requirementId}\n\n";
         $markdown .= "- **Requirement:** `{$requirementId}`\n";
-        $markdown .= '- **Source:** '.($recommendation->source ?? 'Unknown')."\n";
         $markdown .= "- **Target:** `{$finding->target}`\n";
         $markdown .= "- **Type:** {$finding->type}\n";
         $markdown .= "- **Status:** {$finding->evidence->status->value}\n";
         $markdown .= "- **Location:** `{$this->relativePath($finding->file)}`:{$finding->startLine}\n";
-
-        if ($recommendation?->description) {
-            $markdown .= "\n### Requirement Description\n\n{$recommendation->description}\n";
-        }
-
-        if ($recommendation?->objectives !== []) {
-            $markdown .= "\n### Objectives\n\n";
-
-            foreach ($recommendation->objectives as $objective) {
-                $markdown .= "- {$objective}\n";
-            }
-        }
-
-        if ($recommendation?->references !== []) {
-            $markdown .= "\n### References\n\n";
-
-            foreach ($recommendation->references as $reference) {
-                $markdown .= "- {$reference}\n";
-            }
-        }
 
         return $markdown.$this->evidenceMarkdown($finding);
     }

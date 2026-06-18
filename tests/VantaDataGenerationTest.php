@@ -4,12 +4,12 @@ use Illuminate\Support\Facades\File;
 
 afterEach(function () {
     File::deleteDirectory(storage_path('framework/testing/vanta-data'));
-    File::delete(storage_path('framework/testing/VantaControl.php'));
+    File::delete(storage_path('framework/testing/ComplianceControl.php'));
 });
 
 it('generates curated seedable Vanta data from package resources', function () {
     $output = storage_path('framework/testing/vanta-data');
-    $enumOutput = storage_path('framework/testing/VantaControl.php');
+    $enumOutput = storage_path('framework/testing/ComplianceControl.php');
 
     $this->artisan('security:generate-vanta-data', [
         '--output' => $output,
@@ -47,9 +47,10 @@ it('generates curated seedable Vanta data from package resources', function () {
         ->not->toContain('approved-cryptography-policy-bsi-exists');
 
     expect($enumOutput)->toBeFile()
-        ->and(file_get_contents($enumOutput))->toContain('case DCH_1 = \'VANTA:DCH-1\';')
-        ->and(file_get_contents($enumOutput))->not->toContain('case GOV_1')
-        ->and(file_get_contents($enumOutput))->not->toContain('case HRS_1');
+        ->and(file_get_contents($enumOutput))->toContain('enum ComplianceControl: string implements Control')
+        ->and(file_get_contents($enumOutput))->toContain('case CustomerDataDeletedUponLeaving = \'customer-data-deleted-upon-leave\';')
+        ->and(file_get_contents($enumOutput))->not->toContain('case BoardMeetingsConducted')
+        ->and(file_get_contents($enumOutput))->not->toContain('case BackgroundChecksPerformed');
 
     assert_vanta_pivots_are_referentially_integral(
         $frameworkControls,

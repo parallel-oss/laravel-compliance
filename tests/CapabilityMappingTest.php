@@ -1,49 +1,53 @@
 <?php
 
-use Parallel\Compliance\Controls\VantaControl;
+use Parallel\Compliance\Controls\ComplianceControl;
 use Parallel\Compliance\Data\VantaComplianceData;
 
-it('generates only curated code-facing Vanta controls', function () {
+it('generates only curated code-facing compliance controls', function () {
     $actual = array_map(
-        fn (VantaControl $control) => $control->value,
-        VantaControl::cases(),
+        fn (ComplianceControl $control) => $control->name,
+        ComplianceControl::cases(),
     );
 
     expect($actual)->toHaveCount(49)
-        ->toContain('VANTA:DCH-1')
-        ->toContain('VANTA:IAC-2')
-        ->toContain('VANTA:CRY-4')
-        ->not->toContain('VANTA:GOV-1')
-        ->not->toContain('VANTA:HRS-1')
-        ->not->toContain('VANTA:CPL-1')
-        ->not->toContain('VANTA:PES-1');
+        ->toContain('CustomerDataDeletedUponLeaving')
+        ->toContain('AccessControlProceduresEstablished')
+        ->toContain('DataEncryptionUtilized')
+        ->not->toContain('BoardMeetingsConducted')
+        ->not->toContain('BackgroundChecksPerformed')
+        ->not->toContain('WhistleblowerPolicyEstablished')
+        ->not->toContain('PhysicalAccessRestricted');
 });
 
-it('loads Vanta control metadata through the generated data layer', function () {
-    expect(VantaControl::IAC_2->source())->toBe('Vanta')
-        ->and(VantaControl::IAC_2->externalId())->toBe('IAC-2')
-        ->and(VantaControl::IAC_2->slug())->toBe('access-control-procedures')
-        ->and(VantaControl::IAC_2->title())->toBe('Access control procedures established')
-        ->and(VantaControl::IAC_2->description())
-        ->toContain('access control policy');
+it('loads source control metadata through the generated data layer', function () {
+    $record = VantaComplianceData::fromPackageResources()->control(ComplianceControl::AccessControlProceduresEstablished);
+
+    expect(ComplianceControl::AccessControlProceduresEstablished->source())->toBe('Laravel Compliance')
+        ->and(ComplianceControl::AccessControlProceduresEstablished->id())->toBe('access-control-procedures')
+        ->and(ComplianceControl::AccessControlProceduresEstablished->title())->toBe('Access control procedures established')
+        ->and(ComplianceControl::AccessControlProceduresEstablished->description())
+        ->toContain('access control policy')
+        ->and($record?->externalId)->toBe('IAC-2')
+        ->and($record?->vantaId)->toBe('access-control-procedures')
+        ->and($record?->source)->toBe('Vanta');
 });
 
-it('maps curated Vanta controls to framework controls through seed pivots', function () {
+it('maps readable compliance controls to framework controls through seed pivots', function () {
     $data = VantaComplianceData::fromPackageResources();
 
-    $iac2 = array_map(
+    $accessControl = array_map(
         fn ($frameworkControl) => $frameworkControl->id(),
-        $data->frameworkControlsForInternalControl(VantaControl::IAC_2),
+        $data->frameworkControlsForInternalControl(ComplianceControl::AccessControlProceduresEstablished),
     );
 
-    expect($iac2)
+    expect($accessControl)
         ->toContain('SOC2:CC5.2')
         ->toContain('SOC2:CC6.1')
         ->toContain('SOC2:CC6.2')
         ->toContain('SOC2:CC6.3')
         ->and(array_map(
             fn ($frameworkControl) => $frameworkControl->id(),
-            $data->frameworkControlsForInternalControl(VantaControl::DCH_1),
+            $data->frameworkControlsForInternalControl(ComplianceControl::CustomerDataDeletedUponLeaving),
         ))
         ->toBe(['SOC2:C1.2', 'SOC2:CC6.5']);
 });
@@ -53,7 +57,7 @@ it('loads related engineering tests and filters policy checks', function () {
 
     $testKeys = array_map(
         fn ($test) => $test->key,
-        $data->testsForInternalControl(VantaControl::CRY_4),
+        $data->testsForInternalControl(ComplianceControl::DataEncryptionUtilized),
     );
 
     expect($testKeys)

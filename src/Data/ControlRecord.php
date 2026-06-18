@@ -30,9 +30,4 @@ readonly class ControlRecord
             source: (string) $row['source'],
         );
     }
-
-    public function id(): string
-    {
-        return 'VANTA:'.$this->externalId;
-    }
 }
