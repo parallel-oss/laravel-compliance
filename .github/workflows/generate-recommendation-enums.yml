@@ -1,0 +1,41 @@
+name: Generate Enums
+
+on:
+  push:
+    paths:
+      - 'storage/recommendations_*.json'
+  workflow_dispatch:
+
+jobs:
+  generate-enums:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false # Important!
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, json
+          tools: composer
+
+      - name: Install Dependencies
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Generate Enums
+        run: |
+          php artisan security:generate-enums storage/recommendations_wstg.json storage/recommendations_asvs.json
+
+      - name: Commit and Push Enums
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add app/Enums/*.php
+          git commit -m "Auto-generate enums"
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.ref }}
