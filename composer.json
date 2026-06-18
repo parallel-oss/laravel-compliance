@@ -1,5 +1,5 @@
 {
-    "name": "parallel/laravel-compliance",
+    "name": "parallel-oss/laravel-compliance",
     "description": "Map Laravel code evidence to security requirements and generate compliance reports.",
     "keywords": [
         "compliance",
