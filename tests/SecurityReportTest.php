@@ -43,6 +43,9 @@ PHP);
         ->and(file_get_contents($output))->toContain('Capability: User Data Erasure')
         ->and(file_get_contents($output))->toContain('`data_lifecycle.user_data_erasure`')
         ->and(file_get_contents($output))->toContain('`GDPR:Article 17`')
-        ->and(file_get_contents($output))->toContain('`SOC2:P4`')
+        ->and(file_get_contents($output))->toContain('`SOC2:P4.3`')
+        ->and(file_get_contents($output))->toContain('Secure disposal of personal information')
+        ->and(file_get_contents($output))->toContain('`VANTA:DCH-1` - Customer data deleted upon leaving')
+        ->and(file_get_contents($output))->toContain('Vanta slug: `customer-data-deleted-upon-leave`')
         ->and(file_get_contents($output))->toContain('Deletes user profile data and related records.');
 });

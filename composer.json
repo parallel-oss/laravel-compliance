@@ -82,6 +82,11 @@
             "aliases": {
                 "Compliance": "Parallel\\Compliance\\Facades\\Compliance"
             }
+        },
+        "skills": {
+            "discovery": {
+                "source": "skills"
+            }
         }
     },
     "minimum-stability": "dev",

@@ -5,6 +5,9 @@ namespace Parallel\Compliance\Commands;
 use BackedEnum;
 use Illuminate\Console\Command;
 use Parallel\Compliance\Frameworks\FrameworkRequirement;
+use Parallel\Compliance\Frameworks\FrameworkRequirementMetadata;
+use Parallel\Compliance\Frameworks\VantaControl;
+use Parallel\Compliance\Mappings\VantaSoc2Mappings;
 use Parallel\Compliance\Recommendations\RecommendationCollection;
 use Parallel\Compliance\Scanning\EvidenceFinding;
 use Parallel\Compliance\Scanning\EvidenceScanner;
@@ -99,13 +102,7 @@ class GenerateSecurityReport extends Command
                     $markdown .= "\n### Framework Mappings\n\n";
 
                     foreach ($mappedRequirements as $requirement) {
-                        $markdown .= '- `'.$this->enumId($requirement).'`';
-
-                        if ($requirement instanceof FrameworkRequirement) {
-                            $markdown .= ' - '.$this->enumName($requirement);
-                        }
-
-                        $markdown .= "\n";
+                        $markdown .= $this->frameworkRequirementMarkdown($requirement);
                     }
                 }
 
@@ -175,6 +172,58 @@ class GenerateSecurityReport extends Command
     private function mappedRequirements(string $capabilityId): array
     {
         return config('compliance.capability_mappings', [])[$capabilityId] ?? [];
+    }
+
+    private function frameworkRequirementMarkdown(mixed $requirement): string
+    {
+        $id = $this->enumId($requirement);
+        $metadata = FrameworkRequirementMetadata::get($id);
+        $title = $metadata['title'] ?? ($requirement instanceof FrameworkRequirement ? $this->enumName($requirement) : $id);
+        $markdown = "- `{$id}` - {$title}\n";
+
+        if (! $metadata) {
+            return $markdown;
+        }
+
+        $details = [];
+
+        if (! empty($metadata['source'])) {
+            $details[] = 'Source: '.$metadata['source'];
+        }
+
+        if (! empty($metadata['domain'])) {
+            $details[] = 'Domain: '.$metadata['domain'];
+        }
+
+        if (! empty($metadata['domains'])) {
+            $details[] = 'Domains: '.implode(', ', $metadata['domains']);
+        }
+
+        if (! empty($metadata['slug'])) {
+            $details[] = 'Vanta slug: `'.$metadata['slug'].'`';
+        }
+
+        if ($requirement instanceof VantaControl) {
+            $sections = VantaSoc2Mappings::sectionIdsFor($requirement);
+
+            if ($sections !== []) {
+                $details[] = 'SOC 2 sections: '.implode(', ', $sections);
+            }
+        }
+
+        if (! empty($metadata['variants'])) {
+            $details[] = 'Variants: '.implode(', ', $metadata['variants']);
+        }
+
+        if ($details !== []) {
+            $markdown .= '  - '.implode('; ', $details)."\n";
+        }
+
+        if (! empty($metadata['description'])) {
+            $markdown .= '  - '.$metadata['description']."\n";
+        }
+
+        return $markdown;
     }
 
     private function evidenceMarkdown(EvidenceFinding $finding): string

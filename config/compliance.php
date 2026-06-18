@@ -1,8 +1,6 @@
 <?php
 
-use Parallel\Compliance\Capabilities\CommonCapability;
-use Parallel\Compliance\Frameworks\GdprRequirement;
-use Parallel\Compliance\Frameworks\Soc2TrustServicesCriteria;
+use Parallel\Compliance\Mappings\CapabilityFrameworkMappings;
 
 // config for Parallel/Compliance
 return [
@@ -27,35 +25,7 @@ return [
         'output' => app_path('Enums/Compliance'),
     ],
 
-    'capability_mappings' => [
-        CommonCapability::UserDataErasure->value => [
-            GdprRequirement::Article17,
-            Soc2TrustServicesCriteria::P4,
-            Soc2TrustServicesCriteria::P5,
-        ],
-        CommonCapability::UserDataExport->value => [
-            GdprRequirement::Article15,
-            GdprRequirement::Article20,
-            Soc2TrustServicesCriteria::P4,
-        ],
-        CommonCapability::ConsentCapture->value => [
-            GdprRequirement::Article25,
-            Soc2TrustServicesCriteria::P2,
-        ],
-        CommonCapability::AccessLogging->value => [
-            GdprRequirement::Article30,
-            GdprRequirement::Article32,
-            Soc2TrustServicesCriteria::CC7,
-        ],
-        CommonCapability::EncryptionAtRest->value => [
-            GdprRequirement::Article32,
-            Soc2TrustServicesCriteria::CC6,
-        ],
-        CommonCapability::EncryptionInTransit->value => [
-            GdprRequirement::Article32,
-            Soc2TrustServicesCriteria::CC6,
-        ],
-    ],
+    'capability_mappings' => CapabilityFrameworkMappings::defaults(),
 
     'sources' => [
         'owasp_wstg' => [

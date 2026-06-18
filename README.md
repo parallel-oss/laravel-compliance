@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/parallel-oss/laravel-compliance/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/parallel-oss/laravel-compliance/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/parallel-oss/laravel-compliance.svg?style=flat-square)](https://packagist.org/packages/parallel-oss/laravel-compliance)
 
-Laravel Compliance lets you map code-level evidence to security requirements such as OWASP ASVS and WSTG. It does not claim that an annotation proves compliance; it gives teams a typed, reviewable way to connect implementation evidence to standards and generate audit-friendly reports.
+Laravel Compliance lets you map code-level evidence to enum-backed capabilities and framework references for GDPR, SOC 2, OWASP ASVS, and OWASP WSTG. It does not claim that an annotation proves compliance; it gives teams a typed, reviewable way to connect implementation evidence to standards and generate audit-friendly reports.
 
 ## Installation
 
@@ -49,6 +49,15 @@ php artisan security:generate-enums
 
 By default, enums are written to `App\Enums\Compliance`. Each generated enum implements `Parallel\Compliance\Recommendations\Recommendation`.
 
+## LLM Agent Skills
+
+This package publishes portable Agent Skills under `skills/` and advertises them through Composer metadata:
+
+- `use-laravel-compliance`: how to annotate Laravel code, import standards, generate enums, and produce reports.
+- `map-compliance-evidence`: how to map code behavior to capabilities and framework references without overclaiming compliance.
+
+Agents that support Composer-discovered skills can sync them from the package. Agents that read repository instruction files can use `AGENTS.md`.
+
 ## Usage
 
 Prefer capability evidence when the code demonstrates what the system does and that evidence may support multiple frameworks:
@@ -72,19 +81,22 @@ class AccountClosureService
 }
 ```
 
-Capability mappings are enum-backed in `config/compliance.php`:
+Capability mappings are enum-backed in `config/compliance.php`. The built-in mappings cover the package's common capabilities across GDPR, SOC 2 Trust Services Criteria sections, and broad OWASP ASVS/WSTG references:
 
 ```php
 use Parallel\Compliance\Capabilities\CommonCapability;
 use Parallel\Compliance\Frameworks\GdprRequirement;
+use Parallel\Compliance\Frameworks\OwaspRequirement;
 use Parallel\Compliance\Frameworks\Soc2TrustServicesCriteria;
 
 return [
     'capability_mappings' => [
         CommonCapability::UserDataErasure->value => [
             GdprRequirement::Article17,
-            Soc2TrustServicesCriteria::P4,
-            Soc2TrustServicesCriteria::P5,
+            OwaspRequirement::AsvsDataProtection,
+            Soc2TrustServicesCriteria::C1_2,
+            Soc2TrustServicesCriteria::CC6_5,
+            Soc2TrustServicesCriteria::P4_3,
         ],
     ],
 ];
