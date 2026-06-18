@@ -1,7 +1,5 @@
 <?php
 
-use Parallel\Compliance\Mappings\CapabilityFrameworkMappings;
-
 // config for Parallel/Compliance
 return [
     'standards' => [
@@ -24,8 +22,6 @@ return [
         'namespace' => 'App\\Enums\\Compliance',
         'output' => app_path('Enums/Compliance'),
     ],
-
-    'capability_mappings' => CapabilityFrameworkMappings::defaults(),
 
     'sources' => [
         'owasp_wstg' => [

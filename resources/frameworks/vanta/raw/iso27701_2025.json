@@ -1,0 +1,1920 @@
+{
+  "principles": [
+    {
+      "id": "C.4",
+      "name": "Context of the organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.4.1",
+          "name": "Understanding the organization and its context",
+          "controls": [
+            {
+              "id": "1xu3785h",
+              "externalId": "GOV-3077",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.4.2",
+          "name": "Understanding the needs and expectations of interested parties",
+          "controls": [
+            {
+              "id": "ya9dmvie",
+              "externalId": "GOV-3078",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.4.3",
+          "name": "Determining the scope of the PIMS",
+          "controls": [
+            {
+              "id": "048vyijv",
+              "externalId": "GOV-3079",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.4.4",
+          "name": "Privacy information management system",
+          "controls": [
+            {
+              "id": "4xhntq1g",
+              "externalId": "GOV-3080",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.5",
+      "name": "Leadership",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.5.1",
+          "name": "Leadership and commitment",
+          "controls": [
+            {
+              "id": "iasofvq0",
+              "externalId": "GOV-3081",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.5.2",
+          "name": "Privacy policy",
+          "controls": [
+            {
+              "id": "14vbyhc8",
+              "externalId": "GOV-3082",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.5.3",
+          "name": "Roles, responsibilities and authorities",
+          "controls": [
+            {
+              "id": "qjwjgizu",
+              "externalId": "GOV-3083",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.6",
+      "name": "Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.6.1.1",
+          "name": "General",
+          "controls": [
+            {
+              "id": "uf32q8y6",
+              "externalId": "RSK-267",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.6.1.2",
+          "name": "Privacy risk assessment",
+          "controls": [
+            {
+              "id": "tgzw584s",
+              "externalId": "RSK-268",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.6.1.3",
+          "name": "Privacy risk treatment",
+          "controls": [
+            {
+              "id": "vdkzch8o",
+              "externalId": "RSK-269",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.6.2",
+          "name": "Privacy objectives and planning to achieve them",
+          "controls": [
+            {
+              "id": "aql294j2",
+              "externalId": "GOV-3084",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.6.3",
+          "name": "Planning of changes",
+          "controls": [
+            {
+              "id": "u893ixhj",
+              "externalId": "CHG-166",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.7",
+      "name": "Support",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.7.1",
+          "name": "Resources",
+          "controls": [
+            {
+              "id": "m4sk5w4z",
+              "externalId": "PRM-107",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.7.2",
+          "name": "Competence",
+          "controls": [
+            {
+              "id": "q13pj7v1",
+              "externalId": "HRS-137",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.7.3",
+          "name": "Awareness",
+          "controls": [
+            {
+              "id": "h04pbybo",
+              "externalId": "SAT-125",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.7.4",
+          "name": "Communication",
+          "controls": [
+            {
+              "id": "wpi6f10g",
+              "externalId": "GOV-3085",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.7.5.1",
+          "name": "General",
+          "controls": [
+            {
+              "id": "kv6461mv",
+              "externalId": "CPL-172",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.7.5.2",
+          "name": "Creating and updating documented information",
+          "controls": [
+            {
+              "id": "jmd3jnip",
+              "externalId": "CPL-173",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.7.5.3",
+          "name": "Control of documented information",
+          "controls": [
+            {
+              "id": "byozfsrw",
+              "externalId": "CPL-174",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.8",
+      "name": "Operation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.8.1",
+          "name": "Operational planning and control",
+          "controls": [
+            {
+              "id": "bt8ykf20",
+              "externalId": "OPS-101",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.8.2",
+          "name": "Privacy risk assessment",
+          "controls": [
+            {
+              "id": "tz8e0c26",
+              "externalId": "RSK-270",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.8.3",
+          "name": "Privacy risk treatment",
+          "controls": [
+            {
+              "id": "v8zbseyk",
+              "externalId": "RSK-271",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.9",
+      "name": "Performance evaluation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.9.1",
+          "name": "Monitoring, measurement, analysis and evaluation",
+          "controls": [
+            {
+              "id": "5lbpekle",
+              "externalId": "MON-446",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.9.2.1",
+          "name": "General",
+          "controls": [
+            {
+              "id": "j3t9pjlt",
+              "externalId": "CPL-176",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.9.2.2",
+          "name": "Internal audit programme",
+          "controls": [
+            {
+              "id": "ounwqaxf",
+              "externalId": "CPL-177",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.9.3.1",
+          "name": "General",
+          "controls": [
+            {
+              "id": "l29f2t14",
+              "externalId": "GOV-3087",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.9.3.2",
+          "name": "Management review inputs",
+          "controls": [
+            {
+              "id": "3dzm5zx5",
+              "externalId": "GOV-3088",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.9.3.3",
+          "name": "Management review results",
+          "controls": [
+            {
+              "id": "702ib7tj",
+              "externalId": "GOV-3089",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.10",
+      "name": "Improvement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.10.1",
+          "name": "Continual improvement",
+          "controls": [
+            {
+              "id": "svpp1mjr",
+              "externalId": "GOV-3090",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "C.10.2",
+          "name": "Nonconformity and corrective action",
+          "controls": [
+            {
+              "id": "hrskb75b",
+              "externalId": "CPL-178",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.1",
+      "name": "Control objectives and controls for PII controllers",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.1.2.2",
+          "name": "Identify and document purpose",
+          "controls": [
+            {
+              "id": "ntr5s89s",
+              "externalId": "PRI-293",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.3",
+          "name": "Identify lawful basis",
+          "controls": [
+            {
+              "id": "n9r67un9",
+              "externalId": "PRI-294",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.4",
+          "name": "Determine when and how consent is to be obtained",
+          "controls": [
+            {
+              "id": "m1ww4pf4",
+              "externalId": "PRI-295",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.5",
+          "name": "Obtain and record consent",
+          "controls": [
+            {
+              "id": "uv3u8qx4",
+              "externalId": "PRI-296",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.6",
+          "name": "Privacy impact assessment",
+          "controls": [
+            {
+              "id": "1vg81stc",
+              "externalId": "RSK-272",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.7",
+          "name": "Contracts with PII processors",
+          "controls": [
+            {
+              "id": "nhqurylz",
+              "externalId": "TPM-207",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.8",
+          "name": "Joint PII controller",
+          "controls": [
+            {
+              "id": "enhd9e5q",
+              "externalId": "TPM-208",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.2.9",
+          "name": "Records related to processing PII",
+          "controls": [
+            {
+              "id": "azekxk9j",
+              "externalId": "CPL-179",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.2",
+          "name": "Determining and fulfilling obligations to PII principals",
+          "controls": [
+            {
+              "id": "ggism2t0",
+              "externalId": "PRI-297",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.3",
+          "name": "Determining information for PII principals",
+          "controls": [
+            {
+              "id": "wx6p57bi",
+              "externalId": "PRI-299",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.4",
+          "name": "Providing information to PII principals",
+          "controls": [
+            {
+              "id": "e32m4m5q",
+              "externalId": "PRI-300",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.5",
+          "name": "Providing mechanism to modify or withdraw consent",
+          "controls": [
+            {
+              "id": "fgsy5sk1",
+              "externalId": "PRI-301",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.6",
+          "name": "Providing mechanism to object to PII processing",
+          "controls": [
+            {
+              "id": "86hprqnq",
+              "externalId": "PRI-302",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.7",
+          "name": "Access, correction or erasure",
+          "controls": [
+            {
+              "id": "ozal1yww",
+              "externalId": "PRI-303",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.8",
+          "name": "PII controllers' obligations to inform third parties",
+          "controls": [
+            {
+              "id": "5o4c87kg",
+              "externalId": "TPM-209",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.9",
+          "name": "Providing copy of PII processed",
+          "controls": [
+            {
+              "id": "l181zgjp",
+              "externalId": "PRI-304",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.10",
+          "name": "Handling requests",
+          "controls": [
+            {
+              "id": "374ce6n1",
+              "externalId": "PRI-305",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.3.11",
+          "name": "Automated decision making",
+          "controls": [
+            {
+              "id": "g0vryxvn",
+              "externalId": "AAT-100",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.2",
+          "name": "Limit collection",
+          "controls": [
+            {
+              "id": "n6p5po8x",
+              "externalId": "DCH-201",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.3",
+          "name": "Limit processing",
+          "controls": [
+            {
+              "id": "mfszqrym",
+              "externalId": "DCH-224",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.4",
+          "name": "Accuracy and quality",
+          "controls": [
+            {
+              "id": "veh4j7bw",
+              "externalId": "DCH-295",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.5",
+          "name": "PII minimization objectives",
+          "controls": [
+            {
+              "id": "d0vged8i",
+              "externalId": "PRI-306",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.6",
+          "name": "PII de-identification and deletion at end of processing",
+          "controls": [
+            {
+              "id": "mpcfsww2",
+              "externalId": "DCH-296",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.7",
+          "name": "Temporary files",
+          "controls": [
+            {
+              "id": "mt8mifhz",
+              "externalId": "DCH-305",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.8",
+          "name": "Retention",
+          "controls": [
+            {
+              "id": "8jxlgvnx",
+              "externalId": "DCH-306",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.9",
+          "name": "Disposal",
+          "controls": [
+            {
+              "id": "3g02gdh5",
+              "externalId": "DCH-307",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.4.10",
+          "name": "PII transmission controls",
+          "controls": [
+            {
+              "id": "7ex9yzy6",
+              "externalId": "NET-383",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.5.2",
+          "name": "Identify basis for PII transfer between jurisdictions",
+          "controls": [
+            {
+              "id": "3uyr6tck",
+              "externalId": "CPL-180",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.5.3",
+          "name": "Countries and international organizations to which PII can be transferred",
+          "controls": [
+            {
+              "id": "qh1j22j2",
+              "externalId": "CPL-181",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.5.4",
+          "name": "Records of transfer of PII",
+          "controls": [
+            {
+              "id": "vyc4f4lk",
+              "externalId": "CPL-182",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        },
+        {
+          "id": "A.1.5.5",
+          "name": "Records of PII disclosures to third parties",
+          "controls": [
+            {
+              "id": "27cvm2v5",
+              "externalId": "CPL-183",
+              "variants": [
+                "PII_CONTROLLER"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "name": "Control objectives and controls for PII processors",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.2.2.2",
+          "name": "Customer agreement",
+          "controls": [
+            {
+              "id": "vawifc72",
+              "externalId": "TPM-210",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.2.3",
+          "name": "Organization's purposes",
+          "controls": [
+            {
+              "id": "xjt0w9hc",
+              "externalId": "PRI-307",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.2.4",
+          "name": "Marketing and advertising use",
+          "controls": [
+            {
+              "id": "58bf1ft5",
+              "externalId": "PRI-308",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.2.5",
+          "name": "Infringing instruction",
+          "controls": [
+            {
+              "id": "3zge7tk2",
+              "externalId": "CPL-184",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.2.6",
+          "name": "Customer obligations",
+          "controls": [
+            {
+              "id": "0f31fkbj",
+              "externalId": "TPM-211",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.2.7",
+          "name": "Records related to processing PII",
+          "controls": [
+            {
+              "id": "ftdg6c5h",
+              "externalId": "CPL-185",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.3.2",
+          "name": "Comply with obligations to PII principals",
+          "controls": [
+            {
+              "id": "kvtesq66",
+              "externalId": "PRI-309",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.4.2",
+          "name": "Temporary files",
+          "controls": [
+            {
+              "id": "h5cq0mub",
+              "externalId": "DCH-308",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.4.3",
+          "name": "Return, transfer or disposal of PII",
+          "controls": [
+            {
+              "id": "tnp436ih",
+              "externalId": "DCH-309",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.4.4",
+          "name": "PII transmission controls",
+          "controls": [
+            {
+              "id": "36cqv2dw",
+              "externalId": "NET-384",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.2",
+          "name": "Basis for PII transfer between jurisdictions",
+          "controls": [
+            {
+              "id": "yki8f7cs",
+              "externalId": "CPL-186",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.3",
+          "name": "Countries and international organizations to which PII can be transferred",
+          "controls": [
+            {
+              "id": "neunzka7",
+              "externalId": "CPL-187",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.4",
+          "name": "Records of PII disclosures to third parties",
+          "controls": [
+            {
+              "id": "svq9g1md",
+              "externalId": "CPL-188",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.5",
+          "name": "Notification of PII disclosure requests",
+          "controls": [
+            {
+              "id": "rodolu9f",
+              "externalId": "CPL-189",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.6",
+          "name": "Legally binding PII disclosures",
+          "controls": [
+            {
+              "id": "9dkdgpr7",
+              "externalId": "CPL-190",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.7",
+          "name": "Disclosure of subcontractors used to process PII",
+          "controls": [
+            {
+              "id": "gdh6ih33",
+              "externalId": "TPM-212",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.8",
+          "name": "Engagement of a subcontractor to process PII",
+          "controls": [
+            {
+              "id": "acvcb60f",
+              "externalId": "TPM-213",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.2.5.9",
+          "name": "Change of subcontractor to process PII",
+          "controls": [
+            {
+              "id": "mip7ai4w",
+              "externalId": "TPM-214",
+              "variants": [
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "name": "Control objectives and controls for PII controllers and PII processors",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.3.3",
+          "name": "Policies for information security",
+          "controls": [
+            {
+              "id": "o26le8yq",
+              "externalId": "GOV-3091",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.4",
+          "name": "Information security roles and responsibilities",
+          "controls": [
+            {
+              "id": "7kddxkss",
+              "externalId": "GOV-3092",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.5",
+          "name": "Classification of information",
+          "controls": [
+            {
+              "id": "gwleb5my",
+              "externalId": "DCH-310",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.6",
+          "name": "Labelling of information",
+          "controls": [
+            {
+              "id": "r3lmyi3i",
+              "externalId": "DCH-311",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.7",
+          "name": "Information transfer",
+          "controls": [
+            {
+              "id": "vqk17nhe",
+              "externalId": "NET-385",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.8",
+          "name": "Identity management",
+          "controls": [
+            {
+              "id": "ihgt8mqu",
+              "externalId": "IAC-719",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.9",
+          "name": "Access rights",
+          "controls": [
+            {
+              "id": "xzqzbw1q",
+              "externalId": "IAC-720",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.10",
+          "name": "Addressing information security within supplier agreements",
+          "controls": [
+            {
+              "id": "qr8jr9nr",
+              "externalId": "TPM-215",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.11",
+          "name": "Information security incident management planning and preparation",
+          "controls": [
+            {
+              "id": "791phgao",
+              "externalId": "IRO-358",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.12",
+          "name": "Response to information security incidents",
+          "controls": [
+            {
+              "id": "9jobgd3c",
+              "externalId": "IRO-359",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.13",
+          "name": "Legal, statutory, regulatory and contractual requirements",
+          "controls": [
+            {
+              "id": "sclw5mtz",
+              "externalId": "CPL-199",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.14",
+          "name": "Protection of records",
+          "controls": [
+            {
+              "id": "7ac9ikfk",
+              "externalId": "CPL-202",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.15",
+          "name": "Independent review of information security",
+          "controls": [
+            {
+              "id": "f0o8la31",
+              "externalId": "CPL-203",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.16",
+          "name": "Compliance with policies, rules and standards for information security",
+          "controls": [
+            {
+              "id": "j5ixukpb",
+              "externalId": "CPL-204",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.17",
+          "name": "Information security awareness, education and training",
+          "controls": [
+            {
+              "id": "w4xgxr60",
+              "externalId": "SAT-126",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.18",
+          "name": "Confidentiality or non-disclosure agreements",
+          "controls": [
+            {
+              "id": "kr3n2tfu",
+              "externalId": "CPL-205",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.19",
+          "name": "Clear desk and clear screen",
+          "controls": [
+            {
+              "id": "0t0nteql",
+              "externalId": "PES-304",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.20",
+          "name": "Storage media",
+          "controls": [
+            {
+              "id": "e9sm3tcz",
+              "externalId": "AST-166",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.21",
+          "name": "Secure disposal or re-use of equipment",
+          "controls": [
+            {
+              "id": "opqp071r",
+              "externalId": "AST-167",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.22",
+          "name": "User endpoint devices",
+          "controls": [
+            {
+              "id": "orpym8kp",
+              "externalId": "END-155",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.23",
+          "name": "Secure authentication",
+          "controls": [
+            {
+              "id": "ya3skrvv",
+              "externalId": "IAC-721",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.24",
+          "name": "Information backup",
+          "controls": [
+            {
+              "id": "e08xc1rn",
+              "externalId": "BCD-257",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.25",
+          "name": "Logging",
+          "controls": [
+            {
+              "id": "j4s6lumr",
+              "externalId": "MON-447",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.26",
+          "name": "Use of cryptography",
+          "controls": [
+            {
+              "id": "rnmyycuo",
+              "externalId": "CRY-278",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.27",
+          "name": "Secure development life cycle",
+          "controls": [
+            {
+              "id": "s3xnbma5",
+              "externalId": "SEA-267",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.28",
+          "name": "Application security requirements",
+          "controls": [
+            {
+              "id": "pwxac8hj",
+              "externalId": "SEA-268",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.29",
+          "name": "Secure system architecture and engineering principles",
+          "controls": [
+            {
+              "id": "vxb5lkig",
+              "externalId": "SEA-269",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.30",
+          "name": "Outsourced development",
+          "controls": [
+            {
+              "id": "ksa5y6vq",
+              "externalId": "TPM-216",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        },
+        {
+          "id": "A.3.31",
+          "name": "Test information",
+          "controls": [
+            {
+              "id": "g2y7qw8x",
+              "externalId": "DCH-312",
+              "variants": [
+                "PII_CONTROLLER",
+                "PII_PROCESSOR"
+              ]
+            }
+          ],
+          "variants": [
+            "PII_CONTROLLER",
+            "PII_PROCESSOR"
+          ]
+        }
+      ]
+    }
+  ]
+}

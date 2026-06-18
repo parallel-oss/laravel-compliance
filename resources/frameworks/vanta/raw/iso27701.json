@@ -1,0 +1,682 @@
+{
+  "principles": [
+    {
+      "id": "5.2",
+      "name": "Context of the Organization (All)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.2.1",
+          "name": "Understanding the organization and its context",
+          "description": "The organization shall determine its role as a PII controller (including as a joint PII controller) and/or a PII processor.\n\nThe organization shall determine external and internal factors that are relevant to its context and that affect its ability to achieve the intended outcome(s) of its PIMS. For example, these can include:\n\n— applicable privacy legislation;\n\n— applicable regulations;\n\n— applicable judicial decisions;\n\n— applicable organizational context, governance, policies and procedures;\n\n— applicable administrative decisions;\n\n— applicable contractual requirements.\n\nWhere the organization acts in both roles (e.g. a PII controller and a PII processor), separate roles shall be determined, each of which is the subject of a separate set of controls.",
+          "context": "NOTE: The role of the organization can be different for each instance of the processing of PII, since it depends\non who determines the purposes and means of the processing.",
+          "controls": [
+            {
+              "id": "yavm5x5i",
+              "externalId": "GOV-63"
+            }
+          ]
+        },
+        {
+          "id": "5.2.2",
+          "name": "Understanding the needs and expectations of interested parties",
+          "description": "The organization shall include among its interested parties (see ISO/IEC 27001:2013, 4.2), those parties having interests or responsibilities associated with the processing of PII, including the PII principals.",
+          "context": "NOTE 1: Other interested parties can include customers (see 4.4), supervisory authorities, other PII controllers, PII processors and their subcontractors.\nNOTE 2: Requirements relevant to the processing of PII can be determined by legal and regulatory requirements, by contractual obligations and by self-imposed organizational objectives. The privacy principles set out in ISO/IEC 29100 provide guidance concerning the processing of PII.\nNOTE 3: As an element to demonstrate compliance to the organization's obligations, some interested parties can expect that the organization be in conformity with specific standards, such as the Management System\nspecified in this document, and/or any relevant set of specifications. These parties can call for independently audited compliance to these standards.",
+          "controls": [
+            {
+              "id": "2vmnf3hn",
+              "externalId": "TPM-35"
+            }
+          ]
+        },
+        {
+          "id": "5.2.3",
+          "name": "Include Privacy by design in our ISMS",
+          "description": "When determining the scope of the PIMS, the organization shall include the processing of PII. \n\nNOTE: The determination of the scope of the PIMS can require revising the scope of the information security management system, because of the extended interpretation of “information security” according to 5.1.\n\n_Vanta Note_: This essentially means you make sure you add the word \"Privacy\" to places in your policy stack where it mentions \"Information Security\" i.e. \"Privacy and Information Security\"",
+          "controls": [
+            {
+              "id": "iv9w1y34",
+              "externalId": "GOV-238"
+            }
+          ]
+        },
+        {
+          "id": "5.2.4",
+          "name": "Information security management system",
+          "description": "The organization shall establish, implement, maintain and continually improve a PIMS in accordance with the requirements of ISO/IEC 27001:2013 Clauses 4 to 10, extended by the requirements in Clause 5.",
+          "controls": [
+            {
+              "id": "ckag5cm9",
+              "externalId": "GOV-64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "name": "Planning (All)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.4.1.2",
+          "name": "Information security risk assessment",
+          "description": "The requirements stated in ISO/IEC 27001:2013, 6.1.2 apply with the following refinements:\n\nISO/IEC 27001:2013, 6.1.2 c) 1) is refined as follows:\n\nThe organization shall apply the information security risk assessment process to identify risks associated with the loss of confidentiality, integrity and availability, within the scope of the PIMS.\n\nThe organization shall apply privacy risk assessment process to identify risks related to the processing of PII, within the scope of the PIMS.\n\nThe organization shall ensure throughout the risk assessment processes that the relationship between information security and PII protection is appropriately managed.\n\nISO/IEC 27001:2013, 6.1.2 d) 1) is refined as follows:\n\nThe organization shall assess the potential consequences for both the organization and PII principals that would result if the risks identified in ISO/IEC 27001:2013, 6.1.2 c) as refined above, were to materialize.",
+          "context": "NOTE: The organization can either apply an integrated information security and privacy risk assessment process or two separate ones for information security and the risks related to the processing of PII.",
+          "controls": [
+            {
+              "id": "zaiqumtm",
+              "externalId": "RSK-19"
+            }
+          ]
+        },
+        {
+          "id": "5.4.1.3",
+          "name": "Information security risk treatment",
+          "description": "The controls determined in ISO/IEC 27001:2013 6.1.3 b) shall be compared with the controls in Annex A and/or Annex B and ISO/IEC 27001:2013, Annex A to verify that no necessary controls have been omitted.\n\nWhen assessing the applicability of control objectives and controls from ISO/IEC 27001:2013 Annex A for the treatment of risks, the control objectives and controls shall be considered in the context of both risks to information security as well as risks related to the processing of PII, including risks to PII principals.\n\nProduce a Statement of Applicability that contains:\n\n— the necessary controls [see ISO/IEC 27001:2013, 6.1.3 b) and c)];\n\n— justification for their inclusion;\n\n— whether the necessary controls are implemented or not; and\n\n— the justification for excluding any of the controls in Annex A and/or Annex B and ISO/IEC 27001:2013, Annex A according to the organization's determination of its role (see 5.2.1).\n\nNot all the control objectives and controls listed in the annexes need to be included in a PIMS implementation. Justification for exclusion can include where the controls are not deemed necessary by the risk assessment, and where they are not required by (or are subject to exceptions under) the legislation and/or regulation including those applicable to the PII principal.",
+          "controls": [
+            {
+              "id": "zg42ugh1",
+              "externalId": "RSK-20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.7.2",
+      "name": "Conditions for Collection and Processing (Controllers)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.7.2.1",
+          "name": "Identity and document purpose",
+          "description": "The organization should identify and document the specific purposes for which the PII will be processed.",
+          "controls": [
+            {
+              "id": "z87gcsvj",
+              "externalId": "PRI-184"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.2",
+          "name": "Identify lawful basis",
+          "description": "The organization should determine, document and comply with the relevant lawful basis for the processing of PII for the identified purposes.",
+          "controls": [
+            {
+              "id": "oa7t228h",
+              "externalId": "PRI-185"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.3",
+          "name": "Determine when and how consent is to be obtained",
+          "description": "The organization should determine and document a process by which it can demonstrate if, when and how consent for the processing of PII was obtained from PII principals.",
+          "controls": [
+            {
+              "id": "omctebnh",
+              "externalId": "PRI-186"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.4",
+          "name": "Obtain and record consent",
+          "description": "The organization should obtain and record consent from PII principals according to the documented processes.",
+          "controls": [
+            {
+              "id": "hcebcq1x",
+              "externalId": "PRI-187"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.5",
+          "name": "Privacy impact assessment",
+          "description": "The organization should assess the need for, and implement where appropriate, a privacy impact assessment whenever new processing of PII or changes to existing processing of PII is planned.",
+          "controls": [
+            {
+              "id": "kjixpi7n",
+              "externalId": "RSK-21"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.6",
+          "name": "Contracts with PII processors",
+          "description": "The organization should have a written contract with any PII processor that it uses, and should ensure that their contracts with PII processors address the implementation of the appropriate controls in Annex B.",
+          "controls": [
+            {
+              "id": "5lbu9msz",
+              "externalId": "PRI-188"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.7",
+          "name": "Joint PII controller",
+          "description": "The organization should determine respective roles and responsibilities for the processing of PII (including PII protection and security requirements) with any joint PII controller.",
+          "controls": [
+            {
+              "id": "8btr0ob8",
+              "externalId": "PRI-189"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.8",
+          "name": "Records related to processing PII",
+          "description": "The organization should determine and securely maintain the necessary records in support of its obligations for the processing of PII.",
+          "controls": [
+            {
+              "id": "49czer8n",
+              "externalId": "PRI-190"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.7.3",
+      "name": "Obligations to PII Principals (Controllers)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.7.3.1",
+          "name": "Determining and fulfilling obligations to PII principals",
+          "description": "The organization should determine and document their legal, regulatory and business obligations to PII principals related to the processing of their PII and provide the means to meet these obligations.",
+          "controls": [
+            {
+              "id": "ipsixmjh",
+              "externalId": "PRI-191"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.2",
+          "name": "Determining information for PII principals",
+          "description": "The organization should determine and document the information to be provided to PII principals regarding the processing of their PII and the timing of such a provision.",
+          "controls": [
+            {
+              "id": "t08poc5w",
+              "externalId": "PRI-192"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.3",
+          "name": "Providing information to PII principals",
+          "description": "The organization should provide PII principals with clear and easily accessible information identifying the PII controller and describing the processing of their PII.",
+          "controls": [
+            {
+              "id": "yzojje4k",
+              "externalId": "PRI-193"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.4",
+          "name": "Providing mechanism to modify or withdraw consent",
+          "description": "The organization should provide a mechanism for PII principals to modify or withdraw their consent.",
+          "controls": [
+            {
+              "id": "ypuas5vs",
+              "externalId": "PRI-194"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.5",
+          "name": "Providing mechanism to object to PII processing",
+          "description": "The organization should provide a mechanism for PII principals to object to the processing of their PII.",
+          "controls": [
+            {
+              "id": "7i9w0jnl",
+              "externalId": "PRI-195"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.6",
+          "name": "Access, correction and/or erasure",
+          "description": "The organization should implement policies, procedures and/or mechanisms to meet their obligations to PII principals to access, correct and/or erase their PII.",
+          "controls": [
+            {
+              "id": "31hmutio",
+              "externalId": "DCH-63"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.7",
+          "name": "PII controllers' obligations to inform third parties",
+          "description": "The organization should inform third parties with whom PII has been shared of any modification, withdrawal or objections pertaining to the shared PII, and implement appropriate policies, procedures and/or mechanisms to do so.",
+          "controls": [
+            {
+              "id": "o0klayda",
+              "externalId": "DCH-64"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.8",
+          "name": "Providing copy of PII processed",
+          "description": "The organization should be able to provide a copy of the PII that is processed when requested by the PII principal.",
+          "controls": [
+            {
+              "id": "7nce3hqd",
+              "externalId": "PRI-196"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.9",
+          "name": "Handling requests",
+          "description": "The organization should define and document policies and procedures for handling and responding to legitimate requests from PII principals.",
+          "controls": [
+            {
+              "id": "w9vsut1c",
+              "externalId": "PRI-197"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.10",
+          "name": "Automated decision making",
+          "description": "The organization should identify and address obligations, including legal obligations, to the PII principals resulting from decisions made by the organization which are related to the PII principal based solely on automated processing of PII.",
+          "controls": [
+            {
+              "id": "ya42scjz",
+              "externalId": "DCH-65"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.7.4",
+      "name": "Privacy by Design and Privacy by Default (Controllers)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.7.4.1",
+          "name": "Limit collection",
+          "description": "The organization should limit the collection of PII to the minimum that is relevant, proportional and necessary for the identified purposes.",
+          "controls": [
+            {
+              "id": "737tqyk2",
+              "externalId": "DCH-66"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.2",
+          "name": "Limit processing",
+          "description": "The organization should limit the processing of PII to that which is adequate, relevant and necessary for the identified purposes.",
+          "controls": [
+            {
+              "id": "ge28ifka",
+              "externalId": "DCH-67"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.3",
+          "name": "Accuracy and quality",
+          "description": "The organization should ensure and document that PII is as accurate, complete and up-to-date as is necessary for the purposes for which it is processed, throughout the life-cycle of the PII.",
+          "controls": [
+            {
+              "id": "uhkyihem",
+              "externalId": "PRI-198"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.4",
+          "name": "PII minimization objectives",
+          "description": "The organization should define and document data minimization objectives and what mechanisms (such as de-identification) are used to meet those objectives.",
+          "controls": [
+            {
+              "id": "bic5uycb",
+              "externalId": "DCH-68"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.5",
+          "name": "PII de-identification and deletion at the end of processing",
+          "description": "The organization should either delete PII or render it in a form which does not permit identification or re-identification of PII principals, as soon as the original PII is no longer necessary for the identified purpose(s).",
+          "controls": [
+            {
+              "id": "yd1y2wjs",
+              "externalId": "DCH-69"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.6",
+          "name": "Temporary files",
+          "description": "The organization should ensure that temporary files created as a result of the processing of PII are disposed of (e.g. erased or destroyed) following documented procedures within a specified, documented period.",
+          "controls": [
+            {
+              "id": "fcgnh8op",
+              "externalId": "DCH-70"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.7",
+          "name": "Retention",
+          "description": "The organization should not retain PII for longer than is necessary for the purposes for which the PII is processed.",
+          "controls": [
+            {
+              "id": "45wdj2b5",
+              "externalId": "DCH-71"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.8",
+          "name": "Disposal",
+          "description": "The organization should have documented policies, procedures and/or mechanisms for the disposal of PII.",
+          "controls": [
+            {
+              "id": "2tsudku4",
+              "externalId": "DCH-72"
+            }
+          ]
+        },
+        {
+          "id": "A.7.4.9",
+          "name": "PII transmission controls",
+          "description": "The organization should subject PII transmitted (e.g. sent to another organization) over a data- transmission network to appropriate controls designed to ensure that the data reaches its intended destination.",
+          "controls": [
+            {
+              "id": "x17s773n",
+              "externalId": "DCH-73"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.7.5",
+      "name": "PII Sharing, Transfer and Disclosure (Controllers)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.7.5.1",
+          "name": "Identify basis for PII transfer between jurisdictions",
+          "description": "The organization should identify and document the relevant basis for transfers of PII between jurisdictions.",
+          "controls": [
+            {
+              "id": "eih6h90t",
+              "externalId": "DCH-74"
+            }
+          ]
+        },
+        {
+          "id": "A.7.5.2",
+          "name": "Countries and international organizations to which PII can be transferred",
+          "description": "The organization should specify and document the countries and international organizations to which PII can possibly be transferred.",
+          "controls": [
+            {
+              "id": "m9fg7ii7",
+              "externalId": "DCH-75"
+            }
+          ]
+        },
+        {
+          "id": "A.7.5.3",
+          "name": "Records of transfer of PII",
+          "description": "The organization should record transfers of PII to or from third parties and ensure cooperation with those parties to support future requests related to obligations to the PII principals.",
+          "controls": [
+            {
+              "id": "36vvz7kr",
+              "externalId": "PRI-199"
+            }
+          ]
+        },
+        {
+          "id": "A.7.5.4",
+          "name": "Records of PII disclosure to third parties",
+          "description": "The organization should record disclosures of PII to third parties, including what PII has been disclosed, to whom and at what time.",
+          "controls": [
+            {
+              "id": "cc3b20w5",
+              "externalId": "PRI-200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B.8.2",
+      "name": "Conditions for Collection and Processing (Processors)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "B.8.2.1",
+          "name": "Customer agreement",
+          "description": "The organization should ensure, where relevant, that the contract to process PII addresses the organization’s role in providing assistance with the customer’s obligations (taking into account the nature of processing and the information available to the organization).",
+          "controls": [
+            {
+              "id": "m5tp27qr",
+              "externalId": "PRI-201"
+            }
+          ]
+        },
+        {
+          "id": "B.8.2.2",
+          "name": "Organization’s purposes",
+          "description": "The organization should ensure that PII processed on behalf of a customer are only processed for the purposes expressed in the documented instructions of the customer.",
+          "controls": [
+            {
+              "id": "2e1r18ot",
+              "externalId": "PRI-202"
+            }
+          ]
+        },
+        {
+          "id": "B.8.2.3",
+          "name": "Marketing and advertising use",
+          "description": "The organization should not use PII processed under a contract for the purposes of marketing and advertising without establishing that prior consent was obtained from the appropriate PII principal. The organization should not make providing such consent a condition for receiving the service.",
+          "controls": [
+            {
+              "id": "l6wdnb7t",
+              "externalId": "PRI-203"
+            }
+          ]
+        },
+        {
+          "id": "B.8.2.4",
+          "name": "Infringing instruction",
+          "description": "The organization should inform the customer if, in its opinion, a processing instruction infringes applicable legislation and/or regulation.",
+          "controls": [
+            {
+              "id": "qcgearzo",
+              "externalId": "PRI-204"
+            }
+          ]
+        },
+        {
+          "id": "B.8.2.5",
+          "name": "Customer obligations",
+          "description": "The organization should provide the customer with the appropriate information such that the customer can demonstrate compliance with their obligations.",
+          "controls": [
+            {
+              "id": "mjjzxi2z",
+              "externalId": "PRI-205"
+            }
+          ]
+        },
+        {
+          "id": "B.8.2.6",
+          "name": "Records related to processing PII",
+          "description": "The organization should determine and maintain the necessary records in support of demonstrating compliance with its obligations (as specified in the applicable contract) for the processing of PII carried out on behalf of a customer.",
+          "controls": [
+            {
+              "id": "75jqpc1c",
+              "externalId": "PRI-206"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B.8.3",
+      "name": "Obligations to PII Principals (Processors)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "B.8.3.1",
+          "name": "Obligations to PII principals",
+          "description": "The organization should provide the customer with the means to comply with its obligations related to PII principals.",
+          "controls": [
+            {
+              "id": "k5v6jmby",
+              "externalId": "PRI-207"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B.8.4",
+      "name": "Privacy by Design and Privacy by Default (Processors)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "B.8.4.1",
+          "name": "Temporary files",
+          "description": "The organization should ensure that temporary files created as a result of the processing of PII are disposed of (e.g. erased or destroyed) following documented procedures within a specified, documented period.",
+          "controls": [
+            {
+              "id": "2xls1y8d",
+              "externalId": "DCH-76"
+            }
+          ]
+        },
+        {
+          "id": "B.8.4.2",
+          "name": "Return, transfer or disposal of PII",
+          "description": "The organization should provide the ability to return, transfer and/or disposal of PII in a secure manner. It should also make its policy available to the customer.",
+          "controls": [
+            {
+              "id": "zfpxgs8e",
+              "externalId": "PRI-208"
+            }
+          ]
+        },
+        {
+          "id": "B.8.4.3",
+          "name": "PII transmission controls",
+          "description": "The organization should subject PII transmitted over a data-transmission network to appropriate controls designed to ensure that the data reaches its intended destination.",
+          "controls": [
+            {
+              "id": "wrp884ym",
+              "externalId": "NET-56"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B.8.5",
+      "name": "PII Sharing, Transfer and Disclosure (Processors)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "B.8.5.1",
+          "name": "Basis for PII transfer between jurisdictions",
+          "description": "The organization should inform the customer in a timely manner of the basis for PII transfers between jurisdictions and of any intended changes in this regard, so that the customer has the ability to object to such changes or to terminate the contract.",
+          "controls": [
+            {
+              "id": "208j2wqu",
+              "externalId": "PRI-209"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.2",
+          "name": "Countries and international organizations to which PII can be transferred",
+          "description": "The organization should specify and document the countries and international organizations to which PII can possibly be transferred.",
+          "controls": [
+            {
+              "id": "0h1n3wi4",
+              "externalId": "PRI-210"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.3",
+          "name": "Records of transfer of PII",
+          "description": "The organization should record disclosures of PII to third parties, including what PII has been disclosed, to whom and when.",
+          "controls": [
+            {
+              "id": "wi8j9who",
+              "externalId": "PRI-211"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.4",
+          "name": "Notification of PII disclosure requests",
+          "description": "The organization should notify the customer of any legally binding requests for disclosure of PII.",
+          "controls": [
+            {
+              "id": "al9vv36i",
+              "externalId": "PRI-212"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.5",
+          "name": "Legally binding PII disclosures",
+          "description": "The organization should reject any requests for PII disclosures that are not legally binding, consult the corresponding customer before making any PII disclosures and accepting any contractually agreed requests for PII disclosures that are authorized by the corresponding customer.",
+          "controls": [
+            {
+              "id": "b9abtq7i",
+              "externalId": "PRI-213"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.6",
+          "name": "Disclosure of subcontractors used to process PII",
+          "description": "The organization should disclose any use of subcontractors to process PII to the customer before use.",
+          "controls": [
+            {
+              "id": "f42wwgwm",
+              "externalId": "PRI-214"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.7",
+          "name": "Engagement of a subcontractor to process PII",
+          "description": "The organization should only engage a subcontractor to process PII according to the customer contract.",
+          "controls": [
+            {
+              "id": "63mj68jr",
+              "externalId": "PRI-215"
+            }
+          ]
+        },
+        {
+          "id": "B.8.5.8",
+          "name": "Change of subcontractor to process PII",
+          "description": "The organization should, in the case of having general written authorization, inform the customer of any intended changes concerning the addition or replacement of subcontractors to process PII, thereby giving the customer the opportunity to object to such changes.",
+          "controls": [
+            {
+              "id": "o2b2fv17",
+              "externalId": "PRI-216"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

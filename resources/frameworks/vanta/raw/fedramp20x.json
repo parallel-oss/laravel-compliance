@@ -1,0 +1,2394 @@
+{
+  "principles": [
+    {
+      "id": "FR20X KSI-CED",
+      "name": "Cybersecurity Education",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-1",
+          "name": "KSI-CED",
+          "description": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.",
+          "controls": [
+            {
+              "id": "6s4kzaga",
+              "externalId": "SAT-117",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "qlx1eiqw",
+              "externalId": "SAT-118",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "co5q1aly",
+              "externalId": "SAT-119",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-CMT",
+      "name": "Change Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-2",
+          "name": "KSI-CMT",
+          "description": "A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.",
+          "controls": [
+            {
+              "id": "s4s0cp0h",
+              "externalId": "CHG-117",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "rrxn3u7j",
+              "externalId": "CHG-118",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ypv9dj50",
+              "externalId": "CHG-119",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "v4drn6xq",
+              "externalId": "CHG-120",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "7liace23",
+              "externalId": "CHG-121",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-CNA",
+      "name": "Cloud Native Architecture",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-3",
+          "name": "KSI-CNA",
+          "description": "A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
+          "controls": [
+            {
+              "id": "s2kir0ry",
+              "externalId": "CLD-100",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "cf7heh8c",
+              "externalId": "CLD-101",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "d967wmde",
+              "externalId": "CLD-102",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "yeoob3zm",
+              "externalId": "CLD-103",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "xp1tb3w9",
+              "externalId": "CLD-104",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "jznnsxfu",
+              "externalId": "CLD-105",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "09oe8kxn",
+              "externalId": "CLD-106",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "y0jz29nh",
+              "externalId": "CLD-107",
+              "variants": [
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-IAM",
+      "name": "Identity and Access Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-4",
+          "name": "KSI-IAM",
+          "description": "A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.",
+          "controls": [
+            {
+              "id": "uzf1tnls",
+              "externalId": "IAC-702",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "eatmidwd",
+              "externalId": "IAC-703",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "w3757qxh",
+              "externalId": "IAC-704",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "posnstsm",
+              "externalId": "IAC-705",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "tbapyy88",
+              "externalId": "IAC-706",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "nzmf94du",
+              "externalId": "IAC-707",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "xl7fn36q",
+              "externalId": "IAC-708",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-INR",
+      "name": "Incident Response",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-5",
+          "name": "KSI-INR",
+          "description": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+          "controls": [
+            {
+              "id": "kw3phndy",
+              "externalId": "IRO-339",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "wtr0irk3",
+              "externalId": "IRO-340",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "sea50qv7",
+              "externalId": "IRO-341",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-MLA",
+      "name": "Monitoring, Logging, and Auditing",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-6",
+          "name": "KSI-MLA",
+          "description": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+          "controls": [
+            {
+              "id": "wxjaxwfu",
+              "externalId": "MON-398",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "1c8qton0",
+              "externalId": "MON-399",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "fr6oxf93",
+              "externalId": "VPM-119",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "i93y4xes",
+              "externalId": "SEA-265",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ua9jkic8",
+              "externalId": "MON-400",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "r7gg18e8",
+              "externalId": "IAC-709",
+              "variants": [
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-PIY",
+      "name": "Policy and Inventory",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-7",
+          "name": "KSI-PIY",
+          "description": "A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.",
+          "controls": [
+            {
+              "id": "uyfami94",
+              "externalId": "AST-135",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "x336bi5t",
+              "externalId": "AST-136",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "33pc85md",
+              "externalId": "THR-100",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "taz39n6i",
+              "externalId": "GOV-1557",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "6fkm1xqj",
+              "externalId": "PRM-100",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "5cu8t1q5",
+              "externalId": "PRM-101",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "51dkrl70",
+              "externalId": "RSK-261",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-RPL",
+      "name": "Recovery Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-8",
+          "name": "KSI-RPL",
+          "description": "A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+          "controls": [
+            {
+              "id": "fbsvrzap",
+              "externalId": "BCD-230",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "1p0qyalu",
+              "externalId": "BCD-231",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "r9m3kgf2",
+              "externalId": "BCD-232",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "66x264pp",
+              "externalId": "BCD-233",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-SVC",
+      "name": "Service Configuration",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-9",
+          "name": "KSI-SVC",
+          "description": "A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.",
+          "controls": [
+            {
+              "id": "zwc9gpp6",
+              "externalId": "MON-401",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "3ra1ans6",
+              "externalId": "CRY-240",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "pj1tcxu7",
+              "externalId": "CRY-271",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "9dpaek4h",
+              "externalId": "CFG-248",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "riy4vs62",
+              "externalId": "CRY-272",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "8elzu55b",
+              "externalId": "CRY-273",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "e9d7t695",
+              "externalId": "VPM-149",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "dgvdr87b",
+              "externalId": "CHG-122",
+              "variants": [
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "buklda7a",
+              "externalId": "OPS-100",
+              "variants": [
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "lvpokfbv",
+              "externalId": "GOV-1586",
+              "variants": [
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FR20X KSI-TPR",
+      "name": "Third Party Information Resources",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FR20X KSI-10",
+          "name": "KSI-TPR",
+          "description": "A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.",
+          "controls": [
+            {
+              "id": "ig86nhau",
+              "externalId": "TPM-201",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "cc8taqp0",
+              "externalId": "TPM-202",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "dtbrwnlv",
+              "externalId": "TPM-203",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-ADS",
+      "name": "Authorization Data Sharing Standard",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-ADS",
+          "name": "FRR-ADS",
+          "description": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+          "controls": [
+            {
+              "id": "8tiyzc4u",
+              "externalId": "CPL-128",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ojjt0acd",
+              "externalId": "CPL-129",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "662aprfo",
+              "externalId": "CPL-130",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "l0lytgwi",
+              "externalId": "CPL-131",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "h717qole",
+              "externalId": "CPL-132",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "khg65aze",
+              "externalId": "CPL-133",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "i24x2pd0",
+              "externalId": "CPL-134",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "9ziubeqg",
+              "externalId": "CPL-135",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "lfjtwupe",
+              "externalId": "CPL-136",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "hdo1c5do",
+              "externalId": "CPL-137",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-ADS-AC",
+          "name": "FRR-ADS-AC",
+          "description": "These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible trust centers for storing and sharing authorization data.",
+          "controls": [
+            {
+              "id": "jy8pctyo",
+              "externalId": "CPL-138",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "y3jpa7gi",
+              "externalId": "CPL-139",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-ADS-EX",
+          "name": "FRR-ADS-EX",
+          "description": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+          "controls": [
+            {
+              "id": "jcg22kw1",
+              "externalId": "CPL-147",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-ADS-TC",
+          "name": "FRR-ADS-TC",
+          "description": "These requirements apply to FedRAMP-compatible trust centers used to store and share authorization data.",
+          "controls": [
+            {
+              "id": "qckfpzh6",
+              "externalId": "CPL-140",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "6rgqu4ai",
+              "externalId": "CPL-141",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "l2r0kh88",
+              "externalId": "CPL-142",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "3j79kw13",
+              "externalId": "CPL-143",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "dmt1vyx8",
+              "externalId": "CPL-144",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "xkcw855h",
+              "externalId": "CPL-145",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "73mt2fcv",
+              "externalId": "CPL-146",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-CCM",
+      "name": "Collaborative Continuous Monitoring Standard",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-CCM",
+          "name": "FRR-CCM",
+          "description": "This section provides guidance on maintaining clear, versioned, and machine-readable secure configuration information for administrative and privileged accounts, including their settings, security impacts, and comparison capabilities.",
+          "controls": [
+            {
+              "id": "s4vosdrb",
+              "externalId": "MON-281",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "zsa2qy02",
+              "externalId": "MON-282",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "6yfg7cyp",
+              "externalId": "MON-298",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "43qncbfo",
+              "externalId": "MON-376",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "c4gf07eo",
+              "externalId": "MON-377",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "t6p01yu4",
+              "externalId": "MON-378",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "wdebybbz",
+              "externalId": "MON-379",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FFR-CCM-QR",
+          "name": "FFR-CCM-QR",
+          "description": "This section provides guidance on delivering regular, secure, and transparent Ongoing Authorization Reports that summarize key updates and enable agency feedback.",
+          "controls": [
+            {
+              "id": "gjuv89e8",
+              "externalId": "MON-380",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "3jfr09gt",
+              "externalId": "MON-381",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "hj67g2g2",
+              "externalId": "MON-382",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ir49jh12",
+              "externalId": "MON-383",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "jzzbef7j",
+              "externalId": "MON-384",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "4a7m77b4",
+              "externalId": "MON-385",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "gizg1axl",
+              "externalId": "MON-386",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "tng0qxbs",
+              "externalId": "MON-387",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "cb4ytjjn",
+              "externalId": "MON-388",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ypx8ky1b",
+              "externalId": "MON-389",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "22rqqmph",
+              "externalId": "MON-390",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FFR-CCM-AG",
+          "name": "FFR-CCM-AG",
+          "description": "This section provides guidance on hosting secure, transparent Quarterly Reviews to discuss Ongoing Authorization Reports, share relevant updates with agencies, and manage participation and information sharing responsibly.",
+          "controls": [
+            {
+              "id": "tvc2aw43",
+              "externalId": "MON-391",
+              "variants": [
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "31xxizx2",
+              "externalId": "MON-392",
+              "variants": [
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "anc8v8qx",
+              "externalId": "MON-393",
+              "variants": [
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "xtw8wl22",
+              "externalId": "MON-394",
+              "variants": [
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "7m8ph06r",
+              "externalId": "MON-395",
+              "variants": [
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "wccgv2xf",
+              "externalId": "MON-396",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "cr5s4l2z",
+              "externalId": "MON-397",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-MAS",
+      "name": "Minimum Assessment Standard",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-MAS",
+          "name": "FRR-MAS",
+          "description": "These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.",
+          "controls": [
+            {
+              "id": "w3yccb4d",
+              "externalId": "MON-402",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ewwfhm5y",
+              "externalId": "MON-403",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "xnyhfak4",
+              "externalId": "MON-404",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "16vwd4hw",
+              "externalId": "MON-405",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "0krru9n3",
+              "externalId": "MON-406",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-MAS-AY",
+          "name": "FRR-MAS-AY",
+          "description": "These rules provide general guidance on the application of this standard.",
+          "controls": [
+            {
+              "id": "8wcuge71",
+              "externalId": "MON-408",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ex6r8txx",
+              "externalId": "MON-409",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-MAS-EX",
+          "name": "FRR-MAS-EX",
+          "description": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+          "controls": [
+            {
+              "id": "kxf8yogp",
+              "externalId": "MON-407",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-PVA",
+      "name": "Persistent Validation and Assessment Standard",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-PVA",
+          "name": "FRR-PVA",
+          "description": "This section provides guidance on how agencies review, assess, and act on Ongoing Authorization Reports and related data to manage risk, coordinate with providers and FedRAMP, and ensure compliance with federal policy.",
+          "controls": [
+            {
+              "id": "277idzr6",
+              "externalId": "GOV-241",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "0rgzcq8j",
+              "externalId": "GOV-242",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "inenkcro",
+              "externalId": "GOV-290",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ctabizjg",
+              "externalId": "GOV-302",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "7zcxc1kt",
+              "externalId": "GOV-373",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-PVA-TF-LO",
+          "name": "FRR-PVA-TF-LO",
+          "description": "This section provides guidance on establishing and maintaining persistent validation processes that continuously verify Key Security Indicators, detect vulnerabilities, and document validation goals, methods, and results.",
+          "controls": [
+            {
+              "id": "z5140t7y",
+              "externalId": "GOV-424",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "g2ouv3vq",
+              "externalId": "GOV-487",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "o9mbz26f",
+              "externalId": "GOV-499",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-PVA-TF-MO",
+          "name": "FRR-PVA-TF-MO",
+          "description": "This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for completing validation of Key Security Indicators and conducting Persistent FedRAMP Assessments; these timeframes represent baseline thresholds that secure providers should consistently strive to exceed.",
+          "controls": [
+            {
+              "id": "ziivumqf",
+              "externalId": "GOV-637",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "06jpreva",
+              "externalId": "GOV-704",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "70x4bsqz",
+              "externalId": "GOV-858",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-PVA-PA",
+          "name": "FRR-PVA-PA",
+          "description": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for completing validation of Key Security Indicators and conducting Persistent FedRAMP Assessments; these timeframes represent baseline thresholds that secure providers should consistently strive to exceed.",
+          "controls": [
+            {
+              "id": "vptj2i37",
+              "externalId": "GOV-1382",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "s2191h78",
+              "externalId": "GOV-1527",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-RSC",
+      "name": "Recommended Secure Configuration Standard",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-RSC",
+          "name": "FRR-RSC",
+          "description": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+          "controls": [
+            {
+              "id": "pdpi9d5p",
+              "externalId": "CFG-238",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "pkpy8p0o",
+              "externalId": "CFG-239",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "dhx1ons9",
+              "externalId": "CFG-240",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ugpwevla",
+              "externalId": "CFG-241",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "zcpc1cfb",
+              "externalId": "CFG-242",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "mihu15cj",
+              "externalId": "CFG-243",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "xv27rktm",
+              "externalId": "CFG-244",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "5kid8glu",
+              "externalId": "CFG-245",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "n89uaghx",
+              "externalId": "CFG-246",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "oll77gj5",
+              "externalId": "CFG-247",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-SCN",
+      "name": "Significant Change Notification Requirements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-SCN",
+          "name": "FRR-SCN",
+          "description": "These requirements apply ALWAYS to ALL significant changes based on current Effective Date(s) and Overall Applicability",
+          "controls": [
+            {
+              "id": "gjveco4w",
+              "externalId": "CHG-123",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "e2tdrvvn",
+              "externalId": "CHG-124",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ziqu198u",
+              "externalId": "CHG-125",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "n3wsft8v",
+              "externalId": "CHG-126",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "2r3zzj05",
+              "externalId": "CHG-127",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "nwsrrhrz",
+              "externalId": "CHG-128",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "0bzogk0z",
+              "externalId": "CHG-129",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "dmw2jfa2",
+              "externalId": "CHG-130",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "5ltb4hua",
+              "externalId": "CHG-131",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "m6ets5mj",
+              "externalId": "CHG-132",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-SCN-AD",
+          "name": "FRR-SCN",
+          "description": "These requirements apply ALWAYS to ALL significant changes based on current Effective Date(s) and Overall Applicability",
+          "controls": [
+            {
+              "id": "wps27t45",
+              "externalId": "CHG-136",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-SCN-EX",
+          "name": "FRR-SCN-EX",
+          "description": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+          "controls": [
+            {
+              "id": "bzgld9ih",
+              "externalId": "CHG-133",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "7qgwqeo6",
+              "externalId": "CHG-134",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-SCN-IM",
+          "name": "FRR-SCN-IM",
+          "description": "These requirements apply ONLY to significant changes of type impact categorization.",
+          "controls": [
+            {
+              "id": "mirba74r",
+              "externalId": "CHG-144",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-SCN-RR",
+          "name": "FRR-SCN-RR",
+          "description": "These requirements apply ONLY to significant changes of type routine recurring.",
+          "controls": [
+            {
+              "id": "lyxpxsb7",
+              "externalId": "CHG-135",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-SCN-TF",
+          "name": "FRR-SCN-TF",
+          "description": "These requirements apply ONLY to significant changes of type transformative.",
+          "controls": [
+            {
+              "id": "6q1bvk7v",
+              "externalId": "CHG-137",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "vl2loylh",
+              "externalId": "CHG-138",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "owlneg5b",
+              "externalId": "CHG-139",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ra4cop9o",
+              "externalId": "CHG-140",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "737hgbue",
+              "externalId": "CHG-141",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "c21wg4oj",
+              "externalId": "CHG-142",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "bfi35s7f",
+              "externalId": "CHG-143",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STD-FRR-VDR",
+      "name": "Vulnerability Detection and Response Standard",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FRR-VDR",
+          "name": "FRR-VDR",
+          "description": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+          "controls": [
+            {
+              "id": "c0uy10bf",
+              "externalId": "VPM-150",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "7z089tsk",
+              "externalId": "VPM-151",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "kjyo5a0b",
+              "externalId": "VPM-152",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "jy2lileo",
+              "externalId": "VPM-153",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "3ul4n6ay",
+              "externalId": "VPM-154",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "nnrqr3dk",
+              "externalId": "VPM-155",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "d991jelz",
+              "externalId": "VPM-156",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ad45hfhi",
+              "externalId": "VPM-157",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "19yu7dx0",
+              "externalId": "VPM-201",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "n9itp5ia",
+              "externalId": "VPM-202",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "kqt23dxb",
+              "externalId": "VPM-223",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-AG",
+          "name": "FRR-VDR-AG",
+          "description": "The section provides guidance for agencies that apply under 44 USC § 3613 (e) which states that the assessment and materials within a FedRAMP authorization package “shall be presumed adequate for use in an agency authorization to operate cloud computing products and services.”",
+          "controls": [
+            {
+              "id": "0vph6kdj",
+              "externalId": "VPM-257",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "p14gl7vu",
+              "externalId": "VPM-258",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "3wqfepfm",
+              "externalId": "VPM-259",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "c943c2kp",
+              "externalId": "VPM-260",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-AY",
+          "name": "FRR-VDR-AY",
+          "description": "This section provides guidance on the application of this standard, including recommendations for implementing high quality vulnerability detection and response programs; providers who follow some or all of these will be better positioned to meet future FedRAMP authorization requirements.",
+          "controls": [
+            {
+              "id": "yb5csxll",
+              "externalId": "VPM-224",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "3n8un4vm",
+              "externalId": "VPM-225",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "d9ttv8ez",
+              "externalId": "VPM-226",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "0rhv62jm",
+              "externalId": "VPM-227",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "nwqgbnrd",
+              "externalId": "VPM-228",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "kwpbqr5o",
+              "externalId": "VPM-229",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-EX",
+          "name": "FRR-VDR-EX",
+          "description": "These exceptions MAY override some or all of the FedRAMP requirements and recommendations in this standard.",
+          "controls": [
+            {
+              "id": "gohka5jz",
+              "externalId": "VPM-236",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "hx0a3cjs",
+              "externalId": "VPM-237",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "uouh7m1t",
+              "externalId": "VPM-238",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-RP",
+          "name": "FRR-VDR-RP",
+          "description": "This section identifies FedRAMP-specific reporting requirements and recommendations for vulnerabilities.",
+          "controls": [
+            {
+              "id": "rl1ohegu",
+              "externalId": "VPM-230",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "04a2t436",
+              "externalId": "VPM-231",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "92inqbju",
+              "externalId": "VPM-232",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "6fypt2yj",
+              "externalId": "VPM-233",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "mcuc1igh",
+              "externalId": "VPM-234",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "dzz9esm4",
+              "externalId": "VPM-235",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-TF",
+          "name": "FRR-VDR-TF",
+          "description": "This section provides guidance on timeframes that apply to all impact levels of FedRAMP authorization for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+          "controls": [
+            {
+              "id": "6gfxtwu8",
+              "externalId": "VPM-239",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "kht2r2zk",
+              "externalId": "VPM-240",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "59fvmetm",
+              "externalId": "VPM-241",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-TF-LO",
+          "name": "FRR-VDR-TF-LO",
+          "description": "This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+          "controls": [
+            {
+              "id": "bv8y5d7d",
+              "externalId": "VPM-242",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "uwcoycsy",
+              "externalId": "VPM-243",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "2nxdksqb",
+              "externalId": "VPM-244",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "zxj6ngdk",
+              "externalId": "VPM-245",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "k15h9rv9",
+              "externalId": "VPM-246",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "ag21pqda",
+              "externalId": "VPM-247",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "yd39wtds",
+              "externalId": "VPM-248",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        },
+        {
+          "id": "FRR-VDR-TF-MO",
+          "name": "FRR-VDR-TF-MO",
+          "description": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+          "controls": [
+            {
+              "id": "4u3djtcr",
+              "externalId": "VPM-249",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "1g3jj8fh",
+              "externalId": "VPM-250",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "st5zw963",
+              "externalId": "VPM-251",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "5u0cbyru",
+              "externalId": "VPM-252",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "c160lh3r",
+              "externalId": "VPM-253",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "btlbalrn",
+              "externalId": "VPM-254",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "tzyvrcww",
+              "externalId": "VPM-255",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            },
+            {
+              "id": "4e1q0vgg",
+              "externalId": "VPM-256",
+              "variants": [
+                "FR20X_LOW",
+                "FR20X_MOD",
+                "FR20X_AGENCY"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW",
+            "FR20X_MOD",
+            "FR20X_AGENCY"
+          ]
+        }
+      ]
+    }
+  ]
+}

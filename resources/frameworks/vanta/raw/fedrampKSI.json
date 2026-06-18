@@ -1,0 +1,348 @@
+{
+  "principles": [
+    {
+      "id": "KSI-CED",
+      "name": "Cybersecurity Education",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-8",
+          "name": "KSI-CED",
+          "description": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.",
+          "controls": [
+            {
+              "id": "x5nhg8s0",
+              "externalId": "IAC-651"
+            },
+            {
+              "id": "q7gr9v1u",
+              "externalId": "SAT-116"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-CMT",
+      "name": "Change Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-5",
+          "name": "KSI-CMT",
+          "description": "A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.",
+          "controls": [
+            {
+              "id": "mic3voxb",
+              "externalId": "CHG-108"
+            },
+            {
+              "id": "g374ie07",
+              "externalId": "CHG-110"
+            },
+            {
+              "id": "iugeqzbi",
+              "externalId": "CHG-111"
+            },
+            {
+              "id": "lr3cwb5z",
+              "externalId": "CHG-112"
+            },
+            {
+              "id": "56ikg87p",
+              "externalId": "CHG-114"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-CNA",
+      "name": "Cloud Native Architecture",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-1",
+          "name": "KSI-CNA",
+          "description": "A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
+          "controls": [
+            {
+              "id": "z1v2xbc6",
+              "externalId": "CAP-22"
+            },
+            {
+              "id": "bbr5tejq",
+              "externalId": "CFG-221"
+            },
+            {
+              "id": "44doeqsw",
+              "externalId": "CLD-9"
+            },
+            {
+              "id": "3n9h6ac5",
+              "externalId": "CLD-96"
+            },
+            {
+              "id": "ogpzg0nh",
+              "externalId": "NET-388"
+            },
+            {
+              "id": "ibws6oki",
+              "externalId": "NET-390"
+            },
+            {
+              "id": "6jiez0aq",
+              "externalId": "SEA-247"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-IAM",
+      "name": "Identity and Access Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-3",
+          "name": "KSI-IAM",
+          "description": "A secure cloud service offering will protect user data, control access, and implement zero trust practices.",
+          "controls": [
+            {
+              "id": "2ji8hi5r",
+              "externalId": "IAC-475"
+            },
+            {
+              "id": "f65lijeu",
+              "externalId": "IAC-650"
+            },
+            {
+              "id": "jh2pgsok",
+              "externalId": "IAC-653"
+            },
+            {
+              "id": "v4f488g5",
+              "externalId": "IAC-654"
+            },
+            {
+              "id": "kta32v5v",
+              "externalId": "NET-44"
+            },
+            {
+              "id": "vqih98p6",
+              "externalId": "NET-391"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-IR",
+      "name": "Incident Response",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-10",
+          "name": "KSI-IR",
+          "description": "A secure cloud service offering will maintain, test, and execute effective Incident Response Plans for routine incidents such as vulnerability discovery, abnormal activity detection, and exfiltration of data.",
+          "controls": [
+            {
+              "id": "yrple4x4",
+              "externalId": "IRO-314"
+            },
+            {
+              "id": "tpaleh3k",
+              "externalId": "IRO-316"
+            },
+            {
+              "id": "r5kzvyjn",
+              "externalId": "IRO-317"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-MLA",
+      "name": "Monitoring, Logging, and Auditing",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-4",
+          "name": "KSI-MLA",
+          "description": "A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.",
+          "controls": [
+            {
+              "id": "6m6b40sy",
+              "externalId": "CFG-220"
+            },
+            {
+              "id": "v7bx2upr",
+              "externalId": "CPL-350"
+            },
+            {
+              "id": "w1o6kxu3",
+              "externalId": "OPS-90"
+            },
+            {
+              "id": "sect4bxj",
+              "externalId": "VPM-217"
+            },
+            {
+              "id": "km41s38b",
+              "externalId": "VPM-219"
+            },
+            {
+              "id": "bcpfu9kf",
+              "externalId": "VPM-221"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-PIY",
+      "name": "Policy and Inventory",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-6",
+          "name": "KSI-PIY",
+          "description": "A secure cloud service offering will have intentional, organized, universal guidance for how every asset, including personnel, is secured.",
+          "controls": [
+            {
+              "id": "vsq4tzom",
+              "externalId": "AST-164"
+            },
+            {
+              "id": "8ubue73q",
+              "externalId": "CHG-113"
+            },
+            {
+              "id": "575uwgvp",
+              "externalId": "CPL-349"
+            },
+            {
+              "id": "72ezp6on",
+              "externalId": "CPL-351"
+            },
+            {
+              "id": "m0jv4vf4",
+              "externalId": "RSK-299"
+            },
+            {
+              "id": "7ifg81s5",
+              "externalId": "SEA-246"
+            },
+            {
+              "id": "7rcxe71s",
+              "externalId": "VPM-218"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-RPL",
+      "name": "Recovery Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-9",
+          "name": "KSI-RPL",
+          "description": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+          "controls": [
+            {
+              "id": "q8yjox1v",
+              "externalId": "BCD-220"
+            },
+            {
+              "id": "2l8fyn9h",
+              "externalId": "BCD-221"
+            },
+            {
+              "id": "435l50an",
+              "externalId": "IRO-315"
+            },
+            {
+              "id": "fmdxf5f1",
+              "externalId": "IRO-361"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-SVC",
+      "name": "Service Configuration",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-2",
+          "name": "KSI-SVC",
+          "description": "A secure cloud service offering will enforce the use of approved cryptography, continuously verify component integrity, and restrict access to external services.",
+          "controls": [
+            {
+              "id": "v6120gwe",
+              "externalId": "CHG-109"
+            },
+            {
+              "id": "oe0ui8ap",
+              "externalId": "CRY-262"
+            },
+            {
+              "id": "9pvpy8me",
+              "externalId": "CRY-263"
+            },
+            {
+              "id": "guq914gm",
+              "externalId": "CRY-264"
+            },
+            {
+              "id": "mp9wr0wb",
+              "externalId": "CRY-265"
+            },
+            {
+              "id": "k2qp0joc",
+              "externalId": "NET-389"
+            },
+            {
+              "id": "sb3pbtwp",
+              "externalId": "VPM-220"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-TPR",
+      "name": "Third Party Information Resources",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-7",
+          "name": "KSI-TPR",
+          "description": "A secure cloud service offering will understand, monitor, and manage supply chain risks from third party services or components.",
+          "controls": [
+            {
+              "id": "nxaoo1hn",
+              "externalId": "NET-604"
+            },
+            {
+              "id": "8b98yj77",
+              "externalId": "RSK-218"
+            },
+            {
+              "id": "euid6qm8",
+              "externalId": "TPM-165"
+            },
+            {
+              "id": "2nmcr6ju",
+              "externalId": "TPM-166"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

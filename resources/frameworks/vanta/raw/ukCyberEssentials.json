@@ -1,0 +1,210 @@
+{
+  "principles": [
+    {
+      "id": "Firewalls",
+      "name": "Firewalls",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Firewalls",
+          "name": "",
+          "description": "To make sure that only secure and necessary network services can be accessed from the internet.",
+          "controls": [
+            {
+              "id": "4jsx6kr5",
+              "externalId": "NET-251"
+            },
+            {
+              "id": "yoqrxbtq",
+              "externalId": "NET-252"
+            },
+            {
+              "id": "0w0gh5qv",
+              "externalId": "NET-253"
+            },
+            {
+              "id": "cc7kpn5w",
+              "externalId": "NET-254"
+            },
+            {
+              "id": "b8fnn3ol",
+              "externalId": "NET-255"
+            },
+            {
+              "id": "2ylzskxh",
+              "externalId": "NET-606"
+            },
+            {
+              "id": "ztcf1vos",
+              "externalId": "NET-607"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Malware protection",
+      "name": "Malware protection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Malware protection",
+          "name": "",
+          "description": "To restrict execution of known malware and untrusted software, from causing damage or accessing \ndata.",
+          "controls": [
+            {
+              "id": "vcrb2z6i",
+              "externalId": "THR-35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Secure configuration",
+      "name": "Secure configuration",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Secure configuration",
+          "name": "",
+          "description": "Ensure that computers and network devices are properly configured to:\n• reduce vulnerabilities\n• provide only the services required to fulfil their role",
+          "controls": [
+            {
+              "id": "619n2suw",
+              "externalId": "IAC-445"
+            },
+            {
+              "id": "kf0ee7p5",
+              "externalId": "IAC-446"
+            },
+            {
+              "id": "dv2a1rv0",
+              "externalId": "IAC-447"
+            },
+            {
+              "id": "1bwi4mel",
+              "externalId": "IAC-448"
+            },
+            {
+              "id": "burno93w",
+              "externalId": "IAC-449"
+            },
+            {
+              "id": "ud8u7vwp",
+              "externalId": "IAC-450"
+            },
+            {
+              "id": "0i9ehszg",
+              "externalId": "IAC-451"
+            },
+            {
+              "id": "2w2xlt6m",
+              "externalId": "IAC-452"
+            },
+            {
+              "id": "qnkjf2wt",
+              "externalId": "IAC-453"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Security update management",
+      "name": "Security update management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Security update management",
+          "name": "",
+          "description": "Ensure that devices and software are not vulnerable to known security issues for which fixes are \navailable.",
+          "controls": [
+            {
+              "id": "f2gjhme9",
+              "externalId": "CFG-116"
+            },
+            {
+              "id": "mi9r4jg1",
+              "externalId": "CFG-117"
+            },
+            {
+              "id": "qgbrvc41",
+              "externalId": "CFG-118"
+            },
+            {
+              "id": "cpd6jdsg",
+              "externalId": "CFG-119"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "User access control",
+      "name": "User access control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "User access control",
+          "name": "",
+          "description": "Ensure that user accounts:\n• are assigned to authorised individuals only\n• provide access to only those applications, computers and networks the user needs to carry\nout their role",
+          "controls": [
+            {
+              "id": "9hvtjlxr",
+              "externalId": "IAC-454"
+            },
+            {
+              "id": "2qnxixmr",
+              "externalId": "IAC-455"
+            },
+            {
+              "id": "uiork8va",
+              "externalId": "IAC-456"
+            },
+            {
+              "id": "tm6uuu4g",
+              "externalId": "IAC-457"
+            },
+            {
+              "id": "53w4i87j",
+              "externalId": "IAC-458"
+            },
+            {
+              "id": "8cgebptm",
+              "externalId": "IAC-459"
+            },
+            {
+              "id": "luuac16v",
+              "externalId": "IAC-460"
+            },
+            {
+              "id": "rhwodcp4",
+              "externalId": "IAC-461"
+            },
+            {
+              "id": "hmsmvery",
+              "externalId": "IAC-462"
+            },
+            {
+              "id": "gy8t5lpe",
+              "externalId": "IAC-463"
+            },
+            {
+              "id": "l7jixh0b",
+              "externalId": "IAC-464"
+            },
+            {
+              "id": "bdlyaoxx",
+              "externalId": "IAC-465"
+            },
+            {
+              "id": "fw7npgpg",
+              "externalId": "IAC-466"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

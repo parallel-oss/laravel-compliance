@@ -1,0 +1,1473 @@
+{
+  "principles": [
+    {
+      "id": "164.308",
+      "name": "Administrative safeguards",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.308(a)(1)(i)",
+          "name": "",
+          "description": "Security management process: Implement policies and procedures to prevent, detect, contain and correct security violations.",
+          "controls": [
+            {
+              "id": "security-management-process",
+              "externalId": "GOV-40",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(1)(ii)(A)",
+          "name": "",
+          "description": "Risk analysis: Conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information held by the covered entity or business associate.",
+          "controls": [
+            {
+              "id": "risk-analysis",
+              "externalId": "RSK-9",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(1)(ii)(B)",
+          "name": "",
+          "description": "Risk management: Implement security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to comply with § 164.306(a). Factors identified in §164.306 include:\n- The size, complexity, capability of the covered entity;\n- The covered entity’s technical infrastructure;\n- The costs of security measures; and\n- The probability and criticality of potential risks to ePHI",
+          "controls": [
+            {
+              "id": "risk-management",
+              "externalId": "RSK-10",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(1)(ii)(C)",
+          "name": "",
+          "description": "Sanction policy: Apply appropriate sanctions against workforce members who fail to comply with the security policies and procedures of the covered entity or business associate.",
+          "controls": [
+            {
+              "id": "sanction-policy",
+              "externalId": "HRS-17",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(1)(ii)(D)",
+          "name": "",
+          "description": "Information system activity review: Implement procedures to regularly review records of information system activity, such as audit logs, access reports, and security incident tracking reports.",
+          "controls": [
+            {
+              "id": "information-system-activity-reviewed",
+              "externalId": "RSK-8",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(2)",
+          "name": "",
+          "description": "Assigned security responsibility: Identify the security official who is responsible for the development and implementation of the policies and procedures required by this subpart for the covered entity or business associate.",
+          "controls": [
+            {
+              "id": "hipaa-security-officer",
+              "externalId": "GOV-34",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            },
+            {
+              "id": "security-responsibility",
+              "externalId": "GOV-41",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(3)(i)",
+          "name": "",
+          "description": "Workforce security: Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under the Information Access Management standard and to prevent those who do not have appropriate access from obtaining access to ePHI. Policies and procedures should include Authorization and/or Supervision procedures, Workforce Clearance Procedure, and Termination Procedures.",
+          "controls": [
+            {
+              "id": "workforce-security",
+              "externalId": "IAC-35",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(3)(ii)(A)",
+          "name": "",
+          "description": "Authorization and/or supervision: Implement procedures for the authorization and/or supervision of workforce members who work with electronic protected health information or in locations where it might be accessed.",
+          "controls": [
+            {
+              "id": "authorization-supervision",
+              "externalId": "IAC-27",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(3)(ii)(B)",
+          "name": "",
+          "description": "Workforce clearance procedure: Implement procedures to determine that the access of a workforce member to electronic protected health information is appropriate.",
+          "controls": [
+            {
+              "id": "workforce-clearance-procedure",
+              "externalId": "IAC-34",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(3)(ii)(C)",
+          "name": "",
+          "description": "Termination procedures:  Implement procedures for terminating access to electronic protected health information when the employment of, or other arrangement with, a workforce member ends or as required by determinations made as specified in paragraph (a)(3)(ii)(B) [the Workforce Clearance Procedure] of this section.",
+          "controls": [
+            {
+              "id": "establish-termination-procedures",
+              "externalId": "IAC-30",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(4)(i)",
+          "name": "",
+          "description": "Information access management: Implement policies and procedures for authorizing access to electronic protected health information that are consistent with the applicable requirements of the Privacy Rule. Policies and procedures should include: Isolating Health Care Clearinghouse Functions, Access Authorization and Access Establishment and Modification.",
+          "controls": [
+            {
+              "id": "information-access-management",
+              "externalId": "IAC-31",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(4)(ii)(A)",
+          "name": "",
+          "description": "Isolating healthcare clearinghouse functions: If a health care clearinghouse is part of a larger organization, the clearinghouse must implement policies and procedures that protect the electronic protected health information of the clearinghouse from unauthorized access by the larger organization.",
+          "controls": []
+        },
+        {
+          "id": "164.308(a)(4)(ii)(B)",
+          "name": "",
+          "description": "Access authorization: Implement policies and procedures for granting access to ePHI, for example, through access to a workstation, transaction, program, process, or other mechanism.",
+          "controls": [
+            {
+              "id": "access-authorization",
+              "externalId": "IAC-24",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(4)(ii)(C)",
+          "name": "",
+          "description": "Access establishment and modification: Implement policies and procedures that, based upon the covered entity's or the business associate’s access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process.",
+          "controls": [
+            {
+              "id": "access-established-reviewed-modified",
+              "externalId": "IAC-26",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(5)(i)",
+          "name": "",
+          "description": "Security awareness and training: Implement a security awareness and training program for all members of the workforce (including management). Component of the Security Awareness and Training program should include Security Reminders, Protection Malicious Software, Log-in Monitoring and Password Management.",
+          "controls": [
+            {
+              "id": "security-awareness-training",
+              "externalId": "SAT-7",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(5)(ii)(A)",
+          "name": "",
+          "description": "Security reminders: Periodic security updates.",
+          "controls": [
+            {
+              "id": "security-reminders",
+              "externalId": "SAT-8",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(5)(ii)(B)",
+          "name": "",
+          "description": "Protection from malicious software: Procedures for guarding against, detecting, and reporting malicious software.",
+          "controls": [
+            {
+              "id": "protection-from-malicious-software",
+              "externalId": "SAT-6",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(5)(ii)(C)",
+          "name": "",
+          "description": "Log-in monitoring: Procedures for monitoring log-in attempts and reporting discrepancies.",
+          "controls": [
+            {
+              "id": "log-in-monitoring",
+              "externalId": "SAT-4",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(5)(ii)(D)",
+          "name": "",
+          "description": "Password management: Procedures for creating, changing, and safeguarding passwords.",
+          "controls": [
+            {
+              "id": "password-management",
+              "externalId": "SAT-5",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(6)(i)",
+          "name": "",
+          "description": "Security incident procedures: Implement policies and procedures to address security incidents. Policies and procedures should include response reporting.",
+          "controls": [
+            {
+              "id": "security-incident-procedures",
+              "externalId": "IRO-17",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(6)(ii)",
+          "name": "",
+          "description": "Response and reporting: Identify and respond to suspected or known security incidents; mitigate, to the extent practicable, harmful effects of security incidents that are known to the covered entity or business associate; and document security incidents and their outcomes.",
+          "controls": [
+            {
+              "id": "response-and-reporting",
+              "externalId": "IRO-16",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(7)(i)",
+          "name": "",
+          "description": "Contingency plan: Establish (and implement as needed) policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain ePHI.",
+          "controls": [
+            {
+              "id": "contingency-plan",
+              "externalId": "BCD-14",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(7)(ii)(A)",
+          "name": "",
+          "description": "Data backup plan: Establish and implement procedures to create and maintain retrievable exact copies of ePHI.",
+          "controls": [
+            {
+              "id": "data-backup-plan",
+              "externalId": "BCD-17",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(7)(ii)(B)",
+          "name": "",
+          "description": "Disaster recovery plan: Establish (and implement as needed) procedures to restore any loss of data.",
+          "controls": [
+            {
+              "id": "disaster-recovery-plan",
+              "externalId": "BCD-18",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(7)(ii)(C)",
+          "name": "",
+          "description": "Emergency Mode Operation Plan: Establish and implement procedures to enable continuation of critical business processes for protection of the security of ePHI while operating in emergency mode.",
+          "controls": [
+            {
+              "id": "emergency-mode-operation-plan",
+              "externalId": "BCD-19",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(7)(ii)(D)",
+          "name": "",
+          "description": "Testing and revision procedures: Implement procedures for periodic testing and revision of contingency plans.",
+          "controls": [
+            {
+              "id": "contingency-plan-testing-and-revision-procedure",
+              "externalId": "BCD-15",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(7)(ii)(E)",
+          "name": "",
+          "description": "Applications and data criticality analysis: Assess the relative criticality of specific applications and data in support of another contingency plan component.",
+          "controls": [
+            {
+              "id": "application-and-data-criticality-analysis",
+              "externalId": "BCD-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(a)(8)",
+          "name": "",
+          "description": "Evaluation: Perform a periodic technical and nontechnical evaluation based initially upon the standards implemented under this rule and subsequently, in response to environmental or operations changes affecting the security of ePHI, that establishes the extent to which an entity’s security policies and procedures meet the requirement.",
+          "controls": [
+            {
+              "id": "security-controls-evaluation",
+              "externalId": "CPL-10",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(b)(1)",
+          "name": "",
+          "description": "Business associate contracts and other arrangements: A covered entity, in accordance with 164.306 [The Security Standards: General Rules], may permit a business associate to create, receive, maintain, or transmit ePHI on the covered entity’s behalf only if the covered entity obtains satisfactory assurances, in accordance with 164.314 [the Organization Requirements] that the business associate will appropriately safeguard the information.",
+          "controls": [
+            {
+              "id": "business-associate-agreements-with-vendors",
+              "externalId": "TPM-14",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(b)(2)",
+          "name": "",
+          "description": "A business associate may permit a business that is a subcontractor to create, receive, maintain, or transmit ePHI on its behalf only if the business associate obtains satisfactory assurances, in accordance with §164.314(a), that the subcontractor will appropriately safeguard the information.",
+          "controls": [
+            {
+              "id": "business-associate-agreements-subcontractors",
+              "externalId": "TPM-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(b)(3)",
+          "name": "",
+          "description": "Written contract or other arrangement: Document the satisfactory assurances required by paragraph (b)(1) or (b2) above of this section through a written or other arrangement with the business associate that meets the applicable requirements of 164.314(a) [the Organizational Requirements]",
+          "controls": [
+            {
+              "id": "written-business-associate-agreements",
+              "externalId": "TPM-17",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.308(b)(4)",
+          "name": "",
+          "description": "Arrangement: Document the satisfactory assurances required by paragraph (b)(1) [the Business Associates Contracts and Other Arrangements] of this section through a written or other arrangement with the business associate that meets the applicable requirements of 164.314(a).",
+          "controls": []
+        }
+      ]
+    },
+    {
+      "id": "164.310",
+      "name": "Physical safeguards",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.310(a)(1)",
+          "name": "",
+          "description": "Facility access controls: Implement policies and procedures to limit physical access to its electronic information systems and the facility or facilities in which they are housed, while ensuring that properly authorized access is allowed.",
+          "controls": [
+            {
+              "id": "facility-access-controls",
+              "externalId": "PES-17",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(a)(2)(i)",
+          "name": "",
+          "description": "Contingency operations: Establish (and implement as needed) procedures that allow facility access in support of restoration of lost data under the disaster recovery plan and emergency mode operations plan in the event of an emergency.",
+          "controls": [
+            {
+              "id": "contingency-operations",
+              "externalId": "BCD-13",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(a)(2)(ii)",
+          "name": "",
+          "description": "Facility security plan: Implement policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.",
+          "controls": [
+            {
+              "id": "facility-security-plan",
+              "externalId": "PES-18",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(a)(2)(iii)",
+          "name": "",
+          "description": "Access control and validation procedures: Implement procedures to control and validate a person's access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision.",
+          "controls": [
+            {
+              "id": "access-control-and-validation-procedures",
+              "externalId": "PES-16",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(a)(2)(iv)",
+          "name": "",
+          "description": "Maintenance records: Implement policies and procedures to document repairs and modifications to the physical components of a facility which are related to security (for example, hardware, walls, doors, and locks).",
+          "controls": [
+            {
+              "id": "maintenance-records",
+              "externalId": "MNT-2",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(b)",
+          "name": "",
+          "description": "Workstation use: Implement policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of the surroundings of a specific workstation or class of workstation that can access ePHI.",
+          "controls": [
+            {
+              "id": "workstation-security-policies",
+              "externalId": "GOV-42",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(c)",
+          "name": "",
+          "description": "Workstation security: Covered entities should implement physical safeguards for all workstations that access ePHI, to restrict access to authorized users.",
+          "controls": [
+            {
+              "id": "workstation-security-implemented",
+              "externalId": "END-5",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(d)(1)",
+          "name": "",
+          "description": "Device and media control: Implement policies and procedures that govern the receipt and removal of hardware and electronic media that contain ePHI into and out of a facility, and the movement of these items within the facility.",
+          "controls": [
+            {
+              "id": "media-removal",
+              "externalId": "AST-15",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(d)(2)(i)",
+          "name": "",
+          "description": "Disposal: Implement policies and procedures to address the final disposition of ePHI, and/or the hardware or electronic media on which it is stored.",
+          "controls": [
+            {
+              "id": "device-media-disposal",
+              "externalId": "AST-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(d)(2)(ii)",
+          "name": "",
+          "description": "Media re-use: Implement procedures for removal of ePHI from electronic media before the media are made available for re-use. Ensure that ePHI previously stored on electronic media cannot be accessed and reused. Identify removable media and their use. Ensure that ePHI is removed from reusable media before they are used to record new information.",
+          "controls": [
+            {
+              "id": "media-re-use",
+              "externalId": "AST-14",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(d)(2)(iii)",
+          "name": "",
+          "description": "Accountability: Maintain a record of the movements of hardware and electronic media and any person responsible therefore.",
+          "controls": [
+            {
+              "id": "device-media-movement",
+              "externalId": "AST-13",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.310(d)(2)(iv)",
+          "name": "",
+          "description": "Data backup and storage: Create a retrievable, exact copy of ePHI, when needed, before movement of equipment.",
+          "controls": [
+            {
+              "id": "data-backup-and-storage",
+              "externalId": "BCD-16",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.312",
+      "name": "Technical safeguards",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.312(a)(1)",
+          "name": "",
+          "description": "Access control: Implement technical policies and procedures for electronic information systems that maintain ePHI to allow access only to those persons or software programs that have been granted access rights as specified in §164.308(a)(4) [Information Access Management].",
+          "controls": [
+            {
+              "id": "access-control",
+              "externalId": "IAC-25",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(a)(2)(i)",
+          "name": "",
+          "description": "Unique user identification: Assign a unique name and/or number for identifying and tracking user identity. Ensure that system activity can be traced to a specific user. Ensure that the necessary data is available in the system logs to support audit and other related business functions.",
+          "controls": [
+            {
+              "id": "unique-user-identification",
+              "externalId": "IAC-33",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(a)(2)(ii)",
+          "name": "",
+          "description": "Emergency access procedure: Establish (and implement as needed) procedures for obtaining necessary ePHI during an emergency.",
+          "controls": [
+            {
+              "id": "emergency-access-procedure",
+              "externalId": "IAC-29",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(a)(2)(iii)",
+          "name": "",
+          "description": "Automatic logoff: Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.",
+          "controls": [
+            {
+              "id": "automatic-log-off",
+              "externalId": "IAC-28",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(a)(2)(iv)",
+          "name": "",
+          "description": "Encryption and decryption: Implement a mechanism to encrypt and decrypt ePHI.",
+          "controls": [
+            {
+              "id": "data-encryption-decryption",
+              "externalId": "CRY-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(b)",
+          "name": "",
+          "description": "Audit controls: Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use ePHI.",
+          "controls": [
+            {
+              "id": "audit-controls",
+              "externalId": "MON-8",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(c)(1)",
+          "name": "",
+          "description": "Integrity: Implement policies and procedures to protect ePHI from improper alteration or destruction.",
+          "controls": [
+            {
+              "id": "data-integrity",
+              "externalId": "MON-9",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(c)(2)",
+          "name": "",
+          "description": "Mechanisms to authenticate ePHI: Implement electronic mechanisms to corroborate that ePHI has not been altered or destroyed in an unauthorized manner.",
+          "controls": [
+            {
+              "id": "mechanism-authenticate-information",
+              "externalId": "MON-10",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(d)",
+          "name": "",
+          "description": "Person or entity authentication: Implement procedures to verify that a person or entity seeking access to ePHI is the one claimed.",
+          "controls": [
+            {
+              "id": "person-or-entity-authentication",
+              "externalId": "IAC-32",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(e)(1)",
+          "name": "",
+          "description": "Transmission security: Implement technical security measures to guard against unauthorized access to ePHI that is being transmitted over an electronic communications network.",
+          "controls": [
+            {
+              "id": "data-transmission-security",
+              "externalId": "CRY-15",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(e)(2)(i)",
+          "name": "",
+          "description": "Integrity controls: Implement security measures to ensure that electronically transmitted ePHI is not improperly modified without detection until disposed of.",
+          "controls": [
+            {
+              "id": "data-transmission-integrity",
+              "externalId": "CRY-14",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.312(e)(2)(ii)",
+          "name": "",
+          "description": "Encryption: Implement a mechanism to encrypt ePHI whenever deemed appropriate.",
+          "controls": [
+            {
+              "id": "data-transmission-encrypted",
+              "externalId": "CRY-13",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.314",
+      "name": "Organizational requirements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.314(a)(1)",
+          "name": "",
+          "description": "Business associate contracts or other arrangements: A covered entity is not in compliance with the standards in § 164.502(e) if the covered entity knew of a pattern of an activity or practice of the business associate that constituted a material breach or violation of the business associate’s obligation under the contract or other arrangement, unless the covered entity took reasonable steps to cure the breach or end the violation, as applicable, and, if such steps were unsuccessful -\n\n(A) Terminated the contract or arrangement, if feasible; or\n\n(B) If termination is not feasible, reported the problem to the Secretary.",
+          "controls": [
+            {
+              "id": "business-associate-agreements",
+              "externalId": "TPM-9",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.314(a)(2)(i)",
+          "name": "",
+          "description": "Business Associate Contracts: A business associate contract must provide that the business associate will: “Implement safeguards that protect the confidentiality, integrity, and availability of the electronic protected health…; Report to the covered entity any security incident of which it becomes aware; Authorize termination of the contract, if the covered entity determines that the business associate has violated a material term of the contract.”",
+          "controls": [
+            {
+              "id": "business-associate-agreements-comply",
+              "externalId": "TPM-10",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            },
+            {
+              "id": "business-associate-agreements-security-incidents-reported",
+              "externalId": "TPM-11",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            },
+            {
+              "id": "subcontractor-business-associate-agreements-enforced",
+              "externalId": "TPM-16",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.314(a)(2)(ii)",
+          "name": "",
+          "description": "Other Arrangement: The Other Arrangements implementation specifications provide that when a covered entity and its business associate are both government entities, the covered entity may comply with the standard in either of two alternative ways:\n\n(1) if it enters into a memorandum of understanding (MOU) with the business associate and the MOU contains terms which accomplish the objectives of the Business Associate Contracts section of the Security Rule; or\n\n(2) if other law (including regulations adopted by the covered entity or its business associate) contain requirements applicable to the business associate that accomplish the objectives of the business associate contract.",
+          "controls": []
+        },
+        {
+          "id": "164.314(a)(2)(iii)",
+          "name": "",
+          "description": "Business associate contracts with subcontractors: The requirements of paragraphs (a)(2)(i) and (a)(2)(ii) of this section apply to the contract or other arrangement between a business associate and a subcontractor required by §164.308(b)(4) in the same manner as such requirements apply to contracts or other arrangements between a covered entity and business associate.",
+          "controls": [
+            {
+              "id": "business-associate-agreements-with-subcontractors",
+              "externalId": "TPM-13",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.314(b)(1)",
+          "name": "",
+          "description": "Requirements for Group Health Plans: Except when the only ePHI disclosed to a plan sponsor is disclosed pursuant to §164.504(f)(1)(ii) or (iii), or as authorized under §164.508, a group health plan must ensure that its plan documents provide that the plan sponsor will reasonably and appropriately safeguard ePHI created, received, maintained, or transmitted to or by the plan sponsor on behalf of the group health plan.",
+          "controls": []
+        },
+        {
+          "id": "164.314(b)(2)",
+          "name": "",
+          "description": "Implementation Specifications: The plan documents of the group health plan must be amended to incorporate provisions to require the plan sponsor to:\n- Safeguards: Implement administrative, physical, and technical safeguards that reasonably and appropriately protect the confidentiality, integrity, and availability of the ePHI that it creates, receives, maintains, or transmits on behalf of the group health plan\n- Separation: Ensure that the adequate separation required by §164.504(f)(2)(iii) is supported by reasonable and appropriate security measure,",
+          "controls": []
+        },
+        {
+          "id": "164.314(b)(2)(i)",
+          "name": "",
+          "description": "Safeguards: Implement administrative, physical, and technical safeguards that reasonably and appropriately protect the confidentiality, integrity, and availability of the ePHI that it creates, receives, maintains, or transmits on behalf of the group health plan",
+          "controls": [
+            {
+              "id": "group-health-plan-controls",
+              "externalId": "SEA-5",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.314(b)(2)(ii)",
+          "name": "",
+          "description": "Separation: Ensure that the adequate separation required by §164.504(f)(2)(iii) is supported by reasonable and appropriate security measures",
+          "controls": []
+        },
+        {
+          "id": "164.314(b)(2)(iii)",
+          "name": "",
+          "description": "Agreement: Ensure that any agent, including a subcontractor, to whom it provides this information agrees to implement reasonable and appropriate security measures to protect the information",
+          "controls": [
+            {
+              "id": "group-health-plan-information-protection",
+              "externalId": "TPM-15",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.314(b)(2)(iv)",
+          "name": "",
+          "description": "Reporting: Report to the group health plan any security incident of which it becomes aware",
+          "controls": [
+            {
+              "id": "group-health-plan-security-incidents",
+              "externalId": "IRO-14",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.316",
+      "name": "Policies, procedures and documentation requirements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.316(a)",
+          "name": "",
+          "description": "Policies and Procedures: Implement reasonable and appropriate policies and procedures to comply with the standards, implementation specifications, or other requirements of this subpart, taking into account those factors specified in 164.306(b)(2)(i), (ii), (iii), and (iv) [the Security Standards: General Rules, Flexibility of Approach]. This standard is not to be construed to permit or excuse an action that violates any other standard. A covered entity or business associate may change its policies and procedures at any time, provided that the changes are documented and are implemented in accordance with this subpart.",
+          "controls": [
+            {
+              "id": "policies-procedures-created",
+              "externalId": "GOV-37",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.316(b)(1)(i)",
+          "name": "",
+          "description": "Documentation: Maintain the policies and procedures implemented to comply with this subpart in written (which may be electronic) form; and (ii) if an action, activity or assessment is required by this subpart to be documented, maintain a written (which may be electronic) record of the action, activity, or assessment.",
+          "controls": [
+            {
+              "id": "policies-procedures-documented",
+              "externalId": "GOV-38",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.316(b)(1)(ii)",
+          "name": "",
+          "description": "Documentation: if an action, activity or assessment is required by this subpart to be documented, maintain a written (which may be electronic) record of the action, activity, or assessment.",
+          "controls": [
+            {
+              "id": "policies-procedures-activity-documented",
+              "externalId": "GOV-35",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.316(b)(2)(i)",
+          "name": "",
+          "description": "Time Limit: Retain the documentation required by paragraph (b) (1) of this section for 6 years for the date of its creation or the date when it last was in effect, whichever is later.",
+          "controls": [
+            {
+              "id": "data-retention-time-limit",
+              "externalId": "DCH-21",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.316(b)(2)(ii)",
+          "name": "",
+          "description": "Availability: Make documentation available to those persons responsible for implementing the procedures to which the documentation pertains",
+          "controls": [
+            {
+              "id": "policies-procedures-available",
+              "externalId": "GOV-36",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.316(b)(2)(iii)",
+          "name": "",
+          "description": "Updates: Review documentation periodically, and update as needed, in response to environmental or operational changes affecting the security of the ePHI.",
+          "controls": [
+            {
+              "id": "policies-procedures-updated",
+              "externalId": "GOV-39",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.404",
+      "name": "Notification to individuals",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.404 (2)",
+          "name": "",
+          "description": "For purposes of paragraph (a)(1) of this section, §§ 164.406(a), and 164.408(a), a breach shall be treated as discovered by a covered entity as of the first day on which such breach is known to the covered entity, or, by exercising reasonable diligence would have been known to the covered entity. A covered entity shall be deemed to have knowledge of a breach if such breach is known, or by exercising reasonable diligence would have been known, to any person, other than the person committing the breach, who is a workforce member or agent of the covered entity (determined in accordance with the federal common law of agency).",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(a)",
+          "name": "",
+          "description": "A covered entity shall, following the discovery of a breach of unsecured protected health information, notify each individual whose unsecured protected health information has been, or is reasonably believed by the covered entity to have been, accessed, acquired, used or disclosed as a result of such breach.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(b)",
+          "name": "",
+          "description": "Except as provided in §164.412, a covered entity shall provide the notification required by paragraph (a) of this section without unreasonable delay and in no case later than 60 days after discovery of a breach.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(c)(1)",
+          "name": "",
+          "description": "Elements of the notification required by paragraph (a) of this section shall include to the extent possible:\n\n(A) a brief description of what happened, including the date of the breach and the date of the discovery of the breach, if known; \n\n(B) a description of the types of unsecured protected health information that were involved in the breach (Such as whether full name, social security number, date of birth, home address, account number, diagnosis, disability code, or other types of information were involved);\n\n(C) any steps the individual should take to protect themselves from potential harm resulting from the breach;\n\n(D) a brief description of what the covered entity is doing to investigation the breach, to mitigate harm to individuals, and to protect against further breaches; and\n\n(E) contact procedures for individuals to ask questions or learn additional information which should include a toll-free number, an email address, website, or postal address.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(c)(2)",
+          "name": "",
+          "description": "The notification required by paragraph (a) of this section shall be written in plain language.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(d)(1)(i)",
+          "name": "",
+          "description": "The notification required by paragraph (a) shall be provided in the following form: Written notification by first-class mail to the individual at the last known address of the individual or, if the individual agrees to electronic notice and such agreement has not been withdrawn, by electronic mail. The notification may be provided in one or more mailings as more information becomes available.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(d)(1)(ii)",
+          "name": "",
+          "description": "The notification required by paragraph (a) shall be provided in the following form: If the covered entity knows the individual is deceased and has the address of the next of kin or personal representative of the individual (as specified under §164.502(g)(4) of subpart E) , written notification by first-class mail to either the next of kin or personal representative of the individual. The notification may be provided in one or more mailings as information is available.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(d)(2)",
+          "name": "",
+          "description": "Substitute notice. In the case where there is insufficient or out-of-date contact information that precludes written notification to the individual under this paragraph (d)(1)(i) of this section, a substitute form of notice reasonable calculated to reach the individual shall be provided. Substitute notice need not be provided in the case in which there is insufficient or out-of-date contact information that precludes written notification to the next of kin or personal representative of the individual under paragraph (d)(1)(ii).",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(d)(2)(i)",
+          "name": "",
+          "description": "In the case where there is insufficient or out-of-date contact information for fewer than 10 individuals, then substitute notice may be provided by an alternative form of written notice, telephone or other means.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(d)(2)(ii)",
+          "name": "",
+          "description": "In the case in which there is insufficient or out-of-date contact information for 10 or more individuals, then such substitute notice shall:\n\n(A) be in the form of either a conspicuous posting for a period of 90 days on the home page of the web site of the covered entity involved, or conspicuous notice in a major print or broadcast media in geographic areas where the individuals affected by the breach likely reside; and\n\n(B) include a toll-free number that remains active for at least 90 days where an individual can learn whether the individual's secured protected health information may be included in the breach.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.404(d)(3)",
+          "name": "",
+          "description": "In any case deemed by the covered entity to require urgency because of possible imminent misuse of unsecured protected health information, the covered entity may provide information to individuals by telephone or other means, as appropriate, in addition to notice provided under paragraph (d)(1) of this section.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.406",
+      "name": "Notification to the media",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.406(a)",
+          "name": "",
+          "description": "For a breach of unsecured protected health information involving more than 500 residents of a State or jurisdiction, a covered entity shall, following the discovery of the breach, notify prominent media outlets serving the State or jurisdiction",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.406(b)",
+          "name": "",
+          "description": "Except as provided in §164.412, a covered entity shall provide the notification required by paragraph (a) of this section without unreasonable delay and in no case later than 60 calendar days after discovery of a breach.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.406(c)",
+          "name": "",
+          "description": "The content of the notification required by paragraph (a) shall meet the requirements of §164.404(c)",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.408",
+      "name": "Notification to the Secretary",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.408(a)",
+          "name": "",
+          "description": "A covered entity shall, following the discovery of a breach of unsecured protected health information as provided in §164.404(a)(2), notify the Secretary.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.408(b)",
+          "name": "",
+          "description": "For breaches of unsecured protected health information involving 500 or more individuals, a covered entity shall, expect as provided in §164.412, provide the notification required by paragraph (a) contemporaneously with the notice required by §164.404(a) and in the manner specified on the HHS web site.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.408(c)",
+          "name": "",
+          "description": "For breaches of unsecured protected health information involving less than 500 individuals, a covered entity shall maintain a log or other documentation of such breaches and, not later than 60 days after the end of each calendar year, provide the notification required by paragraph (a) of this section for breaches occurring during the preceding calendar year, in a manner specified on the HHS web site.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.410",
+      "name": "Notification by a business associate",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.410(a)(1)",
+          "name": "",
+          "description": "A business associate shall, following the discovery of a breach of unsecured protected health information, notify the covered entity of such breach.",
+          "controls": [
+            {
+              "id": "notification-of-breach",
+              "externalId": "IRO-15",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.410(a)(2)",
+          "name": "",
+          "description": "For the purposes of paragraph (1) of this section, a breach shall be treated as discovered by a business associate as of the first day on which such breach is known to the business associate or, by exercising reasonable diligence, would have been known to the business associate. A business associate shall be deemed to have knowledge of a breach if the breach is known, or by exercising reasonable diligence would have been known, to any person, other than the person committing the breach, who is an employee, officer, or other agent of the business associate (determined in accordance with the federal common law of agency).",
+          "controls": [
+            {
+              "id": "notification-of-breach",
+              "externalId": "IRO-15",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.410(b)",
+          "name": "",
+          "description": "Except as provided in §164.412, a business associate shall provide the notification required by paragraph (a) of this section without unreasonable delay and in no case later than 60 calendar days after the discovery of a breach.",
+          "controls": [
+            {
+              "id": "timeliness-of-breach-notification",
+              "externalId": "IRO-18",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.410(c)(1)",
+          "name": "",
+          "description": "The notification required by paragraph (a) of this section shall include, to the extent possible, the identification of each individual whose unsecured protected health information has been, or is reasonably believed by the business associate to have been accessed, acquired, used or disclosure during the breach.",
+          "controls": [
+            {
+              "id": "breach-identification-of-individuals",
+              "externalId": "IRO-13",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164.410(c)(2)",
+          "name": "",
+          "description": "A business associate shall provide the covered entity with any other information that the covered entity is required to include in the notification to the individual under §164.404(c) at the time of the notification required by paragraph (a) of this section or promptly thereafter as information becomes available.",
+          "controls": [
+            {
+              "id": "additional-breach-information",
+              "externalId": "IRO-12",
+              "variants": [
+                "HIPAA_COVERED_ENTITY",
+                "HIPAA_BUSINESS_ASSOCIATE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "164.412",
+      "name": "Law enforcement delay",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.412",
+          "name": "",
+          "description": "If a law enforcement official states to a covered entity or business associate that a notification, notice or posting required under this subpart would impede a criminal investigation or cause damage to national security, a covered entity or business associate shall:\n\na) If the statement is in writing and specifies the time for which a delay is required, delay such notification, notice, or posting for the time period specified by the official; or \n\n(b) If the statement is made orally, document the statement, including the identity of the official making the statement, and delay the notification, notice, or posting temporarily and no longer than 30 days from the date of the oral statement, unless a written statement as described in paragraph (a) of this section is submitted during that time.",
+          "controls": []
+        }
+      ]
+    },
+    {
+      "id": "164.414",
+      "name": "Administrative requirements and burden of proof",
+      "optional": false,
+      "sections": [
+        {
+          "id": "164.414",
+          "name": "",
+          "description": "Administrative requirements and burden of proof:\n\n(a) covered entity is required to comply with the administrative requirements of § 164.530(b), (d), (e), (g), (h), (i), and (j) with respect to the requirements of this subpart.\n\n(b) In the event of a use or disclosure in violation of subpart E, the covered entity or business associate; as applicable, shall have the burden of demonstrating that all notifications were made as required by this subpart or that the use or disclosures did not constitute a breach as defined at §164.402. See §164.530 for definition of breach.",
+          "controls": []
+        }
+      ]
+    }
+  ]
+}

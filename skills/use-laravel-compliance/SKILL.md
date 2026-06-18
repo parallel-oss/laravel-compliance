@@ -13,21 +13,21 @@ Use this skill when a user wants to add, review, or generate compliance evidence
 
 This package collects evidence. It does not prove compliance by itself.
 
-- **Capabilities** describe what application code does, such as deleting user data or enforcing authorization.
+- **Controls** describe what application code does, such as deleting customer data or enforcing access control.
 - **Framework requirements** describe external references such as GDPR articles, SOC 2 Trust Services Criteria sections, or broad OWASP references.
-- **Direct controls** are generated enums for technical standards such as OWASP ASVS or WSTG.
-- **Reports** connect code evidence to capabilities, direct controls, and configured framework mappings.
+- **Generated requirements** are generated enums for technical standards such as OWASP ASVS or WSTG.
+- **Reports** connect code evidence to controls, generated requirements, and framework mappings.
 
 ## Choosing Attribute Inputs
 
-Prefer capabilities for broad compliance evidence:
+Prefer controls for broad compliance evidence:
 
 ```php
-use Parallel\Compliance\Capabilities\CommonCapability;
+use Parallel\Compliance\Controls\VantaControl;
 use Parallel\Compliance\Evidence;
 
 #[Evidence(
-    capabilities: CommonCapability::UserDataErasure,
+    controls: VantaControl::DCH_1,
     summary: 'Deletes user profile data and related records during account closure.',
 )]
 public function deleteUserData(User $user): void
@@ -36,14 +36,14 @@ public function deleteUserData(User $user): void
 }
 ```
 
-Use direct controls for specific technical requirements:
+Use direct requirements for specific technical requirements:
 
 ```php
 use App\Enums\Compliance\OwaspAsvs500Requirements;
 use Parallel\Compliance\Evidence;
 
 #[Evidence(
-    controls: OwaspAsvs500Requirements::V2_1_1,
+    requirements: OwaspAsvs500Requirements::V2_1_1,
     summary: 'Password reset uses signed, expiring tokens.',
 )]
 public function resetPassword(): void
@@ -52,7 +52,7 @@ public function resetPassword(): void
 }
 ```
 
-You may combine both when a code path is both a business capability and a technical control.
+You may combine both when a code path is both a control objective and a technical requirement.
 
 ## Commands
 
@@ -86,9 +86,9 @@ php artisan security:generate-report \
 
 ## Agent Rules
 
-- Always use enums for capabilities, framework requirements, and generated controls.
-- Do not put GDPR/SOC 2 identifiers directly in application attributes unless the user explicitly asks for direct controls and there is a generated enum for it.
-- Prefer `CommonCapability` first for GDPR and SOC 2 because those frameworks usually require process evidence, not isolated code evidence.
+- Always use enums for controls, framework requirements, and generated requirements.
+- Prefer `VantaControl` for code evidence. The package maps Vanta controls to SOC 2, GDPR, and OWASP references centrally.
+- Do not put raw GDPR/SOC 2 identifiers directly in application attributes.
 - Add concise summaries that explain the actual behavior implemented by the code.
 - Use `details` and `links` for audit context, tickets, pull requests, policies, or runbooks.
 - After code edits, run `composer format`, `composer test`, `composer analyse`, and `composer audit`.

@@ -1,0 +1,647 @@
+{
+  "principles": [
+    {
+      "id": "5.1",
+      "name": "Management direction for information security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.1.1",
+          "name": "Policies for information security",
+          "controls": [
+            {
+              "id": "mi0tm8pk",
+              "externalId": "GOV-233"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.1",
+      "name": "Internal organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "6.1.1",
+          "name": "Information security roles and responsibilities",
+          "controls": [
+            {
+              "id": "4xenvonx",
+              "externalId": "GOV-234"
+            }
+          ]
+        },
+        {
+          "id": "6.1.3",
+          "name": "Contact with authorities",
+          "controls": [
+            {
+              "id": "1cchw6yj",
+              "externalId": "GOV-235"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.2",
+      "name": "During employment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7.2.2",
+          "name": "Information security awareness, education and training",
+          "controls": [
+            {
+              "id": "e8a4qcn3",
+              "externalId": "SAT-63"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.1",
+      "name": "Responsibility for assets",
+      "optional": false,
+      "sections": [
+        {
+          "id": "8.1.1",
+          "name": "Inventory of assets",
+          "controls": [
+            {
+              "id": "ss8mx95z",
+              "externalId": "AST-102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "name": "Information classification",
+      "optional": false,
+      "sections": [
+        {
+          "id": "8.2.2",
+          "name": "Labelling of information",
+          "controls": [
+            {
+              "id": "b4k670kr",
+              "externalId": "DCH-304"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.1",
+      "name": "Business requirements of access control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.1.2",
+          "name": "Access to networks and network services",
+          "controls": [
+            {
+              "id": "hx2qd61f",
+              "externalId": "IAC-690"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "name": "User access management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.2.1",
+          "name": "User registration and deregistration",
+          "controls": [
+            {
+              "id": "2bfzhytg",
+              "externalId": "IAC-476"
+            }
+          ]
+        },
+        {
+          "id": "9.2.2",
+          "name": "User access provisioning",
+          "controls": [
+            {
+              "id": "1oaclm80",
+              "externalId": "IAC-477"
+            }
+          ]
+        },
+        {
+          "id": "9.2.3",
+          "name": "Management of privileged access rights",
+          "controls": [
+            {
+              "id": "l708z9rq",
+              "externalId": "IAC-478"
+            }
+          ]
+        },
+        {
+          "id": "9.2.4",
+          "name": "Management of secret authentication information of users",
+          "controls": [
+            {
+              "id": "ylc7jcnx",
+              "externalId": "IAC-479"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.4",
+      "name": "System and application access control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.4.1",
+          "name": "Information access restriction",
+          "controls": [
+            {
+              "id": "dvfewdf1",
+              "externalId": "CFG-139"
+            }
+          ]
+        },
+        {
+          "id": "9.4.4",
+          "name": "Use of privileged utility programs",
+          "controls": [
+            {
+              "id": "7nul4mkd",
+              "externalId": "IAC-480"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.1",
+      "name": "Cryptographic controls",
+      "optional": false,
+      "sections": [
+        {
+          "id": "10.1.1",
+          "name": "Policy on the use of cryptographic controls",
+          "controls": [
+            {
+              "id": "07gc54ag",
+              "externalId": "CRY-269"
+            }
+          ]
+        },
+        {
+          "id": "10.1.2",
+          "name": "Key management",
+          "controls": [
+            {
+              "id": "flcriawm",
+              "externalId": "CRY-267"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "name": "Equipment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "11.2.7",
+          "name": "Secure disposal or reuse of equipment",
+          "controls": [
+            {
+              "id": "dmk7rxk1",
+              "externalId": "AST-103"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12.1",
+      "name": "Operational procedures and responsibilities",
+      "optional": false,
+      "sections": [
+        {
+          "id": "12.1.2",
+          "name": "Change management",
+          "controls": [
+            {
+              "id": "pqi8n98f",
+              "externalId": "CHG-116"
+            }
+          ]
+        },
+        {
+          "id": "12.1.3",
+          "name": "Capacity management",
+          "controls": [
+            {
+              "id": "k64gy797",
+              "externalId": "CAP-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12.3",
+      "name": "Backup",
+      "optional": false,
+      "sections": [
+        {
+          "id": "12.3.1",
+          "name": "Information backup",
+          "controls": [
+            {
+              "id": "h8lbl0xy",
+              "externalId": "BCD-127"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12.4",
+      "name": "Logging and monitoring",
+      "optional": false,
+      "sections": [
+        {
+          "id": "12.4.1",
+          "name": "Event logging",
+          "controls": [
+            {
+              "id": "4apctwdm",
+              "externalId": "MON-286"
+            }
+          ]
+        },
+        {
+          "id": "12.4.3",
+          "name": "Administrator and operator logs",
+          "controls": [
+            {
+              "id": "0mppm7fi",
+              "externalId": "MON-287"
+            }
+          ]
+        },
+        {
+          "id": "12.4.4",
+          "name": "Clock synchronization",
+          "controls": [
+            {
+              "id": "ewnyh858",
+              "externalId": "SEA-183"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12.6",
+      "name": "Technical vulnerability management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "12.6.1",
+          "name": "Management of technical vulnerabilities",
+          "controls": [
+            {
+              "id": "29oxdi1u",
+              "externalId": "VPM-222"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13.1",
+      "name": "Network security management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "13.1.3",
+          "name": "Segregation in networks",
+          "controls": [
+            {
+              "id": "xbs8pnbb",
+              "externalId": "NET-608"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14.1",
+      "name": "Security requirements of information systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "14.1.1",
+          "name": "Information security requirements analysis and specification",
+          "controls": [
+            {
+              "id": "82fqdxs1",
+              "externalId": "SEA-248"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14.2",
+      "name": "Security in development and support processes",
+      "optional": false,
+      "sections": [
+        {
+          "id": "14.2.1",
+          "name": "Secure development policy",
+          "controls": [
+            {
+              "id": "4q8ukuq9",
+              "externalId": "TDA-229"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15.1",
+      "name": "Information security in supplier relationships",
+      "optional": false,
+      "sections": [
+        {
+          "id": "15.1.1",
+          "name": "Information security policy for supplier relationships",
+          "controls": [
+            {
+              "id": "7gyp9t2u",
+              "externalId": "TPM-75"
+            }
+          ]
+        },
+        {
+          "id": "15.1.2",
+          "name": "Addressing security within supplier agreements",
+          "controls": [
+            {
+              "id": "46l1zavx",
+              "externalId": "TPM-76"
+            }
+          ]
+        },
+        {
+          "id": "15.1.3",
+          "name": "Information and communication technology supply chain",
+          "controls": [
+            {
+              "id": "5ujna6zu",
+              "externalId": "TPM-77"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16.1",
+      "name": "Management of information security incidents and improvements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "16.1.1",
+          "name": "Responsibilities and procedures",
+          "controls": [
+            {
+              "id": "cw05c7jg",
+              "externalId": "IRO-154"
+            }
+          ]
+        },
+        {
+          "id": "16.1.2",
+          "name": "Reporting information security events",
+          "controls": [
+            {
+              "id": "gw3c63cf",
+              "externalId": "IRO-155"
+            }
+          ]
+        },
+        {
+          "id": "16.1.7",
+          "name": "Collection of evidence",
+          "controls": [
+            {
+              "id": "b50bu02e",
+              "externalId": "IRO-156"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18.1",
+      "name": "Compliance with legal and contractual requirements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "18.1.1",
+          "name": "Identification of applicable legislation and contractual requirements",
+          "controls": [
+            {
+              "id": "7v04olis",
+              "externalId": "CPL-53"
+            }
+          ]
+        },
+        {
+          "id": "18.1.2",
+          "name": "Intellectual property rights",
+          "controls": [
+            {
+              "id": "oh36amdr",
+              "externalId": "AST-104"
+            }
+          ]
+        },
+        {
+          "id": "18.1.3",
+          "name": "Protection of records",
+          "controls": [
+            {
+              "id": "m4ws2qrn",
+              "externalId": "DCH-301"
+            }
+          ]
+        },
+        {
+          "id": "18.1.5",
+          "name": "Regulation of cryptographic controls",
+          "controls": [
+            {
+              "id": "3rseohpg",
+              "externalId": "CRY-268"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18.2",
+      "name": "Information security reviews",
+      "optional": false,
+      "sections": [
+        {
+          "id": "18.2.1",
+          "name": "Independent review of information security",
+          "controls": [
+            {
+              "id": "jfqjzbwq",
+              "externalId": "CPL-54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLD.6.3",
+      "name": "Relationship between cloud service customer and cloud service provider",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CLD.6.3.1",
+          "name": "Shared roles and responsibilities within a cloud computing environment",
+          "description": "Responsibilities for shared information security roles in the use of the cloud service should be allocated to identified parties, documented, communicated and implemented by both the cloud service customer and the cloud service provider.",
+          "context": "Implementation guidance for cloud services:\n\nCloud service customer:\n\nThe cloud service customer should define or extend its existing policies and procedures in accordance with its use of cloud services, and make cloud service users aware of their roles and responsibilities in the use of the cloud service.\n\nCloud service provider:\nThe cloud service provider should document and communicate its information security capabilities, roles, and responsibilities for the use of its cloud service, along with the information security roles and responsibilities for which the cloud service customer would need to implement and manage as part of its use of the cloud service.\n\nOther information for cloud services:\nIn cloud computing, roles and responsibilities are typically divided between employees of the cloud service customer and\nemployees of the cloud service provider. The allocation of roles and responsibilities should take into consideration the\ncloud service customer data and the cloud service customer applications for which the cloud service provider is a\ncustodian.",
+          "controls": [
+            {
+              "id": "3utjgxn8",
+              "externalId": "TPM-28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLD.8.1",
+      "name": "Responsibility for assets",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CLD.8.1.5",
+          "name": "Removal of cloud service customer assets",
+          "description": "Assets of the cloud service customer that are on the cloud service provider's premises should be removed, and returned if necessary, in a timely manner upon termination of the cloud service agreement.",
+          "context": "Implementation guidance for cloud services\n\nCloud service customer:\n\nThe cloud service customer should request a documented\ndescription of the termination of service process that covers\nreturn and removal of cloud service customer's assets followed by the deletion of all copies of those assets from the cloud service provider's systems.\nThe description should list all the assets and document the\nschedule for the termination of service, which should occur in a timely manner.\n\nCloud service provider:\n\nThe cloud service provider should provide information about\nthe arrangements for the return and removal of any cloud\nservice customer's assets upon termination of the agreement for the use of a cloud service.\nThe asset return and removal arrangements should be\ndocumented in the agreement and should be performed in a\ntimely manner. The arrangements should specify the assets to\nbe returned and removed.",
+          "controls": [
+            {
+              "id": "xs62zzo8",
+              "externalId": "AST-53"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLD.9.5",
+      "name": "Access control of cloud service customer data in shared virtual environment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CLD.9.5.1",
+          "name": "Segregation in virtual computing environments",
+          "description": "A cloud service customer's virtual environment running on a cloud service should be protected from other cloud service customers and unauthorized persons.",
+          "context": "Implementation guidance for cloud services\n\nCloud service customer:\n\n(no additional implementation guidance) \n\nCloud service provider:\nThe cloud service provider should enforce appropriate logical\nsegregation of cloud service customer data, virtualized\napplications, operating systems, storage, and network for:\n– the separation of resources used by cloud service \n   customers in multi-tenant environments;\n– the separation of the cloud service provider's internal\n    administration from resources used by cloud service \n    customers.\nWhere the cloud service involves multi-tenancy, the cloud\nservice provider should implement information security\ncontrols to ensure appropriate isolation of resources used by\ndifferent tenants.\nThe cloud service provider should consider the risks associated\nwith running cloud service customer-supplied software within\nthe cloud services offered by the cloud service provider.\n\nOther information for cloud services\nImplementation of the logical segregation depends upon the technologies applied to the virtualization:\n– Network and storage configurations can be virtualized when a software virtualization function provides a\nvirtual environment (e.g., a virtual operating system). In addition, segregation of cloud service customers\nin software virtualized environments can be designed and implemented using segregation functions of the\nsoftware.\n\n– When a cloud service customer's information is stored in a physically shared storage area with the \"meta-\ndata table\" of the cloud service, segregation of information from other cloud service customers can be\n\nimplemented with access control on the \"meta-data table\".\n\nSecure multi-tenancy and related guidance given in \"ISO/IEC 27040, Information technology – Security techniques –\nStorage security\" can apply to the cloud computing environment.",
+          "controls": [
+            {
+              "id": "hnpf4fnt",
+              "externalId": "CLD-2"
+            }
+          ]
+        },
+        {
+          "id": "CLD.9.5.2",
+          "name": "Virtual machine hardening",
+          "description": "Virtual machines in a cloud computing environment should be hardened to meet business needs.",
+          "context": "Implementation guidance for cloud services\n\nCloud service customer and Cloud service provider:\n\nWhen configuring virtual machines, cloud service customers and cloud service providers should ensure that appropriate aspects\nare hardened (e.g., only those ports, protocols and services that are needed), and that the appropriate technical measures are in\nplace (e.g., anti-malware, logging) for each virtual machine used.",
+          "controls": [
+            {
+              "id": "12kw7z7e",
+              "externalId": "CFG-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLD.12.1",
+      "name": "Operational procedures and responsibilities",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CLD.12.1.5",
+          "name": "Administrator's operational security",
+          "description": "Procedures for administrative operations of a cloud computing environment should be defined, documented and monitored.",
+          "context": "Implementation guidance for cloud services\n\nCloud service customer:\n\nThe cloud service customer should document procedures for\ncritical operations where a failure can cause unrecoverable\ndamage to assets in the cloud computing environment.\nExamples of the critical operations are:\n– installation, changes, and deletion of virtualized devices\nsuch as servers, networks and storage;\n– termination procedures for cloud service usage;\n– backup and restoration.\nThe document should specify that a supervisor should monitor\nthese operations.\n\nCloud service provider:\nThe cloud service provider should provide documentation\nabout the critical operations and procedures to cloud service\ncustomers who require it.\n\nOther information for cloud services\nCloud computing has the benefit of rapid provisioning and administration, and on-demand self-service. These operations\nare often carried out by administrators from the cloud service customer and the cloud service provider. Because human\nintervention in these critical operations can cause serious information security incidents, mechanisms to safeguard the\noperations should be considered and, if needed, be defined and implemented. Examples of serious incidents include\nerasing or shutting down a large number of virtual servers or destroying virtual assets.",
+          "controls": [
+            {
+              "id": "vnadzqhx",
+              "externalId": "OPS-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLD.12.4",
+      "name": "Logging and monitoring",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CLD.12.4.5",
+          "name": "Monitoring of Cloud Services",
+          "description": "The cloud service customer should have the capability to monitor specified aspects of the operation of the cloud services that the cloud service customer uses.",
+          "context": "Implementation guidance for cloud services\n\nCloud service customer:\n\nThe cloud service customer should request information from\nthe cloud service provider of the service monitoring capabilities available for each cloud service.\n\nCloud service provider:\nThe cloud service provider should provide capabilities that\nenable the cloud service customer to monitor specified aspects, relevant to the cloud service customer, of the operation of the cloud services. For example, to monitor and detect if the cloud service is being used as a platform to attack others, or if sensitive data is being leaked from the cloud service.\nAppropriate access controls should secure the use of the\nmonitoring capabilities. The capabilities should provide access\nonly to information about the cloud service customer's own\ncloud service instances.\nThe cloud service provider should provide documentation of\nthe service monitoring capabilities to the cloud service\ncustomer.\nMonitoring should provide data consistent with the event logs\ndescribed in clause 12.4.1 and assist with SLA terms.",
+          "controls": [
+            {
+              "id": "ogcrz25d",
+              "externalId": "MON-66"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLD.13.1",
+      "name": "Network security management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CLD.13.1.4",
+          "name": "Alignment of security management for virtual and physical networks",
+          "description": "Upon configuration of virtual networks, consistency of configurations between virtual and physical networks should be verified based on the cloud service provider's network security policy.",
+          "context": "Implementation guidance for cloud services\n\nCloud service customer:\n\n(no additional implementation guidance) \n\nCloud service provider:\nThe cloud service provider should define and document an\ninformation security policy for the configuration of the virtual\nnetwork consistent with the information security policy for the\nphysical network. The cloud service provider should ensure\nthat the virtual network configuration matches the information\nsecurity policy regardless of the means used to create the\nconfiguration.\n\nOther information for cloud services:\nIn a cloud computing environment built on virtualization technology, a virtual network is configured on virtual\ninfrastructure on a physical network. In such environments, inconsistency of network policies can cause system outages\nor defective access control.\nNOTE – Depending on the type of cloud service, the responsibilities for configuring a virtual network can vary between a cloud service customer and a cloud service provider.",
+          "controls": [
+            {
+              "id": "tnkb56yg",
+              "externalId": "SEA-30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

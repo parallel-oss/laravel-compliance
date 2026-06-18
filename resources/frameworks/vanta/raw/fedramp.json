@@ -1,0 +1,3698 @@
+{
+  "principles": [
+    {
+      "id": "AC",
+      "name": "Access Control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "AC-1",
+          "name": "",
+          "description": "Access control policy and procedures",
+          "controls": [
+            {
+              "id": "afongy9b",
+              "externalId": "IAC-148"
+            }
+          ]
+        },
+        {
+          "id": "AC-2",
+          "name": "",
+          "description": "Account management",
+          "controls": [
+            {
+              "id": "22ermqwa",
+              "externalId": "IAC-149"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (1)",
+          "name": "",
+          "description": "Automated system account management",
+          "controls": [
+            {
+              "id": "ak7ercws",
+              "externalId": "IAC-150"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (2)",
+          "name": "",
+          "description": "Removal of temporary / emergency accounts",
+          "controls": [
+            {
+              "id": "j547kbt2",
+              "externalId": "IAC-151"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (3)",
+          "name": "",
+          "description": "Disable inactive accounts",
+          "controls": [
+            {
+              "id": "nddckwbo",
+              "externalId": "IAC-152"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (4)",
+          "name": "",
+          "description": "Automated audit actions",
+          "controls": [
+            {
+              "id": "xyhat7yd",
+              "externalId": "IAC-153"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (5)",
+          "name": "",
+          "description": "Inactivity logout",
+          "controls": [
+            {
+              "id": "6ygjrdyp",
+              "externalId": "IAC-154"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (7)",
+          "name": "",
+          "description": "Role-based schemes",
+          "controls": [
+            {
+              "id": "eabdq3dw",
+              "externalId": "IAC-155"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (9)",
+          "name": "",
+          "description": "Restrictions on use of shared groups / accounts",
+          "controls": [
+            {
+              "id": "aqpjd52i",
+              "externalId": "IAC-156"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (10)",
+          "name": "",
+          "description": "Shared / group account credential termination",
+          "controls": [
+            {
+              "id": "30ft4rg1",
+              "externalId": "IAC-157"
+            }
+          ]
+        },
+        {
+          "id": "AC-2 (12)",
+          "name": "",
+          "description": "Account monitoring / atypical usage",
+          "controls": [
+            {
+              "id": "yudrtd90",
+              "externalId": "MON-93"
+            }
+          ]
+        },
+        {
+          "id": "AC-3",
+          "name": "",
+          "description": "Access enforcement",
+          "controls": [
+            {
+              "id": "vcjq442u",
+              "externalId": "IAC-158"
+            }
+          ]
+        },
+        {
+          "id": "AC-4",
+          "name": "",
+          "description": "Information flow enforcement",
+          "controls": [
+            {
+              "id": "8nlqfk6g",
+              "externalId": "NET-64"
+            }
+          ]
+        },
+        {
+          "id": "AC-4 (21)",
+          "name": "",
+          "description": "Physical / logical separation of information flows",
+          "controls": [
+            {
+              "id": "hbz81ebw",
+              "externalId": "NET-65"
+            }
+          ]
+        },
+        {
+          "id": "AC-5",
+          "name": "",
+          "description": "Separation of duties",
+          "controls": [
+            {
+              "id": "0sft0wya",
+              "externalId": "HRS-40"
+            }
+          ]
+        },
+        {
+          "id": "AC-6",
+          "name": "",
+          "description": "Least privilege",
+          "controls": [
+            {
+              "id": "qsbay62y",
+              "externalId": "IAC-159"
+            }
+          ]
+        },
+        {
+          "id": "AC-6 (1)",
+          "name": "",
+          "description": "Authorize access to security functions",
+          "controls": [
+            {
+              "id": "bvg9g648",
+              "externalId": "IAC-160"
+            }
+          ]
+        },
+        {
+          "id": "AC-6 (2)",
+          "name": "",
+          "description": "Non-privileged access for nonsecurity functions",
+          "controls": [
+            {
+              "id": "pjtw44t3",
+              "externalId": "IAC-161"
+            }
+          ]
+        },
+        {
+          "id": "AC-6 (5)",
+          "name": "",
+          "description": "Privileged accounts",
+          "controls": [
+            {
+              "id": "1yr2ujd3",
+              "externalId": "IAC-162"
+            }
+          ]
+        },
+        {
+          "id": "AC-6 (9)",
+          "name": "",
+          "description": "Auditing use of privileged functions",
+          "controls": [
+            {
+              "id": "yik2r8t4",
+              "externalId": "IAC-163"
+            }
+          ]
+        },
+        {
+          "id": "AC-6 (10)",
+          "name": "",
+          "description": "Prohibit non-privileged users from executing privileged functions",
+          "controls": [
+            {
+              "id": "ao2wlrwd",
+              "externalId": "IAC-164"
+            }
+          ]
+        },
+        {
+          "id": "AC-7",
+          "name": "",
+          "description": "Unsuccessful logon attempts",
+          "controls": [
+            {
+              "id": "8418wynn",
+              "externalId": "IAC-165"
+            }
+          ]
+        },
+        {
+          "id": "AC-8",
+          "name": "",
+          "description": "System use notification",
+          "controls": [
+            {
+              "id": "awphe3lk",
+              "externalId": "SEA-43"
+            }
+          ]
+        },
+        {
+          "id": "AC-10",
+          "name": "",
+          "description": "Concurrent session control",
+          "controls": [
+            {
+              "id": "br3bm6mu",
+              "externalId": "IAC-166"
+            }
+          ]
+        },
+        {
+          "id": "AC-11",
+          "name": "",
+          "description": "Session lock",
+          "controls": [
+            {
+              "id": "vhfi6o8u",
+              "externalId": "IAC-167"
+            }
+          ]
+        },
+        {
+          "id": "AC-11 (1)",
+          "name": "",
+          "description": "Pattern-hiding displays",
+          "controls": [
+            {
+              "id": "vdjdt3cc",
+              "externalId": "IAC-168"
+            }
+          ]
+        },
+        {
+          "id": "AC-12",
+          "name": "",
+          "description": "Session termination",
+          "controls": [
+            {
+              "id": "0nk924j3",
+              "externalId": "IAC-169"
+            }
+          ]
+        },
+        {
+          "id": "AC-14",
+          "name": "",
+          "description": "Permitted actions without identification or authentication",
+          "controls": [
+            {
+              "id": "qilqwrcy",
+              "externalId": "IAC-170"
+            }
+          ]
+        },
+        {
+          "id": "AC-17",
+          "name": "",
+          "description": "Remote access",
+          "controls": [
+            {
+              "id": "ccejzo4z",
+              "externalId": "NET-66"
+            }
+          ]
+        },
+        {
+          "id": "AC-17 (1)",
+          "name": "",
+          "description": "Automated monitoring / control",
+          "controls": [
+            {
+              "id": "xkyo9vkp",
+              "externalId": "NET-67"
+            }
+          ]
+        },
+        {
+          "id": "AC-17 (2)",
+          "name": "",
+          "description": "Protection of confidentiality / integrity using encryption",
+          "controls": [
+            {
+              "id": "resses10",
+              "externalId": "NET-68"
+            }
+          ]
+        },
+        {
+          "id": "AC-17 (3)",
+          "name": "",
+          "description": "Managed access control points",
+          "controls": [
+            {
+              "id": "2i4z158g",
+              "externalId": "NET-69"
+            }
+          ]
+        },
+        {
+          "id": "AC-17 (4)",
+          "name": "",
+          "description": "Privileged commands / access",
+          "controls": [
+            {
+              "id": "yl1mdib2",
+              "externalId": "NET-70"
+            }
+          ]
+        },
+        {
+          "id": "AC-17 (9)",
+          "name": "",
+          "description": "Disconnect / disable access",
+          "controls": [
+            {
+              "id": "g5zq23zc",
+              "externalId": "NET-71"
+            }
+          ]
+        },
+        {
+          "id": "AC-18",
+          "name": "",
+          "description": "Wireless access",
+          "controls": [
+            {
+              "id": "3ytwa09h",
+              "externalId": "NET-72"
+            }
+          ]
+        },
+        {
+          "id": "AC-18 (1)",
+          "name": "",
+          "description": "Authentication and encryption",
+          "controls": [
+            {
+              "id": "3svfnxvh",
+              "externalId": "NET-73"
+            }
+          ]
+        },
+        {
+          "id": "AC-19",
+          "name": "",
+          "description": "Access control for mobile devices",
+          "controls": [
+            {
+              "id": "f28xtntt",
+              "externalId": "MDM-9"
+            }
+          ]
+        },
+        {
+          "id": "AC-19 (5)",
+          "name": "",
+          "description": "Full device / container-based encryption",
+          "controls": [
+            {
+              "id": "zqo4y5j3",
+              "externalId": "MDM-10"
+            }
+          ]
+        },
+        {
+          "id": "AC-20",
+          "name": "",
+          "description": "Use of external information systems",
+          "controls": [
+            {
+              "id": "yumu3wff",
+              "externalId": "DCH-91"
+            }
+          ]
+        },
+        {
+          "id": "AC-20 (1)",
+          "name": "",
+          "description": "Limits on authorized use",
+          "controls": [
+            {
+              "id": "fvbyqyvx",
+              "externalId": "DCH-92"
+            }
+          ]
+        },
+        {
+          "id": "AC-20 (2)",
+          "name": "",
+          "description": "Portable storage devices",
+          "controls": [
+            {
+              "id": "7ytcmmy5",
+              "externalId": "DCH-93"
+            }
+          ]
+        },
+        {
+          "id": "AC-21",
+          "name": "",
+          "description": "Information sharing",
+          "controls": [
+            {
+              "id": "lsxqsr4z",
+              "externalId": "DCH-94"
+            }
+          ]
+        },
+        {
+          "id": "AC-22",
+          "name": "",
+          "description": "Publicly accessible content",
+          "controls": [
+            {
+              "id": "rjka3eh8",
+              "externalId": "DCH-95"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "name": "Awareness and Training",
+      "optional": false,
+      "sections": [
+        {
+          "id": "AT-1",
+          "name": "",
+          "description": "Security awareness and training policy andprocedures",
+          "controls": [
+            {
+              "id": "gvwxj0ym",
+              "externalId": "SAT-40"
+            }
+          ]
+        },
+        {
+          "id": "AT-2",
+          "name": "",
+          "description": "Security awareness training",
+          "controls": [
+            {
+              "id": "ubrx69dk",
+              "externalId": "SAT-41"
+            }
+          ]
+        },
+        {
+          "id": "AT-2 (2)",
+          "name": "",
+          "description": "Insider threat",
+          "controls": [
+            {
+              "id": "dli43vh3",
+              "externalId": "THR-11"
+            }
+          ]
+        },
+        {
+          "id": "AT-3",
+          "name": "",
+          "description": "Role-based security training",
+          "controls": [
+            {
+              "id": "keey1i50",
+              "externalId": "SAT-42"
+            }
+          ]
+        },
+        {
+          "id": "AT-4",
+          "name": "",
+          "description": "Security training records",
+          "controls": [
+            {
+              "id": "24uo7v3b",
+              "externalId": "SAT-43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AU",
+      "name": "Audit and Accountability",
+      "optional": false,
+      "sections": [
+        {
+          "id": "AU-1",
+          "name": "",
+          "description": "Audit and accountability policy and procedures",
+          "controls": [
+            {
+              "id": "i160yxjd",
+              "externalId": "MON-94"
+            }
+          ]
+        },
+        {
+          "id": "AU-2",
+          "name": "",
+          "description": "Audit events",
+          "controls": [
+            {
+              "id": "obsu5aj8",
+              "externalId": "MON-95"
+            }
+          ]
+        },
+        {
+          "id": "AU-2 (3)",
+          "name": "",
+          "description": "Reviews and updates",
+          "controls": [
+            {
+              "id": "md6fhp8p",
+              "externalId": "MON-96"
+            }
+          ]
+        },
+        {
+          "id": "AU-3",
+          "name": "",
+          "description": "Content of audit records",
+          "controls": [
+            {
+              "id": "83ew56im",
+              "externalId": "MON-97"
+            }
+          ]
+        },
+        {
+          "id": "AU-3 (1)",
+          "name": "",
+          "description": "Additional audit information",
+          "controls": [
+            {
+              "id": "57znaoa5",
+              "externalId": "MON-98"
+            }
+          ]
+        },
+        {
+          "id": "AU-4",
+          "name": "",
+          "description": "Audit storage capacity",
+          "controls": [
+            {
+              "id": "qa7hltzv",
+              "externalId": "MON-99"
+            }
+          ]
+        },
+        {
+          "id": "AU-5",
+          "name": "",
+          "description": "Response to audit processing failures",
+          "controls": [
+            {
+              "id": "0auf6ife",
+              "externalId": "MON-100"
+            }
+          ]
+        },
+        {
+          "id": "AU-6",
+          "name": "",
+          "description": "Audit review, analysis, and reporting",
+          "controls": [
+            {
+              "id": "sivxkiko",
+              "externalId": "MON-101"
+            }
+          ]
+        },
+        {
+          "id": "AU-6 (1)",
+          "name": "",
+          "description": "Process integration",
+          "controls": [
+            {
+              "id": "bofylzyn",
+              "externalId": "MON-102"
+            }
+          ]
+        },
+        {
+          "id": "AU-6 (3)",
+          "name": "",
+          "description": "Correlate audit repositories",
+          "controls": [
+            {
+              "id": "sxk3psms",
+              "externalId": "MON-103"
+            }
+          ]
+        },
+        {
+          "id": "AU-7",
+          "name": "",
+          "description": "Audit reduction and report generation",
+          "controls": [
+            {
+              "id": "4bryut30",
+              "externalId": "MON-104"
+            }
+          ]
+        },
+        {
+          "id": "AU-7 (1)",
+          "name": "",
+          "description": "Automatic processing",
+          "controls": [
+            {
+              "id": "csa6duhi",
+              "externalId": "MON-105"
+            }
+          ]
+        },
+        {
+          "id": "AU-8",
+          "name": "",
+          "description": "Time stamps",
+          "controls": [
+            {
+              "id": "q8f0v62c",
+              "externalId": "SEA-44"
+            }
+          ]
+        },
+        {
+          "id": "AU-8 (1)",
+          "name": "",
+          "description": "Synchronization with authoritative time source",
+          "controls": [
+            {
+              "id": "pm8j6gcq",
+              "externalId": "MON-106"
+            }
+          ]
+        },
+        {
+          "id": "AU-9",
+          "name": "",
+          "description": "Protection of audit information",
+          "controls": [
+            {
+              "id": "pqfe4qjw",
+              "externalId": "MON-107"
+            }
+          ]
+        },
+        {
+          "id": "AU-9 (2)",
+          "name": "",
+          "description": "Audit backup on separate physical systems / components",
+          "controls": [
+            {
+              "id": "do6bvhaz",
+              "externalId": "MON-108"
+            }
+          ]
+        },
+        {
+          "id": "AU-9 (4)",
+          "name": "",
+          "description": "Access by subset of privileged users",
+          "controls": [
+            {
+              "id": "jsnb39ne",
+              "externalId": "MON-109"
+            }
+          ]
+        },
+        {
+          "id": "AU-11",
+          "name": "",
+          "description": "Audit record retention",
+          "controls": [
+            {
+              "id": "pq8g9fkv",
+              "externalId": "MON-110"
+            }
+          ]
+        },
+        {
+          "id": "AU-12",
+          "name": "",
+          "description": "Audit generation",
+          "controls": [
+            {
+              "id": "809ijofs",
+              "externalId": "MON-111"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CA",
+      "name": "Security Assessment and Authorization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CA-1",
+          "name": "",
+          "description": "Security assessment and authorization policy and procedures",
+          "controls": [
+            {
+              "id": "ywyq7uzv",
+              "externalId": "IAO-7"
+            }
+          ]
+        },
+        {
+          "id": "CA-2",
+          "name": "",
+          "description": "Security assessments",
+          "controls": [
+            {
+              "id": "wljru0mu",
+              "externalId": "IAO-8"
+            }
+          ]
+        },
+        {
+          "id": "CA-2 (1)",
+          "name": "",
+          "description": "Independent assessors",
+          "controls": [
+            {
+              "id": "ltn987nr",
+              "externalId": "IAO-9"
+            }
+          ]
+        },
+        {
+          "id": "CA-2 (2)",
+          "name": "",
+          "description": "Specialized assessments",
+          "controls": [
+            {
+              "id": "wrux0np0",
+              "externalId": "IAO-10"
+            }
+          ]
+        },
+        {
+          "id": "CA-2 (3)",
+          "name": "",
+          "description": "External organizations",
+          "controls": [
+            {
+              "id": "cgl15hli",
+              "externalId": "IAO-11"
+            }
+          ]
+        },
+        {
+          "id": "CA-3",
+          "name": "",
+          "description": "System interconnections",
+          "controls": [
+            {
+              "id": "nlamr2sa",
+              "externalId": "NET-74"
+            }
+          ]
+        },
+        {
+          "id": "CA-3 (3)",
+          "name": "",
+          "description": "Unclassified non-national security system connections",
+          "controls": [
+            {
+              "id": "l9b0nsz4",
+              "externalId": "NET-75"
+            }
+          ]
+        },
+        {
+          "id": "CA-3 (5)",
+          "name": "",
+          "description": "Restrictions on external system connections",
+          "controls": [
+            {
+              "id": "f4rpf1xm",
+              "externalId": "NET-76"
+            }
+          ]
+        },
+        {
+          "id": "CA-5",
+          "name": "",
+          "description": "Plan of action and milestones",
+          "controls": [
+            {
+              "id": "1953ih9a",
+              "externalId": "IAO-12"
+            }
+          ]
+        },
+        {
+          "id": "CA-6",
+          "name": "",
+          "description": "Security authorization",
+          "controls": [
+            {
+              "id": "8yad3pai",
+              "externalId": "IAO-13"
+            }
+          ]
+        },
+        {
+          "id": "CA-7",
+          "name": "",
+          "description": "Continuous monitoring",
+          "controls": [
+            {
+              "id": "xprrq9xr",
+              "externalId": "CPL-39"
+            }
+          ]
+        },
+        {
+          "id": "CA-7 (1)",
+          "name": "",
+          "description": "Independent assessment",
+          "controls": [
+            {
+              "id": "whbcdppc",
+              "externalId": "CPL-40"
+            }
+          ]
+        },
+        {
+          "id": "CA-8",
+          "name": "",
+          "description": "Penetration testing",
+          "controls": [
+            {
+              "id": "bfm9sc4e",
+              "externalId": "VPM-62"
+            }
+          ]
+        },
+        {
+          "id": "CA-8 (1)",
+          "name": "",
+          "description": "Independent penetration agent or team",
+          "controls": [
+            {
+              "id": "sbij3ki3",
+              "externalId": "VPM-63"
+            }
+          ]
+        },
+        {
+          "id": "CA-9",
+          "name": "",
+          "description": "Internal system connections",
+          "controls": [
+            {
+              "id": "olcypaam",
+              "externalId": "NET-77"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CM",
+      "name": "Configuration Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CM-1",
+          "name": "",
+          "description": "Configuration management policy and procedures",
+          "controls": [
+            {
+              "id": "yruje2gr",
+              "externalId": "CFG-28"
+            }
+          ]
+        },
+        {
+          "id": "CM-2",
+          "name": "",
+          "description": "Baseline configuration",
+          "controls": [
+            {
+              "id": "un73o822",
+              "externalId": "CFG-29"
+            }
+          ]
+        },
+        {
+          "id": "CM-2 (1)",
+          "name": "",
+          "description": "Reviews and updates",
+          "controls": [
+            {
+              "id": "73yrsj57",
+              "externalId": "CFG-30"
+            }
+          ]
+        },
+        {
+          "id": "CM-2 (2)",
+          "name": "",
+          "description": "Automation support for accuracy / currency",
+          "controls": [
+            {
+              "id": "r2fhrgyp",
+              "externalId": "CFG-31"
+            }
+          ]
+        },
+        {
+          "id": "CM-2 (3)",
+          "name": "",
+          "description": "Retention of previous configurations",
+          "controls": [
+            {
+              "id": "4j8krhya",
+              "externalId": "CFG-32"
+            }
+          ]
+        },
+        {
+          "id": "CM-2 (7)",
+          "name": "",
+          "description": "Configure systems, components, or devices for high-risk areas",
+          "controls": [
+            {
+              "id": "tonxy48o",
+              "externalId": "CFG-33"
+            }
+          ]
+        },
+        {
+          "id": "CM-3",
+          "name": "",
+          "description": "Configuration change control",
+          "controls": [
+            {
+              "id": "1hgxpnbf",
+              "externalId": "CHG-30"
+            }
+          ]
+        },
+        {
+          "id": "CM-4",
+          "name": "",
+          "description": "Security impact analysis",
+          "controls": [
+            {
+              "id": "jjv3ijwq",
+              "externalId": "CHG-31"
+            }
+          ]
+        },
+        {
+          "id": "CM-5",
+          "name": "",
+          "description": "Access restrictions for change",
+          "controls": [
+            {
+              "id": "hqtc34m6",
+              "externalId": "CHG-32"
+            }
+          ]
+        },
+        {
+          "id": "CM-5 (1)",
+          "name": "",
+          "description": "Automated access enforcement / auditing",
+          "controls": [
+            {
+              "id": "q7brudum",
+              "externalId": "CHG-33"
+            }
+          ]
+        },
+        {
+          "id": "CM-5 (3)",
+          "name": "",
+          "description": "Signed components",
+          "controls": [
+            {
+              "id": "ex4gqpma",
+              "externalId": "CHG-34"
+            }
+          ]
+        },
+        {
+          "id": "CM-5 (5)",
+          "name": "",
+          "description": "Limit production / operational privileges",
+          "controls": [
+            {
+              "id": "r0puo1ao",
+              "externalId": "CHG-35"
+            }
+          ]
+        },
+        {
+          "id": "CM-6",
+          "name": "",
+          "description": "Configuration settings",
+          "controls": [
+            {
+              "id": "sc23msh5",
+              "externalId": "CFG-34"
+            }
+          ]
+        },
+        {
+          "id": "CM-6 (1)",
+          "name": "",
+          "description": "Automated central management / application / verification",
+          "controls": [
+            {
+              "id": "0c6xrbcd",
+              "externalId": "CFG-35"
+            }
+          ]
+        },
+        {
+          "id": "CM-7",
+          "name": "",
+          "description": "Least functionality",
+          "controls": [
+            {
+              "id": "ft4a4j9c",
+              "externalId": "CFG-36"
+            }
+          ]
+        },
+        {
+          "id": "CM-7 (1)",
+          "name": "",
+          "description": "Periodic review",
+          "controls": [
+            {
+              "id": "d9m0kstx",
+              "externalId": "CFG-37"
+            }
+          ]
+        },
+        {
+          "id": "CM-7 (2)",
+          "name": "",
+          "description": "Prevent program execution",
+          "controls": [
+            {
+              "id": "atwr1ru4",
+              "externalId": "CFG-38"
+            }
+          ]
+        },
+        {
+          "id": "CM-7 (5)",
+          "name": "",
+          "description": "Authorized software / whitelisting",
+          "controls": [
+            {
+              "id": "emmygen0",
+              "externalId": "CFG-39"
+            }
+          ]
+        },
+        {
+          "id": "CM-8",
+          "name": "",
+          "description": "Information system component inventory",
+          "controls": [
+            {
+              "id": "3n23tj0w",
+              "externalId": "AST-61"
+            }
+          ]
+        },
+        {
+          "id": "CM-8 (1)",
+          "name": "",
+          "description": "Updates during installations / removals",
+          "controls": [
+            {
+              "id": "peu24r64",
+              "externalId": "AST-62"
+            }
+          ]
+        },
+        {
+          "id": "CM-8 (3)",
+          "name": "",
+          "description": "Automated unauthorized component detection",
+          "controls": [
+            {
+              "id": "weft0fzx",
+              "externalId": "AST-63"
+            }
+          ]
+        },
+        {
+          "id": "CM-8 (5)",
+          "name": "",
+          "description": "No duplicate accounting of components",
+          "controls": [
+            {
+              "id": "xahvs43z",
+              "externalId": "AST-64"
+            }
+          ]
+        },
+        {
+          "id": "CM-9",
+          "name": "",
+          "description": "Configuration management plan",
+          "controls": [
+            {
+              "id": "y159v7cb",
+              "externalId": "CFG-40"
+            }
+          ]
+        },
+        {
+          "id": "CM-10",
+          "name": "",
+          "description": "Software usage restrictions",
+          "controls": [
+            {
+              "id": "198o3jv8",
+              "externalId": "CFG-41"
+            }
+          ]
+        },
+        {
+          "id": "CM-10 (1)",
+          "name": "",
+          "description": "Open source software",
+          "controls": [
+            {
+              "id": "lw8tycqo",
+              "externalId": "CFG-42"
+            }
+          ]
+        },
+        {
+          "id": "CM-11",
+          "name": "",
+          "description": "User-installed software",
+          "controls": [
+            {
+              "id": "vvlaq4ir",
+              "externalId": "END-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CP",
+      "name": "Contingency Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CP-1",
+          "name": "",
+          "description": "Contingency planning policy and procedures",
+          "controls": [
+            {
+              "id": "1lhhetdw",
+              "externalId": "BCD-45"
+            }
+          ]
+        },
+        {
+          "id": "CP-2",
+          "name": "",
+          "description": "Contingency plan",
+          "controls": [
+            {
+              "id": "4qkwznsf",
+              "externalId": "BCD-46"
+            }
+          ]
+        },
+        {
+          "id": "CP-2 (1)",
+          "name": "",
+          "description": "Coordinate with related plans",
+          "controls": [
+            {
+              "id": "4kr0uhfc",
+              "externalId": "BCD-47"
+            }
+          ]
+        },
+        {
+          "id": "CP-2 (2)",
+          "name": "",
+          "description": "Capacity planning",
+          "controls": [
+            {
+              "id": "rcfl2613",
+              "externalId": "CAP-4"
+            }
+          ]
+        },
+        {
+          "id": "CP-2 (3)",
+          "name": "",
+          "description": "Resume essential missions / business functions",
+          "controls": [
+            {
+              "id": "pbr05e3k",
+              "externalId": "BCD-48"
+            }
+          ]
+        },
+        {
+          "id": "CP-2 (8)",
+          "name": "",
+          "description": "Identify critical assets",
+          "controls": [
+            {
+              "id": "439cpc3o",
+              "externalId": "BCD-49"
+            }
+          ]
+        },
+        {
+          "id": "CP-3",
+          "name": "",
+          "description": "Contingency training",
+          "controls": [
+            {
+              "id": "3god2eii",
+              "externalId": "BCD-50"
+            }
+          ]
+        },
+        {
+          "id": "CP-4",
+          "name": "",
+          "description": "Contingency plan testing",
+          "controls": [
+            {
+              "id": "sirceqwt",
+              "externalId": "BCD-51"
+            }
+          ]
+        },
+        {
+          "id": "CP-4 (1)",
+          "name": "",
+          "description": "Coordinate with related plans",
+          "controls": [
+            {
+              "id": "jtucb4e9",
+              "externalId": "BCD-52"
+            }
+          ]
+        },
+        {
+          "id": "CP-6",
+          "name": "",
+          "description": "Alternate storage site",
+          "controls": [
+            {
+              "id": "wb6n1lh5",
+              "externalId": "BCD-53"
+            }
+          ]
+        },
+        {
+          "id": "CP-6 (1)",
+          "name": "",
+          "description": "Separation from primary site",
+          "controls": [
+            {
+              "id": "mi85ivej",
+              "externalId": "BCD-54"
+            }
+          ]
+        },
+        {
+          "id": "CP-6 (3)",
+          "name": "",
+          "description": "Accessibility",
+          "controls": [
+            {
+              "id": "y70qsw0o",
+              "externalId": "BCD-55"
+            }
+          ]
+        },
+        {
+          "id": "CP-7",
+          "name": "",
+          "description": "Alternate processing site",
+          "controls": [
+            {
+              "id": "1tmkhaj7",
+              "externalId": "BCD-56"
+            }
+          ]
+        },
+        {
+          "id": "CP-7 (1)",
+          "name": "",
+          "description": "Separation from primary site",
+          "controls": [
+            {
+              "id": "ebk2q998",
+              "externalId": "BCD-57"
+            }
+          ]
+        },
+        {
+          "id": "CP-7 (2)",
+          "name": "",
+          "description": "Accessibility",
+          "controls": [
+            {
+              "id": "cl4ursyz",
+              "externalId": "BCD-58"
+            }
+          ]
+        },
+        {
+          "id": "CP-7 (3)",
+          "name": "",
+          "description": "Priority of service",
+          "controls": [
+            {
+              "id": "gsufl2fj",
+              "externalId": "BCD-59"
+            }
+          ]
+        },
+        {
+          "id": "CP-8",
+          "name": "",
+          "description": "Telecommunications services",
+          "controls": [
+            {
+              "id": "s3g0g0d9",
+              "externalId": "BCD-60"
+            }
+          ]
+        },
+        {
+          "id": "CP-8 (1)",
+          "name": "",
+          "description": "Priority of service provisions",
+          "controls": [
+            {
+              "id": "z23v2ouy",
+              "externalId": "BCD-61"
+            }
+          ]
+        },
+        {
+          "id": "CP-8 (2)",
+          "name": "",
+          "description": "Single points of failure",
+          "controls": [
+            {
+              "id": "e7m68kgj",
+              "externalId": "BCD-62"
+            }
+          ]
+        },
+        {
+          "id": "CP-9",
+          "name": "",
+          "description": "Information system backup",
+          "controls": [
+            {
+              "id": "xuj8r7i0",
+              "externalId": "BCD-63"
+            }
+          ]
+        },
+        {
+          "id": "CP-9 (1)",
+          "name": "",
+          "description": "Testing for reliability / integrity",
+          "controls": [
+            {
+              "id": "bkkbegkz",
+              "externalId": "BCD-64"
+            }
+          ]
+        },
+        {
+          "id": "CP-9 (3)",
+          "name": "",
+          "description": "Separate storage for critical information",
+          "controls": [
+            {
+              "id": "rj8lhra7",
+              "externalId": "BCD-65"
+            }
+          ]
+        },
+        {
+          "id": "CP-10",
+          "name": "",
+          "description": "Information system recovery and reconstitution",
+          "controls": [
+            {
+              "id": "lbxpsgsf",
+              "externalId": "BCD-66"
+            }
+          ]
+        },
+        {
+          "id": "CP-10 (2)",
+          "name": "",
+          "description": "Transaction recovery",
+          "controls": [
+            {
+              "id": "yjjj99sq",
+              "externalId": "BCD-67"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA",
+      "name": "Identification and Authentication",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IA-1",
+          "name": "",
+          "description": "Identification and authentication policy and procedures",
+          "controls": [
+            {
+              "id": "soysmlia",
+              "externalId": "IAC-171"
+            }
+          ]
+        },
+        {
+          "id": "IA-2",
+          "name": "",
+          "description": "Identification and authentication (organizational users)",
+          "controls": [
+            {
+              "id": "n7acjtjn",
+              "externalId": "IAC-172"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (1)",
+          "name": "",
+          "description": "Network access to privileged accounts",
+          "controls": [
+            {
+              "id": "x0zaeil0",
+              "externalId": "IAC-173"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (2)",
+          "name": "",
+          "description": "Network access to non-privileged accounts",
+          "controls": [
+            {
+              "id": "eynosr9i",
+              "externalId": "IAC-174"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (3)",
+          "name": "",
+          "description": "Local access to privileged accounts",
+          "controls": [
+            {
+              "id": "5cboncqa",
+              "externalId": "IAC-175"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (5)",
+          "name": "",
+          "description": "Identification and authentication group authentication",
+          "controls": [
+            {
+              "id": "sm2cfzsx",
+              "externalId": "IAC-176"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (8)",
+          "name": "",
+          "description": "Network access to privileged accounts - replay resistant",
+          "controls": [
+            {
+              "id": "vmt2mqs9",
+              "externalId": "IAC-177"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (11)",
+          "name": "",
+          "description": "Remote access - separate device",
+          "controls": [
+            {
+              "id": "8y911q6q",
+              "externalId": "IAC-178"
+            }
+          ]
+        },
+        {
+          "id": "IA-2 (12)",
+          "name": "",
+          "description": "Acceptance of piv credentials",
+          "controls": [
+            {
+              "id": "tusao96w",
+              "externalId": "IAC-179"
+            }
+          ]
+        },
+        {
+          "id": "IA-3",
+          "name": "",
+          "description": "Device identification and authentication",
+          "controls": [
+            {
+              "id": "xp8ssjxh",
+              "externalId": "IAC-180"
+            }
+          ]
+        },
+        {
+          "id": "IA-4",
+          "name": "",
+          "description": "Identifier management",
+          "controls": [
+            {
+              "id": "jieuy324",
+              "externalId": "IAC-181"
+            }
+          ]
+        },
+        {
+          "id": "IA-4 (4)",
+          "name": "",
+          "description": "Identify user status",
+          "controls": [
+            {
+              "id": "y9w6hr8u",
+              "externalId": "IAC-182"
+            }
+          ]
+        },
+        {
+          "id": "IA-5",
+          "name": "",
+          "description": "Authenticator management",
+          "controls": [
+            {
+              "id": "tyyk0rhd",
+              "externalId": "IAC-183"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (1)",
+          "name": "",
+          "description": "Password-based authentication",
+          "controls": [
+            {
+              "id": "x7gg4jgs",
+              "externalId": "IAC-184"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (2)",
+          "name": "",
+          "description": "Pki-based authentication",
+          "controls": [
+            {
+              "id": "as455eih",
+              "externalId": "IAC-185"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (3)",
+          "name": "",
+          "description": "In-person or trusted third-party registration",
+          "controls": [
+            {
+              "id": "0p8b7aql",
+              "externalId": "IAC-186"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (4)",
+          "name": "",
+          "description": "Automated support for password strength determination",
+          "controls": [
+            {
+              "id": "5i3nvcov",
+              "externalId": "IAC-187"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (6)",
+          "name": "",
+          "description": "Protection of authenticators",
+          "controls": [
+            {
+              "id": "6r3j1uus",
+              "externalId": "IAC-188"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (7)",
+          "name": "",
+          "description": "No embedded unencrypted static authenticators",
+          "controls": [
+            {
+              "id": "c6a3o84b",
+              "externalId": "IAC-189"
+            }
+          ]
+        },
+        {
+          "id": "IA-5 (11)",
+          "name": "",
+          "description": "Hardware token-based authentication",
+          "controls": [
+            {
+              "id": "7eu5721d",
+              "externalId": "IAC-190"
+            }
+          ]
+        },
+        {
+          "id": "IA-6",
+          "name": "",
+          "description": "Authenticator feedback",
+          "controls": [
+            {
+              "id": "6kuikbim",
+              "externalId": "IAC-191"
+            }
+          ]
+        },
+        {
+          "id": "IA-7",
+          "name": "",
+          "description": "Cryptographic module authentication",
+          "controls": [
+            {
+              "id": "8uk03okn",
+              "externalId": "CRY-81"
+            }
+          ]
+        },
+        {
+          "id": "IA-8",
+          "name": "",
+          "description": "Identification and authentication (non- organizational users)",
+          "controls": [
+            {
+              "id": "uymvp4fe",
+              "externalId": "IAC-192"
+            }
+          ]
+        },
+        {
+          "id": "IA-8 (1)",
+          "name": "",
+          "description": "Acceptance of piv credentials from other agencies",
+          "controls": [
+            {
+              "id": "j738qxfz",
+              "externalId": "IAC-193"
+            }
+          ]
+        },
+        {
+          "id": "IA-8 (2)",
+          "name": "",
+          "description": "Acceptance of third-party credentials",
+          "controls": [
+            {
+              "id": "sjdy7obu",
+              "externalId": "IAC-194"
+            }
+          ]
+        },
+        {
+          "id": "IA-8 (3)",
+          "name": "",
+          "description": "Use of ficam-approved products",
+          "controls": [
+            {
+              "id": "srqyvoop",
+              "externalId": "IAC-195"
+            }
+          ]
+        },
+        {
+          "id": "IA-8 (4)",
+          "name": "",
+          "description": "Use of ficam-issued profiles",
+          "controls": [
+            {
+              "id": "l6jyzq8i",
+              "externalId": "IAC-196"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IR",
+      "name": "Incident Response",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IR-1",
+          "name": "",
+          "description": "Incident response policy and procedures",
+          "controls": [
+            {
+              "id": "17j05lp8",
+              "externalId": "IRO-72"
+            }
+          ]
+        },
+        {
+          "id": "IR-2",
+          "name": "",
+          "description": "Incident response training",
+          "controls": [
+            {
+              "id": "gyobhwy5",
+              "externalId": "IRO-73"
+            }
+          ]
+        },
+        {
+          "id": "IR-3",
+          "name": "",
+          "description": "Incident response testing",
+          "controls": [
+            {
+              "id": "cise9rgt",
+              "externalId": "IRO-74"
+            }
+          ]
+        },
+        {
+          "id": "IR-3 (2)",
+          "name": "",
+          "description": "Coordination with related plans",
+          "controls": [
+            {
+              "id": "am03owpc",
+              "externalId": "IRO-75"
+            }
+          ]
+        },
+        {
+          "id": "IR-4",
+          "name": "",
+          "description": "Incident handling",
+          "controls": [
+            {
+              "id": "1hh61u3j",
+              "externalId": "IRO-76"
+            }
+          ]
+        },
+        {
+          "id": "IR-4 (1)",
+          "name": "",
+          "description": "Automated incident handling processes",
+          "controls": [
+            {
+              "id": "owy52c2z",
+              "externalId": "IRO-77"
+            }
+          ]
+        },
+        {
+          "id": "IR-5",
+          "name": "",
+          "description": "Incident monitoring",
+          "controls": [
+            {
+              "id": "qnt2fz0d",
+              "externalId": "IRO-78"
+            }
+          ]
+        },
+        {
+          "id": "IR-6",
+          "name": "",
+          "description": "Incident reporting",
+          "controls": [
+            {
+              "id": "ing59hch",
+              "externalId": "IRO-79"
+            }
+          ]
+        },
+        {
+          "id": "IR-6 (1)",
+          "name": "",
+          "description": "Automated reporting",
+          "controls": [
+            {
+              "id": "bq32tqli",
+              "externalId": "IRO-80"
+            }
+          ]
+        },
+        {
+          "id": "IR-7",
+          "name": "",
+          "description": "Incident response assistance",
+          "controls": [
+            {
+              "id": "4indwnlu",
+              "externalId": "IRO-81"
+            }
+          ]
+        },
+        {
+          "id": "IR-7 (1)",
+          "name": "",
+          "description": "Automation support for availability of information / support",
+          "controls": [
+            {
+              "id": "wgfzbzwy",
+              "externalId": "IRO-82"
+            }
+          ]
+        },
+        {
+          "id": "IR-7 (2)",
+          "name": "",
+          "description": "Coordination with external providers",
+          "controls": [
+            {
+              "id": "uecym5en",
+              "externalId": "IRO-83"
+            }
+          ]
+        },
+        {
+          "id": "IR-8",
+          "name": "",
+          "description": "Incident response plan",
+          "controls": [
+            {
+              "id": "82ebkfqb",
+              "externalId": "IRO-84"
+            }
+          ]
+        },
+        {
+          "id": "IR-9",
+          "name": "",
+          "description": "Information spillage response",
+          "controls": [
+            {
+              "id": "jjif0ezq",
+              "externalId": "IRO-85"
+            }
+          ]
+        },
+        {
+          "id": "IR-9 (1)",
+          "name": "",
+          "description": "Responsible personnel",
+          "controls": [
+            {
+              "id": "dwwntt0a",
+              "externalId": "IRO-86"
+            }
+          ]
+        },
+        {
+          "id": "IR-9 (2)",
+          "name": "",
+          "description": "Training",
+          "controls": [
+            {
+              "id": "w81pstnw",
+              "externalId": "IRO-87"
+            }
+          ]
+        },
+        {
+          "id": "IR-9 (3)",
+          "name": "",
+          "description": "Post-spill operations",
+          "controls": [
+            {
+              "id": "urblskuw",
+              "externalId": "IRO-88"
+            }
+          ]
+        },
+        {
+          "id": "IR-9 (4)",
+          "name": "",
+          "description": "Exposure to unauthorized personnel",
+          "controls": [
+            {
+              "id": "u1ynel0o",
+              "externalId": "IRO-89"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MA",
+      "name": "Maintenance",
+      "optional": false,
+      "sections": [
+        {
+          "id": "MA-1",
+          "name": "",
+          "description": "System maintenance policy and procedures",
+          "controls": [
+            {
+              "id": "f4er7vra",
+              "externalId": "MNT-10"
+            }
+          ]
+        },
+        {
+          "id": "MA-2",
+          "name": "",
+          "description": "Controlled maintenance",
+          "controls": [
+            {
+              "id": "01ii1z49",
+              "externalId": "MNT-11"
+            }
+          ]
+        },
+        {
+          "id": "MA-3",
+          "name": "",
+          "description": "Maintenance tools",
+          "controls": [
+            {
+              "id": "k2mz2pun",
+              "externalId": "MNT-12"
+            }
+          ]
+        },
+        {
+          "id": "MA-3 (1)",
+          "name": "",
+          "description": "Inspect tools",
+          "controls": [
+            {
+              "id": "w5sfiqmu",
+              "externalId": "MNT-13"
+            }
+          ]
+        },
+        {
+          "id": "MA-3 (2)",
+          "name": "",
+          "description": "Inspect media",
+          "controls": [
+            {
+              "id": "nihpn7ym",
+              "externalId": "MNT-14"
+            }
+          ]
+        },
+        {
+          "id": "MA-3 (3)",
+          "name": "",
+          "description": "Prevent unauthorized removal",
+          "controls": [
+            {
+              "id": "eq5dgn4a",
+              "externalId": "MNT-15"
+            }
+          ]
+        },
+        {
+          "id": "MA-4",
+          "name": "",
+          "description": "Nonlocal maintenance",
+          "controls": [
+            {
+              "id": "qa0jvdz0",
+              "externalId": "MNT-16"
+            }
+          ]
+        },
+        {
+          "id": "MA-4 (2)",
+          "name": "",
+          "description": "Document nonlocal maintenance",
+          "controls": [
+            {
+              "id": "tpw5keot",
+              "externalId": "MNT-17"
+            }
+          ]
+        },
+        {
+          "id": "MA-5",
+          "name": "",
+          "description": "Maintenance personnel",
+          "controls": [
+            {
+              "id": "bopm32xj",
+              "externalId": "MNT-18"
+            }
+          ]
+        },
+        {
+          "id": "MA-5 (1)",
+          "name": "",
+          "description": "Individuals without appropriate access",
+          "controls": [
+            {
+              "id": "a680d6fu",
+              "externalId": "MNT-19"
+            }
+          ]
+        },
+        {
+          "id": "MA-6",
+          "name": "",
+          "description": "Timely maintenance",
+          "controls": [
+            {
+              "id": "daonpn39",
+              "externalId": "MNT-20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MP",
+      "name": "Media Protection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "MP-1",
+          "name": "",
+          "description": "Media protection policy and procedures",
+          "controls": [
+            {
+              "id": "zl75kdmf",
+              "externalId": "DCH-96"
+            }
+          ]
+        },
+        {
+          "id": "MP-2",
+          "name": "",
+          "description": "Media access",
+          "controls": [
+            {
+              "id": "dmkobgj9",
+              "externalId": "DCH-97"
+            }
+          ]
+        },
+        {
+          "id": "MP-3",
+          "name": "",
+          "description": "Media marking",
+          "controls": [
+            {
+              "id": "vdky5xn5",
+              "externalId": "DCH-98"
+            }
+          ]
+        },
+        {
+          "id": "MP-4",
+          "name": "",
+          "description": "Media storage",
+          "controls": [
+            {
+              "id": "8i4loeg5",
+              "externalId": "DCH-99"
+            }
+          ]
+        },
+        {
+          "id": "MP-5",
+          "name": "",
+          "description": "Media transport",
+          "controls": [
+            {
+              "id": "d5l42q31",
+              "externalId": "DCH-100"
+            }
+          ]
+        },
+        {
+          "id": "MP-5 (4)",
+          "name": "",
+          "description": "Cryptographic protection",
+          "controls": [
+            {
+              "id": "22o92lbz",
+              "externalId": "CRY-82"
+            }
+          ]
+        },
+        {
+          "id": "MP-6",
+          "name": "",
+          "description": "Media sanitization",
+          "controls": [
+            {
+              "id": "3wqb2zg4",
+              "externalId": "DCH-101"
+            }
+          ]
+        },
+        {
+          "id": "MP-6 (2)",
+          "name": "",
+          "description": "Equipment testing",
+          "controls": [
+            {
+              "id": "9uuxzjea",
+              "externalId": "DCH-102"
+            }
+          ]
+        },
+        {
+          "id": "MP-7",
+          "name": "",
+          "description": "Media use",
+          "controls": [
+            {
+              "id": "zlupzw94",
+              "externalId": "DCH-103"
+            }
+          ]
+        },
+        {
+          "id": "MP-7 (1)",
+          "name": "",
+          "description": "Prohibit use without owner",
+          "controls": [
+            {
+              "id": "n9owz4ry",
+              "externalId": "DCH-104"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE",
+      "name": "Physical and Environmental Protection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PE-1",
+          "name": "",
+          "description": "Physical and environmental protection policy and procedures",
+          "controls": [
+            {
+              "id": "60ca26x2",
+              "externalId": "PES-52"
+            }
+          ]
+        },
+        {
+          "id": "PE-2",
+          "name": "",
+          "description": "Physical access authorizations",
+          "controls": [
+            {
+              "id": "2v5ecm1c",
+              "externalId": "PES-53"
+            }
+          ]
+        },
+        {
+          "id": "PE-3",
+          "name": "",
+          "description": "Physical access control",
+          "controls": [
+            {
+              "id": "6alptgb6",
+              "externalId": "PES-54"
+            }
+          ]
+        },
+        {
+          "id": "PE-4",
+          "name": "",
+          "description": "Access control for transmission medium",
+          "controls": [
+            {
+              "id": "n42iv9eu",
+              "externalId": "PES-55"
+            }
+          ]
+        },
+        {
+          "id": "PE-5",
+          "name": "",
+          "description": "Access control for output devices",
+          "controls": [
+            {
+              "id": "orhkflqw",
+              "externalId": "PES-56"
+            }
+          ]
+        },
+        {
+          "id": "PE-6",
+          "name": "",
+          "description": "Monitoring physical access",
+          "controls": [
+            {
+              "id": "2hwiwkhm",
+              "externalId": "PES-57"
+            }
+          ]
+        },
+        {
+          "id": "PE-6 (1)",
+          "name": "",
+          "description": "Intrusion alarms / surveillance equipment",
+          "controls": [
+            {
+              "id": "96dliy85",
+              "externalId": "PES-58"
+            }
+          ]
+        },
+        {
+          "id": "PE-8",
+          "name": "",
+          "description": "Visitor access records",
+          "controls": [
+            {
+              "id": "paq3koa7",
+              "externalId": "PES-59"
+            }
+          ]
+        },
+        {
+          "id": "PE-9",
+          "name": "",
+          "description": "Power equipment and cabling",
+          "controls": [
+            {
+              "id": "5jai7lut",
+              "externalId": "PES-60"
+            }
+          ]
+        },
+        {
+          "id": "PE-10",
+          "name": "",
+          "description": "Emergency shutoff",
+          "controls": [
+            {
+              "id": "7vidttml",
+              "externalId": "PES-61"
+            }
+          ]
+        },
+        {
+          "id": "PE-11",
+          "name": "",
+          "description": "Emergency power",
+          "controls": [
+            {
+              "id": "7khisjr5",
+              "externalId": "PES-62"
+            }
+          ]
+        },
+        {
+          "id": "PE-12",
+          "name": "",
+          "description": "Emergency lighting",
+          "controls": [
+            {
+              "id": "crfgl18l",
+              "externalId": "PES-63"
+            }
+          ]
+        },
+        {
+          "id": "PE-13",
+          "name": "",
+          "description": "Fire protection",
+          "controls": [
+            {
+              "id": "53rtppmj",
+              "externalId": "PES-64"
+            }
+          ]
+        },
+        {
+          "id": "PE-13 (2)",
+          "name": "",
+          "description": "Suppression devices / systems",
+          "controls": [
+            {
+              "id": "screwyzv",
+              "externalId": "PES-65"
+            }
+          ]
+        },
+        {
+          "id": "PE-13 (3)",
+          "name": "",
+          "description": "Automatic fire suppression",
+          "controls": [
+            {
+              "id": "t0xyonn6",
+              "externalId": "PES-66"
+            }
+          ]
+        },
+        {
+          "id": "PE-14",
+          "name": "",
+          "description": "Temperature and humidity controls",
+          "controls": [
+            {
+              "id": "kfezodso",
+              "externalId": "PES-67"
+            }
+          ]
+        },
+        {
+          "id": "PE-14 (2)",
+          "name": "",
+          "description": "Monitoring with alarms / notifications",
+          "controls": [
+            {
+              "id": "4eoxt96s",
+              "externalId": "PES-68"
+            }
+          ]
+        },
+        {
+          "id": "PE-15",
+          "name": "",
+          "description": "Water damage protection",
+          "controls": [
+            {
+              "id": "bn7wh83t",
+              "externalId": "PES-69"
+            }
+          ]
+        },
+        {
+          "id": "PE-16",
+          "name": "",
+          "description": "Delivery and removal",
+          "controls": [
+            {
+              "id": "sdgd1dq5",
+              "externalId": "PES-70"
+            }
+          ]
+        },
+        {
+          "id": "PE-17",
+          "name": "",
+          "description": "Alternate work site",
+          "controls": [
+            {
+              "id": "fy9r8e8d",
+              "externalId": "PES-71"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PL",
+      "name": "Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PL-1",
+          "name": "",
+          "description": "Security planning policy and procedures",
+          "controls": [
+            {
+              "id": "pzpbd1k5",
+              "externalId": "TDA-20"
+            }
+          ]
+        },
+        {
+          "id": "PL-2",
+          "name": "",
+          "description": "System security plan",
+          "controls": [
+            {
+              "id": "np2fewo1",
+              "externalId": "IAO-14"
+            }
+          ]
+        },
+        {
+          "id": "PL-2 (3)",
+          "name": "",
+          "description": "Plan / coordinate with other organizational entities",
+          "controls": [
+            {
+              "id": "o1cig3m2",
+              "externalId": "IAO-15"
+            }
+          ]
+        },
+        {
+          "id": "PL-4",
+          "name": "",
+          "description": "Rules of behavior",
+          "controls": [
+            {
+              "id": "21qqjoi4",
+              "externalId": "HRS-41"
+            }
+          ]
+        },
+        {
+          "id": "PL-4 (1)",
+          "name": "",
+          "description": "Social media and networking restrictions",
+          "controls": [
+            {
+              "id": "c68e2xp5",
+              "externalId": "HRS-42"
+            }
+          ]
+        },
+        {
+          "id": "PL-8",
+          "name": "",
+          "description": "Information security architecture",
+          "controls": [
+            {
+              "id": "wyjzvltp",
+              "externalId": "SEA-45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PS",
+      "name": "Personnel Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PS-1",
+          "name": "",
+          "description": "Personnel security policy and procedures",
+          "controls": [
+            {
+              "id": "a671su2n",
+              "externalId": "HRS-43"
+            }
+          ]
+        },
+        {
+          "id": "PS-2",
+          "name": "",
+          "description": "Position risk designation",
+          "controls": [
+            {
+              "id": "tjn0e35u",
+              "externalId": "HRS-44"
+            }
+          ]
+        },
+        {
+          "id": "PS-3",
+          "name": "",
+          "description": "Personnel screening",
+          "controls": [
+            {
+              "id": "y4cf9zy5",
+              "externalId": "HRS-45"
+            }
+          ]
+        },
+        {
+          "id": "PS-3 (3)",
+          "name": "",
+          "description": "Information with special protection measures",
+          "controls": [
+            {
+              "id": "lgimz3s8",
+              "externalId": "HRS-46"
+            }
+          ]
+        },
+        {
+          "id": "PS-4",
+          "name": "",
+          "description": "Personnel termination",
+          "controls": [
+            {
+              "id": "wlctd9cm",
+              "externalId": "HRS-47"
+            }
+          ]
+        },
+        {
+          "id": "PS-5",
+          "name": "",
+          "description": "Personnel transfer",
+          "controls": [
+            {
+              "id": "6mwsbvrh",
+              "externalId": "HRS-48"
+            }
+          ]
+        },
+        {
+          "id": "PS-6",
+          "name": "",
+          "description": "Access agreements",
+          "controls": [
+            {
+              "id": "wvo5v8a5",
+              "externalId": "HRS-49"
+            }
+          ]
+        },
+        {
+          "id": "PS-7",
+          "name": "",
+          "description": "Third-party personnel security",
+          "controls": [
+            {
+              "id": "7t0hw6ee",
+              "externalId": "HRS-50"
+            }
+          ]
+        },
+        {
+          "id": "PS-8",
+          "name": "",
+          "description": "Personnel sanctions",
+          "controls": [
+            {
+              "id": "o09h322p",
+              "externalId": "HRS-51"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RA",
+      "name": "Risk Assessment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RA-1",
+          "name": "",
+          "description": "Risk assessment policy and procedures",
+          "controls": [
+            {
+              "id": "vxzhscyi",
+              "externalId": "RSK-32"
+            }
+          ]
+        },
+        {
+          "id": "RA-2",
+          "name": "",
+          "description": "Security categorization",
+          "controls": [
+            {
+              "id": "9ea133uo",
+              "externalId": "RSK-33"
+            }
+          ]
+        },
+        {
+          "id": "RA-3",
+          "name": "",
+          "description": "Risk assessment",
+          "controls": [
+            {
+              "id": "az720zds",
+              "externalId": "RSK-34"
+            }
+          ]
+        },
+        {
+          "id": "RA-5",
+          "name": "",
+          "description": "Vulnerability scanning",
+          "controls": [
+            {
+              "id": "wg0ha2xl",
+              "externalId": "VPM-64"
+            }
+          ]
+        },
+        {
+          "id": "RA-5 (1)",
+          "name": "",
+          "description": "Update tool capability",
+          "controls": [
+            {
+              "id": "xxjzb2xy",
+              "externalId": "VPM-65"
+            }
+          ]
+        },
+        {
+          "id": "RA-5 (2)",
+          "name": "",
+          "description": "Update by frequency / prior to new scan / when identified",
+          "controls": [
+            {
+              "id": "xytnt8t1",
+              "externalId": "VPM-66"
+            }
+          ]
+        },
+        {
+          "id": "RA-5 (3)",
+          "name": "",
+          "description": "Breadth / depth of coverage",
+          "controls": [
+            {
+              "id": "qpbwyskl",
+              "externalId": "VPM-67"
+            }
+          ]
+        },
+        {
+          "id": "RA-5 (5)",
+          "name": "",
+          "description": "Privileged access",
+          "controls": [
+            {
+              "id": "h9l4dp4i",
+              "externalId": "VPM-68"
+            }
+          ]
+        },
+        {
+          "id": "RA-5 (6)",
+          "name": "",
+          "description": "Automated trend analyses",
+          "controls": [
+            {
+              "id": "eng2v1p1",
+              "externalId": "VPM-69"
+            }
+          ]
+        },
+        {
+          "id": "RA-5 (8)",
+          "name": "",
+          "description": "Review historic audit logs",
+          "controls": [
+            {
+              "id": "kjfa8bd9",
+              "externalId": "VPM-70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SA",
+      "name": "System and Services Acquisition",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SA-1",
+          "name": "",
+          "description": "System and services acquisition policy and procedures",
+          "controls": [
+            {
+              "id": "5y4gjkr1",
+              "externalId": "TDA-21"
+            }
+          ]
+        },
+        {
+          "id": "SA-2",
+          "name": "",
+          "description": "Allocation of resources",
+          "controls": [
+            {
+              "id": "65v8txky",
+              "externalId": "PRM-11"
+            }
+          ]
+        },
+        {
+          "id": "SA-3",
+          "name": "",
+          "description": "System development life cycle",
+          "controls": [
+            {
+              "id": "pes69c9i",
+              "externalId": "PRM-12"
+            }
+          ]
+        },
+        {
+          "id": "SA-4",
+          "name": "",
+          "description": "Acquisition process",
+          "controls": [
+            {
+              "id": "al3yeprq",
+              "externalId": "TDA-22"
+            }
+          ]
+        },
+        {
+          "id": "SA-4 (1)",
+          "name": "",
+          "description": "Functional properties of security controls",
+          "controls": [
+            {
+              "id": "42you30d",
+              "externalId": "TDA-23"
+            }
+          ]
+        },
+        {
+          "id": "SA-4 (2)",
+          "name": "",
+          "description": "Design / implementation information for security controls",
+          "controls": [
+            {
+              "id": "hjncwqrh",
+              "externalId": "TDA-24"
+            }
+          ]
+        },
+        {
+          "id": "SA-4 (8)",
+          "name": "",
+          "description": "Continuous monitoring plan",
+          "controls": [
+            {
+              "id": "yodp7fid",
+              "externalId": "TDA-25"
+            }
+          ]
+        },
+        {
+          "id": "SA-4 (9)",
+          "name": "",
+          "description": "Functions / ports / protocols / services in use",
+          "controls": [
+            {
+              "id": "v85f7w6d",
+              "externalId": "TDA-26"
+            }
+          ]
+        },
+        {
+          "id": "SA-4 (10)",
+          "name": "",
+          "description": "Use of approved piv products",
+          "controls": [
+            {
+              "id": "9yw21obb",
+              "externalId": "TDA-27"
+            }
+          ]
+        },
+        {
+          "id": "SA-5",
+          "name": "",
+          "description": "Information system documentation",
+          "controls": [
+            {
+              "id": "vic2iwes",
+              "externalId": "TDA-28"
+            }
+          ]
+        },
+        {
+          "id": "SA-8",
+          "name": "",
+          "description": "Security engineering principles",
+          "controls": [
+            {
+              "id": "vsvmryc8",
+              "externalId": "SEA-46"
+            }
+          ]
+        },
+        {
+          "id": "SA-9",
+          "name": "",
+          "description": "External information system services",
+          "controls": [
+            {
+              "id": "fftjs7g8",
+              "externalId": "TPM-49"
+            }
+          ]
+        },
+        {
+          "id": "SA-9 (1)",
+          "name": "",
+          "description": "Risk assessments / organizational approvals",
+          "controls": [
+            {
+              "id": "bh1sw8sn",
+              "externalId": "TPM-50"
+            }
+          ]
+        },
+        {
+          "id": "SA-9 (2)",
+          "name": "",
+          "description": "Identification of functions / ports / protocols / services",
+          "controls": [
+            {
+              "id": "inrw3a7a",
+              "externalId": "TPM-51"
+            }
+          ]
+        },
+        {
+          "id": "SA-9 (4)",
+          "name": "",
+          "description": "Consistent interests of consumers and providers",
+          "controls": [
+            {
+              "id": "qrxig257",
+              "externalId": "TPM-52"
+            }
+          ]
+        },
+        {
+          "id": "SA-9 (5)",
+          "name": "",
+          "description": "Processing, storage, and service location",
+          "controls": [
+            {
+              "id": "pam0cryj",
+              "externalId": "CLD-6"
+            }
+          ]
+        },
+        {
+          "id": "SA-10",
+          "name": "",
+          "description": "Developer configuration management",
+          "controls": [
+            {
+              "id": "c6nyegk1",
+              "externalId": "TDA-29"
+            }
+          ]
+        },
+        {
+          "id": "SA-10 (1)",
+          "name": "",
+          "description": "Software / firmware integrity verification",
+          "controls": [
+            {
+              "id": "vaqaera7",
+              "externalId": "TDA-30"
+            }
+          ]
+        },
+        {
+          "id": "SA-11",
+          "name": "",
+          "description": "Developer security testing and evaluation",
+          "controls": [
+            {
+              "id": "mkm7v9eu",
+              "externalId": "TDA-31"
+            }
+          ]
+        },
+        {
+          "id": "SA-11 (1)",
+          "name": "",
+          "description": "Static code analysis",
+          "controls": [
+            {
+              "id": "yaysuqkj",
+              "externalId": "TDA-32"
+            }
+          ]
+        },
+        {
+          "id": "SA-11 (2)",
+          "name": "",
+          "description": "Threat and vulnerability analyses",
+          "controls": [
+            {
+              "id": "ou0q4v1s",
+              "externalId": "TDA-33"
+            }
+          ]
+        },
+        {
+          "id": "SA-11 (8)",
+          "name": "",
+          "description": "Dynamic code analysis",
+          "controls": [
+            {
+              "id": "hnu87jxq",
+              "externalId": "TDA-34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC",
+      "name": "System and Communications Protection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SC-1",
+          "name": "",
+          "description": "System and communications protection policy and procedures",
+          "controls": [
+            {
+              "id": "wgub2ne0",
+              "externalId": "SEA-47"
+            }
+          ]
+        },
+        {
+          "id": "SC-2",
+          "name": "",
+          "description": "Application partitioning",
+          "controls": [
+            {
+              "id": "3y7rg55v",
+              "externalId": "SEA-48"
+            }
+          ]
+        },
+        {
+          "id": "SC-4",
+          "name": "",
+          "description": "Information in shared resources",
+          "controls": [
+            {
+              "id": "e0wij7ke",
+              "externalId": "SEA-49"
+            }
+          ]
+        },
+        {
+          "id": "SC-5",
+          "name": "",
+          "description": "Denial of service protection",
+          "controls": [
+            {
+              "id": "7fezeqm7",
+              "externalId": "CAP-5"
+            }
+          ]
+        },
+        {
+          "id": "SC-6",
+          "name": "",
+          "description": "Resource availability",
+          "controls": [
+            {
+              "id": "tcftstpl",
+              "externalId": "CAP-6"
+            }
+          ]
+        },
+        {
+          "id": "SC-7",
+          "name": "",
+          "description": "Boundary protection",
+          "controls": [
+            {
+              "id": "vr1uy4wk",
+              "externalId": "NET-78"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (3)",
+          "name": "",
+          "description": "Access points",
+          "controls": [
+            {
+              "id": "8wlgca1w",
+              "externalId": "NET-79"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (4)",
+          "name": "",
+          "description": "External telecommunications services",
+          "controls": [
+            {
+              "id": "hg3wpc1y",
+              "externalId": "NET-80"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (5)",
+          "name": "",
+          "description": "Deny by default / allow by exception",
+          "controls": [
+            {
+              "id": "0fzy968c",
+              "externalId": "NET-81"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (7)",
+          "name": "",
+          "description": "Prevent split tunneling for remote devices",
+          "controls": [
+            {
+              "id": "1gkjvjlk",
+              "externalId": "CFG-43"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (8)",
+          "name": "",
+          "description": "Route traffic to authenticated proxy servers",
+          "controls": [
+            {
+              "id": "ti24hdra",
+              "externalId": "NET-82"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (12)",
+          "name": "",
+          "description": "Host-based protection",
+          "controls": [
+            {
+              "id": "ogxhnaey",
+              "externalId": "END-27"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (13)",
+          "name": "",
+          "description": "Isolation of security tools / mechanisms / support components",
+          "controls": [
+            {
+              "id": "0tj2bigo",
+              "externalId": "NET-83"
+            }
+          ]
+        },
+        {
+          "id": "SC-7 (18)",
+          "name": "",
+          "description": "Fail secure",
+          "controls": [
+            {
+              "id": "788qnb7l",
+              "externalId": "SEA-50"
+            }
+          ]
+        },
+        {
+          "id": "SC-8",
+          "name": "",
+          "description": "Transmission confidentiality and integrity",
+          "controls": [
+            {
+              "id": "udpn31c1",
+              "externalId": "CRY-83"
+            }
+          ]
+        },
+        {
+          "id": "SC-8 (1)",
+          "name": "",
+          "description": "Cryptographic or alternate physical protection",
+          "controls": [
+            {
+              "id": "bey631tj",
+              "externalId": "CRY-84"
+            }
+          ]
+        },
+        {
+          "id": "SC-10",
+          "name": "",
+          "description": "Network disconnect",
+          "controls": [
+            {
+              "id": "7f7vb4fy",
+              "externalId": "NET-84"
+            }
+          ]
+        },
+        {
+          "id": "SC-12",
+          "name": "",
+          "description": "Cryptographic key establishment and management",
+          "controls": [
+            {
+              "id": "apz4rmk7",
+              "externalId": "CRY-85"
+            }
+          ]
+        },
+        {
+          "id": "SC-12 (2)",
+          "name": "",
+          "description": "Symmetric keys",
+          "controls": [
+            {
+              "id": "jeyl7o0b",
+              "externalId": "CRY-86"
+            }
+          ]
+        },
+        {
+          "id": "SC-12 (3)",
+          "name": "",
+          "description": "Asymmetric keys",
+          "controls": [
+            {
+              "id": "fkz7kmlz",
+              "externalId": "CRY-87"
+            }
+          ]
+        },
+        {
+          "id": "SC-13",
+          "name": "",
+          "description": "Cryptographic protection",
+          "controls": [
+            {
+              "id": "eeh2hj75",
+              "externalId": "CRY-88"
+            }
+          ]
+        },
+        {
+          "id": "SC-15",
+          "name": "",
+          "description": "Collaborative computing devices",
+          "controls": [
+            {
+              "id": "gvx0d192",
+              "externalId": "END-28"
+            }
+          ]
+        },
+        {
+          "id": "SC-17",
+          "name": "",
+          "description": "Public key infrastructure certificates",
+          "controls": [
+            {
+              "id": "k7t6bb10",
+              "externalId": "CRY-89"
+            }
+          ]
+        },
+        {
+          "id": "SC-18",
+          "name": "",
+          "description": "Mobile code",
+          "controls": [
+            {
+              "id": "y28347mp",
+              "externalId": "END-29"
+            }
+          ]
+        },
+        {
+          "id": "SC-19",
+          "name": "",
+          "description": "Voice over internet protocol",
+          "controls": [
+            {
+              "id": "afo3nph2",
+              "externalId": "NET-85"
+            }
+          ]
+        },
+        {
+          "id": "SC-20",
+          "name": "",
+          "description": "Secure name /address resolution service (authoritative source)",
+          "controls": [
+            {
+              "id": "8ttyxden",
+              "externalId": "NET-86"
+            }
+          ]
+        },
+        {
+          "id": "SC-21",
+          "name": "",
+          "description": "Secure name /address resolution service (recursive or caching resolver)",
+          "controls": [
+            {
+              "id": "jktaylku",
+              "externalId": "NET-87"
+            }
+          ]
+        },
+        {
+          "id": "SC-22",
+          "name": "",
+          "description": "Architecture and provisioning for name/address resolution service",
+          "controls": [
+            {
+              "id": "of672xyv",
+              "externalId": "NET-88"
+            }
+          ]
+        },
+        {
+          "id": "SC-23",
+          "name": "",
+          "description": "Session authenticity",
+          "controls": [
+            {
+              "id": "xofne1ls",
+              "externalId": "NET-89"
+            }
+          ]
+        },
+        {
+          "id": "SC-28",
+          "name": "",
+          "description": "Protection of information at rest",
+          "controls": [
+            {
+              "id": "xx1od058",
+              "externalId": "END-30"
+            }
+          ]
+        },
+        {
+          "id": "SC-28 (1)",
+          "name": "",
+          "description": "Cryptographic protection",
+          "controls": [
+            {
+              "id": "3vqzla6h",
+              "externalId": "CRY-90"
+            }
+          ]
+        },
+        {
+          "id": "SC-39",
+          "name": "",
+          "description": "Process isolation",
+          "controls": [
+            {
+              "id": "fid243sy",
+              "externalId": "SEA-51"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SI",
+      "name": "System and Information Integrity",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SI-1",
+          "name": "",
+          "description": "System and information integrity policy and procedures",
+          "controls": [
+            {
+              "id": "arq9a5gi",
+              "externalId": "SEA-52"
+            }
+          ]
+        },
+        {
+          "id": "SI-2",
+          "name": "",
+          "description": "Flaw remediation",
+          "controls": [
+            {
+              "id": "n7m3xhj5",
+              "externalId": "VPM-71"
+            }
+          ]
+        },
+        {
+          "id": "SI-2 (2)",
+          "name": "",
+          "description": "Automated flaw remediation status",
+          "controls": [
+            {
+              "id": "68l1py39",
+              "externalId": "VPM-72"
+            }
+          ]
+        },
+        {
+          "id": "SI-2 (3)",
+          "name": "",
+          "description": "Time to remediate flaws / benchmarks for corrective actions",
+          "controls": [
+            {
+              "id": "u4hv609t",
+              "externalId": "VPM-73"
+            }
+          ]
+        },
+        {
+          "id": "SI-3",
+          "name": "",
+          "description": "Malicious code protection",
+          "controls": [
+            {
+              "id": "1qy6vz5z",
+              "externalId": "END-31"
+            }
+          ]
+        },
+        {
+          "id": "SI-3 (1)",
+          "name": "",
+          "description": "Central management",
+          "controls": [
+            {
+              "id": "f8rp9vgj",
+              "externalId": "END-32"
+            }
+          ]
+        },
+        {
+          "id": "SI-3 (2)",
+          "name": "",
+          "description": "Automatic updates",
+          "controls": [
+            {
+              "id": "egz5ogau",
+              "externalId": "VPM-74"
+            }
+          ]
+        },
+        {
+          "id": "SI-3 (7)",
+          "name": "",
+          "description": "Nonsignature-based detection",
+          "controls": [
+            {
+              "id": "z50gxiqr",
+              "externalId": "END-33"
+            }
+          ]
+        },
+        {
+          "id": "SI-4",
+          "name": "",
+          "description": "Information system monitoring",
+          "controls": [
+            {
+              "id": "yiljskrg",
+              "externalId": "MON-112"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (1)",
+          "name": "",
+          "description": "System-wide intrusion detection system",
+          "controls": [
+            {
+              "id": "nsy7eql9",
+              "externalId": "MON-113"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (2)",
+          "name": "",
+          "description": "Automated tools for real-time analysis",
+          "controls": [
+            {
+              "id": "zzpm7cxp",
+              "externalId": "MON-114"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (4)",
+          "name": "",
+          "description": "Inbound and outbound communications traffic",
+          "controls": [
+            {
+              "id": "3yrxiw33",
+              "externalId": "MON-115"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (5)",
+          "name": "",
+          "description": "System-generated alerts",
+          "controls": [
+            {
+              "id": "d46mmvtt",
+              "externalId": "MON-116"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (14)",
+          "name": "",
+          "description": "Wireless intrusion detection",
+          "controls": [
+            {
+              "id": "7fmntkfn",
+              "externalId": "MON-117"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (16)",
+          "name": "",
+          "description": "Correlate monitoring information",
+          "controls": [
+            {
+              "id": "p5el9483",
+              "externalId": "MON-118"
+            }
+          ]
+        },
+        {
+          "id": "SI-4 (23)",
+          "name": "",
+          "description": "Host-based devices",
+          "controls": [
+            {
+              "id": "zkjf39v6",
+              "externalId": "MON-119"
+            }
+          ]
+        },
+        {
+          "id": "SI-5",
+          "name": "",
+          "description": "Security alerts, advisories, and directives",
+          "controls": [
+            {
+              "id": "842vlax6",
+              "externalId": "THR-12"
+            }
+          ]
+        },
+        {
+          "id": "SI-6",
+          "name": "",
+          "description": "Security function verification",
+          "controls": [
+            {
+              "id": "o338swto",
+              "externalId": "CHG-36"
+            }
+          ]
+        },
+        {
+          "id": "SI-7",
+          "name": "",
+          "description": "Software, firmware, and information integrity",
+          "controls": [
+            {
+              "id": "1ldc6btr",
+              "externalId": "END-34"
+            }
+          ]
+        },
+        {
+          "id": "SI-7 (1)",
+          "name": "",
+          "description": "Integrity checks",
+          "controls": [
+            {
+              "id": "nyw1ghuw",
+              "externalId": "END-35"
+            }
+          ]
+        },
+        {
+          "id": "SI-7 (7)",
+          "name": "",
+          "description": "Integration of detection and response",
+          "controls": [
+            {
+              "id": "v8s1tuwp",
+              "externalId": "END-36"
+            }
+          ]
+        },
+        {
+          "id": "SI-8",
+          "name": "",
+          "description": "Spam protection",
+          "controls": [
+            {
+              "id": "jsa9tpqs",
+              "externalId": "END-37"
+            }
+          ]
+        },
+        {
+          "id": "SI-8 (1)",
+          "name": "",
+          "description": "Central management",
+          "controls": [
+            {
+              "id": "3gxt9agt",
+              "externalId": "END-38"
+            }
+          ]
+        },
+        {
+          "id": "SI-8 (2)",
+          "name": "",
+          "description": "Automatic updates",
+          "controls": [
+            {
+              "id": "qr2vnaoy",
+              "externalId": "END-39"
+            }
+          ]
+        },
+        {
+          "id": "SI-10",
+          "name": "",
+          "description": "Information input validation",
+          "controls": [
+            {
+              "id": "kgbjszb0",
+              "externalId": "TDA-35"
+            }
+          ]
+        },
+        {
+          "id": "SI-11",
+          "name": "",
+          "description": "Error handling",
+          "controls": [
+            {
+              "id": "yhuj24wp",
+              "externalId": "TDA-36"
+            }
+          ]
+        },
+        {
+          "id": "SI-12",
+          "name": "",
+          "description": "Information handling and retention",
+          "controls": [
+            {
+              "id": "3qwzzxay",
+              "externalId": "DCH-105"
+            }
+          ]
+        },
+        {
+          "id": "SI-16",
+          "name": "",
+          "description": "Memory protection",
+          "controls": [
+            {
+              "id": "paq8jzrm",
+              "externalId": "SEA-53"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

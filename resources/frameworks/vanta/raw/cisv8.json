@@ -1,0 +1,3083 @@
+{
+  "principles": [
+    {
+      "id": "1",
+      "name": "Inventory and Control of Enterprise Assets",
+      "optional": true,
+      "sections": [
+        {
+          "id": "1.2",
+          "name": "Address unauthorized assets",
+          "description": "Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+          "controls": [
+            {
+              "id": "am45wn21",
+              "externalId": "AST-125",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "1.3",
+          "name": "Utilize an active discovery tool",
+          "description": "Utilize an active discovery tool to identify assets connected to the enterprise’s network. Configure the active discovery tool to execute daily, or more frequently.",
+          "controls": [
+            {
+              "id": "irv7zqpc",
+              "externalId": "AST-126",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "1.4",
+          "name": "Use dynamic host configuration protocol (DHCP) logging to update enterprise asset inventory",
+          "description": "Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise’s asset inventory. Review and use logs to update the enterprise’s asset inventory weekly, or more frequently.",
+          "controls": [
+            {
+              "id": "edm7m2ku",
+              "externalId": "NET-292",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "1.5",
+          "name": "Use a passive asset discovery tool",
+          "description": "Use a passive discovery tool to identify assets connected to the enterprise’s network. Review and use scans to update the enterprise’s asset inventory at least weekly, or more frequently.",
+          "controls": [
+            {
+              "id": "tqwzzl31",
+              "externalId": "NET-293",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Inventory and Control of Software Assets",
+      "optional": true,
+      "sections": [
+        {
+          "id": "2.1",
+          "name": "Establish and maintain a software inventory",
+          "description": "Establish and maintain a detailed inventory of all licensed software installed on enterprise assets. The software inventory must document the title, publisher, initial install/use date, and business purpose for each entry; where appropriate, include the Uniform Resource Locator (URL), app store(s), version(s), deployment mechanism, and decommission date. Review and update the software inventory bi-annually, or more frequently.",
+          "controls": [
+            {
+              "id": "sdlspu9r",
+              "externalId": "AST-127",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "2.2",
+          "name": "Ensure authorized software is currently supported",
+          "description": "Ensure that only currently supported software is designated as authorized in the software inventory for enterprise assets. If software is unsupported, yet necessary for the fulfillment of the enterprise’s mission, document an exception detailing mitigating controls and residual risk acceptance. For any unsupported software without an exception documentation, designate as unauthorized. Review the software list to verify software support at least monthly, or more frequently.",
+          "controls": [
+            {
+              "id": "w0rlfv0w",
+              "externalId": "AST-128",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "2.3",
+          "name": "Address unauthorized software",
+          "description": "Ensure that unauthorized software is either removed from use on enterprise assets or receives a documented exception. Review monthly, or more frequently.",
+          "controls": [
+            {
+              "id": "dixezr64",
+              "externalId": "AST-129",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "2.4",
+          "name": "Utilize automated software inventory tools",
+          "description": "Utilize software inventory tools, when possible, throughout the enterprise to automate the discovery and documentation of installed software.",
+          "controls": [
+            {
+              "id": "45tlr5jx",
+              "externalId": "AST-130",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "2.5",
+          "name": "Allowlist authorized software",
+          "description": "Use technical controls, such as application allowlisting, to ensure that only authorized software can execute or be accessed. Reassess bi-annually, or more frequently.",
+          "controls": [
+            {
+              "id": "wh75413h",
+              "externalId": "OPS-24",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "2.6",
+          "name": "Allowlist authorized libraries",
+          "description": "Use technical controls to ensure that only authorized software libraries, such as specific .dll, .ocx, .so files, etc., are allowed to load into a system process. Block unauthorized libraries from loading into a system process. Reassess bi-annually, or more frequently.",
+          "controls": [
+            {
+              "id": "0k46j5ig",
+              "externalId": "OPS-25",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "2.7",
+          "name": "Allowlist authorized scripts",
+          "description": "Use technical controls, such as digital signatures and version control, to ensure that only authorized scripts, such as specific .ps1, .py files, etc., are allowed to execute. Block unauthorized scripts from executing. Reassess bi-annually, or more frequently.",
+          "controls": [
+            {
+              "id": "pje1g0z5",
+              "externalId": "OPS-26",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Data Protection",
+      "optional": true,
+      "sections": [
+        {
+          "id": "3.1",
+          "name": "Establish and maintain a data management process",
+          "description": "Establish and maintain a documented data management process. In the process, address data sensitivity, data owner, handling of data, data retention limits, and disposal requirements, based on sensitivity and retention standards for the enterprise. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "0opb9cua",
+              "externalId": "DCH-205",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.2",
+          "name": "Establish and maintain a data inventory",
+          "description": "Establish and maintain a data inventory based on the enterprise’s data management process. Inventory sensitive data, at a minimum. Review and update inventory annually, at a minimum, with a priority on sensitive data.",
+          "controls": [
+            {
+              "id": "sq7xl6a6",
+              "externalId": "DCH-206",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.3",
+          "name": "Configure data access control lists",
+          "description": "Configure data access control lists based on a user’s need to know. Apply data access control lists, also known as access permissions, to local and remote file systems, databases, and applications.",
+          "controls": [
+            {
+              "id": "p64lhq4g",
+              "externalId": "DCH-207",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.4",
+          "name": "Enforce data retention",
+          "description": "Retain data according to the enterprise’s documented data management process. Data retention must include both minimum and maximum timelines.",
+          "controls": [
+            {
+              "id": "kfu17s1u",
+              "externalId": "DCH-208",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.5",
+          "name": "Securely dispose of data",
+          "description": "Securely dispose of data as outlined in the enterprise’s documented data management process. Ensure the disposal process and method are commensurate with the data sensitivity.",
+          "controls": [
+            {
+              "id": "nwwmw0ks",
+              "externalId": "DCH-209",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.6",
+          "name": "Encrypt data on end-user devices",
+          "description": "Encrypt data on end-user devices containing sensitive data. Example implementations can include: Windows BitLocker®, Apple FileVault®, Linux® dm-crypt.",
+          "controls": [
+            {
+              "id": "fpo6nlen",
+              "externalId": "DCH-210",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.7",
+          "name": "Establish and maintain a data classification scheme",
+          "description": "Establish and maintain an overall data classification scheme for the enterprise. Enterprises may use labels, such as “Sensitive,” “Confidential,” and “Public,” and classify their data according to those labels. Review and update the classification scheme annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "iyj1ttmh",
+              "externalId": "DCH-211",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.8",
+          "name": "Document data flows",
+          "description": "Document data flows. Data flow documentation includes service provider data flows and should be based on the enterprise’s data management process. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "zym014v1",
+              "externalId": "DCH-212",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.9",
+          "name": "Encrypt data on removable media",
+          "description": "Encrypt data on removable media.",
+          "controls": [
+            {
+              "id": "4ezccbic",
+              "externalId": "DCH-213",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.10",
+          "name": "Encrypt sensitive data in transit",
+          "description": "Encrypt sensitive data in transit. Example implementations can include: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH).",
+          "controls": [
+            {
+              "id": "vorjkrnu",
+              "externalId": "DCH-214",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.11",
+          "name": "Encrypt sensitive data at rest",
+          "description": "Encrypt sensitive data at rest on servers, applications, and databases. Storage-layer encryption, also known as server-side encryption, meets the minimum requirement of this Safeguard. Additional encryption methods may include application-layer encryption, also known as client-side encryption, where access to the data storage device(s) does not permit access to the plain-text data.",
+          "controls": [
+            {
+              "id": "hs4n5lw4",
+              "externalId": "DCH-215",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.12",
+          "name": "Segment data processing and storage based on sensitivity",
+          "description": "Segment data processing and storage based on the sensitivity of the data. Do not process sensitive data on enterprise assets intended for lower sensitivity data.",
+          "controls": [
+            {
+              "id": "06u4dykf",
+              "externalId": "DCH-216",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.13",
+          "name": "Deploy a data loss prevention solution",
+          "description": "Implement an automated tool, such as a host-based Data Loss Prevention (DLP) tool to identify all sensitive data stored, processed, or transmitted through enterprise assets, including those located onsite or at a remote service provider, and update the enterprise's data inventory.",
+          "controls": [
+            {
+              "id": "ee4owhvn",
+              "externalId": "DCH-217",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "3.14",
+          "name": "Log sensitive data access",
+          "description": "Log sensitive data access, including modification and disposal.",
+          "controls": [
+            {
+              "id": "ehpvg59c",
+              "externalId": "DCH-218",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Secure Configuration of Enterprise Assets and Software",
+      "optional": true,
+      "sections": [
+        {
+          "id": "4.1",
+          "name": "Establish and maintain a secure configuration process",
+          "description": "Establish and maintain a documented secure configuration process for enterprise assets (end-user devices, including portable and mobile, non-computing/IoT devices, and servers) and software (operating systems and applications). Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "2dfrlet1",
+              "externalId": "SEA-188",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.2",
+          "name": "Establish and maintain a secure configuration process for network infrastructure",
+          "description": "Establish and maintain a documented secure configuration process for network devices. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "1pw9ojqa",
+              "externalId": "SEA-189",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.3",
+          "name": "Configure automatic session locking on enterprise assets",
+          "description": "Configure automatic session locking on enterprise assets after a defined period of inactivity. For general purpose operating systems, the period must not exceed 15 minutes. For mobile end-user devices, the period must not exceed 2 minutes.",
+          "controls": [
+            {
+              "id": "0b5gxjo2",
+              "externalId": "OPS-27",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.4",
+          "name": "Implement and manage a firewall on servers",
+          "description": "Implement and manage a firewall on servers, where supported. Example implementations include a virtual firewall, operating system firewall, or a third-party firewall agent.",
+          "controls": [
+            {
+              "id": "oekokyjb",
+              "externalId": "NET-294",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.5",
+          "name": "Implement and manage a firewall on end-user devices",
+          "description": "Implement and manage a host-based firewall or port-filtering tool on end-user devices, with a default-deny rule that drops all traffic except those services and ports that are explicitly allowed.",
+          "controls": [
+            {
+              "id": "ddsz2e03",
+              "externalId": "NET-295",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.6",
+          "name": "Securely manage enterprise assets and software",
+          "description": "Securely manage enterprise assets and software. Example implementations include managing configuration through version-controlled Infrastructure-as-Code (IaC) and accessing administrative interfaces over secure network protocols, such as Secure Shell (SSH) and Hypertext Transfer Protocol Secure (HTTPS). Do not use insecure management protocols, such as Telnet (Teletype Network) and HTTP, unless operationally essential.",
+          "controls": [
+            {
+              "id": "vg7boca8",
+              "externalId": "AST-131",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.7",
+          "name": "Manage default accounts on enterprise assets and software",
+          "description": "Manage default accounts on enterprise assets and software, such as root, administrator, and other pre-configured vendor accounts. Example implementations can include: disabling default accounts or making them unusable.",
+          "controls": [
+            {
+              "id": "3qutz6oq",
+              "externalId": "AST-132",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.8",
+          "name": "Uninstall or disable unnecessary services on enterprise assets and software",
+          "description": "Uninstall or disable unnecessary services on enterprise assets and software, such as an unused file sharing service, web application module, or service function.",
+          "controls": [
+            {
+              "id": "dqydfj6r",
+              "externalId": "AST-133",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.9",
+          "name": "Configure trusted DNS servers on enterprise assets",
+          "description": "Configure trusted DNS servers on network infrastructure. Example implementations include configuring network devices to use enterprise-controlled DNS servers and/or reputable externally accessible DNS servers.",
+          "controls": [
+            {
+              "id": "dz5vjckv",
+              "externalId": "NET-296",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.10",
+          "name": "Enforce automatic device lockout on portable end-user devices (IG2, IG3)",
+          "description": "Enforce automatic device lockout following a predetermined threshold of local failed authentication attempts on portable end-user devices, where supported. For laptops, do not allow more than 20 failed authentication attempts; for tablets and smartphones, no more than 10 failed authentication attempts. Example implementations include Microsoft® InTune Device Lock and Apple® Configuration Profile maxFailedAttempts.",
+          "controls": [
+            {
+              "id": "vwvbyzty",
+              "externalId": "OPS-28",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.11",
+          "name": "Enforce remote wipe capability on portable end-user devices",
+          "description": "Remotely wipe enterprise data from enterprise-owned portable end-user devices when deemed appropriate such as lost or stolen devices, or when an individual no longer supports the enterprise.",
+          "controls": [
+            {
+              "id": "3m2qm6lw",
+              "externalId": "OPS-29",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "4.12",
+          "name": "Separate enterprise workspaces on mobile end-user devices",
+          "description": "Ensure separate enterprise workspaces are used on mobile end-user devices, where supported. Example implementations include using an Apple® Configuration Profile or Android™ Work Profile to separate enterprise applications and data from personal applications and data.",
+          "controls": [
+            {
+              "id": "k5pgtly4",
+              "externalId": "MDM-27",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Account Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "5.1",
+          "name": "Establish and maintain an inventory of accounts",
+          "description": "Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator accounts, and service accounts. The inventory, at a minimum, should contain the person’s name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+          "controls": [
+            {
+              "id": "eqmuezo6",
+              "externalId": "AST-134",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "5.2",
+          "name": "Use unique passwords",
+          "description": "Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+          "controls": [
+            {
+              "id": "jdoijij2",
+              "externalId": "IAC-501",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "5.3",
+          "name": "Disable dormant accounts",
+          "description": "Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.",
+          "controls": [
+            {
+              "id": "3f1r9y0m",
+              "externalId": "IAC-502",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "5.4",
+          "name": "Restrict administrator privileges to dedicated administrator accounts",
+          "description": "Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user’s primary, non-privileged account.",
+          "controls": [
+            {
+              "id": "4aug6na2",
+              "externalId": "IAC-503",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "5.5",
+          "name": "Establish and maintain an inventory of service accounts",
+          "description": "Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+          "controls": [
+            {
+              "id": "4a7hewtl",
+              "externalId": "IAC-504",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "5.6",
+          "name": "Centralize account management",
+          "description": "Centralize account management through a directory or identity service.",
+          "controls": [
+            {
+              "id": "eu5zktnb",
+              "externalId": "IAC-505",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Access Control Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "6.1",
+          "name": "Establish an access granting process",
+          "description": "Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+          "controls": [
+            {
+              "id": "2fyvaonv",
+              "externalId": "IAC-506",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.2",
+          "name": "Establish an access revoking process",
+          "description": "Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+          "controls": [
+            {
+              "id": "d3xp75k8",
+              "externalId": "IAC-507",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.3",
+          "name": "Require MFA for externally-exposed applications",
+          "description": "Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+          "controls": [
+            {
+              "id": "ohyaghkt",
+              "externalId": "IAC-508",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.4",
+          "name": "Require MFA for remote network access",
+          "description": "Require MFA for remote network access.",
+          "controls": [
+            {
+              "id": "ymg9iqzm",
+              "externalId": "IAC-509",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.5",
+          "name": "Require MFA for administrative access",
+          "description": "Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+          "controls": [
+            {
+              "id": "ncco1nh5",
+              "externalId": "IAC-510",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.6",
+          "name": "Establish and maintain an inventory of authentication and authorization systems",
+          "description": "Establish and maintain an inventory of the enterprise’s authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+          "controls": [
+            {
+              "id": "4cjdycv9",
+              "externalId": "IAC-511",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.7",
+          "name": "Centralize access control",
+          "description": "Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+          "controls": [
+            {
+              "id": "u1bg2xho",
+              "externalId": "IAC-512",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "6.8",
+          "name": "Define and maintain role-based access control",
+          "description": "Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+          "controls": [
+            {
+              "id": "gs1d1zmm",
+              "externalId": "IAC-513",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Continuous Vulnerability Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "7.1",
+          "name": "Establish and maintain a vulnerability management process",
+          "description": "Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "ek97ns1p",
+              "externalId": "VPM-132",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "7.2",
+          "name": "Establish and maintain a remediation process",
+          "description": "Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+          "controls": [
+            {
+              "id": "eu2vo9m9",
+              "externalId": "VPM-133",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "7.3",
+          "name": "Perform automated operating system patch management",
+          "description": "Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+          "controls": [
+            {
+              "id": "qb6uq832",
+              "externalId": "VPM-134",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "7.4",
+          "name": "Perform automated application patch management",
+          "description": "Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+          "controls": [
+            {
+              "id": "gayzqre5",
+              "externalId": "VPM-135",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "7.5",
+          "name": "Perform automated vulnerability scans of internal enterprise assets",
+          "description": "Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+          "controls": [
+            {
+              "id": "fthyr0ln",
+              "externalId": "VPM-136",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "7.6",
+          "name": "Perform automated vulnerability scans of externally-exposed enterprise assets",
+          "description": "Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+          "controls": [
+            {
+              "id": "7nrtpdm2",
+              "externalId": "VPM-137",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "7.7",
+          "name": "Remediate detected vulnerabilities",
+          "description": "Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+          "controls": [
+            {
+              "id": "eqoi3l5t",
+              "externalId": "VPM-138",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Audit Log Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "8.1",
+          "name": "Establish and maintain an audit log management process",
+          "description": "Establish and maintain a documented audit log management process that defines the enterprise’s logging requirements. At a minimum, address the collection, review, and retention of audit logs for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "pwbhthzh",
+              "externalId": "OPS-30",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.2",
+          "name": "Collect audit logs",
+          "description": "Collect audit logs. Ensure that logging, per the enterprise’s audit log management process, has been enabled across enterprise assets.",
+          "controls": [
+            {
+              "id": "d55bmo5f",
+              "externalId": "OPS-31",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.3",
+          "name": "Ensure adequate audit log storage",
+          "description": "Ensure that logging destinations maintain adequate storage to comply with the enterprise’s audit log management process.",
+          "controls": [
+            {
+              "id": "1oh4jprj",
+              "externalId": "OPS-32",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.4",
+          "name": "Standardize time synchronization",
+          "description": "Standardize time synchronization. Configure at least two synchronized time sources across enterprise assets, where supported.",
+          "controls": [
+            {
+              "id": "nv5bze7h",
+              "externalId": "OPS-33",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.5",
+          "name": "Collect detailed audit logs",
+          "description": "Configure detailed audit logging for enterprise assets containing sensitive data. Include event source, date, username, timestamp, source addresses, destination addresses, and other useful elements that could assist in a forensic investigation.",
+          "controls": [
+            {
+              "id": "m288bes1",
+              "externalId": "OPS-34",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.6",
+          "name": "Collect DNS query audit logs",
+          "description": "Collect DNS query audit logs on enterprise assets, where appropriate and supported.",
+          "controls": [
+            {
+              "id": "qkfzidkh",
+              "externalId": "OPS-35",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.7",
+          "name": "Collect URL request audit logs",
+          "description": "Collect URL request audit logs on enterprise assets, where appropriate and supported.",
+          "controls": [
+            {
+              "id": "iuekn6ml",
+              "externalId": "OPS-36",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.8",
+          "name": "Collect command-line audit logs",
+          "description": "Collect command-line audit logs. Example implementations include collecting audit logs from PowerShell®, BASH™, and remote administrative terminals.",
+          "controls": [
+            {
+              "id": "jut67j2q",
+              "externalId": "OPS-37",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.9",
+          "name": "Centralize audit logs",
+          "description": "Centralize, to the extent possible, audit log collection and retention across enterprise assets in accordance with the documented audit log management process. Example implementations include leveraging a SIEM tool to centralize multiple log sources.",
+          "controls": [
+            {
+              "id": "wqsr1hji",
+              "externalId": "OPS-38",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.10",
+          "name": "Retain audit logs",
+          "description": "Retain audit logs across enterprise assets for a minimum of 90 days.",
+          "controls": [
+            {
+              "id": "61vxpkpw",
+              "externalId": "OPS-39",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.11",
+          "name": "Conduct audit log reviews",
+          "description": "Conduct reviews of audit logs to detect anomalies or abnormal events that could indicate a potential threat. Conduct reviews on a weekly, or more frequent, basis.",
+          "controls": [
+            {
+              "id": "2nyz3iyg",
+              "externalId": "OPS-40",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "8.12",
+          "name": "Collect service provider logs",
+          "description": "Collect service provider logs, where supported. Example implementations include collecting authentication and authorization events, data creation and disposal events, and user management events.",
+          "controls": [
+            {
+              "id": "dtmvva8w",
+              "externalId": "OPS-41",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Email and Web Browser Protections",
+      "optional": true,
+      "sections": [
+        {
+          "id": "9.1",
+          "name": "Ensure use of only fully supported browsers and email clients",
+          "description": "Ensure only fully supported browsers and email clients are allowed to execute in the enterprise, only using the latest version of browsers and email clients provided through the vendor.",
+          "controls": [
+            {
+              "id": "jvsjwm9f",
+              "externalId": "WEB-5",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "9.2",
+          "name": "Use DNS filtering services",
+          "description": "Use DNS filtering services on all end-user devices, including remote and on-premises assets, to block access to known malicious domains.",
+          "controls": [
+            {
+              "id": "i12mvrzc",
+              "externalId": "WEB-6",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "9.3",
+          "name": "Maintain and enforce network-based URL filters",
+          "description": "Enforce and update network-based URL filters to limit an enterprise asset from connecting to potentially malicious or unapproved websites. Example implementations include category-based filtering, reputation-based filtering, or through the use of block lists. Enforce filters for all enterprise assets.",
+          "controls": [
+            {
+              "id": "s03l9ecz",
+              "externalId": "WEB-7",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "9.4",
+          "name": "Restrict unnecessary or unauthorized browser and email client extensions",
+          "description": "Restrict, either through uninstalling or disabling, any unauthorized or unnecessary browser or email client plugins, extensions, and add-on applications.",
+          "controls": [
+            {
+              "id": "gn209b2w",
+              "externalId": "WEB-8",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "9.5",
+          "name": "Implement DMARC",
+          "description": "To lower the chance of spoofed or modified emails from valid domains, implement DMARC policy and verification, starting with implementing the Sender Policy Framework (SPF) and the DomainKeys Identified Mail (DKIM) standards.",
+          "controls": [
+            {
+              "id": "mn7nf20p",
+              "externalId": "NET-297",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "9.6",
+          "name": "Block unnecessary file types",
+          "description": "Block unnecessary file types attempting to enter the enterprise’s email gateway.",
+          "controls": [
+            {
+              "id": "w6bojqr9",
+              "externalId": "NET-298",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "9.7",
+          "name": "Deploy and maintain email server anti-malware protections",
+          "description": "Deploy and maintain email server anti-malware protections, such as attachment scanning and/or sandboxing.",
+          "controls": [
+            {
+              "id": "s5zupdx5",
+              "externalId": "NET-299",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Malware Defenses",
+      "optional": true,
+      "sections": [
+        {
+          "id": "10.1",
+          "name": "Deploy and maintain anti-malware software",
+          "description": "Deploy and maintain anti-malware software on all enterprise assets.",
+          "controls": [
+            {
+              "id": "77sjmk1n",
+              "externalId": "MDM-28",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "10.2",
+          "name": "Configure automatic anti-malware signature updates",
+          "description": "Configure automatic updates for anti-malware signature files on all enterprise assets.",
+          "controls": [
+            {
+              "id": "eyhy3i6p",
+              "externalId": "MDM-29",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "10.3",
+          "name": "Disable autorun and autoplay for removable media",
+          "description": "Disable autorun and autoplay auto-execute functionality for removable media.",
+          "controls": [
+            {
+              "id": "ht6y6wz8",
+              "externalId": "OPS-42",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "10.4",
+          "name": "Configure automatic anti-malware scanning of removable media",
+          "description": "Configure anti-malware software to automatically scan removable media.",
+          "controls": [
+            {
+              "id": "57rtjfwh",
+              "externalId": "MDM-30",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "10.5",
+          "name": "Enable anti-exploitation features",
+          "description": "Enable anti-exploitation features on enterprise assets and software, where possible, such as Microsoft® Data Execution Prevention (DEP), Windows® Defender Exploit Guard (WDEG), or Apple® System Integrity Protection (SIP) and Gatekeeper™.",
+          "controls": [
+            {
+              "id": "khva9ula",
+              "externalId": "OPS-43",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "10.6",
+          "name": "Centrally manage anti-malware software",
+          "description": "Centrally manage anti-malware software.",
+          "controls": [
+            {
+              "id": "hti39h80",
+              "externalId": "MDM-31",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "10.7",
+          "name": "Use behavior-based anti-malware software",
+          "description": "Use behavior-based anti-malware software.",
+          "controls": [
+            {
+              "id": "dn3gv69s",
+              "externalId": "MDM-32",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Data Recovery",
+      "optional": true,
+      "sections": [
+        {
+          "id": "11.1",
+          "name": "Establish and maintain a data recovery process",
+          "description": "Establish and maintain a documented data recovery process. In the process, address the scope of data recovery activities, recovery prioritization, and the security of backup data. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "icdqere9",
+              "externalId": "DCH-219",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "11.2",
+          "name": "Perform automated backups",
+          "description": "Perform automated backups of in-scope enterprise assets. Run backups weekly, or more frequently, based on the sensitivity of the data.",
+          "controls": [
+            {
+              "id": "9fgm8067",
+              "externalId": "DCH-220",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "11.3",
+          "name": "Protect recovery data",
+          "description": "Protect recovery data with equivalent controls to the original data. Reference encryption or data separation, based on requirements.",
+          "controls": [
+            {
+              "id": "3azj4n0y",
+              "externalId": "DCH-221",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "11.4",
+          "name": "Establish and maintain an isolated instance of recovery data",
+          "description": "Establish and maintain an isolated instance of recovery data. Example implementations include, version controlling backup destinations through offline, cloud, or off-site systems or services.",
+          "controls": [
+            {
+              "id": "k7v44hne",
+              "externalId": "DCH-222",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "11.5",
+          "name": "Test data recovery",
+          "description": "Test backup recovery quarterly, or more frequently, for a sampling of in-scope enterprise assets.",
+          "controls": [
+            {
+              "id": "v91np1lw",
+              "externalId": "DCH-223",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Network Infrastructure Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "12.1",
+          "name": "Ensure network infrastructure is up-to-date",
+          "description": "Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network-as-a-service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.",
+          "controls": [
+            {
+              "id": "ny7i67pc",
+              "externalId": "NET-300",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.2",
+          "name": "Establish and maintain a secure network architecture",
+          "description": "Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations will not solely include documentation, but also policy and design components.",
+          "controls": [
+            {
+              "id": "pe04fi06",
+              "externalId": "SEA-190",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.3",
+          "name": "Securely manage network infrastructure",
+          "description": "Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS.",
+          "controls": [
+            {
+              "id": "wotd7hko",
+              "externalId": "SEA-191",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.4",
+          "name": "Establish and maintain architecture diagram(s)",
+          "description": "Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "iyurfynj",
+              "externalId": "SEA-192",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.5",
+          "name": "Centralize network authentication, authorization, and auditing (AAA)",
+          "description": "Centralize network AAA.",
+          "controls": [
+            {
+              "id": "t5geg25x",
+              "externalId": "NET-301",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.6",
+          "name": "Use of secure network management and communication protocols",
+          "description": "Use secure network management and communication protocols (e.g., 802.1X, Wi-Fi Protected Access 2 (WPA2) Enterprise or greater).",
+          "controls": [
+            {
+              "id": "lm2yh9c7",
+              "externalId": "NET-302",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.7",
+          "name": "Ensure remote devices utilize a VPN and are connecting to an enterprise’s AAA infrastructure",
+          "description": "Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices.",
+          "controls": [
+            {
+              "id": "spalva61",
+              "externalId": "IAC-514",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "12.8",
+          "name": "Establish and maintain dedicated computing resources for all administrative work",
+          "description": "Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access.",
+          "controls": [
+            {
+              "id": "d1msbci6",
+              "externalId": "IAC-515",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Network Monitoring and Defense",
+      "optional": true,
+      "sections": [
+        {
+          "id": "13.1",
+          "name": "Centralize security event alerting",
+          "description": "Centralize security event alerting across enterprise assets for log correlation and analysis. Best practice implementation requires the use of a SIEM, which includes vendor-defined event correlation alerts. A log analytics platform configured with security-relevant correlation alerts also satisfies this Safeguard.",
+          "controls": [
+            {
+              "id": "ou063t9d",
+              "externalId": "OPS-44",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.2",
+          "name": "Deploy a host-based intrusion detection solution",
+          "description": "Deploy a host-based intrusion detection solution on enterprise assets, where appropriate and/or supported.",
+          "controls": [
+            {
+              "id": "fquvr3u7",
+              "externalId": "OPS-45",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.3",
+          "name": "Deploy a network intrusion detection solution",
+          "description": "Deploy a network intrusion detection solution on enterprise assets, where appropriate. Example implementations include the use of a Network Intrusion Detection System (NIDS) or equivalent cloud service provider (CSP) service.",
+          "controls": [
+            {
+              "id": "w20to4gb",
+              "externalId": "OPS-46",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.4",
+          "name": "Perform traffic filtering between network segments",
+          "description": "Perform traffic filtering between network segments, where appropriate.",
+          "controls": [
+            {
+              "id": "lfuw5pga",
+              "externalId": "NET-303",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.5",
+          "name": "Manage access control for remote assets",
+          "description": "Manage access control for assets remotely connecting to enterprise resources. Determine amount of access to enterprise resources based on: up-to-date anti-malware software installed, configuration compliance with the enterprise’s secure configuration process, and ensuring the operating system and applications are up-to-date.",
+          "controls": [
+            {
+              "id": "8e6ij6hd",
+              "externalId": "IAC-516",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.6",
+          "name": "Collect network traffic flow logs",
+          "description": "Collect network traffic flow logs and/or network traffic to review and alert upon from network devices.",
+          "controls": [
+            {
+              "id": "b9nvf4ew",
+              "externalId": "OPS-47",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.7",
+          "name": "Deploy a host-based intrusion prevention solution",
+          "description": "Deploy a host-based intrusion prevention solution on enterprise assets, where appropriate and/or supported. Example implementations include use of an Endpoint Detection and Response (EDR) client or host-based IPS agent.",
+          "controls": [
+            {
+              "id": "rcwkg0u7",
+              "externalId": "OPS-48",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.8",
+          "name": "Deploy a network intrusion prevention solution",
+          "description": "Deploy a network intrusion prevention solution, where appropriate. Example implementations include the use of a Network Intrusion Prevention System (NIPS) or equivalent CSP service.",
+          "controls": [
+            {
+              "id": "ojt12xdw",
+              "externalId": "OPS-49",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.9",
+          "name": "Deploy port-level access control",
+          "description": "Deploy port-level access control. Port-level access control utilizes 802.1x, or similar network access control protocols, such as certificates, and may incorporate user and/or device authentication.",
+          "controls": [
+            {
+              "id": "v4zuuoo6",
+              "externalId": "OPS-50",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.10",
+          "name": "Perform application layer filtering",
+          "description": "Perform application layer filtering. Example implementations include a filtering proxy, application layer firewall, or gateway.",
+          "controls": [
+            {
+              "id": "f3a06fi8",
+              "externalId": "NET-304",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "13.11",
+          "name": "Tune security event alerting thresholds",
+          "description": "Tune security event alerting thresholds monthly, or more frequently.",
+          "controls": [
+            {
+              "id": "kve4kg00",
+              "externalId": "OPS-51",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Security Awareness and Skills Training",
+      "optional": true,
+      "sections": [
+        {
+          "id": "14.1",
+          "name": "Establish and maintain a security awareness program",
+          "description": "Establish and maintain a security awareness program. The purpose of a security awareness program is to educate the enterprise’s workforce on how to interact with enterprise assets and data in a secure manner. Conduct training at hire and, at a minimum, annually. Review and update content annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "r1c9q5a7",
+              "externalId": "SAT-75",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.2",
+          "name": "Train workforce members to recognize social engineering attacks",
+          "description": "Train workforce members to recognize social engineering attacks, such as phishing, business email compromise (BEC), pretexting, and tailgating.",
+          "controls": [
+            {
+              "id": "zimrjbx2",
+              "externalId": "SAT-76",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.3",
+          "name": "Train workforce members on authentication best practices",
+          "description": "Train workforce members on authentication best practices. Example topics include MFA, password composition, and credential management.",
+          "controls": [
+            {
+              "id": "ozctm6qo",
+              "externalId": "SAT-77",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.4",
+          "name": "Train workforce on data handling best practices",
+          "description": "Train workforce members on how to identify and properly store, transfer, archive, and destroy sensitive data. This also includes training workforce members on clear screen and desk best practices, such as locking their screen when they step away from their enterprise asset, erasing physical and virtual whiteboards at the end of meetings, and storing data and assets securely.",
+          "controls": [
+            {
+              "id": "plhm3cp8",
+              "externalId": "SAT-78",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.5",
+          "name": "Train workforce members on causes of unintentional data exposure",
+          "description": "Train workforce members to be aware of causes for unintentional data exposure. Example topics include mis-delivery of sensitive data, losing a portable end-user device, or publishing data to unintended audiences.",
+          "controls": [
+            {
+              "id": "g0ni5v0s",
+              "externalId": "SAT-79",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.6",
+          "name": "Train workforce members on recognizing and reporting security incidents",
+          "description": "Train workforce members to be able to recognize a potential incident and be able to report such an incident.",
+          "controls": [
+            {
+              "id": "q872vn5o",
+              "externalId": "SAT-80",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.7",
+          "name": "Train workforce on how to identify and report if their enterprise assets are missing security updates",
+          "description": "Train workforce to understand how to verify and report out-of-date software patches or any failures in automated processes and tools. Part of this training should include notifying IT personnel of any failures in automated processes and tools.",
+          "controls": [
+            {
+              "id": "jpw3udsp",
+              "externalId": "SAT-81",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.8",
+          "name": "Train workforce on the dangers of connecting to and transmitting enterprise data over insecure networks",
+          "description": "Train workforce members on the dangers of connecting to, and transmitting data over, insecure networks for enterprise activities. If the enterprise has remote workers, training must include guidance to ensure that all users securely configure their home network infrastructure.",
+          "controls": [
+            {
+              "id": "r0bcop8p",
+              "externalId": "SAT-82",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "14.9",
+          "name": "Conduct role-specific security awareness and skills training",
+          "description": "Conduct role-specific security awareness and skills training. Example implementations include secure system administration courses for IT professionals, OWASP® Top 10 vulnerability awareness and prevention training for web application developers, and advanced social engineering awareness training for high-profile roles.",
+          "controls": [
+            {
+              "id": "cwjz951v",
+              "externalId": "SAT-83",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Service Provider Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "15.1",
+          "name": "Establish and maintain an inventory of service providers",
+          "description": "Establish and maintain an inventory of service providers. The inventory is to list all known service providers, include classification(s), and designate an enterprise contact for each service provider. Review and update the inventory annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "nx9u53cj",
+              "externalId": "TPM-101",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "15.2",
+          "name": "Establish and maintain a service provider management policy",
+          "description": "Establish and maintain a service provider management policy. Ensure the policy addresses the classification, inventory, assessment, monitoring, and decommissioning of service providers. Review and update the policy annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "wkw48cws",
+              "externalId": "TPM-102",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "15.3",
+          "name": "Classify service providers",
+          "description": "Classify service providers. Classification consideration may include one or more characteristics, such as data sensitivity, data volume, availability requirements, applicable regulations, inherent risk, and mitigated risk. Update and review classifications annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "saap6t14",
+              "externalId": "TPM-103",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "15.4",
+          "name": "Ensure service provider contracts include security requirements",
+          "description": "Ensure service provider contracts include security requirements. Example requirements may include minimum security program requirements, security incident and/or data breach notification and response, data encryption requirements, and data disposal commitments. These security requirements must be consistent with the enterprise’s service provider management policy. Review service provider contracts annually to ensure contracts are not missing security requirements.",
+          "controls": [
+            {
+              "id": "09blc1ni",
+              "externalId": "TPM-104",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "15.5",
+          "name": "Assess service providers",
+          "description": "Assess service providers consistent with the enterprise’s service provider management policy. Assessment scope may vary based on classification(s), and may include review of standardized assessment reports, such as Service Organization Control 2 (SOC 2) and Payment Card Industry (PCI) Attestation of Compliance (AoC), customized questionnaires, or other appropriately rigorous processes. Reassess service providers annually, at a minimum, or with new and renewed contracts.",
+          "controls": [
+            {
+              "id": "7c5l1uc2",
+              "externalId": "TPM-105",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "15.6",
+          "name": "Monitor service providers",
+          "description": "Monitor service providers consistent with the enterprise’s service provider management policy. Monitoring may include periodic reassessment of service provider compliance, monitoring service provider release notes, and dark web monitoring.",
+          "controls": [
+            {
+              "id": "r7bodc8a",
+              "externalId": "TPM-106",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "15.7",
+          "name": "Securely decommission service providers",
+          "description": "Securely decommission service providers. Example considerations include user and service account deactivation, termination of data flows, and secure disposal of enterprise data within service provider systems.",
+          "controls": [
+            {
+              "id": "7p3db12d",
+              "externalId": "TPM-107",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Application Software Security",
+      "optional": true,
+      "sections": [
+        {
+          "id": "16.1",
+          "name": "Establish and maintain a secure application development process",
+          "description": "Establish and maintain a secure application development process. In the process, address such items as: secure application design standards, secure coding practices, developer training, vulnerability management, security of third-party code, and application security testing procedures. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "8jic4wov",
+              "externalId": "SEA-193",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.2",
+          "name": "Establish and maintain a process to accept and address software vulnerabilities",
+          "description": "Establish and maintain a process to accept and address reports of software vulnerabilities, including providing a means for external entities to report. The process is to include such items as: a vulnerability handling policy that identifies reporting process, responsible party for handling vulnerability reports, and a process for intake, assignment, remediation, and remediation testing. As part of the process, use a vulnerability tracking system that includes severity ratings, and metrics for measuring timing for identification, analysis, and remediation of vulnerabilities. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\nThird-party application developers need to consider this an externally-facing policy that helps to set expectations for outside stakeholders.",
+          "controls": [
+            {
+              "id": "q3vwgql6",
+              "externalId": "VPM-139",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.3",
+          "name": "Perform root cause analysis on security vulnerabilities",
+          "description": "Perform root cause analysis on security vulnerabilities. When reviewing vulnerabilities, root cause analysis is the task of evaluating underlying issues that create vulnerabilities in code, and allows development teams to move beyond just fixing individual vulnerabilities as they arise.",
+          "controls": [
+            {
+              "id": "f626ljpl",
+              "externalId": "VPM-140",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.4",
+          "name": "Establish and manage an inventory of third-party software components",
+          "description": "Establish and manage an updated inventory of third-party components used in development, often referred to as a “bill of materials,” as well as components slated for future use. This inventory is to include any risks that each third-party component could pose. Evaluate the list at least monthly to identify any changes or updates to these components, and validate that the component is still supported.",
+          "controls": [
+            {
+              "id": "0m1sfwnx",
+              "externalId": "TPM-108",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.5",
+          "name": "Use up-to-date and trusted third-party software components",
+          "description": "Use up-to-date and trusted third-party software components. When possible, choose established and proven frameworks and libraries that provide adequate security. Acquire these components from trusted sources or evaluate the software for vulnerabilities before use.",
+          "controls": [
+            {
+              "id": "8yp9als6",
+              "externalId": "TPM-109",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.6",
+          "name": "Establish and maintain a severity rating system and process for application vulnerabilities",
+          "description": "Establish and maintain a severity rating system and process for application vulnerabilities that facilitates prioritizing the order in which discovered vulnerabilities are fixed. This process includes setting a minimum level of security acceptability for releasing code or applications. Severity ratings bring a systematic way of triaging vulnerabilities that improves risk management and helps ensure the most severe bugs are fixed first. Review and update the system and process annually.",
+          "controls": [
+            {
+              "id": "yi25patk",
+              "externalId": "VPM-141",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.7",
+          "name": "Use standard hardening configuration templates for application infrastructure",
+          "description": "Use standard, industry-recommended hardening configuration templates for application infrastructure components. This includes underlying servers, databases, and web servers, and applies to cloud containers, Platform as a Service (PaaS) components, and SaaS components. Do not allow in-house developed software to weaken configuration hardening.",
+          "controls": [
+            {
+              "id": "4tt376e2",
+              "externalId": "VPM-142",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.8",
+          "name": "Separate production and non-production systems",
+          "description": "Maintain separate environments for production and non-production systems.",
+          "controls": [
+            {
+              "id": "8ljacb96",
+              "externalId": "SEA-194",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.9",
+          "name": "Train developers in application security concepts and secure coding",
+          "description": "Ensure that all software development personnel receive training in writing secure code for their specific development environment and responsibilities. Training can include general security principles and application security standard practices. Conduct training at least annually and design in a way to promote security within the development team, and build a culture of security among the developers.",
+          "controls": [
+            {
+              "id": "xjml1wm6",
+              "externalId": "SAT-84",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.10",
+          "name": "Apply secure design principles in application architectures",
+          "description": "Apply secure design principles in application architectures. Secure design principles include the concept of least privilege and enforcing mediation to validate every operation that the user makes, promoting the concept of \"never trust user input.\" Examples include ensuring that explicit error checking is performed and documented for all input, including for size, data type, and acceptable ranges or formats. Secure design also means minimizing the application infrastructure attack surface, such as turning off unprotected ports and services, removing unnecessary programs and files, and renaming or removing default accounts.",
+          "controls": [
+            {
+              "id": "wukrlk8h",
+              "externalId": "SEA-195",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.11",
+          "name": "Leverage vetted modules or services for application security components",
+          "description": "Leverage vetted modules or services for application security components, such as identity management, encryption, and auditing and logging. Using platform features in critical security functions will reduce developers’ workload and minimize the likelihood of design or implementation errors. Modern operating systems provide effective mechanisms for identification, authentication, and authorization and make those mechanisms available to applications. Use only standardized, currently accepted, and extensively reviewed encryption algorithms. Operating systems also provide mechanisms to create and maintain secure audit logs.",
+          "controls": [
+            {
+              "id": "lrlpt5bp",
+              "externalId": "SEA-196",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.12",
+          "name": "Implement code-level security checks",
+          "description": "Apply static and dynamic analysis tools within the application life cycle to verify that secure coding practices are being followed.",
+          "controls": [
+            {
+              "id": "c06dfkdg",
+              "externalId": "SEA-197",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.13",
+          "name": "Conduct application penetration testing",
+          "description": "Conduct application penetration testing. For critical applications, authenticated penetration testing is better suited to finding business logic vulnerabilities than code scanning and automated security testing. Penetration testing relies on the skill of the tester to manually manipulate an application as an authenticated and unauthenticated user.",
+          "controls": [
+            {
+              "id": "beeiu3u3",
+              "externalId": "VPM-143",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "16.14",
+          "name": "Conduct threat modeling",
+          "description": "Conduct threat modeling. Threat modeling is the process of identifying and addressing application security design flaws within a design, before code is created. It is conducted through specially trained individuals who evaluate the application design and gauge security risks for each entry point and access level. The goal is to map out the application, architecture, and infrastructure in a structured way to understand its weaknesses.",
+          "controls": [
+            {
+              "id": "h4fwhdih",
+              "externalId": "THR-47",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Incident Response Management",
+      "optional": true,
+      "sections": [
+        {
+          "id": "17.1",
+          "name": "Designate personnel to manage incident handling",
+          "description": "Designate one key person, and at least one backup, who will manage the enterprise’s incident handling process. Management personnel are responsible for the coordination and documentation of incident response and recovery efforts and can consist of employees internal to the enterprise, service providers, or a hybrid approach. If using a service provider, designate at least one person internal to the enterprise to oversee any third-party work. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "qrjf0cm4",
+              "externalId": "IRO-208",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.2",
+          "name": "Establish and maintain contact information for reporting security incidents",
+          "description": "Establish and maintain contact information for parties that need to be informed of security incidents. Contacts may include internal staff, service vendors, law enforcement, cyber insurance providers, relevant government agencies, Information Sharing and Analysis Center (ISAC) partners, or other stakeholders. Verify contacts annually to ensure that information is up-to-date.",
+          "controls": [
+            {
+              "id": "ztcbsb3s",
+              "externalId": "IRO-209",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.3",
+          "name": "Establish and maintain an enterprise process for reporting incidents",
+          "description": "Establish and maintain an documented enterprise process for the workforce to report security incidents. The process includes reporting timeframe, personnel to report to, mechanism for reporting, and the minimum information to be reported. Ensure the process is publicly available to all of the workforce. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "6i0fndqj",
+              "externalId": "IRO-210",
+              "variants": [
+                "CIS_IG1",
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG1",
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.4",
+          "name": "Establish and maintain an incident response process",
+          "description": "Establish and maintain a documented incident response process that addresses roles and responsibilities, compliance requirements, and a communication plan. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "t5qaf3n7",
+              "externalId": "IRO-211",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.5",
+          "name": "Assign key roles and responsibilities",
+          "description": "Assign key roles and responsibilities for incident response, including staff from legal, IT, information security, facilities, public relations, human resources, incident responders, and analysts. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "v7y45xah",
+              "externalId": "IRO-212",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.6",
+          "name": "Define mechanisms for communicating during incident response",
+          "description": "Determine which primary and secondary mechanisms will be used to communicate and report during a security incident. Mechanisms can include phone calls, emails, secure chat, or notification letters. Keep in mind that certain mechanisms, such as emails, can be affected during a security incident. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "nxb6cak4",
+              "externalId": "IRO-213",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.7",
+          "name": "Conduct routine incident response exercises",
+          "description": "Plan and conduct routine incident response exercises and scenarios for key personnel involved in the incident response process to prepare for responding to real-world incidents. Exercises need to test communication channels, decision making, and workflows. Conduct testing on an annual basis, at a minimum.",
+          "controls": [
+            {
+              "id": "1w1zqe1i",
+              "externalId": "IRO-214",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.8",
+          "name": "Conduct post-incident reviews",
+          "description": "Conduct post-incident reviews. Post-incident reviews help prevent incident recurrence through identifying lessons learned and follow-up action.",
+          "controls": [
+            {
+              "id": "s1bnm4p4",
+              "externalId": "IRO-215",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "17.9",
+          "name": "Establish and maintain security incident thresholds",
+          "description": "Establish and maintain security incident thresholds, including, at a minimum, differentiating between an incident and an event. Examples can include: abnormal activity, security vulnerability, security weakness, data breach, privacy incident, etc. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "controls": [
+            {
+              "id": "jlry59l1",
+              "externalId": "IRO-216",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Penetration Testing",
+      "optional": true,
+      "sections": [
+        {
+          "id": "18.1",
+          "name": "Establish and maintain a penetration testing program",
+          "description": "Establish and maintain a penetration testing program appropriate to the size, complexity, industry, and maturity of the enterprise. Penetration testing program characteristics include scope, such as network, web application, Application Programming Interface (API), hosted services, and physical premise controls; frequency; limitations, such as acceptable hours, and excluded attack types; point of contact information; remediation, such as how findings will be routed internally; and retrospective requirements.",
+          "context": "18.1, 18.2, 18.3, 18.4, 18.5",
+          "controls": [
+            {
+              "id": "4rxaaqik",
+              "externalId": "VPM-144",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "18.2",
+          "name": "Perform periodic external penetration tests",
+          "description": "Perform periodic external penetration tests based on program requirements, no less than annually. External penetration testing must include enterprise and environmental reconnaissance to detect exploitable information. Penetration testing requires specialized skills and experience and must be conducted through a qualified party. The testing may be clear box or opaque box.",
+          "controls": [
+            {
+              "id": "rlrqtzw7",
+              "externalId": "VPM-145",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "18.3",
+          "name": "Remediate penetration test findings",
+          "description": "Remediate penetration test findings based on the enterprise’s documented vulnerability remediation process. This should include determining a timeline and level of effort based on the impact and prioritization of each identified finding.",
+          "controls": [
+            {
+              "id": "t93bedx4",
+              "externalId": "VPM-146",
+              "variants": [
+                "CIS_IG2",
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG2",
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "18.4",
+          "name": "Validate security measures",
+          "description": "Validate security measures after each penetration test. If deemed necessary, modify rulesets and capabilities to detect the techniques used during testing.",
+          "controls": [
+            {
+              "id": "yvl2w8md",
+              "externalId": "VPM-147",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        },
+        {
+          "id": "18.5",
+          "name": "Perform periodic internal penetration tests",
+          "description": "Perform periodic internal penetration tests based on program requirements, no less than annually. The testing may be clear box or opaque box.",
+          "controls": [
+            {
+              "id": "rp1z4rer",
+              "externalId": "VPM-148",
+              "variants": [
+                "CIS_IG3"
+              ]
+            }
+          ],
+          "variants": [
+            "CIS_IG3"
+          ]
+        }
+      ]
+    }
+  ]
+}

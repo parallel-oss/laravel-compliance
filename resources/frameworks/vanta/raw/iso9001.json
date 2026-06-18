@@ -1,0 +1,482 @@
+{
+  "principles": [
+    {
+      "id": "4",
+      "name": "Context",
+      "optional": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "name": "Understanding the organization and its context",
+          "description": "",
+          "controls": [
+            {
+              "id": "5z8hbtd1",
+              "externalId": "CPL-77"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "name": "Understanding the needs and expectations of interested parties",
+          "controls": [
+            {
+              "id": "cp07vai5",
+              "externalId": "AST-109"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "name": "Determining the scope of the quality management system",
+          "controls": [
+            {
+              "id": "aw24p2ou",
+              "externalId": "AST-110"
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "name": "Quality management system and its processes",
+          "controls": [
+            {
+              "id": "smjgx6xe",
+              "externalId": "CPL-78"
+            },
+            {
+              "id": "fvjkatl2",
+              "externalId": "CPL-79"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Leadership",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "name": "Leadership and commitment",
+          "controls": [
+            {
+              "id": "spzps9h7",
+              "externalId": "CPL-80"
+            },
+            {
+              "id": "dnewzp1j",
+              "externalId": "CPL-81"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "name": "Policy",
+          "controls": [
+            {
+              "id": "dfp45jy4",
+              "externalId": "CPL-82"
+            },
+            {
+              "id": "29irlaeh",
+              "externalId": "CPL-83"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "name": "Organizational roles, responsibilities and authorities",
+          "controls": [
+            {
+              "id": "o4e6wp1z",
+              "externalId": "CPL-84"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "name": "Actions to address risks and opportunities",
+          "controls": [
+            {
+              "id": "0epjzk2p",
+              "externalId": "RSK-88"
+            },
+            {
+              "id": "9zhf0d66",
+              "externalId": "RSK-89"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "name": "Quality objectives and planning to achieve them",
+          "controls": [
+            {
+              "id": "vkbc017n",
+              "externalId": "CPL-85"
+            },
+            {
+              "id": "26a7t0wp",
+              "externalId": "CPL-86"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "name": "Planning of changes",
+          "controls": [
+            {
+              "id": "epdgqqqa",
+              "externalId": "CHG-72"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Support",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "name": "Resources",
+          "controls": [
+            {
+              "id": "57xvkswy",
+              "externalId": "PRM-22"
+            },
+            {
+              "id": "yahpp5dh",
+              "externalId": "PRM-23"
+            },
+            {
+              "id": "yr2owkru",
+              "externalId": "PRM-24"
+            },
+            {
+              "id": "d1gl4wzw",
+              "externalId": "PRM-25"
+            },
+            {
+              "id": "odgkcztt",
+              "externalId": "PRM-26"
+            },
+            {
+              "id": "zxbq0z0p",
+              "externalId": "PRM-27"
+            },
+            {
+              "id": "plbh79pf",
+              "externalId": "PRM-28"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "name": "Competence",
+          "controls": [
+            {
+              "id": "xxvvefi8",
+              "externalId": "HRS-92"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "name": "Awareness",
+          "controls": [
+            {
+              "id": "cm4qn4f3",
+              "externalId": "HRS-93"
+            }
+          ]
+        },
+        {
+          "id": "7.4",
+          "name": "Communication",
+          "controls": [
+            {
+              "id": "trlmbetm",
+              "externalId": "CPL-87"
+            }
+          ]
+        },
+        {
+          "id": "7.5",
+          "name": "Documented information",
+          "controls": [
+            {
+              "id": "q7zdjrc3",
+              "externalId": "CPL-88"
+            },
+            {
+              "id": "qj4cmb0m",
+              "externalId": "CPL-89"
+            },
+            {
+              "id": "w7uom6f7",
+              "externalId": "CPL-90"
+            },
+            {
+              "id": "nuw6uycv",
+              "externalId": "CPL-91"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Operations",
+      "optional": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "name": "Operational planning and control",
+          "controls": [
+            {
+              "id": "8e074h42",
+              "externalId": "CPL-92"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "name": "Requirements for products and services",
+          "controls": [
+            {
+              "id": "lgtz8lax",
+              "externalId": "CPL-93"
+            },
+            {
+              "id": "d2dqs560",
+              "externalId": "CPL-94"
+            },
+            {
+              "id": "q41uvw37",
+              "externalId": "CPL-95"
+            },
+            {
+              "id": "wjl03bmi",
+              "externalId": "CPL-96"
+            },
+            {
+              "id": "xzx037qh",
+              "externalId": "CPL-97"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "name": "Design and development of products and services",
+          "controls": [
+            {
+              "id": "cwtavkky",
+              "externalId": "CPL-98"
+            },
+            {
+              "id": "er8qiwu7",
+              "externalId": "CPL-99"
+            },
+            {
+              "id": "e0db11gr",
+              "externalId": "CPL-100"
+            },
+            {
+              "id": "qbbsje1c",
+              "externalId": "CPL-101"
+            },
+            {
+              "id": "tvhhz8hs",
+              "externalId": "CPL-102"
+            },
+            {
+              "id": "mxnvap73",
+              "externalId": "CPL-103"
+            }
+          ]
+        },
+        {
+          "id": "8.4",
+          "name": "Control of externally provided products and services",
+          "controls": [
+            {
+              "id": "x4x3rif2",
+              "externalId": "TPM-84"
+            },
+            {
+              "id": "dvndvne1",
+              "externalId": "TPM-85"
+            },
+            {
+              "id": "8r1dbxan",
+              "externalId": "TPM-86"
+            }
+          ]
+        },
+        {
+          "id": "8.5",
+          "name": "Production and service provision",
+          "controls": [
+            {
+              "id": "52w01sby",
+              "externalId": "CPL-104"
+            },
+            {
+              "id": "0eej8dc0",
+              "externalId": "CPL-105"
+            },
+            {
+              "id": "v21egbul",
+              "externalId": "CPL-106"
+            },
+            {
+              "id": "izyyt8c6",
+              "externalId": "CPL-107"
+            },
+            {
+              "id": "1m9tfv6c",
+              "externalId": "CPL-108"
+            },
+            {
+              "id": "yp9cfrt3",
+              "externalId": "CPL-109"
+            }
+          ]
+        },
+        {
+          "id": "8.6",
+          "name": "Release of products and services",
+          "controls": [
+            {
+              "id": "q6xpa700",
+              "externalId": "CHG-73"
+            }
+          ]
+        },
+        {
+          "id": "8.7",
+          "name": "Control of nonconforming process outputs, products and services",
+          "controls": [
+            {
+              "id": "t4mucuo0",
+              "externalId": "RSK-90"
+            },
+            {
+              "id": "f4ptnsd9",
+              "externalId": "RSK-91"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Performance Evaluation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "name": "Monitoring, measurement, analysis and evaluation",
+          "controls": [
+            {
+              "id": "rmuogml0",
+              "externalId": "CPL-110"
+            },
+            {
+              "id": "yw1dea3m",
+              "externalId": "CPL-111"
+            },
+            {
+              "id": "g1w7d0bf",
+              "externalId": "CPL-112"
+            }
+          ]
+        },
+        {
+          "id": "9.2",
+          "name": "Internal audit",
+          "controls": [
+            {
+              "id": "8p58b4rl",
+              "externalId": "CPL-113"
+            },
+            {
+              "id": "pxfja90a",
+              "externalId": "CPL-114"
+            }
+          ]
+        },
+        {
+          "id": "9.3",
+          "name": "Management review",
+          "controls": [
+            {
+              "id": "dtdj7uey",
+              "externalId": "RSK-92"
+            },
+            {
+              "id": "p30gn7vp",
+              "externalId": "RSK-93"
+            },
+            {
+              "id": "xzcqti4u",
+              "externalId": "RSK-94"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Continuous Improvement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "10.1",
+          "name": "Improvement - General",
+          "controls": [
+            {
+              "id": "p8fsr4ek",
+              "externalId": "CPL-115"
+            }
+          ]
+        },
+        {
+          "id": "10.2",
+          "name": "Nonconformity and corrective action",
+          "controls": [
+            {
+              "id": "7cj58qpz",
+              "externalId": "CPL-116"
+            },
+            {
+              "id": "u1grx6pi",
+              "externalId": "CPL-117"
+            }
+          ]
+        },
+        {
+          "id": "10.3",
+          "name": "Continual improvement",
+          "controls": [
+            {
+              "id": "ie8jjcak",
+              "externalId": "CPL-118"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

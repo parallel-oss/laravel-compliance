@@ -1,0 +1,551 @@
+{
+  "principles": [
+    {
+      "id": "1",
+      "name": "Information Security Policies and Organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1.2",
+          "name": "Organization of Information Security",
+          "controls": [
+            {
+              "id": "rq46pji6",
+              "externalId": "GOV-334"
+            },
+            {
+              "id": "72stzdd0",
+              "externalId": "GOV-335"
+            },
+            {
+              "id": "54kfgruv",
+              "externalId": "PRM-32"
+            },
+            {
+              "id": "40r9xyov",
+              "externalId": "PRM-33"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "name": "Asset Management",
+          "controls": [
+            {
+              "id": "stzd83j1",
+              "externalId": "AST-153"
+            },
+            {
+              "id": "ejt3hvd5",
+              "externalId": "AST-154"
+            },
+            {
+              "id": "50rz4zz9",
+              "externalId": "TPM-163"
+            },
+            {
+              "id": "260ptl3u",
+              "externalId": "TPM-164"
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "name": "Information Security Risk Management",
+          "controls": [
+            {
+              "id": "zfcl9qat",
+              "externalId": "RSK-191"
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "name": "Assessments",
+          "controls": [
+            {
+              "id": "3gunh8as",
+              "externalId": "GOV-336"
+            },
+            {
+              "id": "w634rwyv",
+              "externalId": "GOV-337"
+            }
+          ]
+        },
+        {
+          "id": "1.6",
+          "name": "Incident and Crisis Management",
+          "controls": [
+            {
+              "id": "xlgw1qvf",
+              "externalId": "BCD-217"
+            },
+            {
+              "id": "7r6xs246",
+              "externalId": "IRO-292"
+            },
+            {
+              "id": "3miksil9",
+              "externalId": "IRO-293"
+            }
+          ]
+        },
+        {
+          "id": "1.1",
+          "name": "Information Security Policies",
+          "controls": [
+            {
+              "id": "8uxj0eo2",
+              "externalId": "GOV-333"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "HR Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "name": "Human Resources Security",
+          "controls": [
+            {
+              "id": "u1cmw99a",
+              "externalId": "GOV-338"
+            },
+            {
+              "id": "zd1b3ggd",
+              "externalId": "GOV-339"
+            },
+            {
+              "id": "1cut5taw",
+              "externalId": "HRS-118"
+            },
+            {
+              "id": "lieejr3e",
+              "externalId": "SAT-97"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Physical",
+      "optional": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "name": "Physical Security",
+          "controls": [
+            {
+              "id": "uhpnp0zs",
+              "externalId": "AST-155"
+            },
+            {
+              "id": "d8s8vskr",
+              "externalId": "MDM-35"
+            },
+            {
+              "id": "vf9s4l5m",
+              "externalId": "PES-269"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Identity and Access Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "name": "Identity Management",
+          "controls": [
+            {
+              "id": "qkyq3xks",
+              "externalId": "IAC-576"
+            },
+            {
+              "id": "mshqmj4d",
+              "externalId": "IAC-577"
+            },
+            {
+              "id": "ssdiuem9",
+              "externalId": "IAC-578"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "name": "Access Management",
+          "controls": [
+            {
+              "id": "vjvteghb",
+              "externalId": "IAC-579"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "IT Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "name": "Cryptography",
+          "controls": [
+            {
+              "id": "m1uvu6gn",
+              "externalId": "CRY-254"
+            },
+            {
+              "id": "en049g43",
+              "externalId": "DCH-261"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "name": "Operations Security",
+          "controls": [
+            {
+              "id": "uo38avh3",
+              "externalId": "BCD-218"
+            },
+            {
+              "id": "tv72nya9",
+              "externalId": "BCD-219"
+            },
+            {
+              "id": "nqpwiho8",
+              "externalId": "CHG-91"
+            },
+            {
+              "id": "f8iisrzf",
+              "externalId": "GOV-340"
+            },
+            {
+              "id": "bg952g52",
+              "externalId": "GOV-341"
+            },
+            {
+              "id": "hk5w4qpi",
+              "externalId": "MON-330"
+            },
+            {
+              "id": "2q1ntq0u",
+              "externalId": "NET-340"
+            },
+            {
+              "id": "8l3rm1a4",
+              "externalId": "OPS-89"
+            },
+            {
+              "id": "r4dbpw9l",
+              "externalId": "VPM-183"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "name": "System acquisitions, requirement management, and development",
+          "controls": [
+            {
+              "id": "t8dga95o",
+              "externalId": "AST-156"
+            },
+            {
+              "id": "6ffwaqt9",
+              "externalId": "GOV-342"
+            },
+            {
+              "id": "l8q2r5ay",
+              "externalId": "IAC-580"
+            },
+            {
+              "id": "0g28lndp",
+              "externalId": "NET-341"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Supplier Relationships",
+      "optional": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "name": "Supplier",
+          "controls": [
+            {
+              "id": "9xco480v",
+              "externalId": "HRS-119"
+            },
+            {
+              "id": "rioqffcp",
+              "externalId": "RSK-192"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Compliance",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "name": "Regulatory Compliance",
+          "controls": [
+            {
+              "id": "w5d3z8lr",
+              "externalId": "CPL-339"
+            },
+            {
+              "id": "mlfqsrjl",
+              "externalId": "DCH-262"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Prototype Protection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "name": "Physical and Environmental Security",
+          "controls": [
+            {
+              "id": "68oq2t0w",
+              "externalId": "GOV-343"
+            },
+            {
+              "id": "vi53vb22",
+              "externalId": "PES-270"
+            },
+            {
+              "id": "5wv23u2t",
+              "externalId": "PES-271"
+            },
+            {
+              "id": "u4ig0m1k",
+              "externalId": "PES-272"
+            },
+            {
+              "id": "cjij9cag",
+              "externalId": "PES-273"
+            },
+            {
+              "id": "jpe4kzg9",
+              "externalId": "PES-274"
+            },
+            {
+              "id": "u97y13pg",
+              "externalId": "PES-275"
+            },
+            {
+              "id": "g7h9y41o",
+              "externalId": "PES-276"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "name": "Organizational Requirements",
+          "controls": [
+            {
+              "id": "5jkrbmzh",
+              "externalId": "DCH-263"
+            },
+            {
+              "id": "n6e826y0",
+              "externalId": "GOV-344"
+            },
+            {
+              "id": "q6nuc3l4",
+              "externalId": "HRS-120"
+            },
+            {
+              "id": "t404x3ah",
+              "externalId": "HRS-121"
+            },
+            {
+              "id": "b5hrbnwt",
+              "externalId": "MDM-36"
+            },
+            {
+              "id": "i0bneulj",
+              "externalId": "PES-277"
+            },
+            {
+              "id": "ar1fo9ee",
+              "externalId": "SAT-98"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "name": "Handling of vehicles, components, and parts",
+          "controls": [
+            {
+              "id": "tt9talg8",
+              "externalId": "PES-278"
+            },
+            {
+              "id": "wjx2qqa2",
+              "externalId": "PES-279"
+            }
+          ]
+        },
+        {
+          "id": "8.4",
+          "name": "Requirements for trial vehicles",
+          "controls": [
+            {
+              "id": "efkduoew",
+              "externalId": "PES-280"
+            },
+            {
+              "id": "a2vjtzcj",
+              "externalId": "PES-281"
+            },
+            {
+              "id": "o58ekw3x",
+              "externalId": "PES-282"
+            }
+          ]
+        },
+        {
+          "id": "8.5",
+          "name": "Requirements for events and shootings",
+          "controls": [
+            {
+              "id": "tfz5hx4h",
+              "externalId": "CPL-340"
+            },
+            {
+              "id": "2jlm17v4",
+              "externalId": "GOV-345"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Data Protection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "name": "Data Protection Policies",
+          "controls": [
+            {
+              "id": "oity27ij",
+              "externalId": "DCH-264"
+            }
+          ]
+        },
+        {
+          "id": "9.2",
+          "name": "Organization of Data Protection",
+          "controls": [
+            {
+              "id": "k6triykb",
+              "externalId": "GOV-346"
+            }
+          ]
+        },
+        {
+          "id": "9.3",
+          "name": "Processing Directory",
+          "controls": [
+            {
+              "id": "lbeceam6",
+              "externalId": "CPL-341"
+            }
+          ]
+        },
+        {
+          "id": "9.4",
+          "name": "Data Protection Impact Assesment",
+          "controls": [
+            {
+              "id": "y3db9lx1",
+              "externalId": "DCH-265"
+            }
+          ]
+        },
+        {
+          "id": "9.5",
+          "name": "Data Transfers",
+          "controls": [
+            {
+              "id": "ja5kom0w",
+              "externalId": "CPL-342"
+            },
+            {
+              "id": "33uo726g",
+              "externalId": "DCH-266"
+            },
+            {
+              "id": "un1p6h1x",
+              "externalId": "DCH-267"
+            }
+          ]
+        },
+        {
+          "id": "9.6",
+          "name": "Handling Requests and Incidents",
+          "controls": [
+            {
+              "id": "8lf8geik",
+              "externalId": "DCH-268"
+            },
+            {
+              "id": "oiansbvr",
+              "externalId": "DCH-269"
+            }
+          ]
+        },
+        {
+          "id": "9.7",
+          "name": "Human Resources",
+          "controls": [
+            {
+              "id": "h5yimodm",
+              "externalId": "HRS-122"
+            },
+            {
+              "id": "h9tlvrvs",
+              "externalId": "SAT-99"
+            }
+          ]
+        },
+        {
+          "id": "9.8",
+          "name": "Instructions",
+          "controls": [
+            {
+              "id": "0o0yrpvs",
+              "externalId": "DCH-270"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "principles": [
+    {
+      "id": "1",
+      "name": "Roles and responsibilities",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RR",
+          "name": "Roles and responsibilities",
+          "controls": [
+            {
+              "id": "a0bp8d7a",
+              "externalId": "GOV-303"
+            },
+            {
+              "id": "js196nbu",
+              "externalId": "GOV-304"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Information security capability",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ISC",
+          "name": "Information security capability",
+          "controls": [
+            {
+              "id": "6qyw5jn1",
+              "externalId": "GOV-305"
+            },
+            {
+              "id": "h380ewrw",
+              "externalId": "GOV-306"
+            },
+            {
+              "id": "gchwabla",
+              "externalId": "IAO-116"
+            },
+            {
+              "id": "zl4w3gsr",
+              "externalId": "OPS-58"
+            },
+            {
+              "id": "50ghddpk",
+              "externalId": "SEA-198"
+            },
+            {
+              "id": "mfnwzdb2",
+              "externalId": "THR-48"
+            },
+            {
+              "id": "a3d99uqv",
+              "externalId": "TPM-147"
+            },
+            {
+              "id": "62o2vlz6",
+              "externalId": "VPM-167"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Policy framework",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PF",
+          "name": "Policy framework",
+          "controls": [
+            {
+              "id": "ozb8p8p1",
+              "externalId": "GOV-307"
+            },
+            {
+              "id": "veakyydl",
+              "externalId": "GOV-308"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Information asset identification and classification",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IAC",
+          "name": "Information asset identification and classification",
+          "controls": [
+            {
+              "id": "nc3f95jn",
+              "externalId": "DCH-225"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Implementation of controls",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IC",
+          "name": "Implementation of controls",
+          "controls": [
+            {
+              "id": "6lksvefv",
+              "externalId": "IAO-117"
+            },
+            {
+              "id": "iqxbja92",
+              "externalId": "TPM-148"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Incident management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IM",
+          "name": "Incident management",
+          "controls": [
+            {
+              "id": "i4q28tx0",
+              "externalId": "IRO-244"
+            },
+            {
+              "id": "k7pqtk13",
+              "externalId": "IRO-245"
+            },
+            {
+              "id": "tenmjgxw",
+              "externalId": "IRO-246"
+            },
+            {
+              "id": "gfu7uekd",
+              "externalId": "IRO-247"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Testing control effectiveness",
+      "optional": false,
+      "sections": [
+        {
+          "id": "TCE",
+          "name": "Testing control effectiveness",
+          "controls": [
+            {
+              "id": "pi2bwapx",
+              "externalId": "GOV-309"
+            },
+            {
+              "id": "7o84psxp",
+              "externalId": "GOV-310"
+            },
+            {
+              "id": "y0y76ixb",
+              "externalId": "GOV-311"
+            },
+            {
+              "id": "na4y5rym",
+              "externalId": "OPS-59"
+            },
+            {
+              "id": "8db3lgm1",
+              "externalId": "THR-49"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Internal audit",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IA",
+          "name": "Internal audit",
+          "controls": [
+            {
+              "id": "cjam8oov",
+              "externalId": "GOV-312"
+            },
+            {
+              "id": "zoofqe8x",
+              "externalId": "HRS-98"
+            },
+            {
+              "id": "9xhskn9m",
+              "externalId": "IAO-118"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "APRA notification",
+      "optional": false,
+      "sections": [
+        {
+          "id": "AN",
+          "name": "APRA notification",
+          "controls": [
+            {
+              "id": "8fmpgqn8",
+              "externalId": "IRO-248"
+            },
+            {
+              "id": "oyokar4v",
+              "externalId": "VPM-168"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

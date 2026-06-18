@@ -1,0 +1,571 @@
+{
+  "principles": [
+    {
+      "id": "Application Design",
+      "name": "Application Design",
+      "optional": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "name": "Single Sign-On",
+          "description": "Implement single sign-on using modern and industry standard protocols",
+          "controls": [
+            {
+              "id": "5hzplvjv",
+              "externalId": "IAC-138"
+            }
+          ]
+        },
+        {
+          "id": "2.2.1",
+          "name": "HTTPS-only - Traffic Redirects",
+          "description": "Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443)\n\n```\nThis does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP\n```",
+          "controls": [
+            {
+              "id": "dl89pg48",
+              "externalId": "NET-61"
+            }
+          ]
+        },
+        {
+          "id": "2.2.2",
+          "name": "HTTPS-only - TLS Testing",
+          "description": "Produce a clear scan using a widely adopted TLS scanning tool such as [ssllabs](https://www.ssllabs.com/)",
+          "controls": [
+            {
+              "id": "mdu5pky5",
+              "externalId": "CRY-79"
+            }
+          ]
+        },
+        {
+          "id": "2.2.3",
+          "name": "HTTPS-only - Transport Security",
+          "description": "Include the Strict-Transport-Security header on all pages with the includeSubdomains directive",
+          "controls": [
+            {
+              "id": "8gn9owuv",
+              "externalId": "WEB-1"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "name": "Content Security Policy",
+          "description": "Set a minimally permissive Content Security Policy",
+          "controls": [
+            {
+              "id": "di545k82",
+              "externalId": "WEB-2"
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "name": "Password Policy",
+          "description": "If password authentication is used in addition to single sign-on:\n- Do not limit the permitted characters that can be used\n- Do not limit the length of the password to anything below 64 characters\n- Do not use secret questions (place of birth, etc) as a sole password reset requirement\n- Require email verification of a password change request\n- Require the current password in addition to the new password during password change\n- Verify newly created passwords against common passwords lists or leaked passwords databases\n- Check existing user passwords for compromise regularly\n- Store passwords in a hashed and salted format using a memory-hard or CPU-hard one-way hash function\n- Enforce appropriate account lockout and brute-force protection on account access",
+          "controls": [
+            {
+              "id": "ept6bos3",
+              "externalId": "IAC-139"
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "name": "Security Libraries",
+          "description": "Use frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs.\n\n```\nExample: ORM for database access, UI framework for rendering DOM\n```",
+          "controls": [
+            {
+              "id": "2yn9zllw",
+              "externalId": "SEA-41"
+            }
+          ]
+        },
+        {
+          "id": "2.6",
+          "name": "Dependency Patching",
+          "description": "Apply security patches with a severity score of \"medium\" or higher, or ensure equivalent mitigations are available for all components of the application stack within one month of the patch release",
+          "controls": [
+            {
+              "id": "bu1hsn1q",
+              "externalId": "VPM-53"
+            }
+          ]
+        },
+        {
+          "id": "2.7.1",
+          "name": "Logging - User Access",
+          "description": "Log user log-in and log-out",
+          "controls": [
+            {
+              "id": "ugek6mog",
+              "externalId": "IAC-140"
+            }
+          ]
+        },
+        {
+          "id": "2.7.2",
+          "name": "Logging - CRUD Operations",
+          "description": "Log CRUD (create, read, update, delete) operations on application and system users and objects",
+          "controls": [
+            {
+              "id": "hwugwcds",
+              "externalId": "IAC-141"
+            }
+          ]
+        },
+        {
+          "id": "2.7.3",
+          "name": "Logging - Security Settings",
+          "description": "Log security settings changes (including disabling or modifying of logging)",
+          "controls": [
+            {
+              "id": "kth63r9v",
+              "externalId": "MON-87"
+            }
+          ]
+        },
+        {
+          "id": "2.7.4",
+          "name": "Logging - Access to Data",
+          "description": "Log application owner or administrator access to customer data (i.e. Access Transparency)",
+          "controls": [
+            {
+              "id": "uaf0s8cv",
+              "externalId": "MON-88"
+            }
+          ]
+        },
+        {
+          "id": "2.7.5",
+          "name": "Logging - Log Content",
+          "description": "Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action.",
+          "controls": [
+            {
+              "id": "x0jteaj2",
+              "externalId": "MON-89"
+            }
+          ]
+        },
+        {
+          "id": "2.7.6",
+          "name": "Logging - Log Retention",
+          "description": "Logs must be stored for at least 30 days, and should not contain sensitive data or payloads",
+          "controls": [
+            {
+              "id": "3qd73ssn",
+              "externalId": "MON-90"
+            }
+          ]
+        },
+        {
+          "id": "2.8.1",
+          "name": "Backup and Disaster recovery - Operation",
+          "description": "Securely back up all data to a different location than where the application is running (physical, logical, or availability region based, etc)",
+          "controls": [
+            {
+              "id": "on56nuo3",
+              "externalId": "BCD-41"
+            }
+          ]
+        },
+        {
+          "id": "2.8.2",
+          "name": "Backup and Disaster recovery - Plan Testing",
+          "description": "Maintain and periodically test disaster recovery plans",
+          "controls": [
+            {
+              "id": "fdrqloba",
+              "externalId": "BCD-42"
+            }
+          ]
+        },
+        {
+          "id": "2.8.3",
+          "name": "Backup and Disaster recovery - Restoration Testing",
+          "description": "Periodically test backup restoration",
+          "controls": [
+            {
+              "id": "s2mbxdg1",
+              "externalId": "BCD-43"
+            }
+          ]
+        },
+        {
+          "id": "2.9",
+          "name": "Encryption",
+          "description": "Use available means of encryption to protect sensitive data in transit between systems and at rest in online data storages and backups",
+          "controls": [
+            {
+              "id": "p8e2asf9",
+              "externalId": "CRY-80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Application Implementation",
+      "name": "Application Implementation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "name": "List of Data",
+          "description": "Maintain a list of sensitive data types that the application is expected to process",
+          "controls": [
+            {
+              "id": "ojwm1ypa",
+              "externalId": "DCH-88"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "name": "Data Flow Diagram",
+          "description": "Maintain an up-to-date diagram indicating how sensitive data reaches your systems and where it ends up being stored",
+          "controls": [
+            {
+              "id": "bbgb3i86",
+              "externalId": "GOV-81"
+            }
+          ]
+        },
+        {
+          "id": "3.3.1",
+          "name": "Vulnerability Prevention - Auth Bypass",
+          "description": "Train your developers and implement development guidelines to prevent authorization bypass attacks. \n\nExample: Accessing other customers' data or admin features from a regular account",
+          "controls": [
+            {
+              "id": "ty3baa5y",
+              "externalId": "VPM-54"
+            }
+          ]
+        },
+        {
+          "id": "3.3.2",
+          "name": "Vulnerability Prevention - Insecure Session IDs",
+          "description": "Train your developers and implement development guidelines to prevent use of insecure session IDs. \n\nExamples: Guessable token; a token stored in an insecure location (e.g. cookie without secure and httpOnly flags set)",
+          "controls": [
+            {
+              "id": "kszbefhw",
+              "externalId": "VPM-55"
+            }
+          ]
+        },
+        {
+          "id": "3.3.3",
+          "name": "Vulnerability Prevention - Injection Attacks",
+          "description": "Train your developers and implement development guidelines to prevent Injection attacks. \n\nExamples: SQL injection, NoSQL injection, XXE, OS command injection",
+          "controls": [
+            {
+              "id": "dvnol02s",
+              "externalId": "VPM-56"
+            }
+          ]
+        },
+        {
+          "id": "3.3.4",
+          "name": "Vulnerability Prevention - XSS Attacks",
+          "description": "Train your developers and implement development guidelines to prevent Cross-site scripting attacks. \n\nExamples: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping",
+          "controls": [
+            {
+              "id": "cufwbqw9",
+              "externalId": "VPM-57"
+            }
+          ]
+        },
+        {
+          "id": "3.3.5",
+          "name": "Vulnerability Prevention - XSRF Attacks",
+          "description": "Train your developers and implement development guidelines to prevent Cross-site request forgery attacks.\n\nExample: Accepting requests with an Origin header from a different domain",
+          "controls": [
+            {
+              "id": "8xwbr1qt",
+              "externalId": "VPM-58"
+            }
+          ]
+        },
+        {
+          "id": "3.3.6",
+          "name": "Vulnerability Prevention - Vulnerable Libraries",
+          "description": "Train your developers and implement development guidelines to prevent the use of vulnerable libraries. \n\nExample: Using server-side frameworks or JavaScript libraries with known vulnerabilities",
+          "controls": [
+            {
+              "id": "gif0i1e9",
+              "externalId": "VPM-59"
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "name": "Time to Fix Vulnerabilities",
+          "description": "Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery.",
+          "controls": [
+            {
+              "id": "3p2psx4w",
+              "externalId": "VPM-60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Business",
+      "name": "Business",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1.1.1",
+          "name": "Vulnerability Reports - Point of Contact",
+          "description": "Publish the point of contact for security reports on your website",
+          "controls": [
+            {
+              "id": "vpimsgwq",
+              "externalId": "VPM-47"
+            }
+          ]
+        },
+        {
+          "id": "1.1.2",
+          "name": "Vulnerability Reports - Vulnerability Notice Response",
+          "description": "Respond to security reports within a reasonable time frame",
+          "controls": [
+            {
+              "id": "jvkvvdi8",
+              "externalId": "VPM-48"
+            }
+          ]
+        },
+        {
+          "id": "1.2.1",
+          "name": "Customer Testing - Application Testing",
+          "description": "On request, enable your customers or their delegates to test the security of your application",
+          "controls": [
+            {
+              "id": "uqx1y7na",
+              "externalId": "VPM-49"
+            }
+          ]
+        },
+        {
+          "id": "1.2.2",
+          "name": "Customer Testing - No Production Testing",
+          "description": "Test on a non-production environment if it closely resembles the production environment in functionality",
+          "controls": [
+            {
+              "id": "xhbf9pi9",
+              "externalId": "VPM-50"
+            }
+          ]
+        },
+        {
+          "id": "1.2.3",
+          "name": "Customer Testing - Production Data Separated",
+          "description": "Ensure non-production environments do not contain production data",
+          "controls": [
+            {
+              "id": "6p3d5f8o",
+              "externalId": "VPM-51"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "name": "Self-assessment",
+          "description": "Perform annual (at a minimum) security self-assessments using this document",
+          "controls": [
+            {
+              "id": "secutuz7",
+              "externalId": "IAO-6"
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "name": "External testing",
+          "description": "Contract a security vendor to perform annual, comprehensive penetration tests on your systems",
+          "controls": [
+            {
+              "id": "d5u5lh02",
+              "externalId": "VPM-52"
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "name": "Training",
+          "description": "Implement role-specific security training for your personnel that is relevant to their business function",
+          "controls": [
+            {
+              "id": "iqwwt8ir",
+              "externalId": "IAC-137"
+            }
+          ]
+        },
+        {
+          "id": "1.6.1",
+          "name": "Compliance - Industry Standards",
+          "description": "Comply with all industry security standards relevant to your business such as PCI DSS, HITRUST, ISO27001, and SSAE 18",
+          "controls": [
+            {
+              "id": "4ugg1p6b",
+              "externalId": "CPL-37"
+            }
+          ]
+        },
+        {
+          "id": "1.6.2",
+          "name": "Compliance - Regulatory and Legal",
+          "description": "Comply with local laws and regulations in jurisdictions applicable to your company and your customers, such as GDPR, Binding Corporate Rules, and Standard Contractual Clauses",
+          "controls": [
+            {
+              "id": "lry1nfix",
+              "externalId": "CPL-38"
+            }
+          ]
+        },
+        {
+          "id": "1.7.1",
+          "name": "Incident Handling - Notification Timeline",
+          "description": "Notify your customers about a breach without undue delay, no later than 72 hours upon discovery",
+          "controls": [
+            {
+              "id": "9sz4vvz2",
+              "externalId": "IRO-70"
+            }
+          ]
+        },
+        {
+          "id": "1.7.2",
+          "name": "Incident Handling - Notification Details",
+          "description": "Include the following information in customer notification of any breach:\n- Relevant point of contact\n- Preliminary technical analysis of the breach\n- Remediation plan with reasonable timelines",
+          "controls": [
+            {
+              "id": "bddzn4f3",
+              "externalId": "IRO-71"
+            }
+          ]
+        },
+        {
+          "id": "1.8",
+          "name": "Data sanitization",
+          "description": "Ensure media sanitization processes based on NIST SP 800-88 or equivalent are implemented",
+          "controls": [
+            {
+              "id": "nwp4zjuo",
+              "externalId": "DCH-87"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Operations",
+      "name": "Operations",
+      "optional": false,
+      "sections": [
+        {
+          "id": "4.1.1",
+          "name": "Physical Access - Perimeter and Interior",
+          "description": "Implement and validate layered physical perimeter controls and interior barriers",
+          "controls": [
+            {
+              "id": "tpsexa79",
+              "externalId": "PES-48"
+            }
+          ]
+        },
+        {
+          "id": "4.1.2",
+          "name": "Physical Access - Keys and Key Cards",
+          "description": "Implement and validate managed access to physical keys or keycards",
+          "controls": [
+            {
+              "id": "mu4qlpyy",
+              "externalId": "PES-49"
+            }
+          ]
+        },
+        {
+          "id": "4.1.3",
+          "name": "Physical Access - Logging and Records",
+          "description": "Implement and validate managed access to physical entry and exit logs and records",
+          "controls": [
+            {
+              "id": "zlecrw3s",
+              "externalId": "PES-50"
+            }
+          ]
+        },
+        {
+          "id": "4.1.4",
+          "name": "Physical Access - Response Plan",
+          "description": "Implement and validate the presence of an appropriate response plan for physical intruder or break-in alerts",
+          "controls": [
+            {
+              "id": "3ktgf981",
+              "externalId": "PES-51"
+            }
+          ]
+        },
+        {
+          "id": "4.2.1",
+          "name": "Logical Access - Least Priviledge",
+          "description": "Limit sensitive data access exclusively to users with a legitimate need. The data owner must authorize such access",
+          "controls": [
+            {
+              "id": "6wlg9hpa",
+              "externalId": "IAC-142"
+            }
+          ]
+        },
+        {
+          "id": "4.2.2",
+          "name": "Logical Access - Account De-Activation",
+          "description": "Deactivate redundant accounts and expired access grants in a timely manner",
+          "controls": [
+            {
+              "id": "xvqbf6ld",
+              "externalId": "IAC-143"
+            }
+          ]
+        },
+        {
+          "id": "4.2.3",
+          "name": "Logical Access - Access Reviews",
+          "description": "Perform regular reviews of access to data to validate need to know",
+          "controls": [
+            {
+              "id": "m2s7ffgm",
+              "externalId": "IAC-144"
+            }
+          ]
+        },
+        {
+          "id": "4.3.1",
+          "name": "Subprocessors - Published List",
+          "description": "Publish a list of third-party companies with access to customer data on your website",
+          "controls": [
+            {
+              "id": "elyfkm4m",
+              "externalId": "TPM-46"
+            }
+          ]
+        },
+        {
+          "id": "4.3.2",
+          "name": "Subprocessors - Right to Audit/Assess",
+          "description": "Assess third-party companies annually against this baseline",
+          "controls": [
+            {
+              "id": "eyrwoa8i",
+              "externalId": "TPM-47"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

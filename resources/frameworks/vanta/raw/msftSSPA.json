@@ -1,0 +1,818 @@
+{
+  "principles": [
+    {
+      "id": "Section A",
+      "name": "Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Management (Control 1)",
+          "name": "Contracts, Agreements, and Processing Descriptions in Place",
+          "description": "Each applicable agreement between Microsoft and the supplier (e.g., master agreement, statement of work, purchase orders and other orders) contains privacy and security data protection language with respect to Microsoft Confidential and Personal Data, as applicable, including prohibitions on the sale of Microsoft Personal Data and Processing of Microsoft Personal Data outside the direct business relationship between Microsoft and supplier. \n\nFor companies operating as Processors or Subprocessors in connection with the Performance, with respect to Microsoft Personal Data, the agreement must include the subject-matter and duration of the Processing, the nature and purpose of the Processing, the type of Microsoft Personal Data and categories of Data Subjects and the obligations and rights of Microsoft.",
+          "controls": [
+            {
+              "id": "mdn9jt6a",
+              "externalId": "GOV-72"
+            }
+          ]
+        },
+        {
+          "id": "Management (Control 2)",
+          "name": "Designation Confirmation for Subprocessor Role",
+          "description": "Where Microsoft confirms that your engagements fulfill a Subprocessor role, Supplier must have applicable data protection agreements in place with Microsoft.  \n\nIf Microsoft confirms that your engagements involve the processing of PHI, Supplier must have a Business Associate Agreement and/or other agreement in place with Microsoft. \n\nNote: Microsoft will post these designations to your profile when they apply.",
+          "controls": [
+            {
+              "id": "z8g867kd",
+              "externalId": "GOV-73"
+            }
+          ]
+        },
+        {
+          "id": "Management (Control 3)",
+          "name": "Privacy and Security Training",
+          "description": "Establish, maintain, and perform annual privacy and security training for employees that will have access to Personal Data Processed by supplier in connection with Performance or Microsoft Confidential Data.  \n\nIf your company does not have prepared content, you can use this storyboard outline and adapt it for your company. \n\nNote: Supplier personnel may be required to complete additional trainings provided by Microsoft divisions.",
+          "controls": [
+            {
+              "id": "nn9l2fjh",
+              "externalId": "DCH-84"
+            }
+          ]
+        },
+        {
+          "id": "Management (Control 4)",
+          "name": "Sanctions for Non-Compliance",
+          "description": "Apply appropriate sanctions against employees who fail to comply with supplier’s privacy and security policies or applicable Microsoft policies if working within the Microsoft corporate environment.",
+          "controls": [
+            {
+              "id": "yygsvac7",
+              "externalId": "CPL-35"
+            }
+          ]
+        },
+        {
+          "id": "Management (Control 5)",
+          "name": "Processing in Accordance with Instructions",
+          "description": "Process Microsoft Personal Data only in accordance with Microsoft’s documented instructions including scenarios with regard to transfers of Microsoft Personal Data to a third country or an international organization, unless required to do so by Law; in such a case, the Processor or Subprocessor (supplier) shall inform the Controller (Microsoft) of that legal requirement before Processing, unless that Law prohibits such information on important grounds of public interest.",
+          "controls": [
+            {
+              "id": "48in2f3u",
+              "externalId": "PRI-217"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section B",
+      "name": "Notice",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Notice (Control 6)",
+          "name": "Use of Microsoft Privacy Statement",
+          "description": "The supplier must use the Microsoft Privacy Statement when collecting Personal Data on Microsoft’s behalf. \n\nThe privacy notice must be obvious and available to Data Subjects to help them decide whether to submit their Personal Data to the supplier. \n\nNote: Where your company is the Controller of the Processing activity, you would post your own privacy notice.",
+          "controls": [
+            {
+              "id": "e8hbvsod",
+              "externalId": "PRI-218"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section C",
+      "name": "Choice and Consent",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Choice and Consent  (Control 7)",
+          "name": "Consent for Processing Activities",
+          "description": "Prior to collecting Personal Data the supplier must obtain and record a Data Subject’s consent for all of its Processing activities (including any new and updated Processing activities).\n\nSupplier monitors effectiveness of preference management to ensure the timeframe to honor a preference change is the most restrictive local legal requirement that applies.",
+          "controls": [
+            {
+              "id": "v6pz3kmc",
+              "externalId": "SEA-38"
+            }
+          ]
+        },
+        {
+          "id": "Choice and Consent (Control 8)",
+          "name": "Monitoring Effectiveness of Preference Management",
+          "description": "Websites that use cookies (and/or similar technologies that store or retrieve data from a device or otherwise similarly enable user tracking) must obtain legally-required consents from data subjects before cookies are used or placed in connection with data subjects’ browsers or devices.\n\nSuppliers that create and manage Microsoft websites and/or applications or sites that carry Microsoft branding must provide Data Subjects with transparent notice and choice regarding the use of cookies in alignment with commitments in the Microsoft Privacy Statement and local legal requirements. This requirement applies when sites target users within the European Union/European Economic Area and other regions with applicable privacy laws and wherever the Microsoft Privacy Statement is used.",
+          "controls": [
+            {
+              "id": "dfzaaytj",
+              "externalId": "GOV-74"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section D",
+      "name": "Collection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Collection (Control 9)",
+          "name": "Monitoring Collection of Data",
+          "description": "The supplier must monitor the collection of Microsoft Personal and/or Confidential Data to ensure that the only data collected is that required to Perform.",
+          "controls": [
+            {
+              "id": "39s63rpw",
+              "externalId": "GOV-75"
+            }
+          ]
+        },
+        {
+          "id": "Collection (Control 10)",
+          "name": "Collecting data from children",
+          "description": "Before collecting data from children (as defined by applicable jurisdiction), Supplier must obtain the consent per local privacy laws.",
+          "controls": [
+            {
+              "id": "fefxd66t",
+              "externalId": "GOV-76"
+            }
+          ]
+        },
+        {
+          "id": "Collection (Control 11)",
+          "name": "Consent for Data Collection from Children",
+          "description": "Where supplier receives a data set from Microsoft with reduced identifiability, including pseudonymous, Not in a Position to Identify (NPI), unlinked pseudonymous, aggregate, anonymous, or any term that relates to one of those classifications (such as de-identified), supplier will maintain the data in the state in which it was received.",
+          "controls": [
+            {
+              "id": "o78xl9i9",
+              "externalId": "SEA-39"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section E",
+      "name": "Retention",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Retention (Control 12)",
+          "name": "Maintenance of Data Set Anonymity",
+          "description": "Ensure that Microsoft Personal and Confidential Data is retained for no longer than necessary to Perform unless continued retention of the Microsoft Personal and/or Confidential Data is required by Law.",
+          "controls": [
+            {
+              "id": "ru9mkok4",
+              "externalId": "DCH-85"
+            }
+          ]
+        },
+        {
+          "id": "Retention (Control 13)",
+          "name": "Retention and Destruction of Data",
+          "description": "Ensure that, at Microsoft’s sole discretion, Microsoft Personal and Confidential Data in the supplier’s possession or under its control is returned to Microsoft or destroyed upon completion of Performance or upon Microsoft’s request. \n \nWithin applications, processes must be in place to ensure that when data is removed from the application either explicitly by users or based on other triggers like the age of the data, that it is securely deleted. \n \nWhen the destruction of Microsoft Personal or \nConfidential Data is necessary, the supplier must burn, pulverize, or shred physical assets containing Microsoft Personal and/or Confidential Data so that the information cannot be read or reconstructed.",
+          "controls": [
+            {
+              "id": "oajqbno5",
+              "externalId": "GOV-77"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section F",
+      "name": "Data Subjects",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Data Subjects (Control 14)",
+          "name": "Data Subject Rights Enablement",
+          "description": "Data Subjects have certain rights under Law, including the right to access, delete, edit, export, restrict, and object to Processing of their Personal Data (“Data Subject Rights”). When a Data Subject seeks to exercise their rights under Law in respect of their Microsoft Personal Data, the supplier must enable Microsoft to do the following or perform these actions on Microsoft’s behalf:  Assist Microsoft, through appropriate technical and organizational measures, where possible, to fulfill its obligations to respond to requests for Data Subjects seeking to exercise their Data Subject Rights without undue delay. \n \nUnless otherwise directed by Microsoft, Supplier will refer all Data Subjects who contact Supplier directly to Microsoft to exercise their Data Subject Rights.",
+          "controls": [
+            {
+              "id": "0luhf9zy",
+              "externalId": "PRI-220"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 15)",
+          "name": "Subcontractor Notification and Documentation",
+          "description": "When responding directly to the Data Subject or when the Supplier provides a self-service online mechanism, the Supplier has processes and procedures in place to identify the Data Subject making the request.",
+          "controls": [
+            {
+              "id": "gnur2mm5",
+              "externalId": "GOV-78"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 16)",
+          "name": "Subcontractor Use of Microsoft Personal Data",
+          "description": "If asked by Microsoft to locate Microsoft Personal Data about a Data Subject that is not available through a self-service online mechanism, the Supplier will make a reasonable effort to locate the data requested and keep sufficient records to demonstrate that a reasonable search was made.",
+          "controls": [
+            {
+              "id": "o4qc3c34",
+              "externalId": "PRI-221"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 17)",
+          "name": "Rights and Access",
+          "description": "Supplier will communicate to the Data Subject the steps that person must take to gain access to or otherwise exercise their rights in regard to their Microsoft Personal Data.",
+          "controls": [
+            {
+              "id": "ifwr5mke",
+              "externalId": "PRI-222"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 18)",
+          "name": "Data Subject Right records",
+          "description": "Record the date and time of Data Subject Rights requests and the actions taken by supplier in response to such requests. \n\nIf their request is denied, at Microsoft’s direction, provide the Data Subject with a written explanation. \nProvide records of Data Subject requests to Microsoft upon request.",
+          "controls": [
+            {
+              "id": "8dbsd2mx",
+              "externalId": "PRI-223"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 19)",
+          "name": "Data Subject Record Copy",
+          "description": "The supplier must enable Microsoft or obtain a copy of the requested Microsoft Personal Data for the authenticated Data Subject in an appropriate printed, electronic or verbal format.",
+          "controls": [
+            {
+              "id": "lsh7m40i",
+              "externalId": "IAC-134"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 20)",
+          "name": "Data Subject Identification",
+          "description": "The supplier must take reasonable precautions to ensure that Microsoft Personal Data released to Microsoft or an authenticated Data Subject cannot be used to identify another person.",
+          "controls": [
+            {
+              "id": "ximnnopx",
+              "externalId": "TPM-42"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 21)",
+          "name": "Escalation",
+          "description": "If a Data Subject believes their Microsoft Personal Data is not complete and accurate, the supplier must escalate the issue to Microsoft and cooperate with Microsoft as necessary to resolve the issue.",
+          "controls": [
+            {
+              "id": "of79hwhz",
+              "externalId": "GOV-79"
+            }
+          ]
+        },
+        {
+          "id": "Data Subjects (Control 22)",
+          "name": "Data Records",
+          "description": "With regard to data subject requests for access, the supplier must maintain a record of all recipients with whom they have shared or will share Microsoft Personal Data.",
+          "controls": [
+            {
+              "id": "qvtylzo9",
+              "externalId": "TPM-167"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section G",
+      "name": "Subcontractors",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Subcontractors  (Control 23)",
+          "name": "Subcontractor's processing",
+          "description": "If the supplier intends to use a subcontractor to Process Microsoft Personal or Confidential Data, the supplier must: \nNotify Microsoft prior to subcontracting services or making any changes concerning the addition or replacement of subcontractors.",
+          "controls": [
+            {
+              "id": "fticp1so",
+              "externalId": "TPM-43"
+            }
+          ]
+        },
+        {
+          "id": "Subcontractors (Control 24)",
+          "name": "Signed Agreements",
+          "description": "Require the subcontractor to agree in writing to terms no less protective of Microsoft than the terms in supplier’s agreement with Microsoft, including the privacy and data protection terms.",
+          "controls": [
+            {
+              "id": "ra60knb9",
+              "externalId": "TPM-45"
+            }
+          ]
+        },
+        {
+          "id": "Subcontractors (Control 25)",
+          "name": "Subcontracting processing nature and extent",
+          "description": "Document the nature and extent of Microsoft Personal and Confidential Data sub-Processed by subcontractors, ensuring that the information collected is required to Perform.",
+          "controls": [
+            {
+              "id": "m4mmsvfu",
+              "externalId": "TPM-44"
+            }
+          ]
+        },
+        {
+          "id": "Subcontractors (Control 26)",
+          "name": "Subcontracting limitation",
+          "description": "Limit the subcontractor’s Processing of Microsoft Personal or Confidential Data to those purposes necessary to fulfill the supplier’s contract with Microsoft. \nIf the Microsoft Personal Data is PHI, also enter into a Business Associate Agreement with the subcontractor that limits the subcontractor’s Processing of the Microsoft Personal Data and protects the confidentiality and security of the Microsoft Personal Data in the same manner as the Business Associate Agreement between Microsoft and Supplier.",
+          "controls": [
+            {
+              "id": "tumjzbiq",
+              "externalId": "GOV-80"
+            }
+          ]
+        },
+        {
+          "id": "Subcontractors (Control 27)",
+          "name": "Notification of Subcontractor Misuse",
+          "description": "Notify Microsoft promptly upon learning that a subcontractor has Processed Microsoft Personal or Confidential Data for any purpose other than those related to Performance.",
+          "controls": [
+            {
+              "id": "g7rd3arg",
+              "externalId": "IRO-64"
+            }
+          ]
+        },
+        {
+          "id": "Subcontractors (Control 28)",
+          "name": "Third-Party Data Validation",
+          "description": "If the supplier collects Personal Data from third parties on behalf of Microsoft, the supplier must validate that the third-party data protection policies and practices are consistent with the supplier’s contract with Microsoft and the DPR.",
+          "controls": [
+            {
+              "id": "wd9midxn",
+              "externalId": "SEA-40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section H",
+      "name": "Quality",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Quality (Control 29)",
+          "name": "Integrity Maintenance",
+          "description": "The supplier must maintain the integrity of all Microsoft Personal Data, ensuring it remains accurate, complete and relevant for the stated purposes for which it was Processed.",
+          "controls": [
+            {
+              "id": "j4hj31cw",
+              "externalId": "IRO-66"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section I",
+      "name": "Monitoring and Enforcement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Monitoring and Enforcement (Control 30)",
+          "name": "Incident Response Plan",
+          "description": "Supplier has an incident response plan that requires supplier to notify Microsoft per contractual requirements, as described by applicable privacy law, or without undue delay, whichever is sooner, upon becoming aware of a Data Incident. \nSupplier must at Microsoft’s request or direction, cooperate with Microsoft in any investigation, mitigation, or remediation of the Incident, including providing Microsoft with an incident summary, information detailing the compromise, a scope of data accessed, and mitigations used. Access to supplier personnel or hardware needed to conduct a forensic review may also be necessary. \nSuppliers will complete the security contact fields in SupplierWeb with appropriate personnel to enable rapid engagement in the event of a security incident. \nNote: Please see the SSPA Program Guide for how to notify Microsoft of an incident.",
+          "controls": [
+            {
+              "id": "hvkp1xto",
+              "externalId": "IRO-67"
+            }
+          ]
+        },
+        {
+          "id": "Monitoring and Enforcement (Control 31)",
+          "name": "Data Incident Resolution",
+          "description": "Implement a remediation plan and monitor the resolution of each Data Incident to ensure that appropriate corrective action is taken on a timely basis.",
+          "controls": [
+            {
+              "id": "f07apc6p",
+              "externalId": "IRO-68"
+            }
+          ]
+        },
+        {
+          "id": "Monitoring and Enforcement (Control 32)",
+          "name": "Formal complaint process",
+          "description": "Where Microsoft is a Controller of Microsoft Personal Data, establish a formal complaint process for responding to all data protection complaints involving Microsoft Personal Data.  The supplier must establish, implement, and maintain an information security program that includes policies and procedures, to protect and keep secure Microsoft Personal and Confidential Data in accordance with good industry practice and as required by Law. The supplier’s security program must meet the standards captured below, requirements 36 -52. \n \nIf the Microsoft Personal Data is PHI, the supplier must also perform a periodic technical and non-technical evaluation in response to environmental and operational changes affecting the security of PHI that establishes the extent to which the supplier’s policies and procedures meet the requirements of the HIPAA Security Rule.",
+          "controls": [
+            {
+              "id": "ibyjvrtn",
+              "externalId": "NET-60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section J",
+      "name": "Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Security (Control 33)",
+          "name": "Network Security Assessments",
+          "description": "Perform annual network security assessments that include: \n- assessing the potential risks and vulnerabilities to the confidentiality, integrity and availability of  Microsoft Personal Data and the implementation of measures to reduce risks, \n- reviewing of major changes to the environment such as a new system component, network topology, firewall rules, \n- maintaining change logs.",
+          "controls": [
+            {
+              "id": "kp948q94",
+              "externalId": "MDM-8"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 34)",
+          "name": "Mobile Device Policy",
+          "description": "Supplier to define, communicate and implement a mobile device policy that secures, and limits use of Microsoft Personal or Confidential Data accessed or used on a mobile device.",
+          "controls": [
+            {
+              "id": "kamc2wt4",
+              "externalId": "AST-60"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 35)",
+          "name": "Asset Management and Accountability",
+          "description": "All physical and virtual assets used to support Performance, security, and operations must be accounted for and have an identified owner. The supplier is accountable for maintaining an inventory of these information assets; establishing acceptable and authorized use of the assets; and providing the appropriate level of protection for the assets throughout their life cycle.",
+          "controls": [
+            {
+              "id": "bu0j738c",
+              "externalId": "IAC-135"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 36)",
+          "name": "Access Rights Management",
+          "description": "Establish and maintain access rights management procedures to prevent unauthorized access to any Microsoft Personal or Confidential Data under supplier control.",
+          "controls": [
+            {
+              "id": "ck5ixoe4",
+              "externalId": "VPM-46"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 37)",
+          "name": "Patch Management Procedures",
+          "description": "Define and implement patch management procedures that prioritize security patches for systems used to Process Microsoft Personal or Confidential Data. These procedures include: \n- conduct vulnerability scans on a monthly basis with high level compliance report showing monthly scans for the prior 12 months  \n- defined risk approach to prioritize security patches \n- ability to handle and implement emergency patches, \n- applicability to Operating System and server software such as application server and database software, \n- document the risk the patch mitigates and track any exceptions, and \n- requirements for retirement of software that is no longer supported by the authoring company.",
+          "controls": [
+            {
+              "id": "j3rqh426",
+              "externalId": "THR-9"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 38)",
+          "name": "Anti-virus and Anti-malware Measures",
+          "description": "Install anti-virus and anti-malware software on equipment connected to the network used to Process Microsoft Personal and Confidential Data, including servers, production and training desktops to protect against potentially harmful viruses and malicious software applications. The anti-virus and anti-malware software should be regularly patched and up-to-date. \n \nUpdate the anti-malware definitions daily or as directed by the anti-virus/anti-malware supplier. Note: This applies to all operating systems including Linux.",
+          "controls": [
+            {
+              "id": "neek2mja",
+              "externalId": "TDA-19"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 39)",
+          "name": "Security-by-design Principles for Software Development",
+          "description": "Suppliers developing software for Microsoft must incorporate security-by-design principles in the build process.",
+          "controls": [
+            {
+              "id": "nk1a28w0",
+              "externalId": "MON-86"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 40)",
+          "name": "Data Loss Prevention (DLP) Program",
+          "description": "Employ a Data Loss Prevention (“DLP”) program to prevent intrusions, loss, and other unauthorized activity at the application, system, and infrastructure levels. Data must be properly classified, labeled and protected and supplier must monitor information systems in use where Microsoft Personal or \nConfidential Data is Processed for intrusions, loss, and other unauthorized activity. The DLP program, at a minimum: \n- requires use of industry standard host, network, and cloud-based Intrusion Detection Systems \n(“IDS”) if you retain Microsoft Personal or Confidential Data, \n- requires implementation of advanced Intrusion Protection Systems (“IPS”) configured to monitor and actively stop data loss, \n- in the event a system is breached, requires analysis of the system to ensure any residual vulnerabilities are also addressed, \n- describe required procedures for monitoring system compromise detection tools, \n- establishes an incident response and management process required to be performed when a Data Incident is detected, and \n- requires communications (to all supplier employees and subcontractors being offboarded from supplier’s Performance) regarding unauthorized downloading and use of Microsoft Personal or Confidential Data.",
+          "controls": [
+            {
+              "id": "nuftdwoh",
+              "externalId": "IRO-69"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 41)",
+          "name": "Protecting Secrets",
+          "description": "Supplier must ensure that secrets are not embedded or hardcoded in the software at any stage of the development process.",
+          "controls": [
+            {
+              "id": "nhnuf0fu",
+              "externalId": "BCD-39"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 42)",
+          "name": "Backup planning processes",
+          "description": "The supplier must ensure that backup planning processes protect Microsoft Personal and Confidential Data from unauthorized use, access, disclosure, alteration and destruction.",
+          "controls": [
+            {
+              "id": "bqbcwl39",
+              "externalId": "BCD-40"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 43)",
+          "name": "Backup Planning and Business Continuity",
+          "description": "Establish and test business continuity and disaster recovery plans.",
+          "controls": [
+            {
+              "id": "wbxy52b9",
+              "externalId": "IAC-136"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 44)",
+          "name": "Identity Authentication and Limited Access",
+          "description": "Authenticate the identity of an individual before granting that individual access to Microsoft Personal or Confidential Data and ensure that the access is limited to the particular individual’s scope of activity permitted to support Performance.",
+          "controls": [
+            {
+              "id": "w80n34qf",
+              "externalId": "CRY-76"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 45)",
+          "name": "New Hire Identification Verification",
+          "description": "Suppliers will verify throughout the hiring and placing process, via voice and visual appearance, the employee they interviewed, hired, and placed in Microsoft is the same person. Address information for the employee must match their banking information and the location for any equipment shipments.",
+          "controls": [
+            {
+              "id": "h4j6ba1o",
+              "externalId": "GOV-3116"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 46)",
+          "name": "Data Encryption in Transit",
+          "description": "The supplier must protect all data Processed in connection with its Performance in transit across networks with encryption using Transport Layer Security (“TLS”) or Internet Protocol Security (“IPsec”). \n \nThese methods are described in the NIST 800-52 and NIST 800-57; an equivalent industry standard can also be used. \n \nSupplier must refuse delivery of any Microsoft Personal or Confidential Data transmitted via unencrypted means.",
+          "controls": [
+            {
+              "id": "yk4j1s9e",
+              "externalId": "CRY-77"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 47)",
+          "name": "Disk-based Encryption for Devices",
+          "description": "All supplier devices (laptops, workstations, etc.) that will access, or handle Microsoft Personal or Confidential Data must employ disk-based encryption.",
+          "controls": [
+            {
+              "id": "smkl8dsk",
+              "externalId": "CRY-78"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 48)",
+          "name": "Data Encryption at Rest",
+          "description": "Systems and procedures (using current industry standards such as that described in the NIST 800-111 standard) must be in place to encrypt at rest (when stored) any and all Microsoft Personal and/or Confidential Data, examples include, but are not limited to: \n- credential data (e.g., username/passwords) \n- payment instrument data (e.g., credit card and bank account numbers) \n- immigration related personal data \n- medical profile data (e.g., medical record numbers or biometric markers or identifiers, such as DNA, fingerprints, eye retinas and irises, voice patterns, facial patterns and hand measurements, used for authentication purposes) \n- government issued identifier data (e.g., social security or driver’s license numbers) \n- data belonging to Microsoft customers (e.g., SharePoint, O365 documents, OneDrive customers) \n- material related to unannounced Microsoft products \n- Date of Birth \n- Children’s profile information \n- real time geographic data \n- physical personal (non-business) address \n- personal (non-business) phone numbers \n- religion \n- political opinions \n- sexual orientation/preference \n- security question answers (e.g., 2fa, password reset) \n- mother's maiden name",
+          "controls": [
+            {
+              "id": "v0kh6387",
+              "externalId": "CPL-36"
+            }
+          ]
+        },
+        {
+          "id": "Security (Control 49)",
+          "name": "Anonymization in Development or Test Environment",
+          "description": "Anonymize all Microsoft Personal Data used in a development or test environment.",
+          "controls": [
+            {
+              "id": "6eeuzf99",
+              "externalId": "PES-47"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Section K",
+      "name": "AI Systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "AI Systems (Control 50)",
+          "name": "AI Systems Terms",
+          "description": "Where AI Systems are included in connection with providing a service, Supplier must have the applicable AI Systems terms in place with Microsoft. Any change to the Intended Uses must be disclosed without undue delay and reviewed at least annually for accuracy and compliance.",
+          "controls": [
+            {
+              "id": "ql4lmkg7",
+              "externalId": "AAT-8"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 51)",
+          "name": "Designated Responsibility of AI Systems",
+          "description": "Assign responsibility and accountability for troubleshooting, managing, operating, overseeing, and controlling the AI System during and after deployment to a designated person or group within the company.",
+          "controls": [
+            {
+              "id": "9m7ywyzt",
+              "externalId": "GOV-3115"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 52)",
+          "name": "AI Security Awareness Training",
+          "description": "Establish, maintain, and perform annual privacy and security training for anyone that will have access to or Process data within AI Systems by supplier in connection with Performance.",
+          "controls": [
+            {
+              "id": "trjgd2nl",
+              "externalId": "AAT-10"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 53)",
+          "name": "AI Incident Response Procedures Defined",
+          "description": "Supplier has an AI System incident response plan that requires supplier to notify Microsoft per contractual requirements, as described by applicable privacy law, or without undue delay, whichever is sooner, upon becoming aware of a Data Incident or a discovered failure that would adversely impact any of the Intended Uses and Sensitive Uses listed for an AI System. Note: please see the SSPA Program Guide for how to notify Microsoft of an incident.",
+          "controls": [
+            {
+              "id": "duk9bbg5",
+              "externalId": "AAT-11"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 54)",
+          "name": "AI System Vulnerabilities Are Addressed",
+          "description": "Supplier must have Red Teaming of AI Systems. Vulnerabilities must be addressed prior to AI System deployment.",
+          "controls": [
+            {
+              "id": "omug9ud4",
+              "externalId": "AAT-12"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 55)",
+          "name": "Responsible AI Program Defined",
+          "description": "Supplier has a Responsible AI program to ensure data compliance through disclosures and documentation, including the below:",
+          "controls": [
+            {
+              "id": "hpa8k5q5",
+              "externalId": "AAT-13"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 56)",
+          "name": "AI Intended Use Defined",
+          "description": "Supplier has Intended Uses Transparency disclosures.",
+          "controls": [
+            {
+              "id": "j4bh4k4l",
+              "externalId": "AAT-14"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 57)",
+          "name": "AI Systems Contracts Are Documented And Tracked",
+          "description": "Signed Agreement: When engaging with AI Suppliers, organizations should establish clear contractual terms in a signed agreement. These agreements should explicitly address data handling, confidentiality, intellectual property rights, liability, incident response, and any  pplicable Sensitive Uses.",
+          "controls": [
+            {
+              "id": "doukhhoa",
+              "externalId": "AAT-15"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 58)",
+          "name": "AI Risk Management Practices Defined",
+          "description": "Accountability: Define clear lines of accountability and responsibilities for AI deployment and risk management within the organization. Organizations must identify responsible parties for the outcomes of AI Systems. This includes addressing ethical concerns, biases, and any issues that may arise over time. Regular monitoring and auditing of AI models are essential to maintain compliance with ethical guidelines.",
+          "controls": [
+            {
+              "id": "z05tkcqp",
+              "externalId": "AAT-16"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 59)",
+          "name": "AI Risk Assessments Are Conducted",
+          "description": "Risk Assessment: Conduct privacy, security, and/or Responsible AI risk assessment to consider potential biases, security vulnerabilities, and unintended consequences; if any Sensitive Uses are included, guidance for required controls or mitigations must be included.",
+          "controls": [
+            {
+              "id": "al10siv2",
+              "externalId": "AAT-17"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 60)",
+          "name": "AI Systems Usage Transparency",
+          "description": "Transparency and Explainability: AI Systems must be transparent and explainable; the supplier must provide insights into how decisions are made, with disclosures encouraging transparency in model architecture, training data, and decision-making processes",
+          "controls": [
+            {
+              "id": "ttwwftwb",
+              "externalId": "AAT-18"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 61)",
+          "name": "AI Systems Are Continuously Monitored",
+          "description": "Monitoring and Adaptation: The supplier must demonstrate continuous monitoring of AI Systems and adapt and update them as new risks emerge.",
+          "controls": [
+            {
+              "id": "r51254lw",
+              "externalId": "AAT-19"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 62)",
+          "name": "AI Disclosures Are Shared",
+          "description": "Supplier must provide required disclosures, reporting, or similar documentation, including all required error types, performance metrics definitions, data performance, safety, and reliability indicators for each Intended Use.",
+          "controls": [
+            {
+              "id": "qnb6vf9q",
+              "externalId": "AAT-20"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 63)",
+          "name": "AI Disclosures Are Updated",
+          "description": "Supplier will update the transparency disclosures, including Sensitive Use and Intended Uses, and notify Microsoft if:\n\n- New uses are added,\n- Functionality changes,\n- The product moves to a new release stage,\n- New information about reliable and safe performance that impacts Intended Use is discovered or applied,\n- New information about system accuracy and performance becomes available.",
+          "controls": [
+            {
+              "id": "tgphcr9g",
+              "externalId": "AAT-21"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 64)",
+          "name": "AI Standard Operating Procedure Is Defined",
+          "description": "As part of the transparency disclosures, Supplier must document a standard operating procedure and system health monitoring action plan for each AI system or data model that includes:\n- Processes for reproducing system failures to support troubleshooting and prevention of future failures,\n- Which events will be monitored,\n- How events will be prioritized for review,\n- The expected frequency of those reviews,\n- How events will be prioritized for response and timing to resolution,\n- Third party AI components, including open source software, are kept up to date.",
+          "controls": [
+            {
+              "id": "4kpn1blm",
+              "externalId": "AAT-22"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 65)",
+          "name": "AI Systems Health Monitoring Methods Are Employed",
+          "description": "Establish and document a detailed inventory of the system health monitoring methods to be used, which include:\n- Data and insights generated from data repositories, system analytics, and associated alerts,\n- Processes by which customers can submit information about failures and concerns, and\n- Processes by which the general public can submit feedback.",
+          "controls": [
+            {
+              "id": "jzkx4q3o",
+              "externalId": "AAT-23"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 66)",
+          "name": "AI Intended Use Violations Are Managed",
+          "description": "If evidence is discovered that the AI system is not fit for the Intended Use(s) at any point before or during the system’s use, the Supplier will:\n- Remove the Intended Use from customer-facing materials and make current customers aware of the issue, take action to close the identified gap, or discontinue the system,\n- Revise documentation related to the Intended Use, and\n- Publish the revised documentation to customers.",
+          "controls": [
+            {
+              "id": "ficca65g",
+              "externalId": "AAT-24"
+            }
+          ]
+        },
+        {
+          "id": "AI Systems (Control 67)",
+          "name": "AI Quality Of Service Risks Are Defined",
+          "description": "Supplier must identify and disclose all known demographic groups, including marginalized groups, who may be at risk of experiencing worse or adverse quality of service based on the Intended Use(s) of the AI System, geographic areas where the AI System will be deployed, or inherent biases within the AI System. Demographic groups include:\n- Groups defined by a single factor, and\n- Groups defined by a combination of factors.",
+          "controls": [
+            {
+              "id": "qiozspjn",
+              "externalId": "AAT-25"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

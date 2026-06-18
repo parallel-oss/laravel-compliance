@@ -1,0 +1,1380 @@
+{
+  "principles": [
+    {
+      "id": "E8-1",
+      "name": "Patch applications",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS1",
+          "name": "Patch applications",
+          "description": "Most vendors of internet-facing services regularly release updated versions of their applications to fix security vulnerabilities. Applications that exist on a system can be compared to the latest versions available from the vendor to determine whether existing versions are the latest, and if not, how long-ago updates were made available by the vendor, based on release dates and patch notes. Services such as the SANS Internet Storm Centre, Microsoft Security Response Centre or the Cybersecurity and Infrastructure Security Agency’s Known Exploited Vulnerabilities Catalog can be used to determine whether public exploits exist for a given internet-facing service.",
+          "controls": [
+            {
+              "id": "1jvwje31",
+              "externalId": "AST-99",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "k59ytgm7",
+              "externalId": "VPM-109",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "yxays8ly",
+              "externalId": "VPM-110",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "r1xv15t0",
+              "externalId": "VPM-111",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "vp1qdg7k",
+              "externalId": "VPM-112",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "c8bki31z",
+              "externalId": "VPM-113",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "w1phlqpt",
+              "externalId": "VPM-114",
+              "variants": [
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "2i2ul0rm",
+              "externalId": "VPM-115",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "940hi97x",
+              "externalId": "VPM-116",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "gdwbz6ye",
+              "externalId": "VPM-122",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "lyr6konw",
+              "externalId": "VPM-123",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "rwu3dwz0",
+              "externalId": "VPM-204",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "dltkh24e",
+              "externalId": "VPM-205",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "jq52w9lt",
+              "externalId": "VPM-206",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-2",
+      "name": "Patch operating systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS2",
+          "name": "Patch operating systems",
+          "description": "Operating system vendors regularly publish updates to address security vulnerabilities. In addition, unsupported and out-of-date operating systems of internet-facing workstations and servers are a common target for adversaries.  While operating systems of workstations, servers and network devices that are not internet-facing are at a lower risk of exploitation, as adversaries need to compromise another system to then obtain network-based access to the unpatched operating system, it is still important that such operating systems are patched in a reasonable timeframe given the level of targeting and tradecraft the system owner is attempting to protect their system against.  Services such as the SANS Internet Storm Centre, Microsoft Security Response Centre or the Cybersecurity and Infrastructure Security Agency’s Known Exploited Vulnerabilities Catalog can be used to determine whether public exploits exist for operating systems of workstations, servers and network devices.",
+          "controls": [
+            {
+              "id": "xmdj30c3",
+              "externalId": "AST-100",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "so804k4l",
+              "externalId": "AST-101",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "7o10ryxc",
+              "externalId": "VPM-117",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "r3i3697y",
+              "externalId": "VPM-118",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "yzwxvkmf",
+              "externalId": "VPM-120",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "4g186g2e",
+              "externalId": "VPM-121",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "rzeu3xxo",
+              "externalId": "VPM-124",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "jv2uehpj",
+              "externalId": "VPM-125",
+              "variants": [
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "fdhzozkl",
+              "externalId": "VPM-207",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "gkryzgq9",
+              "externalId": "VPM-208",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "w91zkbd6",
+              "externalId": "VPM-209",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "9gu8qxur",
+              "externalId": "VPM-210",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "sq34wi7n",
+              "externalId": "VPM-211",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "ukss7arc",
+              "externalId": "VPM-212",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "efd0iivn",
+              "externalId": "VPM-213",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "957n20jq",
+              "externalId": "VPM-214",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "s0lpxqba",
+              "externalId": "VPM-215",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "b9okev68",
+              "externalId": "VPM-216",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-3",
+      "name": "Multi-factor authentication",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS3",
+          "name": "Multi-factor authentication",
+          "description": "Multi-factor authentication is one of the most effective controls an organisation can implement to prevent adversaries from gaining access to a system, service or application. When implemented correctly, multi-factor authentication can also make it significantly more difficult for adversaries to steal legitimate credentials to facilitate further malicious activities.  Multi-factor authentication should be implemented for remote access solutions, users performing privileged actions and users accessing important (sensitive or high-availability) data repositories. Using multi-factor authentication provides a secure authentication mechanism that is not as susceptible to brute force attacks, such as traditional single-factor authentication methods based on memorised secrets (e.g. personal identification numbers (PINs), passwords and passphrases).  At this maturity level, any two or more authentication methods can be used as long as they are not of the same class (e.g. something users know, something users have or something users are). There is no requirement that one factor must be a memorised secret. Biometrics and Trusted Signals are also acceptable as an authentication method at this maturity level.  Note, while any two or more authentication methods can be used at Maturity Level One, organisations may still choose to implement multi-factor authentication solutions, such as those that include something the user has or are verifier impersonation resistant, if they intend to eventually implement requirements for Maturity Level Two or Maturity Level Three.",
+          "controls": [
+            {
+              "id": "1z1gircu",
+              "externalId": "IAC-469",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "vg3gh20r",
+              "externalId": "IAC-470",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "eei2i5hy",
+              "externalId": "IAC-471",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "eaz34ujw",
+              "externalId": "IAC-472",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "ufomvtng",
+              "externalId": "IAC-473",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "a9kautjb",
+              "externalId": "IAC-474",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "msisp588",
+              "externalId": "IAC-483",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "7xa6fi1n",
+              "externalId": "IAC-484",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ayafrmd8",
+              "externalId": "IAC-485",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ul2s5neq",
+              "externalId": "IAC-486",
+              "variants": [
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "cerm9b39",
+              "externalId": "IAC-487",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "d0te5s8c",
+              "externalId": "IAC-488",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "jgh113kb",
+              "externalId": "IAC-645",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "qdepkvdy",
+              "externalId": "IAC-646",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "xwrs4zlm",
+              "externalId": "IAC-647",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "gudriq1f",
+              "externalId": "IAC-648",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "fp05vsqt",
+              "externalId": "IAC-649",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "h9k9tfzp",
+              "externalId": "IRO-166",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "266ylrp0",
+              "externalId": "IRO-167",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "c9wpvyx3",
+              "externalId": "IRO-168",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "tfpgmaet",
+              "externalId": "IRO-169",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "64kem5am",
+              "externalId": "IRO-170",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "mpq8z71r",
+              "externalId": "IRO-171",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "0w6gpuq0",
+              "externalId": "MON-285",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-4",
+      "name": "Restrict administrative privileges",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS4",
+          "name": "Restrict administrative privileges",
+          "description": "Policies, processes and procedures for managing privileged access to systems should be documented and enforced within organisational workflows. In doing so, privileged access to systems and applications should be requested via a form, service desk ticket or email from users, and require approval from a supervisor or application owner, to maintain a record of all such requests. System owners should also maintain a list of all applications on their system that require privileged access.  Privileged accounts are often targeted by adversaries for their greater control and access to organisational resources. For this reason, privileged accounts should not have access to the internet, email and web services.  Note, while no constraints are placed on how privileged and unprivileged operating environments are separated for privileged users at Maturity Level One, organisations may choose to implement an approach that avoids virtualising a privileged operating environment within an unprivileged operating environment if they intend to eventually implement requirements for Maturity Level Two.",
+          "controls": [
+            {
+              "id": "3lz3nx8r",
+              "externalId": "HRS-85",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "eiux2my6",
+              "externalId": "IAC-468",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "1gipp7cl",
+              "externalId": "IRO-172",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "95ppzvmz",
+              "externalId": "IRO-173",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "4u3vgc2r",
+              "externalId": "IRO-174",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "2w4rdg3u",
+              "externalId": "IRO-175",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "wtbjzirq",
+              "externalId": "IRO-176",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "5ekh7ygy",
+              "externalId": "IRO-177",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "mmmhspvs",
+              "externalId": "MON-283",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "r30m1hnl",
+              "externalId": "MON-284",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "7kdh1qc9",
+              "externalId": "SEA-171",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ink2a0t8",
+              "externalId": "SEA-172",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "hyx5no3l",
+              "externalId": "SEA-173",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "kpbeho43",
+              "externalId": "SEA-174",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "w00zv0kg",
+              "externalId": "SEA-175",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "zcs6vzzn",
+              "externalId": "SEA-176",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "bwx0h3dq",
+              "externalId": "SEA-177",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "r3icrrdb",
+              "externalId": "SEA-178",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "g98c3xdh",
+              "externalId": "SEA-185",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "77toy06y",
+              "externalId": "SEA-186",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "3olg6pvq",
+              "externalId": "SEA-234",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "fkk6og42",
+              "externalId": "SEA-235",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "ezzg6t4w",
+              "externalId": "SEA-236",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "6g1irs91",
+              "externalId": "SEA-237",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "ltpopfvm",
+              "externalId": "SEA-238",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "xxh8lo7o",
+              "externalId": "SEA-239",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "xe37lj3y",
+              "externalId": "SEA-240",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "0kmf5et2",
+              "externalId": "SEA-241",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "kkdeqaw9",
+              "externalId": "SEA-242",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-5",
+      "name": "Application control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS5",
+          "name": "Application control",
+          "description": "Application control assessments can be done without tools but efforts will be severely limited in their effectiveness and are likely to miss edge cases that adversaries would look to exploit using higher levels of tradecraft. For example, adversaries may use custom tools to scan for weak or vulnerable paths on a system. This could be achieved with a Microsoft Office macro.  It is important to note that the last major update to the maturity model introduced compiled Hypertext Markup Language (HTML) (.chm files), HTML applications (.hta files) and control panel applets (.cpl files) to the list of execution types that need to be controlled. Depending on the application control solution selected, it may not support these file types.  When conducting assessments, paths for standard user profiles and temporary folders used by operating systems, web browsers, and email clients can include those from the list below. Note, depending on the system configuration, there may be overlap (e.g. %temp% and %tmp% generally reside within %userprofile%\\\\*).  %userprofile%\\\\* %temp%\\\\* %tmp%\\\\* %windir%\\Temp\\\\*. To check if application control is implemented within the user profile directory, attempt to run a benign executable file inside the directory. The executables tested should cover .exe, .com, .dll, .ocx, .ps1, .bat, .vbs, .js, .msi, .mst, .msp, .chm, .hta, and .cpl. If any of the executables run within the user profile directory or operating system temporary folders, application control is ineffective.  Note, while a dedicated application control solution is not required at Maturity Level One (i.e. file system permissions can be used instead), organisations may still choose to implement a dedicated application control solution if they intend to eventually implement requirements for Maturity Level Two.",
+          "controls": [
+            {
+              "id": "67ha3jif",
+              "externalId": "IRO-161",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "nhz6vrpp",
+              "externalId": "IRO-162",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "h6kd2zl8",
+              "externalId": "IRO-163",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "afyvtt69",
+              "externalId": "IRO-164",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "cza664hl",
+              "externalId": "IRO-165",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "cres2wjw",
+              "externalId": "IRO-362",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "gxrjdgam",
+              "externalId": "MON-280",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ajhme8fw",
+              "externalId": "THR-37",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "kp8ecia7",
+              "externalId": "THR-38",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "o8vzcwn8",
+              "externalId": "THR-39",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ceenmhqa",
+              "externalId": "THR-40",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "lgzr3q4v",
+              "externalId": "THR-41",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "yhnu9lor",
+              "externalId": "THR-42",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "8qf8j68g",
+              "externalId": "THR-43",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "19om74s6",
+              "externalId": "THR-57",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "6o80fzj1",
+              "externalId": "THR-58",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "ytjzm103",
+              "externalId": "THR-59",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "b2ibl90k",
+              "externalId": "THR-60",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "ifxn9j3t",
+              "externalId": "THR-61",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-6",
+      "name": "Restrict Microsoft Office macros",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS6",
+          "name": "Restrict Microsoft Office macros",
+          "description": "All users should be denied the ability to execute Microsoft Office macros by default unless they have a specific business requirement. If certain users are required to run Microsoft Office macros, they should be restricted to only the specific applications required (rather than all Microsoft Office applications). In addition, a record of their business requirement and associated approvals should be kept. This record should align with the list of users within the Active Directory group that have permission to run Microsoft Office macros. Note, once a business requirement can no longer be demonstrated by a user, permission to run Microsoft Office macros should be revoked.  Microsoft Windows Defender is commonly used to perform Microsoft Office macro antivirus scanning. This product uses the Antimalware Scan Interface to integrate applications and services with any antimalware installed on a machine. Other antivirus solutions may use this interface or other processes to scan Microsoft Office macros.  Microsoft Office applications that can execute Microsoft Office macros include Microsoft Access, Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Project, Microsoft Publisher, Microsoft Visio and Microsoft Word.",
+          "controls": [
+            {
+              "id": "9xjearyp",
+              "externalId": "CFG-120",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "0tkm4ov3",
+              "externalId": "CFG-121",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "7klp6vsz",
+              "externalId": "CFG-122",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "uqo3sqjn",
+              "externalId": "CFG-123",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "xao1p8b0",
+              "externalId": "CFG-124",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "gzl4wh31",
+              "externalId": "CFG-209",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "9ug4e4lf",
+              "externalId": "CFG-210",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "li1f3zei",
+              "externalId": "CFG-211",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "1qwttrq4",
+              "externalId": "CFG-212",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "byryyzo6",
+              "externalId": "CFG-213",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "uf98mcy9",
+              "externalId": "CFG-214",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-7",
+      "name": "User application hardening",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS7",
+          "name": "User application hardening",
+          "description": "Adversaries are known to indiscriminately use ‘malvertising’ in their attempts to compromise systems. Blocking web advertisements using web browser add-ins or extensions, or via web content filtering, can prevent the compromise of a system.  Internet Explorer 11 lacks many of the security features of modern web browsers and ceased to be supported by Microsoft on 15 June 2022. As such, it is more regularly targeted by adversaries. Ideally, Internet Explorer 11 should be removed from systems and Microsoft Edge (running in ‘IE mode’ for legacy sites), or other modern web browsers, should be used instead.  Web browser security settings should be configured via group policy settings. In addition, default web browser security settings should not be relied upon as users may tinker with these settings to enable content or change settings when guided to do so by adversaries. Web browser security settings that are configured via group policy settings typically appear greyed out to users, have a hover over message explaining the setting is configured by their organisation or have an icon such as a padlock.",
+          "controls": [
+            {
+              "id": "8dq500sz",
+              "externalId": "CFG-125",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "9hrshnyt",
+              "externalId": "CFG-126",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ep0hx52h",
+              "externalId": "CFG-127",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "qoq6ql5c",
+              "externalId": "CFG-128",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "gsfhkszx",
+              "externalId": "CFG-129",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV1",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "gezkirzv",
+              "externalId": "CFG-130",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "fefj3qlq",
+              "externalId": "CFG-131",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "7aqc7ovl",
+              "externalId": "CFG-132",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "qnqqrzl8",
+              "externalId": "CFG-133",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ppr8a30c",
+              "externalId": "CFG-134",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "x39jerp0",
+              "externalId": "CFG-135",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "i0v29l2z",
+              "externalId": "CFG-136",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "15dqe1hx",
+              "externalId": "CFG-137",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "hqiidv9h",
+              "externalId": "CFG-138",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "50dg0egz",
+              "externalId": "CFG-140",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "fykdkm2k",
+              "externalId": "CFG-141",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "mqftl4jv",
+              "externalId": "CFG-215",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "zj9drpm9",
+              "externalId": "CFG-216",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "5zc0kkg2",
+              "externalId": "CFG-217",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "b06tehjm",
+              "externalId": "CFG-218",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "0tn5feho",
+              "externalId": "CFG-219",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "jzte06ky",
+              "externalId": "IRO-178",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "f4m66634",
+              "externalId": "IRO-179",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "0mvxqon0",
+              "externalId": "IRO-180",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "fy8bbern",
+              "externalId": "IRO-181",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "ivy85r7p",
+              "externalId": "IRO-182",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "506lt4hq",
+              "externalId": "IRO-183",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-8",
+      "name": "Regular backups",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E8-MS8",
+          "name": "Regular backups",
+          "description": "Backup and retention frequencies should be defined by the system owner in accordance with their organisation’s business continuity and disaster recovery requirements. In doing so, it is important that restoration of systems and data from backups be tested as part of regular (at least annual) disaster recovery exercises and not left to after the first major security incident is experienced.  At this maturity level, it is important that unprivileged users cannot access the backups of any other users – although it is not necessarily a problem if they are able to access their own backups. It is worth noting, at this maturity level, that privileged accounts may still be able to access the backups of any user.  While unprivileged accounts can access (i.e. read) their own backups, it is important that they do not have the ability to modify or delete those backups. This requirement exists as any ransomware running with the privileges of an unprivileged user should be blocked from overwriting or deleting backups. Note, adversaries escalating privileges to privileged accounts, or backup administrator accounts, to overwrite backups are addressed at higher maturity levels.",
+          "controls": [
+            {
+              "id": "nixajgqp",
+              "externalId": "BCD-123",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "4gum7940",
+              "externalId": "BCD-124",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "ppwc4anc",
+              "externalId": "BCD-125",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "7osy8v4z",
+              "externalId": "BCD-126",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "f30rpe69",
+              "externalId": "SEA-179",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "q9mwcnb2",
+              "externalId": "SEA-180",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "oy5wqn0y",
+              "externalId": "SEA-181",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2",
+                "AUE8_LV1"
+              ]
+            },
+            {
+              "id": "bu0l9htk",
+              "externalId": "SEA-182",
+              "variants": [
+                "AUE8_LV3",
+                "AUE8_LV2"
+              ]
+            },
+            {
+              "id": "9cze1y7d",
+              "externalId": "SEA-243",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "2zzbri7r",
+              "externalId": "SEA-244",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            },
+            {
+              "id": "tknz2l19",
+              "externalId": "SEA-245",
+              "variants": [
+                "AUE8_LV3"
+              ]
+            }
+          ],
+          "variants": [
+            "AUE8_LV1",
+            "AUE8_LV2",
+            "AUE8_LV3"
+          ]
+        }
+      ]
+    }
+  ]
+}

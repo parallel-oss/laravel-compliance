@@ -7,7 +7,7 @@ afterEach(function () {
     File::delete(storage_path('framework/testing/security-evidence-report.md'));
 });
 
-it('reports capability mappings from enum-backed evidence', function () {
+it('reports control mappings from enum-backed evidence', function () {
     $fixture = dirname(__DIR__).'/workbench/app/ReportedEvidence.php';
     $output = storage_path('framework/testing/security-evidence-report.md');
 
@@ -17,13 +17,13 @@ it('reports capability mappings from enum-backed evidence', function () {
 
 namespace Workbench\App;
 
-use Parallel\Compliance\Capabilities\CommonCapability;
+use Parallel\Compliance\Controls\VantaControl;
 use Parallel\Compliance\Evidence;
 
 class ReportedEvidence
 {
     #[Evidence(
-        capabilities: CommonCapability::UserDataErasure,
+        controls: VantaControl::DCH_1,
         summary: 'Deletes user profile data and related records.'
     )]
     public function deleteUserData(): void
@@ -40,12 +40,11 @@ PHP);
     $this->artisan('security:generate-report')->assertSuccessful();
 
     expect($output)->toBeFile()
-        ->and(file_get_contents($output))->toContain('Capability: User Data Erasure')
-        ->and(file_get_contents($output))->toContain('`data_lifecycle.user_data_erasure`')
+        ->and(file_get_contents($output))->toContain('Control: Customer data deleted upon leaving')
+        ->and(file_get_contents($output))->toContain('`VANTA:DCH-1`')
         ->and(file_get_contents($output))->toContain('`GDPR:Article 17`')
-        ->and(file_get_contents($output))->toContain('`SOC2:P4.3`')
-        ->and(file_get_contents($output))->toContain('Secure disposal of personal information')
-        ->and(file_get_contents($output))->toContain('`VANTA:DCH-1` - Customer data deleted upon leaving')
-        ->and(file_get_contents($output))->toContain('Vanta slug: `customer-data-deleted-upon-leave`')
+        ->and(file_get_contents($output))->toContain('`SOC2:C1.2`')
+        ->and(file_get_contents($output))->toContain('`SOC2:CC6.5`')
+        ->and(file_get_contents($output))->toContain('**Vanta slug:** `customer-data-deleted-upon-leave`')
         ->and(file_get_contents($output))->toContain('Deletes user profile data and related records.');
 });

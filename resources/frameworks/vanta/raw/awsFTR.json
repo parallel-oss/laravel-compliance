@@ -1,0 +1,590 @@
+{
+  "principles": [
+    {
+      "id": "Amazon S3 Bucket Access",
+      "name": "Amazon S3 Bucket Access",
+      "optional": false,
+      "sections": [
+        {
+          "id": "S3-001",
+          "name": "",
+          "description": "Review all Amazon S3 bucket access",
+          "controls": [
+            {
+              "id": "82ix1kwx",
+              "externalId": "DCH-80"
+            }
+          ]
+        },
+        {
+          "id": "S3-002",
+          "name": "",
+          "description": "Restrict S3 bucket public access",
+          "controls": [
+            {
+              "id": "c2ilejnh",
+              "externalId": "DCH-81"
+            }
+          ]
+        },
+        {
+          "id": "S3-003",
+          "name": "",
+          "description": "Alert when S3 buckets become public",
+          "controls": [
+            {
+              "id": "4e5y30o8",
+              "externalId": "DCH-82"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Architecture Review",
+      "name": "Architecture Review",
+      "optional": false,
+      "sections": [
+        {
+          "id": "WAFR-001",
+          "name": "",
+          "description": "Conduct periodic architecture reviews",
+          "controls": [
+            {
+              "id": "knkvvbvn",
+              "externalId": "SEA-35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AWS Root Account",
+      "name": "AWS Root Account",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ARC-001",
+          "name": "",
+          "description": "Use root user only by exception",
+          "controls": [
+            {
+              "id": "0640xtug",
+              "externalId": "IAC-122"
+            }
+          ]
+        },
+        {
+          "id": "ARC-003",
+          "name": "",
+          "description": "Enable MFA on the root user",
+          "controls": [
+            {
+              "id": "njvuqtzp",
+              "externalId": "IAC-123"
+            }
+          ]
+        },
+        {
+          "id": "ARC-004",
+          "name": "",
+          "description": "Remove access keys for the root user",
+          "controls": [
+            {
+              "id": "0xlnt610",
+              "externalId": "IAC-124"
+            }
+          ]
+        },
+        {
+          "id": "ARC-005",
+          "name": "",
+          "description": "Create an IR runbook for root misuse",
+          "controls": [
+            {
+              "id": "dlxagxnu",
+              "externalId": "IRO-62"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Backups and Recovery",
+      "name": "Backups and Recovery",
+      "optional": false,
+      "sections": [
+        {
+          "id": "BAR-001",
+          "name": "",
+          "description": "Perform data backup automatically",
+          "controls": [
+            {
+              "id": "i34q06af",
+              "externalId": "BCD-34"
+            }
+          ]
+        },
+        {
+          "id": "BAR-002",
+          "name": "",
+          "description": "Perform periodic recovery to verify backup integrity",
+          "controls": [
+            {
+              "id": "0sihwcrr",
+              "externalId": "BCD-35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CloudTrail",
+      "name": "CloudTrail",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CTL-001",
+          "name": "",
+          "description": "Configure CloudTrail in all Accounts and Regions",
+          "controls": [
+            {
+              "id": "9el92qwq",
+              "externalId": "MON-75"
+            }
+          ]
+        },
+        {
+          "id": "CTL-002",
+          "name": "",
+          "description": "Store logs in a separate administrative domain",
+          "controls": [
+            {
+              "id": "ylx8t3le",
+              "externalId": "MON-76"
+            }
+          ]
+        },
+        {
+          "id": "CTL-003",
+          "name": "",
+          "description": "Protect log storage from unintended access",
+          "controls": [
+            {
+              "id": "3kzb0rlf",
+              "externalId": "IAC-125"
+            }
+          ]
+        },
+        {
+          "id": "CTL-004",
+          "name": "",
+          "description": "Enable CloudTrail log file integrity validation",
+          "controls": [
+            {
+              "id": "8axzwh9c",
+              "externalId": "MON-77"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Communications from AWS",
+      "name": "Communications from AWS",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ACOM-001",
+          "name": "",
+          "description": "Configure AWS account contacts",
+          "controls": [
+            {
+              "id": "5ejicl4v",
+              "externalId": "CLD-4"
+            }
+          ]
+        },
+        {
+          "id": "ACOM-002",
+          "name": "",
+          "description": "Set contact information including the root user email address",
+          "controls": [
+            {
+              "id": "pnr1ly5d",
+              "externalId": "CLD-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Cross-Account Access",
+      "name": "Cross-Account Access",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CAA-001",
+          "name": "",
+          "description": "Use cross-account roles to access customer accounts",
+          "controls": [
+            {
+              "id": "gnzagnbc",
+              "externalId": "IAC-127"
+            }
+          ]
+        },
+        {
+          "id": "CAA-002",
+          "name": "",
+          "description": "Use external ID with cross-account roles to access customer accounts",
+          "controls": [
+            {
+              "id": "snpc5phq",
+              "externalId": "IAC-129"
+            }
+          ]
+        },
+        {
+          "id": "CAA-003",
+          "name": "",
+          "description": "Deprecate any historical use of customer-provided IAM credentials",
+          "controls": [
+            {
+              "id": "uvnrn12n",
+              "externalId": "IAC-133"
+            }
+          ]
+        },
+        {
+          "id": "CAA-004",
+          "name": "",
+          "description": "Use a value you generate for the external ID",
+          "controls": [
+            {
+              "id": "a0zf10nk",
+              "externalId": "IAC-130"
+            }
+          ]
+        },
+        {
+          "id": "CAA-005",
+          "name": "",
+          "description": "Ensure all external IDs are unique",
+          "controls": [
+            {
+              "id": "vzgpczv7",
+              "externalId": "IAC-131"
+            }
+          ]
+        },
+        {
+          "id": "CAA-006",
+          "name": "",
+          "description": "Provide read-only access to external ID to customers",
+          "controls": [
+            {
+              "id": "sx9iskux",
+              "externalId": "IAC-132"
+            }
+          ]
+        },
+        {
+          "id": "CAA-007",
+          "name": "",
+          "description": "Automate cross-account role setup with least privileges",
+          "controls": [
+            {
+              "id": "msysqwni",
+              "externalId": "IAC-128"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Disaster Recovery",
+      "name": "Disaster Recovery",
+      "optional": false,
+      "sections": [
+        {
+          "id": "DR-001",
+          "name": "",
+          "description": "Define a Recovery Point Objective (RPO)",
+          "controls": [
+            {
+              "id": "msaneglm",
+              "externalId": "BCD-36"
+            }
+          ]
+        },
+        {
+          "id": "DR-002",
+          "name": "",
+          "description": "Establish a Recovery Time Objective (RTO)",
+          "controls": [
+            {
+              "id": "6cxs8s5a",
+              "externalId": "BCD-37"
+            }
+          ]
+        },
+        {
+          "id": "DR-004",
+          "name": "",
+          "description": "Resiliency Testing",
+          "controls": [
+            {
+              "id": "cih15l1m",
+              "externalId": "BCD-38"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Identity and Access Management",
+      "name": "Identity and Access Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IAM-001",
+          "name": "",
+          "description": "Enable MFA for all Human Identities",
+          "controls": [
+            {
+              "id": "7n0vkxii",
+              "externalId": "MON-78"
+            }
+          ]
+        },
+        {
+          "id": "IAM-002",
+          "name": "",
+          "description": "Rotate credentials regularly",
+          "controls": [
+            {
+              "id": "cgugrm1l",
+              "externalId": "MON-79"
+            }
+          ]
+        },
+        {
+          "id": "IAM-003",
+          "name": "",
+          "description": "Use strong password policy",
+          "controls": [
+            {
+              "id": "vm7ra5xc",
+              "externalId": "MON-80"
+            }
+          ]
+        },
+        {
+          "id": "IAM-004",
+          "name": "",
+          "description": "Create individual identities (no shared credentials)",
+          "controls": [
+            {
+              "id": "6ylopk90",
+              "externalId": "MON-81"
+            }
+          ]
+        },
+        {
+          "id": "IAM-005",
+          "name": "",
+          "description": "Use IAM roles and temporary credentials to for third party access",
+          "controls": [
+            {
+              "id": "wt5u11al",
+              "externalId": "MON-82"
+            }
+          ]
+        },
+        {
+          "id": "IAM-006",
+          "name": "",
+          "description": "Grant least privilege access",
+          "controls": [
+            {
+              "id": "424i8cw4",
+              "externalId": "MON-83"
+            }
+          ]
+        },
+        {
+          "id": "IAM-007",
+          "name": "",
+          "description": "Manage access based on life cycle",
+          "controls": [
+            {
+              "id": "f73m27q1",
+              "externalId": "MON-84"
+            }
+          ]
+        },
+        {
+          "id": "IAM-008",
+          "name": "",
+          "description": "Audit identities quarterly",
+          "controls": [
+            {
+              "id": "uyt2nkht",
+              "externalId": "MON-85"
+            }
+          ]
+        },
+        {
+          "id": "IAM-009",
+          "name": "",
+          "description": "Do not embed credentials in code",
+          "controls": [
+            {
+              "id": "f1wskf7d",
+              "externalId": "SEA-36"
+            }
+          ]
+        },
+        {
+          "id": "IAM-010",
+          "name": "",
+          "description": "Store secrets in specialized service",
+          "controls": [
+            {
+              "id": "whnos75l",
+              "externalId": "SEA-37"
+            }
+          ]
+        },
+        {
+          "id": "IAM-011",
+          "name": "",
+          "description": "Encrypt all credentials and hash passwords at rest",
+          "controls": [
+            {
+              "id": "f0crm3es",
+              "externalId": "CRY-73"
+            }
+          ]
+        },
+        {
+          "id": "IAM-012",
+          "name": "",
+          "description": "Use temporary credentials",
+          "controls": [
+            {
+              "id": "pkumsjio",
+              "externalId": "IAC-126"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Protected Health Information",
+      "name": "Protected Health Information",
+      "optional": false,
+      "sections": [
+        {
+          "id": "BAABP-001",
+          "name": "",
+          "description": "If you process PHI, ensure you have a BAA with AWS for every account",
+          "controls": [
+            {
+              "id": "gp9yzxj2",
+              "externalId": "TPM-41"
+            }
+          ]
+        },
+        {
+          "id": "BAABP-004",
+          "name": "",
+          "description": "Use HIPAA Eligible Services for solutions handling PHI",
+          "controls": [
+            {
+              "id": "1apcpzzn",
+              "externalId": "CPL-33"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Regulatory Compliance Validation Process",
+      "name": "Regulatory Compliance Validation Process",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RCVP-001",
+          "name": "",
+          "description": "Establish a process to ensure that all required compliance standards are met",
+          "controls": [
+            {
+              "id": "n2pjufks",
+              "externalId": "CPL-34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Sensitive Data",
+      "name": "Sensitive Data",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SDAT-001",
+          "name": "",
+          "description": "Identify sensitive data (e.g. PII/PHI)",
+          "controls": [
+            {
+              "id": "7a5w97r2",
+              "externalId": "DCH-83"
+            }
+          ]
+        },
+        {
+          "id": "SDAT-002",
+          "name": "",
+          "description": "Encrypt all sensitive data at rest",
+          "controls": [
+            {
+              "id": "1xf6x1ox",
+              "externalId": "CRY-74"
+            }
+          ]
+        },
+        {
+          "id": "SDAT-003",
+          "name": "",
+          "description": "Encrypt all transmissions of sensitive data outside your VPC",
+          "controls": [
+            {
+              "id": "f32khp5u",
+              "externalId": "CRY-75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Support Level",
+      "name": "Support Level",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SUP-001",
+          "name": "",
+          "description": "Enable AWS Business Support",
+          "controls": [
+            {
+              "id": "nmkfpdz8",
+              "externalId": "CLD-3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

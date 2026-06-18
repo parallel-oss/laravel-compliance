@@ -1,0 +1,667 @@
+{
+  "principles": [
+    {
+      "id": "Domain 1",
+      "name": "Resource Allocation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Define Objectives",
+          "name": "",
+          "description": "Define Objectives",
+          "context": "This enables an organization to identify the security risks that are relevant to them, and appropriately set the scope for mitigation activities (controls). Defining objectives is important to ensure alignment between the security risks that an organization faces with their mitigation activities.",
+          "controls": [
+            {
+              "id": "b2s94xps",
+              "externalId": "RSK-40"
+            },
+            {
+              "id": "7dxetc85",
+              "externalId": "RSK-41"
+            }
+          ]
+        },
+        {
+          "id": "Establish Accountability",
+          "name": "",
+          "description": "Establish Accountability",
+          "context": "This identifies individuals and teams who are responsible for ensuring information security, and control owners who are responsible for the operational effectiveness of security controls that they own.",
+          "controls": [
+            {
+              "id": "4oizlob4",
+              "externalId": "RSK-42"
+            },
+            {
+              "id": "7tntt0ri",
+              "externalId": "RSK-43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 2",
+      "name": "Asset Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Maintain Visibility",
+          "name": "",
+          "description": "Maintain Visibility",
+          "context": "An asset that you do not see cannot be managed. Therefore, continuous visibility into all critical assets is a prerequisite for securing them.",
+          "controls": [
+            {
+              "id": "a47jui11",
+              "externalId": "AST-72"
+            },
+            {
+              "id": "jjiupt5g",
+              "externalId": "AST-73"
+            },
+            {
+              "id": "a12lz9ka",
+              "externalId": "AST-74"
+            },
+            {
+              "id": "dq45j5nm",
+              "externalId": "AST-75"
+            },
+            {
+              "id": "pnpjl6lz",
+              "externalId": "SEA-57"
+            }
+          ]
+        },
+        {
+          "id": "Prevent Dependency Confusion Attacks",
+          "name": "",
+          "description": "Prevent Dependency Confusion Attacks",
+          "context": "A misconfigured dependency manager (like Artifactory) can allow internal dependencies to be downloaded from public registries, leading to potentially malicious packages being installed on employee machines, containers, and servers. Ensuring that internal packages are only downloaded from private registries can protect your organization from falling victim to these types of attacks.",
+          "controls": [
+            {
+              "id": "3m8upslj",
+              "externalId": "TDA-43"
+            },
+            {
+              "id": "usinqpu7",
+              "externalId": "TDA-44"
+            },
+            {
+              "id": "u45jzvqy",
+              "externalId": "TDA-45"
+            }
+          ]
+        },
+        {
+          "id": "Detect vulnerable third-party dependencies",
+          "name": "",
+          "description": "Detect vulnerable third-party dependencies",
+          "context": "In addition to in-house code, a significant portion of modern applications rely heavily on 3rd party code in the form of dependencies and libraries which often contain vulnerabilities. These vulnerable dependencies oftentimes become a silent killer of otherwise secure products. SCA tools were created with the purpose of identifying such vulnerable libraries. Modern SCA tools have even evolved to the point of determining if a vulnerable piece of code inside the library is reachable and thus exploitable or if an active exploit is available for the vulnerability. Top tier offerings will go so far as to recommend safer versions of vulnerable libraries. Powerful tools like this help in understanding the criticality of vulnerabilities and greatly aid in triage prioritization.",
+          "controls": [
+            {
+              "id": "csfdn2ec",
+              "externalId": "TDA-46"
+            },
+            {
+              "id": "lbu6s4j5",
+              "externalId": "TDA-47"
+            }
+          ]
+        },
+        {
+          "id": "Detect first-party code vulnerabilities",
+          "name": "",
+          "description": "Detect first-party code vulnerabilities",
+          "context": "Static analysis tools (SAST) can detect vulnerabilities very early on in the product development lifecycle. With the right well crafted rules, these SAST tools can output only actionable results, empowering developers to fix potential vulnerabilities as they write their code. This left-shifted approach can provide an organization maximum return on their investment by avoiding the future costs of fixing vulnerabilities, which can run up 35x–50x once vulnerable code is made live.\nWhen deployed within the CI pipeline, SAST scanning can act as an additional layer of defense by detecting vulnerabilities before a product is deployed or even blocking the builds (depending on the threshold for vulnerabilities defined) if necessary.\nDynamic (DAST) and Interactive Analysis (IAST) are powerful tools which can detect vulnerabilities during runtime giving them the power to identify vulnerabilities that may have gone undetected by static code scans.",
+          "controls": [
+            {
+              "id": "o4tdetd1",
+              "externalId": "VPM-76"
+            },
+            {
+              "id": "3a8b8ols",
+              "externalId": "VPM-77"
+            }
+          ]
+        },
+        {
+          "id": "Patch vulnerabilities",
+          "name": "",
+          "description": "Patch vulnerabilities",
+          "context": "Maintaining current patch levels for critical assets ensures that they are free of vulnerabilities that could lead to their compromise.",
+          "controls": [
+            {
+              "id": "z4f5rj8l",
+              "externalId": "VPM-78"
+            },
+            {
+              "id": "isjhw6ve",
+              "externalId": "VPM-79"
+            },
+            {
+              "id": "gfh6nryk",
+              "externalId": "VPM-80"
+            }
+          ]
+        },
+        {
+          "id": "Protect against malicious code",
+          "name": "",
+          "description": "Protect against malicious code",
+          "context": "Malicious code (viruses, malware, trojans, etc.) is one of the most common methods used to compromise systems and data, therefore, it’s not possible to secure devices without protecting those devices against malicious code.",
+          "controls": [
+            {
+              "id": "x2cy3hfl",
+              "externalId": "THR-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 3",
+      "name": "Access Controls",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Deliberately control access",
+          "name": "",
+          "description": "Deliberately control access",
+          "context": "Access to an asset should be the result of a controlled and deliberate action taken by the organization. If individuals and services are able to obtain and maintain access to assets due to reasons unknown to the organization, then the security of those assets cannot be ensured.",
+          "controls": [
+            {
+              "id": "z50vs37i",
+              "externalId": "IAC-205"
+            },
+            {
+              "id": "avb0r2ep",
+              "externalId": "IAC-206"
+            },
+            {
+              "id": "7i2hcqkf",
+              "externalId": "IAC-207"
+            }
+          ]
+        },
+        {
+          "id": "Ensure segregation of duties (SoD) - Access Approvals",
+          "name": "",
+          "description": "Ensure segregation of duties (SoD) - Access Approvals",
+          "context": "The purpose of access controls is to prevent unauthorized access, if individuals are allowed to review, approve, and provision their own access to an environment, unauthorized access cannot be prevented.",
+          "controls": [
+            {
+              "id": "2do35431",
+              "externalId": "IAC-208"
+            }
+          ]
+        },
+        {
+          "id": "Use strong authentication",
+          "name": "",
+          "description": "Use strong authentication",
+          "context": "Strong authentication layers enable an organization to enforce access controls, and usernames and passwords are considered ineffective factors of authentication on their own.\nUsing multiple factors of authentication (e.g. one time tokens) protects an asset against unauthorized access in the event that credentials (username and password) are compromised.",
+          "controls": [
+            {
+              "id": "k6t2ndj4",
+              "externalId": "IAC-209"
+            },
+            {
+              "id": "t2qs9cob",
+              "externalId": "IAC-210"
+            }
+          ]
+        },
+        {
+          "id": "Harden points of authentication",
+          "name": "",
+          "description": "Harden points of authentication",
+          "context": "Points of authentication are the critical paths of entry into an environment. Your organization should expect unauthorized users to attempt to breach these points of entry on a continuous basis, therefore, hardening these points of entry are key to preventing unauthorized access.",
+          "controls": [
+            {
+              "id": "1vds93z2",
+              "externalId": "IAC-211"
+            },
+            {
+              "id": "7rp2r64n",
+              "externalId": "SEA-58"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 4",
+      "name": "Change Controls",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Prevent unauthorized changes",
+          "name": "",
+          "description": "Prevent unauthorized changes",
+          "context": "Changes to assets alter the way they behave and function, and if changes do not require review and authorization (approval), then such changes can be used to alter those assets in ways that compromises them.",
+          "controls": [
+            {
+              "id": "9avrt1c8",
+              "externalId": "CFG-45"
+            },
+            {
+              "id": "9mqmillm",
+              "externalId": "CHG-40"
+            },
+            {
+              "id": "9n22yje6",
+              "externalId": "CHG-41"
+            }
+          ]
+        },
+        {
+          "id": "Prevent untested changes",
+          "name": "",
+          "description": "Prevent untested changes",
+          "context": "Testing of changes prior to their deployment to production enables you to detect unexpected behavior induced by the change. Deploying an untested change directly to production exposes that production asset to the risk of change induced security incidents.",
+          "controls": [
+            {
+              "id": "8pwkw4t7",
+              "externalId": "CHG-42"
+            },
+            {
+              "id": "b95v3dn3",
+              "externalId": "CHG-43"
+            },
+            {
+              "id": "okmi4xiq",
+              "externalId": "CHG-44"
+            },
+            {
+              "id": "azbvxl57",
+              "externalId": "CHG-45"
+            }
+          ]
+        },
+        {
+          "id": "Maintain version control",
+          "name": "",
+          "description": "Maintain version control",
+          "context": "The ability to roll-back the behavior of an asset to a former stable / secure state is enabled by maintaining a robust history of changes to that asset (version control). If version control is missing from the build and release process, it can amplify the impact of change induced incidents.",
+          "controls": [
+            {
+              "id": "sx4gp8ry",
+              "externalId": "CHG-46"
+            },
+            {
+              "id": "a67o5vhx",
+              "externalId": "CHG-47"
+            },
+            {
+              "id": "w1n825w4",
+              "externalId": "CHG-48"
+            },
+            {
+              "id": "nbru7ann",
+              "externalId": "TDA-48"
+            }
+          ]
+        },
+        {
+          "id": "Ensure segregation of duties (SoD) - Code Changes",
+          "name": "",
+          "description": "Ensure segregation of duties (SoD) - Code Changes",
+          "context": "Proper SoD eliminates conflicts of interest from your build and release process, and adds additional sets of eyes to any particular change or code commit. This helps ensure high quality changes, and reduces the likelihood of intentional or accidental change induced security incidents.",
+          "controls": [
+            {
+              "id": "9wilts1t",
+              "externalId": "CHG-49"
+            }
+          ]
+        },
+        {
+          "id": "Use automation",
+          "name": "",
+          "description": "Use automation",
+          "context": "Manual processes increase the likelihood of user error, inconsistencies, and change induced security incidents. High quality automation in a build and release process will work to reduce the likelihood of these errors and help reduce the likelihood of change induced security incidents.",
+          "controls": [
+            {
+              "id": "lsdaf94p",
+              "externalId": "AAT-2"
+            },
+            {
+              "id": "4qulnrgi",
+              "externalId": "CFG-46"
+            }
+          ]
+        },
+        {
+          "id": "Ensure security reviews of code changes",
+          "name": "",
+          "description": "Ensure security reviews of code changes",
+          "context": "Security review of code changes, especially on business critical products, can help identify business flow exploitation and abuse, deviation from secure coding guidelines, and vulnerabilities that could compromise an application or product.",
+          "controls": [
+            {
+              "id": "pc7pjfaa",
+              "externalId": "CHG-50"
+            },
+            {
+              "id": "9eexdmac",
+              "externalId": "CHG-51"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 5",
+      "name": "SDLC",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Define Secure Coding and Architecture Standards",
+          "name": "",
+          "description": "Define Secure Coding and Architecture Standards",
+          "context": "Without secure coding and architecture standards in place, development and testing teams can be unaware of important security concepts. These teams implement what they know, which at times could introduce security gaps. Secure coding and architecture standards help these teams understand key do’s and don'ts of secure product architecture and development. At the same time, secure coding guidelines will also help to ensure that the entire company codebase follows the same standards.",
+          "controls": [
+            {
+              "id": "64jdymw9",
+              "externalId": "SEA-59"
+            },
+            {
+              "id": "8ow01vxo",
+              "externalId": "SEA-60"
+            },
+            {
+              "id": "kx4e87vm",
+              "externalId": "SEA-61"
+            },
+            {
+              "id": "sopojofh",
+              "externalId": "VPM-81"
+            }
+          ]
+        },
+        {
+          "id": "Establish early Threat Modeling",
+          "name": "",
+          "description": "Establish early Threat Modeling",
+          "context": "Threat modeling helps in identifying the four “Whats” – “What is being built?”, “What can go wrong with it?”, “What can we do about it?”, and “What we finally did.” Threat modeling is a way to identify security gaps, ways to fill these gaps, and ways to track if the recommended security standards were followed during system design. In many ways, threat modeling helps an organization quantify risks and vulnerabilities.\nThis results in not only fewer security flaws appearing in live assets, but is also another key factor in helping to prioritize where resources should be spent to reduce overall threat surface.",
+          "controls": [
+            {
+              "id": "efxs2vnd",
+              "externalId": "RSK-44"
+            },
+            {
+              "id": "z8vkaqq2",
+              "externalId": "THR-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 6",
+      "name": "Cryptography",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Encrypt sensitive data-in-transit",
+          "name": "",
+          "description": "Encrypt sensitive data-in-transit",
+          "context": "The exchange of sensitive information over the web exposes that data to unauthorized external parties. Encrypting the data in transit, minimally by encrypting the communication channels through Transport Layer Security (TLS), reduces this exposure.",
+          "controls": [
+            {
+              "id": "c44hqigt",
+              "externalId": "CRY-93"
+            },
+            {
+              "id": "khxm0qj2",
+              "externalId": "CRY-94"
+            },
+            {
+              "id": "sjhgv9pf",
+              "externalId": "CRY-95"
+            }
+          ]
+        },
+        {
+          "id": "Encrypt sensitive data-at-rest",
+          "name": "",
+          "description": "Encrypt sensitive data-at-rest",
+          "context": "If sensitive data is stored on disk without encryption, any person or service with access to that storage device will also have access to the data. Encrypting the data, prior to it being written to disk, mitigates this risk.",
+          "controls": [
+            {
+              "id": "53kygl22",
+              "externalId": "CRY-96"
+            },
+            {
+              "id": "nggvldun",
+              "externalId": "CRY-97"
+            },
+            {
+              "id": "mz913mtp",
+              "externalId": "CRY-98"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 7",
+      "name": "Data Minimization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Define data retention and deletion expectations",
+          "name": "",
+          "description": "Define data retention and deletion expectations",
+          "context": "Sensitive Consumer data that is collected and stored by an organization must be the result of intentional decisions that are aligned with the organization’s business objectives, and are in compliance with applicable law.\nA defined data retention and deletion policy enables an organization to clearly establish data deletion expectations, and an automated data deletion schedule that is in compliance with this policy, enables compliance with applicable privacy laws.",
+          "controls": [
+            {
+              "id": "uqp8pw0p",
+              "externalId": "CPL-48"
+            },
+            {
+              "id": "vi1psg72",
+              "externalId": "DCH-113"
+            },
+            {
+              "id": "832wef51",
+              "externalId": "DCH-114"
+            },
+            {
+              "id": "78swmtwn",
+              "externalId": "DCH-115"
+            },
+            {
+              "id": "wwx0j5c7",
+              "externalId": "SEA-62"
+            }
+          ]
+        },
+        {
+          "id": "Tokenize and hash highly sensitive data",
+          "name": "",
+          "description": "Tokenize and hash highly sensitive data",
+          "context": "Replacing highly sensitive data with non-reversible tokens, that still retains their usability for the organization’s use case, is an effective way to reduce the overall security risk profile of an environment.\nA good practical example of this is the use of Plaid’s /auth product by developer customers via processor tokens instead of directly handling account and routing numbers.",
+          "controls": [
+            {
+              "id": "a7qgetyg",
+              "externalId": "CRY-99"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 8",
+      "name": "Auditing and Alerting",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Maintain a reliable audit trail",
+          "name": "",
+          "description": "Maintain a reliable audit trail",
+          "context": "Monitoring and auditing critical events that occur in an asset provides visibility into how that asset is behaving, and how users and services are interacting with it.\nEvents such as access and authentication attempts, and changes to an asset are especially critical as preventing unauthorized access and changes to an asset are essential for security.",
+          "controls": [
+            {
+              "id": "rahspj11",
+              "externalId": "MON-122"
+            },
+            {
+              "id": "1hnx4ubl",
+              "externalId": "MON-123"
+            }
+          ]
+        },
+        {
+          "id": "Maintain robust alerting",
+          "name": "",
+          "description": "Maintain robust alerting",
+          "context": "Appropriately scoped, and sufficiently verbose, logs can produce a lot of log entries, which can make their review challenging. Robust alerts allow an organization to zero-in on events that require attention (e.g. anomalies and drifts of expected behavior), and ignore events that do not (e.g. normal and expected behavior).",
+          "controls": [
+            {
+              "id": "j12tbh2f",
+              "externalId": "MON-124"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 9",
+      "name": "Incident Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Detect incidents",
+          "name": "",
+          "description": "Detect incidents",
+          "context": "Alerting on-call teams in real time when services and environments deviate from expected behavior is a critical step that enables an organization to appropriately manage their incidents.",
+          "controls": [
+            {
+              "id": "dc11pux1",
+              "externalId": "IRO-98"
+            },
+            {
+              "id": "30yz5o84",
+              "externalId": "MON-125"
+            }
+          ]
+        },
+        {
+          "id": "Respond to incidents",
+          "name": "",
+          "description": "Respond to incidents",
+          "context": "A defined response procedure that is to be followed by a trained response team when triaging incidents reduces response times, suboptimal decision making, and enables an organization to quickly contain the potential damage that can be caused by a security incident.",
+          "controls": [
+            {
+              "id": "sd9x2hf4",
+              "externalId": "IRO-99"
+            },
+            {
+              "id": "cd9ou4fz",
+              "externalId": "IRO-100"
+            },
+            {
+              "id": "75u27prd",
+              "externalId": "IRO-101"
+            },
+            {
+              "id": "awl6htqt",
+              "externalId": "IRO-102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 10",
+      "name": "Network Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Maintain segmented networks",
+          "name": "",
+          "description": "Maintain segmented networks",
+          "context": "The opposite of a flat network is a segmented network, and it allows an organization to granularly separate assets with different levels of sensitivity and usage from exposure to each other, and to other networks (e.g. the WWW).\nAn asset with no reason for having access to the internet (e.g. a database containing sensitive data that only interacts with internal services), can live inside a private segmented network, while an asset that have a reason for being visible to the open internet (e.g. a reverse proxy / load balancer) can live inside a network that is open to the web. Both of these assets should not exist in the same subnetwork because their sensitivity, purpose, and network access needs are different.",
+          "controls": [
+            {
+              "id": "09me2aal",
+              "externalId": "NET-95"
+            },
+            {
+              "id": "xktnnz89",
+              "externalId": "NET-96"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 11",
+      "name": "Awareness & Training",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Ensure security awareness",
+          "name": "",
+          "description": "Ensure security awareness",
+          "context": "The techniques used by attackers for phishing and other social engineering evolves over time. If employee awareness does not also evolve, then the organization will stand vulnerable to these attacks.\nDeliberate and clear awareness campaigns that educate employees on how to spot these attacks, and how to respond when they detect such activity, will reduce their susceptibility to phishing and social social engineering attacks.",
+          "controls": [
+            {
+              "id": "2050ohsw",
+              "externalId": "GOV-110"
+            },
+            {
+              "id": "hp2hjbk3",
+              "externalId": "SAT-45"
+            },
+            {
+              "id": "ycyk5d7u",
+              "externalId": "SAT-46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 12",
+      "name": "Vendor Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Identify and mitigate third-party vendor risks",
+          "name": "",
+          "description": "Identify and mitigate third-party vendor risks",
+          "context": "A vendor intake and monitoring process enables your organization to control how vendors are used to support your business, and to identify and mitigate potential security risks that may arise from that engagement.\nThe need to identify and mitigate third-party vendor risks are especially crucial for information security when vendors have access to your data or environment..",
+          "controls": [
+            {
+              "id": "kv4hb0ey",
+              "externalId": "TPM-57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Domain 13",
+      "name": "Independent Testing",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Independently stress test and audit controls",
+          "name": "",
+          "description": "Independently stress test and audit controls",
+          "context": "Exposing an organization’s products and services, to be independently stress tested by third-party security researchers and auditors, is a good way to identify vulnerabilities before they lead to actual security incidents.\nSimilarly, independently testing the design and operational effectiveness of an organization's information security program is a good way to ensure that the organization’s information security objectives are being met.",
+          "controls": [
+            {
+              "id": "alrewxmc",
+              "externalId": "IAO-16"
+            },
+            {
+              "id": "wjf2335j",
+              "externalId": "TPM-58"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

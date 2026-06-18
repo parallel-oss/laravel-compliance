@@ -1,0 +1,926 @@
+{
+  "principles": [
+    {
+      "id": "Chapter 1",
+      "name": "General provisions",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 4",
+          "name": "AI literacy",
+          "description": "AI literacy",
+          "controls": [
+            {
+              "id": "yysp0alf",
+              "externalId": "GOV-321"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 2",
+      "name": "Prohibited AI practices",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 5",
+          "name": "Prohibited AI practices",
+          "description": "Prohibited AI practices",
+          "controls": [
+            {
+              "id": "ta7xr0ud",
+              "externalId": "GOV-317"
+            },
+            {
+              "id": "rggvgqte",
+              "externalId": "GOV-318"
+            },
+            {
+              "id": "49r5e6ih",
+              "externalId": "GOV-319"
+            },
+            {
+              "id": "9nk7ix0n",
+              "externalId": "GOV-320"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 3",
+      "name": "High-risk AI systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 8",
+          "name": "Compliance with the requirements",
+          "description": "Compliance with the requirements",
+          "controls": [
+            {
+              "id": "x7le9zx7",
+              "externalId": "AAT-7"
+            },
+            {
+              "id": "uqzgyw1c",
+              "externalId": "RSK-172"
+            }
+          ]
+        },
+        {
+          "id": "Article 9",
+          "name": "Risk management system",
+          "description": "Risk management system",
+          "controls": [
+            {
+              "id": "w8z1v42h",
+              "externalId": "RSK-173"
+            },
+            {
+              "id": "0gufpp7s",
+              "externalId": "RSK-174"
+            },
+            {
+              "id": "7ug548dc",
+              "externalId": "RSK-175"
+            },
+            {
+              "id": "afwz4yp1",
+              "externalId": "RSK-176"
+            },
+            {
+              "id": "o8t4vbcc",
+              "externalId": "RSK-177"
+            },
+            {
+              "id": "3rcv9dgj",
+              "externalId": "RSK-178"
+            },
+            {
+              "id": "6wzdtb84",
+              "externalId": "RSK-179"
+            },
+            {
+              "id": "6410ayrh",
+              "externalId": "RSK-180"
+            },
+            {
+              "id": "6xlzmot2",
+              "externalId": "RSK-181"
+            },
+            {
+              "id": "s9mew154",
+              "externalId": "RSK-182"
+            }
+          ]
+        },
+        {
+          "id": "Article 10",
+          "name": "Data and data governance",
+          "description": "Data and data governance",
+          "controls": [
+            {
+              "id": "zy5fab40",
+              "externalId": "DCH-246"
+            },
+            {
+              "id": "16xffdcr",
+              "externalId": "DCH-247"
+            },
+            {
+              "id": "m1vofaim",
+              "externalId": "DCH-248"
+            },
+            {
+              "id": "5u871g3j",
+              "externalId": "DCH-249"
+            },
+            {
+              "id": "55jxygh4",
+              "externalId": "DCH-250"
+            },
+            {
+              "id": "qksswnm4",
+              "externalId": "DCH-251"
+            }
+          ]
+        },
+        {
+          "id": "Article 11",
+          "name": "Technical documentation",
+          "description": "Technical documentation",
+          "controls": [
+            {
+              "id": "2v6yoopp",
+              "externalId": "CPL-226"
+            },
+            {
+              "id": "arywelby",
+              "externalId": "CPL-227"
+            },
+            {
+              "id": "1n2nh198",
+              "externalId": "DCH-252"
+            }
+          ]
+        },
+        {
+          "id": "Article 12",
+          "name": "Record-keeping",
+          "description": "Record-keeping",
+          "controls": [
+            {
+              "id": "8cam84n1",
+              "externalId": "DCH-253"
+            },
+            {
+              "id": "btwuj36l",
+              "externalId": "DCH-254"
+            },
+            {
+              "id": "lmsrrbc6",
+              "externalId": "DCH-255"
+            }
+          ]
+        },
+        {
+          "id": "Article 13",
+          "name": "Transparency and provision of information to deployers",
+          "description": "Transparency and provision of information to deployers",
+          "controls": [
+            {
+              "id": "8d0jwcb1",
+              "externalId": "CPL-228"
+            },
+            {
+              "id": "tmxagilv",
+              "externalId": "CPL-229"
+            },
+            {
+              "id": "mzut4edx",
+              "externalId": "CPL-230"
+            }
+          ]
+        },
+        {
+          "id": "Article 14",
+          "name": "Human oversight",
+          "description": "Human oversight",
+          "controls": [
+            {
+              "id": "plt0sa2h",
+              "externalId": "CPL-231"
+            },
+            {
+              "id": "6enkfhgt",
+              "externalId": "CPL-232"
+            },
+            {
+              "id": "qtoov0ol",
+              "externalId": "GOV-322"
+            },
+            {
+              "id": "cd9k9ssp",
+              "externalId": "GOV-323"
+            },
+            {
+              "id": "pcmqjdhr",
+              "externalId": "RSK-183"
+            }
+          ]
+        },
+        {
+          "id": "Article 15",
+          "name": "Accuracy, robustness and cybersecurity",
+          "description": "Accuracy, robustness and cybersecurity",
+          "controls": [
+            {
+              "id": "iak152bq",
+              "externalId": "CPL-233"
+            },
+            {
+              "id": "f1uafbbo",
+              "externalId": "CPL-234"
+            },
+            {
+              "id": "x6e1s75h",
+              "externalId": "CPL-235"
+            },
+            {
+              "id": "vt311znl",
+              "externalId": "CPL-236"
+            }
+          ]
+        },
+        {
+          "id": "Article 16",
+          "name": "Obligations of providers of high-risk AI systems",
+          "description": "Obligations of providers of high-risk AI systems",
+          "controls": [
+            {
+              "id": "foy4fy2g",
+              "externalId": "CPL-237"
+            }
+          ]
+        },
+        {
+          "id": "Article 17",
+          "name": "Quality management system",
+          "description": "Quality management system",
+          "controls": [
+            {
+              "id": "2xit2ray",
+              "externalId": "CPL-238"
+            },
+            {
+              "id": "hwmalhv9",
+              "externalId": "CPL-239"
+            },
+            {
+              "id": "doorrsyz",
+              "externalId": "CPL-240"
+            },
+            {
+              "id": "89hwjuk0",
+              "externalId": "CPL-241"
+            }
+          ]
+        },
+        {
+          "id": "Article 18",
+          "name": "Documentation keeping",
+          "description": "Documentation keeping",
+          "controls": [
+            {
+              "id": "lblkhfnm",
+              "externalId": "CPL-242"
+            },
+            {
+              "id": "6si7gfqz",
+              "externalId": "CPL-243"
+            },
+            {
+              "id": "qkaj5ezu",
+              "externalId": "CPL-244"
+            }
+          ]
+        },
+        {
+          "id": "Article 19",
+          "name": "Automatically generated logs",
+          "description": "Automatically generated logs",
+          "controls": [
+            {
+              "id": "iw3i53c4",
+              "externalId": "DCH-256"
+            },
+            {
+              "id": "ce1f7dql",
+              "externalId": "DCH-257"
+            }
+          ]
+        },
+        {
+          "id": "Article 20",
+          "name": "Corrective actions and duty of information",
+          "description": "Corrective actions and duty of information",
+          "controls": [
+            {
+              "id": "65rzd4c9",
+              "externalId": "GOV-324"
+            },
+            {
+              "id": "7xk0btsk",
+              "externalId": "RSK-184"
+            }
+          ]
+        },
+        {
+          "id": "Article 21",
+          "name": "Cooperation with competent authorities",
+          "description": "Cooperation with competent authorities",
+          "controls": [
+            {
+              "id": "5z0sgxg5",
+              "externalId": "CPL-245"
+            },
+            {
+              "id": "ogbr1xgu",
+              "externalId": "CPL-246"
+            },
+            {
+              "id": "6cudrm38",
+              "externalId": "CPL-247"
+            }
+          ]
+        },
+        {
+          "id": "Article 22",
+          "name": "Authorised representatives of providers of high-risk AI systems",
+          "description": "Authorised representatives of providers of high-risk AI systems",
+          "controls": [
+            {
+              "id": "1oymezqw",
+              "externalId": "CPL-248"
+            },
+            {
+              "id": "hyuw1z60",
+              "externalId": "CPL-249"
+            },
+            {
+              "id": "e25qeeqt",
+              "externalId": "CPL-250"
+            },
+            {
+              "id": "karrt303",
+              "externalId": "CPL-251"
+            }
+          ]
+        },
+        {
+          "id": "Article 23",
+          "name": "Obligations of importers",
+          "description": "Obligations of importers",
+          "controls": [
+            {
+              "id": "2us5dy2n",
+              "externalId": "CPL-252"
+            },
+            {
+              "id": "a0hglbuj",
+              "externalId": "CPL-253"
+            },
+            {
+              "id": "9vha19bn",
+              "externalId": "CPL-254"
+            },
+            {
+              "id": "pw63w639",
+              "externalId": "CPL-255"
+            },
+            {
+              "id": "jgeubxqp",
+              "externalId": "CPL-256"
+            },
+            {
+              "id": "0d61s01a",
+              "externalId": "CPL-257"
+            },
+            {
+              "id": "0xxvd72k",
+              "externalId": "CPL-258"
+            }
+          ]
+        },
+        {
+          "id": "Article 24",
+          "name": "Obligations of distributors",
+          "description": "Obligations of distributors",
+          "controls": [
+            {
+              "id": "74nojjs4",
+              "externalId": "CPL-259"
+            },
+            {
+              "id": "jwysikt5",
+              "externalId": "CPL-260"
+            },
+            {
+              "id": "i3igkxfl",
+              "externalId": "CPL-261"
+            },
+            {
+              "id": "z1nvgc9d",
+              "externalId": "CPL-262"
+            },
+            {
+              "id": "giopgbas",
+              "externalId": "CPL-263"
+            },
+            {
+              "id": "ofg8g7t8",
+              "externalId": "CPL-264"
+            }
+          ]
+        },
+        {
+          "id": "Article 25",
+          "name": "Responsibilities along the AI value chain",
+          "description": "Responsibilities along the AI value chain",
+          "controls": [
+            {
+              "id": "vsmhta7k",
+              "externalId": "CPL-265"
+            },
+            {
+              "id": "9o29s6ey",
+              "externalId": "CPL-266"
+            },
+            {
+              "id": "fhtsi3wu",
+              "externalId": "CPL-267"
+            },
+            {
+              "id": "dut63jbw",
+              "externalId": "CPL-268"
+            },
+            {
+              "id": "7pcwirez",
+              "externalId": "CPL-269"
+            }
+          ]
+        },
+        {
+          "id": "Article 26",
+          "name": "Obligations of deployers of high-risk AI systems",
+          "description": "Obligations of deployers of high-risk AI systems",
+          "controls": [
+            {
+              "id": "09v7omq3",
+              "externalId": "CPL-270"
+            },
+            {
+              "id": "1agu8slh",
+              "externalId": "CPL-271"
+            },
+            {
+              "id": "zqrrfegf",
+              "externalId": "CPL-272"
+            },
+            {
+              "id": "rwl397ta",
+              "externalId": "CPL-273"
+            },
+            {
+              "id": "ismrppf5",
+              "externalId": "CPL-274"
+            },
+            {
+              "id": "vcgcvy50",
+              "externalId": "CPL-275"
+            },
+            {
+              "id": "ga50uskc",
+              "externalId": "CPL-276"
+            },
+            {
+              "id": "mptotya1",
+              "externalId": "CPL-277"
+            },
+            {
+              "id": "jttx3mgj",
+              "externalId": "CPL-278"
+            },
+            {
+              "id": "i7fhjelj",
+              "externalId": "CPL-279"
+            },
+            {
+              "id": "fv0x3b9x",
+              "externalId": "DCH-258"
+            },
+            {
+              "id": "extae78d",
+              "externalId": "IRO-277"
+            }
+          ]
+        },
+        {
+          "id": "Article 27",
+          "name": "Fundamental rights impact assessment for high-risk AI systems",
+          "description": "Fundamental rights impact assessment for high-risk AI systems",
+          "controls": [
+            {
+              "id": "gukauhbs",
+              "externalId": "CPL-280"
+            },
+            {
+              "id": "gkuz22hf",
+              "externalId": "CPL-281"
+            },
+            {
+              "id": "ifn1tncz",
+              "externalId": "CPL-282"
+            },
+            {
+              "id": "biaratpb",
+              "externalId": "GOV-325"
+            }
+          ]
+        },
+        {
+          "id": "Article 47",
+          "name": "EU declaration of conformity",
+          "description": "EU declaration of conformity",
+          "controls": [
+            {
+              "id": "c333wuc7",
+              "externalId": "CPL-283"
+            },
+            {
+              "id": "17dlsnrn",
+              "externalId": "CPL-284"
+            },
+            {
+              "id": "2cob611l",
+              "externalId": "CPL-285"
+            },
+            {
+              "id": "vjh7boqf",
+              "externalId": "CPL-286"
+            }
+          ]
+        },
+        {
+          "id": "Article 48",
+          "name": "CE marking",
+          "description": "CE marking",
+          "controls": [
+            {
+              "id": "t3jm36ql",
+              "externalId": "CPL-288"
+            },
+            {
+              "id": "lkvhqvpp",
+              "externalId": "CPL-289"
+            },
+            {
+              "id": "g3v7kocn",
+              "externalId": "CPL-290"
+            },
+            {
+              "id": "alcy1pky",
+              "externalId": "CPL-291"
+            },
+            {
+              "id": "q638to38",
+              "externalId": "CPL-292"
+            }
+          ]
+        },
+        {
+          "id": "Article 49",
+          "name": "Registration",
+          "description": "Registration",
+          "controls": [
+            {
+              "id": "kg2oa980",
+              "externalId": "CPL-293"
+            },
+            {
+              "id": "h92x84y1",
+              "externalId": "CPL-294"
+            },
+            {
+              "id": "ee693lfb",
+              "externalId": "CPL-295"
+            },
+            {
+              "id": "aqe33hq9",
+              "externalId": "CPL-296"
+            },
+            {
+              "id": "9ijra1dh",
+              "externalId": "CPL-297"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 4",
+      "name": "Transparency obligations for providers and deployers of certain ai systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 50",
+          "name": "Transparency obligations for providers and deployers of certain AI systems",
+          "description": "Transparency obligations for providers and deployers of certain AI systems",
+          "controls": [
+            {
+              "id": "5w06s61a",
+              "externalId": "CPL-298"
+            },
+            {
+              "id": "l59il2qw",
+              "externalId": "CPL-299"
+            },
+            {
+              "id": "3m0fwlde",
+              "externalId": "CPL-300"
+            },
+            {
+              "id": "w7d5204c",
+              "externalId": "CPL-301"
+            },
+            {
+              "id": "nzublms5",
+              "externalId": "CPL-302"
+            },
+            {
+              "id": "yojoclhc",
+              "externalId": "CPL-303"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 5",
+      "name": "General-purpose AI models",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 51",
+          "name": "Classification of general-purpose AI models as general-purpose AI models with systemic risk",
+          "description": "Classification of general-purpose AI models as general-purpose AI models with systemic risk",
+          "controls": [
+            {
+              "id": "9ax77wad",
+              "externalId": "CPL-304"
+            },
+            {
+              "id": "vge5luyi",
+              "externalId": "CPL-305"
+            }
+          ]
+        },
+        {
+          "id": "Article 52",
+          "name": "Procedure",
+          "description": "Procedure",
+          "controls": [
+            {
+              "id": "q1gv1ast",
+              "externalId": "CPL-306"
+            },
+            {
+              "id": "6h2522ur",
+              "externalId": "CPL-307"
+            },
+            {
+              "id": "g9xnj92k",
+              "externalId": "CPL-308"
+            },
+            {
+              "id": "zfg9johf",
+              "externalId": "RSK-185"
+            }
+          ]
+        },
+        {
+          "id": "Article 53",
+          "name": "Obligations for providers of general-purpose AI models",
+          "description": "Obligations for providers of general-purpose AI models",
+          "controls": [
+            {
+              "id": "tlq5x9oh",
+              "externalId": "CPL-309"
+            },
+            {
+              "id": "o9og4dpk",
+              "externalId": "CPL-310"
+            },
+            {
+              "id": "h08rabe3",
+              "externalId": "CPL-311"
+            },
+            {
+              "id": "10ul1wnr",
+              "externalId": "CPL-312"
+            },
+            {
+              "id": "ycznofjg",
+              "externalId": "CPL-313"
+            },
+            {
+              "id": "wobpz8m1",
+              "externalId": "CPL-315"
+            }
+          ]
+        },
+        {
+          "id": "Article 54",
+          "name": "Authorised representatives of providers of general-purpose AI models",
+          "description": "Authorised representatives of providers of general-purpose AI models",
+          "controls": [
+            {
+              "id": "68yzy79d",
+              "externalId": "CPL-316"
+            },
+            {
+              "id": "j4j2iq9e",
+              "externalId": "CPL-317"
+            },
+            {
+              "id": "idvhog44",
+              "externalId": "CPL-318"
+            },
+            {
+              "id": "h5q1e61d",
+              "externalId": "CPL-319"
+            },
+            {
+              "id": "1q10d4jj",
+              "externalId": "CPL-320"
+            },
+            {
+              "id": "fu305up3",
+              "externalId": "CPL-321"
+            }
+          ]
+        },
+        {
+          "id": "Article 55",
+          "name": "Obligations of providers of general-purpose AI models with systemic risk",
+          "description": "Obligations of providers of general-purpose AI models with systemic risk",
+          "controls": [
+            {
+              "id": "mmsmsjfr",
+              "externalId": "CPL-322"
+            },
+            {
+              "id": "dc6p2yxt",
+              "externalId": "CPL-323"
+            },
+            {
+              "id": "ha5trpwq",
+              "externalId": "RSK-186"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 6",
+      "name": "Measures in support of innovation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 60",
+          "name": "Testing of high-risk AI systems in real world conditions outside AI regulatory sandboxes",
+          "description": "Testing of high-risk AI systems in real world conditions outside AI regulatory sandboxes",
+          "controls": [
+            {
+              "id": "jiutsc51",
+              "externalId": "CPL-324"
+            },
+            {
+              "id": "a6kbda74",
+              "externalId": "CPL-325"
+            },
+            {
+              "id": "wjbnv1we",
+              "externalId": "CPL-326"
+            },
+            {
+              "id": "2zbmg1lx",
+              "externalId": "CPL-327"
+            },
+            {
+              "id": "3wrirfhx",
+              "externalId": "CPL-328"
+            },
+            {
+              "id": "pa2gkxod",
+              "externalId": "CPL-329"
+            },
+            {
+              "id": "u9ywpvum",
+              "externalId": "CPL-330"
+            },
+            {
+              "id": "a2gswvgb",
+              "externalId": "CPL-331"
+            },
+            {
+              "id": "dqwujgl0",
+              "externalId": "CPL-332"
+            }
+          ]
+        },
+        {
+          "id": "Article 61",
+          "name": "Informed consent to participate in testing in real world conditions outside AI regulatory sandboxes",
+          "description": "Informed consent to participate in testing in real world conditions outside AI regulatory sandboxes",
+          "controls": [
+            {
+              "id": "aehvlivw",
+              "externalId": "CPL-333"
+            },
+            {
+              "id": "0vjvp00i",
+              "externalId": "CPL-334"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 9",
+      "name": "Post-market monitoring, information sharing and market surveillance",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 72",
+          "name": "Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems",
+          "description": "Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems",
+          "controls": [
+            {
+              "id": "xhcls5l5",
+              "externalId": "CPL-335"
+            },
+            {
+              "id": "0keiyfu8",
+              "externalId": "CPL-336"
+            },
+            {
+              "id": "lajbop7z",
+              "externalId": "CPL-337"
+            }
+          ]
+        },
+        {
+          "id": "Article 73",
+          "name": "Reporting of serious incidents",
+          "description": "Reporting of serious incidents",
+          "controls": [
+            {
+              "id": "vzrnwdxj",
+              "externalId": "IRO-278"
+            },
+            {
+              "id": "eijffh7e",
+              "externalId": "IRO-279"
+            },
+            {
+              "id": "dyqugwey",
+              "externalId": "IRO-280"
+            },
+            {
+              "id": "dxnps6fo",
+              "externalId": "IRO-281"
+            },
+            {
+              "id": "04ujg61m",
+              "externalId": "IRO-282"
+            },
+            {
+              "id": "se8hz8ui",
+              "externalId": "IRO-283"
+            },
+            {
+              "id": "quzizk71",
+              "externalId": "IRO-284"
+            },
+            {
+              "id": "fwkxfczx",
+              "externalId": "IRO-285"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

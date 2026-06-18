@@ -1,0 +1,352 @@
+[
+  {
+    "frameworkId": "aiact",
+    "file": "resources/frameworks/vanta/raw/aiact.json",
+    "principles": 7,
+    "sections": 35,
+    "referencedControls": 157
+  },
+  {
+    "frameworkId": "aiuc1",
+    "file": "resources/frameworks/vanta/raw/aiuc1.json",
+    "principles": 6,
+    "sections": 51,
+    "referencedControls": 49
+  },
+  {
+    "frameworkId": "aue8",
+    "file": "resources/frameworks/vanta/raw/aue8.json",
+    "principles": 8,
+    "sections": 8,
+    "referencedControls": 153
+  },
+  {
+    "frameworkId": "awsFTR",
+    "file": "resources/frameworks/vanta/raw/awsFTR.json",
+    "principles": 13,
+    "sections": 45,
+    "referencedControls": 45
+  },
+  {
+    "frameworkId": "ccpa",
+    "file": "resources/frameworks/vanta/raw/ccpa.json",
+    "principles": 29,
+    "sections": 154,
+    "referencedControls": 178
+  },
+  {
+    "frameworkId": "cisv8",
+    "file": "resources/frameworks/vanta/raw/cisv8.json",
+    "principles": 18,
+    "sections": 152,
+    "referencedControls": 152
+  },
+  {
+    "frameworkId": "cjis",
+    "file": "resources/frameworks/vanta/raw/cjis.json",
+    "principles": 20,
+    "sections": 184,
+    "referencedControls": 319
+  },
+  {
+    "frameworkId": "cmmc2",
+    "file": "resources/frameworks/vanta/raw/cmmc2.json",
+    "principles": 14,
+    "sections": 149,
+    "referencedControls": 408
+  },
+  {
+    "frameworkId": "cps234",
+    "file": "resources/frameworks/vanta/raw/cps234.json",
+    "principles": 9,
+    "sections": 9,
+    "referencedControls": 29
+  },
+  {
+    "frameworkId": "cri",
+    "file": "resources/frameworks/vanta/raw/cri.json",
+    "principles": 28,
+    "sections": 119,
+    "referencedControls": 318
+  },
+  {
+    "frameworkId": "dora",
+    "file": "resources/frameworks/vanta/raw/dora.json",
+    "principles": 5,
+    "sections": 22,
+    "referencedControls": 104
+  },
+  {
+    "frameworkId": "fedRAMPr5",
+    "file": "resources/frameworks/vanta/raw/fedRAMPr5.json",
+    "principles": 18,
+    "sections": 410,
+    "referencedControls": 410
+  },
+  {
+    "frameworkId": "fedramp",
+    "file": "resources/frameworks/vanta/raw/fedramp.json",
+    "principles": 17,
+    "sections": 325,
+    "referencedControls": 325
+  },
+  {
+    "frameworkId": "fedramp20x",
+    "file": "resources/frameworks/vanta/raw/fedramp20x.json",
+    "principles": 17,
+    "sections": 39,
+    "referencedControls": 202
+  },
+  {
+    "frameworkId": "fedramp20x_2026",
+    "file": "resources/frameworks/vanta/raw/fedramp20x_2026.json",
+    "principles": 10,
+    "sections": 35,
+    "referencedControls": 204
+  },
+  {
+    "frameworkId": "fedrampKSI",
+    "file": "resources/frameworks/vanta/raw/fedrampKSI.json",
+    "principles": 10,
+    "sections": 10,
+    "referencedControls": 51
+  },
+  {
+    "frameworkId": "gdpr",
+    "file": "resources/frameworks/vanta/raw/gdpr.json",
+    "principles": 6,
+    "sections": 33,
+    "referencedControls": 83
+  },
+  {
+    "frameworkId": "hipaa",
+    "file": "resources/frameworks/vanta/raw/hipaa.json",
+    "principles": 11,
+    "sections": 96,
+    "referencedControls": 73
+  },
+  {
+    "frameworkId": "hitruste1",
+    "file": "resources/frameworks/vanta/raw/hitruste1.json",
+    "principles": 19,
+    "sections": 19,
+    "referencedControls": 2854
+  },
+  {
+    "frameworkId": "iso22301",
+    "file": "resources/frameworks/vanta/raw/iso22301.json",
+    "principles": 7,
+    "sections": 26,
+    "referencedControls": 56
+  },
+  {
+    "frameworkId": "iso27001",
+    "file": "resources/frameworks/vanta/raw/iso27001.json",
+    "principles": 21,
+    "sections": 140,
+    "referencedControls": 140
+  },
+  {
+    "frameworkId": "iso27001_2022",
+    "file": "resources/frameworks/vanta/raw/iso27001_2022.json",
+    "principles": 11,
+    "sections": 123,
+    "referencedControls": 123
+  },
+  {
+    "frameworkId": "iso27017",
+    "file": "resources/frameworks/vanta/raw/iso27017.json",
+    "principles": 27,
+    "sections": 44,
+    "referencedControls": 44
+  },
+  {
+    "frameworkId": "iso27018",
+    "file": "resources/frameworks/vanta/raw/iso27018.json",
+    "principles": 18,
+    "sections": 41,
+    "referencedControls": 41
+  },
+  {
+    "frameworkId": "iso27701",
+    "file": "resources/frameworks/vanta/raw/iso27701.json",
+    "principles": 10,
+    "sections": 55,
+    "referencedControls": 55
+  },
+  {
+    "frameworkId": "iso27701_2025",
+    "file": "resources/frameworks/vanta/raw/iso27701_2025.json",
+    "principles": 10,
+    "sections": 108,
+    "referencedControls": 108
+  },
+  {
+    "frameworkId": "iso42001",
+    "file": "resources/frameworks/vanta/raw/iso42001.json",
+    "principles": 16,
+    "sections": 70,
+    "referencedControls": 70
+  },
+  {
+    "frameworkId": "iso9001",
+    "file": "resources/frameworks/vanta/raw/iso9001.json",
+    "principles": 7,
+    "sections": 28,
+    "referencedControls": 65
+  },
+  {
+    "frameworkId": "msftSSPA",
+    "file": "resources/frameworks/vanta/raw/msftSSPA.json",
+    "principles": 11,
+    "sections": 67,
+    "referencedControls": 67
+  },
+  {
+    "frameworkId": "mvsp",
+    "file": "resources/frameworks/vanta/raw/mvsp.json",
+    "principles": 4,
+    "sections": 49,
+    "referencedControls": 49
+  },
+  {
+    "frameworkId": "nis2d",
+    "file": "resources/frameworks/vanta/raw/nis2d.json",
+    "principles": 11,
+    "sections": 33,
+    "referencedControls": 56
+  },
+  {
+    "frameworkId": "nist171",
+    "file": "resources/frameworks/vanta/raw/nist171.json",
+    "principles": 14,
+    "sections": 110,
+    "referencedControls": 110
+  },
+  {
+    "frameworkId": "nist53",
+    "file": "resources/frameworks/vanta/raw/nist53.json",
+    "principles": 20,
+    "sections": 1008,
+    "referencedControls": 1008
+  },
+  {
+    "frameworkId": "nistAiRmf",
+    "file": "resources/frameworks/vanta/raw/nistAiRmf.json",
+    "principles": 4,
+    "sections": 19,
+    "referencedControls": 72
+  },
+  {
+    "frameworkId": "nistCSF",
+    "file": "resources/frameworks/vanta/raw/nistCSF.json",
+    "principles": 23,
+    "sections": 108,
+    "referencedControls": 108
+  },
+  {
+    "frameworkId": "nistcsf2",
+    "file": "resources/frameworks/vanta/raw/nistcsf2.json",
+    "principles": 6,
+    "sections": 22,
+    "referencedControls": 106
+  },
+  {
+    "frameworkId": "ofdss",
+    "file": "resources/frameworks/vanta/raw/ofdss.json",
+    "principles": 13,
+    "sections": 32,
+    "referencedControls": 79
+  },
+  {
+    "frameworkId": "pciDss4",
+    "file": "resources/frameworks/vanta/raw/pciDss4.json",
+    "principles": 14,
+    "sections": 66,
+    "referencedControls": 790
+  },
+  {
+    "frameworkId": "pciSaqA",
+    "file": "resources/frameworks/vanta/raw/pciSaqA.json",
+    "principles": 15,
+    "sections": 23,
+    "referencedControls": 23
+  },
+  {
+    "frameworkId": "pciSaqAEP",
+    "file": "resources/frameworks/vanta/raw/pciSaqAEP.json",
+    "principles": 15,
+    "sections": 191,
+    "referencedControls": 191
+  },
+  {
+    "frameworkId": "pciSaqDMerchant",
+    "file": "resources/frameworks/vanta/raw/pciSaqDMerchant.json",
+    "principles": 15,
+    "sections": 330,
+    "referencedControls": 330
+  },
+  {
+    "frameworkId": "pciSaqDSP",
+    "file": "resources/frameworks/vanta/raw/pciSaqDSP.json",
+    "principles": 15,
+    "sections": 352,
+    "referencedControls": 352
+  },
+  {
+    "frameworkId": "soc2",
+    "file": "resources/frameworks/vanta/raw/soc2.json",
+    "principles": 21,
+    "sections": 62,
+    "referencedControls": 119
+  },
+  {
+    "frameworkId": "soxITGC",
+    "file": "resources/frameworks/vanta/raw/soxITGC.json",
+    "principles": 6,
+    "sections": 33,
+    "referencedControls": 33
+  },
+  {
+    "frameworkId": "t23nycrr500",
+    "file": "resources/frameworks/vanta/raw/t23nycrr500.json",
+    "principles": 16,
+    "sections": 29,
+    "referencedControls": 29
+  },
+  {
+    "frameworkId": "tisax",
+    "file": "resources/frameworks/vanta/raw/tisax.json",
+    "principles": 9,
+    "sections": 28,
+    "referencedControls": 79
+  },
+  {
+    "frameworkId": "trust",
+    "file": "resources/frameworks/vanta/raw/trust.json",
+    "principles": 4,
+    "sections": 11,
+    "referencedControls": 37
+  },
+  {
+    "frameworkId": "ukCyberEssentials",
+    "file": "resources/frameworks/vanta/raw/ukCyberEssentials.json",
+    "principles": 5,
+    "sections": 5,
+    "referencedControls": 34
+  },
+  {
+    "frameworkId": "ukCyberEssentials33",
+    "file": "resources/frameworks/vanta/raw/ukCyberEssentials33.json",
+    "principles": 5,
+    "sections": 5,
+    "referencedControls": 34
+  },
+  {
+    "frameworkId": "usDataPrivacy",
+    "file": "resources/frameworks/vanta/raw/usDataPrivacy.json",
+    "principles": 5,
+    "sections": 10,
+    "referencedControls": 96
+  }
+]

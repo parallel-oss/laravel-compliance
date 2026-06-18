@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/parallel-oss/laravel-compliance/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/parallel-oss/laravel-compliance/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/parallel-oss/laravel-compliance.svg?style=flat-square)](https://packagist.org/packages/parallel-oss/laravel-compliance)
 
-Laravel Compliance lets you map code-level evidence to enum-backed capabilities and framework references for GDPR, SOC 2, OWASP ASVS, and OWASP WSTG. It does not claim that an annotation proves compliance; it gives teams a typed, reviewable way to connect implementation evidence to standards and generate audit-friendly reports.
+Laravel Compliance lets you map code-level evidence to enum-backed controls and framework references for GDPR, SOC 2, OWASP ASVS, and OWASP WSTG. It does not claim that an annotation proves compliance; it gives teams a typed, reviewable way to connect implementation evidence to standards and generate audit-friendly reports.
 
 ## Installation
 
@@ -54,23 +54,23 @@ By default, enums are written to `App\Enums\Compliance`. Each generated enum imp
 This package publishes portable Agent Skills under `skills/` and advertises them through Composer metadata:
 
 - `use-laravel-compliance`: how to annotate Laravel code, import standards, generate enums, and produce reports.
-- `map-compliance-evidence`: how to map code behavior to capabilities and framework references without overclaiming compliance.
+- `map-compliance-evidence`: how to map code behavior to controls and framework references without overclaiming compliance.
 
 Agents that support Composer-discovered skills can sync them from the package. Agents that read repository instruction files can use `AGENTS.md`.
 
 ## Usage
 
-Prefer capability evidence when the code demonstrates what the system does and that evidence may support multiple frameworks:
+Prefer control evidence when the code demonstrates behavior that may support multiple frameworks:
 
 ```php
-use Parallel\Compliance\Capabilities\CommonCapability;
+use Parallel\Compliance\Controls\VantaControl;
 use Parallel\Compliance\Evidence;
 use Parallel\Compliance\EvidenceStatus;
 
 class AccountClosureService
 {
     #[Evidence(
-        capabilities: CommonCapability::UserDataErasure,
+        controls: VantaControl::DCH_1,
         summary: 'Deletes user profile data and related records during account closure.',
         status: EvidenceStatus::Implemented,
     )]
@@ -81,28 +81,26 @@ class AccountClosureService
 }
 ```
 
-Capability mappings are enum-backed in `config/compliance.php`. The built-in mappings cover the package's common capabilities across GDPR, SOC 2 Trust Services Criteria sections, and broad OWASP ASVS/WSTG references:
+Control mappings are enum-backed and centralized in `src/Mappings`. Vanta controls map to SOC 2 sections in `VantaControlSoc2Mappings`; additional GDPR and broad OWASP mappings live in `VantaControlFrameworkMappings`:
 
 ```php
-use Parallel\Compliance\Capabilities\CommonCapability;
-use Parallel\Compliance\Frameworks\GdprRequirement;
+use Parallel\Compliance\Controls\VantaControl;
+use Parallel\Compliance\Frameworks\GdprArticle;
 use Parallel\Compliance\Frameworks\OwaspRequirement;
-use Parallel\Compliance\Frameworks\Soc2TrustServicesCriteria;
+use Parallel\Compliance\Frameworks\Soc2Criteria;
 
-return [
-    'capability_mappings' => [
-        CommonCapability::UserDataErasure->value => [
-            GdprRequirement::Article17,
-            OwaspRequirement::AsvsDataProtection,
-            Soc2TrustServicesCriteria::C1_2,
-            Soc2TrustServicesCriteria::CC6_5,
-            Soc2TrustServicesCriteria::P4_3,
-        ],
-    ],
+VantaControl::DCH_1; // Customer data deleted upon leaving
+
+// Mapped references include:
+[
+    Soc2Criteria::C1_2,
+    Soc2Criteria::CC6_5,
+    GdprArticle::Article17,
+    OwaspRequirement::AsvsDataProtection,
 ];
 ```
 
-Use direct controls when the code maps to a technical requirement such as ASVS or WSTG:
+Use direct requirements when the code maps to a technical requirement such as ASVS or WSTG:
 
 ```php
 use App\Enums\Compliance\OwaspAsvs500Requirements;
@@ -110,7 +108,7 @@ use App\Enums\Compliance\OwaspWstgLatestRequirements;
 use Parallel\Compliance\Evidence;
 
 #[Evidence(
-    controls: [
+    requirements: [
         OwaspAsvs500Requirements::V2_1_1,
         OwaspWstgLatestRequirements::WSTG_ATHN_01,
     ],
@@ -120,7 +118,7 @@ use Parallel\Compliance\Evidence;
 class ResetPasswordController
 {
     #[Evidence(
-        controls: OwaspAsvs500Requirements::V2_1_2,
+        requirements: OwaspAsvs500Requirements::V2_1_2,
         summary: 'Password reset tokens are single-use.',
     )]
     public function __invoke(): void

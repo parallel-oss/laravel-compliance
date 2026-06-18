@@ -29,4 +29,81 @@ enum OwaspRequirement: string implements FrameworkRequirement
     case WstgBusinessLogic = 'OWASP_WSTG:WSTG-BUSL';
     case WstgClientSide = 'OWASP_WSTG:WSTG-CLNT';
     case WstgApi = 'OWASP_WSTG:WSTG-APIT';
+
+    public function id(): string
+    {
+        return $this->value;
+    }
+
+    public function source(): string
+    {
+        return match ($this) {
+            self::AsvsArchitecture => 'OWASP ASVS',
+            self::AsvsAuthentication => 'OWASP ASVS',
+            self::AsvsSessionManagement => 'OWASP ASVS',
+            self::AsvsAccessControl => 'OWASP ASVS',
+            self::AsvsInputValidation => 'OWASP ASVS',
+            self::AsvsCryptography => 'OWASP ASVS',
+            self::AsvsErrorLogging => 'OWASP ASVS',
+            self::AsvsDataProtection => 'OWASP ASVS',
+            self::AsvsCommunications => 'OWASP ASVS',
+            self::AsvsMaliciousCode => 'OWASP ASVS',
+            self::AsvsBusinessLogic => 'OWASP ASVS',
+            self::AsvsFilesResources => 'OWASP ASVS',
+            self::AsvsApiWebService => 'OWASP ASVS',
+            self::AsvsConfiguration => 'OWASP ASVS',
+            self::WstgConfiguration => 'OWASP WSTG',
+            self::WstgIdentityManagement => 'OWASP WSTG',
+            self::WstgAuthentication => 'OWASP WSTG',
+            self::WstgAuthorization => 'OWASP WSTG',
+            self::WstgSessionManagement => 'OWASP WSTG',
+            self::WstgInputValidation => 'OWASP WSTG',
+            self::WstgErrorHandling => 'OWASP WSTG',
+            self::WstgCryptography => 'OWASP WSTG',
+            self::WstgBusinessLogic => 'OWASP WSTG',
+            self::WstgClientSide => 'OWASP WSTG',
+            self::WstgApi => 'OWASP WSTG',
+        };
+    }
+
+    public function title(): string
+    {
+        return match ($this) {
+            self::AsvsArchitecture => 'Architecture, Design and Threat Modeling',
+            self::AsvsAuthentication => 'Authentication',
+            self::AsvsSessionManagement => 'Session Management',
+            self::AsvsAccessControl => 'Access Control',
+            self::AsvsInputValidation => 'Input Validation',
+            self::AsvsCryptography => 'Cryptography',
+            self::AsvsErrorLogging => 'Error Handling and Logging',
+            self::AsvsDataProtection => 'Data Protection',
+            self::AsvsCommunications => 'Communications',
+            self::AsvsMaliciousCode => 'Malicious Code',
+            self::AsvsBusinessLogic => 'Business Logic',
+            self::AsvsFilesResources => 'Files and Resources',
+            self::AsvsApiWebService => 'API and Web Service',
+            self::AsvsConfiguration => 'Configuration',
+            self::WstgConfiguration => 'Configuration and Deployment Management Testing',
+            self::WstgIdentityManagement => 'Identity Management Testing',
+            self::WstgAuthentication => 'Authentication Testing',
+            self::WstgAuthorization => 'Authorization Testing',
+            self::WstgSessionManagement => 'Session Management Testing',
+            self::WstgInputValidation => 'Input Validation Testing',
+            self::WstgErrorHandling => 'Error Handling Testing',
+            self::WstgCryptography => 'Cryptography Testing',
+            self::WstgBusinessLogic => 'Business Logic Testing',
+            self::WstgClientSide => 'Client-side Testing',
+            self::WstgApi => 'API Testing',
+        };
+    }
+
+    public function description(): ?string
+    {
+        return null;
+    }
+
+    public function domain(): string
+    {
+        return 'Application security';
+    }
 }

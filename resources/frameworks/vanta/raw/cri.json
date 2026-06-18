@@ -1,0 +1,4751 @@
+{
+  "principles": [
+    {
+      "id": "DE.AE",
+      "name": "DETECT: Adverse Event Analysis",
+      "optional": false,
+      "sections": [
+        {
+          "id": "DE.AE-02",
+          "name": "Potentially Adverse Event Analysis",
+          "description": "Potentially adverse events are analyzed to better understand associated activities",
+          "controls": [
+            {
+              "id": "ufmfxaso",
+              "externalId": "CFG-237",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ay76adun",
+              "externalId": "MON-2200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.AE-03",
+          "name": "Event Information Correlation",
+          "description": "Information is correlated from multiple sources",
+          "controls": [
+            {
+              "id": "1y3muh7o",
+              "externalId": "MON-2300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ept2dyo4",
+              "externalId": "MON-2400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.AE-04",
+          "name": "Impact & Scope Determination",
+          "description": "The estimated impact and scope of adverse events are understood",
+          "controls": [
+            {
+              "id": "3ntmsr6o",
+              "externalId": "IRO-335",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.AE-06",
+          "name": "Event Information Sharing",
+          "description": "Information on adverse events is provided to authorized staff and tools",
+          "controls": [
+            {
+              "id": "ut15xlio",
+              "externalId": "IRO-225",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.AE-07",
+          "name": "Contextual Analysis",
+          "description": "Cyber threat intelligence and other contextual information are integrated into the analysis",
+          "controls": [
+            {
+              "id": "7l55rxdl",
+              "externalId": "IRO-226",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "09y9o26e",
+              "externalId": "IRO-336",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "DE.AE-08",
+          "name": "Incident Declaration",
+          "description": "Incidents are declared when adverse events meet the defined incident criteria",
+          "controls": [
+            {
+              "id": "f1fkj6sc",
+              "externalId": "IRO-227",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DE.CM",
+      "name": "DETECT: Continuous Monitoring",
+      "optional": false,
+      "sections": [
+        {
+          "id": "DE.CM-01",
+          "name": "Network Monitoring",
+          "description": "Networks and network services are monitored to find potentially adverse events",
+          "controls": [
+            {
+              "id": "zr7t21ob",
+              "externalId": "MON-2100",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "0f216w5n",
+              "externalId": "NET-1800",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "5eyluyz3",
+              "externalId": "NET-1900",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "x34sk706",
+              "externalId": "NET-1600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "s4reo7fs",
+              "externalId": "END-7000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "u6cf4cq6",
+              "externalId": "WEB-10",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.CM-02",
+          "name": "Physical Environment Monitoring",
+          "description": "The physical environment is monitored to find potentially adverse events",
+          "controls": [
+            {
+              "id": "vy9n5xdx",
+              "externalId": "OPS-96",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.CM-03",
+          "name": "Personnel Activity Monitoring",
+          "description": "Personnel activity and technology usage are monitored to find potentially adverse events",
+          "controls": [
+            {
+              "id": "gomwfqj2",
+              "externalId": "PES-303",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "igqmy24g",
+              "externalId": "IAC-699",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ni4mfg6c",
+              "externalId": "IAC-701",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.CM-06",
+          "name": "Service Provider Monitoring",
+          "description": "External service provider activities and services are monitored to find potentially adverse events",
+          "controls": [
+            {
+              "id": "zl9h2ypt",
+              "externalId": "IAC-700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "i44a7rqy",
+              "externalId": "TPM-169",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "DE.CM-09",
+          "name": "Hardware, Software, & Data Monitoring",
+          "description": "Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events",
+          "controls": [
+            {
+              "id": "2p4azc2s",
+              "externalId": "TPM-170",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "flndsu6t",
+              "externalId": "IAO-156",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "rp8i2k9d",
+              "externalId": "EMB-3",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX.CN",
+      "name": "EXTEND: Third-Party Contracts and Agreements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "EX.CN-01",
+          "name": "Contract General Requirements",
+          "description": "Contracts clearly specify the rights and responsibilities of each party and establish requirements to address the anticipated risks posed by a third party over the life of the relationship",
+          "controls": [
+            {
+              "id": "uo76za38",
+              "externalId": "TDA-1600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "fyjmnthh",
+              "externalId": "TPM-181",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "jq8h8ym6",
+              "externalId": "TPM-182",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "EX.CN-02",
+          "name": "Contract Cybersecurity-Related Requirements",
+          "description": "Expected cybersecurity practices for critical third parties that meet the risk management objectives of the organization are identified, documented, and agreed",
+          "controls": [
+            {
+              "id": "80b4so8j",
+              "externalId": "TPM-183",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ln17gfiy",
+              "externalId": "TPM-184",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "nf8jvfqo",
+              "externalId": "TPM-185",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "yeq85lwd",
+              "externalId": "TPM-186",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX.DD",
+      "name": "EXTEND: Procurement Planning and Due Diligence",
+      "optional": false,
+      "sections": [
+        {
+          "id": "EX.DD-01",
+          "name": "Procurement Planning",
+          "description": "Planning is performed for procurements and agreements that involve elevated risk to the organization",
+          "controls": [
+            {
+              "id": "2e1wg35w",
+              "externalId": "IRO-334",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "v24qpcto",
+              "externalId": "TPM-171",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "nxcpayyk",
+              "externalId": "TPM-172",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "EX.DD-02",
+          "name": "Prospective Third Party Due Diligence",
+          "description": "The organization performs thorough due diligence on prospective third parties, consistent with procurement planning and commensurate with the level of risk, criticality, and complexity of each third-party relationship",
+          "controls": [
+            {
+              "id": "059ixqqg",
+              "externalId": "TPM-173",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "g5dxnkpu",
+              "externalId": "TPM-174",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "7fw1mx6n",
+              "externalId": "TPM-175",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "bh4aauji",
+              "externalId": "TPM-176",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "EX.DD-03",
+          "name": "Technology & Cybersecurity Risk Assessment",
+          "description": "The organization assesses the risks and suitability of the technology and cybersecurity capabilities and risk management practices of prospective third parties",
+          "controls": [
+            {
+              "id": "lfu17jeb",
+              "externalId": "TPM-177",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "x5o3wwi1",
+              "externalId": "TPM-178",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "7kxzv8s4",
+              "externalId": "TPM-179",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "EX.DD-04",
+          "name": "Product & Service Due Diligence",
+          "description": "Third-party products and services are assessed relative to business, risk management, and cybersecurity requirements",
+          "controls": [
+            {
+              "id": "e4yol6ft",
+              "externalId": "TPM-180",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "818nipf5",
+              "externalId": "TDA-1500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX.MM",
+      "name": "EXTEND: Monitoring and Managing Suppliers",
+      "optional": false,
+      "sections": [
+        {
+          "id": "EX.MM-01",
+          "name": "Ongoing Third-Party Monitoring",
+          "description": "Critical suppliers and third parties are monitored to confirm that they continue to satisfy their obligations as required; reviews of audits, test results, or other assessments of third parties are conducted",
+          "controls": [
+            {
+              "id": "0nggifaf",
+              "externalId": "TPM-187",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "dabhwwao",
+              "externalId": "TPM-188",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "pknkkg2g",
+              "externalId": "TPM-189",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "g7798nxd",
+              "externalId": "TPM-190",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5v7appkk",
+              "externalId": "TPM-191",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "shf8vw2t",
+              "externalId": "TPM-192",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "EX.MM-02",
+          "name": "Ongoing Third-Party Management",
+          "description": "Inter-dependent and coordinated cybersecurity risk management practices with third parties are managed to ensure ongoing effectiveness",
+          "controls": [
+            {
+              "id": "5br8m3g5",
+              "externalId": "TPM-193",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "n6yo1xfp",
+              "externalId": "TPM-194",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "eh5we176",
+              "externalId": "TPM-195",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX.TR",
+      "name": "EXTEND: Relationship Termination",
+      "optional": false,
+      "sections": [
+        {
+          "id": "EX.TR-01",
+          "name": "Termination Planning",
+          "description": "The organization anticipates and plans for the termination of critical relationships under both normal and adverse circumstances",
+          "controls": [
+            {
+              "id": "yvhdbrk3",
+              "externalId": "TPM-196",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "u01vzntn",
+              "externalId": "TPM-197",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "htdq9m7p",
+              "externalId": "TPM-198",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2"
+          ]
+        },
+        {
+          "id": "EX.TR-02",
+          "name": "Termination Practices",
+          "description": "Relationship terminations and the return or destruction of assets are performed in a controlled and safe manner",
+          "controls": [
+            {
+              "id": "4sdnb25d",
+              "externalId": "TPM-199",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.AU",
+      "name": "GOVERN: Independent Audit Function",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.AU-01",
+          "name": "Independent Audit Compliance Assessment",
+          "description": "The independent audit function assesses compliance with internal controls and applicable laws and regulations",
+          "controls": [
+            {
+              "id": "sm6lcqi2",
+              "externalId": "IAO-149",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "13sn7jaz",
+              "externalId": "CPL-1500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ow449c1g",
+              "externalId": "CPL-1600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "a117gp05",
+              "externalId": "IRO-65",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "a46igws7",
+              "externalId": "TPM-124",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.AU-02",
+          "name": "Independent Audit Procedures",
+          "description": "The independent audit function updates its procedures and audit plans to adjust to the evolving technology and cybersecurity environment",
+          "controls": [
+            {
+              "id": "6t81clmg",
+              "externalId": "CPL-122",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "kckkbfx2",
+              "externalId": "CPL-123",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.AU-03",
+          "name": "Independent Audit Reporting",
+          "description": "The independent audit function identifies, tracks, and reports significant changes in the organization's risk exposure to the governing authority (e.g., the Board or one of its committees)",
+          "controls": [
+            {
+              "id": "ek9n2buq",
+              "externalId": "CPL-124",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "veycb7dv",
+              "externalId": "CPL-125",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ywy6gu9a",
+              "externalId": "CPL-126",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.IR",
+      "name": "GOVERN: Independent Risk Management Function",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.IR-01",
+          "name": "Independent Risk Management Function",
+          "description": "The independent risk management function provides assurance that the technology and cybersecurity risk management frameworks have been implemented according to policy and are consistent with the organization's risk appetite and tolerance",
+          "controls": [
+            {
+              "id": "88rpgcbk",
+              "externalId": "TPM-123",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "xlpvmtwn",
+              "externalId": "IAO-144",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "l7gzou02",
+              "externalId": "IAO-145",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "GV.IR-02",
+          "name": "Independent Risk Management Evaluation",
+          "description": "The independent risk management function evaluates the appropriateness of the risk management program for the organization's risk appetite and proposes program improvements as warranted",
+          "controls": [
+            {
+              "id": "jvo4a58b",
+              "externalId": "IAO-146",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "geee3s43",
+              "externalId": "IAO-147",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "GV.IR-03",
+          "name": "Independent Risk Management Reporting",
+          "description": "The independent risk management function reports on the implementation of the technology and cybersecurity risk management frameworks to the governing authority (e.g., the Board or one of its committees)",
+          "controls": [
+            {
+              "id": "50nf9tvo",
+              "externalId": "IAO-148",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.OC",
+      "name": "GOVERN: Organizational Context",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.OC-01",
+          "name": "Organizational Mission",
+          "description": "The organizational mission is understood and informs technology and cybersecurity risk management",
+          "controls": [
+            {
+              "id": "5u8efvwr",
+              "externalId": "GOV-239",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.OC-02",
+          "name": "Stakeholder Risk Management Expectations",
+          "description": "Internal and external stakeholders are understood, and their needs and expectations regarding technology and cybersecurity risk management are understood and considered",
+          "controls": [
+            {
+              "id": "dsglq2en",
+              "externalId": "PRM-34",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "q6giinrz",
+              "externalId": "RSK-67",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            },
+            {
+              "id": "qqawjl8z",
+              "externalId": "RSK-136",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.OC-03",
+          "name": "Legal, Regulatory, & Contractual Requirements",
+          "description": "Legal, regulatory, and contractual requirements regarding technology and cybersecurity - including privacy and civil liberties obligations - are understood and managed",
+          "controls": [
+            {
+              "id": "yd1sijaf",
+              "externalId": "RSK-137",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "mx8z06eg",
+              "externalId": "CPL-11",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.OC-04",
+          "name": "Stakeholder Service Expectations",
+          "description": "Critical objectives, capabilities, and services that stakeholders depend on or expect from the organization are understood and communicated",
+          "controls": [
+            {
+              "id": "ftsxxllt",
+              "externalId": "PRI-219",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "k0ou6ghd",
+              "externalId": "IAO-139",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "yw21nkt8",
+              "externalId": "IAO-140",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            },
+            {
+              "id": "5f6z8s7f",
+              "externalId": "SEA-231",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.OC-05",
+          "name": "Organizational Service Dependencies",
+          "description": "Outcomes, capabilities, and services that the organization depends on are understood and communicated",
+          "controls": [
+            {
+              "id": "s37oxkuc",
+              "externalId": "SEA-249",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "4obtewi1",
+              "externalId": "RSK-138",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "06i2l8z3",
+              "externalId": "TPM-112",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "2z6u8h56",
+              "externalId": "RSK-139",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.OV",
+      "name": "GOVERN: Oversight",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.OV-01",
+          "name": "Risk Management Strategy Outcomes Review",
+          "description": "Technology and cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction",
+          "controls": [
+            {
+              "id": "2il5m807",
+              "externalId": "CPL-1400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "z5iqriw2",
+              "externalId": "RSK-240",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "uii0e5s9",
+              "externalId": "OPS-92",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.OV-02",
+          "name": "Risk Management Strategy Review & Adjustment",
+          "description": "The technology and cybersecurity risk management strategies are reviewed and adjusted to ensure coverage of organizational requirements and risks",
+          "controls": [
+            {
+              "id": "fuj1ks60",
+              "externalId": "PRM-39",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "qdzc3wwq",
+              "externalId": "RSK-241",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.OV-03",
+          "name": "Risk Management Performance Measurement",
+          "description": "Organizational technology and cybersecurity risk management performance is evaluated and reviewed for adjustments needed",
+          "controls": [
+            {
+              "id": "2rj5478c",
+              "externalId": "RSK-242",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "i4yp6gzb",
+              "externalId": "OPS-93",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.PO",
+      "name": "GOVERN: Policies, Processes, and Procedures",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.PO-01",
+          "name": "Establishment of Policies & Procedures",
+          "description": "Policies for managing technology and cybersecurity risks are established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced",
+          "controls": [
+            {
+              "id": "kkgab445",
+              "externalId": "GOV-240",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "av75gg1j",
+              "externalId": "CPL-12",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "ximclvlj",
+              "externalId": "CPL-1300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "dndihonm",
+              "externalId": "SAT-1700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "roxxfvqj",
+              "externalId": "SAT-1800",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "asvx0mss",
+              "externalId": "OPS-91",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "8wo8euus",
+              "externalId": "PES-241",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5k0hntev",
+              "externalId": "RSK-239",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.PO-02",
+          "name": "Policy & Procedure Review & Update",
+          "description": "Policies for managing technology and cybersecurity risks are reviewed, updated, communicated, and enforced to reflect changes in requirements, threats, technology, and organizational mission",
+          "controls": [
+            {
+              "id": "4yc5ppmm",
+              "externalId": "TPM-116",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.RM",
+      "name": "GOVERN: Risk Management Strategy",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.RM-01",
+          "name": "Risk Management Objectives Agreement",
+          "description": "Risk management objectives are established and agreed to by organizational stakeholders",
+          "controls": [
+            {
+              "id": "7ajs97fl",
+              "externalId": "IAO-141",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5ihx89aj",
+              "externalId": "RSK-142",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ma7x0fnv",
+              "externalId": "RSK-143",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "80urcuem",
+              "externalId": "IAO-142",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "dx7l68mc",
+              "externalId": "RSK-144",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-02",
+          "name": "Risk Appetite & Risk Tolerance Statements",
+          "description": "Risk appetite and risk tolerance statements are established, communicated, and maintained",
+          "controls": [
+            {
+              "id": "1c5wxb2c",
+              "externalId": "RSK-145",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "fwv2sk5k",
+              "externalId": "RSK-146",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "pan29ove",
+              "externalId": "RSK-147",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-03",
+          "name": "Enterprise Risk Integration",
+          "description": "Technology and cybersecurity risk management activities and outcomes are included in enterprise risk management processes",
+          "controls": [
+            {
+              "id": "4dno3dp3",
+              "externalId": "RSK-219",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "6v6thugq",
+              "externalId": "RSK-224",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "0qpvicda",
+              "externalId": "RSK-226",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "kfgsr60r",
+              "externalId": "RSK-227",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-04",
+          "name": "Risk Response Strategic Direction",
+          "description": "Strategic direction that describes appropriate risk response options is established and communicated",
+          "controls": [
+            {
+              "id": "rx0308uj",
+              "externalId": "RSK-228",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-05",
+          "name": "Lines of Communication",
+          "description": "Lines of communication across the organization are established for technology and cybersecurity risks, including risks from suppliers and other third parties",
+          "controls": [
+            {
+              "id": "qingcwtu",
+              "externalId": "RSK-229",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "m8anekqn",
+              "externalId": "RSK-230",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-06",
+          "name": "Standardized Risk Management Method",
+          "description": "A standardized method for calculating, documenting, categorizing, and prioritizing technology and cybersecurity risks is established and communicated",
+          "controls": [
+            {
+              "id": "0jrjq0c4",
+              "externalId": "TPM-113",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-07",
+          "name": "Strategic Opportunities",
+          "description": "Strategic opportunities (i.e., positive risks) are characterized and are included in organizational technology and cybersecurity risk discussions",
+          "controls": [
+            {
+              "id": "763gyz7u",
+              "externalId": "RSK-231",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2"
+          ]
+        },
+        {
+          "id": "GV.RM-08",
+          "name": "Technology Assimilation & Implementations",
+          "description": "The risks of technology assimilation and implementations are managed",
+          "controls": [
+            {
+              "id": "vx3e39gh",
+              "externalId": "RSK-232",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "75q6v3a7",
+              "externalId": "RSK-233",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "d7xbz6l8",
+              "externalId": "SEA-250",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "wbf5q8uc",
+              "externalId": "SEA-251",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "d2w8r0ed",
+              "externalId": "SEA-252",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "nwdeh8w6",
+              "externalId": "SEA-253",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "dju37yhw",
+              "externalId": "PRM-35",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RM-09",
+          "name": "Business Continuity & Resilience Risk Management",
+          "description": "The organization's business continuity and resilience requirement risks are managed",
+          "controls": [
+            {
+              "id": "gzanp0wc",
+              "externalId": "PRM-36",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "93nwasat",
+              "externalId": "RSK-234",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.RR",
+      "name": "GOVERN: Roles, Responsibilities, and Authorities",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.RR-01",
+          "name": "Organizational Leadership Responsibility",
+          "description": "Organizational leadership is responsible and accountable for technology and cybersecurity risks and fosters a culture that is risk-aware, ethical, and continually improving",
+          "controls": [
+            {
+              "id": "4ervd2x7",
+              "externalId": "RSK-235",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "dszflxyr",
+              "externalId": "RSK-236",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "h2dvzh7c",
+              "externalId": "TPM-114",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "hq3jwe9e",
+              "externalId": "RSK-237",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "tnii53sj",
+              "externalId": "OPS-4000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RR-02",
+          "name": "Risk Management Roles & Responsibilities",
+          "description": "Roles, responsibilities, and authorities related to technology and cybersecurity risk management are established, communicated, understood, and enforced",
+          "controls": [
+            {
+              "id": "nlhjif9k",
+              "externalId": "PRM-37",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "i7lol9at",
+              "externalId": "HRS-2700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "z71lxldx",
+              "externalId": "BCD-228",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "z8sczw06",
+              "externalId": "RSK-238",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "7kv04ur3",
+              "externalId": "TPM-115",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "81yaagtv",
+              "externalId": "SAT-1600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "iqapefra",
+              "externalId": "IAO-143",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RR-03",
+          "name": "Resource Adequacy",
+          "description": "Adequate resources are allocated commensurate with technology and cybersecurity risk strategy, roles, responsibilities, and policies",
+          "controls": [
+            {
+              "id": "ayduigsf",
+              "externalId": "OPS-52",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "xw479scf",
+              "externalId": "PRM-38",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ynqblucg",
+              "externalId": "HRS-2800",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.RR-04",
+          "name": "Human Resource Practices",
+          "description": "Cybersecurity is included in human resources practices",
+          "controls": [
+            {
+              "id": "fmfx35qr",
+              "externalId": "OPS-53",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "0bkmwibm",
+              "externalId": "HRS-134",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "6w2vv91j",
+              "externalId": "HRS-135",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV.SC",
+      "name": "GOVERN: Cybersecurity Supply Chain Risk Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.SC-01",
+          "name": "Supply Chain Risk Management Program",
+          "description": "A supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders",
+          "controls": [
+            {
+              "id": "hpoe2uag",
+              "externalId": "RSK-243",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ynoegu39",
+              "externalId": "TPM-117",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.SC-02",
+          "name": "Third Party Roles & Responsibilities",
+          "description": "Roles and responsibilities for suppliers, customers, and partners are established, communicated, and coordinated internally and externally",
+          "controls": [
+            {
+              "id": "8ehk2vi1",
+              "externalId": "TPM-118",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.SC-03",
+          "name": "Supply Chain Risk Management Integration",
+          "description": "Supply chain risk management is integrated into cybersecurity and enterprise risk management, risk assessment, and improvement processes",
+          "controls": [
+            {
+              "id": "58okufvw",
+              "externalId": "TPM-119",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.SC-04",
+          "name": "Supplier Identification & Prioritization",
+          "description": "Suppliers are known and prioritized by criticality",
+          "controls": [
+            {
+              "id": "dkpl59fk",
+              "externalId": "TPM-120",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.SC-08",
+          "name": "Third Party Incident Management Integration",
+          "description": "Relevant suppliers and other third parties are included in incident planning, response, and recovery activities",
+          "controls": [
+            {
+              "id": "p1rgyyxv",
+              "externalId": "TPM-121",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "GV.SC-09",
+          "name": "Supply Chain Security Practice Integration",
+          "description": "Supply chain security practices are integrated into technology, cybersecurity, and enterprise risk management programs, and their performance is monitored throughout the technology product and service life cycle",
+          "controls": [
+            {
+              "id": "fbzkqbr4",
+              "externalId": "TPM-122",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID.AM",
+      "name": "IDENTIFY: Asset Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ID.AM-01",
+          "name": "Hardware Inventory",
+          "description": "Inventories of hardware managed by the organization are maintained",
+          "controls": [
+            {
+              "id": "mi4zpwda",
+              "externalId": "CPL-127",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.AM-02",
+          "name": "Software, Services, & Systems Inventory",
+          "description": "Inventories of software, services, and systems managed by the organization are maintained",
+          "controls": [
+            {
+              "id": "fubrsf4t",
+              "externalId": "IAO-150",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.AM-03",
+          "name": "Network Communications & Data Flows",
+          "description": "Representations of the organization’s authorized network communication and internal and external network data flows are maintained",
+          "controls": [
+            {
+              "id": "suuoaxvs",
+              "externalId": "IAO-151",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.AM-04",
+          "name": "Supplier Services Inventory",
+          "description": "Inventories of services provided by suppliers are maintained",
+          "controls": [
+            {
+              "id": "80r61sqh",
+              "externalId": "NET-10",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.AM-05",
+          "name": "Asset Protection Prioritization",
+          "description": "Assets are prioritized based on classification, criticality, resources, and impact on the mission",
+          "controls": [
+            {
+              "id": "m59exln4",
+              "externalId": "TPM-125",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "sjz1zme7",
+              "externalId": "DCH-2200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "ID.AM-07",
+          "name": "Data & Metadata Inventory",
+          "description": "Inventories of data and corresponding metadata for designated data types are maintained",
+          "controls": [
+            {
+              "id": "bolg4198",
+              "externalId": "DCH-2300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "ID.AM-08",
+          "name": "Asset Life Cycle Management",
+          "description": "Systems, hardware, software, services, and data are managed throughout their life cycles",
+          "controls": [
+            {
+              "id": "w76pxtt1",
+              "externalId": "DCH-2400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "hpb9jzb1",
+              "externalId": "CFG-229",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "891272xj",
+              "externalId": "TDA-1200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "qfa81y71",
+              "externalId": "DCH-2500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "473nx5ke",
+              "externalId": "DCH-2600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "jwjpk3gm",
+              "externalId": "DCH-2700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID.IM",
+      "name": "IDENTIFY: Improvement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ID.IM-01",
+          "name": "Continuous Improvements Evaluation",
+          "description": "Improvements are identified from evaluations",
+          "controls": [
+            {
+              "id": "ru0o3udh",
+              "externalId": "VPM-9000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "8yjw2ht6",
+              "externalId": "MON-1100",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "y06ozhtm",
+              "externalId": "MON-1200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "15xg2yvn",
+              "externalId": "MON-1300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "38ytlek8",
+              "externalId": "MON-1400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.IM-02",
+          "name": "Tests & Exercises",
+          "description": "Improvements are identified from tests and exercises, including those done in coordination with suppliers and relevant third parties",
+          "controls": [
+            {
+              "id": "mxx9dgis",
+              "externalId": "TPM-127",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "zvu4i28o",
+              "externalId": "VPM-1000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "mibido1v",
+              "externalId": "VPM-1110",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "o8o7m7jr",
+              "externalId": "IRO-218",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "252r0z17",
+              "externalId": "RSK-255",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "etnld4y3",
+              "externalId": "RSK-256",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "aq50lxw2",
+              "externalId": "IAO-152",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "tjr3u9fo",
+              "externalId": "RSK-257",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            },
+            {
+              "id": "h9vycl3m",
+              "externalId": "RSK-258",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.IM-03",
+          "name": "Improvements from Lessons Learned",
+          "description": "Improvements are identified from execution of operational processes, procedures, and activities",
+          "controls": [
+            {
+              "id": "0itz4mej",
+              "externalId": "VPM-1200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ff9t4y09",
+              "externalId": "MON-1500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.IM-04",
+          "name": "Plans Affecting Operations",
+          "description": "ID.IM-04: Response and recovery plans (e.g., incident response plan, business continuity plan, disaster recovery plan, etc.) are established, communicated, maintained, and improved",
+          "controls": [
+            {
+              "id": "aruuiez3",
+              "externalId": "MON-1600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "gy9omwmk",
+              "externalId": "IRO-219",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "wwf3xhji",
+              "externalId": "IRO-220",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "rpygxvqn",
+              "externalId": "IRO-221",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "e7ig0twc",
+              "externalId": "IAO-153",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "phn65p3u",
+              "externalId": "IRO-222",
+              "variants": [
+                "CRI_TIER_1"
+              ]
+            },
+            {
+              "id": "nw05q2ut",
+              "externalId": "TPM-200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "l3gcwhyk",
+              "externalId": "IRO-223",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID.RA",
+      "name": "IDENTIFY: Risk Assessment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ID.RA-01",
+          "name": "Asset Vulnerability Identification",
+          "description": "Vulnerabilities in assets are identified, validated, and recorded",
+          "controls": [
+            {
+              "id": "185yn0fz",
+              "externalId": "TPM-126",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "vnvmb1av",
+              "externalId": "RSK-244",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "u0awycyt",
+              "externalId": "RSK-245",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.RA-02",
+          "name": "Information Sharing Forums",
+          "description": "Cyber threat intelligence is received from information sharing forums and sources",
+          "controls": [
+            {
+              "id": "1zflx6mi",
+              "externalId": "VPM-4000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "ryi2rjta",
+              "externalId": "BCD-229",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "ID.RA-03",
+          "name": "Threat Identification",
+          "description": "Internal and external threats to the organization are identified and recorded",
+          "controls": [
+            {
+              "id": "6d5yfo0m",
+              "externalId": "VPM-1700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "j36sb46u",
+              "externalId": "VPM-1800",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "pfoqbqzf",
+              "externalId": "VPM-1900",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "qzxeznnq",
+              "externalId": "VPM-2000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.RA-04",
+          "name": "Impact & Likelihood Analysis",
+          "description": "Potential impacts and likelihoods of threats exploiting vulnerabilities are identified and recorded",
+          "controls": [
+            {
+              "id": "nljjm3g8",
+              "externalId": "RSK-259",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.RA-05",
+          "name": "Risk Exposure Determination & Prioritization",
+          "description": "Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization",
+          "controls": [
+            {
+              "id": "892ihtdv",
+              "externalId": "RSK-246",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "rlpsgb7m",
+              "externalId": "RSK-247",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "iwj4ydo8",
+              "externalId": "RSK-260",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "wuqnwse3",
+              "externalId": "RSK-248",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.RA-06",
+          "name": "Risk Response Determination",
+          "description": "Risk responses are chosen, prioritized, planned, tracked, and communicated",
+          "controls": [
+            {
+              "id": "dsl29e9m",
+              "externalId": "RSK-249",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "sj2jtskr",
+              "externalId": "RSK-250",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "x1nqeidu",
+              "externalId": "RSK-251",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "leyic9w7",
+              "externalId": "RSK-252",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "irh9qj0d",
+              "externalId": "RSK-253",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5pwhdneo",
+              "externalId": "VPM-5000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.RA-07",
+          "name": "Change & Exception Management",
+          "description": "Changes and exceptions are managed, assessed for risk impact, recorded, and tracked",
+          "controls": [
+            {
+              "id": "axiwohlj",
+              "externalId": "VPM-6000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ogmbmcc5",
+              "externalId": "CFG-230",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "6rc3hcxa",
+              "externalId": "CFG-231",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "d8cbuohw",
+              "externalId": "CFG-232",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "aygx8ifz",
+              "externalId": "RSK-254",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "ID.RA-08",
+          "name": "Vulnerability Disclosure Response",
+          "description": "Processes for receiving, analyzing, and responding to vulnerability disclosures are established",
+          "controls": [
+            {
+              "id": "ppid88qu",
+              "externalId": "VPM-7000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5ck6jw4m",
+              "externalId": "VPM-8",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PR.AA",
+      "name": "PROTECT: Identity Management, Authentication, and Access Control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PR.AA-01",
+          "name": "Identity & Credential Management",
+          "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization",
+          "controls": [
+            {
+              "id": "yg1z9r16",
+              "externalId": "IRO-224",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5bbu00i6",
+              "externalId": "IAC-687",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.AA-02",
+          "name": "Identity Binding to Credentials",
+          "description": "Identities are proofed and bound to credentials based on the context of interactions",
+          "controls": [
+            {
+              "id": "56ypyi38",
+              "externalId": "IAC-691",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.AA-03",
+          "name": "Authentication",
+          "description": "Users, services, and hardware are authenticated",
+          "controls": [
+            {
+              "id": "5ck98a67",
+              "externalId": "IAC-692",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "cu20wfor",
+              "externalId": "IAC-693",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "uai8jobs",
+              "externalId": "IAC-694",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.AA-04",
+          "name": "Identity Assertions",
+          "description": "Identity assertions are protected, conveyed, and verified",
+          "controls": [
+            {
+              "id": "b3rt2ck4",
+              "externalId": "WEB-9",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.AA-05",
+          "name": "Access Authorizations",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties",
+          "controls": [
+            {
+              "id": "3ywemj7z",
+              "externalId": "IAC-695",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "sjcsl6yc",
+              "externalId": "IAC-696",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "xpdlerfy",
+              "externalId": "IAC-697",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "k2nz4lag",
+              "externalId": "IAC-698",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.AA-06",
+          "name": "Physical Access",
+          "description": "Physical access to assets is managed, monitored, and enforced commensurate with risk",
+          "controls": [
+            {
+              "id": "gckvbmw0",
+              "externalId": "TPM-141",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ktad5jca",
+              "externalId": "PES-242",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PR.AT",
+      "name": "PROTECT: Awareness and Training",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PR.AT-01",
+          "name": "User Awareness & Training",
+          "description": "Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind",
+          "controls": [
+            {
+              "id": "yffzttt5",
+              "externalId": "PES-298",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "usl05jvl",
+              "externalId": "SAT-1900",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "59qezbtn",
+              "externalId": "SAT-2000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "37f2wdbk",
+              "externalId": "SAT-2100",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.AT-02",
+          "name": "Specialized Role Awareness & Training",
+          "description": "Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skills to perform relevant tasks with cybersecurity risks in mind",
+          "controls": [
+            {
+              "id": "btrz5pg6",
+              "externalId": "SAT-2200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "nq8bj0ri",
+              "externalId": "SAT-2300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "0xeppbqq",
+              "externalId": "SAT-2400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "fjfr3ja9",
+              "externalId": "SAT-2500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "pi52hkhz",
+              "externalId": "SAT-2600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "6hqcs1e2",
+              "externalId": "TPM-168",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "dss2zfuo",
+              "externalId": "SAT-2700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "chps8d4j",
+              "externalId": "SAT-38",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PR.DS",
+      "name": "PROTECT: Data Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PR.DS-01",
+          "name": "Protection of Data at Rest",
+          "description": "The confidentiality, integrity, and availability of data-at-rest are protected",
+          "controls": [
+            {
+              "id": "4oauh4mp",
+              "externalId": "SAT-39",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "817tnhl8",
+              "externalId": "CRY-4200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "9f5drrf5",
+              "externalId": "DCH-2800",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.DS-02",
+          "name": "Protection of Data in Transit",
+          "description": "The confidentiality, integrity, and availability of data-in-transit are protected",
+          "controls": [
+            {
+              "id": "l4bvqjoq",
+              "externalId": "DCH-2900",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.DS-10",
+          "name": "Protection of Data in Use",
+          "description": "The confidentiality, integrity, and availability of data-in-use are protected",
+          "controls": [
+            {
+              "id": "0kuoa6ak",
+              "externalId": "CRY-4300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.DS-11",
+          "name": "Data Backup",
+          "description": "Backups of data are created, protected, maintained, and tested",
+          "controls": [
+            {
+              "id": "z7x27ytm",
+              "externalId": "CRY-4400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PR.IR",
+      "name": "PROTECT: Technology Infrastructure Resilience",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PR.IR-01",
+          "name": "Logical Access Protections",
+          "description": "Networks and environments are protected from unauthorized logical access and usage",
+          "controls": [
+            {
+              "id": "iw7n63cj",
+              "externalId": "OPS-95",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "5kh8klyj",
+              "externalId": "NET-1100",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "3wr0g2m6",
+              "externalId": "NET-1200",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "vk07pryi",
+              "externalId": "NET-1300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "21p7fmph",
+              "externalId": "NET-1400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "gsd63voj",
+              "externalId": "NET-1500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "yw4g4br9",
+              "externalId": "CFG-236",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "bqf9he61",
+              "externalId": "EMB-2",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.IR-02",
+          "name": "Environmental Threat Protections",
+          "description": "The organization’s technology assets are protected from environmental threats",
+          "controls": [
+            {
+              "id": "wiuocgjv",
+              "externalId": "MDM-62",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.IR-03",
+          "name": "Resilience Measures",
+          "description": "Mechanisms are implemented to achieve resilience requirements in normal and adverse situations",
+          "controls": [
+            {
+              "id": "9u426qpd",
+              "externalId": "PES-301",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "PR.IR-04",
+          "name": "Capacity Management",
+          "description": "Adequate resource capacity to ensure availability is maintained",
+          "controls": [
+            {
+              "id": "2fsxfp65",
+              "externalId": "PES-302",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "0vvekzvk",
+              "externalId": "MON-2000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PR.PS",
+      "name": "PROTECT: Platform Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PR.PS-01",
+          "name": "Configuration Management",
+          "description": "Configuration management practices are established and applied",
+          "controls": [
+            {
+              "id": "r65ogykk",
+              "externalId": "IAO-154",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "ah7te0d3",
+              "externalId": "CFG-233",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "3y4urey1",
+              "externalId": "CFG-234",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "qs7ayz3k",
+              "externalId": "CFG-235",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "jsjlzyrd",
+              "externalId": "IAO-155",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "o8smir0g",
+              "externalId": "CRY-4500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "9bpwtuv8",
+              "externalId": "CRY-4600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "ljbcp2t0",
+              "externalId": "CRY-4700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "swhsyk0e",
+              "externalId": "MDM-61",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.PS-02",
+          "name": "Software Maintenance & Replacement",
+          "description": "Software is maintained, replaced, and removed commensurate with risk",
+          "controls": [
+            {
+              "id": "g9gcpa6s",
+              "externalId": "END-6000",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "l8ptzps7",
+              "externalId": "VPM-1300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "safot3tk",
+              "externalId": "TDA-1300",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.PS-03",
+          "name": "Hardware Maintenance",
+          "description": "Hardware is maintained, replaced, and removed commensurate with risk",
+          "controls": [
+            {
+              "id": "tj4vtobh",
+              "externalId": "TDA-1400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "PR.PS-04",
+          "name": "Log Record Generation",
+          "description": "Log records are generated and made available for continuous monitoring",
+          "controls": [
+            {
+              "id": "iaah2ds9",
+              "externalId": "MNT-84",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "im1wjrru",
+              "externalId": "MON-1700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "e3jf18do",
+              "externalId": "MON-1800",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.PS-05",
+          "name": "Unauthorized Software Installation & Execution",
+          "description": "Installation and execution of unauthorized software are prevented",
+          "controls": [
+            {
+              "id": "lv9zl9wd",
+              "externalId": "MON-1900",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "g5xloxgc",
+              "externalId": "SEA-263",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "o1575ydv",
+              "externalId": "NET-1700",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "PR.PS-06",
+          "name": "Secure Systems Development Practices",
+          "description": "Secure software development practices are integrated, and their performance is monitored throughout the software development life cycle",
+          "controls": [
+            {
+              "id": "ltmd5luk",
+              "externalId": "SEA-264",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "t3wbfr5a",
+              "externalId": "SEA-254",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "08it4thl",
+              "externalId": "SEA-255",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "6dtdh72l",
+              "externalId": "SEA-256",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "eyezkb40",
+              "externalId": "SEA-257",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "6avtezne",
+              "externalId": "SEA-258",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "ymonrniz",
+              "externalId": "VPM-1400",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "aoyvvm40",
+              "externalId": "SEA-259",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "u4hnrtnh",
+              "externalId": "SEA-260",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "nnyj47us",
+              "externalId": "SEA-261",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "PR.PS-07",
+          "name": "Technology Operations, Service, & Support",
+          "description": "The organization's technology operations and service and support functions are designed and managed to address business operational needs and stakeholder requirements.",
+          "controls": [
+            {
+              "id": "xefsrjr1",
+              "externalId": "SEA-262",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "j5wf6lsj",
+              "externalId": "OPS-94",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RC.CO",
+      "name": "RECOVER: Incident Recovery Communication",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RC.CO-03",
+          "name": "Recovery Activity Communication",
+          "description": "Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders",
+          "controls": [
+            {
+              "id": "fw3bmjn7",
+              "externalId": "IRO-331",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "4ro17ovf",
+              "externalId": "IRO-332",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RC.CO-04",
+          "name": "Public Information Sharing",
+          "description": "Public updates on incident recovery are shared using approved methods and messaging",
+          "controls": [
+            {
+              "id": "bu28tdh6",
+              "externalId": "IRO-333",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RC.RP",
+      "name": "RECOVER: Incident Recovery Plan Execution",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RC.RP-01",
+          "name": "Recovery Plan Execution",
+          "description": "The recovery portion of the incident response plan is executed once initiated from the incident response process",
+          "controls": [
+            {
+              "id": "jm7hmtzd",
+              "externalId": "VPM-1600",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RC.RP-02",
+          "name": "Recovery Action Performance",
+          "description": "Recovery actions are selected, scoped, prioritized, and performed",
+          "controls": [
+            {
+              "id": "mk12mxnx",
+              "externalId": "IRO-326",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "1wn2l4j9",
+              "externalId": "IRO-327",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RC.RP-03",
+          "name": "Backup & Restoration Asset Integrity",
+          "description": "The integrity of backups and other restoration assets is verified before using them for restoration",
+          "controls": [
+            {
+              "id": "vgk4ntp3",
+              "externalId": "IRO-328",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RC.RP-04",
+          "name": "Post-Incident Operational Norms",
+          "description": "Critical mission functions and cybersecurity risk management are considered to establish post-incident operational norms",
+          "controls": [
+            {
+              "id": "emptvle0",
+              "externalId": "IAO-157",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RC.RP-05",
+          "name": "Asset Integrity Restoration",
+          "description": "The integrity of restored assets is verified, systems and services are restored, and normal operating status is confirmed",
+          "controls": [
+            {
+              "id": "tww0yovr",
+              "externalId": "IAO-158",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2"
+              ]
+            },
+            {
+              "id": "lurbq2eh",
+              "externalId": "IRO-329",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RC.RP-06",
+          "name": "End-of-Incident Determination",
+          "description": "The end of incident recovery is declared based on criteria, and incident-related documentation is completed",
+          "controls": [
+            {
+              "id": "75m51mnu",
+              "externalId": "IRO-330",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RS.AN",
+      "name": "RESPOND: Incident Analysis",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RS.AN-03",
+          "name": "Incident Analysis & Root Cause Determination",
+          "description": "Analysis is performed to establish what has taken place during an incident and the root cause of the incident",
+          "controls": [
+            {
+              "id": "zialpcf6",
+              "externalId": "IRO-318",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RS.AN-06",
+          "name": "Investigation Documentation",
+          "description": "Actions performed during an investigation are recorded, and the records’ integrity and provenance are preserved",
+          "controls": [
+            {
+              "id": "nqqwybxo",
+              "externalId": "IRO-319",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "RS.AN-07",
+          "name": "Incident Data Collection & Preservation",
+          "description": "Incident data and metadata are collected, and their integrity and provenance are preserved",
+          "controls": [
+            {
+              "id": "xnq9y254",
+              "externalId": "IRO-320",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "RS.AN-08",
+          "name": "Incident Magnitude Determination",
+          "description": "An incident's magnitude is estimated and validated",
+          "controls": [
+            {
+              "id": "d4wzzrk2",
+              "externalId": "IRO-321",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RS.CO",
+      "name": "RESPOND: Incident Response Reporting and Communication",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RS.CO-02",
+          "name": "Stakeholder Incident Notification",
+          "description": "Internal and external stakeholders are notified of incidents",
+          "controls": [
+            {
+              "id": "lcqp2o9x",
+              "externalId": "IRO-322",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "qb7lwuik",
+              "externalId": "IRO-323",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            },
+            {
+              "id": "6r9eapk7",
+              "externalId": "IRO-324",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RS.CO-03",
+          "name": "Stakeholder Incident Information Sharing",
+          "description": "Information is shared with designated internal and external stakeholders",
+          "controls": [
+            {
+              "id": "l4r6h9io",
+              "externalId": "IRO-325",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            },
+            {
+              "id": "07pdpx60",
+              "externalId": "IRO-337",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RS.MA",
+      "name": "RESPOND: Incident Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RS.MA-01",
+          "name": "Response Plan Execution",
+          "description": "The incident response plan is executed in coordination with relevant third parties once an incident is declared",
+          "controls": [
+            {
+              "id": "5lprkuh2",
+              "externalId": "IRO-228",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RS.MA-02",
+          "name": "Incident Triage & Validation",
+          "description": "Incident reports are triaged and validated",
+          "controls": [
+            {
+              "id": "k6vyvw0k",
+              "externalId": "IRO-229",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RS.MA-03",
+          "name": "Incident Categorization & Prioritization",
+          "description": "Incidents are categorized and prioritized",
+          "controls": [
+            {
+              "id": "8bxo7baq",
+              "externalId": "IRO-233",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RS.MA-04",
+          "name": "Incident Escalation",
+          "description": "Incidents are escalated or elevated as needed",
+          "controls": [
+            {
+              "id": "6en2fgby",
+              "externalId": "IRO-239",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3"
+          ]
+        },
+        {
+          "id": "RS.MA-05",
+          "name": "Recovery Initiation",
+          "description": "The criteria for initiating incident recovery are applied",
+          "controls": [
+            {
+              "id": "dc59ddzp",
+              "externalId": "IRO-240",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RS.MI",
+      "name": "RESPOND: Incident Mitigation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RS.MI-01",
+          "name": "Incident Containment",
+          "description": "Incidents are contained",
+          "controls": [
+            {
+              "id": "wu4d85np",
+              "externalId": "IRO-338",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        },
+        {
+          "id": "RS.MI-02",
+          "name": "Incident Eradication",
+          "description": "Incidents are eradicated",
+          "controls": [
+            {
+              "id": "pzqmwzj9",
+              "externalId": "VPM-1500",
+              "variants": [
+                "CRI_TIER_1",
+                "CRI_TIER_2",
+                "CRI_TIER_3",
+                "CRI_TIER_4"
+              ]
+            }
+          ],
+          "variants": [
+            "CRI_TIER_1",
+            "CRI_TIER_2",
+            "CRI_TIER_3",
+            "CRI_TIER_4"
+          ]
+        }
+      ]
+    }
+  ]
+}

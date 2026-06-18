@@ -1,0 +1,453 @@
+{
+  "principles": [
+    {
+      "id": "Govern",
+      "name": "Govern",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Govern 1",
+          "name": "",
+          "description": "Policies, processes, procedures, and practices across the organization related to the mapping, measuring, and managing of AI risks are in place, transparent, and implemented effectively.",
+          "controls": [
+            {
+              "id": "iv6x4a6u",
+              "externalId": "GOV-3111"
+            },
+            {
+              "id": "vnsyvz5o",
+              "externalId": "GOV-3112"
+            },
+            {
+              "id": "bw5hrkrl",
+              "externalId": "RSK-64"
+            },
+            {
+              "id": "8muu85hi",
+              "externalId": "RSK-65"
+            },
+            {
+              "id": "il8edw6k",
+              "externalId": "RSK-66"
+            },
+            {
+              "id": "z0tqzuly",
+              "externalId": "RSK-221"
+            },
+            {
+              "id": "8cco62js",
+              "externalId": "RSK-223"
+            }
+          ]
+        },
+        {
+          "id": "Govern 2",
+          "name": "",
+          "description": "Accountability structures are in place so that the appropriate teams and individuals are empowered, responsible, and trained for mapping, measuring, and managing AI risks.",
+          "controls": [
+            {
+              "id": "45godnia",
+              "externalId": "GOV-3110"
+            },
+            {
+              "id": "88mu0aq5",
+              "externalId": "RSK-220"
+            },
+            {
+              "id": "210rczbl",
+              "externalId": "SAT-65"
+            }
+          ]
+        },
+        {
+          "id": "Govern 3",
+          "name": "",
+          "description": "Workforce diversity, equity, inclusion, and accessibility processes are prioritized in the mapping, measuring, and managing of AI risks throughout the lifecycle.",
+          "controls": [
+            {
+              "id": "4x62s2sz",
+              "externalId": "GOV-3102"
+            },
+            {
+              "id": "v5cqohmo",
+              "externalId": "TDA-171"
+            }
+          ]
+        },
+        {
+          "id": "Govern 4",
+          "name": "",
+          "description": "Organizational teams are committed to a culture that considers and communicates risk.",
+          "controls": [
+            {
+              "id": "ii79lyrw",
+              "externalId": "MON-290"
+            },
+            {
+              "id": "x66obx00",
+              "externalId": "RSK-222"
+            },
+            {
+              "id": "chpt0g09",
+              "externalId": "TDA-172"
+            }
+          ]
+        },
+        {
+          "id": "Govern 5",
+          "name": "",
+          "description": "Processes are in place for robust stakeholder engagement.",
+          "controls": [
+            {
+              "id": "k8arplmt",
+              "externalId": "TDA-173"
+            },
+            {
+              "id": "w5pbcvdp",
+              "externalId": "TDA-174"
+            }
+          ]
+        },
+        {
+          "id": "Govern 6",
+          "name": "",
+          "description": "Policies and procedures are in place to address AI risks arising from third-party software and data and other supply chain issues.",
+          "controls": [
+            {
+              "id": "7thz0krc",
+              "externalId": "TPM-78"
+            },
+            {
+              "id": "73wxw24l",
+              "externalId": "TPM-79"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Manage",
+      "name": "Manage",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Manage 1",
+          "name": "",
+          "description": "AI risks based on impact assessments and other analytical output from the Map and Measure functions are prioritized, responded to, and managed.",
+          "controls": [
+            {
+              "id": "fzzzhq09",
+              "externalId": "AAT-4"
+            },
+            {
+              "id": "xy88hrfx",
+              "externalId": "IRO-159"
+            },
+            {
+              "id": "drv6nbvk",
+              "externalId": "RSK-76"
+            },
+            {
+              "id": "y627yeoe",
+              "externalId": "RSK-225"
+            }
+          ]
+        },
+        {
+          "id": "Manage 2",
+          "name": "",
+          "description": "Strategies to maximize benefits and minimize negative impacts are planned, prepared, implemented, and documented, and informed by stakeholder input.",
+          "controls": [
+            {
+              "id": "2umn4ycd",
+              "externalId": "AAT-5"
+            },
+            {
+              "id": "01cfwtil",
+              "externalId": "GOV-3101"
+            },
+            {
+              "id": "hd5yej98",
+              "externalId": "PRM-20"
+            },
+            {
+              "id": "n2ipswt1",
+              "externalId": "RSK-77"
+            }
+          ]
+        },
+        {
+          "id": "Manage 3",
+          "name": "",
+          "description": "Risks from third-party entities are managed.",
+          "controls": [
+            {
+              "id": "2syl0ki8",
+              "externalId": "GOV-3104"
+            },
+            {
+              "id": "8vn50hvd",
+              "externalId": "TPM-82"
+            }
+          ]
+        },
+        {
+          "id": "Manage 4",
+          "name": "",
+          "description": "Responses to identified and measured risks are documented and monitored regularly.",
+          "controls": [
+            {
+              "id": "q8q0sikb",
+              "externalId": "IRO-160"
+            },
+            {
+              "id": "kn6ooil1",
+              "externalId": "MON-292"
+            },
+            {
+              "id": "kjbef9ix",
+              "externalId": "TDA-192"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Map",
+      "name": "Map",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Map 1",
+          "name": "",
+          "description": "Context is established and understood.",
+          "controls": [
+            {
+              "id": "wv19ltcs",
+              "externalId": "GOV-3103"
+            },
+            {
+              "id": "af9jxukb",
+              "externalId": "RSK-68"
+            },
+            {
+              "id": "fllh3m1i",
+              "externalId": "TDA-175"
+            },
+            {
+              "id": "5h3h1t08",
+              "externalId": "TDA-176"
+            },
+            {
+              "id": "4e0s5ulk",
+              "externalId": "TDA-177"
+            },
+            {
+              "id": "rx1tu21d",
+              "externalId": "TDA-178"
+            }
+          ]
+        },
+        {
+          "id": "Map 2",
+          "name": "",
+          "description": "Classification of the AI system is performed.",
+          "controls": [
+            {
+              "id": "i8hpn4r8",
+              "externalId": "TDA-180"
+            },
+            {
+              "id": "bqszeqk7",
+              "externalId": "TDA-181"
+            },
+            {
+              "id": "tgqqsmbd",
+              "externalId": "TDA-182"
+            }
+          ]
+        },
+        {
+          "id": "Map 3",
+          "name": "",
+          "description": "AI capabilities, targeted usage, goals, and expected benefits and costs compared with the status quo are understood.",
+          "controls": [
+            {
+              "id": "axpgvxxa",
+              "externalId": "GOV-3108"
+            },
+            {
+              "id": "98stpmfz",
+              "externalId": "GOV-3109"
+            },
+            {
+              "id": "fs8rr57p",
+              "externalId": "RSK-69"
+            },
+            {
+              "id": "qwfumgyq",
+              "externalId": "TDA-183"
+            },
+            {
+              "id": "uc3mcwko",
+              "externalId": "TDA-184"
+            }
+          ]
+        },
+        {
+          "id": "Map 4",
+          "name": "",
+          "description": "Risks and benefits are mapped for third-party software and data.",
+          "controls": [
+            {
+              "id": "zfcirr6l",
+              "externalId": "TPM-80"
+            },
+            {
+              "id": "f882cgij",
+              "externalId": "TPM-81"
+            }
+          ]
+        },
+        {
+          "id": "Map 5",
+          "name": "",
+          "description": "Impacts to individuals, groups, communities, organizations, and society are assessed.",
+          "controls": [
+            {
+              "id": "86osy9l6",
+              "externalId": "RSK-70"
+            },
+            {
+              "id": "ivniib39",
+              "externalId": "RSK-71"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Measure",
+      "name": "Measure",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Measure 1",
+          "name": "",
+          "description": "Appropriate methods and metrics are identified and applied.",
+          "controls": [
+            {
+              "id": "ibvz03gz",
+              "externalId": "IAO-107"
+            },
+            {
+              "id": "oklko4um",
+              "externalId": "RSK-73"
+            },
+            {
+              "id": "plj4iclp",
+              "externalId": "TDA-185"
+            }
+          ]
+        },
+        {
+          "id": "Measure 2",
+          "name": "",
+          "description": "Systems are evaluated for trustworthy characteristics.",
+          "controls": [
+            {
+              "id": "1bzq07nk",
+              "externalId": "GOV-3105"
+            },
+            {
+              "id": "fq5rmxkk",
+              "externalId": "GOV-3106"
+            },
+            {
+              "id": "qy1l3972",
+              "externalId": "GOV-3107"
+            },
+            {
+              "id": "byhu5v7e",
+              "externalId": "IAO-108"
+            },
+            {
+              "id": "76b9zttu",
+              "externalId": "IAO-109"
+            },
+            {
+              "id": "qq41qg0v",
+              "externalId": "IAO-110"
+            },
+            {
+              "id": "oy6x6uc7",
+              "externalId": "IAO-111"
+            },
+            {
+              "id": "93ee19uq",
+              "externalId": "IAO-112"
+            },
+            {
+              "id": "fm5uoul6",
+              "externalId": "IAO-113"
+            },
+            {
+              "id": "45eeife5",
+              "externalId": "MON-291"
+            },
+            {
+              "id": "0clqak95",
+              "externalId": "TDA-186"
+            },
+            {
+              "id": "v8jl27lf",
+              "externalId": "TDA-187"
+            },
+            {
+              "id": "pfmyunyq",
+              "externalId": "TDA-188"
+            }
+          ]
+        },
+        {
+          "id": "Measure 3",
+          "name": "",
+          "description": "Mechanisms for tracking identified risks over time are in place.",
+          "controls": [
+            {
+              "id": "znuu48px",
+              "externalId": "GOV-3100"
+            },
+            {
+              "id": "9abqaes7",
+              "externalId": "RSK-74"
+            },
+            {
+              "id": "l27rld2m",
+              "externalId": "RSK-75"
+            }
+          ]
+        },
+        {
+          "id": "Measure 4",
+          "name": "",
+          "description": "Feedback about efficacy of measurement is gathered and assessed.",
+          "controls": [
+            {
+              "id": "dce92wdr",
+              "externalId": "TDA-189"
+            },
+            {
+              "id": "j453i0l3",
+              "externalId": "TDA-190"
+            },
+            {
+              "id": "92ffufqz",
+              "externalId": "TDA-191"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

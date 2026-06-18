@@ -1,0 +1,503 @@
+{
+  "principles": [
+    {
+      "id": "AM",
+      "name": "Asset Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "AM.1",
+          "name": "Asset Identification",
+          "controls": [
+            {
+              "id": "8mpcqqma",
+              "externalId": "AST-140"
+            },
+            {
+              "id": "olyb8uvg",
+              "externalId": "AST-141"
+            }
+          ]
+        },
+        {
+          "id": "AM.2",
+          "name": "Asset Maintenance",
+          "controls": [
+            {
+              "id": "8bexzb2c",
+              "externalId": "AST-142"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BC",
+      "name": "Business Continuity and Disaster Recovery",
+      "optional": false,
+      "sections": [
+        {
+          "id": "BC.1",
+          "name": "Planning and Preparation",
+          "controls": [
+            {
+              "id": "7ux7grnb",
+              "externalId": "BCD-178"
+            },
+            {
+              "id": "mdfn85ws",
+              "externalId": "BCD-179"
+            }
+          ]
+        },
+        {
+          "id": "BC.2",
+          "name": "Implementation",
+          "controls": [
+            {
+              "id": "25c0lynv",
+              "externalId": "BCD-180"
+            },
+            {
+              "id": "tkiuvya4",
+              "externalId": "BCD-181"
+            }
+          ]
+        },
+        {
+          "id": "BC.3",
+          "name": "Crisis Management",
+          "controls": [
+            {
+              "id": "f4mrut0r",
+              "externalId": "BCD-182"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GO",
+      "name": "Governance",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GO.1",
+          "name": "Cybersecurity Governance",
+          "controls": [
+            {
+              "id": "beemo9vl",
+              "externalId": "CPL-221"
+            },
+            {
+              "id": "s8dq2cc0",
+              "externalId": "CPL-222"
+            },
+            {
+              "id": "6hxlx73c",
+              "externalId": "CPL-223"
+            }
+          ]
+        },
+        {
+          "id": "GO.2",
+          "name": "NIS 2 Governance",
+          "controls": [
+            {
+              "id": "dkict3bx",
+              "externalId": "CPL-224"
+            },
+            {
+              "id": "xfnyb3nw",
+              "externalId": "CPL-225"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR",
+      "name": "Human Resources Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "HR.1",
+          "name": "Employment Practices",
+          "controls": [
+            {
+              "id": "lzw0psfr",
+              "externalId": "HRS-99"
+            },
+            {
+              "id": "f2cl36z5",
+              "externalId": "HRS-100"
+            }
+          ]
+        },
+        {
+          "id": "HR.2",
+          "name": "Security Training",
+          "controls": [
+            {
+              "id": "f0o69v4z",
+              "externalId": "HRS-101"
+            },
+            {
+              "id": "axs2am4p",
+              "externalId": "HRS-102"
+            },
+            {
+              "id": "rbtpyh47",
+              "externalId": "HRS-103"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IH",
+      "name": "Incident Handling",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IH.1",
+          "name": "Incident Management Planning",
+          "controls": [
+            {
+              "id": "ykewxdb4",
+              "externalId": "IRO-249"
+            },
+            {
+              "id": "svz9e8b7",
+              "externalId": "IRO-250"
+            }
+          ]
+        },
+        {
+          "id": "IH.2",
+          "name": "Incident Response",
+          "controls": [
+            {
+              "id": "ldm9scsi",
+              "externalId": "IRO-251"
+            },
+            {
+              "id": "h24wy065",
+              "externalId": "SAT-89"
+            }
+          ]
+        },
+        {
+          "id": "IH.3",
+          "name": "Reporting Obligations",
+          "controls": [
+            {
+              "id": "br1p08zu",
+              "externalId": "IRO-252"
+            }
+          ]
+        },
+        {
+          "id": "IH.4",
+          "name": "Learnings from Security Incidents",
+          "controls": [
+            {
+              "id": "mxsgfbnd",
+              "externalId": "GOV-314"
+            },
+            {
+              "id": "th7xfc9x",
+              "externalId": "IRO-253"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IM",
+      "name": "Identity and Access Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IM.1",
+          "name": "Access Provisioning",
+          "controls": [
+            {
+              "id": "oa5in8xv",
+              "externalId": "OPS-65"
+            },
+            {
+              "id": "zbpij47p",
+              "externalId": "OPS-66"
+            }
+          ]
+        },
+        {
+          "id": "IM.2",
+          "name": "Identity Verification",
+          "controls": [
+            {
+              "id": "fv79a75e",
+              "externalId": "OPS-67"
+            }
+          ]
+        },
+        {
+          "id": "IM.3",
+          "name": "Logical Access",
+          "controls": [
+            {
+              "id": "m8j0eatc",
+              "externalId": "OPS-68"
+            },
+            {
+              "id": "1i0jlxwm",
+              "externalId": "OPS-69"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS",
+      "name": "Infrastructure Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "IS.1",
+          "name": "Configuration Management",
+          "controls": [
+            {
+              "id": "cfcvlf47",
+              "externalId": "OPS-60"
+            },
+            {
+              "id": "na0woa8k",
+              "externalId": "OPS-61"
+            }
+          ]
+        },
+        {
+          "id": "IS.2",
+          "name": "Change Management",
+          "controls": [
+            {
+              "id": "1rsfeade",
+              "externalId": "CHG-78"
+            }
+          ]
+        },
+        {
+          "id": "IS.3",
+          "name": "Network Security",
+          "controls": [
+            {
+              "id": "mi1pr8tl",
+              "externalId": "NET-305"
+            }
+          ]
+        },
+        {
+          "id": "IS.4",
+          "name": "Network Access Control",
+          "controls": [
+            {
+              "id": "qzfw6j31",
+              "externalId": "NET-306"
+            }
+          ]
+        },
+        {
+          "id": "IS.5",
+          "name": "Network Protection",
+          "controls": [
+            {
+              "id": "4r7wdzm0",
+              "externalId": "NET-307"
+            }
+          ]
+        },
+        {
+          "id": "IS.6",
+          "name": "Network Monitoring",
+          "controls": [
+            {
+              "id": "i6pcsxbt",
+              "externalId": "NET-308"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS",
+      "name": "Operations Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "OS.1",
+          "name": "Vulnerability & Patch Management",
+          "controls": [
+            {
+              "id": "h878ujr4",
+              "externalId": "VPM-169"
+            },
+            {
+              "id": "wl35y2tw",
+              "externalId": "VPM-170"
+            }
+          ]
+        },
+        {
+          "id": "OS.2",
+          "name": "Endpoint Protection",
+          "controls": [
+            {
+              "id": "hxjnspl0",
+              "externalId": "NET-309"
+            }
+          ]
+        },
+        {
+          "id": "OS.3",
+          "name": "System Monitoring",
+          "controls": [
+            {
+              "id": "9o4imkxa",
+              "externalId": "OPS-62"
+            },
+            {
+              "id": "hs85ywj3",
+              "externalId": "OPS-63"
+            }
+          ]
+        },
+        {
+          "id": "OS.4",
+          "name": "Threat Detection",
+          "controls": [
+            {
+              "id": "7op3vaz0",
+              "externalId": "OPS-64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RM",
+      "name": "Risk Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RM.1",
+          "name": "Risk Analysis",
+          "controls": [
+            {
+              "id": "y6bc2qxt",
+              "externalId": "AST-139"
+            },
+            {
+              "id": "zzk5l8vl",
+              "externalId": "RSK-159"
+            }
+          ]
+        },
+        {
+          "id": "RM.2",
+          "name": "Risk Mitigation",
+          "controls": [
+            {
+              "id": "41y4cues",
+              "externalId": "RSK-160"
+            },
+            {
+              "id": "st3ka3ph",
+              "externalId": "RSK-161"
+            }
+          ]
+        },
+        {
+          "id": "RM.3",
+          "name": "Control Evaluation",
+          "controls": [
+            {
+              "id": "c7hd7w7u",
+              "externalId": "GOV-313"
+            },
+            {
+              "id": "goeeez7f",
+              "externalId": "RSK-162"
+            }
+          ]
+        },
+        {
+          "id": "RM.4",
+          "name": "Corrective Actions",
+          "controls": [
+            {
+              "id": "7da4c8ww",
+              "externalId": "RSK-163"
+            },
+            {
+              "id": "rw6g83o6",
+              "externalId": "RSK-164"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SS",
+      "name": "Information System Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SS.1",
+          "name": "Secure Development Practices",
+          "controls": [
+            {
+              "id": "hiyneia9",
+              "externalId": "SEA-199"
+            },
+            {
+              "id": "wniwkx5d",
+              "externalId": "SEA-200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TP",
+      "name": "Third Party Risk Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "TP.1",
+          "name": "Vendor Selection",
+          "controls": [
+            {
+              "id": "imeuvxwf",
+              "externalId": "TPM-149"
+            },
+            {
+              "id": "7ndas3dz",
+              "externalId": "TPM-150"
+            }
+          ]
+        },
+        {
+          "id": "TP.2",
+          "name": "Vendor Management",
+          "controls": [
+            {
+              "id": "iqi0eg8n",
+              "externalId": "TPM-151"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

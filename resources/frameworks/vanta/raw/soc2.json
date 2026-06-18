@@ -1,0 +1,2820 @@
+{
+  "principles": [
+    {
+      "id": "A 1",
+      "name": "Additional Criteria for Availability",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A 1.1",
+          "name": "Capacity management",
+          "description": "The entity maintains, monitors, and evaluates current processing capacity and use of system components (infrastructure, data, and software) to manage capacity demand and to enable the implementation of additional capacity to help meet its objectives.",
+          "controls": [
+            {
+              "id": "system-capacity-reviewed",
+              "externalId": "CAP-1",
+              "variants": [
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "system-threshold-monitoring",
+              "externalId": "MON-4",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_AVAILABILITY",
+            "SOC2_SECURITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "A 1.2",
+          "name": "Environmental and recovery infrastructure",
+          "description": "The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data back-up processes, and recovery infrastructure to meet its objectives.",
+          "controls": [
+            {
+              "id": "continuity-disaster-recovery-plans-tested",
+              "externalId": "BCD-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "database-replication-utilized",
+              "externalId": "BCD-4",
+              "variants": [
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "production-data-backups-conducted",
+              "externalId": "BCD-5",
+              "variants": [
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "system-multiple-availability-zones",
+              "externalId": "BCD-6",
+              "variants": [
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "data-backup-procedures",
+              "externalId": "GOV-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "environmental-monitoring-devices-implemented",
+              "externalId": "PES-4",
+              "variants": [
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "environmental-security-inspected-annually",
+              "externalId": "PES-5",
+              "variants": [
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-performed",
+              "externalId": "RSK-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_AVAILABILITY",
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "A 1.3",
+          "name": "Recovery plan testing",
+          "description": "The entity tests recovery plan procedures supporting system recovery to meet its objectives.",
+          "controls": [
+            {
+              "id": "continuity-and-disaster-recovery-plans-established",
+              "externalId": "BCD-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "continuity-disaster-recovery-plans-tested",
+              "externalId": "BCD-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "data-backup-procedures",
+              "externalId": "GOV-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "intrusion-detection-system",
+              "externalId": "MON-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_AVAILABILITY",
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_SECURITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C 1",
+      "name": "Additional Criteria for Confidentiality",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C 1.1",
+          "name": "Confidential information identification",
+          "description": "The entity identifies and maintains confidential information to meet the entity’s objectives related to confidentiality.",
+          "controls": [
+            {
+              "id": "data-retention-procedures-established",
+              "externalId": "AST-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "unique-account-authentication-enforced",
+              "externalId": "CRY-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "data-classification-policy",
+              "externalId": "DCH-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "production-data-segmented",
+              "externalId": "DCH-11",
+              "variants": [
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "third-party-agreements",
+              "externalId": "TPM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "C 1.2",
+          "name": "Confidential information disposal",
+          "description": "The entity disposes of confidential information to meet the entity’s objectives related to confidentiality.",
+          "controls": [
+            {
+              "id": "asset-disposal-procedures-utilized",
+              "externalId": "AST-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "customer-data-deleted-upon-leave",
+              "externalId": "DCH-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 1.0",
+      "name": "Control Environment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 1.1",
+          "name": "COSO Principle 1: Integrity and ethical values",
+          "description": "COSO Principle 1: The entity demonstrates a commitment to integrity and ethical values.",
+          "controls": [
+            {
+              "id": "background-checks-performed",
+              "externalId": "HRS-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "code-of-conduct-acknowledged-contractors",
+              "externalId": "HRS-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "code-of-conduct-acknowledged-employees",
+              "externalId": "HRS-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "confidentiality-agreement-acknowledged-contractors",
+              "externalId": "HRS-4",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "confidentiality-agreement-acknowledged-employees",
+              "externalId": "HRS-5",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "performance-evaluations-conducted",
+              "externalId": "HRS-6",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 1.2",
+          "name": "COSO Principle 2: Board independence and oversight",
+          "description": "COSO Principle 2: The board of directors demonstrates independence from management and exercises oversight of the development and performance of internal control.",
+          "controls": [
+            {
+              "id": "board-of-directors-briefing",
+              "externalId": "GOV-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "board-of-directors-charter",
+              "externalId": "GOV-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "board-of-directors-expertise",
+              "externalId": "GOV-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "board-of-directors-meeting",
+              "externalId": "GOV-4",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 1.3",
+          "name": "COSO Principle 3: Structures, reporting lines, and authorities",
+          "description": "COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives.",
+          "controls": [
+            {
+              "id": "board-of-directors-charter",
+              "externalId": "GOV-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "management-roles-responsibilities-defined",
+              "externalId": "GOV-7",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "organization-structure-documented",
+              "externalId": "GOV-8",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "role-responsibilities-specified",
+              "externalId": "GOV-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 1.4",
+          "name": "COSO Principle 4: Attracting and retaining competent individuals",
+          "description": "COSO Principle 4: The entity demonstrates a commitment to attract, develop, and retain competent individuals in alignment with objectives.",
+          "controls": [
+            {
+              "id": "role-responsibilities-specified",
+              "externalId": "GOV-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "background-checks-performed",
+              "externalId": "HRS-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "performance-evaluations-conducted",
+              "externalId": "HRS-6",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "security-awareness-training-completed",
+              "externalId": "SAT-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 1.5",
+          "name": "COSO Principle 5: Accountability for internal control",
+          "description": "COSO Principle 5: The entity holds individuals accountable for their internal control responsibilities in the pursuit of objectives.",
+          "controls": [
+            {
+              "id": "role-responsibilities-specified",
+              "externalId": "GOV-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "code-of-conduct-acknowledged-employees",
+              "externalId": "HRS-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "performance-evaluations-conducted",
+              "externalId": "HRS-6",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 2.0",
+      "name": "Communication and Information",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 2.1",
+          "name": "COSO Principle 13: Quality information for internal control",
+          "description": "COSO Principle 13: The entity obtains or generates and uses relevant, quality information to support the functioning of internal control.",
+          "controls": [
+            {
+              "id": "control-self-assessments-conducted",
+              "externalId": "IAO-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "log-management-utilized",
+              "externalId": "MON-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "vulnerability-scans-conducted",
+              "externalId": "VPM-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 2.2",
+          "name": "COSO Principle 14: Internal communication of control information",
+          "description": "COSO Principle 14: The entity internally communicates information, including objectives and responsibilities for internal control, necessary to support the functioning of internal control.",
+          "controls": [
+            {
+              "id": "whistleblower-policy-established",
+              "externalId": "CPL-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "management-roles-responsibilities-defined",
+              "externalId": "GOV-7",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "role-responsibilities-specified",
+              "externalId": "GOV-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "security-policies-established-reviewed",
+              "externalId": "GOV-11",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "system-changes-communicated",
+              "externalId": "GOV-13",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "service-description-communicated",
+              "externalId": "PRM-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "security-awareness-training-completed",
+              "externalId": "SAT-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "CC 2.3",
+          "name": "COSO Principle 15: External communication on control matters",
+          "description": "COSO Principle 15: The entity communicates with external parties regarding matters affecting the functioning of internal control.",
+          "controls": [
+            {
+              "id": "external-service-impact-notifications",
+              "externalId": "GOV-6",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "support-system-available",
+              "externalId": "GOV-12",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "commitments-externally-communicated",
+              "externalId": "PRM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "external-support-resources",
+              "externalId": "PRM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "service-description-communicated",
+              "externalId": "PRM-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "third-party-agreements",
+              "externalId": "TPM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_PRIVACY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 3.0",
+      "name": "Risk Assessment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 3.1",
+          "name": "COSO Principle 6: Clarity in objectives for risk identification",
+          "description": "COSO Principle 6: The entity specifies objectives with sufficient clarity to enable the identification and assessment of risks relating to objectives.",
+          "controls": [
+            {
+              "id": "risk-assessment-objectives",
+              "externalId": "RSK-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 3.2",
+          "name": "COSO Principle 7: Risk identification and management",
+          "description": "COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed.",
+          "controls": [
+            {
+              "id": "continuity-disaster-recovery-plans-tested",
+              "externalId": "BCD-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-performed",
+              "externalId": "RSK-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "CC 3.3",
+          "name": "COSO Principle 8: Fraud risk assessment",
+          "description": "COSO Principle 8: The entity considers the potential for fraud in assessing risks to the achievement of objectives.",
+          "controls": [
+            {
+              "id": "risk-assessment-performed",
+              "externalId": "RSK-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 3.4",
+          "name": "COSO Principle 9: Assessment of impactful changes",
+          "description": "COSO Principle 9: The entity identifies and assesses changes that could significantly impact the system of internal control.",
+          "controls": [
+            {
+              "id": "configuration-management-system-established",
+              "externalId": "CFG-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "penetration-testing",
+              "externalId": "IAO-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-performed",
+              "externalId": "RSK-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 4.0",
+      "name": "Monitoring Activities",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 4.1",
+          "name": "COSO Principle 16: Evaluation of internal control",
+          "description": "COSO Principle 16: The entity selects, develops, and performs ongoing and/or separate evaluations to ascertain whether the components of internal control are present and functioning.",
+          "controls": [
+            {
+              "id": "control-self-assessments-conducted",
+              "externalId": "IAO-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "penetration-testing",
+              "externalId": "IAO-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vulnerability-scans-conducted",
+              "externalId": "VPM-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 4.2",
+          "name": "COSO Principle 17: Communication of control deficiencies",
+          "description": "COSO Principle 17: The entity evaluates and communicates internal control deficiencies in a timely manner to those parties responsible for taking corrective action, including senior management and the board of directors, as appropriate.",
+          "controls": [
+            {
+              "id": "control-self-assessments-conducted",
+              "externalId": "IAO-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 5.0",
+      "name": "Control Activities",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 5.1",
+          "name": "COSO Principle 10: Development of control activities",
+          "description": "COSO Principle 10: The entity selects and develops control activities that contribute to the mitigation of risks to the achievement of objectives to acceptable levels.",
+          "controls": [
+            {
+              "id": "security-policies-established-reviewed",
+              "externalId": "GOV-11",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 5.2",
+          "name": "COSO Principle 11: Technology control activities",
+          "description": "COSO Principle 11: The entity also selects and develops general control activities over technology to support the achievement of objectives.",
+          "controls": [
+            {
+              "id": "development-lifecycle-established",
+              "externalId": "CHG-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "security-policies-established-reviewed",
+              "externalId": "GOV-11",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-control-procedures",
+              "externalId": "IAC-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "CC 5.3",
+          "name": "COSO Principle 12: Deployment of control activities",
+          "description": "COSO Principle 12: The entity deploys control activities through policies that establish what is expected and in procedures that put policies into action.",
+          "controls": [
+            {
+              "id": "data-retention-procedures-established",
+              "externalId": "AST-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "change-management-procedures",
+              "externalId": "CHG-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "development-lifecycle-established",
+              "externalId": "CHG-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "data-backup-procedures",
+              "externalId": "GOV-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "role-responsibilities-specified",
+              "externalId": "GOV-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "security-policies-established-reviewed",
+              "externalId": "GOV-11",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "risk-assessment-objectives",
+              "externalId": "RSK-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY",
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 6.0",
+      "name": "Logical and Physical Access Controls",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 6.1",
+          "name": "Logical access security implementation",
+          "description": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives.",
+          "controls": [
+            {
+              "id": "production-inventory-maintained",
+              "externalId": "AST-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "changes-approval-required",
+              "externalId": "CHG-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-datastores-ssh",
+              "externalId": "CRY-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-encryption-keys",
+              "externalId": "CRY-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "data-encrypted",
+              "externalId": "CRY-4",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "unique-account-authentication-enforced",
+              "externalId": "CRY-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "data-classification-policy",
+              "externalId": "DCH-5",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "access-application-restricted",
+              "externalId": "IAC-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-control-procedures",
+              "externalId": "IAC-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-database-restricted-users",
+              "externalId": "IAC-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-firewalls",
+              "externalId": "IAC-4",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-operating-system-restricted",
+              "externalId": "IAC-5",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-production-network-restricted",
+              "externalId": "IAC-6",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "access-role-based",
+              "externalId": "IAC-9",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-ssh-required",
+              "externalId": "IAC-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "policies-password-complexity",
+              "externalId": "IAC-11",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "remote-access-mfa-enforced",
+              "externalId": "IAC-12",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "remote-access-vpn-enforced",
+              "externalId": "IAC-13",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "infra-network-segregation",
+              "externalId": "NET-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "CC 6.2",
+          "name": "User registration and access control",
+          "description": "Prior to issuing system credentials and granting system access, the entity registers and authorizes new internal and external users whose access is administered by the entity. For those users whose access is administered by the entity, user system credentials are removed when user access is no longer authorized.",
+          "controls": [
+            {
+              "id": "access-control-procedures",
+              "externalId": "IAC-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-reviews",
+              "externalId": "IAC-7",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-revoked-termination",
+              "externalId": "IAC-8",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-role-based",
+              "externalId": "IAC-9",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-ssh-required",
+              "externalId": "IAC-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 6.3",
+          "name": "Role-based access management",
+          "description": "The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "access-control-procedures",
+              "externalId": "IAC-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-reviews",
+              "externalId": "IAC-7",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-revoked-termination",
+              "externalId": "IAC-8",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-role-based",
+              "externalId": "IAC-9",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-ssh-required",
+              "externalId": "IAC-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 6.4",
+          "name": "Physical access restrictions",
+          "description": "The entity restricts physical access to facilities and protected information assets (for example, data center facilities,  back-up media storage, and other sensitive locations) to authorized personnel to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "access-reviews",
+              "externalId": "IAC-7",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-physical-datacenter",
+              "externalId": "PES-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-physical-review",
+              "externalId": "PES-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "access-physical-visitors",
+              "externalId": "PES-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 6.5",
+          "name": "Decommissioning of logical and physical assets",
+          "description": "The entity discontinues logical and physical protections over physical assets only after the ability to read or recover data and software from those assets has been diminished and is no longer required to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "asset-disposal-procedures-utilized",
+              "externalId": "AST-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "data-retention-procedures-established",
+              "externalId": "AST-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "customer-data-deleted-upon-leave",
+              "externalId": "DCH-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY"
+              ]
+            },
+            {
+              "id": "access-revoked-termination",
+              "externalId": "IAC-8",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 6.6",
+          "name": "External threat protection",
+          "description": "The entity implements logical access security measures to protect against threats from sources outside its system boundaries.",
+          "controls": [
+            {
+              "id": "access-ssh-required",
+              "externalId": "IAC-10",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "remote-access-mfa-enforced",
+              "externalId": "IAC-12",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "remote-access-vpn-enforced",
+              "externalId": "IAC-13",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "intrusion-detection-system",
+              "externalId": "MON-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "data-encrypted-in-transit",
+              "externalId": "NET-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "network-firewalls-reviewed",
+              "externalId": "NET-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "network-firewalls-utilized",
+              "externalId": "NET-4",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "system-network-hardening",
+              "externalId": "NET-5",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "support-infra-patched",
+              "externalId": "VPM-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY"
+          ]
+        },
+        {
+          "id": "CC 6.7",
+          "name": "Information transmission security",
+          "description": "The entity restricts the transmission, movement, and removal of information to authorized internal and external users and processes, and protects it during transmission, movement, or removal to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "assets-portable-media-encrypted",
+              "externalId": "CRY-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "MDM-system-utilized",
+              "externalId": "MDM-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "data-encrypted-in-transit",
+              "externalId": "NET-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "CC 6.8",
+          "name": "Malware prevention and detection",
+          "description": "The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious software to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "development-lifecycle-established",
+              "externalId": "CHG-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "assets-anti-malware",
+              "externalId": "END-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "support-infra-patched",
+              "externalId": "VPM-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 7.0",
+      "name": "System Operations",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 7.1",
+          "name": "Vulnerability detection and monitoring",
+          "description": "To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities.",
+          "controls": [
+            {
+              "id": "configuration-management-system-established",
+              "externalId": "CFG-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "change-management-procedures",
+              "externalId": "CHG-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "policies-incident-monitoring",
+              "externalId": "OPS-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-performed",
+              "externalId": "RSK-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "vulnerability-scans-conducted",
+              "externalId": "VPM-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY"
+          ]
+        },
+        {
+          "id": "CC 7.2",
+          "name": "System anomaly monitoring",
+          "description": "The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events.",
+          "controls": [
+            {
+              "id": "penetration-testing",
+              "externalId": "IAO-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "intrusion-detection-system",
+              "externalId": "MON-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "log-management-utilized",
+              "externalId": "MON-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "system-threshold-monitoring",
+              "externalId": "MON-4",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "policies-incident-monitoring",
+              "externalId": "OPS-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "support-infra-patched",
+              "externalId": "VPM-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "vulnerability-scans-conducted",
+              "externalId": "VPM-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        },
+        {
+          "id": "CC 7.3",
+          "name": "Security event evaluation",
+          "description": "The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures.",
+          "controls": [
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 7.4",
+          "name": "Incident response program",
+          "description": "The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate.",
+          "controls": [
+            {
+              "id": "incident-response-plan-tested",
+              "externalId": "IRO-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "support-infra-patched",
+              "externalId": "VPM-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "vulnerability-scans-conducted",
+              "externalId": "VPM-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 7.5",
+          "name": "Security incident recovery",
+          "description": "The entity identifies, develops, and implements activities to recover from identified security incidents.",
+          "controls": [
+            {
+              "id": "continuity-disaster-recovery-plans-tested",
+              "externalId": "BCD-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "incident-response-plan-tested",
+              "externalId": "IRO-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 8.0",
+      "name": "Change Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 8.1",
+          "name": "Change management process",
+          "description": "The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements changes to infrastructure, data, software, and procedures to meet its objectives.",
+          "controls": [
+            {
+              "id": "change-management-procedures",
+              "externalId": "CHG-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "changes-approval-required",
+              "externalId": "CHG-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "development-lifecycle-established",
+              "externalId": "CHG-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "penetration-testing",
+              "externalId": "IAO-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "system-network-hardening",
+              "externalId": "NET-5",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "support-infra-patched",
+              "externalId": "VPM-1",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "vulnerability-scans-conducted",
+              "externalId": "VPM-2",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_PROCESSING_INTEGRITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CC 9.0",
+      "name": "Risk Mitigation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CC 9.1",
+          "name": "Business disruption risk mitigation",
+          "description": "The entity identifies, selects, and develops risk mitigation activities for risks arising from potential business disruptions.",
+          "controls": [
+            {
+              "id": "continuity-and-disaster-recovery-plans-established",
+              "externalId": "BCD-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "cybersecurity-insurance-maintained",
+              "externalId": "BCD-3",
+              "variants": [
+                "SOC2_SECURITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-performed",
+              "externalId": "RSK-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "CC 9.2",
+          "name": "Vendor and partner risk management",
+          "description": "The entity assesses and manages risks associated with vendors and business partners.",
+          "controls": [
+            {
+              "id": "third-party-agreements",
+              "externalId": "TPM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 1.0",
+      "name": "Privacy Criteria Related to Notice and Communication of Objectives Related to Privacy",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 1.1",
+          "name": "Privacy notice to data subjects",
+          "description": "The entity provides notice to data subjects about its privacy practices to meet the entity’s objectives related to privacy. The notice is updated and communicated to data subjects in a timely manner for changes to the entity’s privacy practices, including changes in the use of personal information, to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "personal-information-collection-changes-communicated",
+              "externalId": "PRI-3",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-privacy-policy",
+              "externalId": "PRI-6",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policy-available",
+              "externalId": "PRI-14",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policy-reviewed",
+              "externalId": "PRI-16",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 2.0",
+      "name": "Privacy Criteria Related to Choice and Consent",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 2.1",
+          "name": "Privacy choices and consent",
+          "description": "The entity communicates choices available regarding the collection, use, retention, disclosure, and disposal of personal information to the data subjects and the consequences, if any, of each choice. Explicit consent for the collection, use, retention, disclosure, and disposal of personal information is obtained from data subjects or other authorized persons, if required. Such consent is obtained only for the intended purpose of the information to meet the entity’s objectives related to privacy. The entity’s basis for determining implicit consent for the collection, use, retention, disclosure, and disposal of personal information is documented.",
+          "controls": [
+            {
+              "id": "policies-privacy-policy",
+              "externalId": "PRI-6",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-explicity-consent-obtained",
+              "externalId": "PRI-9",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-individual-consent-obtained",
+              "externalId": "PRI-10",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-new-information-purpose-consent",
+              "externalId": "PRI-11",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-opt-out",
+              "externalId": "PRI-12",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 3.0",
+      "name": "Privacy Criteria Related to Collection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 3.1",
+          "name": "Personal information collection",
+          "description": "Personal information is collected consistent with the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "personal-information-collection-changes-communicated",
+              "externalId": "PRI-3",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "personal-information-collection-reviewed",
+              "externalId": "PRI-4",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "personal-information-reliability-verified",
+              "externalId": "PRI-5",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policies-personal-information-use-reviewed",
+              "externalId": "PRI-13",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "P 3.2",
+          "name": "Consent communication and collection",
+          "description": "For information requiring explicit consent, the entity communicates the need for such consent, as well as the consequences of a failure to provide consent for the request for personal information, and obtains the consent prior to the collection of the information to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "privacy-explicity-consent-obtained",
+              "externalId": "PRI-9",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 4.0",
+      "name": "Privacy Criteria Related to Use, Retention, and Disposal",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 4.1",
+          "name": "Limited use of personal information",
+          "description": "The entity limits the use of personal information to the purposes identified in the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "privacy-policies-personal-information-use-reviewed",
+              "externalId": "PRI-13",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "P 4.2",
+          "name": "Personal information retention",
+          "description": "The entity retains personal information consistent with the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "data-retention-procedures-established",
+              "externalId": "AST-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-data-retained",
+              "externalId": "PRI-8",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "P 4.3",
+          "name": "Secure disposal of personal information",
+          "description": "The entity securely disposes of personal information to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "data-deletion-requests-handled",
+              "externalId": "DCH-6",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-inquiries-handled",
+              "externalId": "DCH-9",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-sensitive-data-disposal",
+              "externalId": "DCH-10",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 5.0",
+      "name": "Privacy Criteria Related to Access",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 5.1",
+          "name": "Data subject access to personal information",
+          "description": "The entity grants identified and authenticated data subjects the ability to access their stored personal information for review and, upon request, provides physical or electronic copies of that information to data subjects to meet the entity’s objectives related to privacy. If access is denied, data subjects are informed of the denial and reason for such denial, as required, to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "privacy-identity-verification",
+              "externalId": "DCH-8",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-privacy-policy",
+              "externalId": "PRI-6",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policy-established",
+              "externalId": "PRI-15",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "P 5.2",
+          "name": "Personal information correction and amendment",
+          "description": "The entity corrects, amends, or appends personal information based on information provided by data subjects and communicates such information to third parties, as committed or required, to meet the entity’s objectives related to privacy. If a request for correction is denied, data subjects are informed of the denial and reason for such denial to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "personal-information-changes-communicated",
+              "externalId": "DCH-7",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policy-established",
+              "externalId": "PRI-15",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 6.0",
+      "name": "Privacy Criteria Related to Disclosure and Notification",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 6.1",
+          "name": "Personal information disclosure",
+          "description": "The entity discloses personal information to third parties with the explicit consent of data subjects, and such consent is obtained prior to disclosure to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "legal-personal-information-tracked",
+              "externalId": "PRI-1",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-privacy-policy",
+              "externalId": "PRI-6",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-individual-consent-obtained",
+              "externalId": "PRI-10",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-new-information-purpose-consent",
+              "externalId": "PRI-11",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-privacy-documentation-reviewed",
+              "externalId": "PRI-17",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-agreements",
+              "externalId": "TPM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_SECURITY",
+            "SOC2_CONFIDENTIALITY"
+          ]
+        },
+        {
+          "id": "P 6.2",
+          "name": "Record of authorized disclosures",
+          "description": "The entity creates and retains a complete, accurate, and timely record of authorized disclosures of personal information to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "third-party-privacy-documentation-reviewed",
+              "externalId": "PRI-17",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        },
+        {
+          "id": "P 6.3",
+          "name": "Record of unauthorized disclosures",
+          "description": "The entity creates and retains a complete, accurate, and timely record of detected or reported unauthorized disclosures (including breaches) of personal information to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "P 6.4",
+          "name": "Privacy commitments from vendors and third parties",
+          "description": "The entity obtains privacy commitments from vendors and other third parties who have access to personal information to meet the entity’s objectives related to privacy. The entity assesses those parties’ compliance on a periodic and as-needed basis and takes corrective action, if necessary.",
+          "controls": [
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-agreements",
+              "externalId": "TPM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "vendor-management-program-established",
+              "externalId": "TPM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "P 6.5",
+          "name": "Third-party breach notification commitment",
+          "description": "The entity obtains commitments from vendors and other third parties with access to personal information to notify the entity in the event of actual or suspected unauthorized disclosures of personal information. Such notifications are reported to appropriate personnel and acted on in accordance with established incident response procedures to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-agreements",
+              "externalId": "TPM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_SECURITY",
+            "SOC2_CONFIDENTIALITY"
+          ]
+        },
+        {
+          "id": "P 6.6",
+          "name": "Breach and incident notification",
+          "description": "The entity provides notification of breaches and incidents to affected data subjects, regulators, and others to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "incident-response-policies-established",
+              "externalId": "IRO-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "P 6.7",
+          "name": "Personal information accounting",
+          "description": "The entity provides data subjects with an accounting of the personal information held and disclosure of the data subjects’ personal information, upon the data subjects’ request, to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "privacy-identity-verification",
+              "externalId": "DCH-8",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-inquiries-handled",
+              "externalId": "DCH-9",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-data-sharing",
+              "externalId": "IRO-4",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-privacy-documentation-reviewed",
+              "externalId": "PRI-17",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 7.0",
+      "name": "Privacy Criteria Related to Quality",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 7.1",
+          "name": "Accurate and complete personal information",
+          "description": "The entity collects and maintains accurate, up-to-date, complete, and relevant personal information to meet the entity’s objectives related to privacy.",
+          "controls": [
+            {
+              "id": "personal-data-updates",
+              "externalId": "PRI-2",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policy-established",
+              "externalId": "PRI-15",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-privacy-documentation-reviewed",
+              "externalId": "PRI-17",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P 8.0",
+      "name": "Privacy Criteria Related to Monitoring and Enforcement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "P 8.1",
+          "name": "Privacy inquiry and dispute resolution",
+          "description": "The entity implements a process for receiving, addressing, resolving, and communicating the resolution of inquiries, complaints, and disputes from data subjects and others and periodically monitors compliance to meet the entity’s objectives related to privacy. Corrections and other necessary actions related to identified deficiencies are made or taken in a timely manner.",
+          "controls": [
+            {
+              "id": "board-of-directors-briefing",
+              "externalId": "GOV-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "control-self-assessments-conducted",
+              "externalId": "IAO-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "policies-incident-management",
+              "externalId": "IRO-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-complaints-procedures",
+              "externalId": "PRI-7",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "privacy-policy-established",
+              "externalId": "PRI-15",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "third-party-privacy-documentation-reviewed",
+              "externalId": "PRI-17",
+              "variants": [
+                "SOC2_PRIVACY"
+              ]
+            },
+            {
+              "id": "risk-assessment-program",
+              "externalId": "RSK-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PRIVACY",
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PI 1",
+      "name": "Additional Criteria for Processing Integrity",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PI 1.1",
+          "name": "Quality information for processing objectives",
+          "description": "The entity obtains or generates, uses, and communicates relevant, quality information regarding the objectives related to processing, including definitions of data processed and product and service specifications, to support the use of products and services.",
+          "controls": [
+            {
+              "id": "commitments-externally-communicated",
+              "externalId": "PRM-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "external-support-resources",
+              "externalId": "PRM-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "service-description-communicated",
+              "externalId": "PRM-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "PI 1.2",
+          "name": "Input controls policies and procedures",
+          "description": "The entity implements policies and procedures over system inputs, including controls over completeness and accuracy, to result in products, services, and reporting to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "development-lifecycle-established",
+              "externalId": "CHG-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "customer-data-retained",
+              "externalId": "DCH-2",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-data-input-monitoring",
+              "externalId": "MON-3",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "policies-passwords-enforced",
+              "externalId": "TDA-1",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-activity-logged",
+              "externalId": "TDA-3",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "PI 1.3",
+          "name": "Processing controls policies and procedures",
+          "description": "The entity implements policies and procedures over system processing to result in products, services, and reporting to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "development-lifecycle-established",
+              "externalId": "CHG-3",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-data-input-monitoring",
+              "externalId": "MON-3",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-threshold-monitoring",
+              "externalId": "MON-4",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "processing-issues-automatically-alerted",
+              "externalId": "TDA-2",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-activity-logged",
+              "externalId": "TDA-3",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-customer-input-validation",
+              "externalId": "TDA-4",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY"
+          ]
+        },
+        {
+          "id": "PI 1.4",
+          "name": "Output delivery controls",
+          "description": "The entity implements policies and procedures to make available or deliver output completely, accurately, and timely in accordance with specifications to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "data-encrypted",
+              "externalId": "CRY-4",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "customer-data-retained",
+              "externalId": "DCH-2",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "customer-transactions-portal-available",
+              "externalId": "DCH-4",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "processing-alerts-available",
+              "externalId": "GOV-9",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "system-data-input-monitoring",
+              "externalId": "MON-3",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "processing-issues-automatically-alerted",
+              "externalId": "TDA-2",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_SECURITY"
+          ]
+        },
+        {
+          "id": "PI 1.5",
+          "name": "Storage policies for inputs, processing, and outputs",
+          "description": "The entity implements policies and procedures to store inputs, items in processing, and outputs completely, accurately, and timely in accordance with system specifications to meet the entity’s objectives.",
+          "controls": [
+            {
+              "id": "continuity-disaster-recovery-plans-tested",
+              "externalId": "BCD-2",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "customer-data-retained",
+              "externalId": "DCH-2",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "customer-transaction-modifications-restricted",
+              "externalId": "DCH-3",
+              "variants": [
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            },
+            {
+              "id": "access-production-network-restricted",
+              "externalId": "IAC-6",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_PROCESSING_INTEGRITY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SD - SOC 2",
+      "name": "Supporting Compliance Documentation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SD - SOC 2",
+          "name": "System and commitments description for audit",
+          "description": "Description of the organization‘s system and commitments for Section III of the audit report",
+          "controls": [
+            {
+              "id": "system-description",
+              "externalId": "CPL-1",
+              "variants": [
+                "SOC2_SECURITY",
+                "SOC2_AVAILABILITY",
+                "SOC2_CONFIDENTIALITY",
+                "SOC2_PROCESSING_INTEGRITY",
+                "SOC2_PRIVACY"
+              ]
+            }
+          ],
+          "variants": [
+            "SOC2_SECURITY",
+            "SOC2_AVAILABILITY",
+            "SOC2_CONFIDENTIALITY",
+            "SOC2_PROCESSING_INTEGRITY",
+            "SOC2_PRIVACY"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "principles": [
+    {
+      "id": "Data security",
+      "name": "Data security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Data encryption",
+          "name": "Data encryption",
+          "description": "Data encryption",
+          "context": "Data encryption is the practice of encoding data at rest and in transit. This is important to prevent unauthorized access to sensitive data.",
+          "controls": [
+            {
+              "id": "trust-data-encrypted",
+              "externalId": "VAN-19"
+            },
+            {
+              "id": "trust-data-encrypted-in-transit",
+              "externalId": "VAN-20"
+            }
+          ]
+        },
+        {
+          "id": "Data reliability",
+          "name": "Data reliability",
+          "description": "Data reliability",
+          "context": "Data reliability encapsulates practices around data backup, database scaling, and database replication. This is important to maintain high availability for critical data, especially in disaster recovery scenarios.",
+          "controls": [
+            {
+              "id": "trust-data-backups",
+              "externalId": "VAN-21"
+            },
+            {
+              "id": "trust-database-reliability",
+              "externalId": "VAN-31"
+            },
+            {
+              "id": "trust-data-management-policy",
+              "externalId": "VAN-37"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Infrastructure security",
+      "name": "Infrastructure security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Identity and access management",
+          "name": "Identity and access management",
+          "description": "Identity and access management",
+          "context": "Identity and access management involves managing access, roles, and permissions within your cloud provider. Following IAM best practices is important for following the principle of least privilege.",
+          "controls": [
+            {
+              "id": "trust-iam-configuration",
+              "externalId": "VAN-9"
+            },
+            {
+              "id": "trust-iam-unused-accounts-disabled",
+              "externalId": "VAN-10"
+            },
+            {
+              "id": "trust-iam-root-account-unused",
+              "externalId": "VAN-11"
+            }
+          ]
+        },
+        {
+          "id": "Logging",
+          "name": "Logging",
+          "description": "Logging",
+          "context": "Logging is the practice of tracking and recording network access, data reads/writes, cloud API calls, and more. This is important for visibility into potentially critical actions within your cloud infrastructure, which can support security analysis in the case of incidents.",
+          "controls": [
+            {
+              "id": "trust-infra-activity-tracked-config",
+              "externalId": "VAN-13"
+            },
+            {
+              "id": "trust-intrustion-detection-system-enabled",
+              "externalId": "VAN-14"
+            },
+            {
+              "id": "trust-flow-logs",
+              "externalId": "VAN-18"
+            },
+            {
+              "id": "trust-logs-centrally-stored-config",
+              "externalId": "VAN-35"
+            },
+            {
+              "id": "trust-logging-buckets-configured",
+              "externalId": "VAN-36"
+            }
+          ]
+        },
+        {
+          "id": "Monitoring",
+          "name": "Monitoring",
+          "description": "Monitoring",
+          "context": "Monitoring is the practice of gathering metrics about cloud resources (load balancers, databases, queues, servers, etc.) to understand how they run in real-time. This is important to ensure that your application continues to operate reliably.",
+          "controls": [
+            {
+              "id": "trust-loadbalancer-monitoring",
+              "externalId": "VAN-16"
+            },
+            {
+              "id": "trust-loadbalancer-used",
+              "externalId": "VAN-17"
+            },
+            {
+              "id": "trust-monitoring-databases",
+              "externalId": "VAN-22"
+            },
+            {
+              "id": "trust-queue-monitoring",
+              "externalId": "VAN-24"
+            },
+            {
+              "id": "trust-server-monitoring",
+              "externalId": "VAN-26"
+            },
+            {
+              "id": "trust-serverless-function-monitoring",
+              "externalId": "VAN-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Operational security",
+      "name": "Operational security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Asset management",
+          "name": "Asset management",
+          "description": "Asset management",
+          "context": "Asset management is the practice of improving the visibility of important details of a company's assets. This is important to ensure that the company has an up-to-date record of assets that can affect their security posture.",
+          "controls": [
+            {
+              "id": "trust-information-security-policy",
+              "externalId": "VAN-12"
+            },
+            {
+              "id": "trust-inventory-maintained",
+              "externalId": "VAN-15"
+            },
+            {
+              "id": "trust-asset-management-policy",
+              "externalId": "VAN-32"
+            }
+          ]
+        },
+        {
+          "id": "Incident response",
+          "name": "Incident response",
+          "description": "Incident response",
+          "context": "Incident response is the practice of establishing a process for managing information security incidents and events. It is important because it helps the company follow a repeatable process that will mitigate risk and reduce the time to recovery.",
+          "controls": [
+            {
+              "id": "trust-incident-response-plan",
+              "externalId": "VAN-34"
+            }
+          ]
+        },
+        {
+          "id": "Account security",
+          "name": "Account security",
+          "description": "Account security",
+          "context": "Account security is the practice by which a company protects user accounts on various services. It is important because accounts are a common target for cyberattacks.",
+          "controls": [
+            {
+              "id": "trust-account-access-removed-on-termination",
+              "externalId": "VAN-1"
+            },
+            {
+              "id": "trust-account-linked-in-vanta",
+              "externalId": "VAN-2"
+            },
+            {
+              "id": "trust-account-mfa-enabled",
+              "externalId": "VAN-3"
+            },
+            {
+              "id": "trust-password-policy-config",
+              "externalId": "VAN-23"
+            },
+            {
+              "id": "trust-unique-accounts-records",
+              "externalId": "VAN-29"
+            },
+            {
+              "id": "trust-access-control-policy",
+              "externalId": "VAN-33"
+            }
+          ]
+        },
+        {
+          "id": "Secure development",
+          "name": "Secure development",
+          "description": "Secure development",
+          "context": "Secure development is the practice by which the company incorporates security principles into the software development lifecycle. It is important because it helps reduce risks introduced during the development phase of an application.",
+          "controls": [
+            {
+              "id": "trust-code-review-application-config",
+              "externalId": "VAN-4"
+            },
+            {
+              "id": "trust-code-review-template-present",
+              "externalId": "VAN-5"
+            },
+            {
+              "id": "trust-security-issues-process",
+              "externalId": "VAN-25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Product security",
+      "name": "Product security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Network security",
+          "name": "Network security",
+          "description": "Network security",
+          "context": "Network security involves restricting network access to servers, databases, and other resources within your cloud environment. This is important to reduce the risk of unauthorized access to these resources.",
+          "controls": [
+            {
+              "id": "trust-compute-instance-network-access",
+              "externalId": "VAN-6"
+            },
+            {
+              "id": "trust-database-network-access",
+              "externalId": "VAN-7"
+            },
+            {
+              "id": "trust-firewall-config-default-deny",
+              "externalId": "VAN-8"
+            },
+            {
+              "id": "trust-storage-buckets-public-access-blocked",
+              "externalId": "VAN-28"
+            }
+          ]
+        },
+        {
+          "id": "Vulnerability management",
+          "name": "Vulnerability management",
+          "description": "Vulnerability management",
+          "context": "Vulnerability management is the practice of regularly scanning for and remediating vulnerabilities on packages and in code. This is important in order to reduce application and infrastructure attack surface through known vulnerabilities and exploits.",
+          "controls": [
+            {
+              "id": "trust-vulnerabilities-records-closed",
+              "externalId": "VAN-30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

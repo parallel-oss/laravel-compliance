@@ -1,0 +1,1566 @@
+{
+  "principles": [
+    {
+      "id": "A.2",
+      "name": "Policies related to AI",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.2.2",
+          "name": "AI policy",
+          "description": "",
+          "controls": [
+            {
+              "id": "mv23fc4h",
+              "externalId": "CPL-64",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.2.3",
+          "name": "Alignment with other organizational policies",
+          "description": "",
+          "controls": [
+            {
+              "id": "s82bfrvi",
+              "externalId": "GOV-259",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.2.4",
+          "name": "Review of the AI policy",
+          "description": "",
+          "controls": [
+            {
+              "id": "xqojnark",
+              "externalId": "GOV-260",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "name": "Internal organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.3.2",
+          "name": "AI roles and responsibilities",
+          "description": "",
+          "controls": [
+            {
+              "id": "k302l3v1",
+              "externalId": "GOV-261",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.3.3",
+          "name": "Reporting of concerns",
+          "description": "",
+          "controls": [
+            {
+              "id": "25u1xcxj",
+              "externalId": "GOV-262",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "name": "Resources for AI systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.4.2",
+          "name": "Resource documentation",
+          "description": "",
+          "controls": [
+            {
+              "id": "hdlg4yb7",
+              "externalId": "DCH-303",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.4.3",
+          "name": "Data resources",
+          "description": "",
+          "controls": [
+            {
+              "id": "67df7iki",
+              "externalId": "DCH-202",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.4.4",
+          "name": "Tooling resources",
+          "description": "",
+          "controls": [
+            {
+              "id": "i8t9cy8v",
+              "externalId": "GOV-263",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.4.5",
+          "name": "System and computing resources",
+          "description": "",
+          "controls": [
+            {
+              "id": "x9d7qf8r",
+              "externalId": "GOV-264",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.4.6",
+          "name": "Human resources",
+          "description": "",
+          "controls": [
+            {
+              "id": "knvr2kkx",
+              "externalId": "HRS-89",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.5",
+      "name": "Assessing impacts of AI systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.5.2",
+          "name": "AI system impact assessment process",
+          "description": "",
+          "controls": [
+            {
+              "id": "8lvpypuf",
+              "externalId": "RSK-83",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.5.3",
+          "name": "Documentation of AI system impact assessments",
+          "description": "",
+          "controls": [
+            {
+              "id": "7jvdnf9n",
+              "externalId": "RSK-84",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.5.4",
+          "name": "Assessing AI system impact on individuals or groups of individuals",
+          "description": "",
+          "controls": [
+            {
+              "id": "ycfvi6lh",
+              "externalId": "RSK-85",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.5.5",
+          "name": "Assessing societal impacts of AI systems",
+          "description": "",
+          "controls": [
+            {
+              "id": "bxvft1jd",
+              "externalId": "RSK-86",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.6",
+      "name": "AI system life cycle",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.6.1.2",
+          "name": "Objectives for responsible development of AI system",
+          "description": "",
+          "controls": [
+            {
+              "id": "dj7cw89j",
+              "externalId": "CPL-65",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        },
+        {
+          "id": "A.6.1.3",
+          "name": "Processes for responsible design and development of AI systems",
+          "description": "",
+          "controls": [
+            {
+              "id": "tb1yghv7",
+              "externalId": "CPL-66",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        },
+        {
+          "id": "A.6.2.2",
+          "name": "AI system requirements and specification",
+          "description": "",
+          "controls": [
+            {
+              "id": "pdzbda99",
+              "externalId": "TDA-193",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        },
+        {
+          "id": "A.6.2.3",
+          "name": "Documentation of AI system design and development",
+          "description": "",
+          "controls": [
+            {
+              "id": "p9v594wf",
+              "externalId": "TDA-194",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        },
+        {
+          "id": "A.6.2.4",
+          "name": "AI system verification and validation",
+          "description": "",
+          "controls": [
+            {
+              "id": "wihjmt06",
+              "externalId": "TDA-195",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.6.2.5",
+          "name": "AI system deployment",
+          "description": "",
+          "controls": [
+            {
+              "id": "dqbf49it",
+              "externalId": "TDA-196",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.6.2.6",
+          "name": "AI system operation and monitoring",
+          "description": "",
+          "controls": [
+            {
+              "id": "finbjac0",
+              "externalId": "TDA-197",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.6.2.7",
+          "name": "AI system technical documentation",
+          "description": "",
+          "controls": [
+            {
+              "id": "duabcpmo",
+              "externalId": "TDA-198",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.6.2.8",
+          "name": "AI system recording of event logs",
+          "description": "",
+          "controls": [
+            {
+              "id": "3pa4e3qy",
+              "externalId": "TDA-199",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.7",
+      "name": "Data for AI systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.7.2",
+          "name": "Data for development and enhancement",
+          "description": "",
+          "controls": [
+            {
+              "id": "u6ejyj6g",
+              "externalId": "TDA-200",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        },
+        {
+          "id": "A.7.3",
+          "name": "Acquisition of data",
+          "description": "",
+          "controls": [
+            {
+              "id": "909iqo7c",
+              "externalId": "TDA-201",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.7.4",
+          "name": "Quality of data for AI systems",
+          "description": "",
+          "controls": [
+            {
+              "id": "dgt5prvp",
+              "externalId": "TDA-202",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.7.5",
+          "name": "Data provenance",
+          "description": "",
+          "controls": [
+            {
+              "id": "5cwslem9",
+              "externalId": "TDA-203",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.7.6",
+          "name": "Data preparation",
+          "description": "",
+          "controls": [
+            {
+              "id": "oced3nj8",
+              "externalId": "TDA-204",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.8",
+      "name": "Information for interested parties",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.8.2",
+          "name": "System documentation and information",
+          "description": "",
+          "controls": [
+            {
+              "id": "6vf1qe3m",
+              "externalId": "TDA-205",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.8.3",
+          "name": "External reporting",
+          "description": "",
+          "controls": [
+            {
+              "id": "a2uxlytq",
+              "externalId": "CPL-67",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        },
+        {
+          "id": "A.8.4",
+          "name": "Communication of incidents",
+          "description": "",
+          "controls": [
+            {
+              "id": "resi95i1",
+              "externalId": "CPL-68",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.8.5",
+          "name": "Information for interested parties",
+          "description": "",
+          "controls": [
+            {
+              "id": "rti7c12i",
+              "externalId": "CPL-69",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.9",
+      "name": "Use of AI systems",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.9.2",
+          "name": "Processes for responsible use of AI",
+          "description": "",
+          "controls": [
+            {
+              "id": "tnrmgcr9",
+              "externalId": "CPL-70",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.9.3",
+          "name": "Objectives for responsible use of AI",
+          "description": "",
+          "controls": [
+            {
+              "id": "htbtdq0l",
+              "externalId": "CPL-71",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.9.4",
+          "name": "Intended use of the AI system",
+          "description": "",
+          "controls": [
+            {
+              "id": "8bgvj4cv",
+              "externalId": "CPL-72",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.10",
+      "name": "Third-party and customer relationships",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.10.2",
+          "name": "Allocating",
+          "description": "",
+          "controls": [
+            {
+              "id": "beyb0imu",
+              "externalId": "CPL-73",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.10.3",
+          "name": "Suppliers",
+          "description": "",
+          "controls": [
+            {
+              "id": "b350j5pr",
+              "externalId": "CPL-74",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "A.10.4",
+          "name": "Customers",
+          "description": "",
+          "controls": [
+            {
+              "id": "qt3lbf0e",
+              "externalId": "CPL-75",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.4",
+      "name": "Context of the organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.4.1",
+          "name": "Understanding the organization and its context",
+          "description": "",
+          "controls": [
+            {
+              "id": "ruu214c8",
+              "externalId": "GOV-243",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.4.2",
+          "name": "Understanding the needs and expectations of interested",
+          "description": "",
+          "controls": [
+            {
+              "id": "dg0v0ybn",
+              "externalId": "GOV-244",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.4.3",
+          "name": "Determining the scope of the AI management system",
+          "description": "",
+          "controls": [
+            {
+              "id": "sq1s6nel",
+              "externalId": "AST-106",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.4.4",
+          "name": "AI management system",
+          "description": "",
+          "controls": [
+            {
+              "id": "ctzj15re",
+              "externalId": "GOV-245",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.5",
+      "name": "Leadership",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.5.1",
+          "name": "Leadership and commitment",
+          "description": "",
+          "controls": [
+            {
+              "id": "mnhhyxny",
+              "externalId": "GOV-246",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.5.2",
+          "name": "AI policy",
+          "description": "",
+          "controls": [
+            {
+              "id": "jk9d6mmf",
+              "externalId": "GOV-247",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.5.3",
+          "name": "Roles, responsibilities and authorities",
+          "description": "",
+          "controls": [
+            {
+              "id": "qoda3uur",
+              "externalId": "GOV-248",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.6",
+      "name": "Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.6.1.1",
+          "name": "General",
+          "description": "",
+          "controls": [
+            {
+              "id": "6bt2b173",
+              "externalId": "RSK-78",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.6.1.2",
+          "name": "AI risk assessment",
+          "description": "",
+          "controls": [
+            {
+              "id": "lgo72ukk",
+              "externalId": "RSK-79",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.6.1.3",
+          "name": "AI risk treatment",
+          "description": "",
+          "controls": [
+            {
+              "id": "x6207qsp",
+              "externalId": "RSK-80",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.6.1.4",
+          "name": "AI system impact assessment",
+          "description": "",
+          "controls": [
+            {
+              "id": "7b8gitd2",
+              "externalId": "GOV-249",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.6.2",
+          "name": "AI objectives and planning",
+          "description": "",
+          "controls": [
+            {
+              "id": "bta6994g",
+              "externalId": "CHG-115",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.6.3",
+          "name": "Planning of changes",
+          "description": "",
+          "controls": [
+            {
+              "id": "9mei16zi",
+              "externalId": "PRM-21",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.7",
+      "name": "Support",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.7.1",
+          "name": "Resources",
+          "description": "",
+          "controls": [
+            {
+              "id": "oronrdlp",
+              "externalId": "HRS-87",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.7.2",
+          "name": "Competence",
+          "description": "",
+          "controls": [
+            {
+              "id": "vwk9noiz",
+              "externalId": "HRS-88",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.7.3",
+          "name": "Awareness",
+          "description": "",
+          "controls": [
+            {
+              "id": "gz2i73gz",
+              "externalId": "GOV-250",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.7.4",
+          "name": "Communication",
+          "description": "",
+          "controls": [
+            {
+              "id": "qwyopen0",
+              "externalId": "GOV-251",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.7.5.1",
+          "name": "General",
+          "description": "",
+          "controls": [
+            {
+              "id": "sc988w44",
+              "externalId": "GOV-252",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.7.5.2",
+          "name": "Creating and updating",
+          "description": "",
+          "controls": [
+            {
+              "id": "uk2jpoyd",
+              "externalId": "GOV-253",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.7.5.3",
+          "name": "Control of documented",
+          "description": "",
+          "controls": [
+            {
+              "id": "5i48v9te",
+              "externalId": "OPS-15",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.8",
+      "name": "Operation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.8.1",
+          "name": "Operational planning and control",
+          "description": "",
+          "controls": [
+            {
+              "id": "tiapudc3",
+              "externalId": "RSK-81",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.8.2",
+          "name": "AI risk assessment",
+          "description": "",
+          "controls": [
+            {
+              "id": "48kij58c",
+              "externalId": "RSK-82",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.8.3",
+          "name": "AI risk treatment",
+          "description": "",
+          "controls": [
+            {
+              "id": "41wq3fke",
+              "externalId": "GOV-254",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.8.4",
+          "name": "AI system impact assessment",
+          "description": "",
+          "controls": [
+            {
+              "id": "34ou0upu",
+              "externalId": "AAT-6",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.9",
+      "name": "Performance evaluation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.9.1",
+          "name": "Monitoring, measurement, analysis",
+          "description": "",
+          "controls": [
+            {
+              "id": "2adlwskg",
+              "externalId": "CPL-60",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.9.2.1",
+          "name": "General",
+          "description": "",
+          "controls": [
+            {
+              "id": "o0km51xc",
+              "externalId": "CPL-61",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.9.2.2",
+          "name": "Internal audit programme",
+          "description": "",
+          "controls": [
+            {
+              "id": "ruxh2f05",
+              "externalId": "GOV-255",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.9.3.1",
+          "name": "General Management Review",
+          "description": "",
+          "controls": [
+            {
+              "id": "2qb9771u",
+              "externalId": "GOV-256",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.9.3.2",
+          "name": "Management review inputs",
+          "description": "",
+          "controls": [
+            {
+              "id": "hqth88er",
+              "externalId": "GOV-257",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.9.3.3",
+          "name": "Management review results",
+          "description": "",
+          "controls": [
+            {
+              "id": "h4uu0nlp",
+              "externalId": "GOV-258",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.10",
+      "name": "Improvement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.10.1",
+          "name": "Continual improvement",
+          "description": "",
+          "controls": [
+            {
+              "id": "5lwo4r4s",
+              "externalId": "CPL-62",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        },
+        {
+          "id": "C.10.2",
+          "name": "Nonconformity and corrective action",
+          "description": "",
+          "controls": [
+            {
+              "id": "x6c4n2nz",
+              "externalId": "CPL-63",
+              "variants": [
+                "ISO42001_PROD",
+                "ISO42001_DEV",
+                "ISO42001_USER"
+              ]
+            }
+          ],
+          "variants": [
+            "ISO42001_PROD",
+            "ISO42001_DEV",
+            "ISO42001_USER"
+          ]
+        }
+      ]
+    }
+  ]
+}

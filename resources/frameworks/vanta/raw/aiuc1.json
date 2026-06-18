@@ -1,0 +1,597 @@
+{
+  "principles": [
+    {
+      "id": "A",
+      "name": "Data & Privacy",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A001",
+          "name": "Establish input data policy",
+          "description": "Establish and communicate AI input data policies covering how customer data is used for model training, inference processing, data retention periods, and customer data rights",
+          "controls": [
+            {
+              "id": "goz4lzgn",
+              "externalId": "PRI-310"
+            }
+          ]
+        },
+        {
+          "id": "A002",
+          "name": "Establish output data policy",
+          "description": "Establish AI output ownership, usage, opt-out and deletion policies to customers and communicate these policies",
+          "controls": [
+            {
+              "id": "9rivqyty",
+              "externalId": "PRI-311"
+            }
+          ]
+        },
+        {
+          "id": "A003",
+          "name": "Limit AI agent data collection",
+          "description": "Implement safeguards to limit AI agent data access to task-relevant information based on user roles and context",
+          "controls": [
+            {
+              "id": "7dqyefz6",
+              "externalId": "DCH-313"
+            }
+          ]
+        },
+        {
+          "id": "A004",
+          "name": "Protect IP & trade secrets",
+          "description": "Implement safeguards or technical controls to prevent AI systems from leaking company intellectual property or confidential information",
+          "controls": [
+            {
+              "id": "2fgzgpx9",
+              "externalId": "DCH-314"
+            }
+          ]
+        },
+        {
+          "id": "A005",
+          "name": "Prevent cross-customer data exposure",
+          "description": "Implement safeguards to prevent cross-customer data exposure when combining customer data from multiple sources",
+          "controls": [
+            {
+              "id": "1gtjz00v",
+              "externalId": "DCH-315"
+            }
+          ]
+        },
+        {
+          "id": "A006",
+          "name": "Prevent PII leakage",
+          "description": "Establish safeguards to prevent personal data leakage through AI outputs and logs",
+          "controls": [
+            {
+              "id": "d8nb4s5z",
+              "externalId": "PRI-312"
+            }
+          ]
+        },
+        {
+          "id": "A007",
+          "name": "Prevent IP violations",
+          "description": "Implement safeguards and technical controls to prevent AI outputs from violating copyrights, trademarks, or other third-party intellectual property rights",
+          "controls": [
+            {
+              "id": "vh37bl1n",
+              "externalId": "DCH-316"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "B001",
+          "name": "Third-party testing of adversarial robustness",
+          "description": "Implement adversarial testing program to validate system resilience against adversarial inputs and prompt injection attempts in line with adversarial threat taxonomy",
+          "controls": [
+            {
+              "id": "0rdohn1g",
+              "externalId": "THR-102"
+            }
+          ]
+        },
+        {
+          "id": "B002",
+          "name": "Detect adversarial input",
+          "description": "Implement monitoring capabilities to detect and respond to adversarial inputs and prompt injection attempts",
+          "controls": [
+            {
+              "id": "jtphekqg",
+              "externalId": "THR-103"
+            }
+          ]
+        },
+        {
+          "id": "B003",
+          "name": "Manage public release of technical details",
+          "description": "Implement controls to prevent over-disclosure of technical information about AI systems and organizational details that could enable adversarial targeting",
+          "controls": [
+            {
+              "id": "kkegxnsp",
+              "externalId": "GOV-3086"
+            }
+          ]
+        },
+        {
+          "id": "B004",
+          "name": "Prevent AI endpoint scraping",
+          "description": "Implement safeguards to prevent probing or scraping of external AI endpoints",
+          "controls": [
+            {
+              "id": "lmm33uuu",
+              "externalId": "VPM-305"
+            }
+          ]
+        },
+        {
+          "id": "B005",
+          "name": "Implement real-time input filtering",
+          "description": "Implement real-time input filtering using automated moderation tools",
+          "controls": [
+            {
+              "id": "eqr4uacw",
+              "externalId": "THR-104"
+            }
+          ]
+        },
+        {
+          "id": "B006",
+          "name": "Prevent unauthorized AI agent actions",
+          "description": "Implement safeguards to prevent AI agents from performing actions beyond intended scope and authorized privileges",
+          "controls": [
+            {
+              "id": "sf45tm9d",
+              "externalId": "AAT-101"
+            }
+          ]
+        },
+        {
+          "id": "B007",
+          "name": "Enforce user access privileges to AI systems",
+          "description": "Establish and maintain user access controls and admin privileges for AI systems in line with policy",
+          "controls": [
+            {
+              "id": "cocwpy34",
+              "externalId": "IAC-722"
+            }
+          ]
+        },
+        {
+          "id": "B008",
+          "name": "Protect model deployment environment",
+          "description": "Implement security measures for AI model deployment environments including encryption, access controls and authorization",
+          "controls": [
+            {
+              "id": "msldd49p",
+              "externalId": "CLD-117"
+            }
+          ]
+        },
+        {
+          "id": "B009",
+          "name": "Limit output over-exposure",
+          "description": "Implement output limitations and obfuscation techniques to safeguard against information leakage",
+          "controls": [
+            {
+              "id": "l4evyq1r",
+              "externalId": "AAT-102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Safety",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C001",
+          "name": "Define AI risk taxonomy",
+          "description": "Establish a risk taxonomy that categorizes risks within harmful, out-of-scope, and hallucinated outputs, tool calls, and other risks based on application-specific usage",
+          "controls": [
+            {
+              "id": "0evxga5v",
+              "externalId": "GOV-3093"
+            }
+          ]
+        },
+        {
+          "id": "C002",
+          "name": "Conduct pre-deployment testing",
+          "description": "Conduct internal testing of AI systems prior to deployment across risk categories for system changes requiring formal review or approval",
+          "controls": [
+            {
+              "id": "3k497h07",
+              "externalId": "SEA-270"
+            }
+          ]
+        },
+        {
+          "id": "C003",
+          "name": "Prevent harmful outputs",
+          "description": "Implement safeguards or technical controls to prevent harmful outputs including distressed outputs, angry responses, high-risk advice, offensive content, bias, and deception",
+          "controls": [
+            {
+              "id": "585q7gka",
+              "externalId": "AAT-103"
+            }
+          ]
+        },
+        {
+          "id": "C004",
+          "name": "Prevent out-of-scope outputs",
+          "description": "Implement safeguards or technical controls to prevent out-of-scope outputs (e.g. political discussion, healthcare advice)",
+          "controls": [
+            {
+              "id": "c2to7b4c",
+              "externalId": "AAT-104"
+            }
+          ]
+        },
+        {
+          "id": "C005",
+          "name": "Prevent customer-defined high risk outputs",
+          "description": "Implement safeguards or technical controls to prevent additional high risk outputs as defined in risk taxonomy",
+          "controls": [
+            {
+              "id": "6w2u3a10",
+              "externalId": "AAT-105"
+            }
+          ]
+        },
+        {
+          "id": "C006",
+          "name": "Prevent output vulnerabilities",
+          "description": "Implement safeguards to prevent security vulnerabilities in outputs from impacting users",
+          "controls": [
+            {
+              "id": "ps6lr1c2",
+              "externalId": "AAT-106"
+            }
+          ]
+        },
+        {
+          "id": "C007",
+          "name": "Flag high risk outputs",
+          "description": "Implement an alerting system that flags high-risk outputs for human review",
+          "controls": [
+            {
+              "id": "yfuis4bh",
+              "externalId": "AAT-107"
+            }
+          ]
+        },
+        {
+          "id": "C008",
+          "name": "Monitor AI risk categories",
+          "description": "Implement monitoring of AI systems across risk categories",
+          "controls": [
+            {
+              "id": "dcn8hyqj",
+              "externalId": "MON-448"
+            }
+          ]
+        },
+        {
+          "id": "C009",
+          "name": "Enable real-time feedback and intervention",
+          "description": "Implement mechanisms to enable real-time user feedback collection and intervention mechanisms",
+          "controls": [
+            {
+              "id": "9v9e6hi8",
+              "externalId": "AAT-108"
+            }
+          ]
+        },
+        {
+          "id": "C010",
+          "name": "Third-party testing for harmful outputs",
+          "description": "Appoint expert third parties to evaluate system robustness to harmful outputs including distressed outputs, angry responses, high-risk advice, offensive content, bias, and deception at least every 3 months",
+          "controls": [
+            {
+              "id": "4ibl2ds4",
+              "externalId": "TPM-217"
+            }
+          ]
+        },
+        {
+          "id": "C011",
+          "name": "Third-party testing for out-of-scope outputs",
+          "description": "Appoint expert third parties to evaluate system robustness to out-of-scope outputs at least every 3 months (e.g. political discussion, healthcare advice)",
+          "controls": [
+            {
+              "id": "1deaf4nt",
+              "externalId": "TPM-218"
+            }
+          ]
+        },
+        {
+          "id": "C012",
+          "name": "Third-party testing for customer-defined risk",
+          "description": "Appoint expert third-parties to evaluate system robustness to additional high-risk outputs as defined in risk taxonomy at least every 3 months",
+          "controls": [
+            {
+              "id": "5c6sz83s",
+              "externalId": "TPM-219"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Reliability",
+      "optional": false,
+      "sections": [
+        {
+          "id": "D001",
+          "name": "Prevent hallucinated outputs",
+          "description": "Implement safeguards or technical controls to prevent hallucinated outputs",
+          "controls": [
+            {
+              "id": "722anshw",
+              "externalId": "IAO-161"
+            }
+          ]
+        },
+        {
+          "id": "D002",
+          "name": "Third-party testing for hallucinations",
+          "description": "Appoint expert third-parties to evaluate hallucinated outputs at least every 3 months",
+          "controls": [
+            {
+              "id": "mvj3v674",
+              "externalId": "TPM-220"
+            }
+          ]
+        },
+        {
+          "id": "D003",
+          "name": "Restrict unsafe tool calls",
+          "description": "Implement safeguards or technical controls to prevent tool calls in AI systems from executing unauthorized actions, accessing restricted information, or making decisions beyond their intended scope",
+          "controls": [
+            {
+              "id": "c0cbo4t9",
+              "externalId": "AAT-109"
+            }
+          ]
+        },
+        {
+          "id": "D004",
+          "name": "Third-party testing of tool calls",
+          "description": "Appoint expert third-parties to evaluate tool calls in AI systems, including executing unauthorized actions, accessing restricted information, or making decisions beyond their intended scope at least every 3 months",
+          "controls": [
+            {
+              "id": "5yoh7na6",
+              "externalId": "TPM-221"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Accountability",
+      "optional": false,
+      "sections": [
+        {
+          "id": "E001",
+          "name": "AI failure plan for security breaches",
+          "description": "Document AI failure plan for AI privacy and security breaches assigning accountable owners and establishing notification and remediation with third-party support as needed (e.g. legal, PR, insurers)",
+          "controls": [
+            {
+              "id": "jhdq3bzn",
+              "externalId": "IRO-360"
+            }
+          ]
+        },
+        {
+          "id": "E002",
+          "name": "AI failure plan for harmful outputs",
+          "description": "Document AI failure plan for harmful AI outputs that cause significant customer harm assigning accountable owners and establishing remediation with third-party support as needed (e.g. legal, PR, insurers)",
+          "controls": [
+            {
+              "id": "nys6mxao",
+              "externalId": "IRO-363"
+            }
+          ]
+        },
+        {
+          "id": "E003",
+          "name": "AI failure plan for hallucinations",
+          "description": "Document AI failure plan for hallucinated AI outputs that cause substantial customer financial loss assigning accountable owners and establishing remediation with third-party support as needed (e.g. legal, PR, insurers)",
+          "controls": [
+            {
+              "id": "mhjt4img",
+              "externalId": "IRO-364"
+            }
+          ]
+        },
+        {
+          "id": "E004",
+          "name": "Assign accountability",
+          "description": "Document which AI system changes across the development & deployment lifecycle require formal review or approval, assign a lead accountable for each, and document their approval with supporting evidence",
+          "controls": [
+            {
+              "id": "a8cqhwyg",
+              "externalId": "CHG-167"
+            }
+          ]
+        },
+        {
+          "id": "E005",
+          "name": "Assess cloud vs on-prem processing",
+          "description": "Establish criteria for selecting cloud provider, and circumstances for on-premises processing considering data sensitivity, regulatory requirements, security controls, and operational needs",
+          "controls": [
+            {
+              "id": "663jqsjt",
+              "externalId": "RSK-266"
+            }
+          ]
+        },
+        {
+          "id": "E006",
+          "name": "Conduct vendor due diligence",
+          "description": "Establish AI vendor due diligence processes for foundation and upstream model providers covering data handling, PII controls, security and compliance",
+          "controls": [
+            {
+              "id": "pa8u058s",
+              "externalId": "TPM-222"
+            }
+          ]
+        },
+        {
+          "id": "E007",
+          "name": "[Retired] Document system change approvals",
+          "description": "Merged with E004 - see changelog (Q1 2026 update)",
+          "controls": []
+        },
+        {
+          "id": "E008",
+          "name": "Review internal processes",
+          "description": "Establish regular internal reviews of key processes and document review records and approvals",
+          "controls": [
+            {
+              "id": "wejmy239",
+              "externalId": "MON-449"
+            }
+          ]
+        },
+        {
+          "id": "E009",
+          "name": "Monitor third-party access",
+          "description": "Implement systems to monitor third party access",
+          "controls": [
+            {
+              "id": "y0szmkar",
+              "externalId": "MON-450"
+            }
+          ]
+        },
+        {
+          "id": "E010",
+          "name": "Establish AI acceptable use policy",
+          "description": "Establish and implement an AI acceptable use policy",
+          "controls": [
+            {
+              "id": "i8fpjq8h",
+              "externalId": "SAT-127"
+            }
+          ]
+        },
+        {
+          "id": "E011",
+          "name": "Record processing locations",
+          "description": "Document AI data processing locations",
+          "controls": [
+            {
+              "id": "5f3xn7f9",
+              "externalId": "CPL-171"
+            }
+          ]
+        },
+        {
+          "id": "E012",
+          "name": "Document regulatory compliance",
+          "description": "Document applicable AI laws and standards, required data protections, and strategies for compliance",
+          "controls": [
+            {
+              "id": "sj2160fz",
+              "externalId": "CPL-175"
+            }
+          ]
+        },
+        {
+          "id": "E013",
+          "name": "Implement quality management system",
+          "description": "Establish a quality management system for AI systems proportionate to the size of the organization",
+          "controls": [
+            {
+              "id": "kplv1jkj",
+              "externalId": "RSK-273"
+            }
+          ]
+        },
+        {
+          "id": "E014",
+          "name": "Share transparency reports",
+          "description": "Merged with E017 - see changelog (Q1 2026 update)",
+          "controls": []
+        },
+        {
+          "id": "E015",
+          "name": "Log model activity",
+          "description": "Maintain logs of AI system processes, actions, and model outputs where permitted to support incident investigation, auditing, and explanation of AI system behavior",
+          "controls": [
+            {
+              "id": "rvz6v5rv",
+              "externalId": "MON-451"
+            }
+          ]
+        },
+        {
+          "id": "E016",
+          "name": "Implement AI disclosure mechanisms",
+          "description": "Implement clear disclosure mechanisms to inform users when they are interacting with AI systems rather than humans",
+          "controls": [
+            {
+              "id": "pialhayp",
+              "externalId": "PRI-313"
+            }
+          ]
+        },
+        {
+          "id": "E017",
+          "name": "Document system transparency policy",
+          "description": "Establish a system transparency policy and maintain a repository of model cards, datasheets, and interpretability reports for major systems",
+          "controls": [
+            {
+              "id": "gy0c128u",
+              "externalId": "GOV-3094"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Society",
+      "optional": false,
+      "sections": [
+        {
+          "id": "F001",
+          "name": "Prevent AI cyber misuse",
+          "description": "Implement or document guardrails to prevent AI-enabled misuse for cyber attacks and exploitation",
+          "controls": [
+            {
+              "id": "ywh7q8wa",
+              "externalId": "THR-105"
+            }
+          ]
+        },
+        {
+          "id": "F002",
+          "name": "Prevent catastrophic misuse",
+          "description": "Implement or document guardrails to prevent AI-enabled catastrophic system misuse (chemical / bio / radio / nuclear)",
+          "controls": [
+            {
+              "id": "gamioova",
+              "externalId": "THR-106"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

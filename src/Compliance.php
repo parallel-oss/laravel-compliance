@@ -3,43 +3,39 @@
 namespace Parallel\Compliance;
 
 use Attribute;
-use Parallel\Compliance\Capabilities\Capability;
+use Parallel\Compliance\Controls\Control;
+use Parallel\Compliance\Frameworks\FrameworkRequirement;
 use Parallel\Compliance\Recommendations\Recommendation;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD | Attribute::IS_REPEATABLE)]
 class Compliance extends Evidence
 {
-    /** @var array<int, Recommendation> */
+    /** @var array<int, FrameworkRequirement|Recommendation> */
     public array $recommendations;
-
-    /** @var array<int, Capability> */
-    public array $claims;
 
     public ?string $comment;
 
     /**
-     * @param  Recommendation|array<int, Recommendation>|null  $controls
-     * @param  Capability|array<int, Capability>|null  $capabilities
-     * @param  Recommendation|array<int, Recommendation>|null  $recommendations
-     * @param  Capability|array<int, Capability>|null  $claims
+     * @param  Control|array<int, Control>|null  $controls
+     * @param  FrameworkRequirement|Recommendation|array<int, FrameworkRequirement|Recommendation>|null  $requirements
+     * @param  FrameworkRequirement|Recommendation|array<int, FrameworkRequirement|Recommendation>|null  $recommendations
      * @param  array<int, string>  $links
      * @param  array<string, scalar|null>  $metadata
      */
     public function __construct(
-        Recommendation|array|null $controls = null,
-        Capability|array|null $capabilities = null,
+        Control|array|null $controls = null,
+        FrameworkRequirement|Recommendation|array|null $requirements = null,
         ?string $summary = null,
         EvidenceStatus $status = EvidenceStatus::Implemented,
         ?string $details = null,
         array $links = [],
         array $metadata = [],
-        Recommendation|array|null $recommendations = null,
-        Capability|array|null $claims = null,
+        FrameworkRequirement|Recommendation|array|null $recommendations = null,
         ?string $comment = null,
     ) {
         parent::__construct(
-            controls: $controls ?? $recommendations ?? [],
-            capabilities: $capabilities ?? $claims ?? [],
+            controls: $controls,
+            requirements: $requirements ?? $recommendations ?? [],
             summary: $summary ?? $comment,
             status: $status,
             details: $details,
@@ -47,8 +43,7 @@ class Compliance extends Evidence
             metadata: $metadata,
         );
 
-        $this->recommendations = $this->controls;
-        $this->claims = $this->capabilities;
+        $this->recommendations = $this->requirements;
         $this->comment = $this->summary;
     }
 }

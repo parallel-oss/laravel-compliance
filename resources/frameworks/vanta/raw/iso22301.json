@@ -1,0 +1,459 @@
+{
+  "principles": [
+    {
+      "id": "4",
+      "name": "Context of the Organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "name": "Understanding the organization and its context",
+          "description": "The organization shall determine external and internal issues relevant to its purpose that affect its ability to achieve the intended outcomes of the BCMS.",
+          "controls": [
+            {
+              "id": "imvkk4hk",
+              "externalId": "GOV-1638"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "name": "Understanding the needs and expectations of interested parties",
+          "description": "The organization shall determine relevant interested parties and their applicable business continuity requirements, including legal and regulatory obligations.",
+          "controls": [
+            {
+              "id": "vu5zdhk8",
+              "externalId": "CPL-148"
+            },
+            {
+              "id": "27di7eek",
+              "externalId": "GOV-1923"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "name": "Determining the scope of the business continuity management system",
+          "description": "The organization shall determine the boundaries and applicability of the BCMS considering context and requirements, and define and document its scope.",
+          "controls": [
+            {
+              "id": "r61xp92z",
+              "externalId": "GOV-2086"
+            },
+            {
+              "id": "qyzn08xb",
+              "externalId": "GOV-2237"
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "name": "Business continuity management system",
+          "description": "The organization shall establish, implement, maintain, and continually improve a BCMS, including required processes and their interactions.",
+          "controls": [
+            {
+              "id": "k02dl6k4",
+              "externalId": "GOV-3036"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Leadership",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "name": "Leadership and commitment",
+          "description": "Top management shall demonstrate leadership and commitment to the BCMS, ensuring alignment with strategic direction, resource provision, and continual improvement.",
+          "controls": [
+            {
+              "id": "2ndnubb0",
+              "externalId": "GOV-3037"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "name": "Policy",
+          "description": "Top management shall establish, implement, maintain, and communicate a business continuity policy appropriate to the organization and aligned to objectives.",
+          "controls": [
+            {
+              "id": "9635c4z6",
+              "externalId": "BCD-235"
+            },
+            {
+              "id": "74mnjlfb",
+              "externalId": "BCD-236"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "name": "Roles, responsibilities and authorities",
+          "description": "Top management shall ensure that BCMS responsibilities and authorities are assigned and communicated, including accountability for conformity and performance reporting.",
+          "controls": [
+            {
+              "id": "1o5a539g",
+              "externalId": "GOV-3038"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "name": "Actions to address risks and opportunities",
+          "description": "The organization shall determine and plan actions to address risks and opportunities that affect the BCMS’s ability to achieve intended outcomes.",
+          "controls": [
+            {
+              "id": "s69qkh30",
+              "externalId": "RSK-262"
+            },
+            {
+              "id": "vxgmc4nt",
+              "externalId": "RSK-263"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "name": "Business continuity objectives and planning to achieve them",
+          "description": "The organization shall establish measurable business continuity objectives and plan actions, resources, and evaluation methods to achieve them.",
+          "controls": [
+            {
+              "id": "llhz1g97",
+              "externalId": "BCD-237"
+            },
+            {
+              "id": "2womcv5y",
+              "externalId": "PRM-102"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "name": "Planning changes to the business continuity management system",
+          "description": "When the organization determines the need for changes to the BCMS, including those identified in Clause 10, the changes shall be carried out in a planned manner. \n\nThe organization shall consider: \na) the purpose of the changes and their potential consequences; \nb) the integrity of the BCMS; \nc) the availability of resources; \nd) the allocation or reallocation of responsibilities and authorities.",
+          "controls": [
+            {
+              "id": "qnd4pelf",
+              "externalId": "PRM-108"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Support",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "name": "Resources",
+          "description": "The organization shall determine and provide resources necessary for the establishment, implementation, maintenance, and improvement of the BCMS.",
+          "controls": [
+            {
+              "id": "0pge9cuz",
+              "externalId": "PRM-103"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "name": "Competence",
+          "description": "The organization shall ensure personnel performing BCMS-related roles are competent and retain documented evidence of competence.",
+          "controls": [
+            {
+              "id": "zmvqo4mk",
+              "externalId": "HRS-136"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "name": "Awareness",
+          "description": "The organization shall ensure personnel are aware of the BCMS policy, their roles, contributions to effectiveness, and implications of nonconformance.",
+          "controls": [
+            {
+              "id": "5lb9d8bj",
+              "externalId": "SAT-120"
+            }
+          ]
+        },
+        {
+          "id": "7.4",
+          "name": "Communication",
+          "description": "The organization shall determine and manage internal and external communications relevant to the BCMS.",
+          "controls": [
+            {
+              "id": "onqcga5m",
+              "externalId": "BCD-238"
+            }
+          ]
+        },
+        {
+          "id": "7.5",
+          "name": "Documented information",
+          "description": "The organization shall determine, create, update, and control documented information required by the BCMS and ISO 22301.",
+          "controls": [
+            {
+              "id": "6bh3m8d2",
+              "externalId": "CPL-149"
+            },
+            {
+              "id": "u30qa0ub",
+              "externalId": "CPL-150"
+            },
+            {
+              "id": "4o2fxjil",
+              "externalId": "IAO-159"
+            },
+            {
+              "id": "k3zcf9b6",
+              "externalId": "IAO-160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Operation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "name": "Operational planning and control",
+          "description": "The organization shall plan, implement, and control processes needed to meet BCMS requirements and manage changes.",
+          "controls": [
+            {
+              "id": "d1b3a8xi",
+              "externalId": "BCD-239"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "name": "Business impact analysis and risk assessment",
+          "description": "The organization shall establish and maintain systematic processes for conducting business impact analysis and disruption risk assessment.",
+          "controls": [
+            {
+              "id": "onf9unds",
+              "externalId": "BCD-240"
+            },
+            {
+              "id": "6lo90xnz",
+              "externalId": "RSK-264"
+            },
+            {
+              "id": "d60hzo1v",
+              "externalId": "RSK-265"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "name": "Business continuity strategies and solutions",
+          "description": "The organization shall identify, select, implement, and maintain business continuity strategies and solutions based on BIA and risk assessment outputs.",
+          "controls": [
+            {
+              "id": "h1i5xk91",
+              "externalId": "BCD-241"
+            },
+            {
+              "id": "guzgovb5",
+              "externalId": "BCD-242"
+            },
+            {
+              "id": "6ss905tt",
+              "externalId": "BCD-243"
+            },
+            {
+              "id": "p3asgnoh",
+              "externalId": "BCD-244"
+            },
+            {
+              "id": "9vlz7p9t",
+              "externalId": "PRM-104"
+            }
+          ]
+        },
+        {
+          "id": "8.4",
+          "name": "Business continuity plans and procedures",
+          "description": "The organization shall establish and maintain response structures, communication procedures, and business continuity plans to manage disruptions and recovery.",
+          "controls": [
+            {
+              "id": "36fa7wun",
+              "externalId": "BCD-245"
+            },
+            {
+              "id": "buoyjz3t",
+              "externalId": "BCD-246"
+            },
+            {
+              "id": "pa805m3t",
+              "externalId": "BCD-247"
+            },
+            {
+              "id": "1f2b4iw9",
+              "externalId": "BCD-248"
+            },
+            {
+              "id": "blau523v",
+              "externalId": "BCD-249"
+            },
+            {
+              "id": "i3ncan2f",
+              "externalId": "BCD-250"
+            },
+            {
+              "id": "jm1oymxb",
+              "externalId": "BCD-251"
+            },
+            {
+              "id": "3vqlty67",
+              "externalId": "IRO-342"
+            },
+            {
+              "id": "p525cc1w",
+              "externalId": "IRO-343"
+            },
+            {
+              "id": "xue27nku",
+              "externalId": "IRO-344"
+            },
+            {
+              "id": "nl11j0wi",
+              "externalId": "IRO-345"
+            }
+          ]
+        },
+        {
+          "id": "8.5",
+          "name": "Exercise programme",
+          "description": "The organization shall implement and maintain an exercise and testing programme to validate business continuity strategies and plans.",
+          "controls": [
+            {
+              "id": "xzsvlj69",
+              "externalId": "BCD-252"
+            }
+          ]
+        },
+        {
+          "id": "8.6",
+          "name": "Evaluation of business continuity documentation and capabilities",
+          "description": "The organization shall evaluate the suitability, adequacy, and effectiveness of BC documentation and continuity capabilities.",
+          "controls": [
+            {
+              "id": "nk3tnco3",
+              "externalId": "MON-411"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Performance Evaluation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "name": "Monitoring, measurement, analysis and evaluation",
+          "description": "The organization shall monitor, measure, analyze, and evaluate BCMS performance and retain documented results.",
+          "controls": [
+            {
+              "id": "be9jofsr",
+              "externalId": "MON-412"
+            }
+          ]
+        },
+        {
+          "id": "9.2",
+          "name": "Internal audit",
+          "description": "The organization shall conduct internal audits and establish an audit programme to assess BCMS conformity and effectiveness.",
+          "controls": [
+            {
+              "id": "4yo38aq7",
+              "externalId": "CPL-151"
+            },
+            {
+              "id": "f1czb9yp",
+              "externalId": "CPL-152"
+            }
+          ]
+        },
+        {
+          "id": "9.3",
+          "name": "Management review",
+          "description": "Top management shall review the BCMS at planned intervals, considering required inputs and documenting outputs and improvement actions.b",
+          "controls": [
+            {
+              "id": "n59pf1o4",
+              "externalId": "GOV-3039"
+            },
+            {
+              "id": "7vvvocu8",
+              "externalId": "GOV-3040"
+            },
+            {
+              "id": "fzkcxpay",
+              "externalId": "GOV-3041"
+            },
+            {
+              "id": "w043rtc1",
+              "externalId": "GOV-3042"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Improvement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "10.1",
+          "name": "Nonconformity and corrective action",
+          "description": "The organization shall manage nonconformities, implement corrective actions, review effectiveness, and retain documented evidence.",
+          "controls": [
+            {
+              "id": "jmpqoaql",
+              "externalId": "CPL-153"
+            },
+            {
+              "id": "mjozv9hq",
+              "externalId": "CPL-154"
+            },
+            {
+              "id": "ad2g3im1",
+              "externalId": "CPL-155"
+            }
+          ]
+        },
+        {
+          "id": "10.2",
+          "name": "Continual improvement",
+          "description": "The organization shall continually improve the suitability, adequacy, and effectiveness of the BCMS.",
+          "controls": [
+            {
+              "id": "txji8icc",
+              "externalId": "GOV-3043"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

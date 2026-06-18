@@ -1,0 +1,3011 @@
+{
+  "principles": [
+    {
+      "id": "KSI-AFR-MAS",
+      "name": "Minimum Assessment Scope (MAS)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "KSI-CED",
+          "name": "Cybersecurity Education",
+          "description": "A secure cloud service provider will educate their employees on cybersecurity measures, testing them persistently to ensure their knowledge is satisfactory.",
+          "controls": [
+            {
+              "id": "vwobhwkd",
+              "externalId": "SAT-121",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "m9gwzaya",
+              "externalId": "SAT-122",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "fwpikr24",
+              "externalId": "SAT-123",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ob877cwt",
+              "externalId": "SAT-124",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "bu0f213o",
+              "externalId": "GOV-3047",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "8vav5v86",
+              "externalId": "GOV-3048",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "nxmzvxn6",
+              "externalId": "GOV-3049",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "pllzwewq",
+              "externalId": "GOV-3050",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "svxafadn",
+              "externalId": "GOV-3051",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "wq5laaml",
+              "externalId": "GOV-3052",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "9dcypnht",
+              "externalId": "GOV-3053",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "783p8bxe",
+              "externalId": "GOV-3054",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4mpehy4k",
+              "externalId": "GOV-3055",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "qrajpx88",
+              "externalId": "GOV-3056",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "671g6t6a",
+              "externalId": "GOV-3057",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-CMT",
+          "name": "Change Management",
+          "description": "A secure cloud service provider will ensure that all changes are properly documented and configuration baselines are updated accordingly.",
+          "controls": [
+            {
+              "id": "kq34mu46",
+              "externalId": "CHG-145",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "52zaezlm",
+              "externalId": "CHG-146",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "jkcp6nno",
+              "externalId": "CHG-147",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zu3sv8kq",
+              "externalId": "CHG-148",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-CNA",
+          "name": "Cloud Native Architecture",
+          "description": "A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the confidentiality, integrity and availability of the system.",
+          "controls": [
+            {
+              "id": "2lxg9ta0",
+              "externalId": "CLD-108",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9nwxe8hb",
+              "externalId": "CLD-109",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "matdye9n",
+              "externalId": "CLD-110",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "djro9bsa",
+              "externalId": "CLD-111",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zj9b4m86",
+              "externalId": "CLD-112",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "szsq3yew",
+              "externalId": "CLD-113",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "u225xugp",
+              "externalId": "CLD-114",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zrheoc2w",
+              "externalId": "CLD-115",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "hchij87z",
+              "externalId": "CLD-116",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-IAM",
+          "name": "Identity and Access Management",
+          "description": "A secure cloud service offering will protect user data, control access, and apply zero trust principles.",
+          "controls": [
+            {
+              "id": "kkui8w85",
+              "externalId": "IAC-467",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "rdhpq5qe",
+              "externalId": "IAC-710",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "eqmrtilx",
+              "externalId": "IAC-711",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "bnq6eeml",
+              "externalId": "IAC-712",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ac7oq6sm",
+              "externalId": "IAC-713",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ytu0ms2b",
+              "externalId": "IAC-714",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "rn3gtirm",
+              "externalId": "IAC-715",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-INR",
+          "name": "Incident Response",
+          "description": "A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+          "controls": [
+            {
+              "id": "kclu9wwb",
+              "externalId": "IRO-346",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "guiia6x6",
+              "externalId": "IRO-347",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "sme11p09",
+              "externalId": "IRO-348",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-MLA",
+          "name": "Monitoring, Logging, and Auditing",
+          "description": "A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.",
+          "controls": [
+            {
+              "id": "1jduqxzn",
+              "externalId": "IAC-716",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "gcfkfwey",
+              "externalId": "IAC-717",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "u2qzevtj",
+              "externalId": "SEA-266",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "6u6gpzzg",
+              "externalId": "MON-413",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "iima8t2c",
+              "externalId": "MON-414",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ofvxettx",
+              "externalId": "MON-415",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-PIY",
+          "name": "Policy and Inventory",
+          "description": "A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.",
+          "controls": [
+            {
+              "id": "xro2uqo4",
+              "externalId": "AST-165",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "q34u9bnn",
+              "externalId": "PRM-105",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "vfn93c74",
+              "externalId": "PRM-106",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "c8rot4qs",
+              "externalId": "GOV-3046",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "mgqmqoo1",
+              "externalId": "THR-101",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-RPL",
+          "name": "Recovery Planning",
+          "description": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+          "controls": [
+            {
+              "id": "d4k12v4f",
+              "externalId": "BCD-253",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ter5ot3e",
+              "externalId": "BCD-254",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4g7zpuf9",
+              "externalId": "BCD-255",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "x5lphz57",
+              "externalId": "BCD-256",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-SVC",
+          "name": "Service Configuration",
+          "description": "A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.",
+          "controls": [
+            {
+              "id": "bu0f213o",
+              "externalId": "GOV-3047",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "8vav5v86",
+              "externalId": "GOV-3048",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "nxmzvxn6",
+              "externalId": "GOV-3049",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "pllzwewq",
+              "externalId": "GOV-3050",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "svxafadn",
+              "externalId": "GOV-3051",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "wq5laaml",
+              "externalId": "GOV-3052",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "9dcypnht",
+              "externalId": "GOV-3053",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "783p8bxe",
+              "externalId": "GOV-3054",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4mpehy4k",
+              "externalId": "GOV-3055",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "qrajpx88",
+              "externalId": "GOV-3056",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "671g6t6a",
+              "externalId": "GOV-3057",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-SCR",
+          "name": "Third-Party Information Resources",
+          "description": "A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.",
+          "controls": [
+            {
+              "id": "65d8ytk3",
+              "externalId": "TPM-204",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ptzb19ya",
+              "externalId": "TPM-205",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "KSI-CSX",
+          "name": "Key Security Indicators 20X Provider Responsibiliites",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
+          "controls": [
+            {
+              "id": "uu644xj9",
+              "externalId": "GOV-3044",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "f0aa5w4j",
+              "externalId": "GOV-3045",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "kq34mu46",
+              "externalId": "CHG-145",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "52zaezlm",
+              "externalId": "CHG-146",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "jkcp6nno",
+              "externalId": "CHG-147",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zu3sv8kq",
+              "externalId": "CHG-148",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "2lxg9ta0",
+              "externalId": "CLD-108",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9nwxe8hb",
+              "externalId": "CLD-109",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "matdye9n",
+              "externalId": "CLD-110",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "djro9bsa",
+              "externalId": "CLD-111",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zj9b4m86",
+              "externalId": "CLD-112",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "szsq3yew",
+              "externalId": "CLD-113",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "u225xugp",
+              "externalId": "CLD-114",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zrheoc2w",
+              "externalId": "CLD-115",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "hchij87z",
+              "externalId": "CLD-116",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "vwobhwkd",
+              "externalId": "SAT-121",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "m9gwzaya",
+              "externalId": "SAT-122",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "fwpikr24",
+              "externalId": "SAT-123",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ob877cwt",
+              "externalId": "SAT-124",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "kkui8w85",
+              "externalId": "IAC-467",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "rdhpq5qe",
+              "externalId": "IAC-710",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "eqmrtilx",
+              "externalId": "IAC-711",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "bnq6eeml",
+              "externalId": "IAC-712",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ac7oq6sm",
+              "externalId": "IAC-713",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ytu0ms2b",
+              "externalId": "IAC-714",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "rn3gtirm",
+              "externalId": "IAC-715",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "kclu9wwb",
+              "externalId": "IRO-346",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "guiia6x6",
+              "externalId": "IRO-347",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "sme11p09",
+              "externalId": "IRO-348",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "1jduqxzn",
+              "externalId": "IAC-716",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "gcfkfwey",
+              "externalId": "IAC-717",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "u2qzevtj",
+              "externalId": "SEA-266",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "6u6gpzzg",
+              "externalId": "MON-413",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "iima8t2c",
+              "externalId": "MON-414",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ofvxettx",
+              "externalId": "MON-415",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "xro2uqo4",
+              "externalId": "AST-165",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "q34u9bnn",
+              "externalId": "PRM-105",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "vfn93c74",
+              "externalId": "PRM-106",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "c8rot4qs",
+              "externalId": "GOV-3046",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "mgqmqoo1",
+              "externalId": "THR-101",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "d4k12v4f",
+              "externalId": "BCD-253",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ter5ot3e",
+              "externalId": "BCD-254",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4g7zpuf9",
+              "externalId": "BCD-255",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "x5lphz57",
+              "externalId": "BCD-256",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "65d8ytk3",
+              "externalId": "TPM-204",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ptzb19ya",
+              "externalId": "TPM-205",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "MAS-CSO",
+          "name": "Minimum Assessment Scope General Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the Minimum Assessment Scope process.",
+          "controls": [
+            {
+              "id": "i2x3wsdw",
+              "externalId": "MON-442",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "0xoeyqyo",
+              "externalId": "MON-443",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "2k3ydhr1",
+              "externalId": "TPM-206",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "lpgxd1uu",
+              "externalId": "MON-444",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "asdez1f8",
+              "externalId": "MON-445",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-ADS",
+      "name": "Authorization Data Sharing (ADS)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ADS-CSX",
+          "name": "Authorization Data Sharing 20x-Specific Provider Responsibilities",
+          "description": "These requirements and recommendations apply to ALL cloud service offerings following the FedRAMP 20x path.",
+          "controls": [
+            {
+              "id": "msz35s84",
+              "externalId": "CPL-156",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "ADS-CSO",
+          "name": "Authorization Data Sharing General Provider Responsibilities",
+          "description": "These requirements and recommendations apply to ALL cloud service offerings for FedRAMP Certification or Validation.",
+          "controls": [
+            {
+              "id": "ht4soqe7",
+              "externalId": "CPL-157",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "6nh1hn3l",
+              "externalId": "CPL-158",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "gydhfycj",
+              "externalId": "CPL-159",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ozn7gvtl",
+              "externalId": "CPL-160",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "1dmv3j60",
+              "externalId": "CPL-161",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "ADS-TRC",
+          "name": "Authorization Data Sharing FedRAMP-Compatible Trust Centers",
+          "description": "These requirements and recommendations apply to trust centers that are FedRAMP-compatible.",
+          "controls": [
+            {
+              "id": "kjb8wtub",
+              "externalId": "CPL-164",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "3nb2twi6",
+              "externalId": "CPL-165",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "nkp84eao",
+              "externalId": "CPL-166",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "uqlq1173",
+              "externalId": "CPL-167",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "y3v3756w",
+              "externalId": "CPL-168",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4z4wxc6z",
+              "externalId": "CPL-169",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "5lgcjt0d",
+              "externalId": "CPL-170",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "ADS-UTC",
+          "name": "Authorization Data Share Using a Trust Center",
+          "description": "These requirements and recommendations cloud services that are using a FedRAMP-compatible trust center instead of USDA Connect; they DO NOT apply to cloud services using USDA Connect.",
+          "controls": [
+            {
+              "id": "kebhllm9",
+              "externalId": "CPL-162",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9acrfm48",
+              "externalId": "CPL-163",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "0io36c13",
+              "externalId": "IAC-718",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-UCM",
+      "name": "Using Cryptographic Modules (UCM)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "UCM-CSX",
+          "name": "Using Cryptographic Modules 20x-Specific Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
+          "controls": [
+            {
+              "id": "ci041esj",
+              "externalId": "CRY-274",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "8w1reno7",
+              "externalId": "CRY-275",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "4x5j5uij",
+              "externalId": "CRY-276",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ag7crcbj",
+              "externalId": "CRY-277",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-VDR",
+      "name": "Vulnerability Detection and Response (VDR)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "VDR-CSO",
+          "name": "Vulnerability Detection and Response General Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the Vulnerability Detection and Response process",
+          "controls": [
+            {
+              "id": "k7qti8x0",
+              "externalId": "VPM-261",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "c9tvvh74",
+              "externalId": "VPM-262",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "urv58sgv",
+              "externalId": "VPM-263",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "VDR-EVA",
+          "name": "Vulnerability Detection and Response Evaluation",
+          "description": "These requirements and recommendations apply to the evaluation of vulnerabilities.",
+          "controls": [
+            {
+              "id": "6f46ltru",
+              "externalId": "VPM-264",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "3n3e9lom",
+              "externalId": "VPM-265",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "6ex1prlh",
+              "externalId": "VPM-266",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "3q0a2scy",
+              "externalId": "VPM-267",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "aobfmria",
+              "externalId": "VPM-268",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "miq6iumx",
+              "externalId": "VPM-269",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "VDR-BST",
+          "name": "Vulnerability Detection and Response Best Practices",
+          "description": "These recommendations for best practices apply to all cloud service providers.",
+          "controls": [
+            {
+              "id": "0umldzgf",
+              "externalId": "VPM-270",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "185gbuom",
+              "externalId": "VPM-271",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "0mma70e6",
+              "externalId": "VPM-272",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4knpidyx",
+              "externalId": "VPM-273",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "yw6gqovn",
+              "externalId": "VPM-274",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "8spn023b",
+              "externalId": "VPM-275",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "VDR-TFR",
+          "name": "Vulnerability Detection and Response Timeframes",
+          "description": "These requirements and recommendations apply to timeframes for vulnerability detection and response.",
+          "controls": [
+            {
+              "id": "snt491qz",
+              "externalId": "VPM-276",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "dnw2mwng",
+              "externalId": "VPM-277",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "t3706s97",
+              "externalId": "VPM-278",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "vpj48nov",
+              "externalId": "VPM-279",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "3dzoj5tr",
+              "externalId": "VPM-280",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "5abimduh",
+              "externalId": "VPM-281",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "vlx261g8",
+              "externalId": "VPM-282",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "q4r0r5gp",
+              "externalId": "VPM-283",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "v4qy4iwq",
+              "externalId": "VPM-284",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "0vuw19ki",
+              "externalId": "VPM-285",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "w465nsdf",
+              "externalId": "VPM-286",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "5fb7ed96",
+              "externalId": "VPM-287",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "mnc9c175",
+              "externalId": "VPM-288",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "xywt1f8y",
+              "externalId": "VPM-289",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "u6dn3hmy",
+              "externalId": "VPM-290",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "8o5i9gsp",
+              "externalId": "VPM-291",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zkqiqzvf",
+              "externalId": "VPM-292",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "gonf41dc",
+              "externalId": "VPM-293",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ce6tvog2",
+              "externalId": "VPM-294",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2",
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "VDR-RPT",
+          "name": "Vulnerability Detection and Response Reporting",
+          "description": "These requirements and recommendations apply to reporting related to vulnerability detection and response.",
+          "controls": [
+            {
+              "id": "yssuwyk1",
+              "externalId": "VPM-295",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "r3fgial2",
+              "externalId": "VPM-296",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "yusdp1tl",
+              "externalId": "VPM-297",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "jo5x9zbp",
+              "externalId": "VPM-298",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "1766cd54",
+              "externalId": "VPM-299",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "rzt39j7i",
+              "externalId": "VPM-300",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "VDR-AGM",
+          "name": "Vulnerability Detection and Response Agency Guidance",
+          "description": "These requirements and recommendations for agencies apply to all agencies reusing a FedRAMP Certification or Validation for a cloud service offering following the Vulnerability Detection and Response process.",
+          "controls": [
+            {
+              "id": "tn7rn3pn",
+              "externalId": "VPM-301",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "gx6gresk",
+              "externalId": "VPM-302",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "or82ngdc",
+              "externalId": "VPM-303",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "2s704imu",
+              "externalId": "VPM-304",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-SCN",
+      "name": "Significant Change Notifications (SCN)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SCN-CSO",
+          "name": "Significant Change Notifications General Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the Significant Change Notification process.",
+          "controls": [
+            {
+              "id": "d1wele5v",
+              "externalId": "CHG-149",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "c18v4nuz",
+              "externalId": "CHG-150",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "u8h5h2s6",
+              "externalId": "CHG-151",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "d7jho1vy",
+              "externalId": "CHG-152",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ldez9fq6",
+              "externalId": "CHG-153",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "eb40ytr8",
+              "externalId": "CHG-154",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ka77pkyn",
+              "externalId": "CHG-155",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "gt9cogr9",
+              "externalId": "CHG-156",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "SCN-RTR",
+          "name": "Significant Change Notifications Routine Recurring Changes",
+          "description": "These requirements and recommends apply to all routine recurring significant changes.",
+          "controls": [
+            {
+              "id": "2cokxorb",
+              "externalId": "CHG-157",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "SCN-ADP",
+          "name": "Significant Change Notifications Adaptive Changes",
+          "description": "These requirements and recommends apply to all adaptive significant changes.",
+          "controls": [
+            {
+              "id": "paj1rti6",
+              "externalId": "CHG-158",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "SCN-TRF",
+          "name": "Significant Change Notifications Transformative Changes",
+          "description": "These requirements and recommends apply to all transformative significant changes.",
+          "controls": [
+            {
+              "id": "z6rr58sk",
+              "externalId": "CHG-159",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "js8hhpwj",
+              "externalId": "CHG-160",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "0ecu6kec",
+              "externalId": "CHG-161",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "y7o75sbb",
+              "externalId": "CHG-162",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "w2lw8584",
+              "externalId": "CHG-163",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "mqd6zaun",
+              "externalId": "CHG-164",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "qkygyjhj",
+              "externalId": "CHG-165",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-PVA",
+      "name": "Persistent Validation and Assessment (PVA)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PVA-CSX",
+          "name": "Persistent Validation and Assessment 20x-Specific Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
+          "controls": [
+            {
+              "id": "ocftsysv",
+              "externalId": "GOV-3066",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "xx89s3ac",
+              "externalId": "GOV-3067",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "kridvq6p",
+              "externalId": "GOV-3068",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9juk44r5",
+              "externalId": "GOV-3069",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "kzjp84vx",
+              "externalId": "GOV-3070",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "uk9nwx6l",
+              "externalId": "GOV-3071",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "lk5f5beq",
+              "externalId": "GOV-3072",
+              "variants": [
+                "FR20X_AGENCY_MOD_V2",
+                "FR20X_MOD_V2"
+              ]
+            },
+            {
+              "id": "7migxz9j",
+              "externalId": "GOV-3073",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "wn55u1lh",
+              "externalId": "GOV-3074",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-SCG",
+      "name": "Secure Configuration Guide (SCG)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SCG-CSO",
+          "name": "Secure Configuration Guide General Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings in the FedRAMP Marketplace.",
+          "controls": [
+            {
+              "id": "xu5klawu",
+              "externalId": "CFG-249",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "rdgehlko",
+              "externalId": "CFG-250",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zx9j56hg",
+              "externalId": "CFG-251",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "77sql4wi",
+              "externalId": "CFG-252",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "SCG-ENH",
+          "name": "Secure Configuration Guide Enhanced Capabilities",
+          "description": "These recommendations apply to all cloud service offerings in the FedRAMP Marketplace for enhanced capabilities related to the Secure Configuration Guide.",
+          "controls": [
+            {
+              "id": "yy1laf9s",
+              "externalId": "CFG-253",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "33qsi7xv",
+              "externalId": "CFG-254",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "xoc8wlxx",
+              "externalId": "CFG-255",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ord0twkz",
+              "externalId": "CFG-256",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "vjaki9na",
+              "externalId": "CFG-257",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-CCM",
+      "name": "Collaborative Continuous Monitoring (CCM)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CCM-OAR",
+          "name": "Collaborative Continuous Monitoring Ongoing Authorization Reports",
+          "description": "These requirements and recommendations for Ongoing Authorization Reports apply to all cloud service offerings following the CCM process.",
+          "controls": [
+            {
+              "id": "fsbo1giw",
+              "externalId": "MON-416",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "nyh8j3vd",
+              "externalId": "MON-417",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "a6sl6czg",
+              "externalId": "MON-418",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "8q3ep4np",
+              "externalId": "MON-419",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "bijyyn0o",
+              "externalId": "MON-420",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "uwo4xxea",
+              "externalId": "MON-421",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zfudyr3q",
+              "externalId": "MON-422",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "CCM-QTR",
+          "name": "Collaborative Continuous Monitoring Quarterly Reviews",
+          "description": "These requirements and recommendations for Quarterly Reviews apply to all cloud service offerings following the CCM process.",
+          "controls": [
+            {
+              "id": "ji0m3hh3",
+              "externalId": "MON-423",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "7d1lmbt7",
+              "externalId": "MON-424",
+              "variants": [
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9a3ka2vg",
+              "externalId": "MON-425",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "py08g3fs",
+              "externalId": "MON-426",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "6zibq9tj",
+              "externalId": "MON-427",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9eje8wca",
+              "externalId": "MON-428",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "ga9ggeaj",
+              "externalId": "MON-429",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "lw87mmdh",
+              "externalId": "MON-430",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "dpwp0zir",
+              "externalId": "MON-431",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "qk3y6l2z",
+              "externalId": "MON-432",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "g52wx23t",
+              "externalId": "MON-433",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        },
+        {
+          "id": "CCM-AGM",
+          "name": "Collaborative Continuous Monitoring Agency Guidance",
+          "description": "These requirements and recommends for agencies apply to all agencies reusing a FedRAMP Certification or Validation for a cloud service offering following the CCM process.",
+          "controls": [
+            {
+              "id": "efyfyvu8",
+              "externalId": "MON-434",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "fhxunfmo",
+              "externalId": "MON-435",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "5u7q3ccr",
+              "externalId": "MON-436",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4d5p53j5",
+              "externalId": "MON-437",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "169mhsx5",
+              "externalId": "MON-438",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "orfg9xe5",
+              "externalId": "MON-439",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2"
+              ]
+            },
+            {
+              "id": "pdbtnvbb",
+              "externalId": "MON-440",
+              "variants": [
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "d4yr9n19",
+              "externalId": "MON-441",
+              "variants": [
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-FSI",
+      "name": "FedRAMP Security Inbox (FSI)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "FSI-CSO",
+          "name": "FedRAMP Security Inbox General Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings in the FedRAMP Marketplace.",
+          "controls": [
+            {
+              "id": "wyvb0vqn",
+              "externalId": "GOV-3058",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "syt8cjlq",
+              "externalId": "GOV-3059",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "1ot5k08o",
+              "externalId": "GOV-3060",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "0kbg8ne5",
+              "externalId": "GOV-3061",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "qjrdev0u",
+              "externalId": "GOV-3062",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "e3b2g0pj",
+              "externalId": "GOV-3063",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "5qfztaz8",
+              "externalId": "GOV-3064",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "jtqdr0u1",
+              "externalId": "GOV-3065",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KSI-AFR-ICP",
+      "name": "Incident Communications Procedures (ICP)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ICP-CSX",
+          "name": "Incident Communications Procedures 20x-Specific Provider Responsibilities",
+          "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
+          "controls": [
+            {
+              "id": "udzg13o9",
+              "externalId": "IRO-349",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "sclwbb4w",
+              "externalId": "IRO-350",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "9c56zncb",
+              "externalId": "IRO-351",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "zrcfxhh8",
+              "externalId": "IRO-352",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "hd68qb4p",
+              "externalId": "IRO-353",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "4qmjb91k",
+              "externalId": "IRO-354",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "k63mrj4v",
+              "externalId": "IRO-355",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "hkcqhwgs",
+              "externalId": "IRO-356",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            },
+            {
+              "id": "2zfmsmby",
+              "externalId": "IRO-357",
+              "variants": [
+                "FR20X_LOW_V2",
+                "FR20X_MOD_V2",
+                "FR20X_AGENCY_LOW_V2",
+                "FR20X_AGENCY_MOD_V2"
+              ]
+            }
+          ],
+          "variants": [
+            "FR20X_LOW_V2",
+            "FR20X_MOD_V2",
+            "FR20X_AGENCY_LOW_V2",
+            "FR20X_AGENCY_MOD_V2"
+          ]
+        }
+      ]
+    }
+  ]
+}

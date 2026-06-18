@@ -1,8 +1,8 @@
 <?php
 
-namespace Parallel\Compliance\Frameworks;
+namespace Parallel\Compliance\Controls;
 
-interface FrameworkRequirement
+interface Control
 {
     public function id(): string;
 
@@ -12,5 +12,8 @@ interface FrameworkRequirement
 
     public function description(): ?string;
 
-    public function domain(): ?string;
+    /**
+     * @return array<int, string>
+     */
+    public function domains(): array;
 }

@@ -1,0 +1,609 @@
+{
+  "principles": [
+    {
+      "id": "CHAPTER II",
+      "name": "ICT risk management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 5",
+          "name": "Governance and organisation",
+          "description": "Governance and organisation",
+          "controls": [
+            {
+              "id": "gwsr0ieg",
+              "externalId": "CPL-191"
+            },
+            {
+              "id": "lsd40bkh",
+              "externalId": "CPL-192"
+            },
+            {
+              "id": "nj8aj8j9",
+              "externalId": "SAT-87"
+            },
+            {
+              "id": "42am71af",
+              "externalId": "TPM-128"
+            }
+          ]
+        },
+        {
+          "id": "Article 6",
+          "name": "ICT risk management framework",
+          "description": "ICT risk management framework",
+          "controls": [
+            {
+              "id": "f4mw6a8j",
+              "externalId": "CPL-193"
+            },
+            {
+              "id": "aaisoxzu",
+              "externalId": "CPL-194"
+            },
+            {
+              "id": "sq4jb6c6",
+              "externalId": "GOV-295"
+            },
+            {
+              "id": "pvzzz837",
+              "externalId": "GOV-296"
+            },
+            {
+              "id": "i1mhg4sp",
+              "externalId": "RSK-148"
+            },
+            {
+              "id": "rnuzgu17",
+              "externalId": "RSK-149"
+            },
+            {
+              "id": "2yuxpcue",
+              "externalId": "RSK-150"
+            },
+            {
+              "id": "mnf9hdb2",
+              "externalId": "RSK-151"
+            },
+            {
+              "id": "1yjg9rl0",
+              "externalId": "TPM-129"
+            }
+          ]
+        },
+        {
+          "id": "Article 7",
+          "name": "ICT systems, protocols and tools",
+          "description": "ICT systems, protocols and tools",
+          "controls": [
+            {
+              "id": "esyr93hw",
+              "externalId": "RSK-152"
+            }
+          ]
+        },
+        {
+          "id": "Article 8",
+          "name": "Identification",
+          "description": "Identification",
+          "controls": [
+            {
+              "id": "9hsxolnv",
+              "externalId": "AST-137"
+            },
+            {
+              "id": "1nftphd5",
+              "externalId": "AST-138"
+            },
+            {
+              "id": "55qrotmn",
+              "externalId": "CPL-195"
+            },
+            {
+              "id": "u3ch9w20",
+              "externalId": "GOV-297"
+            },
+            {
+              "id": "odk6tc4s",
+              "externalId": "RSK-153"
+            },
+            {
+              "id": "20raklcv",
+              "externalId": "RSK-154"
+            },
+            {
+              "id": "1ci54hnb",
+              "externalId": "RSK-155"
+            }
+          ]
+        },
+        {
+          "id": "Article 9",
+          "name": "Protection and prevention",
+          "description": "Protection and prevention",
+          "controls": [
+            {
+              "id": "u10sx7ua",
+              "externalId": "GOV-298"
+            },
+            {
+              "id": "18zs4mve",
+              "externalId": "GOV-299"
+            },
+            {
+              "id": "xhv48y91",
+              "externalId": "MON-299"
+            },
+            {
+              "id": "r0ahvcmr",
+              "externalId": "MON-300"
+            }
+          ]
+        },
+        {
+          "id": "Article 10",
+          "name": "Detection",
+          "description": "Detection",
+          "controls": [
+            {
+              "id": "mksrj75b",
+              "externalId": "OPS-54"
+            },
+            {
+              "id": "o4bdwpxn",
+              "externalId": "OPS-55"
+            },
+            {
+              "id": "7e8p3ln7",
+              "externalId": "OPS-56"
+            },
+            {
+              "id": "z4koisk8",
+              "externalId": "OPS-57"
+            }
+          ]
+        },
+        {
+          "id": "Article 11",
+          "name": "Response and recovery",
+          "description": "Response and recovery",
+          "controls": [
+            {
+              "id": "ou8rl4dg",
+              "externalId": "BCD-162"
+            },
+            {
+              "id": "bpebubhh",
+              "externalId": "BCD-163"
+            },
+            {
+              "id": "w6iiy1gp",
+              "externalId": "BCD-164"
+            },
+            {
+              "id": "su2zola0",
+              "externalId": "BCD-165"
+            },
+            {
+              "id": "x5xodhv4",
+              "externalId": "BCD-166"
+            },
+            {
+              "id": "0llx2j1z",
+              "externalId": "BCD-167"
+            },
+            {
+              "id": "lmrwognj",
+              "externalId": "BCD-168"
+            },
+            {
+              "id": "9qceze8d",
+              "externalId": "BCD-169"
+            },
+            {
+              "id": "bynbxsoc",
+              "externalId": "BCD-170"
+            }
+          ]
+        },
+        {
+          "id": "Article 12",
+          "name": "Backup policies and procedures, restoration and recovery procedures and methods",
+          "description": "Backup policies and procedures, restoration and recovery procedures and methods",
+          "controls": [
+            {
+              "id": "fjnl29es",
+              "externalId": "BCD-171"
+            },
+            {
+              "id": "4kd6sbjc",
+              "externalId": "BCD-172"
+            },
+            {
+              "id": "0qu84je7",
+              "externalId": "BCD-173"
+            },
+            {
+              "id": "l12nq4l1",
+              "externalId": "BCD-174"
+            },
+            {
+              "id": "1qaryht1",
+              "externalId": "BCD-175"
+            },
+            {
+              "id": "izkq9oey",
+              "externalId": "BCD-176"
+            },
+            {
+              "id": "rnowfgkw",
+              "externalId": "CAP-19"
+            }
+          ]
+        },
+        {
+          "id": "Article 13",
+          "name": "Learning and evolving",
+          "description": "Learning and evolving",
+          "controls": [
+            {
+              "id": "5mwydf8v",
+              "externalId": "BCD-177"
+            },
+            {
+              "id": "ezrvdpfc",
+              "externalId": "CPL-196"
+            },
+            {
+              "id": "sl6z8nkk",
+              "externalId": "IRO-230"
+            },
+            {
+              "id": "244lrf5t",
+              "externalId": "IRO-231"
+            },
+            {
+              "id": "ntb4ntox",
+              "externalId": "RSK-156"
+            },
+            {
+              "id": "oowmd7y5",
+              "externalId": "RSK-157"
+            },
+            {
+              "id": "73s8vmq3",
+              "externalId": "VPM-158"
+            }
+          ]
+        },
+        {
+          "id": "Article 14",
+          "name": "Communication",
+          "description": "Communication",
+          "controls": [
+            {
+              "id": "4yocwtmf",
+              "externalId": "CPL-197"
+            },
+            {
+              "id": "2brtqq5p",
+              "externalId": "CPL-198"
+            },
+            {
+              "id": "suiqplaf",
+              "externalId": "SAT-88"
+            }
+          ]
+        },
+        {
+          "id": "Article 16",
+          "name": "Simplified ICT risk management framework",
+          "description": "Simplified ICT risk management framework",
+          "controls": [
+            {
+              "id": "04u5lkwu",
+              "externalId": "IRO-232"
+            },
+            {
+              "id": "k9rh792e",
+              "externalId": "RSK-158"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHAPTER III",
+      "name": "ICT-related incident management, classification and reporting",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 17",
+          "name": "ICT-related incident management process",
+          "description": "ICT-related incident management process",
+          "controls": [
+            {
+              "id": "c8eucs8d",
+              "externalId": "IRO-234"
+            },
+            {
+              "id": "cbj68kjd",
+              "externalId": "IRO-235"
+            },
+            {
+              "id": "010ll6yi",
+              "externalId": "IRO-236"
+            }
+          ]
+        },
+        {
+          "id": "Article 18",
+          "name": "Classification of ICT-related incidents and cyber threats",
+          "description": "Classification of ICT-related incidents and cyber threats",
+          "controls": [
+            {
+              "id": "y4akut63",
+              "externalId": "IRO-237"
+            },
+            {
+              "id": "xm8uv9sk",
+              "externalId": "IRO-238"
+            }
+          ]
+        },
+        {
+          "id": "Article 19",
+          "name": "Reporting of major ICT-related incidents and voluntary notification of significant cyber threats",
+          "description": "Reporting of major ICT-related incidents and voluntary notification of significant cyber threats",
+          "controls": [
+            {
+              "id": "yyxof3os",
+              "externalId": "CPL-200"
+            },
+            {
+              "id": "bzbpx6he",
+              "externalId": "CPL-201"
+            },
+            {
+              "id": "mss88he3",
+              "externalId": "IRO-241"
+            },
+            {
+              "id": "9n8qq3c5",
+              "externalId": "IRO-242"
+            },
+            {
+              "id": "d0zblfx6",
+              "externalId": "IRO-243"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHAPTER IV",
+      "name": "Digital operational resilience testing",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 24",
+          "name": "General requirements for the performance of digital operational resilience testing",
+          "description": "General requirements for the performance of digital operational resilience testing",
+          "controls": [
+            {
+              "id": "bqmx6563",
+              "externalId": "VPM-159"
+            },
+            {
+              "id": "9pfzdntg",
+              "externalId": "VPM-160"
+            },
+            {
+              "id": "ghpxjey3",
+              "externalId": "VPM-161"
+            },
+            {
+              "id": "t5n4n4ok",
+              "externalId": "VPM-162"
+            },
+            {
+              "id": "e3ykecfq",
+              "externalId": "VPM-163"
+            },
+            {
+              "id": "djpkc4uy",
+              "externalId": "VPM-164"
+            }
+          ]
+        },
+        {
+          "id": "Article 25",
+          "name": "Testing of ICT tools and systems",
+          "description": "Testing of ICT tools and systems",
+          "controls": [
+            {
+              "id": "3ev9vhng",
+              "externalId": "CPL-209"
+            },
+            {
+              "id": "4eoohnj6",
+              "externalId": "VPM-165"
+            },
+            {
+              "id": "sdz0umdu",
+              "externalId": "VPM-166"
+            }
+          ]
+        },
+        {
+          "id": "Article 26",
+          "name": "Advanced testing of ICT tools, systems and processes based on TLPT",
+          "description": "Advanced testing of ICT tools, systems and processes based on TLPT",
+          "controls": [
+            {
+              "id": "hax4hrlk",
+              "externalId": "CPL-210"
+            },
+            {
+              "id": "yy39fqsu",
+              "externalId": "CPL-211"
+            },
+            {
+              "id": "hp1kg70q",
+              "externalId": "CPL-212"
+            },
+            {
+              "id": "3jkqs3dd",
+              "externalId": "TPM-130"
+            },
+            {
+              "id": "tlhw5s4m",
+              "externalId": "TPM-131"
+            },
+            {
+              "id": "excfk666",
+              "externalId": "TPM-132"
+            },
+            {
+              "id": "klc2rrtl",
+              "externalId": "TPM-133"
+            },
+            {
+              "id": "c888nahq",
+              "externalId": "TPM-134"
+            }
+          ]
+        },
+        {
+          "id": "Article 27",
+          "name": "Requirements for testers for the carrying out of TLPT",
+          "description": "Requirements for testers for the carrying out of TLPT",
+          "controls": [
+            {
+              "id": "nl76u36k",
+              "externalId": "CPL-214"
+            },
+            {
+              "id": "1xw6yg94",
+              "externalId": "TPM-135"
+            },
+            {
+              "id": "1c64i82m",
+              "externalId": "TPM-136"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHAPTER V",
+      "name": "Managing of ICT third-party risk",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 28",
+          "name": "General principles",
+          "description": "General principles",
+          "controls": [
+            {
+              "id": "fn8iyw4v",
+              "externalId": "CPL-215"
+            },
+            {
+              "id": "pjs9s4e6",
+              "externalId": "CPL-216"
+            },
+            {
+              "id": "fvovknhn",
+              "externalId": "CPL-217"
+            },
+            {
+              "id": "2uf3t9gz",
+              "externalId": "CPL-218"
+            },
+            {
+              "id": "cld5vkxy",
+              "externalId": "TPM-137"
+            },
+            {
+              "id": "1nm36cwp",
+              "externalId": "TPM-138"
+            },
+            {
+              "id": "e8tk384u",
+              "externalId": "TPM-139"
+            },
+            {
+              "id": "w6mjgupo",
+              "externalId": "TPM-140"
+            }
+          ]
+        },
+        {
+          "id": "Article 29",
+          "name": "Preliminary assessment of ICT concentration risk at entity level",
+          "description": "Preliminary assessment of ICT concentration risk at entity level",
+          "controls": [
+            {
+              "id": "ogd4zl4h",
+              "externalId": "CPL-219"
+            },
+            {
+              "id": "3bqofr7w",
+              "externalId": "TPM-142"
+            }
+          ]
+        },
+        {
+          "id": "Article 30",
+          "name": "Key contractual provisions",
+          "description": "Key contractual provisions",
+          "controls": [
+            {
+              "id": "n0p78cwe",
+              "externalId": "TPM-143"
+            },
+            {
+              "id": "kjqu3xoy",
+              "externalId": "TPM-144"
+            },
+            {
+              "id": "nfjvels8",
+              "externalId": "TPM-145"
+            },
+            {
+              "id": "wg4vgp4x",
+              "externalId": "TPM-146"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHAPTER VI",
+      "name": "Information-sharing arrangements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Article 45",
+          "name": "Information-sharing arrangements on cyber threat information and intelligence",
+          "description": "Information-sharing arrangements on cyber threat information and intelligence",
+          "controls": [
+            {
+              "id": "wjt1g2ik",
+              "externalId": "IRO-289"
+            },
+            {
+              "id": "7u3a706x",
+              "externalId": "IRO-290"
+            },
+            {
+              "id": "pnbftzcy",
+              "externalId": "IRO-291"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

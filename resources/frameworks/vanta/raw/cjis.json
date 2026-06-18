@@ -1,0 +1,2525 @@
+{
+  "principles": [
+    {
+      "id": "CJIS-1",
+      "name": "Policy Area 1: Information Exchange Agreements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS 5.1.1",
+          "name": "Information Exchange",
+          "description": "",
+          "controls": [
+            {
+              "id": "i2hx4j8q",
+              "externalId": "GOV-4310"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.1.2",
+          "name": "Monitoring, Review, and Delivery of Services",
+          "controls": [
+            {
+              "id": "qp9pheeb",
+              "externalId": "GOV-4410"
+            },
+            {
+              "id": "tfvh2fqb",
+              "externalId": "TPM-1810"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-2",
+      "name": "Policy Area 2: Access Control (AC)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS AC-1",
+          "name": "Policy And Procedures",
+          "controls": [
+            {
+              "id": "pvuba9bh",
+              "externalId": "IAC-3610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-2",
+          "name": "Account Management",
+          "controls": [
+            {
+              "id": "ijua7o9n",
+              "externalId": "IAC-3710"
+            },
+            {
+              "id": "lcyhu2qu",
+              "externalId": "IAC-3810"
+            },
+            {
+              "id": "f0jrne09",
+              "externalId": "IAC-3910"
+            },
+            {
+              "id": "l7d0oul7",
+              "externalId": "IAC-4010"
+            },
+            {
+              "id": "5zkbm1k8",
+              "externalId": "IAC-4110"
+            },
+            {
+              "id": "ak1lz47d",
+              "externalId": "IAC-4210"
+            },
+            {
+              "id": "dawo245s",
+              "externalId": "IAC-4310"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-3",
+          "name": "Access Enforcement",
+          "controls": [
+            {
+              "id": "t0l386tp",
+              "externalId": "IAC-4410"
+            },
+            {
+              "id": "jyv7phot",
+              "externalId": "IAC-4510"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-4",
+          "name": "Information Flow Enforcement",
+          "controls": [
+            {
+              "id": "4zqptmjw",
+              "externalId": "IAC-4610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-5",
+          "name": "Separation Of Duties",
+          "controls": [
+            {
+              "id": "lj42xbnc",
+              "externalId": "IAC-4710"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-6",
+          "name": "Least Privilege",
+          "controls": [
+            {
+              "id": "5zd6t2pc",
+              "externalId": "IAC-4810"
+            },
+            {
+              "id": "7r1i6aa9",
+              "externalId": "IAC-4910"
+            },
+            {
+              "id": "hm6f4m68",
+              "externalId": "IAC-5010"
+            },
+            {
+              "id": "45vraorm",
+              "externalId": "IAC-5110"
+            },
+            {
+              "id": "uwu9160r",
+              "externalId": "IAC-5210"
+            },
+            {
+              "id": "gpey698l",
+              "externalId": "IAC-5310"
+            },
+            {
+              "id": "cbthuv67",
+              "externalId": "IAC-5410"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-7",
+          "name": "Unsuccessful Logon Attempts",
+          "controls": [
+            {
+              "id": "cgsjdmcr",
+              "externalId": "IAC-5510"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-8",
+          "name": "System Use Notification",
+          "controls": [
+            {
+              "id": "qe9b8caw",
+              "externalId": "IAC-5610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-11",
+          "name": "Device Lock",
+          "controls": [
+            {
+              "id": "pxflg99n",
+              "externalId": "IAC-5710"
+            },
+            {
+              "id": "cd7ysko3",
+              "externalId": "IAC-5810"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-12",
+          "name": "Session Termination",
+          "controls": [
+            {
+              "id": "nsf7i6lz",
+              "externalId": "IAC-5910"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-14",
+          "name": "Permitted Actions Without Identification Or Authentication",
+          "controls": [
+            {
+              "id": "2ok5cnab",
+              "externalId": "IAC-6010"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-17",
+          "name": "Remote Access",
+          "controls": [
+            {
+              "id": "oo9t5xl8",
+              "externalId": "IAC-6110"
+            },
+            {
+              "id": "2wc03e9r",
+              "externalId": "IAC-6210"
+            },
+            {
+              "id": "5zpdlj1h",
+              "externalId": "IAC-6310"
+            },
+            {
+              "id": "u44zb8iz",
+              "externalId": "IAC-6410"
+            },
+            {
+              "id": "hgd6nosh",
+              "externalId": "IAC-6510"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-18",
+          "name": "Wireless Access",
+          "controls": [
+            {
+              "id": "57uxc6ug",
+              "externalId": "IAC-6610"
+            },
+            {
+              "id": "bnw20ic8",
+              "externalId": "IAC-6710"
+            },
+            {
+              "id": "bt4v6xl8",
+              "externalId": "IAC-6810"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-19",
+          "name": "Access Control For Mobile Devices",
+          "controls": [
+            {
+              "id": "ituaj2g8",
+              "externalId": "IAC-6910"
+            },
+            {
+              "id": "edjn8c0x",
+              "externalId": "IAC-7010"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-20",
+          "name": "Use Of External Systems",
+          "controls": [
+            {
+              "id": "0skz74wr",
+              "externalId": "IAC-7110"
+            },
+            {
+              "id": "hqy1hkf1",
+              "externalId": "IAC-7210"
+            },
+            {
+              "id": "vk5np9n3",
+              "externalId": "IAC-7310"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-21",
+          "name": "Information Sharing",
+          "controls": [
+            {
+              "id": "vfkkinba",
+              "externalId": "IAC-7410"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AC-22",
+          "name": "Publicly Accessible Content",
+          "controls": [
+            {
+              "id": "5rbz7q4w",
+              "externalId": "IAC-7510"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-3",
+      "name": "Policy Area 3: Awareness And Training (AT)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS AT-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "npetf6hs",
+              "externalId": "SAT-9000"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AT-2",
+          "name": "Literacy Training and Awareness",
+          "controls": [
+            {
+              "id": "fie0oy7k",
+              "externalId": "SAT-1000"
+            },
+            {
+              "id": "e3ae4yyg",
+              "externalId": "SAT-1100"
+            },
+            {
+              "id": "ezmey1kf",
+              "externalId": "0"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AT-3",
+          "name": "Role-Based Training",
+          "controls": [
+            {
+              "id": "iwdmbg22",
+              "externalId": "SAT-1300"
+            },
+            {
+              "id": "8kvvuopg",
+              "externalId": "SAT-1400"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AT-4",
+          "name": "Training Records",
+          "controls": [
+            {
+              "id": "wkbhitgm",
+              "externalId": "SAT-1500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-4",
+      "name": "Policy Area 4: Audit And Accountability (AU)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS AU-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "wfex1wme",
+              "externalId": "IAC-7610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-2",
+          "name": "Event Logging",
+          "controls": [
+            {
+              "id": "5d7bcu10",
+              "externalId": "IAC-7710"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-3",
+          "name": "Content of Audit Records",
+          "controls": [
+            {
+              "id": "wf5pm9ip",
+              "externalId": "IAC-7810"
+            },
+            {
+              "id": "hktv880o",
+              "externalId": "IAC-7910"
+            },
+            {
+              "id": "pt4ztolu",
+              "externalId": "IAC-8010"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-4",
+          "name": "Audit Log Storage Capacity",
+          "controls": [
+            {
+              "id": "8mm1cdwd",
+              "externalId": "IAC-8110"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-5",
+          "name": "Response to Audit Logging Process Failures",
+          "controls": [
+            {
+              "id": "fqir2hgg",
+              "externalId": "IAC-636"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-6",
+          "name": "Audit Record Review, Analysis, and Reporting",
+          "controls": [
+            {
+              "id": "bm1hngb5",
+              "externalId": "IAC-8210"
+            },
+            {
+              "id": "p0s8ewrn",
+              "externalId": "IAC-637"
+            },
+            {
+              "id": "8p1f09qp",
+              "externalId": "IAC-638"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-7",
+          "name": "Audit Record Reduction and Report Generation",
+          "controls": [
+            {
+              "id": "ku09tmuq",
+              "externalId": "IAC-639"
+            },
+            {
+              "id": "t4kc4tho",
+              "externalId": "IAC-652"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-8",
+          "name": "Time Stamps",
+          "controls": [
+            {
+              "id": "qqe6zyih",
+              "externalId": "IAC-655"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-9",
+          "name": "Protection of Audit Information",
+          "controls": [
+            {
+              "id": "29gzfsy2",
+              "externalId": "IAC-656"
+            },
+            {
+              "id": "lpm9kah3",
+              "externalId": "IAC-657"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-11",
+          "name": "Audit Record Retention",
+          "controls": [
+            {
+              "id": "dc4hjqxk",
+              "externalId": "IAC-658"
+            }
+          ]
+        },
+        {
+          "id": "CJIS AU-12",
+          "name": "Audit Record Generation",
+          "controls": [
+            {
+              "id": "x20vkd6w",
+              "externalId": "IAC-659"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-5",
+      "name": "Policy Area 5: Assessment, Authorization, And Monitoring (CA)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS CA-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "s18q33c5",
+              "externalId": "GOV-4510"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CA-2",
+          "name": "Control Assessments",
+          "controls": [
+            {
+              "id": "gpm6528z",
+              "externalId": "GOV-4710"
+            },
+            {
+              "id": "0ache9hu",
+              "externalId": "GOV-4610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CA-3",
+          "name": "Information Exchange",
+          "controls": [
+            {
+              "id": "cdaevgaa",
+              "externalId": "GOV-4810"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CA-5",
+          "name": "Plan of Action and Milestones",
+          "controls": [
+            {
+              "id": "niu4dtng",
+              "externalId": "GOV-5010"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CA-6",
+          "name": "Authorization",
+          "controls": [
+            {
+              "id": "0cegsrul",
+              "externalId": "GOV-5110"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CA-7",
+          "name": "Continuous Monitoring",
+          "controls": [
+            {
+              "id": "lyzicaou",
+              "externalId": "GOV-4910"
+            },
+            {
+              "id": "jlanv5ob",
+              "externalId": "GOV-5210"
+            },
+            {
+              "id": "bb6szhz2",
+              "externalId": "GOV-5310"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CA-9",
+          "name": "Internal System Connections",
+          "controls": [
+            {
+              "id": "o1mkosbm",
+              "externalId": "GOV-5410"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-6",
+      "name": "Policy Area 6: Configuration Management (CM)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS CM-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "07xdt83z",
+              "externalId": "CFG-1003"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-2",
+          "name": "Baseline Configuration",
+          "controls": [
+            {
+              "id": "gacdc4ps",
+              "externalId": "CFG-1004"
+            },
+            {
+              "id": "gty3jny9",
+              "externalId": "CFG-1005"
+            },
+            {
+              "id": "1h2ra29r",
+              "externalId": "CFG-1006"
+            },
+            {
+              "id": "m7kcr59q",
+              "externalId": "CFG-1007"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-3",
+          "name": "Configuration Change Control",
+          "controls": [
+            {
+              "id": "y4lzjsro",
+              "externalId": "CFG-1008"
+            },
+            {
+              "id": "94mlx40z",
+              "externalId": "CFG-1009"
+            },
+            {
+              "id": "k86pwecw",
+              "externalId": "CFG-1011"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-4",
+          "name": "Impact Analyses",
+          "controls": [
+            {
+              "id": "iavhift5",
+              "externalId": "CFG-1010"
+            },
+            {
+              "id": "zesq8jp4",
+              "externalId": "CFG-1014"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-5",
+          "name": "Access Restrictions for Change",
+          "controls": [
+            {
+              "id": "jmzbvwbs",
+              "externalId": "CFG-1013"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-6",
+          "name": "Configuration Settings",
+          "controls": [
+            {
+              "id": "o0kuqr2c",
+              "externalId": "CFG-1012"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-7",
+          "name": "Least Functionality",
+          "controls": [
+            {
+              "id": "8ht3ie60",
+              "externalId": "CFG-1015"
+            },
+            {
+              "id": "tkzk71gg",
+              "externalId": "CFG-1016"
+            },
+            {
+              "id": "lx9d76lk",
+              "externalId": "CFG-1018"
+            },
+            {
+              "id": "1zs0j10b",
+              "externalId": "CFG-1017"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-8",
+          "name": "System Component Inventory",
+          "controls": [
+            {
+              "id": "53empmjz",
+              "externalId": "CFG-153"
+            },
+            {
+              "id": "qy350nza",
+              "externalId": "CFG-222"
+            },
+            {
+              "id": "xkigjp9w",
+              "externalId": "CFG-223"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-9",
+          "name": "Configuration Management Plan",
+          "controls": [
+            {
+              "id": "cmwi1taz",
+              "externalId": "CFG-224"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-10",
+          "name": "Software Usage Restrictions",
+          "controls": [
+            {
+              "id": "zay2euig",
+              "externalId": "CFG-225"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-11",
+          "name": "User-Installed Software",
+          "controls": [
+            {
+              "id": "eioi9yge",
+              "externalId": "CFG-226"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CM-12",
+          "name": "Information Location",
+          "controls": [
+            {
+              "id": "1jlhf3og",
+              "externalId": "CFG-227"
+            },
+            {
+              "id": "eb86dxzd",
+              "externalId": "CFG-228"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-7",
+      "name": "Policy Area 7: Contingency Planning (CP)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS CP-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "2di6wwuj",
+              "externalId": "BCD-1020"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-2",
+          "name": "Contingency Plan",
+          "controls": [
+            {
+              "id": "jhs45fib",
+              "externalId": "BCD-147"
+            },
+            {
+              "id": "cbnmiyit",
+              "externalId": "BCD-1021"
+            },
+            {
+              "id": "koixxyzi",
+              "externalId": "BCD-148"
+            },
+            {
+              "id": "hvjdl3zk",
+              "externalId": "BCD-149"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-3",
+          "name": "Contingency Training",
+          "controls": [
+            {
+              "id": "xxpfsh6w",
+              "externalId": "BCD-151"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-4",
+          "name": "Contingency Plan Testing",
+          "controls": [
+            {
+              "id": "nxpfei1b",
+              "externalId": "BCD-150"
+            },
+            {
+              "id": "vaqq7j3s",
+              "externalId": "BCD-153"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-6",
+          "name": "Alternate Storage Site",
+          "controls": [
+            {
+              "id": "4l9kkxoa",
+              "externalId": "BCD-154"
+            },
+            {
+              "id": "4ows7mb9",
+              "externalId": "BCD-152"
+            },
+            {
+              "id": "3abceh0y",
+              "externalId": "BCD-156"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-7",
+          "name": "Alternate Processing Site",
+          "controls": [
+            {
+              "id": "tvxgrrh0",
+              "externalId": "BCD-155"
+            },
+            {
+              "id": "y4thyo2u",
+              "externalId": "BCD-159"
+            },
+            {
+              "id": "6dezuqc6",
+              "externalId": "BCD-157"
+            },
+            {
+              "id": "kzegxrhy",
+              "externalId": "BCD-158"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-8",
+          "name": "Telecommunications Services",
+          "controls": [
+            {
+              "id": "8ovlojsg",
+              "externalId": "BCD-160"
+            },
+            {
+              "id": "aibw574t",
+              "externalId": "BCD-161"
+            },
+            {
+              "id": "c5s7ts97",
+              "externalId": "BCD-222"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-9",
+          "name": "System Backup",
+          "controls": [
+            {
+              "id": "z5ks93uq",
+              "externalId": "BCD-223"
+            },
+            {
+              "id": "yxdky4bv",
+              "externalId": "BCD-224"
+            },
+            {
+              "id": "e3w126wa",
+              "externalId": "BCD-225"
+            }
+          ]
+        },
+        {
+          "id": "CJIS CP-10",
+          "name": "System Recovery and Reconstitution",
+          "controls": [
+            {
+              "id": "g9ygjc2s",
+              "externalId": "BCD-226"
+            },
+            {
+              "id": "4nhcmmit",
+              "externalId": "BCD-227"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-8",
+      "name": "Policy Area 8: Identification And Authentication (IA)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS IA-0",
+          "name": "Use of Originating Agency Identifiers in Transactions and Information Exchanges",
+          "controls": [
+            {
+              "id": "waqpsi0p",
+              "externalId": "IAC-661"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "k30p43ad",
+              "externalId": "IAC-660"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-2",
+          "name": "Identification and Authentication (Organizational Users)",
+          "controls": [
+            {
+              "id": "9gtsp4q2",
+              "externalId": "IAC-663"
+            },
+            {
+              "id": "6rgrv358",
+              "externalId": "IAC-662"
+            },
+            {
+              "id": "kjm3u9fe",
+              "externalId": "IAC-664"
+            },
+            {
+              "id": "77y82jw9",
+              "externalId": "IAC-665"
+            },
+            {
+              "id": "znsbv4ip",
+              "externalId": "IAC-666"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-3",
+          "name": "Device Identification and Authentication",
+          "controls": [
+            {
+              "id": "p7m7r4of",
+              "externalId": "IAC-667"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-4",
+          "name": "Identifier Management",
+          "controls": [
+            {
+              "id": "m95kdm7y",
+              "externalId": "IAC-668"
+            },
+            {
+              "id": "wp9qn86e",
+              "externalId": "IAC-669"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-5",
+          "name": "Authenticator Management",
+          "controls": [
+            {
+              "id": "mt1nuamd",
+              "externalId": "IAC-670"
+            },
+            {
+              "id": "yzxbvr1i",
+              "externalId": "IAC-671"
+            },
+            {
+              "id": "3xpaybn6",
+              "externalId": "IAC-672"
+            },
+            {
+              "id": "9af3mty6",
+              "externalId": "IAC-673"
+            },
+            {
+              "id": "1i1ua5od",
+              "externalId": "IAC-674"
+            },
+            {
+              "id": "t3znfxbo",
+              "externalId": "IAC-675"
+            },
+            {
+              "id": "b35a6myp",
+              "externalId": "IAC-677"
+            },
+            {
+              "id": "935r7rxm",
+              "externalId": "IAC-676"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-6",
+          "name": "Authentication Feedback",
+          "controls": [
+            {
+              "id": "s0j4kfxa",
+              "externalId": "IAC-679"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-7",
+          "name": "Cryptographic Module Authentication",
+          "controls": [
+            {
+              "id": "srbdwxlw",
+              "externalId": "IAC-678"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-8",
+          "name": "Identification and Authentication (Non-Organizational Users)",
+          "controls": [
+            {
+              "id": "cby13zci",
+              "externalId": "IAC-680"
+            },
+            {
+              "id": "xbn7cjx3",
+              "externalId": "IAC-681"
+            },
+            {
+              "id": "thnc3qvi",
+              "externalId": "IAC-682"
+            },
+            {
+              "id": "mexp28lh",
+              "externalId": "IAC-683"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-11",
+          "name": "Re-Authentication",
+          "controls": [
+            {
+              "id": "qlidtvwo",
+              "externalId": "IAC-685"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IA-12",
+          "name": "Identity Proofing",
+          "controls": [
+            {
+              "id": "lacte43n",
+              "externalId": "IAC-684"
+            },
+            {
+              "id": "dqmkccsb",
+              "externalId": "IAC-686"
+            },
+            {
+              "id": "hmfausi7",
+              "externalId": "IAC-688"
+            },
+            {
+              "id": "ey8a6xtq",
+              "externalId": "IAC-689"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-9",
+      "name": "Policy Area 9: Incident Response (IR)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS IR-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "6o87cr2w",
+              "externalId": "IRO-2010"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-2",
+          "name": "Incident Response Training",
+          "controls": [
+            {
+              "id": "fjlgjnvv",
+              "externalId": "IRO-1910"
+            },
+            {
+              "id": "xjbzl2y3",
+              "externalId": "IRO-2110"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-3",
+          "name": "Incident Response Testing",
+          "controls": [
+            {
+              "id": "9qxbjppa",
+              "externalId": "IRO-2210"
+            },
+            {
+              "id": "vr5pcqwa",
+              "externalId": "IRO-2310"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-4",
+          "name": "Incident Handling",
+          "controls": [
+            {
+              "id": "hb0vre4u",
+              "externalId": "IRO-2410"
+            },
+            {
+              "id": "4bvo1xry",
+              "externalId": "IRO-2610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-5",
+          "name": "Incident Monitoring",
+          "controls": [
+            {
+              "id": "w9wa2uno",
+              "externalId": "IRO-2510"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-6",
+          "name": "Incident Reporting",
+          "controls": [
+            {
+              "id": "z9tfdyy5",
+              "externalId": "IRO-2710"
+            },
+            {
+              "id": "0u8ssty2",
+              "externalId": "IRO-2810"
+            },
+            {
+              "id": "osbycjmr",
+              "externalId": "IRO-2910"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-7",
+          "name": "Incident Response Assistance",
+          "controls": [
+            {
+              "id": "tdpw7owp",
+              "externalId": "IRO-3010"
+            },
+            {
+              "id": "k6huuhnx",
+              "externalId": "IRO-3110"
+            }
+          ]
+        },
+        {
+          "id": "CJIS IR-8",
+          "name": "Incident Response Plan",
+          "controls": [
+            {
+              "id": "wfx3tcp9",
+              "externalId": "IRO-63"
+            },
+            {
+              "id": "sxvhw654",
+              "externalId": "IRO-217"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-10",
+      "name": "Policy Area 10: Maintenance (MA)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS MA-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "kubrdpq4",
+              "externalId": "MNT-75"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MA-4",
+          "name": "Nonlocal Maintenance",
+          "controls": [
+            {
+              "id": "bbjw0aqf",
+              "externalId": "MNT-80"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MA-3",
+          "name": "Maintenance Tools",
+          "controls": [
+            {
+              "id": "db07o47c",
+              "externalId": "MNT-77"
+            },
+            {
+              "id": "9xq7yntf",
+              "externalId": "MNT-78"
+            },
+            {
+              "id": "3nhq3f2q",
+              "externalId": "MNT-79"
+            },
+            {
+              "id": "nly2s9tf",
+              "externalId": "MNT-83"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MA-2",
+          "name": "Controlled Maintenance",
+          "controls": [
+            {
+              "id": "xofgh29y",
+              "externalId": "MNT-76"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MA-6",
+          "name": "Timely Maintenance",
+          "controls": [
+            {
+              "id": "2sdla76f",
+              "externalId": "MNT-82"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MA-5",
+          "name": "Maintenance Personnel",
+          "controls": [
+            {
+              "id": "vxef746h",
+              "externalId": "MNT-81"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-11",
+      "name": "Policy Area 11: Media Protection (MP)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS MP-2",
+          "name": "Media Access",
+          "controls": [
+            {
+              "id": "sqrrsdte",
+              "externalId": "PES-2000"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MP-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "2kmrtnse",
+              "externalId": "PES-1900"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MP-4",
+          "name": "Media Storage",
+          "controls": [
+            {
+              "id": "sq4g7nl2",
+              "externalId": "PES-2100"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MP-5",
+          "name": "Media Transport",
+          "controls": [
+            {
+              "id": "gbqdps0n",
+              "externalId": "PES-2200"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MP-6",
+          "name": "Media Sanitization",
+          "controls": [
+            {
+              "id": "02p5tl6a",
+              "externalId": "PES-2400"
+            }
+          ]
+        },
+        {
+          "id": "CJIS MP-7",
+          "name": "Media Use",
+          "controls": [
+            {
+              "id": "pwx9ns1d",
+              "externalId": "PES-2300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-12",
+      "name": "Policy Area 12: Physical And Environmental Protection (PE)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS PE-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "cjvilvay",
+              "externalId": "PES-2500"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-2",
+          "name": "Physical Access Authorizations",
+          "controls": [
+            {
+              "id": "o3oh7pr4",
+              "externalId": "PES-2600"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-3",
+          "name": "Physical Access Control",
+          "controls": [
+            {
+              "id": "11ntsic4",
+              "externalId": "PES-2700"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-4",
+          "name": "Access Control for Transmission",
+          "controls": [
+            {
+              "id": "3hb433l1",
+              "externalId": "PES-2800"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-6",
+          "name": "Monitoring Physical Access",
+          "controls": [
+            {
+              "id": "mqxn8j00",
+              "externalId": "PES-3000"
+            },
+            {
+              "id": "7e232rap",
+              "externalId": "PES-3100"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-5",
+          "name": "Access Control for Output Devices",
+          "controls": [
+            {
+              "id": "t2ocu8bg",
+              "externalId": "PES-2900"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-8",
+          "name": "Visitor Access Records",
+          "controls": [
+            {
+              "id": "ksaer7zo",
+              "externalId": "PES-3200"
+            },
+            {
+              "id": "echsv2qg",
+              "externalId": "PES-3300"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-9",
+          "name": "Power Equipment and Cabling",
+          "controls": [
+            {
+              "id": "wx7hk8gk",
+              "externalId": "PES-3400"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-10",
+          "name": "Emergency Shutoff",
+          "controls": [
+            {
+              "id": "u9mfjwsf",
+              "externalId": "PES-3500"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-11",
+          "name": "Emergency Power",
+          "controls": [
+            {
+              "id": "b4fwec8x",
+              "externalId": "PES-3600"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-12",
+          "name": "Emergency Lighting",
+          "controls": [
+            {
+              "id": "7phrxuri",
+              "externalId": "PES-3700"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-13",
+          "name": "Fire Protection",
+          "controls": [
+            {
+              "id": "2m1gdegp",
+              "externalId": "PES-300"
+            },
+            {
+              "id": "c95wqzw8",
+              "externalId": "PES-237"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-14",
+          "name": "Environmental Controls",
+          "controls": [
+            {
+              "id": "pkyso46a",
+              "externalId": "PES-236"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-15",
+          "name": "Water Damage Protection",
+          "controls": [
+            {
+              "id": "6guluw11",
+              "externalId": "PES-238"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-16",
+          "name": "Delivery and Removal",
+          "controls": [
+            {
+              "id": "21i642vd",
+              "externalId": "PES-239"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PE-17",
+          "name": "Alternate Work Site",
+          "controls": [
+            {
+              "id": "9jw0mqe2",
+              "externalId": "PES-240"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-13",
+      "name": "Policy Area 13: Planning (PL)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS PL-2",
+          "name": "System Security and Privacy Plans",
+          "controls": [
+            {
+              "id": "4wxahwet",
+              "externalId": "GOV-289"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PL-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "6er6wvav",
+              "externalId": "GOV-288"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PL-4",
+          "name": "Rules of Behavior",
+          "controls": [
+            {
+              "id": "0hwokeif",
+              "externalId": "GOV-291"
+            },
+            {
+              "id": "6c5l6arw",
+              "externalId": "GOV-292"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PL-8",
+          "name": "Security and Privacy Architectures",
+          "controls": [
+            {
+              "id": "uqqjpwsd",
+              "externalId": "GOV-293"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PL-9",
+          "name": "Central Management",
+          "controls": [
+            {
+              "id": "qd4l3h3l",
+              "externalId": "GOV-294"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PL-10",
+          "name": "Baseline Selection",
+          "controls": [
+            {
+              "id": "pon5olz8",
+              "externalId": "GOV-300"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PL-11",
+          "name": "Baseline Tailoring",
+          "controls": [
+            {
+              "id": "2tnlfrsh",
+              "externalId": "GOV-301"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-14",
+      "name": "Policy Area 14: Personnel Security (PS)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS PS-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "h41mbkbt",
+              "externalId": "HRS-1018"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-2",
+          "name": "Position Risk Designation",
+          "controls": [
+            {
+              "id": "w3wf1atw",
+              "externalId": "HRS-1021"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-3",
+          "name": "Personnel Screening",
+          "controls": [
+            {
+              "id": "m7kcwtc1",
+              "externalId": "HRS-1019"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-4",
+          "name": "Personnel Termination",
+          "controls": [
+            {
+              "id": "mh6pg2pe",
+              "externalId": "HRS-1020"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-5",
+          "name": "Personnel Transfer",
+          "controls": [
+            {
+              "id": "zjovje2m",
+              "externalId": "HRS-2310"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-7",
+          "name": "External Personnel Security",
+          "controls": [
+            {
+              "id": "rtinseq5",
+              "externalId": "HRS-2410"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-6",
+          "name": "Access Agreements",
+          "controls": [
+            {
+              "id": "0rpn2tuw",
+              "externalId": "HRS-2210"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-8",
+          "name": "Personnel Sanctions",
+          "controls": [
+            {
+              "id": "z86vb46y",
+              "externalId": "HRS-2610"
+            }
+          ]
+        },
+        {
+          "id": "CJIS PS-9",
+          "name": "Position Descriptions",
+          "controls": [
+            {
+              "id": "s4od4mph",
+              "externalId": "HRS-2510"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-15",
+      "name": "Policy Area 15: Risk Assessment (RA)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS RA-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "htzommmc",
+              "externalId": "RSK-1200"
+            }
+          ]
+        },
+        {
+          "id": "CJIS RA-2",
+          "name": "Security Categorization",
+          "controls": [
+            {
+              "id": "aiooxjw4",
+              "externalId": "RSK-1100"
+            }
+          ]
+        },
+        {
+          "id": "CJIS RA-5",
+          "name": "Vulnerability Monitoring and Scanning",
+          "controls": [
+            {
+              "id": "2g9ea01q",
+              "externalId": "RSK-133"
+            },
+            {
+              "id": "4cyntw95",
+              "externalId": "RSK-72"
+            },
+            {
+              "id": "hfrc2e6j",
+              "externalId": "RSK-135"
+            },
+            {
+              "id": "yvdah2k2",
+              "externalId": "RSK-134"
+            }
+          ]
+        },
+        {
+          "id": "CJIS RA-3",
+          "name": "Risk Assessment",
+          "controls": [
+            {
+              "id": "qyrg9fbg",
+              "externalId": "RSK-13"
+            }
+          ]
+        },
+        {
+          "id": "CJIS RA-7",
+          "name": "Risk Response",
+          "controls": [
+            {
+              "id": "n1kuwnly",
+              "externalId": "RSK-140"
+            }
+          ]
+        },
+        {
+          "id": "CJIS RA-9",
+          "name": "Criticality Analysis",
+          "controls": [
+            {
+              "id": "o88xahx1",
+              "externalId": "RSK-141"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-16",
+      "name": "Policy Area 16: System And Services Acquisition (SA)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS SA-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "f2fpzsbg",
+              "externalId": "SEA-6000"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-2",
+          "name": "Allocation of Resources",
+          "controls": [
+            {
+              "id": "b5lw8fn7",
+              "externalId": "SEA-7000"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-3",
+          "name": "System Development Life Cycle",
+          "controls": [
+            {
+              "id": "jv8kc8bo",
+              "externalId": "SEA-8000"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-5",
+          "name": "System Documentation",
+          "controls": [
+            {
+              "id": "69uvmwqb",
+              "externalId": "SEA-1400"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-4",
+          "name": "Acquisition Process",
+          "controls": [
+            {
+              "id": "h7gafffu",
+              "externalId": "SEA-9"
+            },
+            {
+              "id": "dzvkzw26",
+              "externalId": "SEA-1000"
+            },
+            {
+              "id": "xglv3n66",
+              "externalId": "SEA-1100"
+            },
+            {
+              "id": "eh3xmkuy",
+              "externalId": "SEA-1200"
+            },
+            {
+              "id": "s23vs1w7",
+              "externalId": "SEA-1300"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-8",
+          "name": "Security and Privacy Engineering Principles",
+          "controls": [
+            {
+              "id": "4x48mxgg",
+              "externalId": "SEA-1500"
+            },
+            {
+              "id": "5b7upoq2",
+              "externalId": "SEA-1600"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-9",
+          "name": "External System Services",
+          "controls": [
+            {
+              "id": "v3k4idlf",
+              "externalId": "SEA-1800"
+            },
+            {
+              "id": "hfpbfgg3",
+              "externalId": "SEA-1900"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-10",
+          "name": "Developer Configuration Management",
+          "controls": [
+            {
+              "id": "q6cgqg98",
+              "externalId": "SEA-1700"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-11",
+          "name": "Developer Testing and Evaluation",
+          "controls": [
+            {
+              "id": "9ad8ejdp",
+              "externalId": "SEA-2000"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-15",
+          "name": "Development Process, Standards, and Tools",
+          "controls": [
+            {
+              "id": "84rsfg03",
+              "externalId": "SEA-2100"
+            },
+            {
+              "id": "3m5v1pm5",
+              "externalId": "SEA-2200"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SA-22",
+          "name": "Unsupported System Components",
+          "controls": [
+            {
+              "id": "bphdwfmm",
+              "externalId": "SEA-230"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-17",
+      "name": "Policy Area 17: Systems And Communications Protection (SC)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS SC-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "xvbntz9t",
+              "externalId": "CRY-1016"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-4",
+          "name": "Information in Shared System Resources",
+          "controls": [
+            {
+              "id": "ypydi0go",
+              "externalId": "CRY-1019"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-2",
+          "name": "Separation of System and User Functionality",
+          "controls": [
+            {
+              "id": "lbuc8zka",
+              "externalId": "CRY-1017"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-5",
+          "name": "Denial-of-Service Protection",
+          "controls": [
+            {
+              "id": "anxo07xe",
+              "externalId": "CRY-1018"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-7",
+          "name": "Boundary Protection",
+          "controls": [
+            {
+              "id": "z022i2s8",
+              "externalId": "CRY-1020"
+            },
+            {
+              "id": "9iuuo3ts",
+              "externalId": "CRY-1021"
+            },
+            {
+              "id": "o3eso69h",
+              "externalId": "CRY-1023"
+            },
+            {
+              "id": "eplgxd1a",
+              "externalId": "CRY-1022"
+            },
+            {
+              "id": "tqyxuyqa",
+              "externalId": "CRY-1024"
+            },
+            {
+              "id": "4zt8ii71",
+              "externalId": "CRY-1026"
+            },
+            {
+              "id": "ketnf3zg",
+              "externalId": "CRY-1025"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-8",
+          "name": "Transmission Confidentiality and Integrity",
+          "controls": [
+            {
+              "id": "0zl6czm7",
+              "externalId": "CRY-1029"
+            },
+            {
+              "id": "kmy8mnlr",
+              "externalId": "CRY-1030"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-12",
+          "name": "Cryptographic Key Establishment and Management",
+          "controls": [
+            {
+              "id": "cy3w7obo",
+              "externalId": "CRY-1027"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-13",
+          "name": "Cryptographic Protection",
+          "controls": [
+            {
+              "id": "gpsu6cfg",
+              "externalId": "CRY-1032"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-10",
+          "name": "Network Disconnect",
+          "controls": [
+            {
+              "id": "gstryjis",
+              "externalId": "CRY-1028"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-17",
+          "name": "Public Key Infrastructure Certificates",
+          "controls": [
+            {
+              "id": "vfjifqm8",
+              "externalId": "CRY-1033"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-15",
+          "name": "Collaborative Computing Devices and Applications",
+          "controls": [
+            {
+              "id": "hoaj25f3",
+              "externalId": "CRY-1031"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-20",
+          "name": "Secure Name/Address Resolution Service (Authoritative Source)",
+          "controls": [
+            {
+              "id": "eoyoptce",
+              "externalId": "CRY-1035"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-18",
+          "name": "Mobile Code",
+          "controls": [
+            {
+              "id": "ljys2svc",
+              "externalId": "CRY-1034"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-22",
+          "name": "Architecture and Provisioning for Name/Address Resolution Service",
+          "controls": [
+            {
+              "id": "jj4fnghz",
+              "externalId": "CRY-1037"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-21",
+          "name": "Secure Name/Address Resolution Service (Recursive or Caching Resolver)",
+          "controls": [
+            {
+              "id": "jp2gbyq7",
+              "externalId": "CRY-1036"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-23",
+          "name": "Session Authenticity",
+          "controls": [
+            {
+              "id": "6vll727k",
+              "externalId": "CRY-1038"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-28",
+          "name": "Protection of Information at Rest",
+          "controls": [
+            {
+              "id": "8aj215l8",
+              "externalId": "CRY-1039"
+            },
+            {
+              "id": "myz38xpr",
+              "externalId": "CRY-1040"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SC-39",
+          "name": "Process Isolation",
+          "controls": [
+            {
+              "id": "l5hwezlg",
+              "externalId": "CRY-1041"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-18",
+      "name": "Policy Area 18: System And Information Integrity (SI)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS SI-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "iaeqo5yt",
+              "externalId": "CLD-1001"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-2",
+          "name": "Flaw Remediation",
+          "controls": [
+            {
+              "id": "pakbn4ui",
+              "externalId": "CLD-11"
+            },
+            {
+              "id": "3ba6fzyl",
+              "externalId": "CLD-10"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-3",
+          "name": "Malicious Code Protection",
+          "controls": [
+            {
+              "id": "e5wwfoqw",
+              "externalId": "CLD-12"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-5",
+          "name": "Security Alerts, Advisories, and Directives",
+          "controls": [
+            {
+              "id": "nddj75gz",
+              "externalId": "CLD-1017"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-4",
+          "name": "System Monitoring",
+          "controls": [
+            {
+              "id": "9z52jh6k",
+              "externalId": "CLD-1013"
+            },
+            {
+              "id": "mseuy4g0",
+              "externalId": "CLD-1014"
+            },
+            {
+              "id": "tkx3l5o6",
+              "externalId": "CLD-1015"
+            },
+            {
+              "id": "yk66u6rj",
+              "externalId": "CLD-1016"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-7",
+          "name": "Software, Firmware, and Information Integrity",
+          "controls": [
+            {
+              "id": "dxn3lh7b",
+              "externalId": "CLD-1019"
+            },
+            {
+              "id": "8t8m0445",
+              "externalId": "CLD-1018"
+            },
+            {
+              "id": "l382bi3v",
+              "externalId": "CLD-1020"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-10",
+          "name": "Information Input Validation",
+          "controls": [
+            {
+              "id": "yycgb0fo",
+              "externalId": "CLD-1023"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-8",
+          "name": "Spam Protection",
+          "controls": [
+            {
+              "id": "s54yjejv",
+              "externalId": "CLD-1021"
+            },
+            {
+              "id": "okvy2505",
+              "externalId": "CLD-1024"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-11",
+          "name": "Error Handling",
+          "controls": [
+            {
+              "id": "powsux0n",
+              "externalId": "CLD-1022"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-12",
+          "name": "Information Management and Retention",
+          "controls": [
+            {
+              "id": "3ouhdvdc",
+              "externalId": "CLD-1025"
+            },
+            {
+              "id": "ub9l81a7",
+              "externalId": "CLD-1027"
+            },
+            {
+              "id": "pgsh69c8",
+              "externalId": "CLD-1026"
+            },
+            {
+              "id": "woddqm6i",
+              "externalId": "CLD-1028"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SI-16",
+          "name": "Memory Protection",
+          "controls": [
+            {
+              "id": "qyxs51yw",
+              "externalId": "CLD-1029"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-19",
+      "name": "Policy Area 19: Supply Chain Risk Management (SR)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS SR-5",
+          "name": "Acquisition Strategies, Tools, and Methods",
+          "controls": [
+            {
+              "id": "hf23vyoy",
+              "externalId": "TPM-110"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SR-2",
+          "name": "Supply Chain Risk Management Plan",
+          "controls": [
+            {
+              "id": "opa8cw1k",
+              "externalId": "TPM-2010"
+            },
+            {
+              "id": "7mbkke9t",
+              "externalId": "TPM-2110"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SR-1",
+          "name": "Policy and Procedures",
+          "controls": [
+            {
+              "id": "wxl0l25u",
+              "externalId": "TPM-1910"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SR-10",
+          "name": "Inspection of Systems or Components",
+          "controls": [
+            {
+              "id": "ci7i5som",
+              "externalId": "TPM-2210"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SR-12",
+          "name": "Component Disposal",
+          "controls": [
+            {
+              "id": "hzrj7l51",
+              "externalId": "TPM-111"
+            }
+          ]
+        },
+        {
+          "id": "CJIS SR-8",
+          "name": "Notification Agreements",
+          "controls": [
+            {
+              "id": "65g2x6oe",
+              "externalId": "TPM-2310"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CJIS-20",
+      "name": "Policy Area 20:  Mobile Devices",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CJIS 5.20.1",
+          "name": "Wireless Communications Technologies",
+          "controls": [
+            {
+              "id": "6afhfhrc",
+              "externalId": "MDM-43"
+            },
+            {
+              "id": "in512zc6",
+              "externalId": "MDM-42"
+            },
+            {
+              "id": "6efmo3rg",
+              "externalId": "MDM-46"
+            },
+            {
+              "id": "o5kg8uro",
+              "externalId": "MDM-44"
+            },
+            {
+              "id": "p8znog1h",
+              "externalId": "MDM-45"
+            },
+            {
+              "id": "ih5opwn8",
+              "externalId": "MDM-47"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.20.2",
+          "name": "Mobile Device Management (MDM)",
+          "controls": [
+            {
+              "id": "wfbb0dc4",
+              "externalId": "MDM-48"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.20.4",
+          "name": "System Integrity",
+          "controls": [
+            {
+              "id": "tbcujilx",
+              "externalId": "MDM-49"
+            },
+            {
+              "id": "ebuskkci",
+              "externalId": "MDM-51"
+            },
+            {
+              "id": "o6aykvdm",
+              "externalId": "MDM-52"
+            },
+            {
+              "id": "9tm0k5f1",
+              "externalId": "MDM-53"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.20.3",
+          "name": "Wireless Device Risk Mitigations",
+          "controls": [
+            {
+              "id": "0orzx8er",
+              "externalId": "MDM-50"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.20.5",
+          "name": "Incident Response",
+          "controls": [
+            {
+              "id": "pzrqfhz8",
+              "externalId": "MDM-54"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.20.6",
+          "name": "Access Control",
+          "controls": [
+            {
+              "id": "tj1nok4r",
+              "externalId": "MDM-55"
+            }
+          ]
+        },
+        {
+          "id": "CJIS 5.20.7",
+          "name": "Identification and Authentication",
+          "controls": [
+            {
+              "id": "dbtrkuwz",
+              "externalId": "MDM-56"
+            },
+            {
+              "id": "ie97z6o3",
+              "externalId": "MDM-58"
+            },
+            {
+              "id": "1ds4qbxa",
+              "externalId": "MDM-57"
+            },
+            {
+              "id": "0hd4wfxa",
+              "externalId": "MDM-59"
+            },
+            {
+              "id": "wv14hred",
+              "externalId": "MDM-60"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

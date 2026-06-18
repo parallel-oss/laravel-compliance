@@ -1,0 +1,493 @@
+{
+  "principles": [
+    {
+      "id": "01",
+      "name": "Conditions for Collection and Processing",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Collection Limitation Principle",
+          "name": "",
+          "description": "There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.",
+          "controls": [
+            {
+              "id": "ilthg277",
+              "externalId": "DCH-116"
+            },
+            {
+              "id": "g0ua496j",
+              "externalId": "DCH-117"
+            },
+            {
+              "id": "ha8y2ail",
+              "externalId": "PRI-225"
+            }
+          ]
+        },
+        {
+          "id": "Data Minimization Principle",
+          "name": "",
+          "description": "A data controller or processor should minimize the creation, use, processing, storage, maintenance, dissemination or disclosure of any collected PII to only that which is directly necessary to accomplish a business objective.\n\nThis data should only be maintained for as long as necessary to accomplish that objective and should be securely deleted immediately when no longer necessary.",
+          "controls": [
+            {
+              "id": "kppgzi0t",
+              "externalId": "DCH-118"
+            },
+            {
+              "id": "tvs8d0q3",
+              "externalId": "DCH-119"
+            },
+            {
+              "id": "ovam9iqx",
+              "externalId": "PRI-226"
+            }
+          ]
+        },
+        {
+          "id": "Openness & Transparency Principle",
+          "name": "",
+          "description": "There should be a general policy of openness about developments, practices and policies with respect to personal data. Means should be readily available of establishing the existence and nature of personal data and the main purposes of their use, as well as the identity and usual residence of the data controller.",
+          "controls": [
+            {
+              "id": "cv4ogjtp",
+              "externalId": "DCH-124"
+            },
+            {
+              "id": "6hy5rn6d",
+              "externalId": "DCH-125"
+            },
+            {
+              "id": "y2ge8x08",
+              "externalId": "PRI-239"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Privacy by Design and Privacy by Default",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Security Safeguards Principle",
+          "name": "",
+          "description": "Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorized access, destruction, use, modification or disclosure of data.",
+          "controls": [
+            {
+              "id": "nd4lvvjh",
+              "externalId": "AST-76"
+            },
+            {
+              "id": "yp3ihmz6",
+              "externalId": "AST-77"
+            },
+            {
+              "id": "kaop0ei1",
+              "externalId": "BCD-71"
+            },
+            {
+              "id": "oq68ii4d",
+              "externalId": "BCD-72"
+            },
+            {
+              "id": "6ld1pdud",
+              "externalId": "CRY-100"
+            },
+            {
+              "id": "wfv1d8ie",
+              "externalId": "CRY-101"
+            },
+            {
+              "id": "qmpkc4ar",
+              "externalId": "CRY-102"
+            },
+            {
+              "id": "ufta34cy",
+              "externalId": "CRY-103"
+            },
+            {
+              "id": "bdrhu7aq",
+              "externalId": "CRY-104"
+            },
+            {
+              "id": "p94p9dh2",
+              "externalId": "CRY-105"
+            },
+            {
+              "id": "qkcy4amn",
+              "externalId": "GOV-115"
+            },
+            {
+              "id": "uxirvbta",
+              "externalId": "GOV-116"
+            },
+            {
+              "id": "o4qhhudm",
+              "externalId": "GOV-117"
+            },
+            {
+              "id": "pu2v1dga",
+              "externalId": "GOV-118"
+            },
+            {
+              "id": "l3oigpn7",
+              "externalId": "GOV-3075"
+            },
+            {
+              "id": "tkshaj6b",
+              "externalId": "GOV-3076"
+            },
+            {
+              "id": "c19yk1gc",
+              "externalId": "HRS-62"
+            },
+            {
+              "id": "7rj4w6pj",
+              "externalId": "IAC-212"
+            },
+            {
+              "id": "0i64qhfv",
+              "externalId": "IAC-213"
+            },
+            {
+              "id": "ptvwwpv2",
+              "externalId": "IAC-214"
+            },
+            {
+              "id": "dy4r8wfh",
+              "externalId": "IAC-215"
+            },
+            {
+              "id": "gd3u0j3q",
+              "externalId": "IAC-216"
+            },
+            {
+              "id": "jc68mfxh",
+              "externalId": "IAC-217"
+            },
+            {
+              "id": "9oiavfe2",
+              "externalId": "IRO-103"
+            },
+            {
+              "id": "z5x7aefj",
+              "externalId": "MDM-11"
+            },
+            {
+              "id": "8sp28yxb",
+              "externalId": "NET-97"
+            },
+            {
+              "id": "ke2t3tsq",
+              "externalId": "NET-98"
+            },
+            {
+              "id": "k6a5f24t",
+              "externalId": "NET-99"
+            },
+            {
+              "id": "ytifkhjy",
+              "externalId": "PRI-259"
+            },
+            {
+              "id": "p1t56q59",
+              "externalId": "RSK-46"
+            },
+            {
+              "id": "3fysl438",
+              "externalId": "SEA-63"
+            },
+            {
+              "id": "4c04oll4",
+              "externalId": "SEA-64"
+            },
+            {
+              "id": "kf31js9l",
+              "externalId": "SEA-65"
+            },
+            {
+              "id": "qg2p51rg",
+              "externalId": "THR-16"
+            },
+            {
+              "id": "seft7jcg",
+              "externalId": "THR-17"
+            },
+            {
+              "id": "9kemuh1c",
+              "externalId": "VPM-82"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "name": "PII Sharing, Transfer and Disclosure (Controllers/Processors)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Purpose Specification Principle",
+          "name": "",
+          "description": "The purposes for which personal data are collected should be specified not later than at the time of data collection and the subsequent use limited to the fulfillment of those purposes or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose.",
+          "controls": [
+            {
+              "id": "mnc3vw9s",
+              "externalId": "PRI-228"
+            },
+            {
+              "id": "ytf0wwqx",
+              "externalId": "PRI-229"
+            },
+            {
+              "id": "jkgldjoc",
+              "externalId": "PRI-231"
+            },
+            {
+              "id": "tn55v2mc",
+              "externalId": "PRI-232"
+            },
+            {
+              "id": "e1xznz61",
+              "externalId": "PRI-233"
+            },
+            {
+              "id": "4qlgutcm",
+              "externalId": "PRI-234"
+            },
+            {
+              "id": "feyagfvx",
+              "externalId": "PRI-235"
+            }
+          ]
+        },
+        {
+          "id": "Use Limitation Principle",
+          "name": "",
+          "description": "Personal data should not be disclosed, made available or otherwise used for purposes other than those specified, except \n\na) with the consent of the data subject, or\n\nb) by the authority of law.",
+          "controls": [
+            {
+              "id": "ydsl4m0h",
+              "externalId": "DCH-121"
+            },
+            {
+              "id": "5wow5p1d",
+              "externalId": "DCH-122"
+            },
+            {
+              "id": "pmsyujxf",
+              "externalId": "DCH-123"
+            },
+            {
+              "id": "smrrjgbe",
+              "externalId": "PRI-236"
+            },
+            {
+              "id": "iogtdjps",
+              "externalId": "PRI-237"
+            },
+            {
+              "id": "6yqmbega",
+              "externalId": "PRI-238"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "name": "Obligations to PII Principals (Controllers/Processors)",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Data Quality Principle",
+          "name": "",
+          "description": "Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be accurate, complete and kept up-to-date.",
+          "controls": [
+            {
+              "id": "94ezmwb1",
+              "externalId": "DCH-120"
+            },
+            {
+              "id": "gp78s5vb",
+              "externalId": "PRI-227"
+            }
+          ]
+        },
+        {
+          "id": "Individual Participation Principle",
+          "name": "",
+          "description": "An individual should have the right:\n\na) to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to them;\n\nb) to have data relating to them communicated to them, within a reasonable time, at a charge, if any, that is not excessive; in a reasonable manner, and in a form that is readily intelligible to them;\n\nc) to be given reasons if a request made under subparagraphs (a) and (b) is denied and to be able to challenge such denial; and\n\nd) to challenge data relating to them and, if the challenge is successful, to have the data erased, rectified, completed or amended;",
+          "controls": [
+            {
+              "id": "wt366ebh",
+              "externalId": "DCH-126"
+            },
+            {
+              "id": "tiwvghjz",
+              "externalId": "DCH-127"
+            },
+            {
+              "id": "z4p7029y",
+              "externalId": "GOV-111"
+            },
+            {
+              "id": "5xqz7qbw",
+              "externalId": "GOV-112"
+            },
+            {
+              "id": "mxwn91rd",
+              "externalId": "GOV-113"
+            },
+            {
+              "id": "mwy5qkj0",
+              "externalId": "GOV-114"
+            },
+            {
+              "id": "zfg4ybzf",
+              "externalId": "PRI-230"
+            },
+            {
+              "id": "1telf41y",
+              "externalId": "PRI-240"
+            },
+            {
+              "id": "d6nlduwr",
+              "externalId": "PRI-241"
+            },
+            {
+              "id": "da52fsnu",
+              "externalId": "PRI-242"
+            },
+            {
+              "id": "rnpfpptt",
+              "externalId": "PRI-243"
+            },
+            {
+              "id": "5rhy5rd5",
+              "externalId": "PRI-244"
+            },
+            {
+              "id": "7qmo6khx",
+              "externalId": "PRI-245"
+            },
+            {
+              "id": "f5andeny",
+              "externalId": "PRI-246"
+            },
+            {
+              "id": "4tdjbi4j",
+              "externalId": "PRI-247"
+            },
+            {
+              "id": "v242dp8q",
+              "externalId": "PRI-248"
+            },
+            {
+              "id": "2pjlkzse",
+              "externalId": "PRI-249"
+            },
+            {
+              "id": "ilkprc50",
+              "externalId": "PRI-250"
+            },
+            {
+              "id": "17lzwc4b",
+              "externalId": "PRI-251"
+            },
+            {
+              "id": "izv98av1",
+              "externalId": "PRI-252"
+            },
+            {
+              "id": "bcdu2ibq",
+              "externalId": "PRI-253"
+            },
+            {
+              "id": "oab0nzj9",
+              "externalId": "PRI-254"
+            },
+            {
+              "id": "9d9o0ms3",
+              "externalId": "PRI-255"
+            },
+            {
+              "id": "kaz80tje",
+              "externalId": "PRI-256"
+            },
+            {
+              "id": "wzfh8sdq",
+              "externalId": "PRI-257"
+            }
+          ]
+        },
+        {
+          "id": "Accountability Principle",
+          "name": "",
+          "description": "A data controller should be accountable for complying with measures which give effect to the principles stated above.",
+          "controls": [
+            {
+              "id": "ien1u58d",
+              "externalId": "HRS-61"
+            },
+            {
+              "id": "m50e8o42",
+              "externalId": "PRI-258"
+            },
+            {
+              "id": "1xa6gru5",
+              "externalId": "RSK-45"
+            },
+            {
+              "id": "g15820v8",
+              "externalId": "SAT-47"
+            },
+            {
+              "id": "h5kzptw8",
+              "externalId": "TPM-59"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "name": "Outlier Requirements",
+      "optional": false,
+      "sections": [
+        {
+          "id": "Outlier or State Specific Requirements not commonly agreed upon",
+          "name": "",
+          "description": "Requirements that are relevant only for a specific state or jurisdiction.",
+          "controls": [
+            {
+              "id": "vru0tx22",
+              "externalId": "CPL-49"
+            },
+            {
+              "id": "ipwftfiu",
+              "externalId": "CPL-50"
+            },
+            {
+              "id": "2opv3pen",
+              "externalId": "CPL-121"
+            },
+            {
+              "id": "5efrinc0",
+              "externalId": "CPL-348"
+            },
+            {
+              "id": "q6t55hzf",
+              "externalId": "DCH-128"
+            },
+            {
+              "id": "maf0qslb",
+              "externalId": "GOV-119"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

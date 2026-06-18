@@ -1,23 +1,22 @@
 <?php
 
-use Parallel\Compliance\Capabilities\CommonCapability;
+use Parallel\Compliance\Controls\VantaControl;
 use Parallel\Compliance\Frameworks\FrameworkRequirement;
-use Parallel\Compliance\Frameworks\FrameworkRequirementMetadata;
-use Parallel\Compliance\Frameworks\Soc2TrustServicesCriteria;
-use Parallel\Compliance\Frameworks\VantaControl;
-use Parallel\Compliance\Mappings\CapabilityFrameworkMappings;
-use Parallel\Compliance\Mappings\VantaSoc2Mappings;
+use Parallel\Compliance\Frameworks\GdprArticle;
+use Parallel\Compliance\Frameworks\Soc2Criteria;
+use Parallel\Compliance\Mappings\VantaControlFrameworkMappings;
+use Parallel\Compliance\Mappings\VantaControlSoc2Mappings;
 
-it('maps every built-in capability to enum-backed framework requirements', function () {
-    $mappings = CapabilityFrameworkMappings::defaults();
+it('maps selected Vanta controls to additional enum-backed framework requirements', function () {
+    $mappings = VantaControlFrameworkMappings::defaults();
 
-    foreach (CommonCapability::cases() as $capability) {
-        expect($mappings)
-            ->toHaveKey($capability->value)
-            ->and($mappings[$capability->value])
-            ->not->toBeEmpty();
+    expect($mappings)
+        ->toHaveKey(VantaControl::DCH_1->value)
+        ->and($mappings[VantaControl::DCH_1->value])
+        ->toContain(GdprArticle::Article17);
 
-        foreach ($mappings[$capability->value] as $requirement) {
+    foreach ($mappings as $requirements) {
+        foreach ($requirements as $requirement) {
             expect($requirement)->toBeInstanceOf(FrameworkRequirement::class);
         }
     }
@@ -65,30 +64,24 @@ it('includes all Vanta implementation controls referenced by the purchased SOC 2
     }
 });
 
-it('includes report metadata for SOC 2 sections and Vanta controls', function () {
-    expect(FrameworkRequirementMetadata::get('SOC2:CC6.1'))
-        ->toMatchArray([
-            'source' => 'SOC 2',
-            'title' => 'Logical access security implementation',
-        ])
-        ->and(FrameworkRequirementMetadata::get('VANTA:IAC-2'))
-        ->toMatchArray([
-            'source' => 'Vanta',
-            'external_id' => 'IAC-2',
-            'slug' => 'access-control-procedures',
-            'title' => 'Access control procedures established',
-        ])
-        ->and(FrameworkRequirementMetadata::get('VANTA:IAC-2')['description'])
+it('keeps report metadata on the relevant enums', function () {
+    expect(Soc2Criteria::CC6_1->source())->toBe('SOC 2')
+        ->and(Soc2Criteria::CC6_1->title())->toBe('Logical access security implementation')
+        ->and(VantaControl::IAC_2->source())->toBe('Vanta')
+        ->and(VantaControl::IAC_2->externalId())->toBe('IAC-2')
+        ->and(VantaControl::IAC_2->slug())->toBe('access-control-procedures')
+        ->and(VantaControl::IAC_2->title())->toBe('Access control procedures established')
+        ->and(VantaControl::IAC_2->description())
         ->toContain('access control policy');
 });
 
 it('centralizes Vanta control to SOC 2 section mappings with enums', function () {
-    expect(VantaSoc2Mappings::sectionsFor(VantaControl::IAC_2))
-        ->toContain(Soc2TrustServicesCriteria::CC5_2)
-        ->toContain(Soc2TrustServicesCriteria::CC6_1)
-        ->toContain(Soc2TrustServicesCriteria::CC6_2)
-        ->toContain(Soc2TrustServicesCriteria::CC6_3)
-        ->and(VantaSoc2Mappings::sectionIdsFor(VantaControl::DCH_1))
+    expect(VantaControlSoc2Mappings::sectionsFor(VantaControl::IAC_2))
+        ->toContain(Soc2Criteria::CC5_2)
+        ->toContain(Soc2Criteria::CC6_1)
+        ->toContain(Soc2Criteria::CC6_2)
+        ->toContain(Soc2Criteria::CC6_3)
+        ->and(VantaControlSoc2Mappings::sectionIdsFor(VantaControl::DCH_1))
         ->toBe(['C1.2', 'CC6.5']);
 });
 
@@ -114,8 +107,8 @@ it('includes SOC 2 section-level criteria from the purchased SOC 2 framework', f
     ];
 
     $actual = array_map(
-        fn (Soc2TrustServicesCriteria $criteria) => $criteria->value,
-        Soc2TrustServicesCriteria::cases(),
+        fn (Soc2Criteria $criteria) => $criteria->value,
+        Soc2Criteria::cases(),
     );
 
     foreach ($expected as $criteria) {

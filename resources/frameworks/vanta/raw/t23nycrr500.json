@@ -1,0 +1,435 @@
+{
+  "principles": [
+    {
+      "id": "500.2",
+      "name": "Cybersecurity Program",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.2.a",
+          "name": "Maintain cybersecurity program",
+          "description": "Each Covered Entity shall maintain a cybersecurity program designed to protect the confidentiality, integrity and availability of the Covered Entity’s Information Systems.\n\nA Covered Entity may meet the requirement(s) of this control by adopting the relevant and applicable provisions of a cybersecurity program maintained by an Affiliate, provided that such provisions satisfy the requirements of this control, as applicable to the Covered Entity.",
+          "controls": [
+            {
+              "id": "5bsftrji",
+              "externalId": "GOV-326"
+            }
+          ]
+        },
+        {
+          "id": "500.2.b",
+          "name": "Core cybersecurity functions",
+          "description": "The cybersecurity program shall be based on the Covered Entity’s Risk Assessment and designed to perform the following core cybersecurity functions:\n (1) identify and assess internal and external cybersecurity risks that may threaten the security or integrity of Nonpublic Information stored on the Covered Entity’s Information Systems; \n (2) use defensive infrastructure and the implementation of policies and procedures to protect the Covered Entity’s Information Systems, and the Nonpublic Information stored on those Information Systems, from unauthorized access, use or other malicious acts;\n (3) detect Cybersecurity Events;\n (4) respond to identified or detected Cybersecurity Events to mitigate any negative effects;\n (5) recover from Cybersecurity Events and restore normal operations and services; and\n (6) fulfill applicable regulatory reporting obligations.\n\nA Covered Entity may meet the requirement(s) of this control by adopting the relevant and applicable provisions of a cybersecurity program maintained by an Affiliate, provided that such provisions satisfy the requirements of this control, as applicable to the Covered Entity.",
+          "controls": [
+            {
+              "id": "4c6cf53k",
+              "externalId": "GOV-327"
+            }
+          ]
+        },
+        {
+          "id": "500.2.c",
+          "name": "Cybersecurity documents availability",
+          "description": "All documentation and information relevant to the Covered Entity’s cybersecurity program shall be made available to the superintendent upon request.",
+          "controls": [
+            {
+              "id": "le3izf9b",
+              "externalId": "GOV-328"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.3",
+      "name": "Cybersecurity Policy",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.3.a",
+          "name": "Cybersecurity policies",
+          "description": "Each Covered Entity shall implement and maintain a written policy or policies, approved by a Senior Officer or the Covered Entity’s board of directors (or an appropriate committee thereof) or equivalent governing body, setting forth the Covered Entity’s policies and procedures for the protection of its Information Systems and Nonpublic Information stored on those Information Systems. The cybersecurity policy shall be based on the Covered Entity’s Risk Assessment and address the following areas to the extent applicable to the Covered Entity’s operations:\n (a) information security;\n (b) data governance and classification;\n (c) asset inventory and device management;\n (d) access controls and identity management;\n (e) business continuity and disaster recovery planning and resources;\n (f) systems operations and availability concerns;\n (g) systems and network security;\n (h) systems and network monitoring;\n (i) systems and application development and quality assurance;\n (j) physical security and environmental controls;\n (k) customer data privacy;\n (l) vendor and Third Party Service Provider management;\n (m) risk assessment; and\n (n) incident response.",
+          "controls": [
+            {
+              "id": "ctlms982",
+              "externalId": "GOV-329"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.4",
+      "name": "Chief Information Security Officer",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.4.a",
+          "name": "Cybersecurity leadership designation",
+          "description": "Each Covered Entity shall designate a qualified individual responsible for overseeing and implementing the Covered Entity’s cybersecurity program and enforcing its cybersecurity policy (for purposes of this control, “Chief Information Security Officer” or “CISO”). The CISO may be employed by the Covered Entity, one of its Affiliates or a Third Party Service Provider. To the extent this requirement is met using a Third Party Service Provider or an Affiliate, the Covered Entity shall:\n (1) retain responsibility for compliance with this control;\n (2) designate a senior member of the Covered Entity’s personnel responsible for direction and oversight of the Third Party Service Provider; and\n (3) require the Third Party Service Provider to maintain a cybersecurity program that protects the Covered Entity in accordance with the requirements of this control.",
+          "controls": [
+            {
+              "id": "wkcetfrc",
+              "externalId": "GOV-330"
+            }
+          ]
+        },
+        {
+          "id": "500.4.b",
+          "name": "CISO annual reporting",
+          "description": "The CISO of each Covered Entity shall report in writing at least annually to the Covered Entity’s board of directors or equivalent governing body. If no such board of directors or equivalent governing body exists, such report shall be timely presented to a Senior Officer of the Covered Entity responsible for the Covered Entity’s cybersecurity program. The CISO shall report on the Covered Entity’s cybersecurity program and material cybersecurity risks. The CISO shall consider to the extent applicable:\n (1) the confidentiality of Nonpublic Information and the integrity and security of the Covered Entity’s Information Systems;\n (2) the Covered Entity’s cybersecurity policies and procedures;\n (3) material cybersecurity risks to the Covered Entity;\n (4) overall effectiveness of the Covered Entity’s cybersecurity program; and\n (5) material Cybersecurity Events involving the Covered Entity during the time period addressed by the report.",
+          "controls": [
+            {
+              "id": "xlu7wvh2",
+              "externalId": "GOV-331"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.5",
+      "name": "Penetration Testing and Vulnerability Assessments",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.5.a",
+          "name": "Cybersecurity monitoring and testing",
+          "description": "The cybersecurity program for each Covered Entity shall include monitoring and testing, developed in accordance with the Covered Entity’s Risk Assessment, designed to assess the effectiveness of the Covered Entity’s cybersecurity program. The monitoring and testing shall include continuous monitoring or periodic Penetration Testing and vulnerability assessments. \n\nCovered entities shall:\n(a) annual Penetration Testing of the Covered Entity’s Information Systems determined each given year based on relevant identified risks in accordance with the Risk Assessment; and\n(b) bi-annual vulnerability assessments, including any systematic scans or reviews of Information Systems reasonably designed to identify publicly known cybersecurity vulnerabilities in the Covered Entity’s Information Systems based on the Risk Assessment.",
+          "controls": [
+            {
+              "id": "t5z2dj8i",
+              "externalId": "RSK-187"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.6",
+      "name": "Audit Trail",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.6.a",
+          "name": "Systems auditing",
+          "description": "Each Covered Entity shall securely maintain systems that, to the extent applicable and based on its Risk Assessment:\n (1) are designed to reconstruct material financial transactions sufficient to support normal operations and obligations of the Covered Entity; and\n (2) include audit trails designed to detect and respond to Cybersecurity Events that have a reasonable likelihood of materially harming any material part of the normal operations of the Covered Entity.",
+          "controls": [
+            {
+              "id": "wjjpfc7t",
+              "externalId": "RSK-188"
+            }
+          ]
+        },
+        {
+          "id": "500.6.b",
+          "name": "Records retention",
+          "description": "Each Covered Entity shall maintain records required by control 500.6.a (1) for not fewer than five years and shall maintain records required by control 500.6.a (2) for not fewer than three years.",
+          "controls": [
+            {
+              "id": "ceizvawc",
+              "externalId": "DCH-259"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.7",
+      "name": "Access Privileges",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.7.a",
+          "name": "Access control",
+          "description": "As part of its cybersecurity program, based on the Covered Entity’s Risk Assessment each Covered Entity shall limit user access privileges to Information Systems that provide access to Nonpublic Information.",
+          "controls": [
+            {
+              "id": "ju7pmctk",
+              "externalId": "IAC-573"
+            }
+          ]
+        },
+        {
+          "id": "500.7.b",
+          "name": "Access reviews",
+          "description": "As part of its cybersecurity program, based on the Covered Entity’s Risk Assessment each Covered Entity shall periodically review such access privileges.",
+          "controls": [
+            {
+              "id": "jlimfqrs",
+              "externalId": "IAC-574"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.8",
+      "name": "Application Security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.8.a",
+          "name": "Secure development practices",
+          "description": "Each Covered Entity’s cybersecurity program shall include written procedures, guidelines and standards designed to ensure the use of secure development practices for in-house developed applications utilized by the Covered Entity, and procedures for evaluating, assessing or testing the security of externally developed applications utilized by the Covered Entity within the context of the Covered Entity’s technology environment.",
+          "controls": [
+            {
+              "id": "156ojwv6",
+              "externalId": "SEA-214"
+            }
+          ]
+        },
+        {
+          "id": "500.8.b",
+          "name": "Policy review cycle",
+          "description": "All procedures, guidelines and standards in scope for control 500.8.a shall be periodically reviewed, assessed and updated as necessary by the CISO (or a qualified designee) of the Covered Entity.",
+          "controls": [
+            {
+              "id": "4sh5tizx",
+              "externalId": "GOV-332"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.9",
+      "name": "Risk Assessment",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.9.a",
+          "name": "Periodic risk assessments",
+          "description": "Each Covered Entity shall conduct a periodic Risk Assessment of the Covered Entity’s Information Systems sufficient to inform the design of the cybersecurity program. Such Risk Assessment shall be updated as reasonably necessary to address changes to the Covered Entity’s Information Systems, Nonpublic Information or business operations. The Covered Entity’s Risk Assessment shall allow for revision of controls to respond to technological developments and evolving threats and shall consider the particular risks of the Covered Entity’s business operations related to cybersecurity, Nonpublic Information collected or stored, Information Systems utilized and the availability and effectiveness of controls to protect Nonpublic Information and Information Systems.",
+          "controls": [
+            {
+              "id": "b7u2n29w",
+              "externalId": "RSK-189"
+            }
+          ]
+        },
+        {
+          "id": "500.9.b",
+          "name": "Risk assessment criteria",
+          "description": "The Risk Assessment shall be carried out in accordance with written policies and procedures and shall be documented. Such policies and procedures shall include:\n (1) criteria for the evaluation and categorization of identified cybersecurity risks or threats facing the Covered Entity;\n (2) criteria for the assessment of the confidentiality, integrity, security and availability of the Covered Entity’s Information Systems and Nonpublic Information, including the adequacy of existing controls in the context of identified risks; and\n (3) requirements describing how identified risks will be mitigated or accepted based on the Risk Assessment and how the cybersecurity program will address the risks.",
+          "controls": [
+            {
+              "id": "mb17h08m",
+              "externalId": "RSK-190"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.10",
+      "name": "Cybersecurity Personnel and Intelligence",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.10.a",
+          "name": "Qualified cybersecurity personnel",
+          "description": "Covered Entities shall: \n (1) utilize qualified cybersecurity personnel of the Covered Entity, an Affiliate or a Third Party Service Provider sufficient to manage the Covered Entity’s cybersecurity risks and to perform or oversee the performance of the core cybersecurity functions specified in control 500.2(b)(1)-(6);\n (2) provide cybersecurity personnel with cybersecurity updates and training sufficient to address relevant cybersecurity risks; and\n (3) verify that key cybersecurity personnel take steps to maintain current knowledge of changing cybersecurity threats and countermeasures.",
+          "controls": [
+            {
+              "id": "tpo6252m",
+              "externalId": "SAT-95"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.11",
+      "name": "Third Party Service Provider Security Policy",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.11.a",
+          "name": "Third-party cybersecurity policies",
+          "description": "Each Covered Entity shall implement written policies and procedures designed to ensure the security of Information Systems and Nonpublic Information that are accessible to, or held by, Third Party Service Providers. Such policies and procedures shall be based on the Risk Assessment of the Covered Entity and shall address to the extent applicable:\n (1) the identification and risk assessment of Third Party Service Providers;\n (2) minimum cybersecurity practices required to be met by such Third Party Service Providers in order for them to do business with the Covered Entity;\n (3) due diligence processes used to evaluate the adequacy of cybersecurity practices of such Third Party Service Providers; and\n (4) periodic assessment of such Third Party Service Providers based on the risk they present and the continued adequacy of their cybersecurity practices.\n\nAn agent, employee, representative or designee of a Covered Entity who is itself a Covered Entity need not develop its own Third Party Information Security Policy pursuant to this section if the agent, employee, representative or designee follows the policy of the Covered Entity that is required to comply with this control.",
+          "controls": [
+            {
+              "id": "2znqsryo",
+              "externalId": "TPM-161"
+            }
+          ]
+        },
+        {
+          "id": "500.11.b",
+          "name": "Third-party cybersecurity policies guidelines",
+          "description": "Policies and procedures outlined in control 500.11.a shall include relevant guidelines for due diligence and/or contractual protections relating to Third Party Service Providers including to the extent applicable guidelines addressing:\n (1) the Third Party Service Provider’s policies and procedures for access controls, including its use of Multi-Factor Authentication as required by section 500.12 of this control, to limit access to relevant Information Systems and on public Information;\n (2) the Third Party Service Provider’s policies and procedures for use of encryption as required by section 500.15(a)-(b) to protect Nonpublic Information in transit and at rest;\n (3) notice to be provided to the Covered Entity in the event of a Cybersecurity Event directly impacting the Covered Entity’s Information Systems or the Covered Entity’s Nonpublic Information being held by the Third Party Service Provider; and\n (4) representations and warranties addressing the Third Party Service Provider’s cybersecurity policies and procedures that relate to the security of the Covered Entity’s Information Systems or Nonpublic Information.\n\nAn agent, employee, representative or designee of a Covered Entity who is itself a Covered Entity need not develop its own Third Party Information Security Policy pursuant to this section if the agent, employee, representative or designee follows the policy of the Covered Entity that is required to comply with this control.",
+          "controls": [
+            {
+              "id": "09lg51aw",
+              "externalId": "TPM-162"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.12",
+      "name": "Multi-Factor Authentication",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.12.a",
+          "name": "Risk-based access control",
+          "description": "Based on its Risk Assessment, each Covered Entity shall use effective controls, which may include Multi-Factor Authentication or Risk-Based Authentication, to protect against unauthorized access to Nonpublic Information or Information Systems.",
+          "controls": [
+            {
+              "id": "7lrlqver",
+              "externalId": "OPS-87"
+            }
+          ]
+        },
+        {
+          "id": "500.12.b",
+          "name": "Multi-factor authentication",
+          "description": "Multi-Factor Authentication shall be utilized for any individual accessing the Covered Entity’s internal networks from an external network, unless the Covered Entity’s CISO has approved in writing the use of reasonably equivalent or more secure access controls.",
+          "controls": [
+            {
+              "id": "5wuk8wyj",
+              "externalId": "OPS-88"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.13",
+      "name": "Limitations on Data Retention",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.13.a",
+          "name": "Data disposal",
+          "description": "As part of its cybersecurity program, each Covered Entity shall include policies and procedures for the secure disposal on a periodic basis of any Nonpublic Information as defined by NYCRR 500, section 500.1(g)(2)-(3) that is no longer necessary for business operations or for other legitimate business purposes of the Covered Entity, except where such information is otherwise required to be retained by law or regulation, or where targeted disposal is not reasonably feasible due to the manner in which the information is maintained.",
+          "controls": [
+            {
+              "id": "6twnnnb5",
+              "externalId": "DCH-260"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.14",
+      "name": "Training and Monitoring",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.14.a",
+          "name": "Activity monitoring",
+          "description": "As part of its cybersecurity program, each Covered Entity shall: implement risk-based policies, procedures and controls designed to monitor the activity of Authorized Users and detect unauthorized access or use of, or tampering with, Nonpublic Information by such Authorized Users.",
+          "controls": [
+            {
+              "id": "tmxikbp2",
+              "externalId": "IAC-575"
+            }
+          ]
+        },
+        {
+          "id": "500.14.b",
+          "name": "Cybersecurity awareness training",
+          "description": "As part of its cybersecurity program, each Covered Entity shall: provide regular cybersecurity awareness training for all personnel that is updated to reflect risks identified by the Covered Entity in its Risk Assessment.",
+          "controls": [
+            {
+              "id": "zb221znf",
+              "externalId": "SAT-96"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.15",
+      "name": "Encryption of Nonpublic Information",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.15.a",
+          "name": "Data protection",
+          "description": "As part of its cybersecurity program, based on its Risk Assessment, each Covered Entity shall implement controls, including encryption, to protect Nonpublic Information held or transmitted by the Covered Entity both in transit over external networks and at rest.\n (1) To the extent a Covered Entity determines that encryption of Nonpublic Information in transit over external networks is infeasible, the Covered Entity may instead secure such Nonpublic Information using effective alternative compensating controls reviewed and approved by the Covered Entity’s CISO.\n (2) To the extent a Covered Entity determines that encryption of Nonpublic Information at rest is infeasible, the Covered Entity may instead secure such Nonpublic Information using effective alternative compensating controls reviewed and approved by the Covered Entity’s CISO.",
+          "controls": [
+            {
+              "id": "kbxuyygz",
+              "externalId": "CRY-252"
+            }
+          ]
+        },
+        {
+          "id": "500.15.b",
+          "name": "Encryption feasibility review",
+          "description": "To the extent that a Covered Entity is utilizing compensating controls relevant to control 500.15.a, the feasibility of encryption and effectiveness of the compensating controls shall be reviewed by the CISO at least annually.",
+          "controls": [
+            {
+              "id": "mdfl7kq2",
+              "externalId": "CRY-253"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.16",
+      "name": "Incident Response Plan",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.16.a",
+          "name": "Incident response strategies",
+          "description": "As part of its cybersecurity program, each Covered Entity shall establish a written incident response plan designed to promptly respond to, and recover from, any Cybersecurity Event materially affecting the confidentiality, integrity or availability of the Covered Entity’s Information Systems or the continuing functionality of any aspect of the Covered Entity’s business or operations.",
+          "controls": [
+            {
+              "id": "efoay20k",
+              "externalId": "IRO-286"
+            }
+          ]
+        },
+        {
+          "id": "500.16.b",
+          "name": "Incident response procedures",
+          "description": "Such incident response plan shall address the following areas:\n (1) the internal processes for responding to a Cybersecurity Event;\n (2) the goals of the incident response plan;\n (3) the definition of clear roles, responsibilities and levels of decision-making authority;\n (4) external and internal communications and information sharing;\n (5) identification of requirements for the remediation of any identified weaknesses in Information Systems and associated controls;\n (6) documentation and reporting regarding Cybersecurity Events and related incident response activities;\n (7) the evaluation and revision as necessary of the incident response plan following a Cybersecurity Event.",
+          "controls": [
+            {
+              "id": "gjh6swtj",
+              "externalId": "IRO-287"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500.17",
+      "name": "Notices to Superintendent",
+      "optional": false,
+      "sections": [
+        {
+          "id": "500.17.a",
+          "name": "Cybersecurity event notification",
+          "description": "Notice of Cybersecurity Event. Each Covered Entity shall notify the superintendent as promptly as possible but in no event later than 72 hours from a determination that a Cybersecurity Event has occurred that is either of the following:\n (1) Cybersecurity Events impacting the Covered Entity of which notice is required to be provided to any\n government body, self-regulatory agency or any other supervisory body; or\n (2) Cybersecurity Events that have a reasonable likelihood of materially harming any material part of the\n normal operation(s) of the Covered Entity.",
+          "controls": [
+            {
+              "id": "02vn9umf",
+              "externalId": "IRO-288"
+            }
+          ]
+        },
+        {
+          "id": "500.17.b",
+          "name": "Annual compliance certification",
+          "description": "Annually each Covered Entity shall submit to the superintendent a written statement covering the prior calendar year. This statement shall be submitted by April 15th in such form set forth as Appendix A of Title 23 part 500, certifying that the Covered Entity is in compliance with the requirements set forth in this control. Each Covered Entity shall maintain for examination by the Department all records, schedules and data supporting this certificate for a period of five years. To the extent a Covered Entity has identified areas, systems or processes that require material improvement, updating or redesign, the Covered Entity shall document the identification and the remedial efforts planned and underway to address such areas, systems or processes. Such documentation must be available for inspection by the superintendent.",
+          "controls": [
+            {
+              "id": "p6s8sm94",
+              "externalId": "CPL-338"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

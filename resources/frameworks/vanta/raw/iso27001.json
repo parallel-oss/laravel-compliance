@@ -1,0 +1,1691 @@
+{
+  "principles": [
+    {
+      "id": "A.5",
+      "name": "Information security policies",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.5.1.1",
+          "name": "Policies for information security",
+          "description": "A set of policies for information security shall be defined, approved by management, published and communicated to employees and relevant external parties.",
+          "controls": [
+            {
+              "id": "A.5.1.1",
+              "externalId": "GOV-14"
+            }
+          ]
+        },
+        {
+          "id": "A.5.1.2",
+          "name": "Review of the policies for information security",
+          "description": "The policies for information security shall be reviewed at planned intervals or if significant changes occur to ensure their continuing suitability, adequacy and effectiveness.",
+          "controls": [
+            {
+              "id": "A.5.1.2",
+              "externalId": "GOV-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.6",
+      "name": "Organization of information security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.6.1.1",
+          "name": "Information Security roles and responsibilities",
+          "description": "All information security responsibilities shall be defined and allocated.",
+          "controls": [
+            {
+              "id": "A.6.1.1",
+              "externalId": "HRS-7"
+            }
+          ]
+        },
+        {
+          "id": "A.6.1.2",
+          "name": "Segregation of duties",
+          "description": "Conflicting duties and areas of responsibility shall be segregated to reduce opportunities for unauthorized or unintentional modification or misuse of the organization's assets.",
+          "controls": [
+            {
+              "id": "A.6.1.2",
+              "externalId": "HRS-8"
+            }
+          ]
+        },
+        {
+          "id": "A.6.1.3",
+          "name": "Contact with authorities",
+          "description": "Appropriate contacts with relevant authorities shall be maintained.",
+          "controls": [
+            {
+              "id": "A.6.1.3",
+              "externalId": "GOV-16"
+            }
+          ]
+        },
+        {
+          "id": "A.6.1.4",
+          "name": "Contact with special interest groups",
+          "description": "Appropriate contacts with special interest groups or other specialist security forums and professional associations shall be maintained.",
+          "controls": [
+            {
+              "id": "A.6.1.4",
+              "externalId": "GOV-17"
+            }
+          ]
+        },
+        {
+          "id": "A.6.1.5",
+          "name": "Information security in project management",
+          "description": "Information security shall be addressed in project management, regardless of the type of the project.",
+          "controls": [
+            {
+              "id": "A.6.1.5",
+              "externalId": "PRM-4"
+            }
+          ]
+        },
+        {
+          "id": "A.6.2.1",
+          "name": "Mobile device policy",
+          "description": "A policy and supporting security measures shall be adopted to manage the risks introduced by using mobile devices.",
+          "controls": [
+            {
+              "id": "A.6.2.1",
+              "externalId": "GOV-18"
+            }
+          ]
+        },
+        {
+          "id": "A.6.2.2",
+          "name": "Teleworking",
+          "description": "A policy and supporting security measures shall be implemented to protect information accessed, processed or stored at teleworking sites.",
+          "controls": [
+            {
+              "id": "A.6.2.2",
+              "externalId": "NET-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.7",
+      "name": "Human resource security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.7.1.1",
+          "name": "Screening",
+          "description": "Background verification checks on all candidates for employment shall be carried out in accordance with relevant laws, regulations and ethics, and shall be proportional to the business requirements, the classification of the information to be accessed and perceived risks.",
+          "controls": [
+            {
+              "id": "A.7.1.1",
+              "externalId": "HRS-10"
+            }
+          ]
+        },
+        {
+          "id": "A.7.1.2",
+          "name": "Terms and conditions of employment",
+          "description": "The contractual agreements with employees and contactors shall state their and the organization's responsibilities for information security.",
+          "controls": [
+            {
+              "id": "A.7.1.2",
+              "externalId": "HRS-11"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.1",
+          "name": "Management responsibilities",
+          "description": "Management shall require all employees and contractors to apply security in accordance with established policies and procedures of the organization.",
+          "controls": [
+            {
+              "id": "A.7.2.1",
+              "externalId": "HRS-9"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.2",
+          "name": "Information security awareness, education and training",
+          "description": "All employees of the organization and, where relevant, contractors shall receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function.",
+          "controls": [
+            {
+              "id": "A.7.2.2",
+              "externalId": "SAT-2"
+            }
+          ]
+        },
+        {
+          "id": "A.7.2.3",
+          "name": "Disciplinary process",
+          "description": "There shall be a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach.",
+          "controls": [
+            {
+              "id": "A.7.2.3",
+              "externalId": "HRS-12"
+            }
+          ]
+        },
+        {
+          "id": "A.7.3.1",
+          "name": "Termination or change of employment responsibilities",
+          "description": "Information security responsibilities and duties that remain valid after termination or change of employment shall be defined, communicated to the employee or contractor and enforced.",
+          "controls": [
+            {
+              "id": "A.7.3.1",
+              "externalId": "HRS-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.8",
+      "name": "Asset management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.8.1.1",
+          "name": "Inventory of assets",
+          "description": "Assets associated with information and information processing facilities shall be identified and an inventory of these assets shall be drawn up and maintained.",
+          "controls": [
+            {
+              "id": "A.8.1.1",
+              "externalId": "AST-4"
+            }
+          ]
+        },
+        {
+          "id": "A.8.1.2",
+          "name": "Ownership of assets",
+          "description": "Assets maintained in the inventory shall be owned.",
+          "controls": [
+            {
+              "id": "A.8.1.2",
+              "externalId": "AST-5"
+            }
+          ]
+        },
+        {
+          "id": "A.8.1.3",
+          "name": "Acceptable use of assets",
+          "description": "Rules for the acceptable use of information and of assets associated with information and information processing facilities shall be identified, documented, and implemented.",
+          "controls": [
+            {
+              "id": "A.8.1.3",
+              "externalId": "HRS-14"
+            }
+          ]
+        },
+        {
+          "id": "A.8.1.4",
+          "name": "Return of assets",
+          "description": "All employees and external party users shall return all of the organizational assets in their possession upon termination of their employment, contract or agreement.",
+          "controls": [
+            {
+              "id": "A.8.1.4",
+              "externalId": "AST-6"
+            }
+          ]
+        },
+        {
+          "id": "A.8.2.1",
+          "name": "Classification of information",
+          "description": "Information shall be classified in terms of its legal requirements, value, criticality and sensitivity to unauthorized disclosure or modification.",
+          "controls": [
+            {
+              "id": "A.8.2.1",
+              "externalId": "DCH-12"
+            }
+          ]
+        },
+        {
+          "id": "A.8.2.2",
+          "name": "Labeling of information",
+          "description": "An appropriate set of procedures for information labeling shall be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+          "controls": [
+            {
+              "id": "A.8.2.2",
+              "externalId": "DCH-13"
+            }
+          ]
+        },
+        {
+          "id": "A.8.2.3",
+          "name": "Handling of assets",
+          "description": "Procedures for handling assets shall be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+          "controls": [
+            {
+              "id": "A.8.2.3",
+              "externalId": "DCH-14"
+            }
+          ]
+        },
+        {
+          "id": "A.8.3.1",
+          "name": "Management of removable media",
+          "description": "Procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization.",
+          "controls": [
+            {
+              "id": "A.8.3.1",
+              "externalId": "DCH-15"
+            }
+          ]
+        },
+        {
+          "id": "A.8.3.2",
+          "name": "Disposal of media",
+          "description": "Media shall be disposed of securely when no longer required, using formal procedures.",
+          "controls": [
+            {
+              "id": "A.8.3.2",
+              "externalId": "DCH-16"
+            }
+          ]
+        },
+        {
+          "id": "A.8.3.3",
+          "name": "Physical media transfer",
+          "description": "Media containing information shall be protected against unauthorized access, misuse or corruption during transportation.",
+          "controls": [
+            {
+              "id": "A.8.3.3",
+              "externalId": "DCH-17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.9",
+      "name": "Access control",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.9.1.1",
+          "name": "Access control policy",
+          "description": "An access control policy shall be established, documented, and reviewed based on business and information security requirements.",
+          "controls": [
+            {
+              "id": "A.9.1.1",
+              "externalId": "GOV-19"
+            }
+          ]
+        },
+        {
+          "id": "A.9.1.2",
+          "name": "Access to networks and network services",
+          "description": "Users shall only be provided with access to the network and network services that they have been specifically authorized to use.",
+          "controls": [
+            {
+              "id": "A.9.1.2",
+              "externalId": "IAC-14"
+            }
+          ]
+        },
+        {
+          "id": "A.9.2.1",
+          "name": "User registration and de-registration",
+          "description": "A formal user registration and de-registration process shall be implemented to enable assignment of access rights.",
+          "controls": [
+            {
+              "id": "A.9.2.1",
+              "externalId": "IAC-15"
+            }
+          ]
+        },
+        {
+          "id": "A.9.2.2",
+          "name": "User access provisioning",
+          "description": "A formal user access provisioning process shall be implemented to assign or revoke access rights for all user types to all systems and services.",
+          "controls": [
+            {
+              "id": "A.9.2.2",
+              "externalId": "IAC-16"
+            }
+          ]
+        },
+        {
+          "id": "A.9.2.3",
+          "name": "Management of privileged access rights",
+          "description": "The allocation and use of privileged access rights shall be restricted and controlled.",
+          "controls": [
+            {
+              "id": "A.9.2.3",
+              "externalId": "IAC-17"
+            }
+          ]
+        },
+        {
+          "id": "A.9.2.4",
+          "name": "Management of secret authentication information of users",
+          "description": "The allocation of secret authentication information shall be controlled through a formal management process.",
+          "controls": [
+            {
+              "id": "A.9.2.4",
+              "externalId": "IAC-18"
+            }
+          ]
+        },
+        {
+          "id": "A.9.2.5",
+          "name": "Review of user access rights",
+          "description": "Asset owners shall review users' access rights at regular intervals.",
+          "controls": [
+            {
+              "id": "A.9.2.5",
+              "externalId": "IAC-19"
+            }
+          ]
+        },
+        {
+          "id": "A.9.2.6",
+          "name": "Removal or adjustment of access rights",
+          "description": "The access rights of all employees and external party users to information and information processing facilities shall be removed upon termination of their employment, contract or agreement, or adjusted upon change.",
+          "controls": [
+            {
+              "id": "A.9.2.6",
+              "externalId": "IAC-20"
+            }
+          ]
+        },
+        {
+          "id": "A.9.3.1",
+          "name": "Use of secret authentication information",
+          "description": "Users shall be required to follow the organisation's practices in the use of secret authentication information.",
+          "controls": [
+            {
+              "id": "A.9.3.1",
+              "externalId": "IAC-21"
+            }
+          ]
+        },
+        {
+          "id": "A.9.4.1",
+          "name": "Information access restriction",
+          "description": "Access to information and application system functions shall be restricted in accordance with the defined access control policy.",
+          "controls": [
+            {
+              "id": "A.9.4.1",
+              "externalId": "CFG-2"
+            }
+          ]
+        },
+        {
+          "id": "A.9.4.2",
+          "name": "Secure log-on procedures",
+          "description": "Where required by the access control policy, access to systems and applications shall be controlled by a secure log-on procedure.",
+          "controls": [
+            {
+              "id": "A.9.4.2",
+              "externalId": "SEA-1"
+            }
+          ]
+        },
+        {
+          "id": "A.9.4.3",
+          "name": "Password management system",
+          "description": "Password management systems shall be interactive and shall ensure quality passwords.",
+          "controls": [
+            {
+              "id": "A.9.4.3",
+              "externalId": "IAC-22"
+            }
+          ]
+        },
+        {
+          "id": "A.9.4.4",
+          "name": "Use of privileged utility programs",
+          "description": "The use of utility programs that might be capable of overriding system and application controls shall be restricted and tightly controlled.",
+          "controls": [
+            {
+              "id": "A.9.4.4",
+              "externalId": "IAC-23"
+            }
+          ]
+        },
+        {
+          "id": "A.9.4.5",
+          "name": "Access control to program source code",
+          "description": "Access to program source code shall be restricted.",
+          "controls": [
+            {
+              "id": "A.9.4.5",
+              "externalId": "TDA-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.10",
+      "name": "Cryptography",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.10.1.1",
+          "name": "Policy on the use of cryptographic controls",
+          "description": "A policy on the use of cryptographic controls for protection of information shall be developed and implemented.",
+          "controls": [
+            {
+              "id": "A.10.1.1",
+              "externalId": "CRY-6"
+            }
+          ]
+        },
+        {
+          "id": "A.10.1.2",
+          "name": "Key management",
+          "description": "A policy on the use, protection and lifetime of cryptographic keys shall be developed and implemented through their whole lifecycle.",
+          "controls": [
+            {
+              "id": "A.10.1.2",
+              "externalId": "CRY-7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.11",
+      "name": "Physical and environmental security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.11.1.1",
+          "name": "Physical security perimeter",
+          "description": "Security perimeters shall be defined and used to protect areas that contain either sensitive or critical information and information processing facilities.",
+          "controls": [
+            {
+              "id": "A.11.1.1",
+              "externalId": "PES-6"
+            }
+          ]
+        },
+        {
+          "id": "A.11.1.2",
+          "name": "Physical entry controls",
+          "description": "Secure areas shall be protected by appropriate entry controls to ensure that only authorized personnel are allowed access.",
+          "controls": [
+            {
+              "id": "A.11.1.2",
+              "externalId": "PES-7"
+            }
+          ]
+        },
+        {
+          "id": "A.11.1.3",
+          "name": "Securing offices, rooms and facilities",
+          "description": "Physical security for offices, rooms, and facilities shall be designed and applied.",
+          "controls": [
+            {
+              "id": "A.11.1.3",
+              "externalId": "PES-8"
+            }
+          ]
+        },
+        {
+          "id": "A.11.1.4",
+          "name": "Protecting against external and environmental threats",
+          "description": "Physical protection against natural disasters, malicious attack or accidents shall be designed and applied.",
+          "controls": [
+            {
+              "id": "A.11.1.4",
+              "externalId": "PES-9"
+            }
+          ]
+        },
+        {
+          "id": "A.11.1.5",
+          "name": "Working in secure areas",
+          "description": "Procedures for working in secure areas shall be designed and applied.",
+          "controls": [
+            {
+              "id": "A.11.1.5",
+              "externalId": "PES-10"
+            }
+          ]
+        },
+        {
+          "id": "A.11.1.6",
+          "name": "Delivery and loading areas",
+          "description": "Access points such as delivery and loading areas and other points where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access.",
+          "controls": [
+            {
+              "id": "A.11.1.6",
+              "externalId": "PES-11"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.1",
+          "name": "Equipment siting and protection",
+          "description": "Equipment shall be sited or protected to reduce the risks from environmental threats and hazards, and opportunities for unauthorized access.",
+          "controls": [
+            {
+              "id": "A.11.2.1",
+              "externalId": "PES-12"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.2",
+          "name": "Supporting utilities",
+          "description": "Equipment shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "controls": [
+            {
+              "id": "A.11.2.2",
+              "externalId": "PES-13"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.3",
+          "name": "Cabling security",
+          "description": "Power and telecommunications cabling carrying data or supporting information services shall be protected from interference or damage.",
+          "controls": [
+            {
+              "id": "A.11.2.3",
+              "externalId": "PES-14"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.4",
+          "name": "Equipment maintenance",
+          "description": "Equipment shall be correctly maintained to ensure its continued availability and integrity.",
+          "controls": [
+            {
+              "id": "A.11.2.4",
+              "externalId": "MNT-1"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.5",
+          "name": "Removal of assets",
+          "description": "Equipment, information or software shall not be taken off-site without prior authorisation.",
+          "controls": [
+            {
+              "id": "A.11.2.5",
+              "externalId": "AST-7"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.6",
+          "name": "Security of equipment and assets off-premises",
+          "description": "Security shall be applied to off-site assets taking into account the different risks of working outside the organisation's premises.",
+          "controls": [
+            {
+              "id": "A.11.2.6",
+              "externalId": "AST-8"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.7",
+          "name": "Secure disposal or re-use of equipment",
+          "description": "All items of equipment containing storage media shall be verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "controls": [
+            {
+              "id": "A.11.2.7",
+              "externalId": "AST-9"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.8",
+          "name": "Unattended user equipment",
+          "description": "Users shall ensure that unattended equipment has appropriate protection.",
+          "controls": [
+            {
+              "id": "A.11.2.8",
+              "externalId": "AST-10"
+            }
+          ]
+        },
+        {
+          "id": "A.11.2.9",
+          "name": "Clear desk and clear screen policy",
+          "description": "A clear desk policy for papers and removable storage media and a clear screen policy for information processing facilities shall be adopted.",
+          "controls": [
+            {
+              "id": "A.11.2.9",
+              "externalId": "PES-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.12",
+      "name": "Operations security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.12.1.1",
+          "name": "Documented operating procedures",
+          "description": "Operating procedures shall be documented and made available to all users who need them.",
+          "controls": [
+            {
+              "id": "A.12.1.1",
+              "externalId": "OPS-2"
+            }
+          ]
+        },
+        {
+          "id": "A.12.1.2",
+          "name": "Change management",
+          "description": "Changes to organization, business processes, information processing facilities and systems that affect information security shall be controlled.",
+          "controls": [
+            {
+              "id": "A.12.1.2",
+              "externalId": "CHG-4"
+            }
+          ]
+        },
+        {
+          "id": "A.12.1.3",
+          "name": "Capacity management",
+          "description": "The use of resources shall be monitored, tuned, and projections made of future capacity requirements to ensure the required system performance.",
+          "controls": [
+            {
+              "id": "A.12.1.3",
+              "externalId": "CAP-2"
+            }
+          ]
+        },
+        {
+          "id": "A.12.1.4",
+          "name": "Separation of development, testing and operational environments",
+          "description": "Development, testing, and operational environments shall be separated to reduce the risks of unauthorized access or changes to the operational environment.",
+          "controls": [
+            {
+              "id": "A.12.1.4",
+              "externalId": "TDA-6"
+            }
+          ]
+        },
+        {
+          "id": "A.12.2.1",
+          "name": "Controls against malware",
+          "description": "Detection, prevention, and recovery controls to protect against malware shall be implemented, combined with appropriate user awareness.",
+          "controls": [
+            {
+              "id": "A.12.2.1",
+              "externalId": "END-2"
+            }
+          ]
+        },
+        {
+          "id": "A.12.3.1",
+          "name": "Information back-up",
+          "description": "Back-up copies of information, software and system images shall be taken and tested regularly in accordance with the agreed backup policy.",
+          "controls": [
+            {
+              "id": "A.12.3.1",
+              "externalId": "BCD-7"
+            }
+          ]
+        },
+        {
+          "id": "A.12.4.1",
+          "name": "Event logging",
+          "description": "Register information about access and actions of users, errors, events, etc. in information systems.",
+          "controls": [
+            {
+              "id": "A.12.4.1",
+              "externalId": "MON-5"
+            }
+          ]
+        },
+        {
+          "id": "A.12.4.2",
+          "name": "Protection of log information",
+          "description": "Logging facilities and log information shall be protected against tampering and unauthorized access.",
+          "controls": [
+            {
+              "id": "A.12.4.2",
+              "externalId": "MON-6"
+            }
+          ]
+        },
+        {
+          "id": "A.12.4.3",
+          "name": "Administrator and operator logs",
+          "description": "System administrator and system operator activities shall be logged and the logs protected and regularly reviewed.",
+          "controls": [
+            {
+              "id": "A.12.4.3",
+              "externalId": "MON-7"
+            }
+          ]
+        },
+        {
+          "id": "A.12.4.4",
+          "name": "Clock synchronization",
+          "description": "The clocks of all relevant information processing systems within an organization or security domain shall be synchronized to a single sectionerence time source.",
+          "controls": [
+            {
+              "id": "A.12.4.4",
+              "externalId": "SEA-2"
+            }
+          ]
+        },
+        {
+          "id": "A.12.5.1",
+          "name": "Installation of software on operational systems",
+          "description": "Procedures shall be implemented to control the installation of software on operational systems.",
+          "controls": [
+            {
+              "id": "A.12.5.1",
+              "externalId": "END-3"
+            }
+          ]
+        },
+        {
+          "id": "A.12.6.1",
+          "name": "Management of technical vulnerabilities",
+          "description": "Information about technical vulnerabilities of information systems being used shall be obtained in a timely fashion, the organisation's exposure to such vulnerabilities evaluated, and appropriate measures taken to address the associated risk.",
+          "controls": [
+            {
+              "id": "A.12.6.1",
+              "externalId": "VPM-3"
+            }
+          ]
+        },
+        {
+          "id": "A.12.6.2",
+          "name": "Restrictions on software installation",
+          "description": "Rules governing the installation of software by users shall be established and implemented.",
+          "controls": [
+            {
+              "id": "A.12.6.2",
+              "externalId": "END-4"
+            }
+          ]
+        },
+        {
+          "id": "A.12.7.1",
+          "name": "Information systems audit controls",
+          "description": "Audit requirements and activities involving verification of operational systems shall be casectionully planned and agreed to minimize disruptions to business processes.",
+          "controls": [
+            {
+              "id": "A.12.7.1",
+              "externalId": "CPL-3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.13",
+      "name": "Communications security",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.13.1.1",
+          "name": "Network controls",
+          "description": "Networks shall be managed and controlled to protect information in systems and applications.",
+          "controls": [
+            {
+              "id": "A.13.1.1",
+              "externalId": "NET-7"
+            }
+          ]
+        },
+        {
+          "id": "A.13.1.2",
+          "name": "Security of network services",
+          "description": "Security mechanisms, service levels, and management requirements of all network services shall be identified and included in network services agreements, whether these services are provided in-house or outsourced.",
+          "controls": [
+            {
+              "id": "A.13.1.2",
+              "externalId": "NET-8"
+            }
+          ]
+        },
+        {
+          "id": "A.13.1.3",
+          "name": "Segregation in networks",
+          "description": "Groups of information services, users, and information systems shall be segregated on networks.",
+          "controls": [
+            {
+              "id": "A.13.1.3",
+              "externalId": "NET-9"
+            }
+          ]
+        },
+        {
+          "id": "A.13.2.1",
+          "name": "Information transfer policies and procedures",
+          "description": "Formal transfer policies, procedures, and controls shall be in place to protect the transfer of information through the use of all types of communication facilities.",
+          "controls": [
+            {
+              "id": "A.13.2.1",
+              "externalId": "DCH-18"
+            }
+          ]
+        },
+        {
+          "id": "A.13.2.2",
+          "name": "Agreements on information transfer",
+          "description": "Agreements shall be address the secure transfer of business information between the organization and external parties.",
+          "controls": [
+            {
+              "id": "A.13.2.2",
+              "externalId": "DCH-19"
+            }
+          ]
+        },
+        {
+          "id": "A.13.2.3",
+          "name": "Electronic messaging",
+          "description": "Information involved in electronic messaging shall be appropriately protected.",
+          "controls": [
+            {
+              "id": "A.13.2.3",
+              "externalId": "CRY-8"
+            }
+          ]
+        },
+        {
+          "id": "A.13.2.4",
+          "name": "Confidentiality or non-disclosure agreements",
+          "description": "Requirements for confidentiality or non-disclosure agreements sectionlecting the organization's needs for the protection of information shall be identified, regularly reviewed and documented.",
+          "controls": [
+            {
+              "id": "A.13.2.4",
+              "externalId": "HRS-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.14",
+      "name": "System acquisition, development and maintenance",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.14.1.1",
+          "name": "Information security requirements analysis and specification",
+          "description": "The information security related requirements shall be included in the requirements for new information systems or enhancements to existing information systems.",
+          "controls": [
+            {
+              "id": "A.14.1.1",
+              "externalId": "SEA-3"
+            }
+          ]
+        },
+        {
+          "id": "A.14.1.2",
+          "name": "Securing application services on public networks",
+          "description": "Information involved in application services passing over public networks shall be protected from fraudulent activity, contract dispute and unauthorized disclosure and modification.",
+          "controls": [
+            {
+              "id": "A.14.1.2",
+              "externalId": "CRY-9"
+            }
+          ]
+        },
+        {
+          "id": "A.14.1.3",
+          "name": "Protecting application services transactions",
+          "description": "Information involved in application service transactions shall be protected to prevent incomplete transmission, miss-routing, unauthorized message duplication or reply.",
+          "controls": [
+            {
+              "id": "A.14.1.3",
+              "externalId": "CRY-10"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.1",
+          "name": "Secure development policy",
+          "description": "Rules for the development of software and systems shall be established and applied to developments within the organization.",
+          "controls": [
+            {
+              "id": "A.14.2.1",
+              "externalId": "TDA-7"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.2",
+          "name": "System change control procedures",
+          "description": "Changes to systems within the lifecycle shall be controlled by the use of formal change control procedures.",
+          "controls": [
+            {
+              "id": "A.14.2.2",
+              "externalId": "CHG-5"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.3",
+          "name": "Technical review of applications after operating platform changes",
+          "description": "When operating platforms are changed, business critical applications shall be reviewed and tested to ensure there is no adverse impact on organizational operations security.",
+          "controls": [
+            {
+              "id": "A.14.2.3",
+              "externalId": "CHG-6"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.4",
+          "name": "Restrictions on changes to software packages",
+          "description": "Modifications to software packages shall be discouraged, limited to necessary changes and all changes shall be restrict controlled.",
+          "controls": [
+            {
+              "id": "A.14.2.4",
+              "externalId": "TDA-8"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.5",
+          "name": "Secure system engineering principles",
+          "description": "Principles for engineering secure systems shall be established, documented, maintained and applied to any information system implementation efforts.",
+          "controls": [
+            {
+              "id": "A.14.2.5",
+              "externalId": "SEA-4"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.6",
+          "name": "Secure development environment",
+          "description": "Organizations shall establish and appropriately protect secure development environments for system development and integration efforts that cover the entire system development lifecycle.",
+          "controls": [
+            {
+              "id": "A.14.2.6",
+              "externalId": "TDA-9"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.7",
+          "name": "Outsourced development",
+          "description": "The organization shall supervise and monitor the activity of outsourced system development.",
+          "controls": [
+            {
+              "id": "A.14.2.7",
+              "externalId": "TPM-3"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.8",
+          "name": "System security testing",
+          "description": "Testing of security functionality shall be carried out during development.",
+          "controls": [
+            {
+              "id": "A.14.2.8",
+              "externalId": "IAO-3"
+            }
+          ]
+        },
+        {
+          "id": "A.14.2.9",
+          "name": "System acceptance testing",
+          "description": "Acceptance testing programs and related criteria shall be established for new information system, upgrades and new versions.",
+          "controls": [
+            {
+              "id": "A.14.2.9",
+              "externalId": "TDA-10"
+            }
+          ]
+        },
+        {
+          "id": "A.14.3.1",
+          "name": "Protection of test data",
+          "description": "Test data shall be selected casectionully, protected and controlled.",
+          "controls": [
+            {
+              "id": "A.14.3.1",
+              "externalId": "TDA-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.15",
+      "name": "Supplier relationships",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.15.1.1",
+          "name": "Information security policy for supplier relationships",
+          "description": "Information security requirements for mitigating the risks associated with supplier's access to the organization's assets shall be agreed with the supplier and documented.",
+          "controls": [
+            {
+              "id": "A.15.1.1",
+              "externalId": "TPM-4"
+            }
+          ]
+        },
+        {
+          "id": "A.15.1.2",
+          "name": "Addressing security within supplier agreements",
+          "description": "All relevant information security requirements shall be established and agreed with each supplier that may access, process, store, communicate, or provide IT infrastructure components for, the organization's information.",
+          "controls": [
+            {
+              "id": "A.15.1.2",
+              "externalId": "TPM-5"
+            }
+          ]
+        },
+        {
+          "id": "A.15.1.3",
+          "name": "Information and communication technology supply chain",
+          "description": "Agreements with suppliers shall include requirements to address the information security risks associated with information and communications technology services and product supply chain.",
+          "controls": [
+            {
+              "id": "A.15.1.3",
+              "externalId": "TPM-6"
+            }
+          ]
+        },
+        {
+          "id": "A.15.2.1",
+          "name": "Monitoring and review of supplier services",
+          "description": "Organization shall regularly monitor, review and audit supplier service delivery.",
+          "controls": [
+            {
+              "id": "A.15.2.1",
+              "externalId": "TPM-7"
+            }
+          ]
+        },
+        {
+          "id": "A.15.2.2",
+          "name": "Managing changes to supplier services",
+          "description": "Changes to the provision of services by suppliers, including maintaining and improving existing information security policies, procedures and controls, shall be managed, taking account of the criticality of business systems and processes involved and re-assessment of risks.",
+          "controls": [
+            {
+              "id": "A.15.2.2",
+              "externalId": "TPM-8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.16",
+      "name": "Information security incident management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.16.1.1",
+          "name": "Responsibilities and procedures",
+          "description": "Management responsibilities and procedures shall be established to ensure a quick, effective, and orderly response to information security incidents.",
+          "controls": [
+            {
+              "id": "A.16.1.1",
+              "externalId": "IRO-5"
+            }
+          ]
+        },
+        {
+          "id": "A.16.1.2",
+          "name": "Reporting information security events",
+          "description": "Information security events shall be reported through appropriate management channels as quickly as possible.",
+          "controls": [
+            {
+              "id": "A.16.1.2",
+              "externalId": "IRO-6"
+            }
+          ]
+        },
+        {
+          "id": "A.16.1.3",
+          "name": "Reporting information security weaknesses",
+          "description": "Employees and contractors using the organisation's information systems and services shall be required to note and report any observed or suspected security weaknesses in systems or services.",
+          "controls": [
+            {
+              "id": "A.16.1.3",
+              "externalId": "IRO-7"
+            }
+          ]
+        },
+        {
+          "id": "A.16.1.4",
+          "name": "Assessment of and decision on information security events",
+          "description": "Information security events shall be assessed and it shall be decided if they are to be classified as information security incidents.",
+          "controls": [
+            {
+              "id": "A.16.1.4",
+              "externalId": "IRO-8"
+            }
+          ]
+        },
+        {
+          "id": "A.16.1.5",
+          "name": "Response to information security incidents",
+          "description": "Information security incidents shall be responded to in accordance with the documented procedures.",
+          "controls": [
+            {
+              "id": "A.16.1.5",
+              "externalId": "IRO-9"
+            }
+          ]
+        },
+        {
+          "id": "A.16.1.6",
+          "name": "Learning from information security incidents",
+          "description": "Knowledge gained from analyzing and resolving information security incidents shall be used to reduce the likelihood or impact of future incidents.",
+          "controls": [
+            {
+              "id": "A.16.1.6",
+              "externalId": "IRO-10"
+            }
+          ]
+        },
+        {
+          "id": "A.16.1.7",
+          "name": "Collection of evidence",
+          "description": "The organization shall defined and apply procedures for the identification, collection, acquisition and preservation of information, which can serve as evidence.",
+          "controls": [
+            {
+              "id": "A.16.1.7",
+              "externalId": "IRO-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.17",
+      "name": "Information security aspects of business continuity management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.17.1.1",
+          "name": "Planning information security continuity",
+          "description": "The organization shall determine its requirements for information security and the continuity of information security management in adverse situations, e.g. during a crisis or disaster.",
+          "controls": [
+            {
+              "id": "A.17.1.1",
+              "externalId": "BCD-8"
+            }
+          ]
+        },
+        {
+          "id": "A.17.1.2",
+          "name": "Implementing information security continuity",
+          "description": "The organization shall establish, document, implement and maintain processes, procedures and controls to ensure the required level of continuity for information security during an adverse situation.",
+          "controls": [
+            {
+              "id": "A.17.1.2",
+              "externalId": "BCD-9"
+            }
+          ]
+        },
+        {
+          "id": "A.17.1.3",
+          "name": "Verify, review and evaluate information security continuity",
+          "description": "The organization shall verify the established and implemented information security continuity controls at regular intervals in order to ensure that they are valid and effective during adverse situations.",
+          "controls": [
+            {
+              "id": "A.17.1.3",
+              "externalId": "BCD-10"
+            }
+          ]
+        },
+        {
+          "id": "A.17.2.1",
+          "name": "Availability of information processing facilities",
+          "description": "Information processing facilities shall be implemented with redundancy sufficient to meet availability requirements.",
+          "controls": [
+            {
+              "id": "A.17.2.1",
+              "externalId": "BCD-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A.18",
+      "name": "Compliance",
+      "optional": false,
+      "sections": [
+        {
+          "id": "A.18.1.1",
+          "name": "Identification of applicable legislation and contractual requirements",
+          "description": "All relevant legislative statutory, regulatory and contractual requirements and the organization’s approach to meet these requirements shall be explicitly identified, documented, and kept up to date for each information system and the organization.",
+          "controls": [
+            {
+              "id": "A.18.1.1",
+              "externalId": "CPL-4"
+            }
+          ]
+        },
+        {
+          "id": "A.18.1.2",
+          "name": "Intellectual property rights (IPR)",
+          "description": "Appropriate procedures shall be implemented to ensure compliance with legislative, regulatory, and contractual requirements related to intellectual property rights and use of proprietary software product",
+          "controls": [
+            {
+              "id": "A.18.1.2",
+              "externalId": "AST-11"
+            }
+          ]
+        },
+        {
+          "id": "A.18.1.3",
+          "name": "Protection of organizational records",
+          "description": "Records shall be protected from loss, destruction and falsification, unauthorized access and unauthorized release, in accordance with legislatory, regulatory, contractual, and business requirements.",
+          "controls": [
+            {
+              "id": "A.18.1.3",
+              "externalId": "DCH-20"
+            }
+          ]
+        },
+        {
+          "id": "A.18.1.4",
+          "name": "Privacy and protection of personally identifiable information",
+          "description": "Privacy and protection of personally identifiable information shall be ensured as required in relevant legislation and regulations where applicable.",
+          "controls": [
+            {
+              "id": "A.18.1.4",
+              "externalId": "PRI-18"
+            }
+          ]
+        },
+        {
+          "id": "A.18.1.5",
+          "name": "Regulation of cryptographic controls",
+          "description": "Cryptographic controls shall be used in compliance with all relevant agreements, legislation and regulations.",
+          "controls": [
+            {
+              "id": "A.18.1.5",
+              "externalId": "CRY-11"
+            }
+          ]
+        },
+        {
+          "id": "A.18.2.1",
+          "name": "Independent review of information security",
+          "description": "The organisation's approach to managing information security and its implementation (i.e. control objectives, controls, policies, processes and procedures for information security) shall be reviewed independently at planned intervals or when significant changes occur.",
+          "controls": [
+            {
+              "id": "A.18.2.1",
+              "externalId": "CPL-5"
+            }
+          ]
+        },
+        {
+          "id": "A.18.2.2",
+          "name": "Compliance with security policies and standards",
+          "description": "Managers shall regularly review the compliance of information processing and procedures within their area of responsibility with the appropriate security policies, standards and any other security requirements.",
+          "controls": [
+            {
+              "id": "A.18.2.2",
+              "externalId": "CPL-6"
+            }
+          ]
+        },
+        {
+          "id": "A.18.2.3",
+          "name": "Technical compliance review",
+          "description": "Information systems shall be regularly reviewed for compliance with the organisation's information security policies and standards.",
+          "controls": [
+            {
+              "id": "A.18.2.3",
+              "externalId": "CPL-7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.4",
+      "name": "Context of the organization",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.4.1",
+          "name": "Understanding the organization and its context",
+          "description": "The organization determines external and internal issues that are relevant to its purpose and that affect its ability to achieve the intended outcome(s) of its information security management system.",
+          "controls": [
+            {
+              "id": "C.4.1",
+              "externalId": "GOV-20"
+            }
+          ]
+        },
+        {
+          "id": "C.4.2",
+          "name": "Understanding the needs and expectations of interested parties",
+          "description": "The organization determines:\n\n(a) interested parties that are relevant to the information security management system; and\n\n(b) the requirements of these interested parties relevant to information security.",
+          "controls": [
+            {
+              "id": "C.4.2",
+              "externalId": "GOV-21"
+            }
+          ]
+        },
+        {
+          "id": "C.4.3",
+          "name": "Determining the scope of the information security management system",
+          "description": "The organization determines the boundaries and applicability of the information security management system to establish its scope and record this as documented information.\n\nWhen determining this scope, the organization considers:\n\n(a) the external and internal issues within the organization and its context (C.4.1);\n\n(b) the needs and expectations of interested parties (C.4.2); and\n\n(c) interfaces and dependencies between activities performed by the organization, and those that are performed by other organizations.",
+          "controls": [
+            {
+              "id": "C.4.3",
+              "externalId": "GOV-22"
+            }
+          ]
+        },
+        {
+          "id": "C.4.4",
+          "name": "Information security management system",
+          "description": "The organization shall establish, implement, maintain and continually improve an information security management system, in accordance with the requirements of this international standard.",
+          "controls": [
+            {
+              "id": "C.4.4",
+              "externalId": "GOV-23"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.5",
+      "name": "Leadership",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.5.1",
+          "name": "Leadership and commitment",
+          "description": "Top management shall demonstrate leadership and commitment with respect to the information security management system by:\n\n(a) ensuring the information security policy and the information security objectives are established and are compatible with the strategic direction of the organization;\n\n(b) ensuring the integration of the information security management system requirements into the organization's processes;\n\n(c) ensuring that the resources needed for the information security management system are available;\n\n(d) communicating the importance of effective information security management and of conforming to the information security management system requirements;\n\n(e) ensuring that the information security management system achieves its intended outcome(s);\n\n(f) directing and supporting persons to contribute to the effectiveness of the information security management system;\n\n(g) promoting continual improvement; and\n\n(h) supporting other relevant management roles to demonstrate their leadership as it applies to their areas of responsibility.",
+          "controls": [
+            {
+              "id": "C.5.1",
+              "externalId": "GOV-24"
+            }
+          ]
+        },
+        {
+          "id": "C.5.2",
+          "name": "Policy",
+          "description": "Top management shall establish an information security policy that:\n\n(a) is appropriate to the purpose of the organization\n\n(b) includes information security objectives (see C.6.2) or provides the framework for setting information security objectives;\n\n(c) includes a commitment to satisfy applicable requirements related to information security; and\n\n(d) includes a commitment to continual improvement of the information security management system.\n\nThe information security policy shall:\n\n(e) be available as documented information;\n\n(f) be communicated within the organization; and\n\n(g) be available to interested parties, as appropriate.",
+          "controls": [
+            {
+              "id": "C.5.2",
+              "externalId": "GOV-25"
+            }
+          ]
+        },
+        {
+          "id": "C.5.3",
+          "name": "Organizational roles, responsibilities and authorities",
+          "description": "Top management shall ensure that the responsibilities and authorities for roles relevant to information security are assigned and communicated. \n\nTop management shall assign the responsibility and authority for:\n\n(a) ensuring that the information security management system conforms to the requirements of this International Standard; and\n\n(b) reporting on the performance of the information security management system to top management.",
+          "controls": [
+            {
+              "id": "C.5.3",
+              "externalId": "GOV-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.6",
+      "name": "Planning",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.6.1.1",
+          "name": "Actions to address risks and opportunities: General",
+          "description": "When planning for the information security management system, the organization shall consider the issues in the context of the organization (C.4.1) and the requirements for the organization (C.4.2) to reach its objectives and determine the risks and opportunities that need to be addressed to:\n\n(a) ensure the information security management system can achieve its intended outcome(s);\n\n(b) prevent, or reduce, undesired effects; and\n\n(c) achieve continual improvement.\n\nThe organization shall plan:\n\n(d) actions to address these risks and opportunities; and\n\n(e) how to: (1) integrate and implement the actions into its information security management systems processes; and (2) evaluate the effectiveness of these actions.",
+          "controls": [
+            {
+              "id": "C.6.1.1",
+              "externalId": "GOV-27"
+            }
+          ]
+        },
+        {
+          "id": "C.6.1.2",
+          "name": "Actions to address risks and opportunities: Information security risk assessment",
+          "description": "The organization shall define and apply an information security risk assessment process that:\n\n(a) establishes and maintains information security risk criteria that include: (1) the risk acceptance criteria; and (2) criteria for performing information security risk assessments;\n\n(b) ensures that repeated information security risk assessments produce consistent, valid, and complete results;\n\n(c) identifies the information security risks: (1) apply the information security risk assessment process to identify risks associated with the loss of confidentiality, integrity, and availability for information security management system; and (2) identify the risk owners;\n\n(d) analyzes the information security risks: (1) assess the potential consequences that would result if the risks identified in 6.1.2(c)(1) were to materialize; (2) assess the realistic likelihood of the occurrence of the risks identified in 6.1.2(c)(1); and (3) determine the levels of risk; and\n\n(e) evaluates the information security risks: (1) compare the results of risk analysis with the risk criteria established in 6.1.2(a); and (2) prioritize the analyzed risks for risk treatment.",
+          "controls": [
+            {
+              "id": "C.6.1.2",
+              "externalId": "RSK-4"
+            }
+          ]
+        },
+        {
+          "id": "C.6.1.3",
+          "name": "Actions to address risks and opportunities: Information security risk treatment",
+          "description": "The organization shall define and apply an information security risk treatment process to:\n\n(a) determine all controls that are necessary to implement the information security risk treatment option(s) chosen;\n\n(b) compare the controls determined in 6.1.3(a) above with those in Annex A and verify that no necessary controls have been omitted;\n\n(c) produce a Statement of Applicability that contains the necessary controls (see 6.1.3(a) and (b)) and justification for inclusions, whether they are implemented or not, and the justification for exclusions of controls from Annex A;\n\n(d) formulate an information security risk treatment plan; and\n\n(e) obtain risk owners' approval of the information security risk treatment plan and acceptance of the residual information security risks.",
+          "controls": [
+            {
+              "id": "C.6.1.3",
+              "externalId": "RSK-5"
+            }
+          ]
+        },
+        {
+          "id": "C.6.2",
+          "name": "Information security objective and planning to achieve them",
+          "description": "The organization shall establish information security objectives at relevant functions and levels.\n\nThe information security objectives shall:\n\n(a) be consistent with the information security policy; \n\n(b) be measurable (if practicable);\n\n(c) take into account applicable information security requirements, and results from risk assessment and risk treatment;\n\n(d) be communicated; and\n\n(e) be updated as appropriate.\n\nThe organization shall retain documented information on the information security objectives. When planning how to achieve its information security objectives, the organization shall determine:\n\n(f) what will be done;\n\n(g) what resources will be required;\n\n(h) who will be responsible;\n\n(i) when it will be completed; and\n\n(j) how the results will be evaluated.",
+          "controls": [
+            {
+              "id": "C.6.2",
+              "externalId": "PRM-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.7",
+      "name": "Support",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.7.1",
+          "name": "Resources",
+          "description": "The organization shall determine and provide the resources needed for the establishment, implementation, maintenance and continual improvement of the information security management system.",
+          "controls": [
+            {
+              "id": "C.7.1",
+              "externalId": "PRM-6"
+            }
+          ]
+        },
+        {
+          "id": "C.7.2",
+          "name": "Competence",
+          "description": "The organization shall:\n\n(a) determine the necessary competence of person(s) doing work under its control that affects its information security performance;\n\n(b) ensure that these persons are competent on the basis of appropriate education, training, or experience;\n\n(c) where applicable, take actions to acquire the necessary competence, and evaluate the effectiveness of the actions taken; and\n\n(d) retain appropriate documented information as evidence of competence.",
+          "controls": [
+            {
+              "id": "C.7.2",
+              "externalId": "HRS-16"
+            }
+          ]
+        },
+        {
+          "id": "C.7.3",
+          "name": "Awareness",
+          "description": "Persons doing work under the organization's control shall be aware of:\n\n(a) the information security policy;\n\n(b) their contribution to the effectiveness of the information security management system, including the benefits of improved information security performance; and\n\n(c) the implications of not conforming with the information security management system requirements.",
+          "controls": [
+            {
+              "id": "C.7.3",
+              "externalId": "SAT-3"
+            }
+          ]
+        },
+        {
+          "id": "C.7.4",
+          "name": "Communication",
+          "description": "The organization shall determine the need for internal and external communications relevant to the information security management system including:\n\n(a) on what to communicate;\n\n(b) when to communicate;\n\n(c) with whom to communicate;\n\n(d) who shall communicate; and\n\n(e) the process by which communication shall be effected.",
+          "controls": [
+            {
+              "id": "C.7.4",
+              "externalId": "PRM-7"
+            }
+          ]
+        },
+        {
+          "id": "C.7.5.1",
+          "name": "Documented information: General",
+          "description": "The organization's information security management system shall include:\n\n(a) documented information required by the ISO27001 International Standard; and\n\n(b) documented information determined by the organization as being necessary for the effectiveness of the information security management system.",
+          "controls": [
+            {
+              "id": "C.7.5.1",
+              "externalId": "GOV-28"
+            }
+          ]
+        },
+        {
+          "id": "C.7.5.2",
+          "name": "Documented information: Creating and updating",
+          "description": "When creating and updating documented information the organization shall ensure appropriate:\n\n(a) identification and description (e.g. a title, date, author, or reference number);\n\n(b) format (e.g. language, software version, graphics) and media (e.g. paper, electronic); and\n\n(c) review and approval for suitability and adequacy.",
+          "controls": [
+            {
+              "id": "C.7.5.2",
+              "externalId": "GOV-29"
+            }
+          ]
+        },
+        {
+          "id": "C.7.5.3",
+          "name": "Documented information: Control of documented information",
+          "description": "Documented information required by the information security management system and by this International Standard shall be controlled to ensure that:\n\n(a) it is available and suitable for use, where and when it is needed; and\n\n(b) it is adequately protected (e.g. from loss of confidentiality, improper use, or loss of integrity).\n\nFor the control of documented information, the organization shall address the following activities, as applicable:\n\n(c) distribution, access, retrieval, and use;\n\n(d) storage and preservation, including the preservation of legibility;\n\n(e) control of changes (e.g. version control); and\n\n(f) retention and disposition.",
+          "controls": [
+            {
+              "id": "C.7.5.3",
+              "externalId": "GOV-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.8",
+      "name": "Operation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.8.1",
+          "name": "Operational planning and control",
+          "description": "The organization shall:\n- plan, implement and control the processes needed to meet information security requirements, and to implement the actions determined in C.6.1;\n- implement plans to achieve information security objectives determined in C.6.2;\n- keep documented information to the extent necessary to have confidence that the processes have been carried out as planned;\n- control planned changes and review the consequences of unintended changes, taking action to mitigate any adverse effects, as necessary; and\n- ensure that outsourced processes are determined and controlled.",
+          "controls": [
+            {
+              "id": "C.8.1",
+              "externalId": "OPS-3"
+            }
+          ]
+        },
+        {
+          "id": "C.8.2",
+          "name": "Information security risk assessment",
+          "description": "The organization shall:\n- perform information security risk assessments at planned intervals or when significant changes are proposed or occur, taking account of the criteria established in 6.1.2 (a); and\n- retain documented information on the results of the information security risk assessments.",
+          "controls": [
+            {
+              "id": "C.8.2",
+              "externalId": "RSK-6"
+            }
+          ]
+        },
+        {
+          "id": "C.8.3",
+          "name": "Information security risk treatment",
+          "description": "The organization shall:\n- implement the information security risk treatment plan; and\n- retain documented information of the results of the information security risk treatment.",
+          "controls": [
+            {
+              "id": "C.8.3",
+              "externalId": "RSK-7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.9",
+      "name": "Performance evaluation",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.9.1",
+          "name": "Monitoring, measurement, analysis and evaluation",
+          "description": "The organization shall evaluate the information security performance and the effectiveness of the information security management system and determine:\n\n(a) what needs to be monitored and measured, including information security processes and controls;\n\n(b) the methods for monitoring, measurement, analysis, and evaluation, as applicable, to ensure valid results;\n\n(c) when the monitoring and measuring shall be performed;\n\n(d) who shall monitor and measure;\n\n(e) when the results from monitoring and measurement shall be analyzed and evaluated; and\n\n(f) who shall analyze and evaluate these results.",
+          "controls": [
+            {
+              "id": "C.9.1",
+              "externalId": "GOV-31"
+            }
+          ]
+        },
+        {
+          "id": "C.9.2",
+          "name": "Internal audit",
+          "description": "The organization shall conduct internal audits at planned intervals to provide information on whether the information security management system:\n\n(a) conforms to: (1) the organization's own requirements for its information security management system; and (2) the requirements of this International Standard; and\n\n(b) is effectively implemented and maintained.\n\nThe organization shall:\n\n(c) plan, establish, implement and maintain an audit program(s), including the frequency, methods, responsibilities, planning requirements, and reporting. The audit program(s) shall take into consideration the importance of the processes concerned and the results of previous audits;\n\n(d) define the audit criteria and scope for each audit;\n\n(e) select auditors and conduct audits that ensure objectivity and the impartiality of the audit process;\n\n(f) ensure that the results of the audits are reported to relevant management; and\n\n(g) retain documented information as evidence of the audit program(s) and the audit results.",
+          "controls": [
+            {
+              "id": "C.9.2",
+              "externalId": "CPL-8"
+            }
+          ]
+        },
+        {
+          "id": "C.9.3",
+          "name": "Management review",
+          "description": "Top management shall review the organization's information security management system at planned intervals to ensure its continuing suitability, adequacy, and effectiveness. The management review shall include consideration of:\n\n(a) the status of actions from previous management reviews;\n\n(b) changes in external and internal issues that are relevant to the information security management system;\n\n(c) feedback on the information security performance, including trends in: (1) nonconformities and corrective actions; (2) monitoring and measurement results; (3) audit results; and (4) fulfillment of information security objectives;\n\n(d) feedback from interested parties;\n\n(e) results of risk assessment and status of risk treatment plan; and\n\n(f) opportunities for continual improvement.\n\nThe outputs of the management review shall include decisions related to continual improvement opportunities and any needs for changes to the information security management system.",
+          "controls": [
+            {
+              "id": "C.9.3",
+              "externalId": "GOV-32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C.10",
+      "name": "Improvement",
+      "optional": false,
+      "sections": [
+        {
+          "id": "C.10.1",
+          "name": "Nonconformity and corrective action",
+          "description": "When a nonconformity occurs, the organization shall:\n\n(a) react to the nonconformity, and as applicable: (1) take action to control and correct it; and (2) deal with the consequences;\n\n(b) evaluate the need for action to eliminate the causes of nonconformity, in order that it does not recur or occur elsewhere, by: (1) reviewing the nonconformity; (2) determining the causes of the nonconformity; and (3) determining if similar nonconformities exist, or could potentially occur;\n\n(c) implement any action needed;\n\n(d) review the effectiveness of any corrective action taken; and\n\n(e) make changes to the information security management system, if necessary.\n\nCorrective actions shall be appropriate to the effects of the nonconformities encountered. The organization shall retain documented information as evidence of:\n\n(f) the nature of the nonconformities and any subsequent actions taken, and\n\n(g) the results of any corrective action.",
+          "controls": [
+            {
+              "id": "C.10.1",
+              "externalId": "CPL-9"
+            }
+          ]
+        },
+        {
+          "id": "C.10.2",
+          "name": "Continual improvement",
+          "description": "The organization shall continually improve the suitability, adequacy and effectiveness of the information security management system.",
+          "controls": [
+            {
+              "id": "C.10.2",
+              "externalId": "GOV-33"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

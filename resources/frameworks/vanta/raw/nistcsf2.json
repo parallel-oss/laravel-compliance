@@ -1,0 +1,624 @@
+{
+  "principles": [
+    {
+      "id": "CSF2.0-DE",
+      "name": "Detect",
+      "optional": false,
+      "sections": [
+        {
+          "id": "DE.CM",
+          "name": "Continuous Monitoring",
+          "description": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events",
+          "controls": [
+            {
+              "id": "fqsedvif",
+              "externalId": "END-122"
+            },
+            {
+              "id": "sf8wr2tz",
+              "externalId": "MON-295"
+            },
+            {
+              "id": "ow6bw0hy",
+              "externalId": "MON-296"
+            },
+            {
+              "id": "i4sjr3iz",
+              "externalId": "PES-221"
+            },
+            {
+              "id": "mqnxhiuz",
+              "externalId": "TPM-87"
+            }
+          ]
+        },
+        {
+          "id": "DE.AE",
+          "name": "Adverse Event Analysis",
+          "description": "Anomalies, indicators of compromise, and other potentially adverse events are analyzed to characterize the events and detect cybersecurity incidents",
+          "controls": [
+            {
+              "id": "vijfv7tt",
+              "externalId": "OPS-16"
+            },
+            {
+              "id": "116fnk2e",
+              "externalId": "OPS-17"
+            },
+            {
+              "id": "ob3gl9ne",
+              "externalId": "OPS-18"
+            },
+            {
+              "id": "j6wsq2xt",
+              "externalId": "OPS-19"
+            },
+            {
+              "id": "67fxvueq",
+              "externalId": "OPS-20"
+            },
+            {
+              "id": "5s4rc693",
+              "externalId": "RSK-95"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF2.0-GV",
+      "name": "Govern",
+      "optional": false,
+      "sections": [
+        {
+          "id": "GV.OC",
+          "name": "Organizational Context",
+          "description": "The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organization's cybersecurity risk management decisions are understood",
+          "controls": [
+            {
+              "id": "eazjn2ck",
+              "externalId": "CPL-119"
+            },
+            {
+              "id": "1x4v3oht",
+              "externalId": "RSK-96"
+            },
+            {
+              "id": "kw6w4bwo",
+              "externalId": "RSK-97"
+            },
+            {
+              "id": "1omnz3c2",
+              "externalId": "RSK-98"
+            },
+            {
+              "id": "4812fozo",
+              "externalId": "RSK-99"
+            }
+          ]
+        },
+        {
+          "id": "GV.RM",
+          "name": "Risk Management Strategy",
+          "description": "The organization's priorities, constraints, risk tolerance and appetite statements, and assumptions are established, communicated, and used to support operational risk decisions",
+          "controls": [
+            {
+              "id": "qllt32t2",
+              "externalId": "RSK-105"
+            },
+            {
+              "id": "ksee2cf0",
+              "externalId": "RSK-106"
+            },
+            {
+              "id": "y12kzi1h",
+              "externalId": "RSK-107"
+            },
+            {
+              "id": "2ga73y4z",
+              "externalId": "RSK-108"
+            },
+            {
+              "id": "l1ku0wbz",
+              "externalId": "RSK-109"
+            },
+            {
+              "id": "kq7tscxm",
+              "externalId": "RSK-110"
+            },
+            {
+              "id": "qc4cq77d",
+              "externalId": "RSK-111"
+            }
+          ]
+        },
+        {
+          "id": "GV.RR",
+          "name": "Roles, Responsibilities, and Authorities",
+          "description": "Cybersecurity roles, responsibilities, and authorities to foster accountability, performance assessment, and continuous improvement are established and communicated",
+          "controls": [
+            {
+              "id": "b1xccrme",
+              "externalId": "HRS-94"
+            },
+            {
+              "id": "6u9r0xus",
+              "externalId": "RSK-112"
+            },
+            {
+              "id": "ywxfmrhs",
+              "externalId": "RSK-113"
+            },
+            {
+              "id": "6e9tn1qn",
+              "externalId": "RSK-114"
+            }
+          ]
+        },
+        {
+          "id": "GV.PO",
+          "name": "Policy",
+          "description": "Organizational cybersecurity policy is established, communicated, and enforced",
+          "controls": [
+            {
+              "id": "37ay9g1h",
+              "externalId": "RSK-103"
+            },
+            {
+              "id": "tcujmkto",
+              "externalId": "RSK-104"
+            }
+          ]
+        },
+        {
+          "id": "GV.OV",
+          "name": "Oversight",
+          "description": "Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy",
+          "controls": [
+            {
+              "id": "4qzkg4jr",
+              "externalId": "RSK-100"
+            },
+            {
+              "id": "a1f89z7z",
+              "externalId": "RSK-101"
+            },
+            {
+              "id": "vjjk6y6k",
+              "externalId": "RSK-102"
+            }
+          ]
+        },
+        {
+          "id": "GV.SC",
+          "name": "Cybersecurity Supply Chain Risk Management",
+          "description": "Cyber supply chain risk management processes are identified, established, managed, monitored, and improved by organizational stakeholders",
+          "controls": [
+            {
+              "id": "w1kvsujc",
+              "externalId": "RSK-115"
+            },
+            {
+              "id": "pa33qwtz",
+              "externalId": "RSK-116"
+            },
+            {
+              "id": "6w7wf6yp",
+              "externalId": "RSK-117"
+            },
+            {
+              "id": "3j9oa536",
+              "externalId": "RSK-118"
+            },
+            {
+              "id": "hc2odpxy",
+              "externalId": "RSK-119"
+            },
+            {
+              "id": "hm4krywj",
+              "externalId": "TPM-88"
+            },
+            {
+              "id": "e642g5wr",
+              "externalId": "TPM-89"
+            },
+            {
+              "id": "1ntideqe",
+              "externalId": "TPM-90"
+            },
+            {
+              "id": "u6t4asmi",
+              "externalId": "TPM-91"
+            },
+            {
+              "id": "bad6m8ra",
+              "externalId": "TPM-92"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF2.0-ID",
+      "name": "Identify",
+      "optional": false,
+      "sections": [
+        {
+          "id": "ID.AM",
+          "name": "Asset Management",
+          "description": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+          "controls": [
+            {
+              "id": "7oycrahz",
+              "externalId": "AST-111"
+            },
+            {
+              "id": "noj1ya3x",
+              "externalId": "AST-112"
+            },
+            {
+              "id": "ge1195zn",
+              "externalId": "AST-113"
+            },
+            {
+              "id": "9qm1z7u7",
+              "externalId": "AST-114"
+            },
+            {
+              "id": "lj4qycp1",
+              "externalId": "AST-115"
+            },
+            {
+              "id": "fbvextvg",
+              "externalId": "AST-116"
+            },
+            {
+              "id": "4n0bv72z",
+              "externalId": "AST-117"
+            }
+          ]
+        },
+        {
+          "id": "ID.RA",
+          "name": "Risk Assessment",
+          "description": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+          "controls": [
+            {
+              "id": "xjg86izc",
+              "externalId": "AST-118"
+            },
+            {
+              "id": "bx5isxpe",
+              "externalId": "CHG-77"
+            },
+            {
+              "id": "yf00wohc",
+              "externalId": "RSK-120"
+            },
+            {
+              "id": "il013l9u",
+              "externalId": "RSK-121"
+            },
+            {
+              "id": "l2pr8wpj",
+              "externalId": "RSK-122"
+            },
+            {
+              "id": "wjbguf4j",
+              "externalId": "RSK-123"
+            },
+            {
+              "id": "vbw7ezmc",
+              "externalId": "TPM-93"
+            },
+            {
+              "id": "31neojrr",
+              "externalId": "VPM-127"
+            },
+            {
+              "id": "pjuzl2ac",
+              "externalId": "VPM-128"
+            },
+            {
+              "id": "iwtuvh9z",
+              "externalId": "VPM-129"
+            }
+          ]
+        },
+        {
+          "id": "ID.IM",
+          "name": "Improvement",
+          "description": "Improvements to organizational cybersecurity risk management processes, procedures and activities are identified across all CSF Functions",
+          "controls": [
+            {
+              "id": "9x0kgi09",
+              "externalId": "CHG-74"
+            },
+            {
+              "id": "jyudjd73",
+              "externalId": "CHG-75"
+            },
+            {
+              "id": "6r8ttph4",
+              "externalId": "CHG-76"
+            },
+            {
+              "id": "xnukggrn",
+              "externalId": "IRO-185"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF2.0-PR",
+      "name": "Protect",
+      "optional": false,
+      "sections": [
+        {
+          "id": "PR.AA",
+          "name": "Identity Management, Authentication, and Access Control",
+          "description": "Access to physical and logical assets is limited to authorized users, services, and hardware and  managed commensurate with the assessed risk of unauthorized access",
+          "controls": [
+            {
+              "id": "8p9j72x4",
+              "externalId": "IAC-495"
+            },
+            {
+              "id": "3q8iatn2",
+              "externalId": "IAC-496"
+            },
+            {
+              "id": "r0tla8pd",
+              "externalId": "IAC-497"
+            },
+            {
+              "id": "d7xzaj7g",
+              "externalId": "IAC-498"
+            },
+            {
+              "id": "iszvhs8w",
+              "externalId": "IAC-499"
+            },
+            {
+              "id": "ngny02zb",
+              "externalId": "PES-222"
+            }
+          ]
+        },
+        {
+          "id": "PR.AT",
+          "name": "Awareness and Training",
+          "description": "The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks",
+          "controls": [
+            {
+              "id": "hltfwwjc",
+              "externalId": "SAT-68"
+            },
+            {
+              "id": "q8q11gfw",
+              "externalId": "SAT-69"
+            }
+          ]
+        },
+        {
+          "id": "PR.DS",
+          "name": "Data Security",
+          "description": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information",
+          "controls": [
+            {
+              "id": "imkw6pi3",
+              "externalId": "BCD-132"
+            },
+            {
+              "id": "mhbmpkvy",
+              "externalId": "GOV-266"
+            },
+            {
+              "id": "kdjs88ou",
+              "externalId": "GOV-267"
+            },
+            {
+              "id": "ri4huadn",
+              "externalId": "GOV-268"
+            }
+          ]
+        },
+        {
+          "id": "PR.PS",
+          "name": "Platform Security",
+          "description": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+          "controls": [
+            {
+              "id": "7iuad2jm",
+              "externalId": "CFG-143"
+            },
+            {
+              "id": "4efydhfp",
+              "externalId": "CFG-144"
+            },
+            {
+              "id": "cgtiphv5",
+              "externalId": "CFG-145"
+            },
+            {
+              "id": "tsmlh1mp",
+              "externalId": "END-123"
+            },
+            {
+              "id": "co1qxbow",
+              "externalId": "MON-297"
+            },
+            {
+              "id": "nu7uadre",
+              "externalId": "TDA-206"
+            }
+          ]
+        },
+        {
+          "id": "PR.IR",
+          "name": "Technology Infrastructure Resilience",
+          "description": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience",
+          "controls": [
+            {
+              "id": "shv13lmm",
+              "externalId": "BCD-133"
+            },
+            {
+              "id": "c7c9367f",
+              "externalId": "BCD-134"
+            },
+            {
+              "id": "j2vrhsv0",
+              "externalId": "CAP-15"
+            },
+            {
+              "id": "sy1c8onh",
+              "externalId": "NET-259"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF2.0-RC",
+      "name": "Recover",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RC.RP",
+          "name": "Incident Recovery Plan Execution",
+          "description": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+          "controls": [
+            {
+              "id": "4s4y9l35",
+              "externalId": "BCD-136"
+            },
+            {
+              "id": "kqutkhd8",
+              "externalId": "BCD-137"
+            },
+            {
+              "id": "gqicphni",
+              "externalId": "BCD-138"
+            },
+            {
+              "id": "38hukhjo",
+              "externalId": "BCD-139"
+            },
+            {
+              "id": "gq2n4ftn",
+              "externalId": "IRO-187"
+            },
+            {
+              "id": "r9g0v91i",
+              "externalId": "IRO-188"
+            }
+          ]
+        },
+        {
+          "id": "RC.CO",
+          "name": "Incident Recovery Communication",
+          "description": "Restoration activities are coordinated with internal and external parties",
+          "controls": [
+            {
+              "id": "z8qlsq30",
+              "externalId": "BCD-135"
+            },
+            {
+              "id": "ylvdu7k1",
+              "externalId": "IRO-186"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF2.0-RS",
+      "name": "Respond",
+      "optional": false,
+      "sections": [
+        {
+          "id": "RS.MA",
+          "name": "Incident Management",
+          "description": "Responses to detected cybersecurity incidents are managed",
+          "controls": [
+            {
+              "id": "r7vabosz",
+              "externalId": "IRO-195"
+            },
+            {
+              "id": "kffy9l5b",
+              "externalId": "IRO-196"
+            },
+            {
+              "id": "5re3qze3",
+              "externalId": "IRO-197"
+            },
+            {
+              "id": "nsikoklq",
+              "externalId": "IRO-198"
+            },
+            {
+              "id": "ic6bthnc",
+              "externalId": "IRO-199"
+            }
+          ]
+        },
+        {
+          "id": "RS.AN",
+          "name": "Incident Analysis",
+          "description": "Investigations are conducted to ensure effective response and support forensics and recovery activities",
+          "controls": [
+            {
+              "id": "6pk5j4fp",
+              "externalId": "IRO-189"
+            },
+            {
+              "id": "k16b2pj4",
+              "externalId": "IRO-190"
+            },
+            {
+              "id": "nq1i9of2",
+              "externalId": "IRO-191"
+            },
+            {
+              "id": "40vta6dt",
+              "externalId": "IRO-192"
+            }
+          ]
+        },
+        {
+          "id": "RS.CO",
+          "name": "Incident Response Reporting and Communication",
+          "description": "Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies",
+          "controls": [
+            {
+              "id": "i369oa5o",
+              "externalId": "IRO-193"
+            },
+            {
+              "id": "tukij4g7",
+              "externalId": "IRO-194"
+            }
+          ]
+        },
+        {
+          "id": "RS.MI",
+          "name": "Incident Mitigation",
+          "description": "Activities are performed to prevent expansion of an event and mitigate its effects",
+          "controls": [
+            {
+              "id": "5z2jwsbe",
+              "externalId": "IRO-200"
+            },
+            {
+              "id": "r00iqjsl",
+              "externalId": "IRO-201"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

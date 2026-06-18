@@ -1,0 +1,409 @@
+{
+  "principles": [
+    {
+      "id": "B",
+      "name": "Backups",
+      "optional": false,
+      "sections": [
+        {
+          "id": "B.01",
+          "name": "Backup Configurations",
+          "description": "Financial data is backed up on a regular cadence. Issues and failures are monitored and remediated.",
+          "controls": [
+            {
+              "id": "jt55a6y7",
+              "externalId": "BCD-44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CM",
+      "name": "Change Management",
+      "optional": false,
+      "sections": [
+        {
+          "id": "CM.01",
+          "name": "Direct change access (Prod Access)",
+          "description": "The company restricts access to migrate changes to production to authorized personnel.",
+          "controls": [
+            {
+              "id": "vua99enn",
+              "externalId": "CHG-25"
+            }
+          ]
+        },
+        {
+          "id": "CM.02",
+          "name": "Change Testing and Approval",
+          "description": "Change testing is documented and approved by authorized personnel prior to deployment.",
+          "controls": [
+            {
+              "id": "silx61we",
+              "externalId": "CHG-26"
+            }
+          ]
+        },
+        {
+          "id": "CM.03",
+          "name": "Change authorization",
+          "description": "Changes are deployed by authorized individuals.",
+          "controls": [
+            {
+              "id": "ityxodpq",
+              "externalId": "CHG-27"
+            }
+          ]
+        },
+        {
+          "id": "CM.04",
+          "name": "Direct changes in production",
+          "description": "Ability to make direct data changes in production is restricted to authorized individuals.",
+          "controls": [
+            {
+              "id": "la2eg1mw",
+              "externalId": "CHG-28"
+            }
+          ]
+        },
+        {
+          "id": "CM.05",
+          "name": "SOD in change management",
+          "description": "Development, testing, and deployment of changes are not performed by a single individual.",
+          "controls": [
+            {
+              "id": "hklft6mw",
+              "externalId": "CHG-29"
+            }
+          ]
+        },
+        {
+          "id": "CM.06",
+          "name": "Data Migration/Conversion",
+          "description": "The company develops, tests, and approves data migration and conversion activities prior to launching new key systems.",
+          "controls": [
+            {
+              "id": "9uofm4dg",
+              "externalId": "DCH-90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EL",
+      "name": "Entity Level",
+      "optional": false,
+      "sections": [
+        {
+          "id": "EL.01",
+          "name": "Code of Conduct acknowledged by contractors",
+          "description": "The company requires contractor agreements to include a code of conduct or reference to the company code of conduct.",
+          "controls": [
+            {
+              "id": "1wf17m7y",
+              "externalId": "HRS-36"
+            }
+          ]
+        },
+        {
+          "id": "EL.02",
+          "name": "Code of Conduct acknowledged by employees and enforced",
+          "description": "The company requires employees to acknowledge a code of conduct at the time of hire. Employees who violate the code of conduct are subject to disciplinary actions in accordance with a disciplinary policy.",
+          "controls": [
+            {
+              "id": "400kgd6v",
+              "externalId": "HRS-37"
+            }
+          ]
+        },
+        {
+          "id": "EL.03",
+          "name": "Whistleblower policy established",
+          "description": "The company has established a formalized whistleblower policy, and an anonymous communication channel is in place for users to report potential issues or fraud concerns.\n\nThe company has established a formalized whistleblower policy, and an anonymous communication channel is in place for users to report potential issues or fraud concerns.",
+          "controls": [
+            {
+              "id": "ob2hylqj",
+              "externalId": "GOV-83"
+            }
+          ]
+        },
+        {
+          "id": "EL.04",
+          "name": "Organization structure documented",
+          "description": "The company maintains an organizational chart that describes the organizational structure and reporting lines.",
+          "controls": [
+            {
+              "id": "r0lz7ujr",
+              "externalId": "GOV-84"
+            }
+          ]
+        },
+        {
+          "id": "EL.05",
+          "name": "Performance evaluations conducted",
+          "description": "The company managers are required to complete performance evaluations for direct reports at least annually.",
+          "controls": [
+            {
+              "id": "nmrbp3x3",
+              "externalId": "HRS-38"
+            }
+          ]
+        },
+        {
+          "id": "EL.06",
+          "name": "Risks assessments performed",
+          "description": "The company's risk assessment program is established and risk assessments are performed at least annually. As part of this process, threats and changes (environmental, regulatory, and technological) to service commitments are identified and the risks are formally assessed. The risk assessment includes a consideration of the potential for fraud and how fraud may impact the achievement of objectives.",
+          "controls": [
+            {
+              "id": "m6zkd5jm",
+              "externalId": "RSK-31"
+            }
+          ]
+        },
+        {
+          "id": "EL.07",
+          "name": "Vendor management program established",
+          "description": "The company has a vendor management program in place. Components of this program include:\n- critical third-party vendor inventory;\n- vendor's security and privacy requirements; and\n- review of critical third-party vendors at least annually.",
+          "controls": [
+            {
+              "id": "v9wmmp5o",
+              "externalId": "TPM-48"
+            }
+          ]
+        },
+        {
+          "id": "EL.08",
+          "name": "Board expertise developed",
+          "description": "The company's board members have sufficient expertise to oversee management's ability to design, implement and operate information security controls. The board engages third-party information security experts and consultants as needed.",
+          "controls": [
+            {
+              "id": "1cyjcfc2",
+              "externalId": "GOV-85"
+            }
+          ]
+        },
+        {
+          "id": "EL.09",
+          "name": "Board meetings conducted",
+          "description": "The company's board of directors meets at least annually and maintains formal meeting minutes. The board includes directors that are independent of the company.",
+          "controls": [
+            {
+              "id": "vgkkl960",
+              "externalId": "GOV-86"
+            }
+          ]
+        },
+        {
+          "id": "EL.10",
+          "name": "Board charter documented",
+          "description": "The company's board of directors has a documented charter that outlines its oversight responsibilities for internal control.",
+          "controls": [
+            {
+              "id": "vpmei895",
+              "externalId": "GOV-87"
+            }
+          ]
+        },
+        {
+          "id": "EL.11",
+          "name": "Employee background checks performed",
+          "description": "The company performs background checks on new employees.",
+          "controls": [
+            {
+              "id": "wsnr3w2s",
+              "externalId": "HRS-39"
+            }
+          ]
+        },
+        {
+          "id": "EL.12",
+          "name": "Security policies established and reviewed",
+          "description": "The company's information security policies and procedures are documented and reviewed at least annually.",
+          "controls": [
+            {
+              "id": "iwn7uvm2",
+              "externalId": "GOV-88"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JP",
+      "name": "Job Processing",
+      "optional": false,
+      "sections": [
+        {
+          "id": "JP.01",
+          "name": "Job Scheduling Access",
+          "description": "Batch job scheduling is restricted to authorized individuals.",
+          "controls": [
+            {
+              "id": "gycnr0tx",
+              "externalId": "AAT-1"
+            }
+          ]
+        },
+        {
+          "id": "JP.02",
+          "name": "Job Monitoring",
+          "description": "Batch jobs are monitored for issues and failures. Issues and failures are tracked and remediated.",
+          "controls": [
+            {
+              "id": "jqcs1yen",
+              "externalId": "MON-91"
+            }
+          ]
+        },
+        {
+          "id": "JP.03",
+          "name": "Changes to Job Monitoring",
+          "description": "Changes to batch job configurations are tested and approved.",
+          "controls": [
+            {
+              "id": "f98vuc4q",
+              "externalId": "MON-92"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LA",
+      "name": "Logical Access",
+      "optional": false,
+      "sections": [
+        {
+          "id": "LA.01",
+          "name": "User access provisioning",
+          "description": "The company ensures that user access to in-scope system components is based on job role and function or requires a documented access request form and manager approval prior to access being provisioned.",
+          "controls": [
+            {
+              "id": "uagmhjsj",
+              "externalId": "IAC-145"
+            }
+          ]
+        },
+        {
+          "id": "LA.02",
+          "name": "Direct data access",
+          "description": "Access directly to financial data is restricted to authorized individuals.",
+          "controls": [
+            {
+              "id": "8yjcz16i",
+              "externalId": "DCH-89"
+            }
+          ]
+        },
+        {
+          "id": "LA.03",
+          "name": "Privileged access",
+          "description": "Privileged and administrative access is restricted to authorized individuals.",
+          "controls": [
+            {
+              "id": "j6gtiwkp",
+              "externalId": "IAC-146"
+            }
+          ]
+        },
+        {
+          "id": "LA.04",
+          "name": "User access review",
+          "description": "The company conducts access reviews at least quarterly for the in-scope system components to help ensure that access is restricted appropriately. Required changes are tracked to completion.",
+          "controls": [
+            {
+              "id": "b2ygz380",
+              "externalId": "IAC-147"
+            }
+          ]
+        },
+        {
+          "id": "LA.05",
+          "name": "User access de-provisioning (terminations and transfers)",
+          "description": "The company revokes terminated/transferred employee access within the defined SLAs.",
+          "controls": [
+            {
+              "id": "ustbpoty",
+              "externalId": "HRS-35"
+            }
+          ]
+        },
+        {
+          "id": "LA.06",
+          "name": "SOD Monitoring",
+          "description": "User access to key systems does not create conflicting roles and responsibilities.",
+          "controls": [
+            {
+              "id": "4m4thuta",
+              "externalId": "GOV-82"
+            }
+          ]
+        },
+        {
+          "id": "LA.07",
+          "name": "Passwords",
+          "description": "The company requires passwords for in-scope system components to be configured to restrict unauthorized access.",
+          "controls": [
+            {
+              "id": "y7ab9ypp",
+              "externalId": "SEA-42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "name": "Network",
+      "optional": false,
+      "sections": [
+        {
+          "id": "N.01",
+          "name": "Network Segmentation",
+          "description": "The company's network is segmented to prevent unauthorized access to data.",
+          "controls": [
+            {
+              "id": "ghzv5tq9",
+              "externalId": "NET-62"
+            }
+          ]
+        },
+        {
+          "id": "N.02",
+          "name": "Vulnerability Scanning",
+          "description": "Host-based vulnerability scans are performed at least quarterly on all external-facing systems. Critical and high vulnerabilities are tracked to remediation.",
+          "controls": [
+            {
+              "id": "gfjqfvcn",
+              "externalId": "VPM-61"
+            }
+          ]
+        },
+        {
+          "id": "N.03",
+          "name": "Intrusion Detection",
+          "description": "The company uses an intrusion detection system to provide continuous monitoring of the company's network and early detection of potential security breaches.",
+          "controls": [
+            {
+              "id": "7s0kp524",
+              "externalId": "THR-10"
+            }
+          ]
+        },
+        {
+          "id": "N.04",
+          "name": "VPN Access",
+          "description": "Access and authentication to the company's VPN is restricted to appropriate individuals.",
+          "controls": [
+            {
+              "id": "1p352855",
+              "externalId": "NET-63"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3979 @@
+{
+  "principles": [
+    {
+      "id": "Requirement 1",
+      "name": "Install and maintain a firewall configuration to protect data",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1.1.1",
+          "name": "",
+          "description": "Is there a formal process for approving and testing all network connections and changes to the firewall and router configurations?",
+          "controls": [
+            {
+              "id": "1.1.1",
+              "externalId": "CFG-3"
+            }
+          ]
+        },
+        {
+          "id": "1.1.2.a",
+          "name": "",
+          "description": "Is there a current network diagram that documents all connections between the cardholder data environment and other networks, including any wireless networks?",
+          "controls": [
+            {
+              "id": "1.1.2.a",
+              "externalId": "AST-16"
+            }
+          ]
+        },
+        {
+          "id": "1.1.2.b",
+          "name": "",
+          "description": "Is there a process to ensure the diagram is kept current?",
+          "controls": [
+            {
+              "id": "1.1.2.b",
+              "externalId": "GOV-43"
+            }
+          ]
+        },
+        {
+          "id": "1.1.3.a",
+          "name": "",
+          "description": "Is there a current diagram that shows all cardholder data flows across systems and networks?",
+          "controls": [
+            {
+              "id": "1.1.3.a",
+              "externalId": "AST-17"
+            }
+          ]
+        },
+        {
+          "id": "1.1.3.b",
+          "name": "",
+          "description": "Is there a process to ensure the diagram is kept current?",
+          "controls": [
+            {
+              "id": "1.1.3.b",
+              "externalId": "AST-18"
+            }
+          ]
+        },
+        {
+          "id": "1.1.4.a",
+          "name": "",
+          "description": "Is a firewall required and implemented at each Internet connection and between any demilitarized zone (DMZ) and the internal network zone?",
+          "controls": [
+            {
+              "id": "1.1.4.a",
+              "externalId": "NET-11"
+            }
+          ]
+        },
+        {
+          "id": "1.1.4.b",
+          "name": "",
+          "description": "Is the current network diagram consistent with the firewall configuration standards?",
+          "controls": [
+            {
+              "id": "1.1.4.b",
+              "externalId": "NET-12"
+            }
+          ]
+        },
+        {
+          "id": "1.1.5",
+          "name": "",
+          "description": "Are groups, roles, and responsibilities for logical management of network components assigned and documented in the firewall and router configuration standards?",
+          "controls": [
+            {
+              "id": "1.1.5",
+              "externalId": "NET-13"
+            }
+          ]
+        },
+        {
+          "id": "1.1.6.a",
+          "name": "",
+          "description": "Do firewall and router configuration standards include a documented list of services, protocols, and ports, including business justification and approval for each?",
+          "controls": [
+            {
+              "id": "1.1.6.a",
+              "externalId": "NET-14"
+            }
+          ]
+        },
+        {
+          "id": "1.1.6.b",
+          "name": "",
+          "description": "Are all insecure services, protocols, and ports identified, and are security features documented and implemented for each identified service?",
+          "controls": [
+            {
+              "id": "1.1.6.b",
+              "externalId": "NET-15"
+            }
+          ]
+        },
+        {
+          "id": "1.1.7.a",
+          "name": "",
+          "description": "Do firewall and router configuration standards require review of firewall and router rule sets at least every six months?",
+          "controls": [
+            {
+              "id": "1.1.7.a",
+              "externalId": "NET-16"
+            }
+          ]
+        },
+        {
+          "id": "1.1.7.b",
+          "name": "",
+          "description": "Are firewall and router rule sets reviewed at least every six months?",
+          "controls": [
+            {
+              "id": "1.1.7.b",
+              "externalId": "NET-17"
+            }
+          ]
+        },
+        {
+          "id": "1.2.1.a",
+          "name": "",
+          "description": "Is inbound and outbound traffic restricted to that which is necessary for the cardholder data environment?",
+          "controls": [
+            {
+              "id": "1.2.1.a",
+              "externalId": "NET-19"
+            }
+          ]
+        },
+        {
+          "id": "1.2.1.b",
+          "name": "",
+          "description": "Is all other inbound and outbound traffic specifically denied (for example by using an explicit “deny all” or an implicit deny after allow statement)?",
+          "controls": [
+            {
+              "id": "1.2.1.b",
+              "externalId": "NET-20"
+            }
+          ]
+        },
+        {
+          "id": "1.2.2",
+          "name": "",
+          "description": "Are router configuration files secured from unauthorized access and synchronized—for example, the running (or active) configuration matches the start-up configuration (used when machines are booted)?",
+          "controls": [
+            {
+              "id": "1.2.2",
+              "externalId": "CFG-4"
+            }
+          ]
+        },
+        {
+          "id": "1.2.3",
+          "name": "",
+          "description": "Are perimeter firewalls installed between all wireless networks and the cardholder data environment, and are these firewalls configured to deny or, if traffic is necessary for business purposes, permit only authorized traffic between the wireless environment and the cardholder data environment?",
+          "controls": [
+            {
+              "id": "1.2.3",
+              "externalId": "NET-21"
+            }
+          ]
+        },
+        {
+          "id": "1.3.1",
+          "name": "",
+          "description": "Is a DMZ implemented to limit inbound traffic to only system components that provide authorized publicly accessible services, protocols, and ports?",
+          "controls": [
+            {
+              "id": "1.3.1",
+              "externalId": "SEA-6"
+            }
+          ]
+        },
+        {
+          "id": "1.3.2",
+          "name": "",
+          "description": "Is inbound Internet traffic limited to IP addresses within the DMZ?",
+          "controls": [
+            {
+              "id": "1.3.2",
+              "externalId": "NET-23"
+            }
+          ]
+        },
+        {
+          "id": "1.3.3",
+          "name": "",
+          "description": "Are anti-spoofing measures implemented to detect and block forged sourced IP addresses from entering the network? \n\n(For example, block traffic originating from the internet with an internal address.)",
+          "controls": [
+            {
+              "id": "1.3.3",
+              "externalId": "NET-24"
+            }
+          ]
+        },
+        {
+          "id": "1.3.4",
+          "name": "",
+          "description": "Is outbound traffic from the cardholder data environment to the Internet explicitly authorized?",
+          "controls": [
+            {
+              "id": "1.3.4",
+              "externalId": "NET-25"
+            }
+          ]
+        },
+        {
+          "id": "1.3.5",
+          "name": "",
+          "description": "Are only established connections permitted into the network?",
+          "controls": [
+            {
+              "id": "1.3.5",
+              "externalId": "NET-26"
+            }
+          ]
+        },
+        {
+          "id": "1.3.6",
+          "name": "",
+          "description": "Are system components that store cardholder data (such as a database) placed in an internal network zone, segregated from the DMZ and other untrusted networks?",
+          "controls": [
+            {
+              "id": "1.3.6",
+              "externalId": "NET-27"
+            }
+          ]
+        },
+        {
+          "id": "1.3.7.a",
+          "name": "",
+          "description": "Are methods in place to prevent the disclosure of private IP addresses and routing information to the Internet?\n\nNote: Methods to obscure IP addressing may include, but are not limited to:\n- Network Address Translation (NAT)\n- Placing servers containing cardholder data behind proxy servers/firewalls, \n- Removal or filtering of route advertisements for private networks that employ registered addressing,\n- Internal use of RFC1918 address space instead of registered addresses.",
+          "controls": [
+            {
+              "id": "1.3.7.a",
+              "externalId": "SEA-7"
+            }
+          ]
+        },
+        {
+          "id": "1.3.7.b",
+          "name": "",
+          "description": "Is any disclosure of private IP addresses and routing information to external entities authorized?",
+          "controls": [
+            {
+              "id": "1.3.7.b",
+              "externalId": "SEA-8"
+            }
+          ]
+        },
+        {
+          "id": "1.4.a",
+          "name": "",
+          "description": "Is personal firewall software (or equivalent functionality) installed and active on any portable computing devices (including company and/or employee-owned) that connect to the Internet when outside the network (for example, laptops used by employees), and which are also used to access the CDE?",
+          "controls": [
+            {
+              "id": "1.4.a",
+              "externalId": "END-6"
+            }
+          ]
+        },
+        {
+          "id": "1.4.b",
+          "name": "",
+          "description": "Is the personal firewall software (or equivalent functionality) configured to specific configuration settings, actively running, and not alterable by users of mobile and/or employee-owned devices?",
+          "controls": [
+            {
+              "id": "1.4.b",
+              "externalId": "END-7"
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "name": "",
+          "description": "Are security policies and operational procedures for managing firewalls: \n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "1.5",
+              "externalId": "SAT-9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 2",
+      "name": "Do not use vendor-supplied defaults for system passwords and other security parameters",
+      "optional": false,
+      "sections": [
+        {
+          "id": "2.1.a",
+          "name": "",
+          "description": "Are encryption keys changed from default at installation, and changed anytime anyone with knowledge of the keys leaves the company or changes positions?",
+          "controls": [
+            {
+              "id": "2.1.a",
+              "externalId": "IAC-36"
+            }
+          ]
+        },
+        {
+          "id": "2.1.b",
+          "name": "",
+          "description": "Are default SNMP community strings on wireless devices changed at installation?",
+          "controls": [
+            {
+              "id": "2.1.b",
+              "externalId": "IAC-37"
+            }
+          ]
+        },
+        {
+          "id": "2.1.1.a",
+          "name": "",
+          "description": "Are default passwords/passphrases on access points changed at installation?",
+          "controls": [
+            {
+              "id": "2.1.1.a",
+              "externalId": "IAC-38"
+            }
+          ]
+        },
+        {
+          "id": "2.1.1.b",
+          "name": "",
+          "description": "Is firmware on wireless devices updated to support strong encryption for authentication and transmission over wireless networks?",
+          "controls": [
+            {
+              "id": "2.1.1.b",
+              "externalId": "IAC-39"
+            }
+          ]
+        },
+        {
+          "id": "2.1.1.c",
+          "name": "",
+          "description": "Are other security-related wireless vendor defaults changed, if applicable?",
+          "controls": [
+            {
+              "id": "2.1.1.c",
+              "externalId": "IAC-40"
+            }
+          ]
+        },
+        {
+          "id": "2.1.1.d",
+          "name": "",
+          "description": "Are vendor-supplied defaults always changed before installing a system on the network?\n\nThis applies to ALL default passwords, including but not limited to those used by operating systems, software that provides security services, application and system accounts, point-of-sale (POS) terminals, payment applications, Simple Network Management Protocol (SNMP) community strings, etc.).",
+          "controls": [
+            {
+              "id": "2.1.1.d",
+              "externalId": "IAC-41"
+            }
+          ]
+        },
+        {
+          "id": "2.1.1.e",
+          "name": "",
+          "description": "Are unnecessary default accounts removed or disabled before installing a system on the network?",
+          "controls": [
+            {
+              "id": "2.1.1.e",
+              "externalId": "IAC-42"
+            }
+          ]
+        },
+        {
+          "id": "2.2.a",
+          "name": "",
+          "description": "Is only one primary function implemented per server, to prevent functions that require different security levels from co-existing on the same server?\n\nFor example, web servers, database servers, and DNS should be implemented on separate servers.",
+          "controls": [
+            {
+              "id": "2.2.a",
+              "externalId": "CFG-5"
+            }
+          ]
+        },
+        {
+          "id": "2.2.b",
+          "name": "",
+          "description": "If virtualization technologies are used, is only one primary function implemented per virtual system component or device?",
+          "controls": [
+            {
+              "id": "2.2.b",
+              "externalId": "CFG-6"
+            }
+          ]
+        },
+        {
+          "id": "2.2.c",
+          "name": "",
+          "description": "Are only necessary services, protocols, daemons, etc. enabled as required for the function of the system (services and protocols not directly needed to perform the device’s specified function are disabled)?",
+          "controls": [
+            {
+              "id": "2.2.c",
+              "externalId": "CFG-7"
+            }
+          ]
+        },
+        {
+          "id": "2.2.d",
+          "name": "",
+          "description": "Are all enabled insecure services, daemons, or protocols justified per documented configuration standards?",
+          "controls": [
+            {
+              "id": "2.2.d",
+              "externalId": "CFG-8"
+            }
+          ]
+        },
+        {
+          "id": "2.2.1.a",
+          "name": "",
+          "description": "Are additional security features documented and implemented for any required services, protocols or daemons that are considered to be insecure?\n\nNote: Where SSL/early TLS is used, the requirements in Appendix A2 must be completed.",
+          "controls": [
+            {
+              "id": "2.2.1.a",
+              "externalId": "CFG-9"
+            }
+          ]
+        },
+        {
+          "id": "2.2.1.b",
+          "name": "",
+          "description": "Are system administrators and/or personnel that configure system components knowledgeable about common security parameter settings for those system components?",
+          "controls": [
+            {
+              "id": "2.2.1.b",
+              "externalId": "CFG-10"
+            }
+          ]
+        },
+        {
+          "id": "2.2.2.a",
+          "name": "",
+          "description": "Are common system security parameters settings included in the system configuration standards?",
+          "controls": [
+            {
+              "id": "2.2.2.a",
+              "externalId": "CFG-11"
+            }
+          ]
+        },
+        {
+          "id": "2.2.2.b",
+          "name": "",
+          "description": "Are security parameter settings set appropriately on system components?",
+          "controls": [
+            {
+              "id": "2.2.2.b",
+              "externalId": "CFG-12"
+            }
+          ]
+        },
+        {
+          "id": "2.2.3",
+          "name": "",
+          "description": "Has all unnecessary functionality—such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers—been removed?",
+          "controls": [
+            {
+              "id": "2.2.3",
+              "externalId": "CRY-16"
+            }
+          ]
+        },
+        {
+          "id": "2.2.4.a",
+          "name": "",
+          "description": "Are enabled functions documented and do they support secure configuration?",
+          "controls": [
+            {
+              "id": "2.2.4.a",
+              "externalId": "CFG-13"
+            }
+          ]
+        },
+        {
+          "id": "2.2.4.b",
+          "name": "",
+          "description": "Is only documented functionality present on system components?",
+          "controls": [
+            {
+              "id": "2.2.4.b",
+              "externalId": "CFG-14"
+            }
+          ]
+        },
+        {
+          "id": "2.2.4.c",
+          "name": "",
+          "description": "Are configuration standards developed for all system components and are they consistent with industry-accepted system hardening standards? \n\nSources of industry-accepted system hardening standards may include, but are not limited to, SysAdmin Audit Network Security (SANS) Institute, National Institute of Standards Technology (NIST), International Organization for Standardization (ISO), and Center for Internet Security (CIS).",
+          "controls": [
+            {
+              "id": "2.2.4.c",
+              "externalId": "CFG-15"
+            }
+          ]
+        },
+        {
+          "id": "2.2.5.a",
+          "name": "",
+          "description": "Are system configuration standards updated as new vulnerability issues are identified, as defined in Requirement 6.1?",
+          "controls": [
+            {
+              "id": "2.2.5.a",
+              "externalId": "CFG-16"
+            }
+          ]
+        },
+        {
+          "id": "2.2.5.b",
+          "name": "",
+          "description": "Are system configuration standards applied when new systems are configured?",
+          "controls": [
+            {
+              "id": "2.2.5.b",
+              "externalId": "CFG-17"
+            }
+          ]
+        },
+        {
+          "id": "2.2.5.c",
+          "name": "",
+          "description": "Do system configuration standards include all of the following: \n- Changing of all vendor-supplied defaults and elimination of unnecessary default accounts?\n- Implementing only one primary function per server to prevent functions that require different security levels from co-existing on the same server?\n- Enabling only necessary services, protocols, daemons, etc., as required for the function of the system?\n- Implementing additional security features for any required services, protocols or daemons that are considered to be insecure?\n- Configuring system security parameters to prevent misuse?\n- Removing all unnecessary functionality, such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers?",
+          "controls": [
+            {
+              "id": "2.2.5.c",
+              "externalId": "CFG-18"
+            }
+          ]
+        },
+        {
+          "id": "2.3.a",
+          "name": "",
+          "description": "Is all non-console administrative access encrypted with strong cryptography, and is a strong encryption method invoked before the administrator’s password is requested?",
+          "controls": [
+            {
+              "id": "2.3.a",
+              "externalId": "CRY-18"
+            }
+          ]
+        },
+        {
+          "id": "2.3.b",
+          "name": "",
+          "description": "Are system services and parameter files configured to prevent the use of Telnet and other insecure remote login commands?",
+          "controls": [
+            {
+              "id": "2.3.b",
+              "externalId": "CRY-19"
+            }
+          ]
+        },
+        {
+          "id": "2.3.c",
+          "name": "",
+          "description": "Is administrator access to web-based management interfaces encrypted with strong cryptography?",
+          "controls": [
+            {
+              "id": "2.3.c",
+              "externalId": "CRY-20"
+            }
+          ]
+        },
+        {
+          "id": "2.3.d",
+          "name": "",
+          "description": "For the technology in use, is strong cryptography implemented according to industry best practice and/or vendor recommendations?",
+          "controls": [
+            {
+              "id": "2.3.d",
+              "externalId": "CRY-21"
+            }
+          ]
+        },
+        {
+          "id": "2.4.a",
+          "name": "",
+          "description": "Is an inventory maintained for systems components that are in scope for PCI DSS, including a list of hardware and software components and a description of function/use for each?",
+          "controls": [
+            {
+              "id": "2.4.a",
+              "externalId": "AST-19"
+            }
+          ]
+        },
+        {
+          "id": "2.4.b",
+          "name": "",
+          "description": "Is the documented inventory kept current?",
+          "controls": [
+            {
+              "id": "2.4.b",
+              "externalId": "AST-20"
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "name": "",
+          "description": "Are security policies and operational procedures for managing vendor defaults and other security parameters: \n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "2.5",
+              "externalId": "AST-21"
+            }
+          ]
+        },
+        {
+          "id": "2.6",
+          "name": "",
+          "description": "If you are a shared hosting provider, are your systems configured to protect each entity’s (your customers’) hosted environment and cardholder data? See Appendix A: Additional PCI DSS Requirements for Shared Hosting Providers for specific requirements that must be met.",
+          "controls": [
+            {
+              "id": "2.6",
+              "externalId": "CLD-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 3",
+      "name": "Protect stored cardholder data",
+      "optional": false,
+      "sections": [
+        {
+          "id": "3.1.a",
+          "name": "",
+          "description": "Is data storage amount and retention time limited to that required for legal, regulatory, and/or business requirements?",
+          "controls": [
+            {
+              "id": "3.1.a",
+              "externalId": "DCH-23"
+            }
+          ]
+        },
+        {
+          "id": "3.1.b",
+          "name": "",
+          "description": "Are there defined processes in place for securely deleting cardholder data when no longer needed for legal, regulatory, and/or business reasons?",
+          "controls": [
+            {
+              "id": "3.1.b",
+              "externalId": "DCH-24"
+            }
+          ]
+        },
+        {
+          "id": "3.1.c",
+          "name": "",
+          "description": "Are there specific retention requirements for cardholder data?\n \nFor example, cardholder data needs to be held for X period for Y business reasons.",
+          "controls": [
+            {
+              "id": "3.1.c",
+              "externalId": "DCH-25"
+            }
+          ]
+        },
+        {
+          "id": "3.1.d",
+          "name": "",
+          "description": "Is there a quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention requirements?",
+          "controls": [
+            {
+              "id": "3.1.d",
+              "externalId": "DCH-26"
+            }
+          ]
+        },
+        {
+          "id": "3.1.e",
+          "name": "",
+          "description": "Does all stored cardholder data meet the requirements defined in the data-retention policy?",
+          "controls": [
+            {
+              "id": "3.1.e",
+              "externalId": "DCH-27"
+            }
+          ]
+        },
+        {
+          "id": "3.2.a",
+          "name": "",
+          "description": "For issuers and/or companies that support issuing services and store sensitive authentication data, is there a documented business justification for the storage of sensitive authentication data?",
+          "controls": [
+            {
+              "id": "3.2.a",
+              "externalId": "DCH-28"
+            }
+          ]
+        },
+        {
+          "id": "3.2.b",
+          "name": "",
+          "description": "For issuers and/or companies that support issuing services and store sensitive authentication data: Is the data secured?",
+          "controls": [
+            {
+              "id": "3.2.b",
+              "externalId": "DCH-29"
+            }
+          ]
+        },
+        {
+          "id": "3.2.c",
+          "name": "",
+          "description": "For non issuers, is sensitive authentication data deleted or rendered unrecoverable upon completion of the authorization process?",
+          "controls": [
+            {
+              "id": "3.2.c",
+              "externalId": "DCH-30"
+            }
+          ]
+        },
+        {
+          "id": "3.2.1",
+          "name": "",
+          "description": "The full contents of any track (from the magnetic stripe located on the back of a card, equivalent data contained on a chip, or elsewhere) are not stored after authorization?\n\nThis data is alternatively called full track, track, track 1, track 2, and magnetic-stripe data.\n\nNote: In the normal course of business, the following data elements from the magnetic stripe may need to be retained: \n- The cardholder’s name, \n- Primary account number (PAN), \n- Expiration date, and \n- Service code  \n\nTo minimize risk, store only these data elements as needed for business.",
+          "controls": [
+            {
+              "id": "3.2.1",
+              "externalId": "DCH-32"
+            }
+          ]
+        },
+        {
+          "id": "3.2.2",
+          "name": "",
+          "description": "The card verification code or value (three-digit or four-digit number printed on the front or back of a payment card) is not stored after authorization?",
+          "controls": [
+            {
+              "id": "3.2.2",
+              "externalId": "DCH-33"
+            }
+          ]
+        },
+        {
+          "id": "3.2.3",
+          "name": "",
+          "description": "The personal identification number (PIN) or the encrypted PIN block is not stored after authorization?",
+          "controls": [
+            {
+              "id": "3.2.3",
+              "externalId": "DCH-34"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "name": "",
+          "description": "Is the PAN masked when displayed (the first six and last four digits are the maximum number of digits to be displayed) such that only personnel with a legitimate business need can see more than the first six/last four digits of the PAN?\n\nNote: This requirement does not supersede stricter requirements in place for displays of cardholder data—for example, legal or payment card brand requirements for point-of-sale (POS) receipts.",
+          "controls": [
+            {
+              "id": "3.3",
+              "externalId": "DCH-35"
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "name": "",
+          "description": "Is PAN rendered unreadable anywhere it is stored (including data repositories, portable digital media, backup media, and in audit logs), by using any of the following approaches?\n- One-way hashes based on strong cryptography (hash must be of the entire PAN)\n- Truncation (hashing cannot be used to replace the truncated segment of PAN)\n- Index tokens and pads (pads must be securely stored)\n- Strong cryptography with associated key management processes and procedures.\n\nNote: It is a relatively trivial effort for a malicious individual to reconstruct original PAN data if they have access to both the truncated and hashed version of a PAN. Where hashed and truncated versions of the same PAN are present in an entity’s environment, additional controls must be in place to ensure that the hashed and truncated versions cannot be correlated to reconstruct the original PAN.",
+          "controls": [
+            {
+              "id": "3.4",
+              "externalId": "CRY-22"
+            }
+          ]
+        },
+        {
+          "id": "3.4.1.a",
+          "name": "",
+          "description": "Is logical access to encrypted file systems managed separately and independently of native operating system authentication and access control mechanisms (for example, by not using local user account databases or general network login credentials)?",
+          "controls": [
+            {
+              "id": "3.4.1.a",
+              "externalId": "CRY-24"
+            }
+          ]
+        },
+        {
+          "id": "3.4.1.b",
+          "name": "",
+          "description": "Are cryptographic keys stored securely (for example, stored on removable media that is adequately protected with strong access controls)?",
+          "controls": [
+            {
+              "id": "3.4.1.b",
+              "externalId": "CRY-25"
+            }
+          ]
+        },
+        {
+          "id": "3.4.1.c",
+          "name": "",
+          "description": "Is cardholder data on removable media encrypted wherever stored?\n\nNote: If disk encryption is not used to encrypt removable media, the data stored on this media will need to be rendered unreadable through some other method.",
+          "controls": [
+            {
+              "id": "3.4.1.c",
+              "externalId": "CRY-26"
+            }
+          ]
+        },
+        {
+          "id": "3.5.1",
+          "name": "",
+          "description": "(b)\tFor service providers only: Is a documented description of the cryptographic architecture maintained that includes:\n- Details of all algorithms, protocols, and keys used for the protection of cardholder data, including key strength and expiry date,\n- Description of the key usage for each key,\n- Inventory of any HSMs and other SCDs used for key management?",
+          "controls": [
+            {
+              "id": "3.5.1",
+              "externalId": "CRY-28"
+            }
+          ]
+        },
+        {
+          "id": "3.5.2",
+          "name": "",
+          "description": "Is access to cryptographic keys restricted to the fewest number of custodians necessary?",
+          "controls": [
+            {
+              "id": "3.5.2",
+              "externalId": "CRY-29"
+            }
+          ]
+        },
+        {
+          "id": "3.5.3",
+          "name": "",
+          "description": "Are secret and private cryptographic keys used to encrypt/decrypt cardholder data stored in one (or more) of the following forms at all times?\n- Encrypted with a key-encrypting key that is at least as strong as the data-encrypting key, and that is stored separately from the data-encrypting key\n- Within a secure cryptographic device (such as a hardware (host) security module (HSM) or PTS-approved point-of-interaction device)\n- As at least two full-length key components or key shares, in accordance with an industry-accepted method.\n\nNote: It is not required that public keys be stored in one of these forms.",
+          "controls": [
+            {
+              "id": "3.5.3",
+              "externalId": "CRY-30"
+            }
+          ]
+        },
+        {
+          "id": "3.5.4",
+          "name": "",
+          "description": "Are cryptographic keys stored in the fewest possible locations?",
+          "controls": [
+            {
+              "id": "3.5.4",
+              "externalId": "CRY-31"
+            }
+          ]
+        },
+        {
+          "id": "3.6.a",
+          "name": "",
+          "description": "Are all key-management processes and procedures fully documented and implemented for cryptographic keys used for encryption of cardholder data?",
+          "controls": [
+            {
+              "id": "3.6.a",
+              "externalId": "CRY-32"
+            }
+          ]
+        },
+        {
+          "id": "3.6.b",
+          "name": "",
+          "description": "(b)\tFor service providers only: If keys are shared with customers for transmission or storage of cardholder data, is documentation provided to customers that includes guidance on how to securely transmit, store and update customer’s keys, in accordance with requirements 3.6.1 through 3.6.8 below?",
+          "controls": [
+            {
+              "id": "3.6.b",
+              "externalId": "CRY-33"
+            }
+          ]
+        },
+        {
+          "id": "3.6.1",
+          "name": "",
+          "description": "Do cryptographic key procedures include the generation of strong cryptographic keys?",
+          "controls": [
+            {
+              "id": "3.6.1",
+              "externalId": "CRY-35"
+            }
+          ]
+        },
+        {
+          "id": "3.6.2",
+          "name": "",
+          "description": "Do cryptographic key procedures include secure cryptographic key distribution?",
+          "controls": [
+            {
+              "id": "3.6.2",
+              "externalId": "CRY-36"
+            }
+          ]
+        },
+        {
+          "id": "3.6.3",
+          "name": "",
+          "description": "Do cryptographic key procedures include secure cryptographic key storage?",
+          "controls": [
+            {
+              "id": "3.6.3",
+              "externalId": "CRY-37"
+            }
+          ]
+        },
+        {
+          "id": "3.6.4",
+          "name": "",
+          "description": "Do cryptographic key procedures include cryptographic key changes for keys that have reached the end of their defined cryptoperiod (for example, after a defined period of time has passed and/or after a certain amount of cipher-text has been produced by a given key), as defined by the associated application vendor or key owner, and based on industry best practices and guidelines (for example, NIST Special Publication 800-57)?",
+          "controls": [
+            {
+              "id": "3.6.4",
+              "externalId": "CRY-38"
+            }
+          ]
+        },
+        {
+          "id": "3.6.5.a",
+          "name": "",
+          "description": "Do cryptographic key procedures include retirement or replacement (for example, archiving, destruction, and/or revocation) of cryptographic keys when the integrity of the key has been weakened (for example, departure of an employee with knowledge of a clear-text key)?",
+          "controls": [
+            {
+              "id": "3.6.5.a",
+              "externalId": "CRY-39"
+            }
+          ]
+        },
+        {
+          "id": "3.6.5.b",
+          "name": "",
+          "description": "Do cryptographic key procedures include replacement of known or suspected compromised keys?",
+          "controls": [
+            {
+              "id": "3.6.5.b",
+              "externalId": "CRY-40"
+            }
+          ]
+        },
+        {
+          "id": "3.6.5.c",
+          "name": "",
+          "description": "If retired or replaced cryptographic keys are retained, are these keys only used for decryption/verification purposes, and not used for encryption operations?",
+          "controls": [
+            {
+              "id": "3.6.5.c",
+              "externalId": "CRY-41"
+            }
+          ]
+        },
+        {
+          "id": "3.6.6",
+          "name": "",
+          "description": "If manual clear-text key-management operations are used, do cryptographic key procedures include split knowledge and dual control of cryptographic keys as follows:\n- Do split knowledge procedures require that key components are under the control of at least two people who only have knowledge of their own key components?\n\nAND\n\n- Do dual control procedures require that at least two people are required to perform any key management operations and no one person has access to the authentication materials (for example, passwords or keys) of another?\n\nNote: Examples of manual key management operations include, but are not limited to: key generation, transmission, loading, storage and destruction.",
+          "controls": [
+            {
+              "id": "3.6.6",
+              "externalId": "CRY-42"
+            }
+          ]
+        },
+        {
+          "id": "3.6.7",
+          "name": "",
+          "description": "Do cryptographic key procedures include the prevention of unauthorized substitution of cryptographic keys?",
+          "controls": [
+            {
+              "id": "3.6.7",
+              "externalId": "CRY-43"
+            }
+          ]
+        },
+        {
+          "id": "3.6.8",
+          "name": "",
+          "description": "Are cryptographic key custodians required to formally acknowledge (in writing or electronically) that they understand and accept their key-custodian responsibilities?",
+          "controls": [
+            {
+              "id": "3.6.8",
+              "externalId": "CRY-44"
+            }
+          ]
+        },
+        {
+          "id": "3.7",
+          "name": "",
+          "description": "Are security policies and operational procedures for protecting stored cardholder data:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "3.7",
+              "externalId": "SAT-10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 4",
+      "name": "Encrypt transmission of cardholder data across open, public networks",
+      "optional": false,
+      "sections": [
+        {
+          "id": "4.1.a",
+          "name": "",
+          "description": "Are strong cryptography and security protocols used to safeguard sensitive cardholder data during transmission over open, public networks? \n\nNote: Where SSL/early TLS is used, the requirements in Appendix A2 must be completed.\n\nExamples of open, public networks include but are not limited to the Internet; wireless technologies, including 802.11 and Bluetooth; cellular technologies, for example, Global System for Mobile communications (GSM), Code division multiple access (CDMA); and General Packet Radio Service (GPRS).",
+          "controls": [
+            {
+              "id": "4.1.a",
+              "externalId": "CRY-46"
+            }
+          ]
+        },
+        {
+          "id": "4.1.b",
+          "name": "",
+          "description": "Are only trusted keys and/or certificates accepted?",
+          "controls": [
+            {
+              "id": "4.1.b",
+              "externalId": "CRY-47"
+            }
+          ]
+        },
+        {
+          "id": "4.1.c",
+          "name": "",
+          "description": "Are security protocols implemented to use only secure configurations, and to not support insecure versions or configurations?",
+          "controls": [
+            {
+              "id": "4.1.c",
+              "externalId": "CRY-48"
+            }
+          ]
+        },
+        {
+          "id": "4.1.d",
+          "name": "",
+          "description": "Is the proper encryption strength implemented for the encryption methodology in use (check vendor recommendations/best practices)?",
+          "controls": [
+            {
+              "id": "4.1.d",
+              "externalId": "CRY-49"
+            }
+          ]
+        },
+        {
+          "id": "4.1.e",
+          "name": "",
+          "description": "For TLS implementations, is TLS enabled whenever cardholder data is transmitted or received? \n\nFor example, for browser-based implementations:\n- “HTTPS” appears as the browser Universal Record Locator (URL) protocol, and\n- Cardholder data is only requested if “HTTPS” appears as part of the URL.",
+          "controls": [
+            {
+              "id": "4.1.e",
+              "externalId": "CRY-50"
+            }
+          ]
+        },
+        {
+          "id": "4.1.1",
+          "name": "",
+          "description": "Are industry best practices used to implement strong encryption for authentication and transmission for wireless networks transmitting cardholder data or connected to the cardholder data environment?",
+          "controls": [
+            {
+              "id": "4.1.1",
+              "externalId": "CRY-45"
+            }
+          ]
+        },
+        {
+          "id": "4.2.a",
+          "name": "",
+          "description": "Are PANs rendered unreadable or secured with strong cryptography whenever they are sent via end-user messaging technologies (for example, e-mail, instant messaging, SMS, chat, etc.)?",
+          "controls": [
+            {
+              "id": "4.2.a",
+              "externalId": "CRY-51"
+            }
+          ]
+        },
+        {
+          "id": "4.2.b",
+          "name": "",
+          "description": "Are policies in place that state that unprotected PANs are not to be sent via end-user messaging technologies?",
+          "controls": [
+            {
+              "id": "4.2.b",
+              "externalId": "NET-28"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "name": "",
+          "description": "Are security policies and operational procedures for encrypting transmissions of cardholder data:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "4.3",
+              "externalId": "SAT-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 5",
+      "name": "Protect all systems against malware and regularly update anti-virus software or programs",
+      "optional": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "name": "",
+          "description": "Is anti-virus software deployed on all systems commonly affected by malicious software?",
+          "controls": [
+            {
+              "id": "5.1",
+              "externalId": "END-8"
+            }
+          ]
+        },
+        {
+          "id": "5.1.1",
+          "name": "",
+          "description": "Are anti-virus programs capable of detecting, removing, and protecting against all known types of malicious software (for example, viruses, Trojans, worms, spyware, adware, and rootkits)?",
+          "controls": [
+            {
+              "id": "5.1.1",
+              "externalId": "END-9"
+            }
+          ]
+        },
+        {
+          "id": "5.1.2",
+          "name": "",
+          "description": "Are periodic evaluations performed to identify and evaluate evolving malware threats in order to confirm whether those systems considered to not be commonly affected by malicious software continue as such?",
+          "controls": [
+            {
+              "id": "5.1.2",
+              "externalId": "END-10"
+            }
+          ]
+        },
+        {
+          "id": "5.2.a",
+          "name": "",
+          "description": "Are all anti-virus software and definitions kept current?",
+          "controls": [
+            {
+              "id": "5.2.a",
+              "externalId": "END-12"
+            }
+          ]
+        },
+        {
+          "id": "5.2.b",
+          "name": "",
+          "description": "Are automatic updates and periodic scans enabled and being performed?",
+          "controls": [
+            {
+              "id": "5.2.b",
+              "externalId": "END-13"
+            }
+          ]
+        },
+        {
+          "id": "5.2.c",
+          "name": "",
+          "description": "Are all anti-virus mechanisms generating audit logs, and are logs retained in accordance with PCI DSS Requirement 10.7?",
+          "controls": [
+            {
+              "id": "5.2.c",
+              "externalId": "END-14"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "name": "",
+          "description": "Are all anti-virus mechanisms:\n- Actively running?\n- Unable to be disabled or altered by users?\n\nNote: Anti-virus solutions may be temporarily disabled only if there is legitimate technical need, as authorized by management on a case-by-case basis. If anti-virus protection needs to be disabled for a specific purpose, it must be formally authorized. Additional security measures may also need to be implemented for the period of time during which anti-virus protection is not active.",
+          "controls": [
+            {
+              "id": "5.3",
+              "externalId": "END-15"
+            }
+          ]
+        },
+        {
+          "id": "5.4",
+          "name": "",
+          "description": "Are security policies and operational procedures for protecting systems against malware: \n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "5.4",
+              "externalId": "END-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 6",
+      "name": "Develop and maintain secure systems and applications",
+      "optional": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "name": "",
+          "description": "Is there a process to identify security vulnerabilities, including the following:\n- Using reputable outside sources for vulnerability information? \n- Assigning a risk ranking to vulnerabilities that includes identification of all “high” risk and “critical” vulnerabilities? \n\nNote: Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score and/or the classification by the vendor, and/or type of systems affected.\n\nMethods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk assessment strategy.  Risk rankings should, at a minimum, identify all vulnerabilities considered to be a “high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered “critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process or transmit cardholder data.",
+          "controls": [
+            {
+              "id": "6.1",
+              "externalId": "VPM-4"
+            }
+          ]
+        },
+        {
+          "id": "6.2.a",
+          "name": "",
+          "description": "Are all system components and software protected from known vulnerabilities by installing applicable vendor-supplied security patches?",
+          "controls": [
+            {
+              "id": "6.2.a",
+              "externalId": "VPM-5"
+            }
+          ]
+        },
+        {
+          "id": "6.2.b",
+          "name": "",
+          "description": "Are critical security patches installed within one month of release?\n\nNote: Critical security patches should be identified according to the risk ranking process defined in Requirement 6.1.",
+          "controls": [
+            {
+              "id": "6.2.b",
+              "externalId": "VPM-6"
+            }
+          ]
+        },
+        {
+          "id": "6.3.a",
+          "name": "",
+          "description": "Are development, test, and/or custom application accounts, user IDs, and passwords removed before applications become active or are released to customers?",
+          "controls": [
+            {
+              "id": "6.3.a",
+              "externalId": "TDA-12"
+            }
+          ]
+        },
+        {
+          "id": "6.3.b",
+          "name": "",
+          "description": "Is all custom code reviewed prior to release to production or customers to identify any potential coding vulnerability (using either manual or automated processes as follows:\n- Are code changes reviewed by individuals other than the originating code author, and by individuals who are knowledgeable about code review techniques and secure coding practices?\n- Do code reviews ensure code is developed according to secure coding guidelines?\n- Are appropriate corrections are implemented prior to release? \n- Are code review results are reviewed and approved by management prior to release?\n\nNote: This requirement for code reviews applies to all custom code (both internal and public-facing), as part of the system development life cycle. Code reviews can be conducted by knowledgeable internal personnel or third parties. Public-facing web applications are also subject to additional controls, to address ongoing threats and vulnerabilities after implementation, as defined at PCI DSS Requirement 6.6.",
+          "controls": [
+            {
+              "id": "6.3.b",
+              "externalId": "TDA-13"
+            }
+          ]
+        },
+        {
+          "id": "6.3.c",
+          "name": "",
+          "description": "Are software- development processes based on industry standards and/or best practices?",
+          "controls": [
+            {
+              "id": "6.3.c",
+              "externalId": "TDA-14"
+            }
+          ]
+        },
+        {
+          "id": "6.3.1",
+          "name": "",
+          "description": "Is information security included throughout the software-development life cycle?",
+          "controls": [
+            {
+              "id": "6.3.1",
+              "externalId": "TDA-16"
+            }
+          ]
+        },
+        {
+          "id": "6.3.2",
+          "name": "",
+          "description": "Are software applications developed in accordance with PCI DSS (for example, secure authentication and logging)?",
+          "controls": [
+            {
+              "id": "6.3.2",
+              "externalId": "TDA-17"
+            }
+          ]
+        },
+        {
+          "id": "6.4.1.a",
+          "name": "",
+          "description": "Are development/test environments separate from the production environment?",
+          "controls": [
+            {
+              "id": "6.4.1.a",
+              "externalId": "CHG-8"
+            }
+          ]
+        },
+        {
+          "id": "6.4.1.b",
+          "name": "",
+          "description": "Is access control in place to enforce the separation between the development/test environments and the production environment?",
+          "controls": [
+            {
+              "id": "6.4.1.b",
+              "externalId": "CHG-9"
+            }
+          ]
+        },
+        {
+          "id": "6.4.2",
+          "name": "",
+          "description": "Is there separation of duties between personnel assigned to the development/test environments and those assigned to the production environment?",
+          "controls": [
+            {
+              "id": "6.4.2",
+              "externalId": "CHG-10"
+            }
+          ]
+        },
+        {
+          "id": "6.4.3",
+          "name": "",
+          "description": "Are production data (live PANs) not used for testing or development?",
+          "controls": [
+            {
+              "id": "6.4.3",
+              "externalId": "CHG-11"
+            }
+          ]
+        },
+        {
+          "id": "6.4.4",
+          "name": "",
+          "description": "Are test data and accounts removed from system components before the system becomes active / goes into production?",
+          "controls": [
+            {
+              "id": "6.4.4",
+              "externalId": "CHG-12"
+            }
+          ]
+        },
+        {
+          "id": "6.4.5.a",
+          "name": "",
+          "description": "Are change-control procedures documented and require the following? \n- Documentation of impact\n- Documented change control approval by authorized parties\n- Functionality testing to verify that the change does not adversely impact the security of the system\n- Back-out procedures",
+          "controls": [
+            {
+              "id": "6.4.5.a",
+              "externalId": "CHG-13"
+            }
+          ]
+        },
+        {
+          "id": "6.4.5.1",
+          "name": "",
+          "description": "Documentation of impact?",
+          "controls": [
+            {
+              "id": "6.4.5.1",
+              "externalId": "CHG-15"
+            }
+          ]
+        },
+        {
+          "id": "6.4.5.2",
+          "name": "",
+          "description": "Documented approval by authorized parties?",
+          "controls": [
+            {
+              "id": "6.4.5.2",
+              "externalId": "CHG-16"
+            }
+          ]
+        },
+        {
+          "id": "6.4.5.3.a",
+          "name": "",
+          "description": "Functionality testing to verify that the change does not adversely impact the security of the system?",
+          "controls": [
+            {
+              "id": "6.4.5.3.a",
+              "externalId": "CHG-17"
+            }
+          ]
+        },
+        {
+          "id": "6.4.5.3.b",
+          "name": "",
+          "description": "For custom code changes, testing of updates for compliance with PCI DSS Requirement 6.5 before being deployed into production?",
+          "controls": [
+            {
+              "id": "6.4.5.3.b",
+              "externalId": "CHG-18"
+            }
+          ]
+        },
+        {
+          "id": "6.4.5.4",
+          "name": "",
+          "description": "Back-out procedures?",
+          "controls": [
+            {
+              "id": "6.4.5.4",
+              "externalId": "CHG-19"
+            }
+          ]
+        },
+        {
+          "id": "6.4.6",
+          "name": "",
+          "description": "Upon completion of a significant change, are all relevant PCI DSS requirements implemented on all new or changed systems and networks, and documentation updated as applicable?",
+          "controls": [
+            {
+              "id": "6.4.6",
+              "externalId": "CHG-20"
+            }
+          ]
+        },
+        {
+          "id": "6.5.a",
+          "name": "",
+          "description": "Do software-development processes address common coding vulnerabilities?",
+          "controls": [
+            {
+              "id": "6.5.a",
+              "externalId": "VPM-7"
+            }
+          ]
+        },
+        {
+          "id": "6.5.b",
+          "name": "",
+          "description": "Are developers trained at least annually in up-to-date secure coding techniques, including how to avoid common coding vulnerabilities?",
+          "controls": [
+            {
+              "id": "6.5.b",
+              "externalId": "SAT-12"
+            }
+          ]
+        },
+        {
+          "id": "6.5.1",
+          "name": "",
+          "description": "Do coding techniques address injection flaws, particularly SQL injection?\n\nNote: Also consider OS Command Injection, LDAP and XPath injection flaws as well as other injection flaws.",
+          "controls": [
+            {
+              "id": "6.5.1",
+              "externalId": "VPM-9"
+            }
+          ]
+        },
+        {
+          "id": "6.5.2",
+          "name": "",
+          "description": "Do coding techniques address buffer overflow vulnerabilities?",
+          "controls": [
+            {
+              "id": "6.5.2",
+              "externalId": "VPM-10"
+            }
+          ]
+        },
+        {
+          "id": "6.5.3",
+          "name": "",
+          "description": "Do coding techniques address insecure cryptographic storage?",
+          "controls": [
+            {
+              "id": "6.5.3",
+              "externalId": "VPM-11"
+            }
+          ]
+        },
+        {
+          "id": "6.5.4",
+          "name": "",
+          "description": "Do coding techniques address insecure communications?",
+          "controls": [
+            {
+              "id": "6.5.4",
+              "externalId": "VPM-12"
+            }
+          ]
+        },
+        {
+          "id": "6.5.5",
+          "name": "",
+          "description": "Do coding techniques address improper error handling?",
+          "controls": [
+            {
+              "id": "6.5.5",
+              "externalId": "VPM-13"
+            }
+          ]
+        },
+        {
+          "id": "6.5.6",
+          "name": "",
+          "description": "Do coding techniques address all “high risk” vulnerabilities identified in the vulnerability identification process (as defined in PCI DSS Requirement 6.1)?",
+          "controls": [
+            {
+              "id": "6.5.6",
+              "externalId": "VPM-14"
+            }
+          ]
+        },
+        {
+          "id": "6.5.7",
+          "name": "",
+          "description": "Do coding techniques address cross-site scripting (XSS) vulnerabilities?",
+          "controls": [
+            {
+              "id": "6.5.7",
+              "externalId": "VPM-15"
+            }
+          ]
+        },
+        {
+          "id": "6.5.8",
+          "name": "",
+          "description": "Do coding techniques address improper access control such as insecure direct object references, failure to restrict URL access, directory traversal, and failure to restrict user access to functions?",
+          "controls": [
+            {
+              "id": "6.5.8",
+              "externalId": "VPM-16"
+            }
+          ]
+        },
+        {
+          "id": "6.5.9",
+          "name": "",
+          "description": "Do coding techniques address cross-site request forgery (CSRF)?",
+          "controls": [
+            {
+              "id": "6.5.9",
+              "externalId": "VPM-17"
+            }
+          ]
+        },
+        {
+          "id": "6.5.10",
+          "name": "",
+          "description": "Do coding techniques address broken authentication and session management?",
+          "controls": [
+            {
+              "id": "6.5.10",
+              "externalId": "VPM-18"
+            }
+          ]
+        },
+        {
+          "id": "6.6",
+          "name": "",
+          "description": "For public-facing web applications, are new threats and vulnerabilities addressed on an ongoing basis, and are these applications protected against known attacks by applying either of the following methods? \n- Reviewing public-facing web applications via manual or automated application vulnerability security assessment tools or methods, as follows:\n    - At least annually\n    - After any changes\n    - By an organization that specializes in application security\n    - That, at a minimum, all vulnerabilities in Requirement 6.5 are included in the assessment \n    - That all vulnerabilities are corrected\n    - That the application is re-evaluated after the corrections\n\nNote: This assessment is not the same as the vulnerability scans performed for Requirement 11.2.\n\n– OR – \n\n- Installing an automated technical solution that detects and prevents web-based attacks (for example, a web-application firewall) as follows: \n    - Is situated in front of public-facing web applications to detect and prevent web-based attacks.\n    - Is actively running and up to date as applicable.\n    - Is generating audit logs. \n    - Is configured to either block web-based attacks, or generate an alert that is immediately investigated.",
+          "controls": [
+            {
+              "id": "6.6",
+              "externalId": "THR-1"
+            }
+          ]
+        },
+        {
+          "id": "6.7",
+          "name": "",
+          "description": "Are security policies and operational procedures for developing and maintaining secure systems and applications:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "6.7",
+              "externalId": "SAT-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 7",
+      "name": "Restrict access to cardholder data by business need to know",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "name": "",
+          "description": "Is access to system components and cardholder data limited to only those individuals whose jobs require such access, as follows:\n\nIs there a written policy for access control that incorporates the following?  \n- Defining access needs and privilege assignments for each role  \n- Restriction of access to privileged user IDs to least privileges necessary to perform job responsibilities,\n- Assignment of access based on individual personnel’s job classification and function  \n- Documented approval (electronically or in writing) by authorized parties for all access, including listing of specific privileges approved",
+          "controls": [
+            {
+              "id": "7.1",
+              "externalId": "IAC-43"
+            }
+          ]
+        },
+        {
+          "id": "7.1.1",
+          "name": "",
+          "description": "Are access needs for each role defined, including:\n- System components and data resources that each role needs to access for their job function?\n- Level of privilege required (for example, user, administrator, etc.) for accessing resources?",
+          "controls": [
+            {
+              "id": "7.1.1",
+              "externalId": "IAC-45"
+            }
+          ]
+        },
+        {
+          "id": "7.1.2",
+          "name": "",
+          "description": "Is access to privileged user IDs restricted as follows: \n- To least privileges necessary to perform job responsibilities?\n- Assigned only to roles that specifically require that privileged access?",
+          "controls": [
+            {
+              "id": "7.1.2",
+              "externalId": "IAC-46"
+            }
+          ]
+        },
+        {
+          "id": "7.1.3",
+          "name": "",
+          "description": "Is access assigned based on individual personnel’s job classification and function?",
+          "controls": [
+            {
+              "id": "7.1.3",
+              "externalId": "IAC-47"
+            }
+          ]
+        },
+        {
+          "id": "7.1.4",
+          "name": "",
+          "description": "Is documented approval by authorized parties required, specifying required privileges?",
+          "controls": [
+            {
+              "id": "7.1.4",
+              "externalId": "IAC-48"
+            }
+          ]
+        },
+        {
+          "id": "7.2.1",
+          "name": "",
+          "description": "Is the access control system(s) in place on all system components?",
+          "controls": [
+            {
+              "id": "7.2.1",
+              "externalId": "IAC-50"
+            }
+          ]
+        },
+        {
+          "id": "7.2.2",
+          "name": "",
+          "description": "Is the access control system(s) configured to enforce privileges assigned to individuals based on job classification and function?",
+          "controls": [
+            {
+              "id": "7.2.2",
+              "externalId": "IAC-51"
+            }
+          ]
+        },
+        {
+          "id": "7.2.3",
+          "name": "",
+          "description": "Does the access control system(s) have a default “deny-all” setting?",
+          "controls": [
+            {
+              "id": "7.2.3",
+              "externalId": "IAC-52"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "name": "",
+          "description": "Are security policies and operational procedures for restricting access to cardholder data:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "7.3",
+              "externalId": "SAT-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 8",
+      "name": "Identify and authenticate access to system components",
+      "optional": false,
+      "sections": [
+        {
+          "id": "8.1.1",
+          "name": "",
+          "description": "Are all users assigned a unique ID before allowing them to access system components or cardholder data?",
+          "controls": [
+            {
+              "id": "8.1.1",
+              "externalId": "IAC-54"
+            }
+          ]
+        },
+        {
+          "id": "8.1.2",
+          "name": "",
+          "description": "Are additions, deletions, and modifications of user IDs, credentials, and other identifier objects controlled such that user IDs are implemented only as authorized (including with specified privileges)?",
+          "controls": [
+            {
+              "id": "8.1.2",
+              "externalId": "IAC-55"
+            }
+          ]
+        },
+        {
+          "id": "8.1.3",
+          "name": "",
+          "description": "Is access for any terminated users immediately deactivated or removed?",
+          "controls": [
+            {
+              "id": "8.1.3",
+              "externalId": "IAC-56"
+            }
+          ]
+        },
+        {
+          "id": "8.1.4",
+          "name": "",
+          "description": "Are inactive user accounts either removed or disabled within 90 days?",
+          "controls": [
+            {
+              "id": "8.1.4",
+              "externalId": "IAC-57"
+            }
+          ]
+        },
+        {
+          "id": "8.1.5.a",
+          "name": "",
+          "description": "Are accounts used by third parties to access, support, or maintain system components via remote access enabled only during the time period needed and disabled when not in use?",
+          "controls": [
+            {
+              "id": "8.1.5.a",
+              "externalId": "IAC-58"
+            }
+          ]
+        },
+        {
+          "id": "8.1.5.b",
+          "name": "",
+          "description": "Are third party remote access accounts monitored when in use?",
+          "controls": [
+            {
+              "id": "8.1.5.b",
+              "externalId": "IAC-59"
+            }
+          ]
+        },
+        {
+          "id": "8.1.6.a",
+          "name": "",
+          "description": "Are repeated access attempts limited by locking out the user ID after no more than six attempts?",
+          "controls": [
+            {
+              "id": "8.1.6.a",
+              "externalId": "IAC-60"
+            }
+          ]
+        },
+        {
+          "id": "8.1.6.b",
+          "name": "",
+          "description": "(b)\tFor service providers only: Are non-consumer customer passwords temporarily locked-out after not more than six invalid access attempts?",
+          "controls": [
+            {
+              "id": "8.1.6.b",
+              "externalId": "IAC-61"
+            }
+          ]
+        },
+        {
+          "id": "8.1.7",
+          "name": "",
+          "description": "Once a user account is locked out, is the lockout duration set to a minimum of 30 minutes or until an administrator enables the user ID?",
+          "controls": [
+            {
+              "id": "8.1.7",
+              "externalId": "IAC-62"
+            }
+          ]
+        },
+        {
+          "id": "8.1.8",
+          "name": "",
+          "description": "If a session has been idle for more than 15 minutes, are users required to re-authenticate (for example, re-enter the password) to re-activate the terminal or session?",
+          "controls": [
+            {
+              "id": "8.1.8",
+              "externalId": "IAC-63"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "name": "",
+          "description": "In addition to assigning a unique ID, is one or more of the following methods employed to authenticate all users?\n- Something you know, such as a password or passphrase\n- Something you have, such as a token device or smart card\n- Something you are, such as a biometric",
+          "controls": [
+            {
+              "id": "8.2",
+              "externalId": "IAC-64"
+            }
+          ]
+        },
+        {
+          "id": "8.2.1.a",
+          "name": "",
+          "description": "Is strong cryptography used to render all authentication credentials (such as passwords/passphrases) unreadable during transmission and storage on all system components?",
+          "controls": [
+            {
+              "id": "8.2.1.a",
+              "externalId": "CRY-52"
+            }
+          ]
+        },
+        {
+          "id": "8.2.1.b",
+          "name": "",
+          "description": "(b)\tFor service providers only: Is strong cryptography used to render all non-consumer customers’ authentication credentials (such as passwords/passphrases) unreadable during transmission and storage on all system components? This testing procedure applies only to service providers.",
+          "controls": [
+            {
+              "id": "8.2.1.b",
+              "externalId": "CRY-53"
+            }
+          ]
+        },
+        {
+          "id": "8.2.2",
+          "name": "",
+          "description": "Is user identity verified before modifying any authentication credential (for example, performing password resets, provisioning new tokens, or generating new keys)?",
+          "controls": [
+            {
+              "id": "8.2.2",
+              "externalId": "IAC-65"
+            }
+          ]
+        },
+        {
+          "id": "8.2.3.a",
+          "name": "",
+          "description": "Are user password parameters configured to require passwords/passphrases meet the following?\n- A minimum password length of at least seven characters\n- Contain both numeric and alphabetic characters\n\nAlternatively, the passwords/passphrases must have complexity and strength at least equivalent to the parameters specified above.",
+          "controls": [
+            {
+              "id": "8.2.3.a",
+              "externalId": "IAC-66"
+            }
+          ]
+        },
+        {
+          "id": "8.2.3.b",
+          "name": "",
+          "description": "(b)\tFor service providers only: Are non-consumer customer passwords required to meet the following minimum length and complexity requirements?\n\\-\tA minimum password length of at least seven characters\n\\-\tContain both numeric and alphabetic characters",
+          "controls": [
+            {
+              "id": "8.2.3.b",
+              "externalId": "IAC-67"
+            }
+          ]
+        },
+        {
+          "id": "8.2.4.a",
+          "name": "",
+          "description": "Are user passwords/passphrases changed at least once every 90 days?",
+          "controls": [
+            {
+              "id": "8.2.4.a",
+              "externalId": "IAC-68"
+            }
+          ]
+        },
+        {
+          "id": "8.2.4.b",
+          "name": "",
+          "description": "(b)\tFor service providers only:  Are non-consumer customer passwords required to be changed periodically, and are non-consumer customers given guidance as to when, and under what circumstances, passwords must change.",
+          "controls": [
+            {
+              "id": "8.2.4.b",
+              "externalId": "IAC-69"
+            }
+          ]
+        },
+        {
+          "id": "8.2.5.a",
+          "name": "",
+          "description": "Must an individual submit a new password/passphrase that is different from any of the last four passwords/passphrases he or she has used?",
+          "controls": [
+            {
+              "id": "8.2.5.a",
+              "externalId": "IAC-70"
+            }
+          ]
+        },
+        {
+          "id": "8.2.5.b",
+          "name": "",
+          "description": "(b)\tFor service providers only:  Are new, non-consumer customer passwords required to be different from any of the last four passwords used?",
+          "controls": [
+            {
+              "id": "8.2.5.b",
+              "externalId": "IAC-71"
+            }
+          ]
+        },
+        {
+          "id": "8.2.6",
+          "name": "",
+          "description": "Are passwords/passphrases set to a unique value for each user for first-time use and upon reset, and must each user change their password immediately after the first use?",
+          "controls": [
+            {
+              "id": "8.2.6",
+              "externalId": "IAC-72"
+            }
+          ]
+        },
+        {
+          "id": "8.3.1",
+          "name": "",
+          "description": "Is multi-factor authentication incorporated for all non-console access into the CDE for personnel with administrative access?",
+          "controls": [
+            {
+              "id": "8.3.1",
+              "externalId": "IAC-74"
+            }
+          ]
+        },
+        {
+          "id": "8.3.2",
+          "name": "",
+          "description": "Is multi-factor authentication incorporated for all remote network access (both user and administrator, and including third party access for support or maintenance) originating from outside the entity’s network?",
+          "controls": [
+            {
+              "id": "8.3.2",
+              "externalId": "IAC-75"
+            }
+          ]
+        },
+        {
+          "id": "8.4.a",
+          "name": "",
+          "description": "Are authentication policies and procedures documented and communicated to all users?",
+          "controls": [
+            {
+              "id": "8.4.a",
+              "externalId": "GOV-44"
+            }
+          ]
+        },
+        {
+          "id": "8.4.b",
+          "name": "",
+          "description": "Do authentication policies and procedures include the following? \n- Guidance on selecting strong authentication credentials\n- Guidance for how users should protect their authentication credentials\n- Instructions not to reuse previously used passwords\n- Instructions that users should change passwords if there is any suspicion the password could be compromised",
+          "controls": [
+            {
+              "id": "8.4.b",
+              "externalId": "GOV-45"
+            }
+          ]
+        },
+        {
+          "id": "8.5",
+          "name": "",
+          "description": "Are group, shared, or generic accounts, passwords, or other authentication methods prohibited as follows: \n- Generic user IDs and accounts are disabled or removed;\n- Shared user IDs for system administration activities and other critical functions do not exist; and\n- Shared and generic user IDs are not used to administer any system components?",
+          "controls": [
+            {
+              "id": "8.5",
+              "externalId": "IAC-76"
+            }
+          ]
+        },
+        {
+          "id": "8.5.1",
+          "name": "",
+          "description": "For service providers only: Do service providers with remote access to customer premises (for example, for support of POS systems or servers) use a unique authentication credential (such as a password/passphrase) for each customer?\nNote: This requirement is not intended to apply to shared hosting providers accessing their own hosting environment, where multiple customer environments are hosted.",
+          "controls": [
+            {
+              "id": "8.5.1",
+              "externalId": "IAC-77"
+            }
+          ]
+        },
+        {
+          "id": "8.6",
+          "name": "",
+          "description": "Where other authentication mechanisms are used (for example, physical or logical security tokens, smart cards, and certificates, etc.), is the use of these mechanisms assigned as follows?\n- Authentication mechanisms must be assigned to an individual account and not shared among multiple accounts\n- Physical and/or logical controls must be in place to ensure only the intended account can use that mechanism to gain access",
+          "controls": [
+            {
+              "id": "8.6",
+              "externalId": "IAC-78"
+            }
+          ]
+        },
+        {
+          "id": "8.7.a",
+          "name": "",
+          "description": "Is all user access to, user queries of, and user actions on (for example, move, copy, delete), the database through programmatic methods only (for example, through stored procedures)?",
+          "controls": [
+            {
+              "id": "8.7.a",
+              "externalId": "IAC-80"
+            }
+          ]
+        },
+        {
+          "id": "8.7.b",
+          "name": "",
+          "description": "Is user direct access to or queries to of databases restricted to database administrators?",
+          "controls": [
+            {
+              "id": "8.7.b",
+              "externalId": "IAC-81"
+            }
+          ]
+        },
+        {
+          "id": "8.7.c",
+          "name": "",
+          "description": "Are application IDs only able to be used by the applications (and not by individual users or other processes)?",
+          "controls": [
+            {
+              "id": "8.7.c",
+              "externalId": "IAC-82"
+            }
+          ]
+        },
+        {
+          "id": "8.8",
+          "name": "",
+          "description": "Are security policies and operational procedures for identification and authentication:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "8.8",
+              "externalId": "SAT-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 9",
+      "name": "Restrict physical access to cardholder data",
+      "optional": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "name": "",
+          "description": "Are appropriate facility entry controls in place to limit and monitor physical access to systems in the cardholder data environment?",
+          "controls": [
+            {
+              "id": "9.1",
+              "externalId": "PES-19"
+            }
+          ]
+        },
+        {
+          "id": "9.1.1.a",
+          "name": "",
+          "description": "Are either video cameras or access-control mechanisms (or both) in place to monitor individual physical access to sensitive areas?\n\nNote: “Sensitive areas” refers to any data center, server room, or any area that houses systems that store, process, or transmit cardholder data. This excludes public-facing areas where only point-of-sale terminals are present such as the cashier areas in a retail store.",
+          "controls": [
+            {
+              "id": "9.1.1.a",
+              "externalId": "PES-20"
+            }
+          ]
+        },
+        {
+          "id": "9.1.1.b",
+          "name": "",
+          "description": "Are either video cameras or access-control mechanisms (or both) protected from tampering or disabling?",
+          "controls": [
+            {
+              "id": "9.1.1.b",
+              "externalId": "PES-21"
+            }
+          ]
+        },
+        {
+          "id": "9.1.1.c",
+          "name": "",
+          "description": "Is data collected from video cameras and/or access control mechanisms reviewed and correlated with other entries?",
+          "controls": [
+            {
+              "id": "9.1.1.c",
+              "externalId": "PES-22"
+            }
+          ]
+        },
+        {
+          "id": "9.1.1.d",
+          "name": "",
+          "description": "Is data collected from video cameras and/or access control mechanisms stored for at least three months unless otherwise restricted by law?",
+          "controls": [
+            {
+              "id": "9.1.1.d",
+              "externalId": "PES-23"
+            }
+          ]
+        },
+        {
+          "id": "9.1.2",
+          "name": "",
+          "description": "Are physical and/or logical controls in place to restrict access to publicly accessible network jacks? \n\nFor example, network jacks located in public areas and areas accessible to visitors could be disabled and only enabled when network access is explicitly authorized. Alternatively, processes could be implemented to ensure that visitors are escorted at all times in areas with active network jacks.",
+          "controls": [
+            {
+              "id": "9.1.2",
+              "externalId": "PES-24"
+            }
+          ]
+        },
+        {
+          "id": "9.1.3",
+          "name": "",
+          "description": "Is physical access to wireless access points, gateways, handheld devices, networking/communications hardware, and telecommunication lines restricted?",
+          "controls": [
+            {
+              "id": "9.1.3",
+              "externalId": "PES-25"
+            }
+          ]
+        },
+        {
+          "id": "9.2.a",
+          "name": "",
+          "description": "Are procedures developed to easily distinguish between onsite personnel and visitors, which include:\n- Identifying onsite personnel and visitors (for example, assigning badges), \n- Changing access requirements, and \n- Revoking terminated onsite personnel and expired visitor identification (such as ID badges)\n\nFor the purposes of Requirement 9, “onsite personnel” refers to full-time and part-time employees, temporary employees, contractors and consultants who are physically present on the entity’s premises. A “visitor” refers to a vendor, guest of any onsite personnel, service workers, or anyone who needs to enter the facility for a short duration, usually not more than one day.",
+          "controls": [
+            {
+              "id": "9.2.a",
+              "externalId": "PES-26"
+            }
+          ]
+        },
+        {
+          "id": "9.2.b",
+          "name": "",
+          "description": "Do identification methods (such as ID badges) clearly identify visitors and easily distinguish between onsite personnel and visitors?",
+          "controls": [
+            {
+              "id": "9.2.b",
+              "externalId": "PES-27"
+            }
+          ]
+        },
+        {
+          "id": "9.2.c",
+          "name": "",
+          "description": "Is access to the badge system limited to authorized personnel?",
+          "controls": [
+            {
+              "id": "9.2.c",
+              "externalId": "PES-28"
+            }
+          ]
+        },
+        {
+          "id": "9.3",
+          "name": "",
+          "description": "Is physical access to sensitive areas controlled for onsite personnel, as follows:\n- Is access authorized and based on individual job function?\n- Is access revoked immediately upon termination\n- Upon termination, are all physical access mechanisms, such as keys, access cards, etc., returned or disabled?",
+          "controls": [
+            {
+              "id": "9.3",
+              "externalId": "PES-29"
+            }
+          ]
+        },
+        {
+          "id": "9.4.1",
+          "name": "",
+          "description": "Are visitors authorized before entering, and escorted at all times within, areas where cardholder data is processed or maintained?",
+          "controls": [
+            {
+              "id": "9.4.1",
+              "externalId": "PES-31"
+            }
+          ]
+        },
+        {
+          "id": "9.4.2.a",
+          "name": "",
+          "description": "Are visitors identified and given a badge or other identification that visibly distinguishes the visitors from onsite personnel?",
+          "controls": [
+            {
+              "id": "9.4.2.a",
+              "externalId": "PES-32"
+            }
+          ]
+        },
+        {
+          "id": "9.4.2.b",
+          "name": "",
+          "description": "Do visitor badges or other identification expire?",
+          "controls": [
+            {
+              "id": "9.4.2.b",
+              "externalId": "PES-33"
+            }
+          ]
+        },
+        {
+          "id": "9.4.3",
+          "name": "",
+          "description": "Are visitors asked to surrender the badge or other identification before leaving the facility or at the date of expiration?",
+          "controls": [
+            {
+              "id": "9.4.3",
+              "externalId": "PES-34"
+            }
+          ]
+        },
+        {
+          "id": "9.4.4.a",
+          "name": "",
+          "description": "Is a visitor log in use to record physical access to the facility as well as for computer rooms and data centers where cardholder data is stored or transmitted?",
+          "controls": [
+            {
+              "id": "9.4.4.a",
+              "externalId": "PES-35"
+            }
+          ]
+        },
+        {
+          "id": "9.4.4.b",
+          "name": "",
+          "description": "Does the visitor log contain the visitor’s name, the firm represented, and the onsite personnel authorizing physical access?",
+          "controls": [
+            {
+              "id": "9.4.4.b",
+              "externalId": "PES-36"
+            }
+          ]
+        },
+        {
+          "id": "9.4.4.c",
+          "name": "",
+          "description": "Is the visitor log retained for at least three months?",
+          "controls": [
+            {
+              "id": "9.4.4.c",
+              "externalId": "PES-37"
+            }
+          ]
+        },
+        {
+          "id": "9.5",
+          "name": "",
+          "description": "Are all media physically secured (including but not limited to computers, removable electronic media, paper receipts, paper reports, and faxes)?\n\nFor purposes of Requirement 9, “media” refers to all paper and electronic media containing cardholder data.",
+          "controls": [
+            {
+              "id": "9.5",
+              "externalId": "DCH-36"
+            }
+          ]
+        },
+        {
+          "id": "9.5.1",
+          "name": "",
+          "description": "Is the location where media back-ups are stored reviewed at least annually to confirm storage is secure?",
+          "controls": [
+            {
+              "id": "9.5.1",
+              "externalId": "DCH-37"
+            }
+          ]
+        },
+        {
+          "id": "9.6.a",
+          "name": "",
+          "description": "Is strict control maintained over the internal or external distribution of any kind of media?",
+          "controls": [
+            {
+              "id": "9.6.a",
+              "externalId": "AST-22"
+            }
+          ]
+        },
+        {
+          "id": "9.6.1",
+          "name": "",
+          "description": "Is media classified so the sensitivity of the data can be determined?",
+          "controls": [
+            {
+              "id": "9.6.1",
+              "externalId": "DCH-38"
+            }
+          ]
+        },
+        {
+          "id": "9.6.2",
+          "name": "",
+          "description": "Is media sent by secured courier or other delivery method that can be accurately tracked?",
+          "controls": [
+            {
+              "id": "9.6.2",
+              "externalId": "DCH-39"
+            }
+          ]
+        },
+        {
+          "id": "9.6.3",
+          "name": "",
+          "description": "Is management approval obtained prior to moving the media (especially when media is distributed to individuals)?",
+          "controls": [
+            {
+              "id": "9.6.3",
+              "externalId": "AST-24"
+            }
+          ]
+        },
+        {
+          "id": "9.7",
+          "name": "",
+          "description": "Is strict control maintained over the storage and accessibility of media?",
+          "controls": [
+            {
+              "id": "9.7",
+              "externalId": "DCH-40"
+            }
+          ]
+        },
+        {
+          "id": "9.7.1.a",
+          "name": "",
+          "description": "Are inventory logs of all media properly maintained?",
+          "controls": [
+            {
+              "id": "9.7.1.a",
+              "externalId": "DCH-41"
+            }
+          ]
+        },
+        {
+          "id": "9.7.1.b",
+          "name": "",
+          "description": "Are periodic media inventories conducted at least annually?",
+          "controls": [
+            {
+              "id": "9.7.1.b",
+              "externalId": "DCH-42"
+            }
+          ]
+        },
+        {
+          "id": "9.8.a",
+          "name": "",
+          "description": "Is all media destroyed when it is no longer needed for business or legal reasons?",
+          "controls": [
+            {
+              "id": "9.8.a",
+              "externalId": "AST-25"
+            }
+          ]
+        },
+        {
+          "id": "9.8.b",
+          "name": "",
+          "description": "Is there a periodic media destruction policy that defines requirements for the following?\n- Hard-copy materials must be crosscut shredded, incinerated, or pulped such that there is reasonable assurance the hard-copy materials cannot be reconstructed. \n- Storage containers used for materials that are to be destroyed must be secured. \n- Cardholder data on electronic media must be rendered unrecoverable (e.g. via a secure wipe program in accordance with industry-accepted standards for secure deletion, or by physically destroying the media).",
+          "controls": [
+            {
+              "id": "9.8.b",
+              "externalId": "AST-26"
+            }
+          ]
+        },
+        {
+          "id": "9.8.1.a",
+          "name": "",
+          "description": "Are hardcopy materials cross-cut shredded, incinerated, or pulped so that cardholder data cannot be reconstructed?",
+          "controls": [
+            {
+              "id": "9.8.1.a",
+              "externalId": "AST-28"
+            }
+          ]
+        },
+        {
+          "id": "9.8.1.b",
+          "name": "",
+          "description": "Are storage containers used for materials that contain information to be destroyed secured to prevent access to the contents?",
+          "controls": [
+            {
+              "id": "9.8.1.b",
+              "externalId": "AST-29"
+            }
+          ]
+        },
+        {
+          "id": "9.8.2",
+          "name": "",
+          "description": "Is cardholder data on electronic media rendered unrecoverable (e.g. via a secure wipe program in accordance with industry-accepted standards for secure deletion, or otherwise by physically destroying the media), so that cardholder data cannot be reconstructed?",
+          "controls": [
+            {
+              "id": "9.8.2",
+              "externalId": "AST-30"
+            }
+          ]
+        },
+        {
+          "id": "9.9.a",
+          "name": "",
+          "description": "Do policies and procedures require that a list of such devices be maintained?",
+          "controls": [
+            {
+              "id": "9.9.a",
+              "externalId": "AST-39"
+            }
+          ]
+        },
+        {
+          "id": "9.9.b",
+          "name": "",
+          "description": "Do policies and procedures require that devices are periodically inspected to look for tampering or substitution?",
+          "controls": [
+            {
+              "id": "9.9.b",
+              "externalId": "AST-40"
+            }
+          ]
+        },
+        {
+          "id": "9.9.c",
+          "name": "",
+          "description": "Do policies and procedures require that personnel are trained to be aware of suspicious behavior and to report tampering or substitution of devices?",
+          "controls": [
+            {
+              "id": "9.9.c",
+              "externalId": "AST-41"
+            }
+          ]
+        },
+        {
+          "id": "9.9.1.a",
+          "name": "",
+          "description": "Does the list of devices include the following?\n- Make, model of device \n- Location of device (for example, the address of the site or facility where the device is located) \n- Device serial number or other method of unique identification",
+          "controls": [
+            {
+              "id": "9.9.1.a",
+              "externalId": "AST-32"
+            }
+          ]
+        },
+        {
+          "id": "9.9.1.b",
+          "name": "",
+          "description": "Is the list accurate and up to date?",
+          "controls": [
+            {
+              "id": "9.9.1.b",
+              "externalId": "AST-33"
+            }
+          ]
+        },
+        {
+          "id": "9.9.1.c",
+          "name": "",
+          "description": "Is the list of devices updated when devices are added, relocated, decommissioned, etc.?",
+          "controls": [
+            {
+              "id": "9.9.1.c",
+              "externalId": "AST-34"
+            }
+          ]
+        },
+        {
+          "id": "9.9.2.a",
+          "name": "",
+          "description": "Are device surfaces periodically inspected to detect tampering (for example, addition of card skimmers to devices), or substitution (for example, by checking the serial number or other device characteristics to verify it has not been swapped with a fraudulent device) as follows?\n\nNote: Examples of signs that a device might have been tampered with or substituted include unexpected attachments or cables plugged into the device, missing or changed security labels, broken or differently colored casing, or changes to the serial number or other external markings.",
+          "controls": [
+            {
+              "id": "9.9.2.a",
+              "externalId": "AST-35"
+            }
+          ]
+        },
+        {
+          "id": "9.9.2.b",
+          "name": "",
+          "description": "Are personnel aware of procedures for inspecting devices?",
+          "controls": [
+            {
+              "id": "9.9.2.b",
+              "externalId": "AST-36"
+            }
+          ]
+        },
+        {
+          "id": "9.9.3.a",
+          "name": "",
+          "description": "Do training materials for personnel at point-of-sale locations include the following? \n- Verify the identity of any third-party persons claiming to be repair or maintenance personnel, prior to granting them access to modify or troubleshoot devices.\n- Do not install, replace, or return devices without verification. \n- Be aware of suspicious behavior around devices (for example, attempts by unknown persons to unplug or open devices).\n- Report suspicious behavior and indications of device tampering or substitution to appropriate personnel (for example, to a manager or security officer).",
+          "controls": [
+            {
+              "id": "9.9.3.a",
+              "externalId": "AST-37"
+            }
+          ]
+        },
+        {
+          "id": "9.9.3.b",
+          "name": "",
+          "description": "Have personnel at point-of-sale locations received training, and are they aware of procedures to detect and report attempted tampering or replacement of devices?",
+          "controls": [
+            {
+              "id": "9.9.3.b",
+              "externalId": "AST-38"
+            }
+          ]
+        },
+        {
+          "id": "9.10",
+          "name": "",
+          "description": "Are security policies and operational procedures for restricting physical access to cardholder data:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "9.10",
+              "externalId": "SAT-17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 10",
+      "name": "Track and monitor all access to network resources and cardholder data",
+      "optional": false,
+      "sections": [
+        {
+          "id": "10.1.a",
+          "name": "",
+          "description": "Are audit trails enabled and active for system components?",
+          "controls": [
+            {
+              "id": "10.1.a",
+              "externalId": "MON-11"
+            }
+          ]
+        },
+        {
+          "id": "10.1.b",
+          "name": "",
+          "description": "Is access to system components linked to individual users?",
+          "controls": [
+            {
+              "id": "10.1.b",
+              "externalId": "MON-12"
+            }
+          ]
+        },
+        {
+          "id": "10.2.1",
+          "name": "",
+          "description": "All individual user accesses to cardholder data?",
+          "controls": [
+            {
+              "id": "10.2.1",
+              "externalId": "MON-14"
+            }
+          ]
+        },
+        {
+          "id": "10.2.2",
+          "name": "",
+          "description": "All actions taken by any individual with root or administrative privileges?",
+          "controls": [
+            {
+              "id": "10.2.2",
+              "externalId": "MON-15"
+            }
+          ]
+        },
+        {
+          "id": "10.2.3",
+          "name": "",
+          "description": "Access to all audit trails?",
+          "controls": [
+            {
+              "id": "10.2.3",
+              "externalId": "MON-16"
+            }
+          ]
+        },
+        {
+          "id": "10.2.4",
+          "name": "",
+          "description": "Invalid logical access attempts?",
+          "controls": [
+            {
+              "id": "10.2.4",
+              "externalId": "MON-17"
+            }
+          ]
+        },
+        {
+          "id": "10.2.5",
+          "name": "",
+          "description": "Use of and changes to identification and authentication mechanisms–including but not limited to creation of new accounts and elevation of privileges – and all changes, additions, or deletions to accounts with root or administrative privileges?",
+          "controls": [
+            {
+              "id": "10.2.5",
+              "externalId": "MON-18"
+            }
+          ]
+        },
+        {
+          "id": "10.2.6",
+          "name": "",
+          "description": "Initialization, stopping, or pausing of the audit logs?",
+          "controls": [
+            {
+              "id": "10.2.6",
+              "externalId": "MON-19"
+            }
+          ]
+        },
+        {
+          "id": "10.2.7",
+          "name": "",
+          "description": "Creation and deletion of system-level objects?",
+          "controls": [
+            {
+              "id": "10.2.7",
+              "externalId": "MON-20"
+            }
+          ]
+        },
+        {
+          "id": "10.3.1",
+          "name": "",
+          "description": "User identification?",
+          "controls": [
+            {
+              "id": "10.3.1",
+              "externalId": "MON-22"
+            }
+          ]
+        },
+        {
+          "id": "10.3.2",
+          "name": "",
+          "description": "Type of event?",
+          "controls": [
+            {
+              "id": "10.3.2",
+              "externalId": "MON-23"
+            }
+          ]
+        },
+        {
+          "id": "10.3.3",
+          "name": "",
+          "description": "Date and time?",
+          "controls": [
+            {
+              "id": "10.3.3",
+              "externalId": "MON-24"
+            }
+          ]
+        },
+        {
+          "id": "10.3.4",
+          "name": "",
+          "description": "Success or failure indication?",
+          "controls": [
+            {
+              "id": "10.3.4",
+              "externalId": "MON-25"
+            }
+          ]
+        },
+        {
+          "id": "10.3.5",
+          "name": "",
+          "description": "Origination of event?",
+          "controls": [
+            {
+              "id": "10.3.5",
+              "externalId": "MON-26"
+            }
+          ]
+        },
+        {
+          "id": "10.3.6",
+          "name": "",
+          "description": "Identity or name of affected data, system component, or resource?",
+          "controls": [
+            {
+              "id": "10.3.6",
+              "externalId": "MON-27"
+            }
+          ]
+        },
+        {
+          "id": "10.4",
+          "name": "",
+          "description": "Are all critical system clocks and times synchronized through use of time synchronization technology, and is the technology kept current?  \n\nNote: One example of time synchronization technology is Network Time Protocol (NTP).",
+          "controls": [
+            {
+              "id": "10.4",
+              "externalId": "SEA-10"
+            }
+          ]
+        },
+        {
+          "id": "10.4.1.a",
+          "name": "",
+          "description": "Do only designated central time server(s) receive time signals from external sources, and are time signals from external sources based on International Atomic Time or UTC?",
+          "controls": [
+            {
+              "id": "10.4.1.a",
+              "externalId": "SEA-12"
+            }
+          ]
+        },
+        {
+          "id": "10.4.1.b",
+          "name": "",
+          "description": "Where there is more than one designated time server, do the time servers peer with each other to keep accurate time?",
+          "controls": [
+            {
+              "id": "10.4.1.b",
+              "externalId": "SEA-13"
+            }
+          ]
+        },
+        {
+          "id": "10.4.1.c",
+          "name": "",
+          "description": "Do systems receive time only from designated central time server(s)?",
+          "controls": [
+            {
+              "id": "10.4.1.c",
+              "externalId": "SEA-14"
+            }
+          ]
+        },
+        {
+          "id": "10.4.2.a",
+          "name": "",
+          "description": "Is time data is protected as follows:\nIs access to time data restricted to only personnel with a business need to access time data?",
+          "controls": [
+            {
+              "id": "10.4.2.a",
+              "externalId": "SEA-15"
+            }
+          ]
+        },
+        {
+          "id": "10.4.2.b",
+          "name": "",
+          "description": "Are changes to time settings on critical systems logged, monitored, and reviewed?",
+          "controls": [
+            {
+              "id": "10.4.2.b",
+              "externalId": "SEA-16"
+            }
+          ]
+        },
+        {
+          "id": "10.4.3",
+          "name": "",
+          "description": "Are time settings received from specific, industry-accepted time sources? (This is to prevent a malicious individual from changing the clock). \n\nOptionally, those updates can be encrypted with a symmetric key, and access control lists can be created that specify the IP addresses of client machines that will be provided with the time updates (to prevent unauthorized use of internal time servers).",
+          "controls": [
+            {
+              "id": "10.4.3",
+              "externalId": "SEA-17"
+            }
+          ]
+        },
+        {
+          "id": "10.5.1",
+          "name": "",
+          "description": "Is viewing of audit trails limited to those with a job-related need?",
+          "controls": [
+            {
+              "id": "10.5.1",
+              "externalId": "MON-29"
+            }
+          ]
+        },
+        {
+          "id": "10.5.2",
+          "name": "",
+          "description": "Are audit trail files protected from unauthorized modifications via access control mechanisms, physical segregation, and/or network segregation?",
+          "controls": [
+            {
+              "id": "10.5.2",
+              "externalId": "MON-30"
+            }
+          ]
+        },
+        {
+          "id": "10.5.3",
+          "name": "",
+          "description": "Are audit trail files promptly backed up to a centralized log server or media that is difficult to alter?",
+          "controls": [
+            {
+              "id": "10.5.3",
+              "externalId": "MON-31"
+            }
+          ]
+        },
+        {
+          "id": "10.5.4",
+          "name": "",
+          "description": "Are logs for external-facing technologies (for example, wireless, firewalls, DNS, mail) written onto a secure, centralized, internal log server or media?",
+          "controls": [
+            {
+              "id": "10.5.4",
+              "externalId": "MON-32"
+            }
+          ]
+        },
+        {
+          "id": "10.5.5",
+          "name": "",
+          "description": "Is file-integrity monitoring or change-detection software used on logs to ensure that existing log data cannot be changed without generating alerts (although new data being added should not cause an alert)?",
+          "controls": [
+            {
+              "id": "10.5.5",
+              "externalId": "MON-33"
+            }
+          ]
+        },
+        {
+          "id": "10.6.1.a",
+          "name": "",
+          "description": "Are written policies and procedures defined for reviewing the following at least daily, either manually or via log tools?\n- All security events \n- Logs of all system components that store, process, or transmit CHD and/or SAD \n- Logs of all critical system components\n- Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)",
+          "controls": [
+            {
+              "id": "10.6.1.a",
+              "externalId": "MON-35"
+            }
+          ]
+        },
+        {
+          "id": "10.6.1.b",
+          "name": "",
+          "description": "Are the above logs and security events reviewed at least daily?",
+          "controls": [
+            {
+              "id": "10.6.1.b",
+              "externalId": "MON-36"
+            }
+          ]
+        },
+        {
+          "id": "10.6.2.a",
+          "name": "",
+          "description": "Are written policies and procedures defined for reviewing logs of all other system components periodically—either manually or via log tools—based on the organization’s policies and risk management strategy?",
+          "controls": [
+            {
+              "id": "10.6.2.a",
+              "externalId": "MON-37"
+            }
+          ]
+        },
+        {
+          "id": "10.6.2.b",
+          "name": "",
+          "description": "Are reviews of all other system components performed in accordance with organization’s policies and risk management strategy?",
+          "controls": [
+            {
+              "id": "10.6.2.b",
+              "externalId": "MON-38"
+            }
+          ]
+        },
+        {
+          "id": "10.6.3.a",
+          "name": "",
+          "description": "Are written policies and procedures defined for following up on exceptions and anomalies identified during the review process?",
+          "controls": [
+            {
+              "id": "10.6.3.a",
+              "externalId": "MON-39"
+            }
+          ]
+        },
+        {
+          "id": "10.6.3.b",
+          "name": "",
+          "description": "Is follow up to exceptions and anomalies performed?",
+          "controls": [
+            {
+              "id": "10.6.3.b",
+              "externalId": "MON-40"
+            }
+          ]
+        },
+        {
+          "id": "10.7.a",
+          "name": "",
+          "description": "Are audit log retention policies and procedures in place and do they require that logs are retained for at least one year, with a minimum of three months immediately available for analysis (for example, online, archived, or restorable from backup)?",
+          "controls": [
+            {
+              "id": "10.7.a",
+              "externalId": "MON-41"
+            }
+          ]
+        },
+        {
+          "id": "10.7.b",
+          "name": "",
+          "description": "Are audit logs retained for at least one year?",
+          "controls": [
+            {
+              "id": "10.7.b",
+              "externalId": "MON-42"
+            }
+          ]
+        },
+        {
+          "id": "10.7.c",
+          "name": "",
+          "description": "Are at least the last three months’ logs immediately available for analysis?",
+          "controls": [
+            {
+              "id": "10.7.c",
+              "externalId": "MON-43"
+            }
+          ]
+        },
+        {
+          "id": "10.8.a",
+          "name": "",
+          "description": "(a) \tAre processes implemented for the timely detection and reporting of failures of critical security control systems, including but not limited to failure of:\n\\-\tFirewalls \n\\-\tIDS/IPS \n\\-\tFIM \n\\-\tAnti-virus \n\\-\tPhysical access controls \n\\-\tLogical access controls \n\\-\tAudit logging mechanisms \n\\-\tSegmentation controls (if used)",
+          "controls": [
+            {
+              "id": "10.8.a",
+              "externalId": "MON-44"
+            }
+          ]
+        },
+        {
+          "id": "10.8.b",
+          "name": "",
+          "description": "(b) \tDoes the failure of a critical security control result in the generation of an alert?",
+          "controls": [
+            {
+              "id": "10.8.b",
+              "externalId": "MON-45"
+            }
+          ]
+        },
+        {
+          "id": "10.9",
+          "name": "",
+          "description": "Are security policies and operational procedures for monitoring all access to network resources and cardholder data:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "10.9",
+              "externalId": "SAT-18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 11",
+      "name": "Regularly test security systems and processes",
+      "optional": false,
+      "sections": [
+        {
+          "id": "11.1.a",
+          "name": "",
+          "description": "Are processes implemented for detection and identification of both authorized and unauthorized wireless access points on a quarterly basis? \n\nNote: Methods that may be used in the process include, but are not limited to, wireless network scans, physical/logical inspections of system components and infrastructure, network access control (NAC), or wireless IDS/IPS.\nWhichever methods are used, they must be sufficient to detect and identify any unauthorized devices.",
+          "controls": [
+            {
+              "id": "11.1.a",
+              "externalId": "MON-46"
+            }
+          ]
+        },
+        {
+          "id": "11.1.b",
+          "name": "",
+          "description": "Does the methodology detect and identify any unauthorized wireless access points, including at least the following?\n- WLAN cards inserted into system components;\n- Portable or mobile devices attached to system components to create a wireless access point (for example, by USB, etc.); and\n- Wireless devices attached to a network port or network device.",
+          "controls": [
+            {
+              "id": "11.1.b",
+              "externalId": "MON-47"
+            }
+          ]
+        },
+        {
+          "id": "11.1.c",
+          "name": "",
+          "description": "If wireless scanning is utilized to identify authorized and unauthorized wireless access points, is the scan performed at least quarterly for all system components and facilities?",
+          "controls": [
+            {
+              "id": "11.1.c",
+              "externalId": "MON-48"
+            }
+          ]
+        },
+        {
+          "id": "11.1.d",
+          "name": "",
+          "description": "If automated monitoring is utilized (for example, wireless IDS/IPS, NAC, etc.), is monitoring configured to generate alerts to notify personnel?",
+          "controls": [
+            {
+              "id": "11.1.d",
+              "externalId": "MON-49"
+            }
+          ]
+        },
+        {
+          "id": "11.1.1",
+          "name": "",
+          "description": "Is an inventory of authorized wireless access points maintained and a business justification documented for all authorized wireless access points?",
+          "controls": [
+            {
+              "id": "11.1.1",
+              "externalId": "NET-29"
+            }
+          ]
+        },
+        {
+          "id": "11.1.2.a",
+          "name": "",
+          "description": "Does the incident response plan define and require a response in the event that an unauthorized wireless access point is detected?",
+          "controls": [
+            {
+              "id": "11.1.2.a",
+              "externalId": "NET-30"
+            }
+          ]
+        },
+        {
+          "id": "11.1.2.b",
+          "name": "",
+          "description": "Is action taken when unauthorized wireless access points are found?",
+          "controls": [
+            {
+              "id": "11.1.2.b",
+              "externalId": "NET-31"
+            }
+          ]
+        },
+        {
+          "id": "11.2.1.a",
+          "name": "",
+          "description": "Are quarterly internal vulnerability scans performed?",
+          "controls": [
+            {
+              "id": "11.2.1.a",
+              "externalId": "VPM-20"
+            }
+          ]
+        },
+        {
+          "id": "11.2.1.b",
+          "name": "",
+          "description": "Does the quarterly internal scan process address all “high risk” vulnerabilities and include rescans to verify all “high-risk” vulnerabilities (as defined in PCI DSS Requirement 6.1) are resolved?",
+          "controls": [
+            {
+              "id": "11.2.1.b",
+              "externalId": "VPM-21"
+            }
+          ]
+        },
+        {
+          "id": "11.2.1.c",
+          "name": "",
+          "description": "Are quarterly internal scans performed by a qualified internal resource(s) or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?",
+          "controls": [
+            {
+              "id": "11.2.1.c",
+              "externalId": "VPM-22"
+            }
+          ]
+        },
+        {
+          "id": "11.2.2.a",
+          "name": "",
+          "description": "Are quarterly external vulnerability scans performed?\n\nNote: Quarterly external vulnerability scans must be performed by an Approved Scanning Vendor (ASV), approved by the Payment Card Industry Security Standards Council (PCI SSC). \nRefer to the ASV Program Guide published on the PCI SSC website for scan customer responsibilities, scan preparation, etc.",
+          "controls": [
+            {
+              "id": "11.2.2.a",
+              "externalId": "VPM-23"
+            }
+          ]
+        },
+        {
+          "id": "11.2.2.b",
+          "name": "",
+          "description": "Do external quarterly scan and rescan results satisfy the ASV Program Guide requirements for a passing scan (for example, no vulnerabilities rated 4.0 or higher by the CVSS, and no automatic failures)?",
+          "controls": [
+            {
+              "id": "11.2.2.b",
+              "externalId": "VPM-24"
+            }
+          ]
+        },
+        {
+          "id": "11.2.2.c",
+          "name": "",
+          "description": "Are quarterly external vulnerability scans performed by a PCI SSC Approved Scanning Vendor (ASV)?",
+          "controls": [
+            {
+              "id": "11.2.2.c",
+              "externalId": "VPM-25"
+            }
+          ]
+        },
+        {
+          "id": "11.2.3.a",
+          "name": "",
+          "description": "Are internal and external scans, and rescans as needed, performed after any significant change?\n\nNote: Scans must be performed by qualified personnel.",
+          "controls": [
+            {
+              "id": "11.2.3.a",
+              "externalId": "VPM-26"
+            }
+          ]
+        },
+        {
+          "id": "11.2.3.b",
+          "name": "",
+          "description": "Does the scan process include rescans until: \n- For external scans, no vulnerabilities exist that are scored 4.0 or higher by the CVSS,\n- For internal scans, a passing result is obtained or all “high-risk” vulnerabilities as defined in PCI DSS Requirement 6.1 are resolved?",
+          "controls": [
+            {
+              "id": "11.2.3.b",
+              "externalId": "VPM-27"
+            }
+          ]
+        },
+        {
+          "id": "11.2.3.c",
+          "name": "",
+          "description": "Are scans performed by a qualified internal resource(s) or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?",
+          "controls": [
+            {
+              "id": "11.2.3.c",
+              "externalId": "VPM-28"
+            }
+          ]
+        },
+        {
+          "id": "11.3",
+          "name": "",
+          "description": "Does the penetration-testing methodology include the following? \n\n- Is based on industry-accepted penetration testing approaches (for example, NIST SP800-115)\n- Includes coverage for the entire CDE perimeter and critical systems\n- Includes testing from both inside and outside the network\n- Includes testing to validate any segmentation and scope-reduction controls\n- Defines application-layer penetration tests to include, at a minimum, the vulnerabilities listed in Requirement 6.5\n- Defines network-layer penetration tests to include components that support network functions as well as operating systems\n- Includes review and consideration of threats and vulnerabilities experienced in the last 12 months\n- Specifies retention of penetration testing results and remediation activities results",
+          "controls": [
+            {
+              "id": "11.3",
+              "externalId": "VPM-29"
+            }
+          ]
+        },
+        {
+          "id": "11.3.1.a",
+          "name": "",
+          "description": "Is external penetration testing performed per the defined methodology, at least annually, and after any significant infrastructure or application changes to the environment (such as an operating system upgrade, a sub-network added to the environment, or an added web server)?",
+          "controls": [
+            {
+              "id": "11.3.1.a",
+              "externalId": "VPM-30"
+            }
+          ]
+        },
+        {
+          "id": "11.3.1.b",
+          "name": "",
+          "description": "Are tests performed by a qualified internal resource or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?",
+          "controls": [
+            {
+              "id": "11.3.1.b",
+              "externalId": "VPM-31"
+            }
+          ]
+        },
+        {
+          "id": "11.3.2.a",
+          "name": "",
+          "description": "Is internal penetration testing performed per the defined methodology, at least annually, and after any significant infrastructure or application changes to the environment (such as an operating system upgrade, a sub-network added to the environment, or an added web server)?",
+          "controls": [
+            {
+              "id": "11.3.2.a",
+              "externalId": "VPM-32"
+            }
+          ]
+        },
+        {
+          "id": "11.3.2.b",
+          "name": "",
+          "description": "Are tests performed by a qualified internal resource or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?",
+          "controls": [
+            {
+              "id": "11.3.2.b",
+              "externalId": "VPM-33"
+            }
+          ]
+        },
+        {
+          "id": "11.3.3",
+          "name": "",
+          "description": "Are exploitable vulnerabilities found during penetration testing corrected, followed by repeated testing to verify the corrections?",
+          "controls": [
+            {
+              "id": "11.3.3",
+              "externalId": "VPM-34"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.a",
+          "name": "",
+          "description": "Are penetration-testing procedures defined to test all segmentation methods, to confirm they are operational and effective, and isolate all out-of-scope systems from systems in the CDE?",
+          "controls": [
+            {
+              "id": "11.3.4.a",
+              "externalId": "VPM-35"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.b",
+          "name": "",
+          "description": "Does penetration testing to verify segmentation controls meet the following?\n- Performed at least annually and after any changes to segmentation controls/methods\n- Covers all segmentation controls/methods in use\n- Verifies that segmentation methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE.",
+          "controls": [
+            {
+              "id": "11.3.4.b",
+              "externalId": "VPM-36"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.c",
+          "name": "",
+          "description": "Are tests performed by a qualified internal resource or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?",
+          "controls": [
+            {
+              "id": "11.3.4.c",
+              "externalId": "VPM-37"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.1.a",
+          "name": "",
+          "description": "(a)\tIs PCI DSS scope confirmed by performing penetration tests on segmentation controls at least every six months and after any changes to segmentation controls/methods?",
+          "controls": [
+            {
+              "id": "11.3.4.1.a",
+              "externalId": "SEA-19"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.1.b",
+          "name": "",
+          "description": "(b)\tDoes penetration testing cover all segmentation controls/methods in use?",
+          "controls": [
+            {
+              "id": "11.3.4.1.b",
+              "externalId": "SEA-20"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.1.c",
+          "name": "",
+          "description": "(c)\tDoes penetration testing verify that segmentation controls/methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE",
+          "controls": [
+            {
+              "id": "11.3.4.1.c",
+              "externalId": "SEA-21"
+            }
+          ]
+        },
+        {
+          "id": "11.3.4.1.d",
+          "name": "",
+          "description": "(d)\tAre tests performed by a qualified internal resource or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?",
+          "controls": [
+            {
+              "id": "11.3.4.1.d",
+              "externalId": "SEA-22"
+            }
+          ]
+        },
+        {
+          "id": "11.4.a",
+          "name": "",
+          "description": "Are intrusion-detection and/or intrusion-prevention techniques that detect and/or prevent intrusions into the network in place to monitor all traffic: \n- At the perimeter of the cardholder data environment, and\n- At critical points in the cardholder data environment.",
+          "controls": [
+            {
+              "id": "11.4.a",
+              "externalId": "NET-33"
+            }
+          ]
+        },
+        {
+          "id": "11.4.b",
+          "name": "",
+          "description": "Are intrusion-detection and/or intrusion-prevention techniques configured to alert personnel of suspected compromises?",
+          "controls": [
+            {
+              "id": "11.4.b",
+              "externalId": "MON-50"
+            }
+          ]
+        },
+        {
+          "id": "11.4.c",
+          "name": "",
+          "description": "Are all intrusion-detection and prevention engines, baselines, and signatures kept up-to-date?",
+          "controls": [
+            {
+              "id": "11.4.c",
+              "externalId": "NET-34"
+            }
+          ]
+        },
+        {
+          "id": "11.5.a",
+          "name": "",
+          "description": "Is a change-detection mechanism (for example, file-integrity monitoring tools) deployed to detect unauthorized modification (including changes, additions, and deletions) of critical system files, configuration files, or content files?\n\nExamples of files that should be monitored include:\n- System executables\n- Application executables\n- Configuration and parameter files\n- Centrally stored, historical or archived, log, and audit files \n- Additional critical files determined by entity (for example, through risk assessment or other means)",
+          "controls": [
+            {
+              "id": "11.5.a",
+              "externalId": "MON-52"
+            }
+          ]
+        },
+        {
+          "id": "11.5.b",
+          "name": "",
+          "description": "Is the change-detection mechanism configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical system files, configuration files or content files, and do the tools perform critical file comparisons at least weekly?\n\nNote: For change detection purposes, critical files are usually those that do not regularly change, but the modification of which could indicate a system compromise or risk of compromise. Change detection mechanisms such as file-integrity monitoring products usually come pre-configured with critical files for the related operating system. Other critical files, such as those for custom applications, must be evaluated and defined by the entity (that is the merchant or service provider).",
+          "controls": [
+            {
+              "id": "11.5.b",
+              "externalId": "MON-53"
+            }
+          ]
+        },
+        {
+          "id": "11.5.1",
+          "name": "",
+          "description": "Is a process in place to respond to any alerts generated by the change-detection solution?",
+          "controls": [
+            {
+              "id": "11.5.1",
+              "externalId": "MON-51"
+            }
+          ]
+        },
+        {
+          "id": "11.6",
+          "name": "",
+          "description": "Are security policies and operational procedures for security monitoring and testing:\n- Documented\n- In use\n- Known to all affected parties?",
+          "controls": [
+            {
+              "id": "11.6",
+              "externalId": "SAT-19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Requirement 12",
+      "name": "Maintain a policy that addresses information security for all personnel",
+      "optional": false,
+      "sections": [
+        {
+          "id": "12.1",
+          "name": "",
+          "description": "Is a security policy established, published, maintained, and disseminated to all relevant personnel?",
+          "controls": [
+            {
+              "id": "12.1",
+              "externalId": "GOV-46"
+            }
+          ]
+        },
+        {
+          "id": "12.1.1",
+          "name": "",
+          "description": "Is the security policy reviewed at least annually and updated when the environment changes?",
+          "controls": [
+            {
+              "id": "12.1.1",
+              "externalId": "GOV-47"
+            }
+          ]
+        },
+        {
+          "id": "12.2.a",
+          "name": "",
+          "description": "Is an annual risk assessment process implemented that \n- Identifies critical assets, threats, and vulnerabilities, and \n- Results in a formal, documented analysis of risk?\n\nExamples of risk assessment methodologies include but are not limited to OCTAVE, ISO 27005 and NIST SP 800-30.",
+          "controls": [
+            {
+              "id": "12.2.a",
+              "externalId": "RSK-11"
+            }
+          ]
+        },
+        {
+          "id": "12.2.b",
+          "name": "",
+          "description": "Is the risk assessment process performed at least annually and upon significant changes to the environment (for example, acquisition, merger, relocation, etc.)?",
+          "controls": [
+            {
+              "id": "12.2.b",
+              "externalId": "RSK-12"
+            }
+          ]
+        },
+        {
+          "id": "12.3.1",
+          "name": "",
+          "description": "Explicit approval by authorized parties to use the technologies?",
+          "controls": [
+            {
+              "id": "12.3.1",
+              "externalId": "HRS-18"
+            }
+          ]
+        },
+        {
+          "id": "12.3.2",
+          "name": "",
+          "description": "Authentication for use of the technology?",
+          "controls": [
+            {
+              "id": "12.3.2",
+              "externalId": "HRS-19"
+            }
+          ]
+        },
+        {
+          "id": "12.3.3",
+          "name": "",
+          "description": "A list of all such devices and personnel with access?",
+          "controls": [
+            {
+              "id": "12.3.3",
+              "externalId": "AST-42"
+            }
+          ]
+        },
+        {
+          "id": "12.3.4",
+          "name": "",
+          "description": "A method to accurately and readily determine owner, contact information, and purpose (for example, labeling, coding, and/or inventorying of devices)?",
+          "controls": [
+            {
+              "id": "12.3.4",
+              "externalId": "AST-43"
+            }
+          ]
+        },
+        {
+          "id": "12.3.5",
+          "name": "",
+          "description": "Acceptable uses of the technologies?",
+          "controls": [
+            {
+              "id": "12.3.5",
+              "externalId": "HRS-20"
+            }
+          ]
+        },
+        {
+          "id": "12.3.6",
+          "name": "",
+          "description": "Acceptable network locations for the technologies?",
+          "controls": [
+            {
+              "id": "12.3.6",
+              "externalId": "HRS-21"
+            }
+          ]
+        },
+        {
+          "id": "12.3.7",
+          "name": "",
+          "description": "List of company-approved products?",
+          "controls": [
+            {
+              "id": "12.3.7",
+              "externalId": "AST-44"
+            }
+          ]
+        },
+        {
+          "id": "12.3.8",
+          "name": "",
+          "description": "Automatic disconnect of sessions for remote-access technologies after a specific period of inactivity?",
+          "controls": [
+            {
+              "id": "12.3.8",
+              "externalId": "NET-35"
+            }
+          ]
+        },
+        {
+          "id": "12.3.9",
+          "name": "",
+          "description": "Activation of remote-access technologies for vendors and business partners only when needed by vendors and business partners, with immediate deactivation after use?",
+          "controls": [
+            {
+              "id": "12.3.9",
+              "externalId": "NET-36"
+            }
+          ]
+        },
+        {
+          "id": "12.3.10.a",
+          "name": "",
+          "description": "For personnel accessing cardholder data via remote-access technologies, does the policy specify the prohibition of copying, moving, and storage of cardholder data onto local hard drives and removable electronic media, unless explicitly authorized for a defined business need? \n\nWhere there is an authorized business need, the usage policies must require the data be protected in accordance with all applicable PCI DSS Requirements.",
+          "controls": [
+            {
+              "id": "12.3.10.a",
+              "externalId": "HRS-22"
+            }
+          ]
+        },
+        {
+          "id": "12.3.10.b",
+          "name": "",
+          "description": "For personnel with proper authorization, does the policy require the protection of cardholder data in accordance with PCI DSS Requirements?",
+          "controls": [
+            {
+              "id": "12.3.10.b",
+              "externalId": "HRS-23"
+            }
+          ]
+        },
+        {
+          "id": "12.4",
+          "name": "",
+          "description": "Do security policy and procedures clearly define information security responsibilities for all personnel?",
+          "controls": [
+            {
+              "id": "12.4",
+              "externalId": "HRS-24"
+            }
+          ]
+        },
+        {
+          "id": "12.4.1.a",
+          "name": "",
+          "description": "(a)\tHas executive management assigned overall accountability for maintaining the entity’s PCI DSS compliance?",
+          "controls": [
+            {
+              "id": "12.4.1.a",
+              "externalId": "HRS-25"
+            }
+          ]
+        },
+        {
+          "id": "12.4.1.b",
+          "name": "",
+          "description": "Has executive management defined a charter for the PCI DSS compliance program and communication to executive management?",
+          "controls": [
+            {
+              "id": "12.4.1.b",
+              "externalId": "HRS-26"
+            }
+          ]
+        },
+        {
+          "id": "12.5.a",
+          "name": "",
+          "description": "Is responsibility for information security formally assigned to a Chief Security Officer or other security-knowledgeable member of management?",
+          "controls": [
+            {
+              "id": "12.5.a",
+              "externalId": "GOV-49"
+            }
+          ]
+        },
+        {
+          "id": "12.5.1",
+          "name": "",
+          "description": "Establishing, documenting, and distributing security policies and procedures?",
+          "controls": [
+            {
+              "id": "12.5.1",
+              "externalId": "GOV-51"
+            }
+          ]
+        },
+        {
+          "id": "12.5.2",
+          "name": "",
+          "description": "Monitoring and analyzing security alerts and information, and distributing to appropriate personnel?",
+          "controls": [
+            {
+              "id": "12.5.2",
+              "externalId": "IRO-19"
+            }
+          ]
+        },
+        {
+          "id": "12.5.3",
+          "name": "",
+          "description": "Establishing, documenting, and distributing security incident response and escalation procedures to ensure timely and effective handling of all situations?",
+          "controls": [
+            {
+              "id": "12.5.3",
+              "externalId": "IRO-20"
+            }
+          ]
+        },
+        {
+          "id": "12.5.4",
+          "name": "",
+          "description": "Administering user accounts, including additions, deletions, and modifications?",
+          "controls": [
+            {
+              "id": "12.5.4",
+              "externalId": "GOV-52"
+            }
+          ]
+        },
+        {
+          "id": "12.5.5",
+          "name": "",
+          "description": "Monitoring and controlling all access to data?",
+          "controls": [
+            {
+              "id": "12.5.5",
+              "externalId": "GOV-53"
+            }
+          ]
+        },
+        {
+          "id": "12.6.a",
+          "name": "",
+          "description": "Is a formal security awareness program in place to make all personnel aware of the cardholder data security policy and procedures?",
+          "controls": [
+            {
+              "id": "12.6.a",
+              "externalId": "SAT-20"
+            }
+          ]
+        },
+        {
+          "id": "12.6.1.a",
+          "name": "",
+          "description": "Does the security awareness program provide multiple methods of communicating awareness and educating personnel (for example, posters, letters, memos, web based training, meetings, and promotions)?\n\nNote:  Methods can vary depending on the role of the personnel and their level of access to the cardholder data.",
+          "controls": [
+            {
+              "id": "12.6.1.a",
+              "externalId": "SAT-22"
+            }
+          ]
+        },
+        {
+          "id": "12.6.1.b",
+          "name": "",
+          "description": "Are personnel educated upon hire and at least annually?",
+          "controls": [
+            {
+              "id": "12.6.1.b",
+              "externalId": "SAT-23"
+            }
+          ]
+        },
+        {
+          "id": "12.6.1.c",
+          "name": "",
+          "description": "Have employees completed awareness training and are they aware of the importance of cardholder data security?",
+          "controls": [
+            {
+              "id": "12.6.1.c",
+              "externalId": "SAT-24"
+            }
+          ]
+        },
+        {
+          "id": "12.6.2",
+          "name": "",
+          "description": "Are personnel required to acknowledge at least annually that they have read and understood the security policy and procedures?",
+          "controls": [
+            {
+              "id": "12.6.2",
+              "externalId": "SAT-25"
+            }
+          ]
+        },
+        {
+          "id": "12.7",
+          "name": "",
+          "description": "Are potential personnel (see definition of “personnel” above) screened prior to hire to minimize the risk of attacks from internal sources? \n\nExamples of background checks include previous employment history, criminal record, credit history and reference checks.\n\nNote: For those potential personnel to be hired for certain positions, such as store cashiers who only have access to one card number at a time when facilitating a transaction, this requirement is a recommendation only.",
+          "controls": [
+            {
+              "id": "12.7",
+              "externalId": "HRS-27"
+            }
+          ]
+        },
+        {
+          "id": "12.8.1",
+          "name": "",
+          "description": "Is a list of service providers maintained, including a description of the service(s) provided?",
+          "controls": [
+            {
+              "id": "12.8.1",
+              "externalId": "TPM-18"
+            }
+          ]
+        },
+        {
+          "id": "12.8.2",
+          "name": "",
+          "description": "Is a written agreement maintained that includes an acknowledgement that the service providers are responsible for the security of cardholder data the service providers possess or otherwise store, process, or transmit on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment?\n\nNote: The exact wording of an acknowledgement will depend on the agreement between the two parties, the details of the service being provided, and the responsibilities assigned to each party. The acknowledgement does not have to include the exact wording provided in this requirement.",
+          "controls": [
+            {
+              "id": "12.8.2",
+              "externalId": "TPM-19"
+            }
+          ]
+        },
+        {
+          "id": "12.8.3",
+          "name": "",
+          "description": "Is there an established process for engaging service providers, including proper due diligence prior to engagement?",
+          "controls": [
+            {
+              "id": "12.8.3",
+              "externalId": "TPM-20"
+            }
+          ]
+        },
+        {
+          "id": "12.8.4",
+          "name": "",
+          "description": "Is a program maintained to monitor service providers’ PCI DSS compliance status at least annually?",
+          "controls": [
+            {
+              "id": "12.8.4",
+              "externalId": "TPM-21"
+            }
+          ]
+        },
+        {
+          "id": "12.8.5",
+          "name": "",
+          "description": "Is information maintained about which PCI DSS requirements are managed by each service provider, and which are managed by the entity?",
+          "controls": [
+            {
+              "id": "12.8.5",
+              "externalId": "SAT-26"
+            }
+          ]
+        },
+        {
+          "id": "12.9",
+          "name": "",
+          "description": "For service providers only: Do service providers acknowledge in writing to customers that they are responsible for the security of cardholder data the service provider possesses or otherwise stores, processes, or transmits on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment?\nNote: The exact wording of an acknowledgement will depend on the agreement between the two parties, the details of the service being provided, and the responsibilities assigned to each party. The acknowledgement does not have to include the exact wording provided in this requirement.",
+          "controls": [
+            {
+              "id": "12.9",
+              "externalId": "TPM-22"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.a",
+          "name": "",
+          "description": "Has an incident response plan been created to be implemented in the event of system breach?",
+          "controls": [
+            {
+              "id": "12.10.1.a",
+              "externalId": "IRO-22"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.i",
+          "name": "",
+          "description": "Roles, responsibilities, and communication and contact strategies in the event of a compromise including notification of the payment brands, at a minimum?",
+          "controls": [
+            {
+              "id": "12.10.1.b.i",
+              "externalId": "IRO-24"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.ii",
+          "name": "",
+          "description": "Specific incident response procedures?",
+          "controls": [
+            {
+              "id": "12.10.1.b.ii",
+              "externalId": "IRO-25"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.iii",
+          "name": "",
+          "description": "Business recovery and continuity procedures?",
+          "controls": [
+            {
+              "id": "12.10.1.b.iii",
+              "externalId": "BCD-20"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.iv",
+          "name": "",
+          "description": "Data backup processes?",
+          "controls": [
+            {
+              "id": "12.10.1.b.iv",
+              "externalId": "BCD-21"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.v",
+          "name": "",
+          "description": "Analysis of legal requirements for reporting compromises?",
+          "controls": [
+            {
+              "id": "12.10.1.b.v",
+              "externalId": "IRO-26"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.vi",
+          "name": "",
+          "description": "Coverage and responses of all critical system components?",
+          "controls": [
+            {
+              "id": "12.10.1.b.vi",
+              "externalId": "IRO-27"
+            }
+          ]
+        },
+        {
+          "id": "12.10.1.b.vii",
+          "name": "",
+          "description": "Reference or inclusion of incident response procedures from the payment brands?",
+          "controls": [
+            {
+              "id": "12.10.1.b.vii",
+              "externalId": "TPM-23"
+            }
+          ]
+        },
+        {
+          "id": "12.10.2",
+          "name": "",
+          "description": "Is the plan reviewed and tested at least annually, including all elements listed in Requirement 12.10.1?",
+          "controls": [
+            {
+              "id": "12.10.2",
+              "externalId": "IRO-28"
+            }
+          ]
+        },
+        {
+          "id": "12.10.3",
+          "name": "",
+          "description": "Are specific personnel designated to be available on a 24/7 basis to respond to alerts?",
+          "controls": [
+            {
+              "id": "12.10.3",
+              "externalId": "IRO-29"
+            }
+          ]
+        },
+        {
+          "id": "12.10.4",
+          "name": "",
+          "description": "Is appropriate training provided to staff with security breach response responsibilities?",
+          "controls": [
+            {
+              "id": "12.10.4",
+              "externalId": "SAT-27"
+            }
+          ]
+        },
+        {
+          "id": "12.10.5",
+          "name": "",
+          "description": "Are alerts from security monitoring systems included in the incident response plan?",
+          "controls": [
+            {
+              "id": "12.10.5",
+              "externalId": "IRO-30"
+            }
+          ]
+        },
+        {
+          "id": "12.10.6",
+          "name": "",
+          "description": "Is a process developed and in place to modify and evolve the incident response plan according to lessons learned and to incorporate industry developments?",
+          "controls": [
+            {
+              "id": "12.10.6",
+              "externalId": "IRO-31"
+            }
+          ]
+        },
+        {
+          "id": "12.11.a",
+          "name": "",
+          "description": "a) Do reviews cover the following processes: \n\\-\tDaily log reviews \n\\-\tFirewall rule-set reviews \n\\-\tApplying configuration standards to new systems \n\\-\tResponding to security alerts \n\\-\tChange management processes",
+          "controls": [
+            {
+              "id": "12.11.a",
+              "externalId": "HRS-28"
+            }
+          ]
+        },
+        {
+          "id": "12.11.b",
+          "name": "",
+          "description": "(b) Are reviews performed at least quarterly?",
+          "controls": [
+            {
+              "id": "12.11.b",
+              "externalId": "OPS-4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Appendix A1",
+      "name": "Additional PCI DSS Requirements for Shared Hosting Providers",
+      "optional": false,
+      "sections": []
+    },
+    {
+      "id": "Appendix A2",
+      "name": "Additional PCI DSS Requirements for Entities using SSL/Early TLS for Card-Present POS POI Terminal Connections",
+      "optional": false,
+      "sections": []
+    },
+    {
+      "id": "Supporting documentation",
+      "name": "Validation documentation (SAQ and Attestation of Compliance) to finalize annual compliance process",
+      "optional": false,
+      "sections": [
+        {
+          "id": "SD - SAQ D (Service Provider)",
+          "name": "",
+          "description": "Complete a Self-Assessment Questionnaire and Attestation of Compliance annually (applicable to Level 2 Service Providers).",
+          "controls": [
+            {
+              "id": "SD - SAQ D (Service Provider)",
+              "externalId": "CPL-16"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

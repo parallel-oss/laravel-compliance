@@ -4,27 +4,28 @@ namespace Parallel\Compliance;
 
 use Attribute;
 use Illuminate\Support\Arr;
-use Parallel\Compliance\Capabilities\Capability;
+use Parallel\Compliance\Controls\Control;
+use Parallel\Compliance\Frameworks\FrameworkRequirement;
 use Parallel\Compliance\Recommendations\Recommendation;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD | Attribute::IS_REPEATABLE)]
 class Evidence
 {
-    /** @var array<int, Recommendation> */
+    /** @var array<int, Control> */
     public array $controls;
 
-    /** @var array<int, Capability> */
-    public array $capabilities;
+    /** @var array<int, FrameworkRequirement|Recommendation> */
+    public array $requirements;
 
     /**
-     * @param  Recommendation|array<int, Recommendation>|null  $controls
-     * @param  Capability|array<int, Capability>|null  $capabilities
+     * @param  Control|array<int, Control>|null  $controls
+     * @param  FrameworkRequirement|Recommendation|array<int, FrameworkRequirement|Recommendation>|null  $requirements
      * @param  array<int, string>  $links
      * @param  array<string, scalar|null>  $metadata
      */
     public function __construct(
-        Recommendation|array|null $controls = null,
-        Capability|array|null $capabilities = null,
+        Control|array|null $controls = null,
+        FrameworkRequirement|Recommendation|array|null $requirements = null,
         public ?string $summary = null,
         public EvidenceStatus $status = EvidenceStatus::Implemented,
         public ?string $details = null,
@@ -32,6 +33,6 @@ class Evidence
         public array $metadata = [],
     ) {
         $this->controls = Arr::wrap($controls);
-        $this->capabilities = Arr::wrap($capabilities);
+        $this->requirements = Arr::wrap($requirements);
     }
 }

@@ -1,0 +1,1920 @@
+{
+  "principles": [
+    {
+      "id": "1798.100",
+      "name": "Notice at collection / Right to Know / Security procedures and practices",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.100(b)",
+          "name": "",
+          "description": "A business that collects a consumer’s personal information shall, at or before the point of collection, inform consumers as to the categories of personal information to be collected and the purposes for which the categories of personal information shall be used. A business shall not collect additional categories of personal information or use personal information collected for additional purposes without providing the consumer with notice consistent with this section.",
+          "controls": [
+            {
+              "id": "collection-notice",
+              "externalId": "PRI-131"
+            }
+          ]
+        },
+        {
+          "id": "1798.100(d)",
+          "name": "",
+          "description": "A business that receives a verifiable consumer request from a consumer to access personal information shall promptly take steps to disclose and deliver, free of charge to the consumer, the personal information required by this section. The information may be delivered by mail or electronically, and if provided electronically, the information shall be in a portable and, to the extent technically feasible, in a readily useable format that allows the consumer to transmit this information to another entity without hindrance. A business may provide personal information to a consumer at any time, but shall not be required to provide personal information to a consumer more than twice in a 12-month period.",
+          "controls": [
+            {
+              "id": "verifiable-request-response",
+              "externalId": "PRI-56"
+            }
+          ]
+        },
+        {
+          "id": "1798.100(e)",
+          "name": "",
+          "description": "A business that collects a consumer’s personal information shall implement reasonable security procedures and practices appropriate to the nature of the personal information to protect the personal information from unauthorized or illegal access, destruction, use, modification, or disclosure in accordance with Section 1798.81.5.",
+          "controls": [
+            {
+              "id": "production-inventory-maintained-ccpa",
+              "externalId": "AST-50"
+            },
+            {
+              "id": "asset-disposal-procedures-utilized-ccpa",
+              "externalId": "AST-51"
+            },
+            {
+              "id": "continuity-and-disaster-recovery-plans-established-ccpa",
+              "externalId": "BCD-24"
+            },
+            {
+              "id": "continuity-disaster-recovery-plans-tested-ccpa",
+              "externalId": "BCD-25"
+            },
+            {
+              "id": "data-encrypted-ccpa",
+              "externalId": "CRY-59"
+            },
+            {
+              "id": "assets-portable-media-encrypted-ccpa",
+              "externalId": "CRY-60"
+            },
+            {
+              "id": "pii-transmission-destination-ccpa",
+              "externalId": "CRY-61"
+            },
+            {
+              "id": "pii-transmission-encryption-ccpa",
+              "externalId": "CRY-62"
+            },
+            {
+              "id": "data-encrypted-in-transit-ccpa",
+              "externalId": "CRY-63"
+            },
+            {
+              "id": "remote-access-vpn-enforced-ccpa",
+              "externalId": "CRY-64"
+            },
+            {
+              "id": "access-ssh-required-ccpa",
+              "externalId": "CRY-65"
+            },
+            {
+              "id": "pseudonymization-ccpa",
+              "externalId": "DCH-50"
+            },
+            {
+              "id": "security-procedures-and-practices-ccpa",
+              "externalId": "GOV-57"
+            },
+            {
+              "id": "data-classification-policy-ccpa",
+              "externalId": "GOV-58"
+            },
+            {
+              "id": "accuracy-and-quality-ccpa",
+              "externalId": "GOV-59"
+            },
+            {
+              "id": "access-revoked-termination-ccpa",
+              "externalId": "HRS-30"
+            },
+            {
+              "id": "changes-approval-required-ccpa",
+              "externalId": "IAC-90"
+            },
+            {
+              "id": "remote-access-mfa-enforced-ccpa",
+              "externalId": "IAC-91"
+            },
+            {
+              "id": "unique-account-authentication-enforced-ccpa",
+              "externalId": "IAC-92"
+            },
+            {
+              "id": "access-role-based-ccpa",
+              "externalId": "IAC-93"
+            },
+            {
+              "id": "access-production-network-restricted-ccpa",
+              "externalId": "IAC-94"
+            },
+            {
+              "id": "access-reviews-ccpa",
+              "externalId": "IAC-95"
+            },
+            {
+              "id": "incident-response-policies-established-ccpa",
+              "externalId": "IRO-35"
+            },
+            {
+              "id": "MDM-system-utilized-ccpa",
+              "externalId": "MDM-3"
+            },
+            {
+              "id": "network-firewalls-reviewed-ccpa",
+              "externalId": "NET-40"
+            },
+            {
+              "id": "network-firewalls-utilized-ccpa",
+              "externalId": "NET-41"
+            },
+            {
+              "id": "infra-network-segregation-ccpa",
+              "externalId": "NET-42"
+            },
+            {
+              "id": "system-network-hardening-ccpa",
+              "externalId": "SEA-24"
+            },
+            {
+              "id": "policies-password-complexity-ccpa",
+              "externalId": "SEA-25"
+            },
+            {
+              "id": "intrusion-detection-system-ccpa",
+              "externalId": "THR-4"
+            },
+            {
+              "id": "assets-anti-malware-ccpa",
+              "externalId": "THR-5"
+            },
+            {
+              "id": "support-infra-patched-ccpa",
+              "externalId": "VPM-39"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.105",
+      "name": "Right to deletion",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.105(b)",
+          "name": "",
+          "description": "A business that collects personal information about consumers shall disclose, pursuant to Section 1798.130, the consumer’s rights to request the deletion of the consumer’s personal information.",
+          "controls": [
+            {
+              "id": "deletion-right-disclosure",
+              "externalId": "PRI-132"
+            }
+          ]
+        },
+        {
+          "id": "1798.105(c)",
+          "name": "",
+          "description": "A business that receives a verifiable consumer request from a consumer to delete the consumer’s personal information pursuant to subdivision (a) of this section shall delete the consumer’s personal information from its records and direct any service providers to delete the consumer’s personal information from their records.",
+          "controls": [
+            {
+              "id": "verifiable-request-deletion",
+              "externalId": "GOV-60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.110",
+      "name": "Request to know - general",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.110(c)(1)",
+          "name": "",
+          "description": "The categories of personal information it has collected about consumers.",
+          "controls": [
+            {
+              "id": "consumer-disclosure",
+              "externalId": "PRI-133"
+            }
+          ]
+        },
+        {
+          "id": "1798.110(c)(2)",
+          "name": "",
+          "description": "The categories of sources from which the personal information is collected.",
+          "controls": [
+            {
+              "id": "consumer-disclosure",
+              "externalId": "PRI-133"
+            }
+          ]
+        },
+        {
+          "id": "1798.110(c)(3)",
+          "name": "",
+          "description": "The business or commercial purpose for collecting or selling personal information.",
+          "controls": [
+            {
+              "id": "consumer-disclosure",
+              "externalId": "PRI-133"
+            }
+          ]
+        },
+        {
+          "id": "1798.110(c)(4)",
+          "name": "",
+          "description": "The categories of third parties with whom the business shares personal information.",
+          "controls": [
+            {
+              "id": "consumer-disclosure",
+              "externalId": "PRI-133"
+            }
+          ]
+        },
+        {
+          "id": "1798.110(c)(5)",
+          "name": "",
+          "description": "That a consumer has the right to request the specific pieces of personal information the business has collected about that consumer.",
+          "controls": [
+            {
+              "id": "consumer-disclosure",
+              "externalId": "PRI-133"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.115",
+      "name": "Request to know - sales",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.115(a)(1)",
+          "name": "",
+          "description": "The categories of personal information that the business collected about the consumer.",
+          "controls": [
+            {
+              "id": "categories-collected-disclosure",
+              "externalId": "PRI-134"
+            }
+          ]
+        },
+        {
+          "id": "1798.115(a)(2)",
+          "name": "",
+          "description": "The categories of personal information that the business sold about the consumer and the categories of third parties to whom the personal information was sold, by category or categories of personal information for each category of third parties to whom the personal information was sold.",
+          "controls": [
+            {
+              "id": "right-to-categories-sold-disclosure",
+              "externalId": "PRI-135"
+            }
+          ]
+        },
+        {
+          "id": "1798.115(a)(3)",
+          "name": "",
+          "description": "The categories of personal information that the business disclosed about the consumer for a business purpose.",
+          "controls": [
+            {
+              "id": "right-to-categories-disclosed-disclosure",
+              "externalId": "PRI-136"
+            }
+          ]
+        },
+        {
+          "id": "1798.115(b)",
+          "name": "",
+          "description": "A business that sells personal information about a consumer, or that discloses a consumer’s personal information for a business purpose, shall disclose, pursuant to paragraph (4) of subdivision (a) of Section 1798.130, the information specified in subdivision (a) to the consumer upon receipt of a verifiable consumer request from the consumer.",
+          "controls": [
+            {
+              "id": "pii-transfered-disclosure",
+              "externalId": "PRI-137"
+            }
+          ]
+        },
+        {
+          "id": "1798.115(c)(1)",
+          "name": "",
+          "description": "The category or categories of consumers’ personal information it has sold, or if the business has not sold consumers’ personal information, it shall disclose that fact.",
+          "controls": [
+            {
+              "id": "categories-sold-disclosure",
+              "externalId": "PRI-138"
+            }
+          ]
+        },
+        {
+          "id": "1798.115(c)(2)",
+          "name": "",
+          "description": "The category or categories of consumers’ personal information it has disclosed for a business purpose, or if the business has not disclosed the consumers’ personal information for a business purpose, it shall disclose that fact.",
+          "controls": [
+            {
+              "id": "categories-disclosed-disclosure",
+              "externalId": "PRI-139"
+            }
+          ]
+        },
+        {
+          "id": "1798.115(d)",
+          "name": "",
+          "description": "A third party shall not sell personal information about a consumer that has been sold to the third party by a business unless the consumer has received explicit notice and is provided an opportunity to exercise the right to opt-out pursuant to Section 1798.120.",
+          "controls": [
+            {
+              "id": "sell-notice",
+              "externalId": "PRI-140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.120",
+      "name": "Right to opt-out of sales",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.120(a)",
+          "name": "",
+          "description": "A consumer shall have the right, at any time, to direct a business that sells personal information about the consumer to third parties not to sell the consumer’s personal information. This right may be referred to as the right to opt-out.",
+          "controls": [
+            {
+              "id": "opt-out-right",
+              "externalId": "PRI-141"
+            }
+          ]
+        },
+        {
+          "id": "1798.120(b)",
+          "name": "",
+          "description": "A business that sells consumers’ personal information to third parties shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.135, that this information may be sold and that consumers have the “right to opt-out” of the sale of their personal information.",
+          "controls": [
+            {
+              "id": "opt-out-notice",
+              "externalId": "PRI-142"
+            }
+          ]
+        },
+        {
+          "id": "1798.120(c)",
+          "name": "",
+          "description": "Notwithstanding subdivision (a), a business shall not sell the personal information of consumers if the business has actual knowledge that the consumer is less than 16 years of age, unless the consumer, in the case of consumers at least 13 years of age and less than 16 years of age, or the consumer’s parent or guardian, in the case of consumers who are less than 13 years of age, has affirmatively authorized the sale of the consumer’s personal information. A business that willfully disregards the consumer’s age shall be deemed to have had actual knowledge of the consumer’s age. This right may be referred to as the “right to opt-in.”",
+          "controls": [
+            {
+              "id": "childrens -opt-in-right",
+              "externalId": "PRI-143"
+            }
+          ]
+        },
+        {
+          "id": "1798.120(d)",
+          "name": "",
+          "description": "A business that has received direction from a consumer not to sell the consumer’s personal information or, in the case of a minor consumer’s personal information has not received consent to sell the minor consumer’s personal information shall be prohibited, pursuant to paragraph (4) of subdivision (a) of Section 1798.135, from selling the consumer’s personal information after its receipt of the consumer’s direction, unless the consumer subsequently provides express authorization for the sale of the consumer’s personal information.",
+          "controls": [
+            {
+              "id": "opt-out-right-honored",
+              "externalId": "PRI-57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.125",
+      "name": "Right to non-discrimination",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.125(a)(1)(A)",
+          "name": "",
+          "description": "Denying goods or services to the consumer.",
+          "controls": [
+            {
+              "id": "non-discrimination-of-services",
+              "externalId": "PRI-58"
+            }
+          ]
+        },
+        {
+          "id": "1798.125(a)(1)(B)",
+          "name": "",
+          "description": "Charging different prices or rates for goods or services, including through the use of discounts or other benefits or imposing penalties.",
+          "controls": [
+            {
+              "id": "non-discrimination-of-price",
+              "externalId": "PRI-59"
+            }
+          ]
+        },
+        {
+          "id": "1798.125(a)(1)(C)",
+          "name": "",
+          "description": "Providing a different level or quality of goods or services to the consumer.",
+          "controls": [
+            {
+              "id": "non-discrimination-of-quality",
+              "externalId": "PRI-60"
+            }
+          ]
+        },
+        {
+          "id": "1798.125(a)(1)(D)",
+          "name": "",
+          "description": "Suggesting that the consumer will receive a different price or rate for goods or services or a different level or quality of goods or services.",
+          "controls": [
+            {
+              "id": "non-discrimination-of-suggestion",
+              "externalId": "PRI-61"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.130",
+      "name": "CCPA Requests and Privacy policies",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.130(a)(1)(A)",
+          "name": "",
+          "description": "Make available to consumers two or more designated methods for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, including, at a minimum, a toll-free telephone number. A business that operates exclusively online and has a direct relationship with a consumer from whom it collects personal information shall only be required to provide an email address for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115.",
+          "controls": [
+            {
+              "id": "two-sar-methods",
+              "externalId": "PRI-145"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(1)(B)",
+          "name": "",
+          "description": "If the business maintains an internet website, make the internet website available to consumers to submit requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115.",
+          "controls": [
+            {
+              "id": "sar-via-website",
+              "externalId": "PRI-144"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(2)",
+          "name": "",
+          "description": "Disclose and deliver the required information to a consumer free of charge within 45 days of receiving a verifiable consumer request from the consumer. The business shall promptly take steps to determine whether the request is a verifiable consumer request, but this shall not extend the business’ duty to disclose and deliver the information within 45 days of receipt of the consumer’s request. The time period to provide the required information may be extended once by an additional 45 days when reasonably necessary, provided the consumer is provided notice of the extension within the first 45-day period. The disclosure shall cover the 12-month period preceding the business’ receipt of the verifiable consumer request and shall be made in writing and delivered through the consumer’s account with the business, if the consumer maintains an account with the business, or by mail or electronically at the consumer’s option if the consumer does not maintain an account with the business, in a readily useable format that allows the consumer to transmit this information from one entity to another entity without hindrance. The business may require authentication of the consumer that is reasonable in light of the nature of the personal information requested, but shall not require the consumer to create an account with the business in order to make a verifiable consumer request.  If the consumer maintains an account with the business, the business may require the consumer to submit the request through that account.",
+          "controls": [
+            {
+              "id": "sar-response",
+              "externalId": "PRI-62"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(3)(A)",
+          "name": "",
+          "description": "To identify the consumer, associate the information provided by the consumer in the verifiable consumer request to any personal information previously collected by the business about the consumer.",
+          "controls": [
+            {
+              "id": "consumer-with-pii-collected-identified",
+              "externalId": "PRI-47"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(3)(B)",
+          "name": "",
+          "description": "Identify by category or categories the personal information collected about the consumer in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describes the personal information collected.",
+          "controls": [
+            {
+              "id": "pii-categories-identified",
+              "externalId": "PRI-46"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(4)(A)",
+          "name": "",
+          "description": "Identify the consumer and associate the information provided by the consumer in the verifiable consumer request to any personal information previously collected by the business about the consumer.",
+          "controls": [
+            {
+              "id": "pii-categories-collected-identified",
+              "externalId": "PRI-50"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(4)(B)",
+          "name": "",
+          "description": "Identify by category or categories the personal information of the consumer that the business sold in the preceding 12 months by reference to the enumerated category in subdivision (c) that most closely describes the personal information, and provide the categories of third parties to whom the consumer’s personal information was sold in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describes the personal information sold. The business shall disclose the information in a list that is separate from a list generated for the purposes of subparagraph (C).",
+          "controls": [
+            {
+              "id": "pii-categories-sold-identified",
+              "externalId": "PRI-49"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(4)(C)",
+          "name": "",
+          "description": "Identify by category or categories the personal information of the consumer that the business disclosed for a business purpose in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describes the personal information, and provide the categories of third parties to whom the consumer’s personal information was disclosed for a business purpose in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describes the personal information disclosed. The business shall disclose the information in a list that is separate from a list generated for the purposes of subparagraph (B).",
+          "controls": [
+            {
+              "id": "pii-categories-disclosed-identified",
+              "externalId": "PRI-48"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(5)(A)",
+          "name": "",
+          "description": "A description of a consumer’s rights pursuant to Sections 1798.110, 1798.115, and 1798.125 and one or more designated methods for submitting requests.",
+          "controls": [
+            {
+              "id": "consumer-rights-privacy-notice",
+              "externalId": "PRI-45"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(5)(B)",
+          "name": "",
+          "description": "For purposes of subdivision (c) of Section 1798.110, a list of the categories of personal information it has collected about consumers in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describe the personal information collected.",
+          "controls": [
+            {
+              "id": "pii-categories-collected-privacy-notice",
+              "externalId": "PRI-146"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(5)(C)(i)",
+          "name": "",
+          "description": "A list of the categories of personal information it has sold about consumers in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describe the personal information sold, or if the business has not sold consumers’ personal information in the preceding 12 months, the business shall disclose that fact.",
+          "controls": [
+            {
+              "id": "pii-categories-sold-privacy-notice",
+              "externalId": "PRI-147"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(5)(C)(ii)",
+          "name": "",
+          "description": "A list of the categories of personal information it has disclosed about consumers for a business purpose in the preceding 12 months by reference to the enumerated category in subdivision (c) that most closely describe the personal information disclosed, or if the business has not disclosed consumers’ personal information for a business purpose in the preceding 12 months, the business shall disclose that fact.",
+          "controls": [
+            {
+              "id": "pii-categories-disclosed-privacy-notice",
+              "externalId": "PRI-148"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(6)",
+          "name": "",
+          "description": "Ensure that all individuals responsible for handling consumer inquiries about the business’ privacy practices or the business’ compliance with this title are informed of all requirements in Sections 1798.100, 1798.105, 1798.110, 1798.115, 1798.125, and this section, and how to direct consumers to exercise their rights under those sections.",
+          "controls": [
+            {
+              "id": "employee-training-on-ccpa",
+              "externalId": "SAT-31"
+            }
+          ]
+        },
+        {
+          "id": "1798.130(a)(7)",
+          "name": "",
+          "description": "Use any personal information collected from the consumer in connection with the business’ verification of the consumer’s request solely for the purposes of verification.",
+          "controls": [
+            {
+              "id": "sar-pii-collected-limited-use",
+              "externalId": "PRI-63"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.135",
+      "name": "\"Do Not Sell\" link and compliance obligations",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.135(a)(1)",
+          "name": "",
+          "description": "Provide a clear and conspicuous link on the business’s Internet homepage, titled “Do Not Sell My Personal Information,” to an Internet Web page that enables a consumer, or a person authorized by the consumer, to opt-out of the sale of the consumer’s personal information. A business shall not require a consumer to create an account in order to direct the business not to sell the consumer’s personal information.",
+          "controls": [
+            {
+              "id": "do-not-sell-link",
+              "externalId": "PRI-38"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(a)(2)(A)",
+          "name": "",
+          "description": "Its online privacy policy or policies if the business has an online privacy policy or policies.",
+          "controls": [
+            {
+              "id": "do-not-sell-link-privacy-notice",
+              "externalId": "PRI-149"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(a)(2)(B)",
+          "name": "",
+          "description": "Any California-specific description of consumers’ privacy rights.",
+          "controls": [
+            {
+              "id": "consumer-right-privacy-notice",
+              "externalId": "PRI-150"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(a)(3)",
+          "name": "",
+          "description": "Ensure that all individuals responsible for handling consumer inquiries about the business’s privacy practices or the business’s compliance with this title are informed of all requirements in Section 1798.120 and this section and how to direct consumers to exercise their rights under those sections.",
+          "controls": [
+            {
+              "id": "training-responsible-individuals",
+              "externalId": "SAT-30"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(a)(4)",
+          "name": "",
+          "description": "For consumers who exercise their right to opt-out of the sale of their personal information, refrain from selling personal information collected by the business about the consumer.",
+          "controls": [
+            {
+              "id": "do-not-sell-enforced",
+              "externalId": "PRI-64"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(a)(5)",
+          "name": "",
+          "description": "For a consumer who has opted-out of the sale of the consumer’s personal information, respect the consumer’s decision to opt-out for at least 12 months before requesting that the consumer authorize the sale of the consumer’s personal information.",
+          "controls": [
+            {
+              "id": "do-not-sell-do-not-ask-enforced",
+              "externalId": "PRI-66"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(a)(6)",
+          "name": "",
+          "description": "Use any personal information collected from the consumer in connection with the submission of the consumer’s opt-out request solely for the purposes of complying with the opt-out request.",
+          "controls": [
+            {
+              "id": "pii-opt-out-use-limited",
+              "externalId": "PRI-65"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(b)",
+          "name": "",
+          "description": "Nothing in this title shall be construed to require a business to comply with the title by including the required links and text on the homepage that the business makes available to the public generally, if the business maintains a separate and additional homepage that is dedicated to California consumers and that includes the required links and text, and the business takes reasonable steps to ensure that California consumers are directed to the homepage for California consumers and not the homepage made available to the public generally.",
+          "controls": [
+            {
+              "id": "dedicated-notice-webpage-option-implemented",
+              "externalId": "PRI-151"
+            }
+          ]
+        },
+        {
+          "id": "1798.135(c)",
+          "name": "",
+          "description": "A consumer may authorize another person solely to opt-out of the sale of the consumer’s personal information on the consumer’s behalf, and a business shall comply with an opt-out request received from a person authorized by the consumer to act on the consumer’s behalf, pursuant to regulations adopted by the Attorney General.",
+          "controls": [
+            {
+              "id": "agent-opt-out-request-compliance",
+              "externalId": "PRI-67"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1798.140",
+      "name": "Definitions",
+      "optional": false,
+      "sections": [
+        {
+          "id": "1798.140(v)",
+          "name": "",
+          "description": "“Service provider” means a sole proprietorship, partnership, limited liability company, corporation, association, or other legal entity that is organized or operated for the profit or financial benefit of its shareholders or other owners, that processes information on behalf of a business and to which the business discloses a consumer’s personal information for a business purpose pursuant to a written contract, provided that the contract prohibits the entity receiving the information from retaining, using, or disclosing the personal information for any purpose other than for the specific purpose of performing the services specified in the contract for the business, or as otherwise permitted by this title, including retaining, using, or disclosing the personal information for a commercial purpose other than providing the services specified in the contract with the business.",
+          "controls": [
+            {
+              "id": "service-provider-contracts-established",
+              "externalId": "PRI-43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7010",
+      "name": "Overview of required notices",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7010(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirement-for-privacy-policy",
+              "externalId": "PRI-169"
+            }
+          ]
+        },
+        {
+          "id": "7010(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirement-for-notice-at-collection",
+              "externalId": "PRI-124"
+            }
+          ]
+        },
+        {
+          "id": "7010(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirement-for-notice of opt-out",
+              "externalId": "PRI-171"
+            }
+          ]
+        },
+        {
+          "id": "7010(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-of-financial-incentive",
+              "externalId": "PRI-170"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7011",
+      "name": "Privacy Policy",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7011(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-requirements",
+              "externalId": "PRI-51"
+            }
+          ]
+        },
+        {
+          "id": "7011(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-homepage-link",
+              "externalId": "PRI-39"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(1)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-right-to-know",
+              "externalId": "PRI-152"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(2)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-right-to-deletion",
+              "externalId": "PRI-153"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(3)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-right-to-opt-out",
+              "externalId": "PRI-154"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(4)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-right-to-non-discrimination",
+              "externalId": "PRI-155"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(5)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-right-to-use-agent",
+              "externalId": "PRI-157"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(6)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-contact-information",
+              "externalId": "PRI-156"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(7)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-last-update",
+              "externalId": "PRI-158"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(8)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-sales-metrics",
+              "externalId": "PRI-160"
+            }
+          ]
+        },
+        {
+          "id": "7011(c)(9)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-under-age-16-notice",
+              "externalId": "PRI-159"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7012",
+      "name": "Notice at collection",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7012(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirement-at-notice-of-collection",
+              "externalId": "PRI-52"
+            }
+          ]
+        },
+        {
+          "id": "7012(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-at-collection-content",
+              "externalId": "PRI-172"
+            }
+          ]
+        },
+        {
+          "id": "7012(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-at-collection-online",
+              "externalId": "PRI-125"
+            }
+          ]
+        },
+        {
+          "id": "7012(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-exception",
+              "externalId": "PRI-126"
+            }
+          ]
+        },
+        {
+          "id": "7012(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "data-broker-notice-at-collection",
+              "externalId": "PRI-127"
+            }
+          ]
+        },
+        {
+          "id": "7012(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "employment-related-notice-at-collection",
+              "externalId": "PRI-173"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7013",
+      "name": "Notice of right to opt-out at sale",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7013(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirements-for-notice-to-opt-out",
+              "externalId": "PRI-174"
+            }
+          ]
+        },
+        {
+          "id": "7013(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "mechanisms-for-opt-out-notice",
+              "externalId": "PRI-175"
+            }
+          ]
+        },
+        {
+          "id": "7013(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "content-of-opt-out-notice",
+              "externalId": "PRI-128"
+            }
+          ]
+        },
+        {
+          "id": "7013(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "opt-out-notice-exception",
+              "externalId": "PRI-44"
+            }
+          ]
+        },
+        {
+          "id": "7013(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "prohibition-of-selling-data-without-notice",
+              "externalId": "PRI-129"
+            }
+          ]
+        },
+        {
+          "id": "7013(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "opt-out-icon",
+              "externalId": "PRI-176"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7016",
+      "name": "Notice of financial incentive",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7016(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "financial-incentive-notice-requirement",
+              "externalId": "PRI-177"
+            }
+          ]
+        },
+        {
+          "id": "7016(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "financial-incentive-notice-content",
+              "externalId": "PRI-178"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7020",
+      "name": "Methods for submitting requests",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7020(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "acceptable-methods-for-requests",
+              "externalId": "PRI-162"
+            }
+          ]
+        },
+        {
+          "id": "7020(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "acceptable-methods-for-deletion",
+              "externalId": "PRI-161"
+            }
+          ]
+        },
+        {
+          "id": "7020(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "alignment-of-requests-methods",
+              "externalId": "PRI-163"
+            }
+          ]
+        },
+        {
+          "id": "7020(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "two-step-deletion-process",
+              "externalId": "PRI-164"
+            }
+          ]
+        },
+        {
+          "id": "7020(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "improper-request-process",
+              "externalId": "PRI-55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7021",
+      "name": "Responding to requests",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7021(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "acknowledgement-in-10-days",
+              "externalId": "PRI-54"
+            }
+          ]
+        },
+        {
+          "id": "7021(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "response-in-45-days",
+              "externalId": "PRI-53"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(1)",
+          "name": "",
+          "controls": [
+            {
+              "id": "limitations-to-response",
+              "externalId": "PRI-68"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(2)",
+          "name": "",
+          "controls": [
+            {
+              "id": "limitations-to-response",
+              "externalId": "PRI-68"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(3)",
+          "name": "",
+          "controls": [
+            {
+              "id": "limitations-to-response",
+              "externalId": "PRI-68"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(4)",
+          "name": "",
+          "controls": [
+            {
+              "id": "non-disclosure-of-sensitive-pii",
+              "externalId": "PRI-69"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(5)",
+          "name": "",
+          "controls": [
+            {
+              "id": "explanation-of-denials",
+              "externalId": "PRI-70"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(6)",
+          "name": "",
+          "controls": [
+            {
+              "id": "security-of-response-transmission",
+              "externalId": "PRI-71"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(7)",
+          "name": "",
+          "controls": [
+            {
+              "id": "self-service-of-consumer-requests",
+              "externalId": "PRI-165"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(8)",
+          "name": "",
+          "controls": [
+            {
+              "id": "definition-of-12-month-period",
+              "externalId": "PRI-72"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(9)",
+          "name": "",
+          "controls": [
+            {
+              "id": "specific-response-to-consumers",
+              "externalId": "PRI-73"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(10)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirements-for-category-request-response",
+              "externalId": "PRI-74"
+            }
+          ]
+        },
+        {
+          "id": "7021(c)(11)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirements-for-description-of-categories",
+              "externalId": "PRI-75"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(1)",
+          "name": "",
+          "controls": [
+            {
+              "id": "delete-request-denial",
+              "externalId": "PRI-76"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(2)",
+          "name": "",
+          "controls": [
+            {
+              "id": "delete-request-options",
+              "externalId": "PRI-77"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(3)",
+          "name": "",
+          "controls": [
+            {
+              "id": "delete-from-backups",
+              "externalId": "PRI-78"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(4)",
+          "name": "",
+          "controls": [
+            {
+              "id": "deletion-request-response",
+              "externalId": "PRI-79"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(5)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requestor-information-retained",
+              "externalId": "PRI-80"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(6)",
+          "name": "",
+          "controls": [
+            {
+              "id": "deletion-denial-communication",
+              "externalId": "PRI-81"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(7)",
+          "name": "",
+          "controls": [
+            {
+              "id": "deletion-denial-opt-out",
+              "externalId": "PRI-82"
+            }
+          ]
+        },
+        {
+          "id": "7021(d)(8)",
+          "name": "",
+          "controls": [
+            {
+              "id": "deletion-of-select-portions",
+              "externalId": "PRI-84"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7025",
+      "name": "Request to opt-out",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7025(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "two-opt-out-methods",
+              "externalId": "PRI-89"
+            }
+          ]
+        },
+        {
+          "id": "7025(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "appropriate-opt-out-methods",
+              "externalId": "PRI-90"
+            }
+          ]
+        },
+        {
+          "id": "7025(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "browser-opt-out-method",
+              "externalId": "PRI-91"
+            }
+          ]
+        },
+        {
+          "id": "7025(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "opt-out-options",
+              "externalId": "PRI-92"
+            }
+          ]
+        },
+        {
+          "id": "7025(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "opt-out-response-in-15-days",
+              "externalId": "PRI-93"
+            }
+          ]
+        },
+        {
+          "id": "7025(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "authorized-agent-request",
+              "externalId": "PRI-94"
+            }
+          ]
+        },
+        {
+          "id": "7025(g)",
+          "name": "",
+          "controls": [
+            {
+              "id": "fraudulent-opt-out-request",
+              "externalId": "PRI-95"
+            }
+          ]
+        },
+        {
+          "id": "7025(h)",
+          "name": "",
+          "controls": [
+            {
+              "id": "easy-opt-out-process",
+              "externalId": "PRI-96"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7028",
+      "name": "Request to opt-in after opting-out",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7028(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "two-step-opt-in",
+              "externalId": "PRI-41"
+            }
+          ]
+        },
+        {
+          "id": "7028(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-of-opt-in-necessity",
+              "externalId": "PRI-166"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7029",
+      "name": "Service providers",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7029(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "second-entity-service-provider",
+              "externalId": "PRI-83"
+            }
+          ]
+        },
+        {
+          "id": "7029(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "service-provider-limited-use",
+              "externalId": "PRI-85"
+            }
+          ]
+        },
+        {
+          "id": "7029(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "service-provider-sale-prohibition",
+              "externalId": "PRI-86"
+            }
+          ]
+        },
+        {
+          "id": "7029(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "service-provider-deletion-request",
+              "externalId": "PRI-87"
+            }
+          ]
+        },
+        {
+          "id": "7029(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "service-provider-ccpa-compliance",
+              "externalId": "PRI-88"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7030",
+      "name": "Trainings",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7030(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "training-for-individuals-handling-request",
+              "externalId": "SAT-29"
+            }
+          ]
+        },
+        {
+          "id": "7030(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "consumer-request-record-data-retention",
+              "externalId": "PRI-42"
+            }
+          ]
+        },
+        {
+          "id": "7030(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "request-record-requirement",
+              "externalId": "PRI-40"
+            }
+          ]
+        },
+        {
+          "id": "7030(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "compliance-of-request-records",
+              "externalId": "PRI-97"
+            }
+          ]
+        },
+        {
+          "id": "7030(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "ccpa-records-sharing-prohibition",
+              "externalId": "PRI-99"
+            }
+          ]
+        },
+        {
+          "id": "7030(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirements-to-retain-personal-information",
+              "externalId": "PRI-98"
+            }
+          ]
+        },
+        {
+          "id": "7030(g)",
+          "name": "",
+          "controls": [
+            {
+              "id": "metrics-disclosure-requirements",
+              "externalId": "PRI-101"
+            }
+          ]
+        },
+        {
+          "id": "7030(h)",
+          "name": "",
+          "controls": [
+            {
+              "id": "all-request-metrics-option",
+              "externalId": "PRI-100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7031",
+      "name": "Household requests",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7031(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requirements-for-household-requests",
+              "externalId": "PRI-102"
+            }
+          ]
+        },
+        {
+          "id": "7031(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "requests-from-household-with-account",
+              "externalId": "PRI-103"
+            }
+          ]
+        },
+        {
+          "id": "7031(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "household-requests-for-minors",
+              "externalId": "PRI-104"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7040",
+      "name": "General verification rules",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7040(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "documented-verification-method",
+              "externalId": "PRI-105"
+            }
+          ]
+        },
+        {
+          "id": "7040(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "verification-methods",
+              "externalId": "PRI-106"
+            }
+          ]
+        },
+        {
+          "id": "7040(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "minimization-of-verification-information",
+              "externalId": "PRI-108"
+            }
+          ]
+        },
+        {
+          "id": "7040(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "prohibition-of-fees",
+              "externalId": "PRI-107"
+            }
+          ]
+        },
+        {
+          "id": "7040(e)",
+          "name": "",
+          "controls": [
+            {
+              "id": "fraud-prevention",
+              "externalId": "PRI-110"
+            }
+          ]
+        },
+        {
+          "id": "7040(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "exception-for-deidentified-data",
+              "externalId": "PRI-109"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7041",
+      "name": "Verification for password protected accounts",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7041(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "verification-of-password-protected-accounts",
+              "externalId": "PRI-167"
+            }
+          ]
+        },
+        {
+          "id": "7041(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "fraud-prevention-for-password-protected-accounts",
+              "externalId": "PRI-111"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7042",
+      "name": "Verification for non-account holders",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7042(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "two-point-verification-for-categories",
+              "externalId": "PRI-112"
+            }
+          ]
+        },
+        {
+          "id": "7042(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "three-point-verification-for-specific-pii",
+              "externalId": "PRI-113"
+            }
+          ]
+        },
+        {
+          "id": "7042(d)",
+          "name": "",
+          "controls": [
+            {
+              "id": "proportionated-verification-of-deletion",
+              "externalId": "PRI-114"
+            }
+          ]
+        },
+        {
+          "id": "7042(f)",
+          "name": "",
+          "controls": [
+            {
+              "id": "obligration-to-deny-request",
+              "externalId": "PRI-116"
+            }
+          ]
+        },
+        {
+          "id": "7042(g)",
+          "name": "",
+          "controls": [
+            {
+              "id": "explanation-of-request-denial",
+              "externalId": "PRI-115"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7043",
+      "name": "Authorized agent",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7043(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "agent-verification",
+              "externalId": "GOV-61"
+            }
+          ]
+        },
+        {
+          "id": "7043(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "power-of-attorney-exception",
+              "externalId": "PRI-117"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7050",
+      "name": "Consumers under 13 years of age",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7050(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "under-13-sale-opt-in",
+              "externalId": "PRI-118"
+            }
+          ]
+        },
+        {
+          "id": "7050(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-of-opt-out-for-sale-of-minors-data",
+              "externalId": "PRI-119"
+            }
+          ]
+        },
+        {
+          "id": "7050(c)",
+          "name": "",
+          "controls": [
+            {
+              "id": "under-13-deletion-verification",
+              "externalId": "PRI-120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7051",
+      "name": "Consumers 13-15 years of age",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7051(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "age-13-15-sale-opt-in-verification",
+              "externalId": "PRI-121"
+            }
+          ]
+        },
+        {
+          "id": "7051(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "age-13-15-opt-out-right",
+              "externalId": "PRI-122"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7052",
+      "name": "Notification to consumers under 16 years of age",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7052(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "privacy-policy-notice-for-minors",
+              "externalId": "PRI-168"
+            }
+          ]
+        },
+        {
+          "id": "7052(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "notice-exclusion-from-minors",
+              "externalId": "PRI-123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7061",
+      "name": "Calculating the value of consumer data",
+      "optional": false,
+      "sections": [
+        {
+          "id": "7061(a)",
+          "name": "",
+          "controls": [
+            {
+              "id": "calculating-value-of-consumer-data",
+              "externalId": "PRI-130"
+            }
+          ]
+        },
+        {
+          "id": "7061(b)",
+          "name": "",
+          "controls": [
+            {
+              "id": "calculating-value-of-consumer-data",
+              "externalId": "PRI-130"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
