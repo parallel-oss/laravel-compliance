@@ -1,0 +1,42 @@
+{
+  "testId": "aws-guardduty-notifications-enabled",
+  "data": [
+    {
+      "id": "AwsGuardDutyDetector-66f2e1890c6d0ef55599c07b",
+      "entityStatus": "FAILING",
+      "displayName": "381670226487: us-east-2",
+      "responseType": "AWS Guard Duty Detector",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T15:58:02.637Z",
+      "createdDate": "2024-09-24T15:58:02.637Z"
+    },
+    {
+      "id": "AwsGuardDutyDetector-66f2e1890c6d0ef55599c1fe",
+      "entityStatus": "FAILING",
+      "displayName": "381670226487: us-east-1",
+      "responseType": "AWS Guard Duty Detector",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T15:58:02.637Z",
+      "createdDate": "2024-09-24T15:58:02.637Z"
+    },
+    {
+      "id": "AwsGuardDutyDetector-66f2e1890c6d0ef55599c262",
+      "entityStatus": "FAILING",
+      "displayName": "381670226487: us-west-1",
+      "responseType": "AWS Guard Duty Detector",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T15:58:02.637Z",
+      "createdDate": "2024-09-24T15:58:02.637Z"
+    },
+    {
+      "id": "AwsGuardDutyDetector-66f2e1890c6d0ef55599c29a",
+      "entityStatus": "FAILING",
+      "displayName": "381670226487: us-west-2",
+      "responseType": "AWS Guard Duty Detector",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T15:58:02.637Z",
+      "createdDate": "2024-09-24T15:58:02.637Z"
+    }
+  ],
+  "count": 4
+}

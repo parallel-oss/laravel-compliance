@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "VnVsbmVyYWJpbGl0aWVzIHNjYW5uaW5nIG5vdCBjb25maWd1cmVkIGZvciBHaXRIdWIgcmVzb3VyY2Vz",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "VnVsbmVyYWJpbGl0aWVzIHNjYW5uaW5nIG5vdCBjb25maWd1cmVkIGZvciBHaXRIdWIgcmVzb3VyY2Vz"
+    },
+    "data": [
+      {
+        "id": "String-Vulnerabilities scanning not configured for GitHub resources",
+        "entityStatus": "FAILING",
+        "displayName": "Vulnerabilities scanning not configured for GitHub resources",
+        "responseType": "Identifier",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T19:43:18.447Z",
+        "createdDate": "2025-10-10T19:43:18.447Z"
+      }
+    ]
+  }
+}

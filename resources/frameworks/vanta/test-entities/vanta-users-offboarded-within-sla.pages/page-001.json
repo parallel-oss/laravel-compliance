@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjkyNGYxNDA4MzQzNjFkOWQ5NzM0MmVh_eyIkZGF0ZSI6MTc2NDI4NzkzNjUyNH0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjkyNGYxNDA4MzQzNjFkOWQ5NzM0MmVh_eyIkZGF0ZSI6MTc2NDI4NzkzNjUyNH0="
+    },
+    "data": [
+      {
+        "id": "User-681a6d69ad76b47618f0af15",
+        "entityStatus": "FAILING",
+        "displayName": "Jeremy Olken",
+        "responseType": "User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-11-24T23:58:56.585Z",
+        "createdDate": "2025-11-24T23:58:56.585Z"
+      }
+    ]
+  }
+}

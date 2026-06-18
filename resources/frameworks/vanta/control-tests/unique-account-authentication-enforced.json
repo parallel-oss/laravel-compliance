@@ -1,0 +1,151 @@
+{
+  "controlId": "unique-account-authentication-enforced",
+  "data": [
+    {
+      "id": "infra-unique-accounts-group",
+      "name": "Groups manage employee accounts permissions",
+      "lastTestRunDate": "2026-06-18T01:52:56.457Z",
+      "latestFlipDate": "2026-03-15T14:29:32.257Z",
+      "description": "This test verifies that every AWS IAM group has at least one IAM policy attached (either inline or managed). Groups without policies serve no purpose for access management, and having policies attached to groups rather than individual users is essential for enforcing least-privilege access and simplifying permission management at scale.",
+      "failureDescription": "You aren't using groups to manage infrastructure account permissions.",
+      "remediationDescription": "In AWS, you can apply policies to groups, roles, or individual users. To enforce the least privileged policy most effectively, assign policies to groups or roles only.\n\n1. Review your users' infrastructure accounts.\n2. Identify which of your employees can be assigned to a group for their permissions.\n3. Assign these employees to groups, and remove their roles or individual user permissions.\n\n#### Remediation for Terraform\nCreate a \"aws_iam_user\" resource and a \"aws_iam_group\" resource. Ensure the \"aws_iam_user\" resource is associated with the \"aws_iam_group\" resource using an \"aws_iam_user_group_membership\" resource.\n\n```hcl\n\nresource \"aws_iam_user\" \"example\" {\n  name = \"example\"\n}\n\nresource \"aws_iam_group\" \"group1\" {\n  name = \"group1\"\n}\n\nresource \"aws_iam_user_group_membership\" \"example1\" {\n  user = aws_iam_user.example.name\n\n  groups = [\n    aws_iam_group.group1.name\n  ]\n}\n\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user) for more information.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-unique-accounts-roles",
+      "name": "Service accounts used",
+      "lastTestRunDate": "2026-06-18T01:52:56.055Z",
+      "latestFlipDate": "2024-09-24T16:00:11.802Z",
+      "description": "This test verifies that every AWS account connected to Vanta has at least one IAM role assigned. IAM roles are essential for securely delegating permissions to AWS services and users without sharing long-term credentials.",
+      "failureDescription": "You aren't using IAM roles to manage users' access to services for every AWS account.",
+      "remediationDescription": "Many AWS services require that you use roles to allow the service to access resources in other services on your behalf.\n\n1. [Create roles to delegate permissions to relevant AWS services](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).\n2. Assign these roles to users who need to access specific services.\n\n#### Remediation for Terraform\nCreate an \"aws_iam_role\" resource that grants permission to assume a role. Add an \"aws_iam_role_policy_attachment\" resource to attach the permissions the role has once assumed.\n\n```hcl\nresource \"aws_iam_role\" \"example\" {\n  name = \"example\"\n\n  assume_role_policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Action\": \"sts:AssumeRole\",\n      \"Principal\": {\n        \"Service\": \"ecs-tasks.amazonaws.com\", # Replace with the AWS service that can assume the role\n        \"AWS\": \"arn:aws:iam::[account-id]:user/johndoe\"\n      },\n      \"Effect\": \"Allow\",\n      \"Sid\": \"\"\n    }\n  ]\n}\nEOF\n}\n\nresource \"aws_iam_role_policy_attachment\" \"example-policy\" {\n  policy_arn = \"arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy\" # Replace with the AWS IAM policy that includes the permissions of the service once the role is assumed.\n  role       = aws_iam_role.example.name\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) for more information.\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-unique-accounts-root",
+      "name": "Root infrastructure account unused",
+      "lastTestRunDate": "2026-06-17T23:41:40.324Z",
+      "latestFlipDate": "2026-05-27T01:44:34.089Z",
+      "description": "This test checks whether AWS root accounts have been used within the past 30 days.",
+      "failureDescription": "Your root infrastructure user has been used to make infrastructure changes recently. Root users should not be used for infrastructure changes and should only be used in emergencies.",
+      "remediationDescription": "The first user that is created for any new AWS account is known as the root user. As a best practice, the root user should only be used to create an administrative IAM user and should not be used after that except in emergency situations.\n\nIn AWS:\n\n1. [Create IAM users and IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) to perform infrastructure tasks going forward and avoid making changes as the root user wherever possible.\n\nIn Vanta:\n\n1. In the items to remediate for this test, click the \"Acknowledge\" button next to each instance and provide a reason why the root user was used instead of an IAM user or role.\n2. Optionally: Click the \"Apply this reason to all other incidents where this occurred\" checkbox in the modal to acknowledge all instances at once.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2026-06-09T23:46:51.437Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-unique-accounts-unused",
+      "name": "Old infrastructure accounts disabled (AWS)",
+      "lastTestRunDate": "2026-06-17T23:41:40.709Z",
+      "latestFlipDate": "2024-09-24T16:02:49.534Z",
+      "description": "This test checks for AWS IAM users (non-root) that have been inactive for more than 90 days and should be considered for removal.",
+      "failureDescription": "You have IAM user accounts that haven't been active in the last 90 days.",
+      "remediationDescription": "1. Identify the IAM accounts that are no longer in use in your company.\n2. [Delete IAM accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html) that have been inactive for 90 days or more.\n\n#### Remediation for Terraform\nSet force_destroy to true for your \"aws_iam_user\" resource.\n\n```hcl\nresource \"aws_iam_user\" \"test-iam-user\" {\n  name = \"test-user\"\n  force_destroy = true\n\n}\n```\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user) for more information.\n\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-unique-accounts-user",
+      "name": "No user account has a policy attached directly",
+      "lastTestRunDate": "2026-06-18T01:52:56.239Z",
+      "latestFlipDate": "2026-03-03T20:42:05.536Z",
+      "description": "This test verifies that no AWS IAM users have policies attached directly to their user accounts, checking that policies are instead applied through user groups.",
+      "failureDescription": "Some of your AWS IAM policies are attached directly to users.",
+      "remediationDescription": "Amazon allows policies to be defined and applied at the group, role, or user level; as much as possible, only assign policies to groups or roles – not to individual users. Doing so will streamline making changes to users and help enforce a least-privileged policy.\n\n#### Remediation for Terraform\nCreate a \"aws_iam_user\" resource and a \"aws_iam_group\" resource. Ensure the \"aws_iam_user\" resource is associated with the \"aws_iam_group\" resource using an \"aws_iam_user_group_membership\" resource. Verify that the \"aws_iam_user\" does not have any policies attached directly to the account, but rather has an aws_iam_group_policy\" attached to its \"aws_iam_group\" resource.\n\n```hcl\nresource \"aws_iam_user\" \"example\" {\n  name = \"example\"\n}\n\nresource \"aws_iam_group\" \"group1\" {\n  name = \"group1\"\n}\n\nresource \"aws_iam_user_group_membership\" \"example1\" {\n  user = aws_iam_user.example.name\n\n  groups = [\n    aws_iam_group.group1.name\n  ]\n}\n\nresource \"aws_iam_group_policy\" \"example_policy\" {\n  name  = \"example_policy\"\n  group = aws_iam_group.group1.name\n\n  # Terraform's \"jsonencode\" function converts a\n  # Terraform expression result to valid JSON syntax.\n  policy = jsonencode({\n    Version = \"2012-10-17\"\n    Statement = [\n      {\n        Action = [\n          \"ec2:Describe*\",\n        ]\n        Effect   = \"Allow\"\n        Resource = \"*\"\n      },\n    ]\n  })\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_group_policy) for more information.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2026-03-17T20:42:05.501Z",
+        "itemCount": 1
+      },
+      "owner": null
+    }
+  ],
+  "count": 5
+}

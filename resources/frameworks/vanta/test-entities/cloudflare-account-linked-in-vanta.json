@@ -1,0 +1,15 @@
+{
+  "testId": "cloudflare-account-linked-in-vanta",
+  "data": [
+    {
+      "id": "CloudflareUser-69712b126dbe9a292d001921",
+      "entityStatus": "FAILING",
+      "displayName": "jschafer0927@gmail.com",
+      "responseType": "Cloudflare User",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-01-21T19:38:39.325Z",
+      "createdDate": "2026-01-21T19:38:39.325Z"
+    }
+  ],
+  "count": 1
+}

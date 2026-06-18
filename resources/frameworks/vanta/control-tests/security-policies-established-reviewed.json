@@ -1,0 +1,411 @@
+{
+  "controlId": "security-policies-established-reviewed",
+  "data": [
+    {
+      "id": "approved-access-control-policy-bsi-exists",
+      "name": "Company has an approved Access Control Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.946Z",
+      "latestFlipDate": "2026-05-20T18:04:42.430Z",
+      "description": "This test verifies whether your company has an approved [Access Control Policy](/policies/access-control-policy-bsi).",
+      "failureDescription": "You don't have an approved Access Control Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Access%20Control%20Policy) to create and approve a custom Access Control Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-asset-management-policy-bsi-exists",
+      "name": "Company has an approved Asset Management Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.296Z",
+      "latestFlipDate": "2026-05-20T18:04:42.865Z",
+      "description": "This test checks whether your company has an approved [Asset Management Policy](/policies/asset-management-policy-bsi).",
+      "failureDescription": "You don't have an approved Asset Management Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Asset%20Management%20Policy) to create and approve a custom Asset Management Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-business-continuity-and-disaster-recovery-plan-bsi-exists",
+      "name": "Company has an approved Business Continuity and Disaster Recovery Plan",
+      "lastTestRunDate": "2026-06-18T01:52:56.297Z",
+      "latestFlipDate": "2026-05-20T18:04:42.397Z",
+      "description": "This test verifies that your company has an approved [Business Continuity and Disaster Recovery Plan](/policies/business-continuity-and-disaster-recovery-plan-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Business Continuity and Disaster Recovery Plan yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Business%20Continuity%20and%20Disaster%20Recovery%20Plan) to create and approve a custom Business Continuity and Disaster Recovery Plan for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-code-of-conduct-bsi-exists",
+      "name": "Company has an approved Code of Conduct",
+      "lastTestRunDate": "2026-06-18T01:52:56.510Z",
+      "latestFlipDate": "2026-05-20T18:04:42.830Z",
+      "description": "This test verifies that your company has an approved [Code of Conduct](/policies/code-of-conduct-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Code of Conduct yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Code%20of%20Conduct) to create and approve a custom Code of Conduct for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-cryptography-policy-bsi-exists",
+      "name": "Company has an approved Cryptography Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.511Z",
+      "latestFlipDate": "2026-05-20T18:04:43.266Z",
+      "description": "This test verifies that your company has an approved [Cryptography Policy](/policies/cryptography-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Cryptography Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Cryptography%20Policy) to create and approve a custom Cryptography Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-data-management-policy-bsi-exists",
+      "name": "Company has an approved Data Management Policy",
+      "lastTestRunDate": "2026-06-18T01:52:57.030Z",
+      "latestFlipDate": "2026-05-20T18:04:31.863Z",
+      "description": "This test verifies that your company has an approved [Data Management Policy](/policies/data-management-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Data Management Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Data%20Management%20Policy) to create and approve a custom Data Management Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-human-resource-security-policy-bsi-exists",
+      "name": "Company has an approved Human Resource Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.503Z",
+      "latestFlipDate": "2026-05-20T18:04:32.272Z",
+      "description": "This test verifies that your company has an approved [Human Resource Security Policy](/policies/human-resource-security-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Human Resource Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Human%20Resource%20Security%20Policy) to create and approve a custom Human Resource Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-incident-response-plan-bsi-exists",
+      "name": "Company has an approved Incident Response Plan",
+      "lastTestRunDate": "2026-06-18T01:52:56.881Z",
+      "latestFlipDate": "2026-05-20T18:04:31.863Z",
+      "description": "This test verifies that your company has an approved [Incident Response Plan](/policies/incident-response-plan-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Incident Response Plan yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Incident%20Response%20Plan) to create and approve a custom Incident Response Plan for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-information-security-policy-bsi-exists",
+      "name": "Company has an approved Information Security Policy (AUP)",
+      "lastTestRunDate": "2026-06-18T01:52:56.283Z",
+      "latestFlipDate": "2026-05-20T18:04:32.293Z",
+      "description": "This test verifies that your company has an approved [Information Security Policy (AUP)](/policies/information-security-policy-bsi) in Vanta.\n\n> **Information Security Policy (BSI)**: A formal document that outlines the organization's approach to protecting information assets, ensuring confidentiality, integrity, and availability across systems and processes.",
+      "failureDescription": "You don't have an approved Information Security Policy (AUP) yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Information%20Security%20Policy) to create and approve a custom Information Security Policy (AUP) for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-information-security-roles-and-responsibilities-bsi-exists",
+      "name": "Company has an approved Information Security Roles and Responsibilities",
+      "lastTestRunDate": "2026-06-18T01:52:56.725Z",
+      "latestFlipDate": "2026-05-20T18:04:32.736Z",
+      "description": "This test verifies that your company has an approved [Information Security Roles and Responsibilities](/policies/information-security-roles-and-responsibilities-bsi) in Vanta.\n\n> **Information Security Roles and Responsibilities Policy (BSI)**: Defines the responsibilities and expectations for individuals and teams involved in managing and protecting the organization's information assets.",
+      "failureDescription": "You don't have an approved Information Security Roles and Responsibilities yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Information%20Security%20Roles%20and%20Responsibilities) to create and approve a custom Information Security Roles and Responsibilities for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-operations-security-policy-bsi-exists",
+      "name": "Company has an approved Operations Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:57.081Z",
+      "latestFlipDate": "2024-09-23T09:11:45.857Z",
+      "description": "This test verifies that your company has an approved [Operations Security Policy](/policies/operations-security-policy-bsi) in Vanta.\n\n> **Operations Security Policy (BSI)**: Establishes guidelines and controls to manage the day-to-day security of systems, networks, and operational processes, helping to reduce the risk of unauthorized access or disruption.",
+      "failureDescription": "You don't have an approved Operations Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Operations%20Security%20Policy) to create and approve a custom Operations Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-physical-security-policy-bsi-exists",
+      "name": "Company has an approved Physical Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.960Z",
+      "latestFlipDate": "2026-05-20T19:00:47.035Z",
+      "description": "This test verifies that your company has an approved [Physical Security Policy](/policies/physical-security-policy-bsi) in Vanta.\n\n> **Physical Security Policy (BSI)**: Defines the measures used to protect physical access to company facilities, systems, and data from unauthorized individuals or environmental hazards.",
+      "failureDescription": "You don't have an approved Physical Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Physical%20Security%20Policy) to create and approve a custom Physical Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-risk-management-policy-bsi-exists",
+      "name": "Company has an approved Risk Management Policy",
+      "lastTestRunDate": "2026-06-18T01:52:57.076Z",
+      "latestFlipDate": "2026-05-20T19:00:46.913Z",
+      "description": "This test verifies that your company has an approved [Risk Management Policy](/policies/risk-management-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Risk Management Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Risk%20Management%20Policy) to create and approve a custom Risk Management Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-secure-development-policy-bsi-exists",
+      "name": "Company has an approved Secure Development Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.162Z",
+      "latestFlipDate": "2024-09-23T09:11:48.052Z",
+      "description": "This test verifies that your company has an approved [Secure Development Policy](/policies/secure-development-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Secure Development Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Secure%20Development%20Policy) to create and approve a custom Secure Development Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-third-party-management-policy-bsi-exists",
+      "name": "Company has an approved Third-Party Management Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.294Z",
+      "latestFlipDate": "2026-05-20T19:00:47.733Z",
+      "description": "This test verifies that your company has an approved [Third-Party Management Policy](/policies/third-party-management-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Third-Party Management Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Third-Party%20Management%20Policy) to create and approve a custom Third-Party Management Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 15
+}

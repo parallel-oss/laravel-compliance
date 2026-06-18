@@ -1,0 +1,41 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "cmVxdWlyZS1hZG1pbi1lbmNyeXB0ZWQtaWFhcw==",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "cmVxdWlyZS1hZG1pbi1lbmNyeXB0ZWQtaWFhcw=="
+    },
+    "data": [
+      {
+        "id": "require-admin-encrypted-iaas",
+        "name": "SSL/TLS on admin page of infrastructure console",
+        "lastTestRunDate": "2026-06-18T01:52:56.074Z",
+        "latestFlipDate": "2024-09-24T17:11:28.290Z",
+        "description": "This test confirms that all AWS service API endpoints enforce encryption via TLS (Transport Layer Security) by default. This ensures secure communication between your administrators and AWS infrastructure services.",
+        "failureDescription": "N/A",
+        "remediationDescription": "N/A\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Monitoring alerts",
+        "integrations": [
+          "aws"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

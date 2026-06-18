@@ -1,0 +1,102 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjkxMjIwYzc4ODU0ODFlYzM3M2Y2N2U4_eyIkZGF0ZSI6MTc2NDAwNTMxOTM5NH0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMmUyMzQwYzZkMGVmNTU1YjVlNDBj_eyIkZGF0ZSI6MTcyODQwMzI1MjYyM30="
+    },
+    "data": [
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c41a",
+        "entityStatus": "FAILING",
+        "displayName": "vpc-0113c234d8cdf3022",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c471",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-prod-network",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c4e5",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-search",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c55b",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-sandbox-network",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c5c6",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-search-prod",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c665",
+        "entityStatus": "FAILING",
+        "displayName": "vpc-0b79e24cb3150af17",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c6a1",
+        "entityStatus": "FAILING",
+        "displayName": "vpc-0ce91e9bbf33460d6",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-66f2e2340c6d0ef555b5c71d",
+        "entityStatus": "FAILING",
+        "displayName": "vpc-05a4d360812e7e0cd",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:00:52.729Z",
+        "createdDate": "2024-09-24T16:00:52.729Z"
+      },
+      {
+        "id": "AwsVPC-68539de8debb0c522b2f0e6a",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-v2",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-06-19T07:23:53.991Z",
+        "createdDate": "2025-06-19T07:23:53.991Z"
+      },
+      {
+        "id": "AwsVPC-69121ea715ee6ae3826b1a92",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-v2-staging",
+        "responseType": "AWS VPC",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-11-10T17:28:39.452Z",
+        "createdDate": "2025-11-10T17:28:39.452Z"
+      }
+    ]
+  }
+}

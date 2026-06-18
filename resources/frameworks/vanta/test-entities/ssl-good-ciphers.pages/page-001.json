@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "Njk0YmU3YTk2Nzk3NmU0OTkyYmZmNjk3_eyIkZGF0ZSI6MTc2Nzc5MTc4NTM4OX0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "Njk0YmU3YTk2Nzk3NmU0OTkyYmZmNjk3_eyIkZGF0ZSI6MTc2Nzc5MTc4NTM4OX0="
+    },
+    "data": [
+      {
+        "id": "String-liveoutofoffice.com: TLSv1.0: TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+        "entityStatus": "FAILING",
+        "displayName": "liveoutofoffice.com: TLSv1.0: TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+        "responseType": "Identifier",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-12-24T13:16:25.438Z",
+        "createdDate": "2025-12-24T13:16:25.438Z"
+      }
+    ]
+  }
+}

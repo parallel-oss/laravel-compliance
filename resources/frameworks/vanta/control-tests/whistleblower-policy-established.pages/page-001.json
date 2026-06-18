@@ -1,0 +1,39 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "YXBwcm92ZWQtaW5mb3JtYXRpb24tc2VjdXJpdHktcG9saWN5LWJzaS1leGlzdHM=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtaW5mb3JtYXRpb24tc2VjdXJpdHktcG9saWN5LWJzaS1leGlzdHM="
+    },
+    "data": [
+      {
+        "id": "approved-information-security-policy-bsi-exists",
+        "name": "Company has an approved Information Security Policy (AUP)",
+        "lastTestRunDate": "2026-06-18T01:52:56.283Z",
+        "latestFlipDate": "2026-05-20T18:04:32.293Z",
+        "description": "This test verifies that your company has an approved [Information Security Policy (AUP)](/policies/information-security-policy-bsi) in Vanta.\n\n> **Information Security Policy (BSI)**: A formal document that outlines the organization's approach to protecting information assets, ensuring confidentiality, integrity, and availability across systems and processes.",
+        "failureDescription": "You don't have an approved Information Security Policy (AUP) yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Information%20Security%20Policy) to create and approve a custom Information Security Policy (AUP) for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "c3NsLXVzZWQtdW5pdHRlc3Q=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtY3J5cHRvZ3JhcGh5LXBvbGljeS1ic2ktZXhpc3Rz"
+    },
+    "data": [
+      {
+        "id": "approved-cryptography-policy-bsi-exists",
+        "name": "Company has an approved Cryptography Policy",
+        "lastTestRunDate": "2026-06-18T01:52:56.511Z",
+        "latestFlipDate": "2026-05-20T18:04:43.266Z",
+        "description": "This test verifies that your company has an approved [Cryptography Policy](/policies/cryptography-policy-bsi) in Vanta.",
+        "failureDescription": "You don't have an approved Cryptography Policy yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Cryptography%20Policy) to create and approve a custom Cryptography Policy for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "cloudflare-http-https-redirection-enabled",
+        "name": "HTTP to HTTPS redirection enabled (Cloudflare)",
+        "lastTestRunDate": "2026-06-18T01:52:56.668Z",
+        "latestFlipDate": "2025-11-22T09:40:25.259Z",
+        "description": "This test verifies that HTTP traffic is automatically redirected to HTTPS using Cloudflare's Always Use HTTPS feature. This ensures all clients receive encryption, even if they initially connect over HTTP.",
+        "failureDescription": "Some Cloudflare zones do not have Always Use HTTPS enabled, which means HTTP traffic is not automatically redirected to HTTPS.",
+        "remediationDescription": "Enable Cloudflare's Always Use HTTPS feature to automatically redirect HTTP traffic to HTTPS. This ensures all clients receive encryption, even if they initially connect over HTTP.\n\n1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/).\n2. Select the zone where you want to enable HTTPS redirection.\n3. In the left-hand menu, click \"SSL/TLS\".\n4. Click the \"Edge Certificates\" tab.\n5. Scroll down to the \"Always Use HTTPS\" section.\n6. Toggle the switch to \"On\" to enable Always Use HTTPS.\n7. Wait a few minutes for the setting to propagate across Cloudflare's network.\n8. Test your domain by visiting the HTTP version (e.g., http://yourdomain.com) and confirm it redirects to HTTPS (https://yourdomain.com).\n\n**Verify the Configuration:**\n\nAfter enabling Always Use HTTPS:\n\n1. Open a web browser and navigate to your domain using HTTP (e.g., http://yourdomain.com).\n2. Verify that the browser automatically redirects to the HTTPS version.\n3. Check the address bar to confirm the URL shows \"https://\" and a padlock icon.\n\n**Important Notes:**\n\n- **Proxied DNS required:** Always Use HTTPS only works when your DNS records are proxied through Cloudflare (orange cloud icon in DNS settings).\n- **SSL/TLS mode:** Ensure your SSL/TLS encryption mode is set to \"Full\" or \"Full (strict)\" for proper HTTPS configuration.\n- **Certificate status:** Verify that your domain has an active SSL/TLS certificate in the \"Edge Certificates\" tab.\n\nLearn more about [Always Use HTTPS](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/).\n\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "cloudflare"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2025-11-29T09:40:25.235Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "cloudflare-https-serving-enabled",
+        "name": "HTTPS serving enabled (Cloudflare)",
+        "lastTestRunDate": "2026-06-18T01:52:56.586Z",
+        "latestFlipDate": "2025-11-22T09:40:19.085Z",
+        "description": "This test verifies that HTTPS is enabled and supported for a Cloudflare-protected domain (zone). It checks whether SSL/TLS certificates are provisioned and deployed successfully. The presence of a valid certificate ensures that secure traffic can be served to end users via HTTPS.",
+        "failureDescription": "Some Cloudflare zones either do not have Universal SSL enabled or do not have an active SSL/TLS certificate, which means secure HTTPS traffic cannot be served.",
+        "remediationDescription": "Enable HTTPS and ensure SSL/TLS certificates are provisioned and deployed for a Cloudflare-protected domain.\n\n1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/).\n2. Select the domain (zone) where the control failed.\n3. In the left-hand menu, click on \"SSL/TLS\".\n4. Under the \"Overview\" tab, check the current SSL/TLS encryption mode. If it is not set to \"Full\" or \"Full (strict)\", click \"Full\" or \"Full (strict)\" to enable HTTPS.\n5. If SSL is not enabled, toggle the \"SSL/TLS\" setting to \"On\".\n6. Wait for Cloudflare to automatically provision and deploy an SSL/TLS certificate for your domain. This may take a few minutes.\n7. Once the certificate is active, verify that the status shows \"Active Certificate\" under the \"Edge Certificates\" tab.\n8. Visit your domain using https:// in a browser to confirm that HTTPS is working and the certificate is valid.\n9. Optionally, use an SSL checker tool to verify the certificate is correctly installed and trusted.\n\n**Verify the Configuration:**\n\nAfter enabling Universal SSL:\n\n1. Navigate to your domain's SSL/TLS settings in Cloudflare.\n2. Verify that the status shows \"Active Certificate\" under \"Edge Certificates\".\n3. Open a web browser and navigate to your domain using HTTPS (e.g., https://yourdomain.com).\n4. Check the address bar to confirm the URL shows \"https://\" and a padlock icon.\n\n**Important Notes:**\n\n- **Proxied DNS required:** Universal SSL only works when your DNS records are proxied through Cloudflare (orange cloud icon in DNS settings).\n- **Certificate provisioning time:** It may take a few minutes for Cloudflare to provision and deploy your SSL/TLS certificate.\n- **Full encryption recommended:** For best security, set your SSL/TLS mode to \"Full (strict)\" if your origin server has a valid SSL certificate.\n\nLearn more about [Cloudflare SSL/TLS](https://developers.cloudflare.com/ssl/).",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "cloudflare"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "load-balancer-http-to-https",
+        "name": "Load balancers redirect HTTP to HTTPS (AWS)",
+        "lastTestRunDate": "2026-06-18T01:52:56.982Z",
+        "latestFlipDate": "2024-09-24T15:59:58.349Z",
+        "description": "This test verifies that all internet-facing AWS Application Load Balancers (ALBs) listening on HTTP are configured to redirect that HTTP traffic to HTTPS.",
+        "failureDescription": "You have an Application Load Balancer that:\n- Has an \"internet-facing\" **scheme**.\n- Has a **listener** with an \"HTTP\" **protocol**.\n- Does not have a **listener** with a **default action** that has a \"redirect\" **action type** and an \"HTTPS\" **redirect protocol**.\n",
+        "remediationDescription": "Configure the load balancers to redirect HTTP traffic to HTTPS.\n\nFor detailed instructions, see [our help article](https://help.vanta.com/hc/en-us/articles/10465036804500-How-to-Pass-the-Load-balancers-redirect-HTTP-to-HTTPS-AWS-Test).\n\n#### Remediation for Terraform\nEnsure that you create an aws_lb_listener resource for your aws_lb on port 80 that has a default_action to redirect to port 443.\n\n```hcl\nresource \"aws_lb_listener\" \"example_listener\" {\n  load_balancer_arn = aws_lb.example_lb.arn\n  port              = 80\n  protocol          = \"HTTP\"\n\n  default_action {\n    type             = \"redirect\"\n    redirect {\n      protocol       = \"HTTPS\"\n      port           = \"443\"\n      status_code    = \"HTTP_301\"\n    }\n  }\n}\n```\n\nSee more in the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/lb_listener).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "aws"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "require-admin-encrypted-iaas",
+        "name": "SSL/TLS on admin page of infrastructure console",
+        "lastTestRunDate": "2026-06-18T01:52:56.074Z",
+        "latestFlipDate": "2024-09-24T17:11:28.290Z",
+        "description": "This test confirms that all AWS service API endpoints enforce encryption via TLS (Transport Layer Security) by default. This ensures secure communication between your administrators and AWS infrastructure services.",
+        "failureDescription": "N/A",
+        "remediationDescription": "N/A\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Monitoring alerts",
+        "integrations": [
+          "aws"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-good-ciphers",
+        "name": "Strong SSL/TLS ciphers used",
+        "lastTestRunDate": "2026-06-18T01:52:56.265Z",
+        "latestFlipDate": "2025-12-24T13:16:25.411Z",
+        "description": "This test verifies that your SSL/TLS configurations only permit secure cipher suites (those with a cipher grade of \"A\") for encrypted web connections.",
+        "failureDescription": "Your SSL/TLS configuration uses an invalid or expired certificate, or is not using an up-to-date cipher suite.",
+        "remediationDescription": "Reconfigure your SSL/TLS policies to exclude the vulnerable ciphers. Vulnerable ciphers are any cipher that has a grade of less than `A`. Export the test data to view the cipher grades used in the test. See the [nmap documentation](https://nmap.org/nsedoc/scripts/ssl-enum-ciphers.html) for more information on how the cipher grade is calculated.\n",
+        "version": {
+          "major": 2,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2026-01-07T13:16:25.389Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-no-warnings",
+        "name": "SSL configuration has no known issues",
+        "lastTestRunDate": "2026-06-18T01:52:56.970Z",
+        "latestFlipDate": "2025-12-24T13:16:25.634Z",
+        "description": "This test verifies that your website's SSL configuration does not produce any security-related TLS warnings that could compromise secure communication.",
+        "failureDescription": "Your company isn't encrypting data in transit correctly.",
+        "remediationDescription": "[Implement SSL for all your company's data in transit](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices).\n",
+        "version": {
+          "major": 2,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2026-01-07T13:16:25.602Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-used-expiry",
+        "name": "SSL/TLS certificate has not expired",
+        "lastTestRunDate": "2026-06-18T01:52:56.896Z",
+        "latestFlipDate": "2025-06-19T18:17:53.726Z",
+        "description": "This test verifies that the SSL/TLS certificate for your company’s primary website has not expired. An expired certificate can lead to browser warnings, disrupt customer trust, and leave your site vulnerable to man-in-the-middle attacks.",
+        "failureDescription": "The SSL/TLS certificate for the website specified on the Business Info page has expired.",
+        "remediationDescription": "Ensure that the SSL/TLS certificate for your company's website is up-to-date. Learn more about best practices [here.](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)\n",
+        "version": {
+          "major": 1,
+          "minor": 1
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-used-unittest",
+        "name": "SSL/TLS enforced on company website",
+        "lastTestRunDate": "2026-06-18T01:52:56.083Z",
+        "latestFlipDate": "2026-06-01T16:23:55.606Z",
+        "description": "This test checks that your company's website automatically redirects from HTTP to HTTPS using a 3XX status code. Enforcing HTTPS ensures encrypted communication, protecting users from data interception or tampering.",
+        "failureDescription": "Your company isn't using HTTPS on its website and applications.",
+        "remediationDescription": "Enable HTTPS on the company websites specified on the [Business Info page](/business-information), and configure HTTP to redirect to HTTPS. Vanta recommends using [Let's Encrypt](https://letsencrypt.org/getting-started/).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

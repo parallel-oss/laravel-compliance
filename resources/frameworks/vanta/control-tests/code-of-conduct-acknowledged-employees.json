@@ -1,0 +1,60 @@
+{
+  "controlId": "code-of-conduct-acknowledged-employees",
+  "data": [
+    {
+      "id": "approved-code-of-conduct-bsi-exists",
+      "name": "Company has an approved Code of Conduct",
+      "lastTestRunDate": "2026-06-18T01:52:56.510Z",
+      "latestFlipDate": "2026-05-20T18:04:42.830Z",
+      "description": "This test verifies that your company has an approved [Code of Conduct](/policies/code-of-conduct-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Code of Conduct yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Code%20of%20Conduct) to create and approve a custom Code of Conduct for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "approved-human-resource-security-policy-bsi-exists",
+      "name": "Company has an approved Human Resource Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.503Z",
+      "latestFlipDate": "2026-05-20T18:04:32.272Z",
+      "description": "This test verifies that your company has an approved [Human Resource Security Policy](/policies/human-resource-security-policy-bsi) in Vanta.",
+      "failureDescription": "You don't have an approved Human Resource Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Human%20Resource%20Security%20Policy) to create and approve a custom Human Resource Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 2
+}

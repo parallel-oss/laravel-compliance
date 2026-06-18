@@ -1,0 +1,15 @@
+{
+  "testId": "infra-activity-tracked-config",
+  "data": [
+    {
+      "id": "String-381670226487",
+      "entityStatus": "FAILING",
+      "displayName": "381670226487",
+      "responseType": "Identifier",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T17:11:27.379Z",
+      "createdDate": "2024-09-24T17:11:27.379Z"
+    }
+  ],
+  "count": 1
+}

@@ -1,0 +1,39 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "YXBwcm92ZWQtY3J5cHRvZ3JhcGh5LXBvbGljeS1ic2ktZXhpc3Rz",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtY3J5cHRvZ3JhcGh5LXBvbGljeS1ic2ktZXhpc3Rz"
+    },
+    "data": [
+      {
+        "id": "approved-cryptography-policy-bsi-exists",
+        "name": "Company has an approved Cryptography Policy",
+        "lastTestRunDate": "2026-06-18T01:52:56.511Z",
+        "latestFlipDate": "2026-05-20T18:04:43.266Z",
+        "description": "This test verifies that your company has an approved [Cryptography Policy](/policies/cryptography-policy-bsi) in Vanta.",
+        "failureDescription": "You don't have an approved Cryptography Policy yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Cryptography%20Policy) to create and approve a custom Cryptography Policy for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

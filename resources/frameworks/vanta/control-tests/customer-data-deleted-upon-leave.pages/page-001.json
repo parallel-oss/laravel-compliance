@@ -1,0 +1,39 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "YXBwcm92ZWQtZGF0YS1tYW5hZ2VtZW50LXBvbGljeS1ic2ktZXhpc3Rz",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtZGF0YS1tYW5hZ2VtZW50LXBvbGljeS1ic2ktZXhpc3Rz"
+    },
+    "data": [
+      {
+        "id": "approved-data-management-policy-bsi-exists",
+        "name": "Company has an approved Data Management Policy",
+        "lastTestRunDate": "2026-06-18T01:52:57.030Z",
+        "latestFlipDate": "2026-05-20T18:04:31.863Z",
+        "description": "This test verifies that your company has an approved [Data Management Policy](/policies/data-management-policy-bsi) in Vanta.",
+        "failureDescription": "You don't have an approved Data Management Policy yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Data%20Management%20Policy) to create and approve a custom Data Management Policy for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

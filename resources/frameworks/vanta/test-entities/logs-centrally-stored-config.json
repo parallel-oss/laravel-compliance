@@ -1,0 +1,15 @@
+{
+  "testId": "logs-centrally-stored-config",
+  "data": [
+    {
+      "id": "String-No logging buckets found in CloudTrail or S3",
+      "entityStatus": "FAILING",
+      "displayName": "No logging buckets found in CloudTrail or S3",
+      "responseType": "Identifier",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T16:02:44.680Z",
+      "createdDate": "2024-09-24T16:02:44.680Z"
+    }
+  ],
+  "count": 1
+}

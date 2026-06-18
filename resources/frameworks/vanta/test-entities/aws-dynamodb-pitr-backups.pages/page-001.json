@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjZmMmUyYWYwYzZkMGVmNTU1YzhlNzkz_eyIkZGF0ZSI6MTcyNzQ1Mjk3NDk3N30=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMmUyYWYwYzZkMGVmNTU1YzhlNzkz_eyIkZGF0ZSI6MTcyNzQ1Mjk3NDk3N30="
+    },
+    "data": [
+      {
+        "id": "DynamoDBTable-66f2e2ae0c6d0ef555c8c9bc",
+        "entityStatus": "FAILING",
+        "displayName": "vapor_cache",
+        "responseType": "AWS DynamoDB Table",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:02:55.051Z",
+        "createdDate": "2024-09-24T16:02:55.051Z"
+      }
+    ]
+  }
+}

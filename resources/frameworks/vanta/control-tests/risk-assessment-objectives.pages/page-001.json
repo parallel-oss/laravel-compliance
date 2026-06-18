@@ -1,0 +1,66 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "cmlza3MtcmV2aWV3ZWQtYW5udWFsbHk=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtcmlzay1tYW5hZ2VtZW50LXBvbGljeS1ic2ktZXhpc3Rz"
+    },
+    "data": [
+      {
+        "id": "approved-risk-management-policy-bsi-exists",
+        "name": "Company has an approved Risk Management Policy",
+        "lastTestRunDate": "2026-06-18T01:52:57.076Z",
+        "latestFlipDate": "2026-05-20T19:00:46.913Z",
+        "description": "This test verifies that your company has an approved [Risk Management Policy](/policies/risk-management-policy-bsi) in Vanta.",
+        "failureDescription": "You don't have an approved Risk Management Policy yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Risk%20Management%20Policy) to create and approve a custom Risk Management Policy for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "risks-reviewed-annually",
+        "name": "Risk Assessment exercise completed annually",
+        "lastTestRunDate": "2026-06-18T01:52:56.392Z",
+        "latestFlipDate": "2024-09-23T09:11:49.059Z",
+        "description": "This test checks that a snapshot of your risk register was taken within the past year and that it is available to auditors.",
+        "failureDescription": "No snapshots of your risk register from the past year have been shared with auditors.",
+        "remediationDescription": "Review your risks at least annually. During each review, delete risks that are no longer relevant to your business and record any new risks that may impact your company over the coming year.\n\nReview your [risk register](/risk-management/risk-register) and update or complete the treatment plans for all approved risks (high scoring risks should all have treatment plans).\n\nThen select \"Create snapshot\" to create a new snapshot to act as a historical record of your most up-to-date review, and mark \"share with auditors.\"\n",
+        "version": {
+          "major": 3,
+          "minor": 0
+        },
+        "category": "Risk analysis",
+        "integrations": [],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "NEEDS_WORK",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjhlOTYxZDlmZDk5MzczNjNmYjFhMDk0_eyIkZGF0ZSI6MTc2MDczMDIwMDk3Mn0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjhlOTYxZDlmZDk5MzczNjNmYjFhMDk0_eyIkZGF0ZSI6MTc2MDczMDIwMDk3Mn0="
+    },
+    "data": [
+      {
+        "id": "String-No active configured IP access rules found",
+        "entityStatus": "FAILING",
+        "displayName": "No active configured IP access rules found",
+        "responseType": "Identifier",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T19:43:21.027Z",
+        "createdDate": "2025-10-10T19:43:21.027Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "VmFudGEgZG9lcyBub3QgaGF2ZSByZWNvcmQgb2YgYSB7cG9saWN5LXNlY3VyZS1kZXZlbG9wbWVudC1wb2xpY3ktYnNpfSBhcHByb3ZlZCB3aXRoaW4gdGhlIGNvbmZpZ3VyZWQgcmVuZXdhbCBwZXJpb2Qu",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "VmFudGEgZG9lcyBub3QgaGF2ZSByZWNvcmQgb2YgYSB7cG9saWN5LXNlY3VyZS1kZXZlbG9wbWVudC1wb2xpY3ktYnNpfSBhcHByb3ZlZCB3aXRoaW4gdGhlIGNvbmZpZ3VyZWQgcmVuZXdhbCBwZXJpb2Qu"
+    },
+    "data": [
+      {
+        "id": "String-Vanta does not have record of a {policy-secure-development-policy-bsi} approved within the configured renewal period.",
+        "entityStatus": "FAILING",
+        "displayName": "Vanta does not have record of a {policy-secure-development-policy-bsi} approved within the configured renewal period.",
+        "responseType": "Identifier",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-03-06T06:34:43.921Z",
+        "createdDate": "2026-03-06T06:34:43.921Z"
+      }
+    ]
+  }
+}

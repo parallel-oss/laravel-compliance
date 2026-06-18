@@ -1,0 +1,1205 @@
+{
+  "data": [
+    {
+      "id": "asset-disposal-procedures-utilized",
+      "externalId": "AST-1",
+      "name": "Asset disposal procedures utilized",
+      "description": "The company has electronic media containing confidential information purged or destroyed in accordance with best practices, and certificates of destruction are issued for each device destroyed.",
+      "source": "Vanta",
+      "domains": [
+        "ASSET_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "data-retention-procedures-established",
+      "externalId": "AST-2",
+      "name": "Data retention procedures established",
+      "description": "The company has formal retention and disposal procedures in place to guide the secure retention and disposal of company and customer data.",
+      "source": "Vanta",
+      "domains": [
+        "ASSET_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "production-inventory-maintained",
+      "externalId": "AST-3",
+      "name": "Production inventory maintained",
+      "description": "The company maintains a formal inventory of production system assets.",
+      "source": "Vanta",
+      "domains": [
+        "ASSET_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "continuity-and-disaster-recovery-plans-established",
+      "externalId": "BCD-1",
+      "name": "Continuity and Disaster Recovery plans established",
+      "description": "The company has Business Continuity and Disaster Recovery Plans in place that outline communication plans in order to maintain information security continuity in the event of the unavailability of key personnel.",
+      "source": "Vanta",
+      "domains": [
+        "BUSINESS_CONTINUITY_&_DISASTER_RECOVERY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "continuity-disaster-recovery-plans-tested",
+      "externalId": "BCD-2",
+      "name": "Continuity and Disaster Recovery plans tested",
+      "description": "The company has a documented Business Continuity/Disaster Recovery (BC/DR) plan and tests it at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "BUSINESS_CONTINUITY_&_DISASTER_RECOVERY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "configuration-management-system-established",
+      "externalId": "CFG-1",
+      "name": "Configuration management system established",
+      "description": "The company has a configuration management procedure in place to ensure that system configurations are deployed consistently throughout the environment.",
+      "source": "Vanta",
+      "domains": [
+        "CONFIGURATION_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "change-management-procedures",
+      "externalId": "CHG-1",
+      "name": "Change management procedures enforced",
+      "description": "The company requires changes to software and infrastructure components of the service to be authorized, formally documented, tested, reviewed, and approved prior to being implemented in the production environment.",
+      "source": "Vanta",
+      "domains": [
+        "CHANGE_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "changes-approval-required",
+      "externalId": "CHG-2",
+      "name": "Production deployment access restricted",
+      "description": "The company restricts access to migrate changes to production to authorized personnel.",
+      "source": "Vanta",
+      "domains": [
+        "CHANGE_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "development-lifecycle-established",
+      "externalId": "CHG-3",
+      "name": "Development lifecycle established",
+      "description": "The company has a formal systems development life cycle (SDLC) methodology in place that governs the development, acquisition, implementation, changes (including emergency changes), and maintenance of information systems and related technology requirements.",
+      "source": "Vanta",
+      "domains": [
+        "CHANGE_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "system-description",
+      "externalId": "CPL-1",
+      "name": "SOC 2 - System Description",
+      "description": "Complete a description of your system for Section III of the audit report",
+      "source": "Vanta",
+      "domains": [
+        "COMPLIANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-datastores-ssh",
+      "externalId": "CRY-1",
+      "name": "Unique production database authentication enforced",
+      "description": "The company requires authentication to production datastores to use authorized secure authentication mechanisms, such as unique SSH key.",
+      "source": "Vanta",
+      "domains": [
+        "CRYPTOGRAPHIC_PROTECTIONS"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-encryption-keys",
+      "externalId": "CRY-2",
+      "name": "Encryption key access restricted",
+      "description": "The company restricts privileged access to encryption keys to authorized users with a business need.",
+      "source": "Vanta",
+      "domains": [
+        "CRYPTOGRAPHIC_PROTECTIONS"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "unique-account-authentication-enforced",
+      "externalId": "CRY-5",
+      "name": "Unique account authentication enforced",
+      "description": "The company requires authentication to systems and applications to use unique username and password or authorized Secure Socket Shell (SSH) keys.",
+      "source": "Vanta",
+      "domains": [
+        "CRYPTOGRAPHIC_PROTECTIONS"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "data-classification-policy",
+      "externalId": "DCH-5",
+      "name": "Data classification policy established",
+      "description": "The company has a data classification policy in place to help ensure that confidential data is properly secured and restricted to authorized personnel.",
+      "source": "Vanta",
+      "domains": [
+        "DATA_CLASSIFICATION_&_HANDLING"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "assets-anti-malware",
+      "externalId": "END-1",
+      "name": "Anti-malware technology utilized",
+      "description": "The company deploys anti-malware technology to environments commonly susceptible to malicious attacks and configures this to be updated routinely, logged, and installed on all relevant systems.",
+      "source": "Vanta",
+      "domains": [
+        "ENDPOINT_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "board-of-directors-briefing",
+      "externalId": "GOV-1",
+      "name": "Board oversight briefings conducted",
+      "description": "The company's board of directors or a relevant subcommittee is briefed by senior management at least annually on the state of the company's cybersecurity and privacy risk. The board provides feedback and direction to management as needed.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "board-of-directors-charter",
+      "externalId": "GOV-2",
+      "name": "Board charter documented",
+      "description": "The company's board of directors has a documented charter that outlines its oversight responsibilities for internal control.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "board-of-directors-expertise",
+      "externalId": "GOV-3",
+      "name": "Board expertise developed",
+      "description": "The company's board members have sufficient expertise to oversee management's ability to design, implement and operate information security controls. The board engages third-party information security experts and consultants as needed.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "board-of-directors-meeting",
+      "externalId": "GOV-4",
+      "name": "Board meetings conducted",
+      "description": "The company's board of directors meets at least annually and maintains formal meeting minutes. The board includes directors that are independent of the company.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "data-backup-procedures",
+      "externalId": "GOV-5",
+      "name": "Backup processes established",
+      "description": "The company's data backup policy documents requirements for backup and recovery of customer data.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "external-service-impact-notifications",
+      "externalId": "GOV-6",
+      "name": "System changes externally communicated",
+      "description": "The company notifies customers of critical system changes that may affect their processing.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "management-roles-responsibilities-defined",
+      "externalId": "GOV-7",
+      "name": "Management roles and responsibilities defined",
+      "description": "The company management has established defined roles and responsibilities to oversee the design and implementation of information security controls.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "organization-structure-documented",
+      "externalId": "GOV-8",
+      "name": "Organization structure documented",
+      "description": "The company maintains an organizational chart that describes the organizational structure and reporting lines.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "role-responsibilities-specified",
+      "externalId": "GOV-10",
+      "name": "Roles and responsibilities specified",
+      "description": "Roles and responsibilities for the design, development, implementation, operation, maintenance, and monitoring of information security controls are formally assigned in job descriptions and/or the Roles and Responsibilities policy.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "security-policies-established-reviewed",
+      "externalId": "GOV-11",
+      "name": "Security policies established and reviewed",
+      "description": "The company's information security policies and procedures are documented and reviewed at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "system-changes-communicated",
+      "externalId": "GOV-13",
+      "name": "System changes communicated",
+      "description": "The company communicates system changes to authorized internal users.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "background-checks-performed",
+      "externalId": "HRS-1",
+      "name": "Employee background checks performed",
+      "description": "The company performs background checks on new employees.",
+      "source": "Vanta",
+      "domains": [
+        "HUMAN_RESOURCES_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "code-of-conduct-acknowledged-employees",
+      "externalId": "HRS-3",
+      "name": "Code of Conduct acknowledged by employees and enforced",
+      "description": "The company requires employees to acknowledge a code of conduct at the time of hire. Employees who violate the code of conduct are subject to disciplinary actions in accordance with a disciplinary policy.",
+      "source": "Vanta",
+      "domains": [
+        "HUMAN_RESOURCES_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "confidentiality-agreement-acknowledged-employees",
+      "externalId": "HRS-5",
+      "name": "Confidentiality Agreement acknowledged by employees",
+      "description": "The company requires employees to sign a confidentiality agreement during onboarding.",
+      "source": "Vanta",
+      "domains": [
+        "HUMAN_RESOURCES_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "performance-evaluations-conducted",
+      "externalId": "HRS-6",
+      "name": "Performance evaluations conducted",
+      "description": "The company managers are required to complete performance evaluations for direct reports at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "HUMAN_RESOURCES_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-application-restricted",
+      "externalId": "IAC-1",
+      "name": "Production application access restricted",
+      "description": "System access restricted to authorized access only",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-control-procedures",
+      "externalId": "IAC-2",
+      "name": "Access control procedures established",
+      "description": "The company's access control policy documents the requirements for the following access control functions: \n\n- adding new users;\n\n- modifying users; and/or \n\n- removing an existing user's access.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-database-restricted-users",
+      "externalId": "IAC-3",
+      "name": "Production database access restricted",
+      "description": "The company restricts privileged access to databases to authorized users with a business need.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-firewalls",
+      "externalId": "IAC-4",
+      "name": "Firewall access restricted",
+      "description": "The company restricts privileged access to the firewall to authorized users with a business need.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-operating-system-restricted",
+      "externalId": "IAC-5",
+      "name": "Production OS access restricted",
+      "description": "The company restricts privileged access to the operating system to authorized users with a business need.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-production-network-restricted",
+      "externalId": "IAC-6",
+      "name": "Production network access restricted",
+      "description": "The company restricts privileged access to the production network to authorized users with a business need.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-reviews",
+      "externalId": "IAC-7",
+      "name": "Access reviews conducted",
+      "description": "The company conducts access reviews at least quarterly for the in-scope system components to help ensure that access is restricted appropriately. Required changes are tracked to completion.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-revoked-termination",
+      "externalId": "IAC-8",
+      "name": "Access revoked upon termination",
+      "description": "The company completes termination checklists to ensure that access is revoked for terminated employees within SLAs.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-role-based",
+      "externalId": "IAC-9",
+      "name": "Access requests required",
+      "description": "The company ensures that user access to in-scope system components is based on job role and function or requires a documented access request form and manager approval prior to access being provisioned.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "access-ssh-required",
+      "externalId": "IAC-10",
+      "name": "Unique network system authentication enforced",
+      "description": "The company requires authentication to the \"production network\" to use unique usernames and passwords or authorized Secure Socket Shell (SSH) keys.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "policies-password-complexity",
+      "externalId": "IAC-11",
+      "name": "Password policy enforced",
+      "description": "The company requires passwords for in-scope system components to be configured according to the company's policy.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "remote-access-mfa-enforced",
+      "externalId": "IAC-12",
+      "name": "Remote access MFA enforced",
+      "description": "The company's production systems can only be remotely accessed by authorized employees possessing a valid multi-factor authentication (MFA) method.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "remote-access-vpn-enforced",
+      "externalId": "IAC-13",
+      "name": "Remote access encrypted enforced",
+      "description": "The company's production systems can only be remotely accessed by authorized employees via an approved encrypted connection.",
+      "source": "Vanta",
+      "domains": [
+        "IDENTIFICATION_&_AUTHENTICATION"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "control-self-assessments-conducted",
+      "externalId": "IAO-1",
+      "name": "Control self-assessments conducted",
+      "description": "The company performs control self-assessments at least annually to gain assurance that controls are in place and operating effectively. Corrective actions are taken based on relevant findings. If the company has committed to an SLA for a finding, the corrective action is completed within that SLA.",
+      "source": "Vanta",
+      "domains": [
+        "INFORMATION_ASSURANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "incident-response-plan-tested",
+      "externalId": "IRO-1",
+      "name": "Incident response plan tested",
+      "description": "The company tests their incident response plan at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "INCIDENT_RESPONSE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "incident-response-policies-established",
+      "externalId": "IRO-2",
+      "name": "Incident response policies established",
+      "description": "The company has security and privacy incident response policies and procedures that are documented and communicated to authorized users.",
+      "source": "Vanta",
+      "domains": [
+        "INCIDENT_RESPONSE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "policies-incident-management",
+      "externalId": "IRO-3",
+      "name": "Incident management procedures followed",
+      "description": "The company's security and privacy incidents are logged, tracked, resolved, and communicated to affected or relevant parties by management according to the company's security incident response policy and procedures.",
+      "source": "Vanta",
+      "domains": [
+        "INCIDENT_RESPONSE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "MDM-system-utilized",
+      "externalId": "MDM-1",
+      "name": "MDM system utilized",
+      "description": "The company has a mobile device management (MDM) system in place to centrally manage mobile devices supporting the service.",
+      "source": "Vanta",
+      "domains": [
+        "MOBILE_DEVICE_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "intrusion-detection-system",
+      "externalId": "MON-1",
+      "name": "Intrusion detection system utilized",
+      "description": "The company uses an intrusion detection system to provide continuous monitoring of the company's network and early detection of potential security breaches.",
+      "source": "Vanta",
+      "domains": [
+        "CONTINUOUS_MONITORING"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "log-management-utilized",
+      "externalId": "MON-2",
+      "name": "Log management utilized",
+      "description": "The company utilizes a log management tool to identify events that may have a potential impact on the company's ability to achieve its security objectives.",
+      "source": "Vanta",
+      "domains": [
+        "CONTINUOUS_MONITORING"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "system-threshold-monitoring",
+      "externalId": "MON-4",
+      "name": "Infrastructure performance monitored",
+      "description": "An infrastructure monitoring tool is utilized to monitor systems, infrastructure, and performance and generates alerts when specific predefined thresholds are met.",
+      "source": "Vanta",
+      "domains": [
+        "CONTINUOUS_MONITORING"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "data-encrypted-in-transit",
+      "externalId": "NET-1",
+      "name": "Data transmission encrypted",
+      "description": "The company uses secure data transmission protocols to encrypt confidential and sensitive data when transmitted over public networks.",
+      "source": "Vanta",
+      "domains": [
+        "NETWORK SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "infra-network-segregation",
+      "externalId": "NET-2",
+      "name": "Network segmentation implemented",
+      "description": "The company's network is segmented to prevent unauthorized access to customer data.",
+      "source": "Vanta",
+      "domains": [
+        "NETWORK SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "network-firewalls-reviewed",
+      "externalId": "NET-3",
+      "name": "Network firewalls reviewed",
+      "description": "The company reviews its firewall rulesets at least annually. Required changes are tracked to completion.",
+      "source": "Vanta",
+      "domains": [
+        "NETWORK SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "network-firewalls-utilized",
+      "externalId": "NET-4",
+      "name": "Network firewalls utilized",
+      "description": "The company uses firewalls and configures them to prevent unauthorized access.",
+      "source": "Vanta",
+      "domains": [
+        "NETWORK SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "system-network-hardening",
+      "externalId": "NET-5",
+      "name": "Network and system hardening standards maintained",
+      "description": "The company's network and system hardening standards are documented, based on industry best practices, and reviewed at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "NETWORK SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "policies-incident-monitoring",
+      "externalId": "OPS-1",
+      "name": "Vulnerability and system monitoring procedures established",
+      "description": "The company's formal policies outline the requirements for the following functions related to IT / Engineering: \n\n- vulnerability management;\n\n- system monitoring.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_OPERATIONS"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "commitments-externally-communicated",
+      "externalId": "PRM-1",
+      "name": "Company commitments externally communicated",
+      "description": "The company's security commitments are communicated to customers in Master Service Agreements (MSA) or Terms of Service (TOS).",
+      "source": "Vanta",
+      "domains": [
+        "PROJECT_&_RESOURCE MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "external-support-resources",
+      "externalId": "PRM-2",
+      "name": "External support resources available",
+      "description": "The company provides guidelines and technical support resources relating to system operations to customers.",
+      "source": "Vanta",
+      "domains": [
+        "PROJECT_&_RESOURCE MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "service-description-communicated",
+      "externalId": "PRM-3",
+      "name": "Service description communicated",
+      "description": "The company provides a description of its products and services to internal and external users.",
+      "source": "Vanta",
+      "domains": [
+        "PROJECT_&_RESOURCE MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "risk-assessment-objectives",
+      "externalId": "RSK-1",
+      "name": "Risk assessment objectives specified",
+      "description": "The company specifies its objectives to enable the identification and assessment of risk related to the objectives.",
+      "source": "Vanta",
+      "domains": [
+        "RISK_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "risk-assessment-performed",
+      "externalId": "RSK-2",
+      "name": "Risks assessments performed",
+      "description": "The company's risk assessments are performed at least annually. As part of this process, threats and changes (environmental, regulatory, and technological) to service commitments are identified and the risks are formally assessed. The risk assessment includes a consideration of the potential for fraud and how fraud may impact the achievement of objectives.",
+      "source": "Vanta",
+      "domains": [
+        "RISK_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "risk-assessment-program",
+      "externalId": "RSK-3",
+      "name": "Risk management program established",
+      "description": "The company has a documented risk management program in place that includes guidance on the identification of potential threats, rating the significance of the risks associated with the identified threats, and mitigation strategies for those risks.",
+      "source": "Vanta",
+      "domains": [
+        "RISK_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "security-awareness-training-completed",
+      "externalId": "SAT-1",
+      "name": "Security awareness training implemented",
+      "description": "The company requires employees to complete security awareness training within thirty days of hire and at least annually thereafter.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_AWARENESS_&_TRAINING"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "third-party-agreements",
+      "externalId": "TPM-1",
+      "name": "Third-party agreements established",
+      "description": "The company has written agreements in place with vendors and related third-parties. These agreements include confidentiality and privacy commitments applicable to that entity.",
+      "source": "Vanta",
+      "domains": [
+        "THIRD-PARTY_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "vendor-management-program-established",
+      "externalId": "TPM-2",
+      "name": "Vendor management program established",
+      "description": "The company has a vendor management program in place. Components of this program include:\n\n- critical third-party vendor inventory;\n\n- vendor's security and privacy requirements; and\n\n- review of critical third-party vendors at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "THIRD-PARTY_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "support-infra-patched",
+      "externalId": "VPM-1",
+      "name": "Service infrastructure maintained",
+      "description": "The company has infrastructure supporting the service patched as a part of routine maintenance and as a result of identified vulnerabilities to help ensure that servers supporting the service are hardened against security threats.",
+      "source": "Vanta",
+      "domains": [
+        "VULNERABILITY_&_PATCH_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "vulnerability-scans-conducted",
+      "externalId": "VPM-2",
+      "name": "Vulnerabilities scanned and remediated",
+      "description": "Host-based vulnerability scans are performed at least quarterly on all external-facing systems. Critical and high vulnerabilities are tracked to remediation.",
+      "source": "Vanta",
+      "domains": [
+        "VULNERABILITY_&_PATCH_MANAGEMENT"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": null,
+      "modificationDate": null
+    },
+    {
+      "id": "data-encrypted",
+      "externalId": "CRY-4",
+      "name": "Data encryption utilized",
+      "description": "The company's datastores housing sensitive customer data are encrypted at rest.",
+      "source": "Vanta",
+      "domains": [
+        "CRYPTOGRAPHIC_PROTECTIONS"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "penetration-testing",
+      "externalId": "IAO-2",
+      "name": "Penetration testing performed",
+      "description": "The company's penetration testing is performed at least annually. A remediation plan is developed and changes are implemented to remediate vulnerabilities in accordance with SLAs.",
+      "source": "Vanta",
+      "domains": [
+        "INFORMATION_ASSURANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "code-of-conduct-acknowledged-contractors",
+      "externalId": "HRS-2",
+      "name": "Code of Conduct acknowledged by contractors",
+      "description": "The company requires contractor agreements to include a code of conduct or reference to the company code of conduct.",
+      "source": "Vanta",
+      "domains": [
+        "HUMAN_RESOURCES_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "customer-data-deleted-upon-leave",
+      "externalId": "DCH-1",
+      "name": "Customer data deleted upon leaving",
+      "description": "The company purges or removes customer data containing confidential information from the application environment, in accordance with best practices, when customers leave the service.",
+      "source": "Vanta",
+      "domains": [
+        "DATA_CLASSIFICATION_&_HANDLING"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "support-system-available",
+      "externalId": "GOV-12",
+      "name": "Support system available",
+      "description": "The company has an external-facing support system in place that allows users to report system information on failures, incidents, concerns, and other complaints to appropriate personnel.",
+      "source": "Vanta",
+      "domains": [
+        "SECURITY_&_PRIVACY_GOVERNANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "confidentiality-agreement-acknowledged-contractors",
+      "externalId": "HRS-4",
+      "name": "Confidentiality Agreement acknowledged by contractors",
+      "description": "The company requires contractors to sign a confidentiality agreement at the time of engagement.",
+      "source": "Vanta",
+      "domains": [
+        "HUMAN_RESOURCES_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "whistleblower-policy-established",
+      "externalId": "CPL-2",
+      "name": "Whistleblower policy established",
+      "description": "The company has established a formalized whistleblower policy, and an anonymous communication channel is in place for users to report potential issues or fraud concerns.",
+      "source": "Vanta",
+      "domains": [
+        "COMPLIANCE"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "cybersecurity-insurance-maintained",
+      "externalId": "BCD-3",
+      "name": "Cybersecurity insurance maintained",
+      "description": "The company maintains cybersecurity insurance to mitigate the financial impact of business disruptions.",
+      "source": "Vanta",
+      "domains": [
+        "BUSINESS_CONTINUITY_&_DISASTER_RECOVERY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "access-physical-datacenter",
+      "externalId": "PES-1",
+      "name": "Physical access processes established",
+      "description": "The company has processes in place for granting, changing, and terminating physical access to company data centers based on an authorization from control owners.",
+      "source": "Vanta",
+      "domains": [
+        "PHYSICAL_&_ENVIRONMENTAL_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "access-physical-review",
+      "externalId": "PES-2",
+      "name": "Data center access reviewed",
+      "description": "The company reviews access to the data centers at least annually.",
+      "source": "Vanta",
+      "domains": [
+        "PHYSICAL_&_ENVIRONMENTAL_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "access-physical-visitors",
+      "externalId": "PES-3",
+      "name": "Visitor procedures enforced",
+      "description": "The company requires visitors to sign-in, wear a visitor badge, and be escorted by an authorized employee when accessing the data center or secure areas.",
+      "source": "Vanta",
+      "domains": [
+        "PHYSICAL_&_ENVIRONMENTAL_SECURITY"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    },
+    {
+      "id": "assets-portable-media-encrypted",
+      "externalId": "CRY-3",
+      "name": "Portable media encrypted",
+      "description": "The company encrypts portable and removable media devices when used.",
+      "source": "Vanta",
+      "domains": [
+        "CRYPTOGRAPHIC_PROTECTIONS"
+      ],
+      "owner": null,
+      "role": null,
+      "customFields": [],
+      "creationDate": "2026-05-26T15:54:12.658Z",
+      "modificationDate": "2026-05-26T15:54:12.658Z"
+    }
+  ],
+  "count": 80
+}

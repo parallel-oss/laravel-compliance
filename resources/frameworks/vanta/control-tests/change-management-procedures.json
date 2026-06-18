@@ -1,0 +1,186 @@
+{
+  "controlId": "change-management-procedures",
+  "data": [
+    {
+      "id": "approved-operations-security-policy-bsi-exists",
+      "name": "Company has an approved Operations Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:57.081Z",
+      "latestFlipDate": "2024-09-23T09:11:45.857Z",
+      "description": "This test verifies that your company has an approved [Operations Security Policy](/policies/operations-security-policy-bsi) in Vanta.\n\n> **Operations Security Policy (BSI)**: Establishes guidelines and controls to manage the day-to-day security of systems, networks, and operational processes, helping to reduce the risk of unauthorized access or disruption.",
+      "failureDescription": "You don't have an approved Operations Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Operations%20Security%20Policy) to create and approve a custom Operations Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "code-review-application-config",
+      "name": "Application changes reviewed",
+      "lastTestRunDate": "2026-06-18T01:52:57.225Z",
+      "latestFlipDate": "2025-10-10T16:49:57.356Z",
+      "description": "This test verifies the branch protection settings to ensure that at least one approval is required to merge code changes into the default or specified production branch of all linked version control repositories.",
+      "failureDescription": "Your version control system is not set up to require code reviews.",
+      "remediationDescription": "Set up protected branches in your version control tool account to make sure that changes are reviewed and approved.\n\n1. Protect the default branch (or production branch, if it was explicitly specified during linking) in each [GitHub](https://help.github.com/articles/configuring-protected-branches/), [Bitbucket](https://confluence.atlassian.com/bitbucket/branch-permissions-385912271.html), [GitLab](https://docs.gitlab.com/ee/user/project/protected_branches.html), or [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies) repository, or [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-pull-request-approval-rule.html) repository. In most cases, the default branch is the `main` branch.\n2. Set up required reviews\n   - In GitHub, set up either a [protection rule](https://help.github.com/articles/enabling-required-reviews-for-pull-requests/) or a [ruleset](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository).\n   - In Bitbucket, set up a [merge check for at least one approval](https://confluence.atlassian.com/bitbucket/suggest-or-require-checks-before-a-merge-856691474.html).\n   - In GitLab, set up [merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/merge_request_approvals.html) or [required approval by codeowners](https://docs.gitlab.com/ee/user/project/protected_branches.html#protected-branches-approval-by-code-owners-premium). If requiring approval by codeowners, be sure to create [a CODEOWNERS file for the repository.](https://gitlab.com/help/user/project/code_owners.md)\n   - In Azure DevOps, set the [minimum number of reviewers](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#require-a-minimum-number-of-reviewers) to be greater than 0, or greater than 1 if \"Allow requesters to approve their own changes\" is selected. You can also set up a policy to [automatically include code reviewers](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#automatically-include-code-reviewers) on all pull requests with a group as a required reviewer and set the minimum number of reviewers to be a greater than 0, or greater than 1 if \"Allow requesters to approve their own changes\" is selected.\n   - In AWS CodeCommit, create an approval rule that includes the default branch and set the [number of approvals needed](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-pull-request-approval-rule.html#how-to-create-pull-request-approval-rule-console) to be at least 1.\n\n#### Remediation for Terraform\nFor AWS CodeCommit, create an aws_codecommit_approval_rule_template that sets the NumberOfApprovalsNeeded to 1 or greater on your default branch and associate it to the repository.\n\n```hcl\n# rule template\nresource \"aws_codecommit_approval_rule_template\" \"ruletemplate\" {\n  name        = \"TestApprovalRuleTemplate\"\n  description = \"This is a rule template\"\n\n  content = jsonencode({\n    Version               = \"2018-11-08\"\n    DestinationReferences = [\"main\"] # set this to your default branch\n    Statements = [{\n      Type                    = \"Approvers\"\n      NumberOfApprovalsNeeded = 1 # this value must be 1 or greater\n    }]\n  })\n}\n\n# associate the rule template to the repository\nresource \"aws_codecommit_approval_rule_template_association\" \"testassociation\" {\n  approval_rule_template_name = \"TestApprovalRuleTemplate\" # your rule template name\n  repository_name             = \"Test-Repo\" # your repository name\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/codecommit_approval_rule_template) for additional information.",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Software development",
+      "integrations": [
+        "aws",
+        "azuredevops",
+        "bitbucket",
+        "github",
+        "gitlab"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2025-10-13T16:49:57.322Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "github-author-is-different-from-reviewer",
+      "name": "Author is not the reviewer of pull requests",
+      "lastTestRunDate": "2026-06-18T01:52:56.633Z",
+      "latestFlipDate": "2025-10-10T19:44:12.676Z",
+      "description": "This test ensures that pull requests in GitHub are not self-approved by their authors. GitHub enforces this automatically—authors cannot approve their own pull requests.",
+      "failureDescription": "NA",
+      "remediationDescription": "NA\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Software development",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "github-ensure-branch-protection-enforced",
+      "name": "Ensure branch protection rules are enforced for administrators (GitHub)",
+      "lastTestRunDate": "2026-06-18T01:52:56.849Z",
+      "latestFlipDate": "2025-10-10T16:49:48.891Z",
+      "description": "This test verifies that all GitHub repositories linked to Vanta have branch protection rules enforced for administrators on the default branch or the explicitly specified production branch.",
+      "failureDescription": "Some repositories do not have branch protection rules enforced for administrators",
+      "remediationDescription": "**Note** If your organization uses GitHub Rulesets, we recommend deactivating this test. While Rulesets also allow you to set branch protection rules, they do not allow Vanta to pull information about protection bypasses without escalated write permissions. If you do not use Rulesets, the following steps apply.\n\nFor every code repository in use, enforce branch protection rules for administrators by performing the following steps:\n\n1. Check if you have specified a production branch using the the **vanta_production_branch_name** custom property in GitHub by following [this guide](https://help.vanta.com/hc/en-us/articles/23938692981524-What-branch-does-Vanta-look-at-for-GitHub-tests). Vanta will evaluate the production branch for this test. If you have not specified a production branch, this test will check the default branch.\n2. In GitHub, navigate to the main page of the repository.\n3. Under your repository name, click **Settings**.\n4. In the \"Code and automation\" section of the sidebar, click **Branches**.\n5. Next to \"Branch protection rules,\" verify that there is at least one rule for your branch. If there is at least one rule, click **Edit**. If there are no rules, click **Add rule**.\n6. If adding a new rule, under \"Branch name pattern,\" type the branch name or pattern you want to protect.\n7. If adding or editing, select **Do not allow bypassing the above settings**.\n8. Click **Create** if adding a new rule or **Save changes** if editing an existing rule.\n\nIf you want to retain the ability for administrators to bypass branch protection rules in emergencies, Vanta recommends disabling this test. Additionally, you will need to provide manual evidence of a process that ensures that emergency changes are reviewed.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Software development",
+      "integrations": [
+        "github"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2025-10-13T16:49:48.843Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "github-repos-are-private",
+      "name": "GitHub repository visibility has been set to private",
+      "lastTestRunDate": "2026-06-18T01:52:56.479Z",
+      "latestFlipDate": "2025-10-10T16:49:49.273Z",
+      "description": "This test verifies that all GitHub repositories in your organization, excluding those explicitly forked from external repositories, have their visibility set to private.",
+      "failureDescription": "Some repositories are not set to private.",
+      "remediationDescription": "It is a best practice to set repository visibility to private for all of your repositories. If you have repositories that are intentionally set to public, often to host open source code or examples, deactivate the test indefinitely for that repository and provide an explanation of why the repository must be public.\n\nIf a repository is inappropriately set to public, please follow GitHub's [instructions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#changing-a-repositorys-visibility) to make a repository private.\n",
+      "version": {
+        "major": 1,
+        "minor": 1
+      },
+      "category": "Software development",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "version-control-tool-records",
+      "name": "Company has a version control system",
+      "lastTestRunDate": "2026-06-18T01:52:59.232Z",
+      "latestFlipDate": "2025-11-09T19:23:02.961Z",
+      "description": "This test checks whether any repository in your connected version control system has been updated within the past 30 days.",
+      "failureDescription": "Your version control system hasn't been updated in at least 30 days.\n",
+      "remediationDescription": "[Link version control](/integrations) to Vanta. Vanta runs periodic tests to determine if your repositories have been updated within the past 30 days.\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Software development",
+      "integrations": [
+        "aws",
+        "azuredevops",
+        "bitbucket",
+        "github",
+        "gitlab"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 6
+}

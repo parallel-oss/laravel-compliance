@@ -1,0 +1,329 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "em9uZS1sZXZlbC1ydWxlcy1jbG91ZGZsYXJl",
+      "hasNextPage": false,
+      "hasPreviousPage": true,
+      "startCursor": "c2VydmVycy1tb25pdG9yZWQtYW5kLWFsYXJtZWQtY29uZmlnLWNwdQ=="
+    },
+    "data": [
+      {
+        "id": "servers-monitored-and-alarmed-config-cpu",
+        "name": "Server CPU monitored (AWS)",
+        "lastTestRunDate": "2026-06-18T01:52:56.254Z",
+        "latestFlipDate": "2024-09-25T17:11:48.807Z",
+        "description": "This test verifies whether all AWS EC2 instances have a CloudWatch alarm set specifically for the `CPUUtilization` metric to ensure proper monitoring and alerts in case of high CPU usage.",
+        "failureDescription": "Your servers do not have CPU usage alerts set up.",
+        "remediationDescription": "Set up CPU usage alerts through Amazon CloudWatch or a 3rd party monitoring provider for your EC2 instances.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on `CPUUtilization` for each of your EC2 instances.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon EC2 `CPUUtilization` metric.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your EC2 instances using the CPUUtilization metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"cpu_alarm\" {\n  alarm_name          = \"cpu-utilization-alarm\"\n  comparison_operator = \"GreaterThanOrEqualToThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"CPUUtilization\"\n  namespace           = \"AWS/EC2\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 80\n  alarm_description   = \"Alarm when CPU utilization exceeds 80% for 2 consecutive periods\"\n\n  dimensions = {\n    InstanceId = \"your-instance-id\" # Replace with your EC2 instance ID\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:my-sns-topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.",
+        "version": {
+          "major": 2,
+          "minor": 1
+        },
+        "category": "Monitoring alerts",
+        "integrations": [
+          "aws"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2024-10-09T17:11:48.768Z",
+          "itemCount": 7
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-good-ciphers",
+        "name": "Strong SSL/TLS ciphers used",
+        "lastTestRunDate": "2026-06-18T01:52:56.265Z",
+        "latestFlipDate": "2025-12-24T13:16:25.411Z",
+        "description": "This test verifies that your SSL/TLS configurations only permit secure cipher suites (those with a cipher grade of \"A\") for encrypted web connections.",
+        "failureDescription": "Your SSL/TLS configuration uses an invalid or expired certificate, or is not using an up-to-date cipher suite.",
+        "remediationDescription": "Reconfigure your SSL/TLS policies to exclude the vulnerable ciphers. Vulnerable ciphers are any cipher that has a grade of less than `A`. Export the test data to view the cipher grades used in the test. See the [nmap documentation](https://nmap.org/nsedoc/scripts/ssl-enum-ciphers.html) for more information on how the cipher grade is calculated.\n",
+        "version": {
+          "major": 2,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2026-01-07T13:16:25.389Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-no-warnings",
+        "name": "SSL configuration has no known issues",
+        "lastTestRunDate": "2026-06-18T01:52:56.970Z",
+        "latestFlipDate": "2025-12-24T13:16:25.634Z",
+        "description": "This test verifies that your website's SSL configuration does not produce any security-related TLS warnings that could compromise secure communication.",
+        "failureDescription": "Your company isn't encrypting data in transit correctly.",
+        "remediationDescription": "[Implement SSL for all your company's data in transit](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices).\n",
+        "version": {
+          "major": 2,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2026-01-07T13:16:25.602Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-used-expiry",
+        "name": "SSL/TLS certificate has not expired",
+        "lastTestRunDate": "2026-06-18T01:52:56.896Z",
+        "latestFlipDate": "2025-06-19T18:17:53.726Z",
+        "description": "This test verifies that the SSL/TLS certificate for your company’s primary website has not expired. An expired certificate can lead to browser warnings, disrupt customer trust, and leave your site vulnerable to man-in-the-middle attacks.",
+        "failureDescription": "The SSL/TLS certificate for the website specified on the Business Info page has expired.",
+        "remediationDescription": "Ensure that the SSL/TLS certificate for your company's website is up-to-date. Learn more about best practices [here.](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices)\n",
+        "version": {
+          "major": 1,
+          "minor": 1
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "ssl-used-unittest",
+        "name": "SSL/TLS enforced on company website",
+        "lastTestRunDate": "2026-06-18T01:52:56.083Z",
+        "latestFlipDate": "2026-06-01T16:23:55.606Z",
+        "description": "This test checks that your company's website automatically redirects from HTTP to HTTPS using a 3XX status code. Enforcing HTTPS ensures encrypted communication, protecting users from data interception or tampering.",
+        "failureDescription": "Your company isn't using HTTPS on its website and applications.",
+        "remediationDescription": "Enable HTTPS on the company websites specified on the [Business Info page](/business-information), and configure HTTP to redirect to HTTPS. Vanta recommends using [Let's Encrypt](https://letsencrypt.org/getting-started/).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "ssl"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "vanta-users-offboarded-within-sla",
+        "name": "Offboarding completed for terminated personnel within SLA",
+        "lastTestRunDate": "2026-06-18T01:52:56.457Z",
+        "latestFlipDate": "2025-11-24T23:58:56.554Z",
+        "description": "This test verifies that all ex-employees linked to Vanta have been properly offboarded within the service-level agreement (SLA) timeframe.",
+        "failureDescription": "Not all of your ex-employees had their offboarding steps completed.",
+        "remediationDescription": "Visit the [People page](/people?individualTaskStatus=TASKS_DUE_SOON&individualTaskStatus=TASKS_OVERDUE&employeeStatus=PREVIOUSLY_EMPLOYED) and complete offboarding for all ex-employees. For more help, please visit our [Support article](https://help.vanta.com/en/articles/11345609-offboarding-personnel).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Employees",
+        "integrations": [],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2025-11-27T23:58:56.524Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "vendor-management-records",
+        "name": "Vendors list maintained",
+        "lastTestRunDate": "2026-06-17T22:48:52.954Z",
+        "latestFlipDate": "2024-09-26T12:31:50.674Z",
+        "description": "This test verifies that you have manually added at least one vendor (other than automatically integrated accounts) on the [Vendors page](/vendors) that is visible to auditors. If you do not have any vendors beyond what Vanta integrates with, you can deactivate this test.",
+        "failureDescription": "You haven't manually added any vendors on the Vendors page.",
+        "remediationDescription": "On the [Vendors page](/vendors), ensure you've added all vendors that your company uses. Vanta will auto-populate any vendor we integrate with, but you should manually add any other vendors to ensure they're tracked in one place.\n\nIf you do not have any vendors beyond what Vanta integrates with, you can deactivate this test.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Vendors",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "vendor-risk-levels-assigned",
+        "name": "Vendors assigned risk levels",
+        "lastTestRunDate": "2026-06-17T22:48:53.223Z",
+        "latestFlipDate": "2024-09-23T08:02:34.728Z",
+        "description": "This test verifies that every vendor listed on your [Vendors page](/vendors) has been assigned a risk level. Assigning risk levels to vendors is a foundational part of vendor risk management, enabling organizations to prioritize security reviews and due diligence based on the level of risk each vendor poses.",
+        "failureDescription": "Some of your vendors don't have a risk level specified on the Vendors page.",
+        "remediationDescription": "Go to the [Vendors page](/vendors) and assign a risk level for each vendor.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Vendors",
+        "integrations": [],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "NEEDS_WORK",
+          "soonestRemediateByDate": null,
+          "itemCount": 16
+        },
+        "owner": null
+      },
+      {
+        "id": "vendors-have-authentication-method-specified",
+        "name": "Vendors have authentication method specified",
+        "lastTestRunDate": "2026-06-17T22:48:53.472Z",
+        "latestFlipDate": "2024-09-24T22:24:17.186Z",
+        "description": "This test ensures that all vendors managed by Vanta have a specified authentication method. Authentication methods may be either automatically fetched via integrations or manually specified on the [Vendors page](/vendors).",
+        "failureDescription": "Some of your vendors don't have an authentication method specified on the Vendors page.",
+        "remediationDescription": "Specify an authentication method for every vendor on the [Vendors page](/vendors/managed). To do this, click each vendor needing attention on the left, click View in Vanta, click the About tab, and then select an _Auth Method_ in the General section on the page. The vendor will be removed from the list once the test reruns.",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Vendors",
+        "integrations": [
+          "aws"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "NEEDS_WORK",
+          "soonestRemediateByDate": null,
+          "itemCount": 24
+        },
+        "owner": null
+      },
+      {
+        "id": "version-control-tool-records",
+        "name": "Company has a version control system",
+        "lastTestRunDate": "2026-06-18T01:52:59.232Z",
+        "latestFlipDate": "2025-11-09T19:23:02.961Z",
+        "description": "This test checks whether any repository in your connected version control system has been updated within the past 30 days.",
+        "failureDescription": "Your version control system hasn't been updated in at least 30 days.\n",
+        "remediationDescription": "[Link version control](/integrations) to Vanta. Vanta runs periodic tests to determine if your repositories have been updated within the past 30 days.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Software development",
+        "integrations": [
+          "aws",
+          "azuredevops",
+          "bitbucket",
+          "github",
+          "gitlab"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "NEEDS_WORK",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "zone-level-rules-cloudflare",
+        "name": "Cloudflare zone-level rules configured",
+        "lastTestRunDate": "2026-06-18T01:52:56.686Z",
+        "latestFlipDate": "2025-10-10T15:56:13.399Z",
+        "description": "This test verifies that at least one zone-level rule is configured across your Cloudflare zones. Zone-level rules include WAF rules, rate limiting rules, and other security/traffic rules applied at the zone level.",
+        "failureDescription": "Your Cloudflare domain does not have traffic and security rules configured",
+        "remediationDescription": "Create traffic and security rules in the Security tab within the account or in Security -> WAF within each zone.\n",
+        "version": {
+          "major": 1,
+          "minor": 1
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "cloudflare"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

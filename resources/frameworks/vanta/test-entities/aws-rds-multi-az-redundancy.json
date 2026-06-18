@@ -1,0 +1,15 @@
+{
+  "testId": "aws-rds-multi-az-redundancy",
+  "data": [
+    {
+      "id": "RDSInstance-66f2e2050c6d0ef555ad2d5c",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-prod-db",
+      "responseType": "AWS RDS Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-11-21T11:17:37.807Z",
+      "createdDate": "2025-11-21T11:17:37.807Z"
+    }
+  ],
+  "count": 1
+}

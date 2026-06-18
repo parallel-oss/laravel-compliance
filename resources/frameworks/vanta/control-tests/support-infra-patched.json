@@ -1,0 +1,149 @@
+{
+  "controlId": "support-infra-patched",
+  "data": [
+    {
+      "id": "github-scanning-configuration",
+      "name": "Vulnerability scanning is enabled (GitHub)",
+      "lastTestRunDate": "2026-06-18T01:52:56.704Z",
+      "latestFlipDate": "2025-10-10T19:43:18.405Z",
+      "description": "This test verifies that vulnerability scanning (via Dependabot) is enabled for your GitHub repositories, allowing you to identify and manage software vulnerabilities effectively.",
+      "failureDescription": "Vulnerability scanning is not enabled.",
+      "remediationDescription": "Vanta requests permission to read Dependabot alerts when connecting the GitHub integration by default.\n\nTo confirm Dependabot is enabled for vulnerability scanning in your monitored repositories, see GitHub's Dependabot [Quick Start Guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vulnerability management",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "packages-checked-for-vulnerabilities-v2-records-closed-github-dependabot-critical",
+      "name": "Critical vulnerabilities identified in packages are addressed (GitHub Repo)",
+      "lastTestRunDate": "2026-06-18T01:52:56.915Z",
+      "latestFlipDate": "2025-10-10T16:49:57.866Z",
+      "description": "This test ensures that all critical severity vulnerabilities identified by GitHub's Dependabot in your repositories are addressed and resolved.",
+      "failureDescription": "You have open critical severity vulnerabilities.",
+      "remediationDescription": "1. Visit the [Vulnerabilities page](/vulnerabilities/findings-by-vulnerability?source=github&severity=CRITICAL) to learn more about the unresolved vulnerabilities.\n2. Remediate or deactivate monitoring for each unresolved vulnerability.\n3. [Optional] If the vulnerability was resolved outside of the SLA you’ve defined, explain the reason to your auditor on the [SLA violations page](/vulnerabilities/history?tab=sla-misses).\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vulnerability management",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "packages-checked-for-vulnerabilities-v2-records-closed-github-dependabot-high",
+      "name": "High vulnerabilities identified in packages are addressed (GitHub Repo)",
+      "lastTestRunDate": "2026-06-18T01:52:56.331Z",
+      "latestFlipDate": "2025-10-10T16:49:58.113Z",
+      "description": "This test ensures that all high severity vulnerabilities identified by GitHub's Dependabot in your repositories are addressed and resolved.",
+      "failureDescription": "You have open high severity vulnerabilities.",
+      "remediationDescription": "1. Visit the [Vulnerabilities page](/vulnerabilities/findings-by-vulnerability?source=github&severity=HIGH) to learn more about the unresolved vulnerabilities.\n2. Remediate or deactivate monitoring for each unresolved vulnerability.\n3. [Optional] If the vulnerability was resolved outside of the SLA you’ve defined, explain the reason to your auditor on the [SLA violations page](/vulnerabilities/history?tab=sla-misses).\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vulnerability management",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "packages-checked-for-vulnerabilities-v2-records-closed-github-dependabot-low",
+      "name": "Low vulnerabilities identified in packages are addressed (GitHub Repo)",
+      "lastTestRunDate": "2026-06-18T01:52:56.255Z",
+      "latestFlipDate": "2025-10-10T16:49:58.646Z",
+      "description": "This test ensures that all low severity vulnerabilities identified by GitHub's Dependabot in your repositories are addressed and resolved.",
+      "failureDescription": "You have open low severity vulnerabilities.",
+      "remediationDescription": "1. Visit the [Vulnerabilities page](/vulnerabilities/findings-by-vulnerability?source=github&severity=LOW) to learn more about the unresolved vulnerabilities.\n2. Remediate or deactivate monitoring for each unresolved vulnerability.\n3. [Optional] If the vulnerability was resolved outside of the SLA you’ve defined, explain the reason to your auditor on the [SLA violations page](/vulnerabilities/history?tab=sla-misses).\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vulnerability management",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "packages-checked-for-vulnerabilities-v2-records-closed-github-dependabot-medium",
+      "name": "Medium vulnerabilities identified in packages are addressed (GitHub Repo)",
+      "lastTestRunDate": "2026-06-18T01:52:56.687Z",
+      "latestFlipDate": "2025-10-10T16:49:58.400Z",
+      "description": "This test ensures that all medium severity vulnerabilities identified by GitHub's Dependabot in your repositories are addressed and resolved.",
+      "failureDescription": "You have open medium severity vulnerabilities.",
+      "remediationDescription": "1. Visit the [Vulnerabilities page](/vulnerabilities/findings-by-vulnerability?source=github&severity=MEDIUM) to learn more about the unresolved vulnerabilities.\n2. Remediate or deactivate monitoring for each unresolved vulnerability.\n3. [Optional] If the vulnerability was resolved outside of the SLA you’ve defined, explain the reason to your auditor on the [SLA violations page](/vulnerabilities/history?tab=sla-misses).\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vulnerability management",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 5
+}

@@ -1,0 +1,75 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NmEyODUwOTNlOThjZjllZDI5MTU4Zjhm_eyIkZGF0ZSI6MTc4MTYzMTc2MzkwNH0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMmUyNDAwYzZkMGVmNTU1YjgwNGYx_eyIkZGF0ZSI6MTcyNzc5ODQ2NDY2NH0="
+    },
+    "data": [
+      {
+        "id": "AwsAccount-66f2e2400c6d0ef555b7e9ab",
+        "entityStatus": "FAILING",
+        "displayName": "Parallel",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:01:04.768Z",
+        "createdDate": "2024-09-24T16:01:04.768Z"
+      },
+      {
+        "id": "AwsAccount-66f2e2400c6d0ef555b7eabf",
+        "entityStatus": "FAILING",
+        "displayName": "sidecar-deployment-user",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:01:04.768Z",
+        "createdDate": "2024-09-24T16:01:04.768Z"
+      },
+      {
+        "id": "AwsAccount-66f2e2400c6d0ef555b7eb03",
+        "entityStatus": "FAILING",
+        "displayName": "Vapor",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T16:01:04.768Z",
+        "createdDate": "2024-09-24T16:01:04.768Z"
+      },
+      {
+        "id": "AwsAccount-66f2e2400c6d0ef555b7eb61",
+        "entityStatus": "FAILING",
+        "displayName": "whereby",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-11-07T05:11:52.994Z",
+        "createdDate": "2024-11-07T05:11:52.994Z"
+      },
+      {
+        "id": "AwsAccount-6855652cdebb0c522b0321fc",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-v2-forge",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-09-19T19:49:14.789Z",
+        "createdDate": "2025-09-19T19:49:14.789Z"
+      },
+      {
+        "id": "AwsAccount-68ddf488c5f2b9a9ac11f7c3",
+        "entityStatus": "FAILING",
+        "displayName": "coconut",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-01T07:01:57.081Z",
+        "createdDate": "2026-01-01T07:01:57.081Z"
+      },
+      {
+        "id": "AwsAccount-69a74753bea446f7e03f88ed",
+        "entityStatus": "FAILING",
+        "displayName": "Eli",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-06-09T17:42:43.960Z",
+        "createdDate": "2026-06-09T17:42:43.960Z"
+      }
+    ]
+  }
+}

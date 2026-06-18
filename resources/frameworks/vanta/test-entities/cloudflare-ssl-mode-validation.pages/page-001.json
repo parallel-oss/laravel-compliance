@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjkyMTg1MjYwZmYzZjdjMjY2NzM5ZTQx_eyIkZGF0ZSI6MTc2NDA2MzY1NDYxMn0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjkyMTg1MjYwZmYzZjdjMjY2NzM5ZTQx_eyIkZGF0ZSI6MTc2NDA2MzY1NDYxMn0="
+    },
+    "data": [
+      {
+        "id": "CloudflareZoneResource-68e92c89679bf82ec2bf1035",
+        "entityStatus": "FAILING",
+        "displayName": "liveoutofoffice.email",
+        "responseType": "Cloudflare Zone",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-11-22T09:40:54.685Z",
+        "createdDate": "2025-11-22T09:40:54.685Z"
+      }
+    ]
+  }
+}

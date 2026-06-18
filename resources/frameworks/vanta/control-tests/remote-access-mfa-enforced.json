@@ -1,0 +1,35 @@
+{
+  "controlId": "remote-access-mfa-enforced",
+  "data": [
+    {
+      "id": "mfa-on-accounts-infra",
+      "name": "MFA on infrastructure provider",
+      "lastTestRunDate": "2026-06-18T01:52:56.084Z",
+      "latestFlipDate": "2026-03-03T20:42:05.717Z",
+      "description": "This test checks whether all AWS accounts with a password have multi-factor authentication (MFA) enabled.",
+      "failureDescription": "Multifactor authentication isn't enabled for some of your infrastructure accounts.",
+      "remediationDescription": "Add multifactor authentication to your AWS account.\n\n1. Log in to the [AWS IAM console](https://console.aws.amazon.com/iam/).\n2. In the navigation panel, click **Users**.\n3. Click the name of the user accounts where multifactor authentication isn't enabled.\n4. On the Security Credentials tab, click **Manage** next to **Assigned MFA device**.\n5. Choose a virtual multifactor authentication device, and follow the steps to configure it.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2026-03-10T20:42:05.681Z",
+        "itemCount": 1
+      },
+      "owner": null
+    }
+  ],
+  "count": 1
+}

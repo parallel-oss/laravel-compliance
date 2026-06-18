@@ -1,0 +1,166 @@
+{
+  "controlId": "log-management-utilized",
+  "data": [
+    {
+      "id": "flow-logs-on-config",
+      "name": "VPC Flow Logs enabled",
+      "lastTestRunDate": "2026-06-18T01:52:56.853Z",
+      "latestFlipDate": "2024-09-24T16:00:52.690Z",
+      "description": "This test checks whether your AWS Virtual Private Clouds (VPCs) have VPC Flow Logs enabled for network traffic monitoring.",
+      "failureDescription": "You aren't using VPC flow logs to capture information about your network's IP traffic.",
+      "remediationDescription": "Enable VPC flow logs for your virtual private cloud or subnet.\n\n1. [Log in to the VPC Console](https://console.aws.amazon.com/vpc/).\n2. In the navigation pane, select **Your VPCs**.\n3. Select the VPC where you want to enable VPC flow logs.\n4. Click **Flow logs | Create flow Log**.\n5. Select whether the flow log should capture rejected traffic, accepted traffic, or all traffic.\n6. Enter the name of a CloudWatch log group where the flow logs will be published.\n7. Specify the name of [the IAM role that has permission to publish logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-cwl.html#flow-logs-iam-role) to CloudWatch Logs.\n8. Click **Create flow log**.\n\nFor more information, see [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) in the AWS help.\n\n#### Remediation for Terraform\nCreate a `aws_flow_log` resource to associate with your desired vpc_id. Choose a log_destination for your `aws_flow_log` resource and include the relevant `aws_iam_role` that includes the policies shown.\n\n```hcl\n\nresource \"aws_flow_log\" \"example\" {\n  iam_role_arn    = aws_iam_role.flow_log_role.arn\n  log_destination = aws_cloudwatch_log_group.example.arn\n  traffic_type    = \"ALL\"\n  vpc_id          = aws_vpc.example.id\n}\n\nresource \"aws_cloudwatch_log_group\" \"example\" {\n  name = \"example\"\n}\n\nresource \"aws_iam_role\" \"flow_log_role\" {\n  name               = \"flow_log_role\"\n  assume_role_policy = data.aws_iam_policy_document.assume_role.json\n}\n\ndata \"aws_iam_policy_document\" \"assume_role\" {\n  statement {\n    effect = \"Allow\"\n\n    principals {\n      type = \"Service\"\n      identifiers = [\"vpc-flow-logs.amazonaws.com\",\n      \"streams.metrics.cloudwatch.amazonaws.com\"]\n    }\n\n    actions = [\"sts:AssumeRole\"]\n  }\n}\n\nresource \"aws_iam_policy\" \"policy\" {\n  name        = \"policy\"\n  path        = \"/\"\n  description = \"My test policy\"\n\n  # Terraform's \"jsonencode\" function converts a\n  # Terraform expression result to valid JSON syntax.\n  policy = jsonencode({\n   Version = \"2012-10-17\",\n   Statement = [\n    {\n      Effect = \"Allow\"\n      Action = [\n        \"logs:CreateLogGroup\",\n        \"logs:CreateLogStream\",\n        \"logs:PutLogEvents\",\n        \"logs:DescribeLogGroups\",\n        \"logs:DescribeLogStreams\",\n      ]\n        Resource = \"*\"\n    },\n  ]\n  })\n}\n\nresource \"aws_iam_policy_attachment\" \"test-attach\" {\n  name       = \"test-attach\"\n  roles      = [aws_iam_role.flow_log_role.name]\n  policy_arn = aws_iam_policy.policy.arn\n}\n\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/flow_log) for more information.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Logging",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:00:52.623Z",
+        "itemCount": 10
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-activity-tracked-config",
+      "name": "CloudTrail enabled",
+      "lastTestRunDate": "2026-06-18T01:52:56.237Z",
+      "latestFlipDate": "2024-09-24T17:11:27.353Z",
+      "description": "This test verifies that CloudTrail is enabled on all AWS accounts within your organization.",
+      "failureDescription": "You aren't using CloudTrail to monitor AWS user activity and API usage.",
+      "remediationDescription": "Enable CloudTrail in each of your AWS accounts.\n\n1. [Log in to the CloudTrail dashboard in the AWS Management Console](https://console.aws.amazon.com/cloudtrail/).\n2. In the navigation pane, click **Trails**.\n3. Select \"Create trail\".\n4. Create a trail. By default, when you create a trail in a region in the CloudTrail console, the trail applies to all regions. A multi-region trail is a recommended best practice, because it helps you to keep your AWS environment more secure, by logging activity in all regions.\n5. Create an Amazon S3 bucket or specify an existing bucket where you want the log files delivered. By default, log files from all regions in your account are delivered to the bucket that you specify.\n6. Configure your trail to log read-only, write-only, or all management events, all Insights events, and all or a subset of data events. By default, trails log all management events and no data or Insights events.\n\nFor more information, see [Working with CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-getting-started.html) in the AWS help.\n\n#### Remediation for Terraform\nEnsure that the 'include_global_service_events' as well as the 'is_multi_region_trail' arguments are set to true on at least one aws_cloudtrail resource in each AWS account.\n\n```hcl\nresource \"aws_cloudtrail\" \"example\" {\n  depends_on = [aws_s3_bucket_policy.example]\n\n  name                          = \"example\"\n  s3_bucket_name                = aws_s3_bucket.example.id\n  s3_key_prefix                 = \"prefix\"\n  include_global_service_events = true\n  is_multi_region_trail         = true\n\n# event_selector is optional\n\n  event_selector {\n    read_write_type           = \"WriteOnly\"\n    include_management_events = true\n\n    data_resource {\n      type   = \"AWS::S3::Object\"\n      values = [\"arn:aws:s3\"]\n    }\n  }\n}\n...........\n```\n\nSee a full example of the aws_cloudtrail resource including the required bucket policy in the [Terraform documentation here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#example-usage).\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Logging",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-01T17:11:27.191Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-linked-to-vanta",
+      "name": "Cloud infrastructure linked to Vanta",
+      "lastTestRunDate": "2026-06-18T01:52:56.947Z",
+      "latestFlipDate": "2024-09-25T17:11:50.775Z",
+      "description": "This test verifies that at least one of the supported cloud infrastructure providers (AWS, GCP, Heroku, Azure, or DigitalOcean) is properly linked to Vanta.",
+      "failureDescription": "You don't have a cloud infrastructure service provider linked to Vanta.",
+      "remediationDescription": "Link your cloud infrastructure provider to Vanta on the [Integrations page](/integrations).\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws",
+        "azure",
+        "azure_for_government",
+        "gcp",
+        "oracle_cloud",
+        "ovh_cloud",
+        "akamai",
+        "cloudflare",
+        "cloudflare_for_government",
+        "digitalocean",
+        "digitaloceanspaces",
+        "heroku",
+        "netlify",
+        "scaleway",
+        "supabase",
+        "vercel"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "logs-centrally-stored-config",
+      "name": "S3 server access logs enabled",
+      "lastTestRunDate": "2026-06-18T01:52:59.115Z",
+      "latestFlipDate": "2024-09-24T16:02:44.643Z",
+      "description": "This test verifies that there is at least one AWS S3 bucket configured as a central storage destination for CloudTrail event logging or S3 server access logging.",
+      "failureDescription": "You aren't logging accesses to your S3 buckets.",
+      "remediationDescription": "[Enable server access logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-server-access-logging.html) or [enable CloudTrail data event logging](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/enable-cloudtrail-events.html) for important S3 buckets\n\nPlease ensure that the bucket you select for logging is in an account that is in scope and monitored by Vanta. Otherwise, Vanta will not be able to validate that the logging bucket exists.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Logging",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-01T16:02:44.582Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "logs-retained-for-twelve-months-config",
+      "name": "Server logs retained for 365 days (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.950Z",
+      "latestFlipDate": "2024-09-24T15:59:23.111Z",
+      "description": "This test verifies that AWS CloudWatch Log Groups are configured to retain logs for at least 365 days or are set to unlimited retention.",
+      "failureDescription": "You aren't retaining server logs for at least 365 days.",
+      "remediationDescription": "Change your log retention settings in CloudWatch to store your server logs for at least 365 days.\n\n1. [Log in to the CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. In the navigation pane, click **Logs**.\n3. Find the log group that contains your server logs.\n4. In the **Expire Events After** column for that log group, click the current retention setting, such as **Never Expire**.\n5. In the **Edit Retention** dialog box, for **Retention**, choose a log retention value.\n6. Click **Ok**.\n\n#### Remediation for Terraform\nEdit your `aws_cloudwatch_log_group` resources to have the `retention_in_days` attribute set to a value greater than 365.\n\n```hcl\nresource \"aws_cloudwatch_log_group\" \"your_log_group_name\" {\n  name              = \"/aws/your-log-group/custom-log-group\"\n  retention_in_days = 365\n}\n```\n\n*Note*: Only some retention in days values are supported. Refer to [the AWS documentation](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html#API_PutRetentionPolicy_RequestSyntax) for more information.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Logging",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-01T15:59:23.071Z",
+        "itemCount": 4
+      },
+      "owner": null
+    }
+  ],
+  "count": 5
+}

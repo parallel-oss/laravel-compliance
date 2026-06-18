@@ -1,0 +1,356 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "b3BlbmFpLWFjY291bnQtbGlua2VkLWluLXZhbnRh",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtYWNjZXNzLWNvbnRyb2wtcG9saWN5LWJzaS1leGlzdHM="
+    },
+    "data": [
+      {
+        "id": "approved-access-control-policy-bsi-exists",
+        "name": "Company has an approved Access Control Policy",
+        "lastTestRunDate": "2026-06-18T01:52:56.946Z",
+        "latestFlipDate": "2026-05-20T18:04:42.430Z",
+        "description": "This test verifies whether your company has an approved [Access Control Policy](/policies/access-control-policy-bsi).",
+        "failureDescription": "You don't have an approved Access Control Policy yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Access%20Control%20Policy) to create and approve a custom Access Control Policy for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "cloudflare-account-linked-in-vanta",
+        "name": "Cloudflare accounts associated with users",
+        "lastTestRunDate": "2026-06-18T01:52:56.088Z",
+        "latestFlipDate": "2026-01-21T19:38:39.296Z",
+        "description": "This test verifies that all Cloudflare user accounts are associated with users in Vanta's system. Linking accounts to users enables proper access tracking, accountability, and ensures that only authorized personnel have access to your Cloudflare infrastructure.",
+        "failureDescription": "Vanta detected some Cloudflare accounts that are not associated with users within Vanta.",
+        "remediationDescription": "Visit the [Access page](/access?credentialKey=cloudflare) to review and update the owners for each of your accounts.\n\nIf the account does not correspond to a user in Vanta, create the user manually by selecting 'Add a person,' or mark it as external by selecting 'Assign to external person.'\n\nIf the account is not a human account, select 'Mark as service account'.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "IT",
+        "integrations": [
+          "cloudflare"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2026-01-28T19:38:39.270Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "docusign-account-linked-in-vanta",
+        "name": "Docusign accounts associated with users",
+        "lastTestRunDate": "2026-06-18T01:52:56.087Z",
+        "latestFlipDate": "2025-05-22T03:32:33.470Z",
+        "description": "This test verifies that all DocuSign accounts in your organization are associated with users in Vanta. Linking accounts to users is essential for maintaining accurate access visibility, enabling proper access reviews, and ensuring accountability for document signing activities.",
+        "failureDescription": "Vanta detected some Docusign accounts that are not associated with users within Vanta.",
+        "remediationDescription": "Visit the [Access page](/access?credentialKey=docusign) to review and update the owners for each of your accounts.\n\nIf the account does not correspond to a user in Vanta, create the user manually by selecting 'Add a person,' or mark it as external by selecting 'Assign to external person.'\n\nIf the account is not a human account, select 'Mark as service account'.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Account setup",
+        "integrations": [
+          "docusign"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "github-account-linked-in-vanta",
+        "name": "GitHub accounts associated with users",
+        "lastTestRunDate": "2026-06-18T01:52:56.965Z",
+        "latestFlipDate": "2025-10-10T16:49:41.845Z",
+        "description": "This test verifies that all GitHub accounts have been linked to users within Vanta.",
+        "failureDescription": "Vanta detected some GitHub accounts that are not associated with users within Vanta.",
+        "remediationDescription": "Visit the [Access page](/access?credentialKey=github) to review and update the owners for each of your accounts.\n\nIf the account does not correspond to a user in Vanta, create the user manually by selecting `Add a person` or mark it as external by selecting `Assign to external person`.\n\nIf the account is not a human account, select `Mark as service account`.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Account setup",
+        "integrations": [
+          "github"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "hr-users-linked-in-vanta",
+        "name": "HR accounts associated with users",
+        "lastTestRunDate": "2026-06-18T01:52:56.940Z",
+        "latestFlipDate": "2026-05-21T21:08:37.908Z",
+        "description": "This test verifies whether all active HR accounts have been properly linked to user profiles within Vanta.",
+        "failureDescription": "Vanta detected some HR accounts that are not associated with users within Vanta.",
+        "remediationDescription": "Visit the [People page](/people?viewingHrData=1) to view and connect unlinked HR accounts to users in Vanta.\n\nIf the account does not correspond to a user in Vanta (such as a contractor account), create the user manually by selecting 'Add a person,' or mark the account 'Out of scope' on the [Integrations page](/integrations).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Account setup",
+        "integrations": [
+          "adp_run",
+          "adp_workforce_now",
+          "alexis_hr",
+          "altera_payroll",
+          "bamboo_hr",
+          "bob",
+          "breathe",
+          "cezanne_hr",
+          "charlie",
+          "charthop",
+          "clayhr",
+          "cyberark",
+          "darwinbox",
+          "dayforce",
+          "deel",
+          "employment_hero",
+          "factorial",
+          "freshteam",
+          "gusto",
+          "hralliance",
+          "hr_cloud",
+          "hr_partner",
+          "humaans",
+          "insperity",
+          "intellihr",
+          "isolved",
+          "justworks",
+          "kallidus",
+          "keka",
+          "kenjo",
+          "lano",
+          "lucca",
+          "namely",
+          "nmbrs",
+          "officient",
+          "oracle_hcm",
+          "oysterhr",
+          "paycaptain",
+          "paychex_flex",
+          "paycom",
+          "paycor",
+          "payfit",
+          "paylocity",
+          "payworks",
+          "peoplehr",
+          "personio",
+          "proliant",
+          "quickbooks",
+          "rippling",
+          "sage",
+          "sesame",
+          "sap_successfactors",
+          "seven_shifts",
+          "square_payroll",
+          "trinet",
+          "ukg_dimensions",
+          "ukg_ready",
+          "ulti_pro",
+          "workday",
+          "zenefits",
+          "humi",
+          "netsuite",
+          "remote",
+          "workable",
+          "zoho_people"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2026-05-28T21:08:37.869Z",
+          "itemCount": 1
+        },
+        "owner": null
+      },
+      {
+        "id": "idp-linked-to-vanta",
+        "name": "Identity provider linked to Vanta",
+        "lastTestRunDate": "2026-06-18T01:52:56.788Z",
+        "latestFlipDate": "2025-02-18T14:09:53.590Z",
+        "description": "This test verifies if you have at least one active identity provider (IdP) integration linked and providing data without errors.",
+        "failureDescription": "There is an issue with regards to the connection to your identity provider integration, preventing us from getting regular updates about users. Refer to the integrations page to learn more about the integration issue and fix the error.",
+        "remediationDescription": "Link your identity provider on the [Integrations page](/integrations) to ensure your personnel are tracked in Vanta.\n\nIf there are issues retrieving data, check the affected accounts in the identity provider's admin console.\n\nIf you have multiple identity providers connected, there may be conflicts if more than one is configured to populate the People page. When connecting multiple IdPs to Vanta, we recommend only leveraging one IdP for creating people unless your company’s personnel are split across multiple IdPs. [Learn more about IdP integration configuration](https://help.vanta.com/hc/en-us/articles/27053830418452-Using-IdP-Integrations-for-Access-and-Vendor-Monitoring) or visit the [Integrations page](/integrations) to adjust the \"populate the People page\" setting for each identity provider you've connected.\n\nIf a user already exists for a specific email address, or updating a Vanta user would cause multiple active users to have the same email, please offboard the conflicting user. Vanta allows only one active user per email address.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Account setup",
+        "integrations": [
+          "gsuiteadmin",
+          "jumpcloud",
+          "office",
+          "office_gcc_high",
+          "okta",
+          "onelogin",
+          "pingone"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "infra-access-requires-approval-config",
+        "name": "AWS accounts reviewed",
+        "lastTestRunDate": "2026-06-18T01:52:56.275Z",
+        "latestFlipDate": "2024-09-24T16:01:06.103Z",
+        "description": "This test verifies that all AWS accounts have been linked to users within Vanta. Accounts that have open access requests or have not been linked to a Vanta user may cause this test to fail.",
+        "failureDescription": "Some of your AWS accounts have not been linked to Vanta users, so Vanta can't confirm you're limiting AWS access.",
+        "remediationDescription": "1. Use our [Access page](/access) to review any open access requests to your infrastructure. Accounts that have open access requests or have not been linked to a Vanta user may cause this test to fail.\n2. Create a task in your task tracker for each new account you need to create.\n3. Tag the task with an `access-change` tag to track these changes in Vanta.\n\n#### Remediation for Terraform\nAdd the \"VantaOwner\" tag to your aws_iam_user resource and set the value to an email address for a currently active Vanta user. This information will reflect on the [access page](https://app.vanta.com/access/accounts).\n\n```hcl\nresource \"aws_iam_user\" \"test-iam-user\" {\n  name = \"test-user\"\n\n  tags = {\n    VantaOwner = \"email@domain.com\"\n  }\n}\n```\n*Note that the tag key may be different from \"VantaOwner\" if you are utilizing [custom tags](https://app.vanta.com/inventory?bulk-tags=open#compute).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Account setup",
+        "integrations": [
+          "aws"
+        ],
+        "status": "NEEDS_ATTENTION",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "OVERDUE",
+          "soonestRemediateByDate": "2024-10-01T16:01:05.770Z",
+          "itemCount": 7
+        },
+        "owner": null
+      },
+      {
+        "id": "infra-linked-to-vanta",
+        "name": "Cloud infrastructure linked to Vanta",
+        "lastTestRunDate": "2026-06-18T01:52:56.947Z",
+        "latestFlipDate": "2024-09-25T17:11:50.775Z",
+        "description": "This test verifies that at least one of the supported cloud infrastructure providers (AWS, GCP, Heroku, Azure, or DigitalOcean) is properly linked to Vanta.",
+        "failureDescription": "You don't have a cloud infrastructure service provider linked to Vanta.",
+        "remediationDescription": "Link your cloud infrastructure provider to Vanta on the [Integrations page](/integrations).\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "aws",
+          "azure",
+          "azure_for_government",
+          "gcp",
+          "oracle_cloud",
+          "ovh_cloud",
+          "akamai",
+          "cloudflare",
+          "cloudflare_for_government",
+          "digitalocean",
+          "digitaloceanspaces",
+          "heroku",
+          "netlify",
+          "scaleway",
+          "supabase",
+          "vercel"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "openai-account-linked-in-vanta",
+        "name": "OpenAI accounts associated with users",
+        "lastTestRunDate": "2026-06-18T01:52:56.674Z",
+        "latestFlipDate": "2024-09-24T22:24:10.239Z",
+        "description": "This test verifies that all OpenAI accounts in your organization are associated with users in Vanta. Linking accounts to users is essential for access governance, accountability, and audit trails.",
+        "failureDescription": "Vanta detected some OpenAI accounts that are not associated with users within Vanta.",
+        "remediationDescription": "Visit the [Access page](/access?credentialKey=openai) to review and update the owners for each of your accounts.\n\nIf the account does not correspond to a user in Vanta, create the user manually by selecting 'Add a person,' or mark it as external by selecting 'Assign to external person.'\n\nIf the account is not a human account, select 'Mark as service account'.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Account setup",
+        "integrations": [
+          "openai"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

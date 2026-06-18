@@ -1,0 +1,30 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "Njk3MTJiM2ZjYzlhY2IwNjk3M2QzYTQ2_eyIkZGF0ZSI6MTc2OTYyOTExOTUxNH0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjhlOTJjOGFmZDk5MzczNjNmOWEyMGU1_eyIkZGF0ZSI6MTc2MDcxNjU1NDc5OX0="
+    },
+    "data": [
+      {
+        "id": "CloudflareUser-68e92c89679bf82ec2bf1036",
+        "entityStatus": "FAILING",
+        "displayName": "brad@liveoutofoffice.com",
+        "responseType": "Cloudflare User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T15:55:54.874Z",
+        "createdDate": "2025-10-10T15:55:54.874Z"
+      },
+      {
+        "id": "CloudflareUser-69712b126dbe9a292d001921",
+        "entityStatus": "FAILING",
+        "displayName": "jschafer0927@gmail.com",
+        "responseType": "Cloudflare User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-21T19:38:39.568Z",
+        "createdDate": "2026-01-21T19:38:39.568Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjhlOTM5MmNmZDk5MzczNjNmOWU3NmVj_eyIkZGF0ZSI6MTc2MDM3NDE4ODg0M30=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjhlOTM5MmNmZDk5MzczNjNmOWU3NmVj_eyIkZGF0ZSI6MTc2MDM3NDE4ODg0M30="
+    },
+    "data": [
+      {
+        "id": "GithubRepo-68e9392b679bf82ec2c329fc",
+        "entityStatus": "FAILING",
+        "displayName": "web",
+        "responseType": "GitHub Repo",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:49:48.983Z",
+        "createdDate": "2025-10-10T16:49:48.983Z"
+      }
+    ]
+  }
+}

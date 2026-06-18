@@ -1,0 +1,15 @@
+{
+  "testId": "hr-users-linked-in-vanta",
+  "data": [
+    {
+      "id": "HrUser-6a0f45d035545f5458b623f1",
+      "entityStatus": "FAILING",
+      "displayName": "Bradley Jackson",
+      "responseType": "HR User",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-21T21:08:37.943Z",
+      "createdDate": "2026-05-21T21:08:37.943Z"
+    }
+  ],
+  "count": 1
+}

@@ -1,0 +1,383 @@
+{
+  "controlId": "system-threshold-monitoring",
+  "data": [
+    {
+      "id": "load-balancer-config",
+      "name": "Load balancer used (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:57.139Z",
+      "latestFlipDate": "2024-09-24T15:59:58.103Z",
+      "description": "This test validates that each AWS account in your organization has at least one Application Load Balancer (ALB) configured.",
+      "failureDescription": "You aren't using a load balancer to distribute traffic yet.",
+      "remediationDescription": "[Determine the type of load balancer your application requires](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-getting-started.html), and follow the steps to implement it.\n\n#### Remediation for Terraform\nCreate an aws_lb resource for your network\n\n```hcl\nresource \"aws_lb\" \"test-lb\" {\n  name               = \"test-load-balancer-tf\"\n  internal           = true\n  load_balancer_type = \"application\"\n  security_groups    = [aws_security_group.lb_sg.id]\n  subnets            = [for subnet in aws_subnet.public : subnet.id]\n  enable_deletion_protection = true\n}\n```\n\nSee more in the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb).\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "load-balancer-http-to-https",
+      "name": "Load balancers redirect HTTP to HTTPS (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.982Z",
+      "latestFlipDate": "2024-09-24T15:59:58.349Z",
+      "description": "This test verifies that all internet-facing AWS Application Load Balancers (ALBs) listening on HTTP are configured to redirect that HTTP traffic to HTTPS.",
+      "failureDescription": "You have an Application Load Balancer that:\n- Has an \"internet-facing\" **scheme**.\n- Has a **listener** with an \"HTTP\" **protocol**.\n- Does not have a **listener** with a **default action** that has a \"redirect\" **action type** and an \"HTTPS\" **redirect protocol**.\n",
+      "remediationDescription": "Configure the load balancers to redirect HTTP traffic to HTTPS.\n\nFor detailed instructions, see [our help article](https://help.vanta.com/hc/en-us/articles/10465036804500-How-to-Pass-the-Load-balancers-redirect-HTTP-to-HTTPS-AWS-Test).\n\n#### Remediation for Terraform\nEnsure that you create an aws_lb_listener resource for your aws_lb on port 80 that has a default_action to redirect to port 443.\n\n```hcl\nresource \"aws_lb_listener\" \"example_listener\" {\n  load_balancer_arn = aws_lb.example_lb.arn\n  port              = 80\n  protocol          = \"HTTP\"\n\n  default_action {\n    type             = \"redirect\"\n    redirect {\n      protocol       = \"HTTPS\"\n      port           = \"443\"\n      status_code    = \"HTTP_301\"\n    }\n  }\n}\n```\n\nSee more in the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/lb_listener).\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "load-balancers-monitored-and-alarmed-config-healthy",
+      "name": "Load balancer unhealthy host count monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.058Z",
+      "latestFlipDate": "2024-09-24T15:59:58.542Z",
+      "description": "This test verifies that all AWS Application Load Balancers (ALBs) have AWS CloudWatch alarms configured to monitor their host health statuses using specific AWS-provided metrics.",
+      "failureDescription": "Your load balancers don't have healthy host count alerts set up.",
+      "remediationDescription": "Set up healthy host count alerts in Amazon Cloudwatch or a 3rd party monitoring provider for your application and classic load balancers. Define alerts for at least one of the following metric categories:\n\n- `UnHealthyHostCount`\n- `HealthyHostCount`\n- `EnvironmentHealth`\n\nNote that these metrics are **only** available if a load balancer can make health checks over its instances. If not, you will not see these metrics until health checks are enabled.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on the appropriate metric for each of your load balancers. If you notice that some metrics do not appear to be emitted by Cloudwatch, double check that the load balancer has at least one target group configured.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)\n* [Available CloudWatch metrics for Classic Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-cloudwatch-metrics.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon ELB metric for your load balancers.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource using the UnHealthyHostCount, HealthyHostCount, or EnvironmentHealth metric.\nevaluation_periods, period, statistic, and threshold can be set to values that make sense for your load balancers. Additionally ensure that you configure alarm_actions for notifications.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"elb_unhealthy_hostcount_alarm\" {\n  alarm_name          = \"elb-unhealthy-hostcount-alarm\"\n  comparison_operator = \"GreaterThanThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"UnHealthyHostCount\"\n  namespace           = \"AWS/ELB\"\n  period              = 60 # 1 minute\n  statistic           = \"Sum\"\n  threshold           = 1 # Adjust threshold based on your requirement\n  alarm_description   = \"Alarm when UnHealthyHostCount exceeds 1 for 2 consecutive periods\"\n\n  dimensions = {\n    LoadBalancerName = \"your-load-balancer-name\" # Replace with the name of your load balancer\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:my-sns-topic\"] # Replace with your SNS topic ARN\n}\n```\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T15:59:58.515Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "load-balancers-monitored-and-alarmed-config-latency",
+      "name": "Load balancer latency monitored",
+      "lastTestRunDate": "2026-06-18T01:52:56.270Z",
+      "latestFlipDate": "2024-09-24T15:59:58.724Z",
+      "description": "This test verifies that all AWS Application and Classic Load Balancers have CloudWatch alarms configured to monitor latency using accepted latency-related metrics.",
+      "failureDescription": "You haven't set up latency alerts for your load balancer yet.",
+      "remediationDescription": "Set up latency alerts in Amazon Cloudwatch or a 3rd party monitoring provider for your application and classic load balancers. Define alerts for at least one of the following metric categories:\n\n- `Latency`\n- `EnvironmentHealth`\n- `ApplicationLatencyP99`\n- `ApplicationLatencyP95`\n- `TargetResponseTime`\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on the appropriate metric for each of your load balancers. If you notice that some metrics do not appear to be emitted by Cloudwatch, double check that the load balancer has at least one target group configured.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)\n* [Available CloudWatch metrics for Classic Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-cloudwatch-metrics.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon ELB metric for your load balancers.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource using the Latency, EnvironmentHealth, ApplicationLatencyP99, ApplicationLatencyP95, or TargetResponseTime metric.\nevaluation_periods, period, statistic, and threshold can be set to values that make sense for your load balancers. Additionally ensure that you configure alarm_actions for notifications.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"elb_latency_alarm\" {\n  alarm_name          = \"elb-latency-alarm\"\n  comparison_operator = \"GreaterThanThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"Latency\"\n  namespace           = \"AWS/ELB\"\n  period              = 60 # 1 minute\n  statistic           = \"Average\"\n  threshold           = 0.1 # Adjust threshold based on your requirement (in seconds)\n  alarm_description   = \"Alarm when Latency exceeds 0.1 seconds for 2 consecutive periods\"\n\n  dimensions = {\n    LoadBalancerName = \"your-load-balancer-name\" # Replace with the name of your load balancer\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:my-sns-topic\"] # Replace with your SNS topic ARN\n}\n```\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T15:59:58.679Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "load-balancers-monitored-and-alarmed-config-servererrors",
+      "name": "Load balancer server errors monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.064Z",
+      "latestFlipDate": "2024-09-24T15:59:58.878Z",
+      "description": "This test checks whether AWS Application and Classic Load Balancers have CloudWatch alarms configured to notify you when server-side errors (5XX HTTP response codes) occur.",
+      "failureDescription": "Your load balancers don't have error count monitors set up.",
+      "remediationDescription": "Set up server error alerts in Amazon Cloudwatch or a 3rd party monitoring provider for your application and classic load balancers. Define alerts for at least one of the following metric categories:\n\n- `HTTPCode_ELB_5XX`\n- `HTTPCode_ELB_5XX_Count`\n- `HTTPCode_Backend_5XX`\n- `HTTPCode_Target_5XX_Count`\n- `ApplicationRequests5xx`\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on the appropriate metric for each of your load balancers. If you notice that some metrics do not appear to be emitted by Cloudwatch, double check that the load balancer has at least one target group configured.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)\n* [Available CloudWatch metrics for Classic Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-cloudwatch-metrics.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon ELB metric for your load balancers.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource using the HTTPCode_ELB_5XX, HTTPCode_ELB_5XX_Count, HTTPCode_Backend_5XX, HTTPCode_Target_5XX_Count, or ApplicationRequests5xx metric.\nevaluation_periods, period, statistic, and threshold can be set to values that make sense for your load balancers. Additionally ensure that you configure alarm_actions for notifications.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"elb_alarm\" {\n  alarm_name          = \"elb-5xx-alarm\"\n  comparison_operator = \"GreaterThanThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"HTTPCode_ELB_5XX\" # Can be set to any of the supported metrics listed above\n  namespace           = \"AWS/ELB\"\n  period              = 60 # 1 minute\n  statistic           = \"Sum\"\n  threshold           = 10 # Adjust threshold based on your requirement\n  alarm_description   = \"Alarm when the number of 5xx errors on the ELB exceeds 10 for 2 consecutive periods\"\n\n  dimensions = {\n    LoadBalancerName = \"example-lb\" # Replace with the name of your load balancer\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:topic\"] # Replace with your SNS topic ARN\n}\n```\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T15:59:58.851Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "mysql-database-monitored-and-alarmed-config-cpu",
+      "name": "SQL database CPU monitored",
+      "lastTestRunDate": "2026-06-18T01:52:56.739Z",
+      "latestFlipDate": "2024-09-24T16:00:06.824Z",
+      "description": "Checks that all Amazon RDS database instances have CloudWatch alarms configured to monitor CPU utilization.",
+      "failureDescription": "Your RDS databases don't have CPU usage alerts set up.",
+      "remediationDescription": "Set up CPU usage alerts through Amazon CloudWatch or a 3rd party monitoring provider for your RDS Database instances.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on `CPUUtilization` for each of your RDS instances. Ensure to add a dimension to your alarm to target your instance, either via `DBClusterIdentifier` or `DBInstanceIdentifier`.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon RDS `CPUUtilization` metric.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your RDS instances using the CPUUtilization metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your database.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"sql-database-cpu-alarm\" {\n  alarm_name          = \"rds-cpu-utilization-alarm\"\n  comparison_operator = \"GreaterThanOrEqualToThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"CPUUtilization\"\n  namespace           = \"AWS/RDS\"\n  period              = 300\n  statistic           = \"Average\"\n  threshold           = 80\n  alarm_description   = \"Alarm when CPU utilization exceeds 80% for 2 consecutive periods\"\n\n  dimensions = {\n    DBInstanceIdentifier = \"postgresql-database-1\" # Replace with your RDS instance identifier\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789123:notify_admins\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:00:06.794Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "mysql-database-monitored-and-alarmed-config-free-memory",
+      "name": "SQL database freeable memory monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.508Z",
+      "latestFlipDate": "2024-09-24T16:00:07.056Z",
+      "description": "Verifies that all Amazon RDS instances have associated AWS CloudWatch alarms configured to monitor the `FreeableMemory` metric.",
+      "failureDescription": "Your SQL databases don't have free memory alerts set up.",
+      "remediationDescription": "Set up free memory alerts through Amazon CloudWatch or a 3rd party monitoring provider for your RDS Database instances.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on `FreeableMemory` for each of your RDS instances. Ensure to add a dimension to your alarm to target your instance, either via `DBClusterIdentifier` or `DBInstanceIdentifier`.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon RDS `FreeableMemory` metric.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your AWS mysql instances using the FreeableMemory metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances.\nAdditionally ensure that you set alarm_actions to be notified when the threshold is reached.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"freeable_memory_alarm\" {\n  alarm_name          = \"mysql-freeable-memory-alarm\"\n  comparison_operator = \"LessThanThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"FreeableMemory\"\n  namespace           = \"AWS/RDS\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 1000000000 # 1GB in bytes, adjust based on your requirement\n  alarm_description   = \"Alarm when Freeable Memory is less than 1GB for 2 consecutive periods\"\n\n  dimensions = {\n    DBInstanceIdentifier = \"mysql-db-instance\"\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-west-2:123456789012:topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:00:06.993Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "mysql-database-monitored-and-alarmed-config-io",
+      "name": "Database IO monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.517Z",
+      "latestFlipDate": "2024-09-24T16:00:07.280Z",
+      "description": "This test verifies that Amazon RDS databases have CloudWatch alarms configured for at least one key Input/Output (IO) performance metrics (such as `DiskQueueDepth`, `WriteIOPS`, `ReadIOPS`, `VolumeWriteIOPs`, `VolumeReadIOPs`).",
+      "failureDescription": "Your RDS databases don't have input and output alerts set up.",
+      "remediationDescription": "Set up read/write request alerts through Amazon CloudWatch or a 3rd party monitoring provider for your RDS Database instances.\n\nThis can be done by setting alarm(s) for the entire database cluster or by setting alarm(s) on each individual database instance/node.\n\nDefine alerts for one or more of the following metrics:\n\n- `DiskQueueDepth`\n- `ReadIOPS`\n- `WriteIOPS`\n- `VolumeReadIOPs` (available for clusters only)\n- `VolumeWriteIOPS` (available for clusters only)\n\n**If you use AWS CloudWatch for monitoring and alerting**\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on the appropriate metric for each of your RDS instances. Ensure to add a dimension to your alarm to target your instance, either via DBClusterIdentifier or DBInstanceIdentifier.\n\n**If you use a 3rd party monitoring product**\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon RDS metric for your databases.\n\nSee [Available CloudWatch metrics for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) and [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) for more information.\n\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your AWS mysql instances using the DiskQueueDepth, ReadIOPS, WriteIOPS, VolumeReadIOPs (available for clusters only), or VolumeWriteIOPS (available for clusters only).\nevaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances. Additionally ensure that you set alarm_actions to be notified when the threshold is reached.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"read_iops_alarm\" {\n  alarm_name          = \"mysql-read-iops-alarm\"\n  comparison_operator = \"GreaterThanThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"ReadIOPS\"\n  namespace           = \"AWS/RDS\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 100 # Adjust threshold based on your requirement\n  alarm_description   = \"Alarm when Read IOPS exceeds 100 for 2 consecutive periods\"\n    dimensions = {\n    DBClusterIdentifier = \"mysqldb-example\"\n  }\n  alarm_actions = [\"arn:aws:sns:us-west-2:123456789012:topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:00:07.245Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "mysql-database-monitored-and-alarmed-config-storage-space",
+      "name": "SQL database free storage space monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:58.253Z",
+      "latestFlipDate": "2024-09-24T16:00:07.485Z",
+      "description": "This test verifies that all Amazon RDS instances have CloudWatch alarms configured to monitor database storage space usage for at least one of the following metrics:\n  - `FreeStorageSpace` on MySQL and PostgreSQL databases\n  - `FreeLocalStorage` on Aurora MySQL and Aurora PostgreSQL databases\n  - `AuroraVolumeBytesLeftTotal` on Aurora MySQL Databases",
+      "failureDescription": "Your RDS instances don't have free storage space alerts set up.",
+      "remediationDescription": "Set up free storage space alerts through Amazon CloudWatch or a 3rd party monitoring provider for your RDS Database instances. Define alerts for at least one of the following metrics (depending on your database type):\n\n- `FreeStorageSpace` on MySQL and PostgreSQL databases\n- `FreeLocalStorage` on Aurora MySQL and Aurora PostgreSQL databases\n- `AuroraVolumeBytesLeftTotal` on Aurora MySQL Databases\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on the appropriate metric for each of your RDS instances. Ensure to add a dimension to your alarm to target your instance, either via `DBClusterIdentifier` or `DBInstanceIdentifier`.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon RDS metric for your databases.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your AWS mysql instances using the FreeStorageSpace, FreeLocalStorage, or AuroraVolumeBytesLeftTotal metric.\nevaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances. Additionally ensure that you set alarm_actions to be notified when the threshold is reached.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"free_storage_space_alarm\" {\n  alarm_name          = \"mysql-free-storage-space-alarm\"\n  comparison_operator = \"LessThanThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"FreeStorageSpace\"\n  namespace           = \"AWS/RDS\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 1 # Adjust threshold based on your requirement (in GB)\n  alarm_description   = \"Alarm when Free Storage Space is less than 1GB for 2 consecutive periods\"\n\n    dimensions = {\n    DBClusterIdentifier = \"mysqldb-example\"\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-west-2:123456789012:topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:00:07.454Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "nosql-database-monitored-and-alarmed-config-read",
+      "name": "NoSQL database read capacity monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.075Z",
+      "latestFlipDate": "2024-09-24T16:02:54.612Z",
+      "description": "This test verifies whether each AWS DynamoDB table has a configured CloudWatch alarm for monitoring the `ConsumedReadCapacityUnits` metric.",
+      "failureDescription": "Your AWS DynamoDB databases do not have read capacity alerts set up.",
+      "remediationDescription": "Set up read capacity alerts through Amazon CloudWatch or a 3rd party monitoring provider for your NoSQL instances.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on `ConsumedReadCapacityUnits` for each of your NoSQL databases.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CouldWatch metrics for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/monitoring-cloudwatch.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon DynamoDB `ConsumedReadCapacityUnits` metric.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your DynamoDB instances using the ConsumedReadCapacityUnits metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"nosql-database-read-alarm\" {\n  alarm_name          = \"nosql-database-read-alarm\"\n  comparison_operator = \"GreaterThanOrEqualToThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"ConsumedReadCapacityUnits\"\n  namespace           = \"AWS/DynamoDB\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 100 # Adjust threshold based on your requirement\n  alarm_description   = \"Alarm when database reads exceed 100 for 2 consecutive periods\"\n\n  dimensions = {\n    TableName = \"your-table-name\" # Replace with your Dynamo DB table name\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:my-sns-topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:02:54.577Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "nosql-database-monitored-and-alarmed-config-write",
+      "name": "NoSQL database write capacity monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.329Z",
+      "latestFlipDate": "2024-09-24T16:02:54.769Z",
+      "description": "This test verifies whether each AWS DynamoDB table has a configured CloudWatch alarm for monitoring the `ConsumedWriteCapacityUnits` metric.",
+      "failureDescription": "Your NoSQL databases do not have write capacity alerts set up.",
+      "remediationDescription": "Set up write capacity alerts through Amazon CloudWatch or a 3rd party monitoring provider for your NoSQL instances.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on `ConsumedWriteCapacityUnits` for each of your NoSQL databases.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CouldWatch metrics for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/monitoring-cloudwatch.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon DynamoDB `ConsumedWriteCapacityUnits` metric.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your DynamoDB instances using the ConsumedWriteCapacityUnits metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"nosql-database-write-alarm\" {\n  alarm_name          = \"nosql-database-write-alarm\"\n  comparison_operator = \"GreaterThanOrEqualToThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"ConsumedWriteCapacityUnits\"\n  namespace           = \"AWS/DynamoDB\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 100 # Adjust threshold based on your requirement\n  alarm_description   = \"Alarm when database writes exceed 100 for 2 consecutive periods\"\n\n  dimensions = {\n    TableName = \"your-table-name\" # Replace with your Dynamo DB table name\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:my-sns-topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:02:54.740Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "serverless-function-error-rate-monitored-aws",
+      "name": "Serverless function error rate monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.902Z",
+      "latestFlipDate": "2024-09-24T16:02:35.209Z",
+      "description": "This test verifies that all AWS Lambda functions have CloudWatch alarms configured to monitor their Errors metric—either individually per function or globally for all functions.",
+      "failureDescription": "An alarm has not been created for Lambda function error metrics.",
+      "remediationDescription": "Set up Error alerts through Amazon CloudWatch or a 3rd party monitoring provider for your Lambda Functions.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on Errors for your Lambda Functions\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Working with Lambda function metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click Deactivate monitoring.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon Lambda Error metric.\n#### Remediation for Terraform\nCreate an `aws_cloudwatch_metric_alarm` resource for your AWS Lambdas using Errors metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances.\n\n```hcl\n\nresource \"aws_cloudwatch_metric_alarm\" \"serverless-function-errors-alarm\" {\n  alarm_name          = \"serverless-function-errors-alarm\"\n  comparison_operator = \"GreaterThanOrEqualToThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"Errors\"\n  namespace           = \"AWS/Lambda\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 3 # Adjust threshold based on your requirement\n  alarm_description   = \"Alarm when serverless function errors exceed 3 for 2 consecutive periods\"\n  alarm_actions = [\"arn:aws:sns:us-west-2:123456789012:topic\"] # Replace with your SNS topic ARN\n}\n\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.\n",
+      "version": {
+        "major": 1,
+        "minor": 2
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T16:02:35.073Z",
+        "itemCount": 21
+      },
+      "owner": null
+    },
+    {
+      "id": "servers-monitored-and-alarmed-config-cpu",
+      "name": "Server CPU monitored (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.254Z",
+      "latestFlipDate": "2024-09-25T17:11:48.807Z",
+      "description": "This test verifies whether all AWS EC2 instances have a CloudWatch alarm set specifically for the `CPUUtilization` metric to ensure proper monitoring and alerts in case of high CPU usage.",
+      "failureDescription": "Your servers do not have CPU usage alerts set up.",
+      "remediationDescription": "Set up CPU usage alerts through Amazon CloudWatch or a 3rd party monitoring provider for your EC2 instances.\n\n### If you use AWS CloudWatch for monitoring and alerting\n\n1. Log in to [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).\n2. Create and configure alarms on `CPUUtilization` for each of your EC2 instances.\n\nAdditional information:\n* [Vanta's help article on CloudWatch Alarms](https://help.vanta.com/hc/en-us/articles/12264595240724-How-to-create-AWS-Cloud-Watch-alarms-to-pass-Vanta-Tests)\n* [Available CloudWatch metrics for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html)\n* [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)\n\n### If you use a 3rd party monitoring product\n\n1. Click **Deactivate monitoring**.\n2. In the pop-up, write a short description identifying the tool used for monitoring and alerting.\n3. Upload a screenshot of the alert configuration in your tool, making sure it monitors the equivalent of the Amazon EC2 `CPUUtilization` metric.\n#### Remediation for Terraform\nCreate an aws_cloudwatch_metric_alarm resource for your EC2 instances using the CPUUtilization metric. evaluation_periods, period, statistic, and threshold can be set to values that make sense for your instances.\n\n```hcl\nresource \"aws_cloudwatch_metric_alarm\" \"cpu_alarm\" {\n  alarm_name          = \"cpu-utilization-alarm\"\n  comparison_operator = \"GreaterThanOrEqualToThreshold\"\n  evaluation_periods  = 2\n  metric_name         = \"CPUUtilization\"\n  namespace           = \"AWS/EC2\"\n  period              = 300 # 5 minutes\n  statistic           = \"Average\"\n  threshold           = 80\n  alarm_description   = \"Alarm when CPU utilization exceeds 80% for 2 consecutive periods\"\n\n  dimensions = {\n    InstanceId = \"your-instance-id\" # Replace with your EC2 instance ID\n  }\n\n  alarm_actions = [\"arn:aws:sns:us-east-1:123456789012:my-sns-topic\"] # Replace with your SNS topic ARN\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) for more information.",
+      "version": {
+        "major": 2,
+        "minor": 1
+      },
+      "category": "Monitoring alerts",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-09T17:11:48.768Z",
+        "itemCount": 7
+      },
+      "owner": null
+    }
+  ],
+  "count": 13
+}

@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjZmMmYyYmYwYzZkMGVmNTU1M2RlMTAy_eyIkZGF0ZSI6MTcyNzgwMjY4NzE5MX0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMmYyYmYwYzZkMGVmNTU1M2RlMTAy_eyIkZGF0ZSI6MTcyNzgwMjY4NzE5MX0="
+    },
+    "data": [
+      {
+        "id": "String-381670226487",
+        "entityStatus": "FAILING",
+        "displayName": "381670226487",
+        "responseType": "Identifier",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T17:11:27.379Z",
+        "createdDate": "2024-09-24T17:11:27.379Z"
+      }
+    ]
+  }
+}

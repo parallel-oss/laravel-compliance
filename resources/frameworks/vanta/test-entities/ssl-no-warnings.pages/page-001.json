@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "Njk0YmU3YTk2Nzk3NmU0OTkyYmZmNzBl_eyIkZGF0ZSI6MTc2Nzc5MTc4NTYwMn0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "Njk0YmU3YTk2Nzk3NmU0OTkyYmZmNzBl_eyIkZGF0ZSI6MTc2Nzc5MTc4NTYwMn0="
+    },
+    "data": [
+      {
+        "id": "NmapSsl-66f1372f0c6d0ef555f622b7",
+        "entityStatus": "FAILING",
+        "displayName": "liveoutofoffice.com",
+        "responseType": "URL",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-12-24T13:16:25.661Z",
+        "createdDate": "2025-12-24T13:16:25.661Z"
+      }
+    ]
+  }
+}

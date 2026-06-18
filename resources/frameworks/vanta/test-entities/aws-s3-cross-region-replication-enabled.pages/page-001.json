@@ -1,0 +1,174 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "Njk1Zjc5MjNlYThlZjM0YWI3ZmQ4NDM2_eyIkZGF0ZSI6MTc2ODQ2OTQxMTU4Nn0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "Njk1Zjc5MjNlYThlZjM0YWI3ZmQ4NDI1_eyIkZGF0ZSI6MTc2ODQ2OTQxMTU4Nn0="
+    },
+    "data": [
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76b2e",
+        "entityStatus": "FAILING",
+        "displayName": "cf-templates-15i8gernehz91-us-east-1",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76b91",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-enterprise-sandbox",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76c45",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-media-seeder",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76ca4",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-prod",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76cf4",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-production-backups",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76d58",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-sandbox",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76de6",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-sandbox-backups",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76e77",
+        "entityStatus": "FAILING",
+        "displayName": "out-of-office-local",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76ef6",
+        "entityStatus": "FAILING",
+        "displayName": "sidecar-us-east-1-1708968923",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76f4f",
+        "entityStatus": "FAILING",
+        "displayName": "textract-console-us-west-1-5bf87ade-5740-48ce-a0d2-5604f0d05c06",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c76faa",
+        "entityStatus": "FAILING",
+        "displayName": "vapor-us-east-1-1692866919",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c7704b",
+        "entityStatus": "FAILING",
+        "displayName": "vapor-us-east-1-1724345427",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c7708c",
+        "entityStatus": "FAILING",
+        "displayName": "vapor-us-east-1-assets-1692866919",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f2e2a30c6d0ef555c770ec",
+        "entityStatus": "FAILING",
+        "displayName": "vapor-us-east-1-assets-1724345427",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-66f943adb4ef31ac7cf1dc3a",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-enterprise-wireframes",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-68928aac7cc324bec4c87b17",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-local-2",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-689ba906edb15720ebda3982",
+        "entityStatus": "FAILING",
+        "displayName": "ooo-prod-clone",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      },
+      {
+        "id": "S3-695bcfa9c847e7c0403b4e66",
+        "entityStatus": "FAILING",
+        "displayName": "entropiq-logs",
+        "responseType": "AWS S3 Bucket",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-08T09:30:11.655Z",
+        "createdDate": "2026-01-08T09:30:11.655Z"
+      }
+    ]
+  }
+}

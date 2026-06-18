@@ -1,0 +1,222 @@
+{
+  "testId": "vendors-have-authentication-method-specified",
+  "data": [
+    {
+      "id": "Vendor-66f33c06ec2ebe98a2771909",
+      "entityStatus": "FAILING",
+      "displayName": "OpenAI",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T22:24:17.216Z",
+      "createdDate": "2024-09-24T22:24:17.216Z"
+    },
+    {
+      "id": "Vendor-682669be24009b5c6e75e733",
+      "entityStatus": "FAILING",
+      "displayName": "Gusto",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-05-15T22:25:12.702Z",
+      "createdDate": "2025-05-15T22:25:12.702Z"
+    },
+    {
+      "id": "Vendor-682e9acd10fd97190d8ab2a0",
+      "entityStatus": "FAILING",
+      "displayName": "DocuSign",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-05-22T03:33:32.829Z",
+      "createdDate": "2025-05-22T03:33:32.829Z"
+    },
+    {
+      "id": "Vendor-68e92c88fdf0eb7766ea1cf8",
+      "entityStatus": "FAILING",
+      "displayName": "Cloudflare",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T15:57:29.932Z",
+      "createdDate": "2025-10-10T15:57:29.932Z"
+    },
+    {
+      "id": "Vendor-68e92cf9024358b32f9553c4",
+      "entityStatus": "FAILING",
+      "displayName": "Stripe",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T15:59:23.788Z",
+      "createdDate": "2025-10-10T15:59:23.788Z"
+    },
+    {
+      "id": "Vendor-68e92f8395795754f0da4a35",
+      "entityStatus": "FAILING",
+      "displayName": "Coconut",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:08:46.750Z",
+      "createdDate": "2025-10-10T16:08:46.750Z"
+    },
+    {
+      "id": "Vendor-68e92fdff96abcdbc7af5ee1",
+      "entityStatus": "FAILING",
+      "displayName": "DocuSeal",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:10:27.223Z",
+      "createdDate": "2025-10-10T16:10:27.223Z"
+    },
+    {
+      "id": "Vendor-68e932d00ee251b65315e85f",
+      "entityStatus": "FAILING",
+      "displayName": "Twilio",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:23:32.184Z",
+      "createdDate": "2025-10-10T16:23:32.184Z"
+    },
+    {
+      "id": "Vendor-68e932d483a9033eb467b5c2",
+      "entityStatus": "FAILING",
+      "displayName": "Miro",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:23:32.184Z",
+      "createdDate": "2025-10-10T16:23:32.184Z"
+    },
+    {
+      "id": "Vendor-68e932d68fb31a007243309e",
+      "entityStatus": "FAILING",
+      "displayName": "Notion",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:23:32.184Z",
+      "createdDate": "2025-10-10T16:23:32.184Z"
+    },
+    {
+      "id": "Vendor-68e932d791fc441485315719",
+      "entityStatus": "FAILING",
+      "displayName": "Typeform",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:23:32.184Z",
+      "createdDate": "2025-10-10T16:23:32.184Z"
+    },
+    {
+      "id": "Vendor-68e932ec4c7614bb1515ea19",
+      "entityStatus": "FAILING",
+      "displayName": "Oh Dear",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:23:32.184Z",
+      "createdDate": "2025-10-10T16:23:32.184Z"
+    },
+    {
+      "id": "Vendor-68e932f73603da7ce97163d0",
+      "entityStatus": "FAILING",
+      "displayName": "Nylas Dashboard",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:23:32.184Z",
+      "createdDate": "2025-10-10T16:23:32.184Z"
+    },
+    {
+      "id": "Vendor-6a0e0055db0528191ffd33ce",
+      "entityStatus": "FAILING",
+      "displayName": "Anthropic",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-20T18:55:56.313Z",
+      "createdDate": "2026-05-20T18:55:56.313Z"
+    },
+    {
+      "id": "Vendor-6a15d44fb43730fa3935f47a",
+      "entityStatus": "FAILING",
+      "displayName": "Slack",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d49e15502c10cda01a89",
+      "entityStatus": "FAILING",
+      "displayName": "SerpApi",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d4a528063d5e5e18ad51",
+      "entityStatus": "FAILING",
+      "displayName": "DocSend",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d4ab4abcfc181e48fda6",
+      "entityStatus": "FAILING",
+      "displayName": "Plain",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d4e46a2fd70b2e04e01b",
+      "entityStatus": "FAILING",
+      "displayName": "Claude",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d4fbcd62b85091e74451",
+      "entityStatus": "FAILING",
+      "displayName": "CapCut",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d549cd62b85091e75223",
+      "entityStatus": "FAILING",
+      "displayName": "Ramp",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d58bc785fcd9d09cfa51",
+      "entityStatus": "FAILING",
+      "displayName": "SavvyCal",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d5b180b7ec9b3c79faae",
+      "entityStatus": "FAILING",
+      "displayName": "Lovable",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    },
+    {
+      "id": "Vendor-6a15d5bcec8393c6ba816b6d",
+      "entityStatus": "FAILING",
+      "displayName": "superhuman",
+      "responseType": "Vendor",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-05-26T19:39:22.843Z",
+      "createdDate": "2026-05-26T19:39:22.843Z"
+    }
+  ],
+  "count": 24
+}

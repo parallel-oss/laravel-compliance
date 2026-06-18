@@ -1,0 +1,35 @@
+{
+  "controlId": "access-production-network-restricted",
+  "data": [
+    {
+      "id": "infra-access-requires-approval-config",
+      "name": "AWS accounts reviewed",
+      "lastTestRunDate": "2026-06-18T01:52:56.275Z",
+      "latestFlipDate": "2024-09-24T16:01:06.103Z",
+      "description": "This test verifies that all AWS accounts have been linked to users within Vanta. Accounts that have open access requests or have not been linked to a Vanta user may cause this test to fail.",
+      "failureDescription": "Some of your AWS accounts have not been linked to Vanta users, so Vanta can't confirm you're limiting AWS access.",
+      "remediationDescription": "1. Use our [Access page](/access) to review any open access requests to your infrastructure. Accounts that have open access requests or have not been linked to a Vanta user may cause this test to fail.\n2. Create a task in your task tracker for each new account you need to create.\n3. Tag the task with an `access-change` tag to track these changes in Vanta.\n\n#### Remediation for Terraform\nAdd the \"VantaOwner\" tag to your aws_iam_user resource and set the value to an email address for a currently active Vanta user. This information will reflect on the [access page](https://app.vanta.com/access/accounts).\n\n```hcl\nresource \"aws_iam_user\" \"test-iam-user\" {\n  name = \"test-user\"\n\n  tags = {\n    VantaOwner = \"email@domain.com\"\n  }\n}\n```\n*Note that the tag key may be different from \"VantaOwner\" if you are utilizing [custom tags](https://app.vanta.com/inventory?bulk-tags=open#compute).\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account setup",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-01T16:01:05.770Z",
+        "itemCount": 7
+      },
+      "owner": null
+    }
+  ],
+  "count": 1
+}

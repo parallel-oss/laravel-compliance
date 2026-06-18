@@ -1,0 +1,238 @@
+{
+  "controlId": "network-firewalls-reviewed",
+  "data": [
+    {
+      "id": "cloudflare-domain-protection-waf-enabled",
+      "name": "Cloudflare Domain WAF Protection",
+      "lastTestRunDate": "2026-06-18T04:47:11.730Z",
+      "latestFlipDate": "2026-05-20T21:05:41.591Z",
+      "description": "This test verifies that Cloudflare domains have Web Application Firewall (WAF) protection enabled. WAF helps defend against web application attacks by filtering malicious HTTP/HTTPS traffic based on customizable rules and managed rulesets.",
+      "failureDescription": "Some Cloudflare domains that are proxied through Cloudflare do not have Web Application Firewall (WAF) protection enabled.",
+      "remediationDescription": "Enable Web Application Firewall (WAF) protection for your Cloudflare domains. Note that WAF is available on Pro, Business, and Enterprise plans.\n\n**Web Application Firewall (WAF):**\n\nWAF is available on Pro, Business, and Enterprise plans. The WAF uses managed rulesets to protect against common web application attacks.\n\n1. Sign in to the Cloudflare dashboard.\n2. Select the domain you want to protect.\n3. Navigate to \"Security\" in the left sidebar.\n4. Click the \"WAF\" tab (or \"Security rules\" tab for some accounts).\n5. Click \"Deploy a managed ruleset\" or \"Create rule\" depending on your interface.\n6. Select and enable the \"Cloudflare Managed Ruleset\" for comprehensive protection.\n7. Optionally enable the \"Cloudflare OWASP Core Ruleset\" for OWASP Top 10 protection.\n8. Set the action mode to \"Enabled\" (not \"Log only\" or \"Disabled\").\n9. Click \"Deploy\" or \"Save\" to activate the ruleset.\n\nIf you don't see WAF options, verify that your plan includes WAF protection. Free plans do not have access to WAF. You may need to upgrade your plan or contact Cloudflare support to enable this feature.\n\n**Alternative: Using Cloudflare API:**\n\nIf the dashboard options are not available, you can configure WAF using the Cloudflare API:\n\n1. Obtain your Cloudflare API token from \"My Profile\" > \"API Tokens\".\n2. Use the Cloudflare API to deploy managed rulesets for WAF protection.\n3. Refer to the [Cloudflare API documentation](https://developers.cloudflare.com/api/) for specific endpoints and examples.\n\n**Verify Protection Status:**\n\nAfter enabling WAF:\n\n1. Return to the \"Security\" section in your Cloudflare dashboard.\n2. Verify that WAF managed rulesets are deployed and enabled.\n3. Monitor the Security Analytics to see blocked threats and fine-tune settings as needed.\n\n**Important Notes:**\n\n- **Plan requirements:** WAF requires Pro, Business, or Enterprise plans.\n- **Proxied DNS:** Security features only work when your DNS records are proxied through Cloudflare (orange cloud icon).\n- **Enterprise features:** Some advanced features may require explicit enablement by Cloudflare. Contact your account team if features are not appearing in your dashboard.\n\nLearn more about [Cloudflare WAF](https://developers.cloudflare.com/waf/).",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "cloudflare-notifications-enabled",
+      "name": "Cloudflare notifications enabled",
+      "lastTestRunDate": "2026-06-18T01:52:56.651Z",
+      "latestFlipDate": "2026-05-21T03:43:51.740Z",
+      "description": "This test verifies that four critical Cloudflare notification policies are enabled in your account: HTTP DDoS Attack Alert (or Advanced HTTP DDoS Attack Alert for Enterprise customers), Health Checks status notification, Passive Origin Monitoring, and Route Leak Detection Alert. These notifications ensure your team is promptly alerted to security threats like DDoS attacks, origin server issues, and BGP route leaks.",
+      "failureDescription": "Your Cloudflare account does not have all the required notifications enabled",
+      "remediationDescription": "Enable the notifications 'HTTP DDoS Attack Alert', 'Health Checks status notification'\n'Passive Origin Monitoring' and 'Route Leak Detection Alert' using\n[these instructions](https://developers.cloudflare.com/fundamentals/notifications/create-notifications/)\n",
+      "version": {
+        "major": 1,
+        "minor": 3
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "firewall-config-acl",
+      "name": "Unwanted traffic filtered",
+      "lastTestRunDate": "2026-06-18T01:52:57.197Z",
+      "latestFlipDate": "2024-09-24T16:01:47.462Z",
+      "description": "This test verifies that all AWS EC2 instances have either a Network ACL associated with their subnet or a security group directly attached. Without these network filtering mechanisms, instances lack basic firewall protection, leaving them exposed to unwanted inbound and outbound traffic.",
+      "failureDescription": "Your corporate network doesn't filter unwanted traffic.",
+      "remediationDescription": "Set up a corporate VPN to control access to your corporate network. Vanta recommends [OpenVPN](https://openvpn.net/access-server/?utm_source=vanta&utm_medium=referral).\n",
+      "version": {
+        "major": 1,
+        "minor": 1
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "firewall-config-cloudflare",
+      "name": "Unwanted traffic filtered (Cloudflare)",
+      "lastTestRunDate": "2026-06-18T01:52:56.429Z",
+      "latestFlipDate": "2025-10-10T15:56:12.950Z",
+      "description": "This test verifies that your Cloudflare account has active firewall protections in place—either through enabled custom firewall rules or managed rulesets. These firewalls help block unwanted or malicious traffic from reaching your infrastructure.",
+      "failureDescription": "Your Cloudflare domain doesn't filter unwanted traffic.",
+      "remediationDescription": "Create WAF rules for each of your domains in the \"Security tab\".\n",
+      "version": {
+        "major": 1,
+        "minor": 1
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "firewall-config-default-deny",
+      "name": "Firewall default disallows traffic",
+      "lastTestRunDate": "2026-06-18T01:52:56.059Z",
+      "latestFlipDate": "2024-09-24T17:11:26.516Z",
+      "description": "This test verifies that AWS firewall configurations (Security Groups and Network ACLs) default to denying inbound traffic, a behavior inherent to AWS infrastructure. It ensures that unless traffic is explicitly permitted, it will be blocked by default.",
+      "failureDescription": "N/A",
+      "remediationDescription": "N/A\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "firewall-config-server",
+      "name": "Public SSH denied (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.071Z",
+      "latestFlipDate": "2024-09-24T16:01:47.843Z",
+      "description": "This test verifies whether AWS EC2 instances have security groups configured to restrict inbound SSH (TCP port 22) traffic from the public internet (0.0.0.0/0).",
+      "failureDescription": "Your EC2 instances are not configured to deny public SSH traffic.",
+      "remediationDescription": "Configure your security groups in AWS to deny public SSH traffic.\n\n1. [Log in to the AWS Management Console](https://console.aws.amazon.com/).\n2. [Navigate to EC2 dashboard](https://console.aws.amazon.com/ec2/).\n3. In the **NETWORK & SECURITY** section, **click Security Groups**.\n4. Click inside the search field, and select the following options from the dropdown list:\n   - Choose **Protocol** and select **TCP** from the protocols list.\n   - Choose **Port Range** and select **SSH** as filter input.\n5. Select one of the EC2 security groups.\n6. Select the **Inbound** tab.\n7. Verify the value available in the **Source** column for any inbound or ingress rules with the Port Range set to `22`. If one or more rules have the source set to `0.0.0.0/0` or `::/0` (Anywhere), the selected security group allows unrestricted traffic on port 22. As a result, the SSH access to the associated EC2 instances isn't secured.\n8. Repeat steps 5 through 7 to verify the rest of your EC2 security groups.\n9. Change the AWS region from the navigation bar, and repeat the audit process for other regions.\n\nIf accessing to the instances through SSH is intended, we suggest allowlisting specific IPs using allow rules and using a tool or technique that provides a static IP (or an address within a specific range) for you to connect successfully to your EC2 instances.\n\n#### Remediation for Terraform\nCreate a \"aws_security_group\" resource to associate with your \"aws_instance\" resource. Ensure that your \"aws_security_group\" resource is configured to deny public SSH traffic.\n\n```hcl\nresource \"aws_security_group\" \"example\" {\n  name   = \"example\"\n  vpc_id = aws_vpc.example.id\n\n  ingress {\n    from_port = 443\n    to_port   = 443\n    protocol  = \"tcp\"\n  }\n}\n\nresource \"aws_instance\" \"example\" {\n  ami                    = \"ami-033fabdd332044f06\" #Select your own Amazon Machine Image (AMI)\n  instance_type          = \"t2.micro\" #Select your instance type\n  vpc_security_group_ids = [aws_security_group.example.id]\n\n}\n\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) for more information.\n\n",
+      "version": {
+        "major": 1,
+        "minor": 1
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-09-27T16:01:47.800Z",
+        "itemCount": 7
+      },
+      "owner": null
+    },
+    {
+      "id": "ip-access-rules-cloudflare",
+      "name": "Cloudflare IP access rules enabled",
+      "lastTestRunDate": "2026-06-18T01:52:56.412Z",
+      "latestFlipDate": "2025-10-10T19:43:20.997Z",
+      "description": "This test verifies that at least one active (unpaused) IP access rule is configured in your Cloudflare account or zone. IP access rules allow you to explicitly allow, block, or challenge traffic from specific IP addresses, IP ranges, or countries, providing a fundamental layer of network-level access control for your web properties.",
+      "failureDescription": "Your Cloudflare domains do not filter unwanted traffic.",
+      "remediationDescription": "Create [IP access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/) for each domain.\n\n1. Go to your [Cloudflare Dashboard](https://dash.cloudflare.com/)\n2. Select your account and then select the website/zone you want to manage.\n3. In the left sidebar, go to Security > WAF (Web Application Firewall), or in some accounts, directly to Firewall.\n4. Under the Tools or Firewall Rules section, look for IP Access Rules. Here you can create rules that explicitly allow, block, or challenge IP addresses, IP ranges, or countries.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2025-10-17T19:43:20.972Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "zone-level-rules-cloudflare",
+      "name": "Cloudflare zone-level rules configured",
+      "lastTestRunDate": "2026-06-18T01:52:56.686Z",
+      "latestFlipDate": "2025-10-10T15:56:13.399Z",
+      "description": "This test verifies that at least one zone-level rule is configured across your Cloudflare zones. Zone-level rules include WAF rules, rate limiting rules, and other security/traffic rules applied at the zone level.",
+      "failureDescription": "Your Cloudflare domain does not have traffic and security rules configured",
+      "remediationDescription": "Create traffic and security rules in the Security tab within the account or in Security -> WAF within each zone.\n",
+      "version": {
+        "major": 1,
+        "minor": 1
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 8
+}

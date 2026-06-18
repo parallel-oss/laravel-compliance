@@ -1,0 +1,15 @@
+{
+  "testId": "infra-unique-accounts-root",
+  "data": [
+    {
+      "id": "String-381670226487 was used on June 2, 2026",
+      "entityStatus": "FAILING",
+      "displayName": "381670226487 was used on June 2, 2026",
+      "responseType": "Identifier",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-06-02T23:46:51.483Z",
+      "createdDate": "2026-06-02T23:46:51.483Z"
+    }
+  ],
+  "count": 1
+}

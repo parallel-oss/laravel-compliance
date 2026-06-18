@@ -1,0 +1,122 @@
+{
+  "controlId": "access-datastores-ssh",
+  "data": [
+    {
+      "id": "github-account-mfa-enabled",
+      "name": "MFA on GitHub",
+      "lastTestRunDate": "2026-06-18T01:52:56.597Z",
+      "latestFlipDate": "2025-10-10T16:49:42.231Z",
+      "description": "This test verifies that multi-factor authentication (MFA) is enabled on all GitHub accounts that are not marked as external or non-human.",
+      "failureDescription": "Multi-factor authentication is not enabled for your GitHub accounts",
+      "remediationDescription": "Enforce multi-factor authentication on all of your organization's GitHub accounts.\n\nFollow GitHub's [instructions](https://docs.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) to turn on MFA on each account.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-access-requires-approval-config",
+      "name": "AWS accounts reviewed",
+      "lastTestRunDate": "2026-06-18T01:52:56.275Z",
+      "latestFlipDate": "2024-09-24T16:01:06.103Z",
+      "description": "This test verifies that all AWS accounts have been linked to users within Vanta. Accounts that have open access requests or have not been linked to a Vanta user may cause this test to fail.",
+      "failureDescription": "Some of your AWS accounts have not been linked to Vanta users, so Vanta can't confirm you're limiting AWS access.",
+      "remediationDescription": "1. Use our [Access page](/access) to review any open access requests to your infrastructure. Accounts that have open access requests or have not been linked to a Vanta user may cause this test to fail.\n2. Create a task in your task tracker for each new account you need to create.\n3. Tag the task with an `access-change` tag to track these changes in Vanta.\n\n#### Remediation for Terraform\nAdd the \"VantaOwner\" tag to your aws_iam_user resource and set the value to an email address for a currently active Vanta user. This information will reflect on the [access page](https://app.vanta.com/access/accounts).\n\n```hcl\nresource \"aws_iam_user\" \"test-iam-user\" {\n  name = \"test-user\"\n\n  tags = {\n    VantaOwner = \"email@domain.com\"\n  }\n}\n```\n*Note that the tag key may be different from \"VantaOwner\" if you are utilizing [custom tags](https://app.vanta.com/inventory?bulk-tags=open#compute).\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account setup",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-01T16:01:05.770Z",
+        "itemCount": 7
+      },
+      "owner": null
+    },
+    {
+      "id": "mfa-on-accounts-gsuite",
+      "name": "MFA on Google Workspace",
+      "lastTestRunDate": "2026-06-18T01:52:56.678Z",
+      "latestFlipDate": "2025-02-18T16:25:57.950Z",
+      "description": "This test verifies that all members of a Google Workspace organization have multi-factor authentication (MFA) enabled, except for users who were recently added within the configured SLA.",
+      "failureDescription": "Multifactor authentication isn't enabled for your Google accounts.",
+      "remediationDescription": "Enforce multifactor authentication on all your organization's Google accounts.\n\n1. Log in to the [Google admin console](https://admin.google.com).\n2. Click **Security | Authentication | 2-step-verification** to enforce 2-step verification.\n3. Select Turn on enforcement from date.\n4. Enter a date by which all of your users are required to use multifactor authentication to access their Google accounts. We recommend selecting a date two to four weeks in the future, as employees without multi-factor authentication will be unable to sign in to their accounts once enforcement is in effect. ([More information from Google Workspace](https://support.google.com/a/answer/184711?hl=en))\n",
+      "version": {
+        "major": 3,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "gsuiteadmin"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2025-02-25T16:25:57.933Z",
+        "itemCount": 9
+      },
+      "owner": null
+    },
+    {
+      "id": "mfa-on-accounts-infra",
+      "name": "MFA on infrastructure provider",
+      "lastTestRunDate": "2026-06-18T01:52:56.084Z",
+      "latestFlipDate": "2026-03-03T20:42:05.717Z",
+      "description": "This test checks whether all AWS accounts with a password have multi-factor authentication (MFA) enabled.",
+      "failureDescription": "Multifactor authentication isn't enabled for some of your infrastructure accounts.",
+      "remediationDescription": "Add multifactor authentication to your AWS account.\n\n1. Log in to the [AWS IAM console](https://console.aws.amazon.com/iam/).\n2. In the navigation panel, click **Users**.\n3. Click the name of the user accounts where multifactor authentication isn't enabled.\n4. On the Security Credentials tab, click **Manage** next to **Assigned MFA device**.\n5. Choose a virtual multifactor authentication device, and follow the steps to configure it.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2026-03-10T20:42:05.681Z",
+        "itemCount": 1
+      },
+      "owner": null
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,151 @@
+{
+  "controlId": "intrusion-detection-system",
+  "data": [
+    {
+      "id": "aws-guardduty-enabled",
+      "name": "Intrusion detection system enabled (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:57.428Z",
+      "latestFlipDate": "2024-09-24T15:58:02.448Z",
+      "description": "This test verifies whether AWS GuardDuty is correctly enabled in every AWS account and region connected to your environment.",
+      "failureDescription": "Some accounts and regions don't have AWS GuardDuty enabled.",
+      "remediationDescription": "Enable AWS GuardDuty. For each region:\n\n1. [Log into the AWS GuardDuty console](https://console.aws.amazon.com/guardduty).\n2. Click \"Get Started\".\n3. Click \"Enable GuardDuty\".\n4. Ensure all data sources are enabled in the settings. See the \"Usage\" tab to view which data sources are enabled.\n\nIf you are using a different Intrusion Detection System, deactivate this test.\n\n#### Remediation for Terraform\nEnsure \"aws_guardduty_detector\" resource has an enable argument set to true.\n\n```hcl\n\nresource \"aws_guardduty_detector\" \"example\" {\n  enable = true\n}\n\n```hcl\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/guardduty_detector) for more information.",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T15:58:02.413Z",
+        "itemCount": 4
+      },
+      "owner": null
+    },
+    {
+      "id": "aws-guardduty-notifications-enabled",
+      "name": "Intrusion detection system notifications configured (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.608Z",
+      "latestFlipDate": "2024-09-24T15:58:02.589Z",
+      "description": "This test verifies that notifications for AWS GuardDuty threat detections are configured correctly, ensuring each AWS account and region is receiving GuardDuty notifications.",
+      "failureDescription": "Some accounts and regions don't have AWS GuardDuty threat detection notifications configured.",
+      "remediationDescription": "Configure notifications for AWS GuardDuty threat detections.\n\nFollow the instructions [here](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html) under the \"Creating a CloudWatch Events rule to notify you of GuardDuty findings\" section. For common issues, please see our help article [here](https://help.vanta.com/hc/en-us/articles/13043351354260-How-to-enable-AWS-GuardDuty-notifications-for-Vanta)\n\n#### Remediation for Terraform\nCreate an `aws_sns_topic` resource, `aws_sns_topic_subscription` resource, and `aws_cloudwatch_event_rule` resource with the event pattern that consists of the \"aws.guardduty\" source. Add a `aws_cloudwatch_event_target` and associate it with your `aws_sns_topic` resource.\n\n\n```hcl\n\nresource \"aws_sns_topic\" \"example\" {\n  name = \"example\"\n}\n\nresource \"aws_sns_topic_subscription\" \"example\" {\n  topic_arn = aws_sns_topic.example.arn\n  protocol  = \"email\" # Select the protocol to use. Valid values are: sqs, sms, lambda, firehose, and application. Protocols email, email-json, http and https are also valid but partially supported.\n  endpoint  = \"example@gmail.com\" # Select the endpoint to send data to. The input varies with the protocol.\n}\nresource \"aws_cloudwatch_event_rule\" \"example\" {\n  name = \"example\"\n\n  event_pattern = <<EOF\n{\n  \"source\": [\"aws.guardduty\"],\n  \"region\": [\"us-east-1\"], # Choose your AWS region\n  \"detail-type\": [\"GuardDuty Finding\"],\n  \"detail\": {\n    \"severity\": [6, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8, 8.0, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9]\n  }\n}\nEOF\n}\n\nresource \"aws_cloudwatch_event_target\" \"example\" {\n  rule      = \"example\"\n  arn       = aws_sns_topic.example.arn\n  target_id = \"example\"\n}\n\n```\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-08T15:58:02.561Z",
+        "itemCount": 4
+      },
+      "owner": null
+    },
+    {
+      "id": "cloudflare-domain-protection-ddos-enabled",
+      "name": "Cloudflare Domain DDoS Protection",
+      "lastTestRunDate": "2026-06-18T04:47:12.284Z",
+      "latestFlipDate": "2026-05-20T21:05:41.817Z",
+      "description": "This test verifies that Cloudflare domains have DDoS protection enabled. DDoS protection defends against Distributed Denial of Service attacks that attempt to overwhelm your domain with malicious traffic.",
+      "failureDescription": "Some Cloudflare domains that are proxied through Cloudflare do not have DDoS protection enabled.",
+      "remediationDescription": "Enable DDoS protection for your Cloudflare domains. DDoS protection is automatically enabled for all Cloudflare plans and operates at both the network (Layer 3/4) and application (Layer 7) levels.\n\n**DDoS Protection:**\n\nDDoS protection is automatically enabled for all Cloudflare plans and operates at both the network (Layer 3/4) and application (Layer 7) levels.\n\n1. Sign in to the Cloudflare dashboard at https://dash.cloudflare.com.\n2. Select the domain you want to protect.\n3. Navigate to \"Security\" in the left sidebar.\n4. Click the \"DDoS\" tab.\n5. Review the DDoS protection status. For most plans, DDoS protection is always active and cannot be disabled.\n6. For Enterprise plans, you may see options to configure advanced DDoS protection rulesets and override rules.\n7. Ensure any custom overrides are set to allow protection rather than disable it.\n\nIf you don't see the DDoS tab or protection appears disabled, your domain may not be properly proxied through Cloudflare. Ensure your DNS records have the orange cloud icon enabled.\n\n**Verify Protection Status:**\n\nAfter enabling DDoS protection:\n\n1. Return to the \"Security\" section in your Cloudflare dashboard.\n2. Check that DDoS protection shows as active (should be automatic).\n3. Monitor the Security Analytics to see blocked threats and review DDoS events.\n\n**Important Notes:**\n\n- **Plan requirements:** DDoS protection is included with all plans.\n- **Proxied DNS:** Security features only work when your DNS records are proxied through Cloudflare (orange cloud icon).\n- **Enterprise features:** Enterprise plans can configure advanced DDoS protection rulesets. Contact your account team for advanced configuration options.\n\nLearn more about [Cloudflare DDoS Protection](https://developers.cloudflare.com/ddos-protection/).",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "cloudflare-ssl-mode-validation",
+      "name": "SSL/TLS encryption enforced (Cloudflare)",
+      "lastTestRunDate": "2026-06-18T01:52:56.860Z",
+      "latestFlipDate": "2025-11-22T09:40:54.639Z",
+      "description": "This test verifies that your Cloudflare zones are configured with proper SSL/TLS encryption mode to ensure end-to-end encryption. It checks that each zone uses either \"Full\" or \"Full (Strict)\" SSL mode, which encrypts traffic both between the client and Cloudflare, and between Cloudflare and your origin server.",
+      "failureDescription": "Some Cloudflare zones are not configured to use \"Full\" or \"Full (Strict)\" SSL mode, potentially leaving communications between Cloudflare and origin servers unencrypted.\n\n",
+      "remediationDescription": "Configure your Cloudflare zones to use \"Full\" or \"Full (Strict)\" SSL/TLS encryption mode to ensure end-to-end encryption.\n\n1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/).\n2. Select the appropriate domain (zone) from your list of sites.\n3. In the left-hand navigation menu, click \"SSL/TLS\".\n4. Under the \"Overview\" tab, locate the \"SSL/TLS encryption mode\" section.\n5. If the mode is not set to \"Full\" or \"Full (Strict)\", click the dropdown menu.\n6. Select \"Full\" or \"Full (Strict)\" as required for your security policy.\n7. Wait for the setting to be applied (this may take a few minutes).\n8. Verify that the SSL/TLS encryption mode now displays as \"Full\" or \"Full (Strict)\".\n\nIf you selected \"Full (Strict)\", confirm that your origin server has a valid SSL certificate installed.\n\nLearn more about [Cloudflare SSL modes](https://developers.cloudflare.com/ssl/edge-certificates/ssl-modes/) in the Cloudflare documentation.\n\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2025-11-25T09:40:54.612Z",
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "infra-activity-tracked-config",
+      "name": "CloudTrail enabled",
+      "lastTestRunDate": "2026-06-18T01:52:56.237Z",
+      "latestFlipDate": "2024-09-24T17:11:27.353Z",
+      "description": "This test verifies that CloudTrail is enabled on all AWS accounts within your organization.",
+      "failureDescription": "You aren't using CloudTrail to monitor AWS user activity and API usage.",
+      "remediationDescription": "Enable CloudTrail in each of your AWS accounts.\n\n1. [Log in to the CloudTrail dashboard in the AWS Management Console](https://console.aws.amazon.com/cloudtrail/).\n2. In the navigation pane, click **Trails**.\n3. Select \"Create trail\".\n4. Create a trail. By default, when you create a trail in a region in the CloudTrail console, the trail applies to all regions. A multi-region trail is a recommended best practice, because it helps you to keep your AWS environment more secure, by logging activity in all regions.\n5. Create an Amazon S3 bucket or specify an existing bucket where you want the log files delivered. By default, log files from all regions in your account are delivered to the bucket that you specify.\n6. Configure your trail to log read-only, write-only, or all management events, all Insights events, and all or a subset of data events. By default, trails log all management events and no data or Insights events.\n\nFor more information, see [Working with CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-getting-started.html) in the AWS help.\n\n#### Remediation for Terraform\nEnsure that the 'include_global_service_events' as well as the 'is_multi_region_trail' arguments are set to true on at least one aws_cloudtrail resource in each AWS account.\n\n```hcl\nresource \"aws_cloudtrail\" \"example\" {\n  depends_on = [aws_s3_bucket_policy.example]\n\n  name                          = \"example\"\n  s3_bucket_name                = aws_s3_bucket.example.id\n  s3_key_prefix                 = \"prefix\"\n  include_global_service_events = true\n  is_multi_region_trail         = true\n\n# event_selector is optional\n\n  event_selector {\n    read_write_type           = \"WriteOnly\"\n    include_management_events = true\n\n    data_resource {\n      type   = \"AWS::S3::Object\"\n      values = [\"arn:aws:s3\"]\n    }\n  }\n}\n...........\n```\n\nSee a full example of the aws_cloudtrail resource including the required bucket policy in the [Terraform documentation here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#example-usage).\n",
+      "version": {
+        "major": 2,
+        "minor": 0
+      },
+      "category": "Logging",
+      "integrations": [
+        "aws"
+      ],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2024-10-01T17:11:27.191Z",
+        "itemCount": 1
+      },
+      "owner": null
+    }
+  ],
+  "count": 5
+}

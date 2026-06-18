@@ -1,0 +1,39 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "YXBwcm92ZWQtYWNjZXNzLWNvbnRyb2wtcG9saWN5LWJzaS1leGlzdHM=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXBwcm92ZWQtYWNjZXNzLWNvbnRyb2wtcG9saWN5LWJzaS1leGlzdHM="
+    },
+    "data": [
+      {
+        "id": "approved-access-control-policy-bsi-exists",
+        "name": "Company has an approved Access Control Policy",
+        "lastTestRunDate": "2026-06-18T01:52:56.946Z",
+        "latestFlipDate": "2026-05-20T18:04:42.430Z",
+        "description": "This test verifies whether your company has an approved [Access Control Policy](/policies/access-control-policy-bsi).",
+        "failureDescription": "You don't have an approved Access Control Policy yet.",
+        "remediationDescription": "Use our [policy templates](/policies?policy=Access%20Control%20Policy) to create and approve a custom Access Control Policy for your company.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Policies",
+        "integrations": [],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "controlId": "access-revoked-termination",
+  "data": [
+    {
+      "id": "aws-account-access-removed-on-termination",
+      "name": "AWS accounts deprovisioned when personnel leave",
+      "lastTestRunDate": "2026-06-18T01:52:56.460Z",
+      "latestFlipDate": "2024-09-24T16:01:05.604Z",
+      "description": "This test verifies AWS accounts are promptly deprovisioned once the associated user has been removed or terminated from your organization.",
+      "failureDescription": "Some AWS accounts associated with terminated personnel have not been deactivated.",
+      "remediationDescription": "Remove all accounts listed from AWS.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "cloudflare-account-access-removed-on-termination",
+      "name": "Cloudflare accounts deprovisioned when personnel leave",
+      "lastTestRunDate": "2026-06-18T01:52:56.289Z",
+      "latestFlipDate": "2026-05-20T18:46:44.972Z",
+      "description": "This test checks whether Cloudflare user accounts associated with terminated personnel have been properly deactivated or removed. When employees leave an organization, their Cloudflare accounts should be promptly deprovisioned to prevent unauthorized access.",
+      "failureDescription": "Some Cloudflare accounts associated with terminated personnel have not been deactivated.",
+      "remediationDescription": "For each Cloudflare account listed, remove or deactivate the account.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "IT",
+      "integrations": [
+        "cloudflare"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "github-account-access-removed-on-termination",
+      "name": "GitHub accounts deprovisioned when personnel leave",
+      "lastTestRunDate": "2026-06-18T01:52:56.983Z",
+      "latestFlipDate": "2025-10-10T16:49:42.037Z",
+      "description": "This test verifies that GitHub accounts associated with terminated or inactive users have been promptly deprovisioned.",
+      "failureDescription": "Some GitHub accounts associated with terminated personnel have not been deactivated.",
+      "remediationDescription": "For each GitHub account listed, remove or deactivate the account.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Account security",
+      "integrations": [
+        "github"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "vanta-users-offboarded-within-sla",
+      "name": "Offboarding completed for terminated personnel within SLA",
+      "lastTestRunDate": "2026-06-18T01:52:56.457Z",
+      "latestFlipDate": "2025-11-24T23:58:56.554Z",
+      "description": "This test verifies that all ex-employees linked to Vanta have been properly offboarded within the service-level agreement (SLA) timeframe.",
+      "failureDescription": "Not all of your ex-employees had their offboarding steps completed.",
+      "remediationDescription": "Visit the [People page](/people?individualTaskStatus=TASKS_DUE_SOON&individualTaskStatus=TASKS_OVERDUE&employeeStatus=PREVIOUSLY_EMPLOYED) and complete offboarding for all ex-employees. For more help, please visit our [Support article](https://help.vanta.com/en/articles/11345609-offboarding-personnel).\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Employees",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "OVERDUE",
+        "soonestRemediateByDate": "2025-11-27T23:58:56.524Z",
+        "itemCount": 1
+      },
+      "owner": null
+    }
+  ],
+  "count": 4
+}

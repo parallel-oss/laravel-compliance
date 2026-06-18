@@ -1,0 +1,192 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NmExNWQ1YjE4MGI3ZWM5YjNjNzlmYWFl",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMTIwOGRjNGI3MzNmODMxMTBjZDgy"
+    },
+    "data": [
+      {
+        "id": "Vendor-66f1208dc4b733f83110cd82",
+        "entityStatus": "FAILING",
+        "displayName": "Vanta",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-23T08:02:27.351Z",
+        "createdDate": "2024-09-23T08:02:27.351Z"
+      },
+      {
+        "id": "Vendor-66f2e0fd24ccfdda33af7f9c",
+        "entityStatus": "FAILING",
+        "displayName": "Amazon Web Services",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T15:55:46.523Z",
+        "createdDate": "2024-09-24T15:55:46.523Z"
+      },
+      {
+        "id": "Vendor-66f33c06ec2ebe98a2771909",
+        "entityStatus": "FAILING",
+        "displayName": "OpenAI",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T22:24:11.548Z",
+        "createdDate": "2024-09-24T22:24:11.548Z"
+      },
+      {
+        "id": "Vendor-67b494a982768806b6a56fb7",
+        "entityStatus": "FAILING",
+        "displayName": "Google Workspace",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-02-18T14:09:52.125Z",
+        "createdDate": "2025-02-18T14:09:52.125Z"
+      },
+      {
+        "id": "Vendor-682669be24009b5c6e75e733",
+        "entityStatus": "FAILING",
+        "displayName": "Gusto",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-05-15T22:25:07.438Z",
+        "createdDate": "2025-05-15T22:25:07.438Z"
+      },
+      {
+        "id": "Vendor-682e9acd10fd97190d8ab2a0",
+        "entityStatus": "FAILING",
+        "displayName": "DocuSign",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-05-22T03:33:31.956Z",
+        "createdDate": "2025-05-22T03:33:31.956Z"
+      },
+      {
+        "id": "Vendor-68e92f8395795754f0da4a35",
+        "entityStatus": "FAILING",
+        "displayName": "Coconut",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:08:46.448Z",
+        "createdDate": "2025-10-10T16:08:46.448Z"
+      },
+      {
+        "id": "Vendor-68e92fdff96abcdbc7af5ee1",
+        "entityStatus": "FAILING",
+        "displayName": "DocuSeal",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:10:21.766Z",
+        "createdDate": "2025-10-10T16:10:21.766Z"
+      },
+      {
+        "id": "Vendor-68e932d00ee251b65315e85f",
+        "entityStatus": "FAILING",
+        "displayName": "Twilio",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:23:31.883Z",
+        "createdDate": "2025-10-10T16:23:31.883Z"
+      },
+      {
+        "id": "Vendor-68e932ec4c7614bb1515ea19",
+        "entityStatus": "FAILING",
+        "displayName": "Oh Dear",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:23:31.883Z",
+        "createdDate": "2025-10-10T16:23:31.883Z"
+      },
+      {
+        "id": "Vendor-68e932f73603da7ce97163d0",
+        "entityStatus": "FAILING",
+        "displayName": "Nylas Dashboard",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:23:31.883Z",
+        "createdDate": "2025-10-10T16:23:31.883Z"
+      },
+      {
+        "id": "Vendor-68e938eba68461a91f5606d3",
+        "entityStatus": "FAILING",
+        "displayName": "GitHub",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2025-10-10T16:48:51.658Z",
+        "createdDate": "2025-10-10T16:48:51.658Z"
+      },
+      {
+        "id": "Vendor-6a0e0055db0528191ffd33ce",
+        "entityStatus": "FAILING",
+        "displayName": "Anthropic",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-20T18:55:55.942Z",
+        "createdDate": "2026-05-20T18:55:55.942Z"
+      },
+      {
+        "id": "Vendor-6a15d49e15502c10cda01a89",
+        "entityStatus": "FAILING",
+        "displayName": "SerpApi",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      },
+      {
+        "id": "Vendor-6a15d4ab4abcfc181e48fda6",
+        "entityStatus": "FAILING",
+        "displayName": "Plain",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      },
+      {
+        "id": "Vendor-6a15d4e46a2fd70b2e04e01b",
+        "entityStatus": "FAILING",
+        "displayName": "Claude",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      },
+      {
+        "id": "Vendor-6a15d4fbcd62b85091e74451",
+        "entityStatus": "FAILING",
+        "displayName": "CapCut",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      },
+      {
+        "id": "Vendor-6a15d549cd62b85091e75223",
+        "entityStatus": "FAILING",
+        "displayName": "Ramp",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      },
+      {
+        "id": "Vendor-6a15d58bc785fcd9d09cfa51",
+        "entityStatus": "FAILING",
+        "displayName": "SavvyCal",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      },
+      {
+        "id": "Vendor-6a15d5b180b7ec9b3c79faae",
+        "entityStatus": "FAILING",
+        "displayName": "Lovable",
+        "responseType": "Vendor",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-05-26T19:39:22.429Z",
+        "createdDate": "2026-05-26T19:39:22.429Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "testId": "mfa-on-accounts-infra",
+  "data": [
+    {
+      "id": "AwsAccount-69a74753bea446f7e03f88ed",
+      "entityStatus": "FAILING",
+      "displayName": "Eli",
+      "responseType": "AWS IAM User",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-03-03T20:42:05.745Z",
+      "createdDate": "2026-03-03T20:42:05.745Z"
+    }
+  ],
+  "count": 1
+}

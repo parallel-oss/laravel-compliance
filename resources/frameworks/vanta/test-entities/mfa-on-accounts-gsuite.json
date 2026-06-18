@@ -1,0 +1,87 @@
+{
+  "testId": "mfa-on-accounts-gsuite",
+  "data": [
+    {
+      "id": "UserResource-67b4b49406b25a9c9e6190e0",
+      "entityStatus": "FAILING",
+      "displayName": "Support Email",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-02-18T16:25:57.966Z",
+      "createdDate": "2025-02-18T16:25:57.966Z"
+    },
+    {
+      "id": "UserResource-681a6d69c2f469c2d5c3e7e2",
+      "entityStatus": "FAILING",
+      "displayName": "Eli Emaad",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-05-06T21:28:06.136Z",
+      "createdDate": "2025-05-06T21:28:06.136Z"
+    },
+    {
+      "id": "UserResource-6924f00f08d078a22da3a802",
+      "entityStatus": "FAILING",
+      "displayName": "Kae Erickson",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-11-25T04:09:28.332Z",
+      "createdDate": "2025-11-25T04:09:28.332Z"
+    },
+    {
+      "id": "UserResource-696ba249e16ce4c0ff8072d2",
+      "entityStatus": "FAILING",
+      "displayName": "Brad Collins",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-01-20T22:21:50.124Z",
+      "createdDate": "2026-01-20T22:21:50.124Z"
+    },
+    {
+      "id": "UserResource-6972fecd6dbe9a292d6bcf30",
+      "entityStatus": "FAILING",
+      "displayName": "Liveoutofoffice Ap",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-01-26T16:53:30.286Z",
+      "createdDate": "2026-01-26T16:53:30.286Z"
+    },
+    {
+      "id": "UserResource-6972fecd6dbe9a292d6bcf33",
+      "entityStatus": "FAILING",
+      "displayName": "Liveoutofoffice Ar",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-01-26T16:53:30.286Z",
+      "createdDate": "2026-01-26T16:53:30.286Z"
+    },
+    {
+      "id": "UserResource-6982521636f9a4d051a42bb9",
+      "entityStatus": "FAILING",
+      "displayName": "Tiffany Thai",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-02-06T22:53:38.273Z",
+      "createdDate": "2026-02-06T22:53:38.273Z"
+    },
+    {
+      "id": "UserResource-69a21246e50a72ebae94e847",
+      "entityStatus": "FAILING",
+      "displayName": "carolyn chase",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-02-27T21:54:30.901Z",
+      "createdDate": "2026-02-27T21:54:30.901Z"
+    },
+    {
+      "id": "UserResource-69cafef8096e68d64ed8a601",
+      "entityStatus": "FAILING",
+      "displayName": "Mia Woike",
+      "responseType": "User Resource",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-04-01T22:53:33.177Z",
+      "createdDate": "2026-04-01T22:53:33.177Z"
+    }
+  ],
+  "count": 9
+}

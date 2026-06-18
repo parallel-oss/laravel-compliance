@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjlhNzQ3OWRkMzRjYzQ4OGEwYjcxNDZm_eyIkZGF0ZSI6MTc3MzE3NTMyNTY4MX0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjlhNzQ3OWRkMzRjYzQ4OGEwYjcxNDZm_eyIkZGF0ZSI6MTc3MzE3NTMyNTY4MX0="
+    },
+    "data": [
+      {
+        "id": "AwsAccount-69a74753bea446f7e03f88ed",
+        "entityStatus": "FAILING",
+        "displayName": "Eli",
+        "responseType": "AWS IAM User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-03-03T20:42:05.745Z",
+        "createdDate": "2026-03-03T20:42:05.745Z"
+      }
+    ]
+  }
+}

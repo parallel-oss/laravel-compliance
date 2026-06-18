@@ -1,0 +1,15 @@
+{
+  "testId": "code-review-application-config",
+  "data": [
+    {
+      "id": "GithubRepo-68e9392b679bf82ec2c329fc",
+      "entityStatus": "FAILING",
+      "displayName": "web",
+      "responseType": "GitHub Repo",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-10T16:49:57.398Z",
+      "createdDate": "2025-10-10T16:49:57.398Z"
+    }
+  ],
+  "count": 1
+}

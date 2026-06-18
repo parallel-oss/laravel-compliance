@@ -1,0 +1,69 @@
+{
+  "testId": "servers-monitored-and-alarmed-config-cpu",
+  "data": [
+    {
+      "id": "EC2Instance-66f2e2680c6d0ef555be224e",
+      "entityStatus": "FAILING",
+      "displayName": "i-0dfdee85886175a78 (54.197.78.11)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-25T17:11:48.842Z",
+      "createdDate": "2024-09-25T17:11:48.842Z"
+    },
+    {
+      "id": "EC2Instance-68544d74debb0c522b810027",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-v2-db: i-0bfe85247f95817f1 (54.225.219.130)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-06-20T14:34:12.427Z",
+      "createdDate": "2025-06-20T14:34:12.427Z"
+    },
+    {
+      "id": "EC2Instance-68556696debb0c522b03ad73",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-v2-cache: i-0d7e7fb7fcc6bf7d6 (54.243.246.19)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-06-20T14:34:12.427Z",
+      "createdDate": "2025-06-20T14:34:12.427Z"
+    },
+    {
+      "id": "EC2Instance-686bec597525fb91a20216f6",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-v2-sidecar-db: i-0fbccf7f1c0722ab9 (18.232.55.161)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-07-08T21:28:11.084Z",
+      "createdDate": "2025-07-08T21:28:11.084Z"
+    },
+    {
+      "id": "EC2Instance-68e2979f679bf82ec272f6bd",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-v2-worker: i-0aae8c4d2e38164e6 (52.204.223.3)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-06T16:03:58.316Z",
+      "createdDate": "2025-10-06T16:03:58.316Z"
+    },
+    {
+      "id": "EC2Instance-68e2979f679bf82ec272f6be",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-v2-web: i-06bdc705881e12eb5 (54.198.56.65)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2025-10-06T16:03:58.316Z",
+      "createdDate": "2025-10-06T16:03:58.316Z"
+    },
+    {
+      "id": "EC2Instance-696998d7e16ce4c0ff23f235",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-v2-hocuspocus: i-020b809fdd8ee82c5 (3.213.177.107)",
+      "responseType": "AWS EC2 Instance",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2026-01-17T06:52:45.478Z",
+      "createdDate": "2026-01-17T06:52:45.478Z"
+    }
+  ],
+  "count": 7
+}

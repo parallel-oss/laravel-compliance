@@ -1,0 +1,33 @@
+{
+  "controlId": "access-physical-visitors",
+  "data": [
+    {
+      "id": "approved-physical-security-policy-bsi-exists",
+      "name": "Company has an approved Physical Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:56.960Z",
+      "latestFlipDate": "2026-05-20T19:00:47.035Z",
+      "description": "This test verifies that your company has an approved [Physical Security Policy](/policies/physical-security-policy-bsi) in Vanta.\n\n> **Physical Security Policy (BSI)**: Defines the measures used to protect physical access to company facilities, systems, and data from unauthorized individuals or environmental hazards.",
+      "failureDescription": "You don't have an approved Physical Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Physical%20Security%20Policy) to create and approve a custom Physical Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 1
+}

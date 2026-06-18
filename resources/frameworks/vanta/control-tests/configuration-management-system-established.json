@@ -1,0 +1,62 @@
+{
+  "controlId": "configuration-management-system-established",
+  "data": [
+    {
+      "id": "approved-operations-security-policy-bsi-exists",
+      "name": "Company has an approved Operations Security Policy",
+      "lastTestRunDate": "2026-06-18T01:52:57.081Z",
+      "latestFlipDate": "2024-09-23T09:11:45.857Z",
+      "description": "This test verifies that your company has an approved [Operations Security Policy](/policies/operations-security-policy-bsi) in Vanta.\n\n> **Operations Security Policy (BSI)**: Establishes guidelines and controls to manage the day-to-day security of systems, networks, and operational processes, helping to reduce the risk of unauthorized access or disruption.",
+      "failureDescription": "You don't have an approved Operations Security Policy yet.",
+      "remediationDescription": "Use our [policy templates](/policies?policy=Operations%20Security%20Policy) to create and approve a custom Operations Security Policy for your company.\n",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "category": "Policies",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 1
+      },
+      "owner": null
+    },
+    {
+      "id": "aws-iam-expired-certificates-removed",
+      "name": "Expired SSL/TLS certificates are removed (AWS)",
+      "lastTestRunDate": "2026-06-18T01:52:56.049Z",
+      "latestFlipDate": "2025-12-19T07:12:26.323Z",
+      "description": "This test verifies that all expired SSL/TLS certificates stored in AWS IAM have been removed. Expired certificates left in IAM can cause confusion, potential misconfigurations, and may indicate poor certificate lifecycle management.",
+      "failureDescription": "Some SSL/TLS certificates stored in AWS IAM have expired.",
+      "remediationDescription": "To remove expired SSL/TLS certificates stored in AWS IAM, use the AWS CLI, as the AWS Management Console does not currently support this action.\n\n\"**From Console:**\n\nRemoving expired certificates via AWS Management Console is not currently supported. To delete SSL/TLS certificates stored in IAM via the AWS API use the Command Line Interface (CLI).\n\n**From Command Line:**\n\nTo delete Expired Certificate run following command by replacing <CERTIFICATE_NAME> with the name of the certificate to delete:\n\n```\naws iam delete-server-certificate --server-certificate-name <CERTIFICATE_NAME>\n```\n\nWhen the preceding command is successful, it does not return any output.\"",
+      "version": {
+        "major": 0,
+        "minor": 1
+      },
+      "category": "Infrastructure",
+      "integrations": [
+        "aws"
+      ],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    }
+  ],
+  "count": 2
+}

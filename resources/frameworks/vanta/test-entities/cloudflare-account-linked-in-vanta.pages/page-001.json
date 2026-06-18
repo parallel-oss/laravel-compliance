@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "Njk3MTJiM2ZjYzlhY2IwNjk3M2QzOWRk_eyIkZGF0ZSI6MTc2OTYyOTExOTI3MH0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "Njk3MTJiM2ZjYzlhY2IwNjk3M2QzOWRk_eyIkZGF0ZSI6MTc2OTYyOTExOTI3MH0="
+    },
+    "data": [
+      {
+        "id": "CloudflareUser-69712b126dbe9a292d001921",
+        "entityStatus": "FAILING",
+        "displayName": "jschafer0927@gmail.com",
+        "responseType": "Cloudflare User",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2026-01-21T19:38:39.325Z",
+        "createdDate": "2026-01-21T19:38:39.325Z"
+      }
+    ]
+  }
+}

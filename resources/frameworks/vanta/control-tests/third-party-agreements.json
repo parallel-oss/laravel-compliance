@@ -1,0 +1,60 @@
+{
+  "controlId": "third-party-agreements",
+  "data": [
+    {
+      "id": "vendor-management-records",
+      "name": "Vendors list maintained",
+      "lastTestRunDate": "2026-06-17T22:48:52.954Z",
+      "latestFlipDate": "2024-09-26T12:31:50.674Z",
+      "description": "This test verifies that you have manually added at least one vendor (other than automatically integrated accounts) on the [Vendors page](/vendors) that is visible to auditors. If you do not have any vendors beyond what Vanta integrates with, you can deactivate this test.",
+      "failureDescription": "You haven't manually added any vendors on the Vendors page.",
+      "remediationDescription": "On the [Vendors page](/vendors), ensure you've added all vendors that your company uses. Vanta will auto-populate any vendor we integrate with, but you should manually add any other vendors to ensure they're tracked in one place.\n\nIf you do not have any vendors beyond what Vanta integrates with, you can deactivate this test.\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vendors",
+      "integrations": [],
+      "status": "OK",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "PASS",
+        "soonestRemediateByDate": null,
+        "itemCount": 0
+      },
+      "owner": null
+    },
+    {
+      "id": "vendor-risk-levels-assigned",
+      "name": "Vendors assigned risk levels",
+      "lastTestRunDate": "2026-06-17T22:48:53.223Z",
+      "latestFlipDate": "2024-09-23T08:02:34.728Z",
+      "description": "This test verifies that every vendor listed on your [Vendors page](/vendors) has been assigned a risk level. Assigning risk levels to vendors is a foundational part of vendor risk management, enabling organizations to prioritize security reviews and due diligence based on the level of risk each vendor poses.",
+      "failureDescription": "Some of your vendors don't have a risk level specified on the Vendors page.",
+      "remediationDescription": "Go to the [Vendors page](/vendors) and assign a risk level for each vendor.\n",
+      "version": {
+        "major": 0,
+        "minor": 0
+      },
+      "category": "Vendors",
+      "integrations": [],
+      "status": "NEEDS_ATTENTION",
+      "deactivatedStatusInfo": {
+        "isDeactivated": false,
+        "deactivatedReason": null,
+        "lastUpdatedDate": null
+      },
+      "remediationStatusInfo": {
+        "status": "NEEDS_WORK",
+        "soonestRemediateByDate": null,
+        "itemCount": 16
+      },
+      "owner": null
+    }
+  ],
+  "count": 2
+}

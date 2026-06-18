@@ -1,0 +1,48 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjZmMmUxZGIwYzZkMGVmNTU1YTYxMTM1_eyIkZGF0ZSI6MTcyNzc5ODM2MzA3MX0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMmUxZGIwYzZkMGVmNTU1YTYxMTIw_eyIkZGF0ZSI6MTcyNzc5ODM2MzA3MX0="
+    },
+    "data": [
+      {
+        "id": "CloudWatchLogGroup-66f2e1da0c6d0ef555a5f640",
+        "entityStatus": "FAILING",
+        "displayName": "port7777-7777LogGroup-jz9N2paF2ir7",
+        "responseType": "AWS CloudWatch Log Group",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T15:59:23.150Z",
+        "createdDate": "2024-09-24T15:59:23.150Z"
+      },
+      {
+        "id": "CloudWatchLogGroup-66f2e1da0c6d0ef555a5f6aa",
+        "entityStatus": "FAILING",
+        "displayName": "sns/us-west-1/381670226487/AmazonTextractResumeAnalyzer",
+        "responseType": "AWS CloudWatch Log Group",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T15:59:23.150Z",
+        "createdDate": "2024-09-24T15:59:23.150Z"
+      },
+      {
+        "id": "CloudWatchLogGroup-66f2e1da0c6d0ef555a5f6f1",
+        "entityStatus": "FAILING",
+        "displayName": "sns/us-west-1/381670226487/AmazonTextractResumeAnalyzer/Failure",
+        "responseType": "AWS CloudWatch Log Group",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T15:59:23.150Z",
+        "createdDate": "2024-09-24T15:59:23.150Z"
+      },
+      {
+        "id": "CloudWatchLogGroup-66f2e1da0c6d0ef555a5f732",
+        "entityStatus": "FAILING",
+        "displayName": "sns/us-west-1/381670226487/Resume-Textract",
+        "responseType": "AWS CloudWatch Log Group",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T15:59:23.150Z",
+        "createdDate": "2024-09-24T15:59:23.150Z"
+      }
+    ]
+  }
+}

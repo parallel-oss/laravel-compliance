@@ -1,0 +1,21 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "NjZmMmUxOGEwYzZkMGVmNTU1OTljZjll_eyIkZGF0ZSI6MTcyNzc5ODI4MjI1NH0=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "NjZmMmUxOGEwYzZkMGVmNTU1OTljZjll_eyIkZGF0ZSI6MTcyNzc5ODI4MjI1NH0="
+    },
+    "data": [
+      {
+        "id": "String-No inventory items are marked as having user data",
+        "entityStatus": "FAILING",
+        "displayName": "No inventory items are marked as having user data",
+        "responseType": "Identifier",
+        "deactivatedReason": null,
+        "lastUpdatedDate": "2024-09-24T15:58:02.315Z",
+        "createdDate": "2024-09-24T15:58:02.315Z"
+      }
+    ]
+  }
+}

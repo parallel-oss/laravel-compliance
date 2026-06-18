@@ -1,0 +1,15 @@
+{
+  "testId": "load-balancers-monitored-and-alarmed-config-healthy",
+  "data": [
+    {
+      "id": "ALB-66f2e1fd0c6d0ef555abac27",
+      "entityStatus": "FAILING",
+      "displayName": "ooo-prod-lb",
+      "responseType": "AWS Load Balancer",
+      "deactivatedReason": null,
+      "lastUpdatedDate": "2024-09-24T15:59:58.581Z",
+      "createdDate": "2024-09-24T15:59:58.581Z"
+    }
+  ],
+  "count": 1
+}

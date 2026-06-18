@@ -1,0 +1,99 @@
+{
+  "results": {
+    "pageInfo": {
+      "endCursor": "Y3VzdG9tZXItZGF0YS1lbmNyeXB0ZWQtYXQtcmVzdC1jb25maWc=",
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "startCursor": "YXdzLWR5bmFtb2RiLWVuY3J5cHRpb24="
+    },
+    "data": [
+      {
+        "id": "aws-dynamodb-encryption",
+        "name": "DynamoDB Tables encrypted (AWS)",
+        "lastTestRunDate": "2026-06-18T01:52:56.504Z",
+        "latestFlipDate": "2024-09-24T16:02:55.249Z",
+        "description": "This test verifies that DynamoDB tables have encryption enabled. AWS DynamoDB guarantees encryption by default for all tables—both encryption at rest and encryption in transit are automatically provided by AWS without requiring customer configuration.",
+        "failureDescription": "Some DynamoDB Tables are not encrypted.",
+        "remediationDescription": "AWS provides encryption at rest and in transit by default. See https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html and https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/network-isolation.html\n\n#### Remediation for Terraform\nEnsure the `server_side_encryption` on your `aws_dynamodb_table` resources is set to true.\n\n```hcl\n\nresource \"aws_dynamodb_table\" \"example\" {\n  name                   = \"example\"\n  billing_mode           = \"PROVISIONED\"\n  read_capacity          = 20 # Insert your desired  number of read units for this table\n  write_capacity         = 20 # Insert your desired number of write units for this table\n  hash_key               = \"UserId\" # Insert your desired set of nested attribute definitions for this table\n\n  attribute {\n    name = \"UserId\"\n    type = \"S\" # Insert attribute type. Valid values are S (string), N (number), B (binary).\n  }\n\n  server_side_encryption {\n    enabled = true\n  }\n\n}\n\n```\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Data storage",
+        "integrations": [
+          "aws"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "cloudflare-worker-kv-encryption",
+        "name": "Verifies that Cloudflare provides encryption at rest of all data stored within Cloudflare Workers KV by default.",
+        "lastTestRunDate": "2026-06-18T01:52:56.468Z",
+        "latestFlipDate": "2025-10-10T19:44:07.785Z",
+        "description": "This test verifies that all data stored in Cloudflare Workers KV namespaces is encrypted at rest. Cloudflare automatically encrypts all Workers KV data at rest by default as part of their platform security architecture, so this test always passes without requiring any customer configuration.",
+        "failureDescription": "Some Cloudflare Workers KV does not have encryption enabled.",
+        "remediationDescription": "For each Cloudflare Worker KV listed enable encryption.\n",
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "category": "Infrastructure",
+        "integrations": [
+          "cloudflare"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      },
+      {
+        "id": "customer-data-encrypted-at-rest-config",
+        "name": "User data is encrypted at rest",
+        "lastTestRunDate": "2026-06-18T01:52:56.571Z",
+        "latestFlipDate": "2026-03-19T01:09:03.874Z",
+        "description": "This test checks that all Amazon RDS instances storing user data are encrypted at rest. Encryption at rest helps ensure sensitive data remains secure even if storage is compromised.",
+        "failureDescription": "Your company's user data on Amazon RDS isn't encrypted at rest.",
+        "remediationDescription": "1. Log in to the [AWS management console](https://console.aws.amazon.com).\n2. [Navigate to RDS dashboard](https://console.aws.amazon.com/rds/).\n3. In the navigation panel, under RDS Dashboard, click Instances.\n4. Select the RDS database instance that you want to encrypt.\n5. Click Instance Actions and select Take Snapshot.\n6. Enter a name for the instance snapshot in the Snapshot Name field.\n7. Click Take Snapshot.\n8. Select the snapshot you just created, and click Copy Snapshot.\n9. On the Make Copy of DB Snapshot page, perform the following:\n\n- In the New DB Snapshot Identifier field, enter a name for the new snapshot.\n- Select Copy Tags, so the new snapshot has the same tags as the source snapshot.\n- From the Enable Encryption dropdown, select Yes to enable encryption. Choose to use the AWS default encryption key or select your custom key from the Master Key dropdown.\n\n10. Click Copy Snapshot to create an encrypted copy of the selected instance snapshot.\n11. Select the encrypted snapshot copy, and click Restore Snapshot. This restores the encrypted snapshot to a new database instance.\n12. On the Restore DB Instance page, enter a unique name for the new database instance in the DB Instance Identifier\\* field.\n13. Review the instance configuration details, and click Restore DB Instance.\n14. When the provisioning process is complete and its status becomes available, update your application configuration to refer to the endpoint of the new, encrypted database instance.\n15. After the database endpoint is changed at your application level, remove the unencrypted instance.\n\n#### Remediation for Terraform\nEnsure your  \"aws_db_instance\" resource has storage_encrypted set to true. allocated_storage, db_name, engine, engine version, instance_class, username, and password can be set to values that make sense for your instances.\n\n\n```hcl\nresource \"aws_db_instance\" \"example\" {\n  allocated_storage       = 10\n  db_name                 = \"example\"\n  engine                  = \"mysql\"\n  engine_version          = \"5.7\"\n  instance_class          = \"db.t3.micro\"\n  username                = \"example\"\n  password                = \"***********\"\n  storage_encrypted       = true\n}\n```\n\nSee the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance) for more information.\n",
+        "version": {
+          "major": 1,
+          "minor": 0
+        },
+        "category": "Data storage",
+        "integrations": [
+          "aws"
+        ],
+        "status": "OK",
+        "deactivatedStatusInfo": {
+          "isDeactivated": false,
+          "deactivatedReason": null,
+          "lastUpdatedDate": null
+        },
+        "remediationStatusInfo": {
+          "status": "PASS",
+          "soonestRemediateByDate": null,
+          "itemCount": 0
+        },
+        "owner": null
+      }
+    ]
+  }
+}
