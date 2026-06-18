@@ -4,31 +4,32 @@ namespace Parallel\Compliance\Parsers;
 
 class WstgParser implements ParserInterface
 {
-    public function parse(string $filePath): array
+    public function parse(string $json, ?string $version = null): array
     {
-        $data = json_decode(file_get_contents($filePath), true);
+        $data = json_decode($json, true);
+        $version ??= (string) ($data['version'] ?? 'latest');
 
         $standardizedRecommendations = [];
 
-        foreach ($data['categories'] as $categoryName => $categoryData) {
+        foreach (($data['categories'] ?? []) as $categoryName => $categoryData) {
             $categoryId = $categoryData['id'];
-            foreach ($categoryData['tests'] as $test) {
+            foreach (($categoryData['tests'] ?? []) as $test) {
                 $standardizedRecommendations[] = [
                     'source' => 'OWASP_WSTG',
+                    'source_version' => $version,
                     'source_id' => $test['id'],
-                    'id' => "OWASP_WSTG_{$test['id']}",
-                    'name' => $test['name'],
-                    'description' => '', // WSTG JSON doesn't have a description
-                    'reference' => $test['reference'],
+                    'id' => "OWASP_WSTG:{$version}:{$test['id']}",
+                    'title' => $test['name'],
+                    'description' => null,
                     'categories' => [$categoryName],
-                    'severity' => '', // If severity is available
                     'objectives' => $test['objectives'] ?? [],
-                    'remediation' => [], // Add if available
-                    'cwe' => [], // Add if available
-                    'nist' => [], // Add if available
-                    'examples' => [], // Add if available
-                    'source_details' => [
+                    'references' => array_filter([$test['reference'] ?? null]),
+                    'mappings' => [],
+                    'levels' => [],
+                    'tags' => ['web-security-testing'],
+                    'raw' => [
                         'category_id' => $categoryId,
+                        'source' => $test,
                     ],
                 ];
             }

@@ -4,6 +4,7 @@ namespace Parallel\Compliance;
 
 use Parallel\Compliance\Commands\GenerateRecommendationEnums;
 use Parallel\Compliance\Commands\GenerateSecurityReport;
+use Parallel\Compliance\Commands\TransformAsvsJson;
 use Parallel\Compliance\Commands\TransformWstgJson;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -22,7 +23,7 @@ class ComplianceServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasCommand(GenerateRecommendationEnums::class)
             ->hasCommand(GenerateSecurityReport::class)
-            ->hasCommand(TransformWstgJson::class)
+            ->hasCommand(TransformAsvsJson::class)
             ->hasCommand(TransformWstgJson::class);
     }
 }

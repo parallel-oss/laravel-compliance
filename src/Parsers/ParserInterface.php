@@ -5,7 +5,7 @@ namespace Parallel\Compliance\Parsers;
 interface ParserInterface
 {
     /**
-     * Parses the source JSON file and returns an array of standardized recommendations.
+     * Parses source JSON content and returns standardized recommendation arrays.
      */
-    public function parse(string $filePath): array;
+    public function parse(string $json, ?string $version = null): array;
 }

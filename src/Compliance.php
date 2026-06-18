@@ -3,23 +3,52 @@
 namespace Parallel\Compliance;
 
 use Attribute;
-use Illuminate\Support\Arr;
+use Parallel\Compliance\Capabilities\Capability;
 use Parallel\Compliance\Recommendations\Recommendation;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD | Attribute::IS_REPEATABLE)]
-class Compliance
+class Compliance extends Evidence
 {
-    /** @var Recommendation[] */
+    /** @var array<int, Recommendation> */
     public array $recommendations;
 
+    /** @var array<int, Capability> */
+    public array $claims;
+
+    public ?string $comment;
+
     /**
-     * @param  Recommendation|Recommendation[]  $recommendations  One or more recommendation enum values.
-     * @param  string|null  $comment  An optional comment or explanation.
+     * @param  Recommendation|array<int, Recommendation>|null  $controls
+     * @param  Capability|array<int, Capability>|null  $capabilities
+     * @param  Recommendation|array<int, Recommendation>|null  $recommendations
+     * @param  Capability|array<int, Capability>|null  $claims
+     * @param  array<int, string>  $links
+     * @param  array<string, scalar|null>  $metadata
      */
     public function __construct(
-        Recommendation|array $recommendations,
-        public ?string $comment = null
+        Recommendation|array|null $controls = null,
+        Capability|array|null $capabilities = null,
+        ?string $summary = null,
+        EvidenceStatus $status = EvidenceStatus::Implemented,
+        ?string $details = null,
+        array $links = [],
+        array $metadata = [],
+        Recommendation|array|null $recommendations = null,
+        Capability|array|null $claims = null,
+        ?string $comment = null,
     ) {
-        $this->recommendations = Arr::wrap($recommendations);
+        parent::__construct(
+            controls: $controls ?? $recommendations ?? [],
+            capabilities: $capabilities ?? $claims ?? [],
+            summary: $summary ?? $comment,
+            status: $status,
+            details: $details,
+            links: $links,
+            metadata: $metadata,
+        );
+
+        $this->recommendations = $this->controls;
+        $this->claims = $this->capabilities;
+        $this->comment = $this->summary;
     }
 }

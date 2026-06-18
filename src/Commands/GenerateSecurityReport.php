@@ -2,230 +2,227 @@
 
 namespace Parallel\Compliance\Commands;
 
+use BackedEnum;
 use Illuminate\Console\Command;
-use Parallel\Compliance\Compliance;
+use Parallel\Compliance\Frameworks\FrameworkRequirement;
 use Parallel\Compliance\Recommendations\RecommendationCollection;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use ReflectionClass;
-use ReflectionMethod;
+use Parallel\Compliance\Scanning\EvidenceFinding;
+use Parallel\Compliance\Scanning\EvidenceScanner;
 
 class GenerateSecurityReport extends Command
 {
-    protected $signature = 'security:generate-report';
+    protected $signature = 'security:generate-report
+        {--output= : Markdown file to write}
+        {--path=* : File or directory paths to scan}
+        {--standard=* : Standardized recommendation JSON files to load}
+        {--no-code : Omit source code snippets from the report}';
 
-    protected $description = 'Generates a Markdown report of security compliance annotations found in the project';
+    protected $description = 'Generates a Markdown report of security evidence attributes found in the project';
 
     private RecommendationCollection $recommendationCollection;
 
-    public function handle()
+    public function handle(): int
     {
-        $this->info('Scanning for security compliance annotations...');
+        $this->info('Scanning for security evidence...');
 
-        // Load recommendations
         $this->recommendationCollection = new RecommendationCollection;
-        $this->recommendationCollection->loadFromFile(storage_path('recommendations_wstg.json'));
-        $this->recommendationCollection->loadFromFile(storage_path('recommendations_asvs.json'));
+        $this->recommendationCollection->loadFromFiles($this->standardPaths());
 
-        $directories = [
-            app_path(),
-            base_path('bootstrap'),
-            config_path(),
-        ];
+        $findings = (new EvidenceScanner)->scan($this->scanPaths());
+        $output = $this->option('output') ?: config('compliance.report.output');
 
-        $reportData = [];
+        $this->writeMarkdownReport($findings, $output);
 
-        foreach ($directories as $directory) {
-            $files = $this->getPhpFiles($directory);
+        $this->info("Security evidence report generated at {$output}.");
 
-            foreach ($files as $file) {
-                $classes = $this->getClassesFromFile($file);
+        return self::SUCCESS;
+    }
 
-                foreach ($classes as $className) {
-                    if (! class_exists($className)) {
-                        continue;
-                    }
+    /**
+     * @return array<int, string>
+     */
+    private function scanPaths(): array
+    {
+        $paths = $this->option('path');
 
-                    $reflectionClass = new ReflectionClass($className);
+        if ($paths !== []) {
+            return $paths;
+        }
 
-                    // Check for class-level annotations
-                    $classAttributes = $reflectionClass->getAttributes(Compliance::class);
+        return config('compliance.scan_paths', []);
+    }
 
-                    foreach ($classAttributes as $attribute) {
-                        /** @var Compliance $attributeInstance */
-                        $attributeInstance = $attribute->newInstance();
-                        $codeInfo = $this->getClassCode($reflectionClass);
+    /**
+     * @return array<int, string>
+     */
+    private function standardPaths(): array
+    {
+        $paths = $this->option('standard') ?: config('compliance.standards', []);
+        $resolvedPaths = [];
 
-                        $reportData[] = [
-                            'type' => 'Class',
-                            'recommendations' => $attributeInstance->recommendations,
-                            'comment' => $attributeInstance->comment,
-                            'code' => $codeInfo['code'],
-                            'file' => $codeInfo['file'],
-                            'start_line' => $codeInfo['start_line'],
-                        ];
-                    }
+        foreach ($paths as $path) {
+            $matches = glob($path) ?: [];
+            $resolvedPaths = [...$resolvedPaths, ...$matches];
+        }
 
-                    // Check for method-level annotations
-                    $methods = $reflectionClass->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE);
+        return $resolvedPaths;
+    }
 
-                    foreach ($methods as $method) {
-                        $methodAttributes = $method->getAttributes(Compliance::class);
+    /**
+     * @param  array<int, EvidenceFinding>  $findings
+     */
+    private function writeMarkdownReport(array $findings, string $output): void
+    {
+        $markdown = "# Security Evidence Report\n\n";
+        $markdown .= 'Generated: '.now()->toIso8601String()."\n\n";
 
-                        foreach ($methodAttributes as $attribute) {
-                            /** @var Compliance $attributeInstance */
-                            $attributeInstance = $attribute->newInstance();
-                            $codeInfo = $this->getMethodCode($method);
+        if ($findings === []) {
+            $markdown .= "No evidence attributes were found.\n";
+            $this->writeFile($output, $markdown);
 
-                            $reportData[] = [
-                                'type' => 'Method',
-                                'recommendations' => $attributeInstance->recommendations,
-                                'comment' => $attributeInstance->comment,
-                                'code' => $codeInfo['code'],
-                                'file' => $codeInfo['file'],
-                                'start_line' => $codeInfo['start_line'],
-                            ];
+            return;
+        }
+
+        foreach ($findings as $finding) {
+            foreach ($finding->evidence->capabilities as $capability) {
+                $capabilityId = $this->enumId($capability);
+                $markdown .= '## Capability: '.$this->enumName($capability)."\n\n";
+                $markdown .= "- **Capability:** `{$capabilityId}`\n";
+                $markdown .= "- **Target:** `{$finding->target}`\n";
+                $markdown .= "- **Type:** {$finding->type}\n";
+                $markdown .= "- **Status:** {$finding->evidence->status->value}\n";
+                $markdown .= "- **Location:** `{$this->relativePath($finding->file)}`:{$finding->startLine}\n";
+
+                $mappedRequirements = $this->mappedRequirements($capabilityId);
+
+                if ($mappedRequirements !== []) {
+                    $markdown .= "\n### Framework Mappings\n\n";
+
+                    foreach ($mappedRequirements as $requirement) {
+                        $markdown .= '- `'.$this->enumId($requirement).'`';
+
+                        if ($requirement instanceof FrameworkRequirement) {
+                            $markdown .= ' - '.$this->enumName($requirement);
                         }
+
+                        $markdown .= "\n";
                     }
                 }
+
+                $markdown .= $this->evidenceMarkdown($finding);
+            }
+
+            foreach ($finding->evidence->controls as $control) {
+                $controlId = $this->enumId($control);
+                $recommendation = $this->recommendationCollection->getById($controlId);
+
+                $markdown .= '## '.($recommendation->title ?? $controlId)."\n\n";
+                $markdown .= "- **Control:** `{$controlId}`\n";
+                $markdown .= '- **Source:** '.($recommendation->source ?? 'Unknown')."\n";
+                $markdown .= "- **Target:** `{$finding->target}`\n";
+                $markdown .= "- **Type:** {$finding->type}\n";
+                $markdown .= "- **Status:** {$finding->evidence->status->value}\n";
+                $markdown .= "- **Location:** `{$this->relativePath($finding->file)}`:{$finding->startLine}\n";
+
+                if ($recommendation?->description) {
+                    $markdown .= "\n### Requirement Description\n\n{$recommendation->description}\n";
+                }
+
+                if ($recommendation?->objectives !== []) {
+                    $markdown .= "\n### Objectives\n\n";
+
+                    foreach ($recommendation->objectives as $objective) {
+                        $markdown .= "- {$objective}\n";
+                    }
+                }
+
+                if ($recommendation?->references !== []) {
+                    $markdown .= "\n### References\n\n";
+
+                    foreach ($recommendation->references as $reference) {
+                        $markdown .= "- {$reference}\n";
+                    }
+                }
+
+                $markdown .= $this->evidenceMarkdown($finding);
             }
         }
 
-        $this->generateMarkdownReport($reportData);
-
-        $this->info('Security compliance report generated successfully.');
+        $this->writeFile($output, $markdown);
     }
 
-    private function getPhpFiles($directory)
+    private function enumId(mixed $value): string
     {
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($directory));
-        $files = [];
+        if ($value instanceof BackedEnum) {
+            return (string) $value->value;
+        }
 
-        foreach ($iterator as $file) {
-            if ($file->isFile() && $file->getExtension() === 'php') {
-                $files[] = $file->getPathname();
+        return (string) $value;
+    }
+
+    private function enumName(mixed $value): string
+    {
+        if ($value instanceof BackedEnum) {
+            return str($value->name)->headline()->toString();
+        }
+
+        return (string) $value;
+    }
+
+    /**
+     * @return array<int, mixed>
+     */
+    private function mappedRequirements(string $capabilityId): array
+    {
+        return config('compliance.capability_mappings', [])[$capabilityId] ?? [];
+    }
+
+    private function evidenceMarkdown(EvidenceFinding $finding): string
+    {
+        $markdown = '';
+
+        if ($finding->evidence->summary) {
+            $markdown .= "\n### Evidence Summary\n\n{$finding->evidence->summary}\n";
+        }
+
+        if ($finding->evidence->details) {
+            $markdown .= "\n### Details\n\n{$finding->evidence->details}\n";
+        }
+
+        if ($finding->evidence->links !== []) {
+            $markdown .= "\n### Evidence Links\n\n";
+
+            foreach ($finding->evidence->links as $link) {
+                $markdown .= "- {$link}\n";
             }
         }
 
-        return $files;
-    }
-
-    private function getClassesFromFile($file)
-    {
-        $classes = [];
-        $namespace = null;
-        $tokens = token_get_all(file_get_contents($file));
-
-        for ($i = 0; $i < count($tokens); $i++) {
-            if (! isset($tokens[$i][0])) {
-                continue;
-            }
-
-            if ($tokens[$i][0] === T_NAMESPACE) {
-                $namespace = '';
-                $i += 2; // Skip 'namespace' and whitespace
-
-                while ($tokens[$i][0] === T_STRING || $tokens[$i][0] === T_NS_SEPARATOR) {
-                    $namespace .= $tokens[$i++][1];
-                }
-            }
-
-            if ($tokens[$i][0] === T_CLASS && $tokens[$i - 1][0] !== T_DOUBLE_COLON) {
-                $i += 2; // Skip 'class' and whitespace
-                $className = $tokens[$i][1];
-
-                if ($namespace) {
-                    $classes[] = $namespace.'\\'.$className;
-                } else {
-                    $classes[] = $className;
-                }
-            }
+        if (! $this->option('no-code') && config('compliance.report.include_code', true)) {
+            $markdown .= "\n### Code\n\n```php\n{$finding->code}\n```\n";
         }
 
-        return $classes;
+        return $markdown."\n";
     }
 
-    private function getClassCode(ReflectionClass $class)
+    private function writeFile(string $output, string $contents): void
     {
-        $fileName = $class->getFileName();
-        $startLine = $class->getStartLine();
-        $endLine = $class->getEndLine();
+        $directory = dirname($output);
 
-        $code = $this->getCodeSnippet($fileName, $startLine, $endLine);
-
-        return [
-            'code' => $code,
-            'file' => $fileName,
-            'start_line' => $startLine,
-        ];
-    }
-
-    private function getMethodCode(ReflectionMethod $method)
-    {
-        $fileName = $method->getFileName();
-        $startLine = $method->getStartLine();
-        $endLine = $method->getEndLine();
-
-        $code = $this->getCodeSnippet($fileName, $startLine, $endLine);
-
-        return [
-            'code' => $code,
-            'file' => $fileName,
-            'start_line' => $startLine,
-        ];
-    }
-
-    private function getCodeSnippet($fileName, $startLine, $endLine)
-    {
-        $file = new \SplFileObject($fileName);
-        $file->seek($startLine - 1);
-
-        $code = '';
-        for ($i = $startLine; $i <= $endLine; $i++) {
-            $code .= $file->current();
-            $file->next();
+        if (! is_dir($directory)) {
+            mkdir($directory, 0755, true);
         }
 
-        return $code;
+        file_put_contents($output, $contents);
     }
 
-    private function generateMarkdownReport(array $reportData)
+    private function relativePath(string $path): string
     {
-        $markdown = "# Security Compliance Report\n\n";
+        $basePath = base_path();
 
-        foreach ($reportData as $data) {
-            foreach ($data['recommendations'] as $recommendationEnum) {
-                $recommendationId = $recommendationEnum->value;
-                $recommendation = $this->recommendationCollection->getById($recommendationId);
-
-                $markdown .= "## Recommendation: {$recommendation->name}\n";
-                $markdown .= "### Source: {$recommendation->source}\n";
-                $markdown .= "### ID: {$recommendation->id}\n";
-                $markdown .= "### Type: {$data['type']}\n";
-                $markdown .= "### File: {$data['file']} (Line {$data['start_line']})\n\n";
-
-                if (! empty($recommendation->description)) {
-                    $markdown .= "#### Description\n";
-                    $markdown .= "{$recommendation->description}\n\n";
-                }
-
-                if (! empty($recommendation->reference)) {
-                    $markdown .= "#### Reference\n";
-                    $markdown .= "[{$recommendation->reference}]({$recommendation->reference})\n\n";
-                }
-
-                if (! empty($data['comment'])) {
-                    $markdown .= "#### Comment\n";
-                    $markdown .= "{$data['comment']}\n\n";
-                }
-
-                $markdown .= "#### Code\n";
-                $markdown .= "```php\n";
-                $markdown .= $data['code'];
-                $markdown .= "\n```\n\n";
-            }
+        if (str_starts_with($path, $basePath)) {
+            return ltrim(substr($path, strlen($basePath)), DIRECTORY_SEPARATOR);
         }
 
-        file_put_contents(base_path('security_compliance_report.md'), $markdown);
+        return $path;
     }
 }

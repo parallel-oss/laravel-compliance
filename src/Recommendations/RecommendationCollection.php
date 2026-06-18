@@ -9,9 +9,29 @@ class RecommendationCollection
 
     public function loadFromFile(string $filePath): void
     {
+        if (! is_file($filePath)) {
+            return;
+        }
+
         $data = json_decode(file_get_contents($filePath), true);
+
+        if (! is_array($data)) {
+            return;
+        }
+
         foreach ($data as $item) {
-            $this->recommendations[$item['id']] = new RecommendationData($item);
+            $recommendation = RecommendationData::fromArray($item);
+            $this->recommendations[$recommendation->id] = $recommendation;
+        }
+    }
+
+    /**
+     * @param  array<int, string>  $filePaths
+     */
+    public function loadFromFiles(array $filePaths): void
+    {
+        foreach ($filePaths as $filePath) {
+            $this->loadFromFile($filePath);
         }
     }
 

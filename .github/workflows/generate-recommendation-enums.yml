@@ -1,41 +1,38 @@
 name: Generate Enums
 
 on:
-  push:
-    paths:
-      - 'storage/recommendations_*.json'
   workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * 1'
 
 jobs:
   generate-enums:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false # Important!
+      - uses: actions/checkout@v4
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'
+          php-version: '8.4'
           extensions: mbstring, json
           tools: composer
 
       - name: Install Dependencies
         run: composer install --no-interaction --prefer-dist --no-progress
 
-      - name: Generate Enums
+      - name: Import Standards
         run: |
-          php artisan security:generate-enums storage/recommendations_wstg.json storage/recommendations_asvs.json
+          php vendor/bin/testbench security:import-asvs --output=resources/standards/owasp-asvs-5.0.0.json
+          php vendor/bin/testbench security:import-wstg --output=resources/standards/owasp-wstg-latest.json
 
-      - name: Commit and Push Enums
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Generate Package Enums
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git add app/Enums/*.php
-          git commit -m "Auto-generate enums"
-          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}
-          git push origin HEAD:${{ github.ref }}
+          php vendor/bin/testbench security:generate-enums "resources/standards/*.json" --namespace="Parallel\\Compliance\\Enums" --output=src/Enums
+
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update generated compliance standards"
+          file_pattern: "resources/standards/*.json src/Enums/*.php"

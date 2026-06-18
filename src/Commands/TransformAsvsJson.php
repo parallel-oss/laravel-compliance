@@ -7,22 +7,53 @@ use Parallel\Compliance\Parsers\AsvsParser;
 
 class TransformAsvsJson extends Command
 {
-    protected $signature = 'security:transform-asvs {input} {output}';
+    protected $signature = 'security:import-asvs
+        {--output= : Output JSON file}
+        {--url= : Source ASVS JSON URL}
+        {--source-version= : Source version label}';
 
-    protected $description = 'Transforms the ASVS JSON file into the standardized format';
+    protected $description = 'Downloads ASVS JSON and transforms it into standardized requirement JSON';
 
-    public function handle()
+    protected $aliases = ['security:transform-asvs'];
+
+    public function handle(): int
     {
-        $inputPath = $this->argument('input');
-        $outputPath = $this->argument('output');
+        $url = $this->option('url') ?: config('compliance.sources.owasp_asvs.url');
+        $version = $this->option('source-version') ?: config('compliance.sources.owasp_asvs.version');
+        $outputPath = $this->option('output') ?: config('compliance.sources.owasp_asvs.output');
 
-        $this->info("Transforming ASVS JSON from {$inputPath} to {$outputPath}...");
+        $this->info("Downloading ASVS JSON from {$url}...");
 
-        $parser = new AsvsParser;
-        $recommendations = $parser->parse($inputPath);
+        $json = file_get_contents($url);
 
-        file_put_contents($outputPath, json_encode($recommendations, JSON_PRETTY_PRINT));
+        if ($json === false) {
+            $this->error("Unable to download ASVS JSON from {$url}.");
 
-        $this->info('Transformation complete.');
+            return self::FAILURE;
+        }
+
+        $recommendations = (new AsvsParser)->parse($json, $version);
+
+        $this->writeJson($outputPath, $recommendations);
+
+        $this->info("Imported {$this->sourceCount($recommendations)} ASVS requirements to {$outputPath}.");
+
+        return self::SUCCESS;
+    }
+
+    private function writeJson(string $outputPath, array $recommendations): void
+    {
+        $directory = dirname($outputPath);
+
+        if (! is_dir($directory)) {
+            mkdir($directory, 0755, true);
+        }
+
+        file_put_contents($outputPath, json_encode($recommendations, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES).PHP_EOL);
+    }
+
+    private function sourceCount(array $recommendations): int
+    {
+        return count($recommendations);
     }
 }
