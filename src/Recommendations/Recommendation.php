@@ -2,7 +2,4 @@
 
 namespace Parallel\Compliance\Recommendations;
 
-interface Recommendation
-{
-
-}
+interface Recommendation {}
