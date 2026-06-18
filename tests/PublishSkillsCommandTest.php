@@ -14,8 +14,8 @@ it('publishes packaged skills into a Cursor project skills directory', function 
     ])->assertSuccessful();
 
     expect($output.'/use-laravel-compliance/SKILL.md')->toBeFile()
-        ->and($output.'/map-compliance-evidence/SKILL.md')->toBeFile()
-        ->and($output.'/map-compliance-evidence/references/mapping-sources.md')->toBeFile()
+        ->and($output.'/use-laravel-compliance/references/mapping-sources.md')->toBeFile()
+        ->and($output.'/map-compliance-evidence/SKILL.md')->not->toBeFile()
         ->and(file_get_contents($output.'/use-laravel-compliance/SKILL.md'))->toContain('name: use-laravel-compliance');
 });
 

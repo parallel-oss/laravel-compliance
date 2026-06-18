@@ -65,8 +65,7 @@ The public `ComplianceControl` enum is intentionally curated. It includes engine
 
 This package publishes portable Agent Skills under `skills/` and advertises them through Composer metadata:
 
-- `use-laravel-compliance`: how to annotate Laravel code with readable controls and produce reports.
-- `map-compliance-evidence`: how to map code behavior to controls and framework references without overclaiming compliance.
+- `use-laravel-compliance`: how to annotate Laravel code with readable controls, mark gaps, choose controls, and produce reports.
 
 Agents that support Composer-discovered skills can sync them from the package. Agents that read repository instruction files can use `AGENTS.md`.
 
@@ -80,12 +79,10 @@ This writes Cursor project skills to `.cursor/skills` using Cursor's expected di
 
 ```text
 .cursor/skills/
-├── map-compliance-evidence/
-│   ├── SKILL.md
-│   └── references/
-│       └── mapping-sources.md
 └── use-laravel-compliance/
-    └── SKILL.md
+    ├── SKILL.md
+    └── references/
+        └── mapping-sources.md
 ```
 
 Existing project skills are not overwritten unless you pass `--force`.

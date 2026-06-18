@@ -55,6 +55,39 @@ public function resetPassword(): void
 
 You may combine both when a code path is both a control objective and a technical requirement.
 
+## Choosing Controls
+
+Map code to what it demonstrably does. Then let the generated local seed pivots map that control to framework requirements and related tests.
+
+Good:
+
+```php
+#[Evidence(
+    controls: ComplianceControl::CustomerDataDeletedUponLeaving,
+    summary: 'Deletes user profile data and related records during account closure.',
+)]
+```
+
+Avoid:
+
+```php
+// Avoid this style unless there is a direct technical requirement enum.
+#[Evidence(summary: 'This satisfies GDPR Article 17.')]
+```
+
+Use these common controls as starting points:
+
+- Use `ComplianceControl::CustomerDataDeletedUponLeaving` for code that deletes customer data when customers leave the service.
+- Use `ComplianceControl::DataEncryptionUtilized` for encryption at rest.
+- Use `ComplianceControl::DataTransmissionEncrypted` for encryption in transit.
+- Use `ComplianceControl::AccessControlProceduresEstablished`, `ProductionApplicationAccessRestricted`, and related access cases for authorization and least-privilege behavior.
+- Use `ComplianceControl::RemoteAccessMfaEnforced`, `PasswordPolicyEnforced`, and `UniqueAccountAuthenticationEnforced` for authentication, password, and MFA behavior.
+- Use `ComplianceControl::LogManagementUtilized`, `InfrastructurePerformanceMonitored`, and `IntrusionDetectionSystemUtilized` for logging, monitoring, and alerting behavior.
+- Use `ComplianceControl::ChangeManagementProceduresEnforced`, `ConfigurationManagementSystemEstablished`, `NetworkAndSystemHardeningStandardsMaintained`, and `VulnerabilitiesScannedAndRemediated` for SDLC, configuration, hardening, and vulnerability remediation behavior.
+- Use `ComplianceControl::ThirdPartyAgreementsEstablished` or `VendorManagementProgramEstablished` when code or workflows directly support vendor/security review evidence.
+
+Do not use `ComplianceControl` for policy-only, HR-only, physical-office, board, insurance, meeting-minute, or pure audit-placeholder evidence. Those may exist in raw resources but are intentionally excluded from code-facing controls.
+
 Use gaps for missing compliance work:
 
 ```php
@@ -115,3 +148,5 @@ php artisan security:generate-report \
 - Add concise summaries that explain the actual behavior implemented by the code.
 - Use `details` and `links` for audit context, tickets, pull requests, policies, or runbooks.
 - After code edits, run `composer format`, `composer test`, `composer analyse`, and `composer audit`.
+
+For source mapping details, see `references/mapping-sources.md`.
